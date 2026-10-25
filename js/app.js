@@ -8,7 +8,7 @@
   var schools = [];
 
   // Everything the parent has chosen. Location lives only in memory (never saved or sent).
-  var state = { query: "", type: "", phase: "", under3000: false, near: null, grade: {}, costView: "year", compareA: "", compareB: "" };
+  var state = { radius: 10, query: "", type: "", phase: "", under3000: false, near: null, grade: {}, costView: "year", compareA: "", compareB: "" };
 
   // ---------- Small helpers ----------
 
@@ -145,12 +145,12 @@
   // ---------- Search screen ----------
 
   function renderSearch() {
-    var input = el("input", { type: "search", id: "q", placeholder: "Suburb, town or postcode", value: state.query, maxLength: 100, autocomplete: "off" });
+    var input = el("input", { type: "search", id: "q", placeholder: "Suburb or town, e.g. Waterfall", value: state.query, maxLength: 100, autocomplete: "off" });
     var searchBox = el("label", { className: "search-box" }, icon("pin"), el("span", { className: "sr-only" }, "Where are you looking?"), input);
     var results = el("div", {});
 
     var chips = el("div", { className: "chips", role: "group", aria: { label: "Filters" } });
-    var nearBtn = el("button", { type: "button", className: "chip" }, icon("locate"), state.near ? "Sorted by distance" : "Use my location");
+    var nearBtn = el("button", { type: "button", className: "chip" }, icon("locate"), state.near ? "Near me ✓" : "Near me");
     nearBtn.setAttribute("aria-pressed", !!state.near);
     nearBtn.addEventListener("click", function () {
       if (state.near) { state.near = null; renderSearch(); return; }
@@ -188,19 +188,69 @@
     drawResults(results);
   }
 
+  function filtersOk(s) {
+    if (state.type && s.type !== state.type) return false;
+    if (state.phase && s.phase !== state.phase && s.phase !== "Combined") return false;
+    if (state.under3000) { var m = L.monthlyFees(s); if (m === null || m > 3000) return false; }
+    return true;
+  }
+
+  // "Within 5 / 10 / 20 km" chips, shown when searching around a place or the parent's location.
+  function radiusChips(container) {
+    var row = el("div", { className: "chips radius", role: "group", aria: { label: "Distance" } });
+    L.RADII.forEach(function (km) {
+      var chip = el("button", { type: "button", className: "chip" }, "Within " + km + " km");
+      chip.setAttribute("aria-pressed", state.radius === km);
+      chip.addEventListener("click", function () { state.radius = km; drawResults(container); });
+      row.appendChild(chip);
+    });
+    return row;
+  }
+
   function drawResults(container) {
+    container.textContent = "";
+    var q = state.query.trim().slice(0, 60);
+    var place = state.near ? null : L.findPlace(q);
+    var centre = state.near || place;
+
+    // Searching around a point: a known place ("Waterfall") or the parent's own location.
+    if (centre) {
+      var found = L.schoolsNear(schools.filter(filtersOk), centre, state.radius, place ? place.name : null);
+      var where = place ? place.name + (place.region ? ", " + place.region : "") : "you";
+      container.appendChild(radiusChips(container));
+      container.appendChild(el("p", { className: "count" }, found.near.length + (found.near.length === 1 ? " school" : " schools") + " within " + state.radius + " km of " + where));
+      if (place) container.appendChild(el("p", { className: "muted small" }, "Distances are straight-line from the middle of " + place.name + "."));
+      if (found.near.length) container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
+      else container.appendChild(el("p", { className: "muted small" }, state.radius < 20 ? "Try a bigger distance." : "No schools in this app near here yet."));
+      if (found.unknownLocation.length) {
+        container.appendChild(el("p", { className: "count" }, "Also in " + place.name + ", location not published"));
+        container.appendChild(el("div", { className: "card-grid" }, found.unknownLocation.map(schoolCard)));
+      }
+      return;
+    }
+
+    // Otherwise: match the words against school names, suburbs, towns and postcodes.
     var list = L.searchSchools(schools, {
       query: state.query, type: state.type, phase: state.phase,
-      maxMonthly: state.under3000 ? 3000 : null, near: state.near
+      maxMonthly: state.under3000 ? 3000 : null
     });
-    container.textContent = "";
     if (!list.length) {
-      var q = state.query.trim().slice(0, 60);
       container.appendChild(el("p", { className: "count", css: { overflowWrap: "anywhere" } }, "No schools found" + (q ? " for “" + q + "”" : "") + "."));
+      var guess = L.suggestPlace(q, schools);
+      if (guess) {
+        var btn = el("button", { type: "button", className: "chip" }, "Did you mean " + guess + "?");
+        btn.addEventListener("click", function () {
+          state.query = guess;
+          var input = document.getElementById("q");
+          if (input) input.value = guess;
+          drawResults(container);
+        });
+        container.appendChild(btn);
+      }
       container.appendChild(el("p", { className: "muted small" }, "Try a nearby suburb, check the spelling, or turn off some filters."));
       return;
     }
-    container.appendChild(el("p", { className: "count" }, list.length + (list.length === 1 ? " school" : " schools") + (state.near ? " near you" : "")));
+    container.appendChild(el("p", { className: "count" }, list.length + (list.length === 1 ? " school" : " schools")));
     container.appendChild(el("div", { className: "card-grid" }, list.map(schoolCard)));
   }
 
@@ -215,7 +265,8 @@
   function schoolCard(s) {
     var sub = [s.type, s.grades, s.language].filter(Boolean).join(" · ");
     var place = [s.area, s.city].filter(Boolean).join(", ");
-    var dist = s.distanceKm != null ? " · " + s.distanceKm.toFixed(1) + " km" : "";
+    var dist = s.distanceKm != null ? " · " + s.distanceKm.toFixed(1) + " km"
+      : (state.near || L.findPlace(state.query)) && typeof s.lat !== "number" ? " · location not published" : "";
     var extras = extrasSummary(s);
 
     return el("a", { className: "card", href: schoolHref(s) },

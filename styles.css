@@ -182,3 +182,4 @@ main.has-sticky { padding-bottom: 180px; }
 .sub-title { font-size: 13px; font-weight: 700; margin: 14px 0 4px; }
 .bullets { margin: 0; padding-left: 18px; font-size: 14px; }
 .bullets li { margin: 4px 0; }
+.chips.radius { margin-top: 14px; }

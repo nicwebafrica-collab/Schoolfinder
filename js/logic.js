@@ -293,7 +293,6 @@
 
   function str(v) { return typeof v === "string" ? v.slice(0, 500) : (typeof v === "number" && isFinite(v) ? String(v) : null); }
   function num(v) { return isNum(v) ? v : null; }
-  function money(v) { return parseAmount(v); } // like num(), but also reads "R45 000,00" style text
   function coord(v) { return typeof v === "number" && isFinite(v) ? v : null; }
   function list(v, fn) { return Array.isArray(v) ? v.map(fn).filter(Boolean) : []; }
   function obj(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : null; }
@@ -329,6 +328,13 @@
     var f = obj(s.fees) || {};
     var a = obj(s.admissions);
     var zone = a && obj(a.feederZone);
+    // Fee text we can't read ("about R45k") becomes null, but is noted so dataProblems() can report it.
+    var feeProblems = [];
+    function fee(v, label) {
+      var n = parseAmount(v);
+      if (v != null && v !== "" && n === null) feeProblems.push(label + " '" + str(v) + "' is not a number");
+      return n;
+    }
     return {
       id: str(s.id), name: str(s.name), sample: s.sample === true,
       type: str(s.type), phase: str(s.phase), grades: str(s.grades), language: str(s.language),
@@ -337,12 +343,13 @@
       website: str(s.website), phone: str(s.phone), email: str(s.email),
       aliases: list(s.aliases, str),
       fees: {
-        year: num(f.year), yearly: money(f.yearly), monthly: money(f.monthly),
-        registration: money(f.registration), deposit: money(f.deposit), notes: str(f.notes),
+        year: num(f.year), yearly: fee(f.yearly, "yearly fee"), monthly: fee(f.monthly, "monthly fee"),
+        registration: fee(f.registration, "registration"), deposit: fee(f.deposit, "deposit"), notes: str(f.notes),
         instalments: num(f.instalments), instalmentsNote: str(f.instalmentsNote),
         // Fees not from the school itself (e.g. a news survey) get a visible warning.
         unofficial: f.unofficial === true || f.sourceIsSchool === false, sourceNote: str(f.sourceNote),
-        byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? { grade: str(g.grade), yearly: money(g.yearly), monthly: money(g.monthly), instalments: num(g.instalments) } : null; })
+        problems: feeProblems,
+        byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? { grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) } : null; })
       },
       hiddenCosts: list(s.hiddenCosts, cleanCost),
       outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? { name: str(o.name), grades: str(o.grades), cost: num(o.cost), when: str(o.when), note: str(o.note) } : null; }),
@@ -365,10 +372,11 @@
     });
   }
 
-  // Every hidden cost the cleaner couldn't understand, so they can be fixed in the data file.
+  // Every fee and hidden cost the cleaner couldn't understand, so they can be fixed in the data file.
   function dataProblems(schools) {
     var out = [];
     (schools || []).forEach(function (s) {
+      ((s.fees || {}).problems || []).forEach(function (p) { out.push(s.id + ": " + p); });
       (s.hiddenCosts || []).forEach(function (c) { if (c.problem) out.push(s.id + ": " + c.item + ": " + c.problem); });
     });
     return out;

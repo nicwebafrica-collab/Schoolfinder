@@ -1,9 +1,9 @@
 // sw.js — the "service worker": a small script the phone keeps running in the background.
 // It saves the app's files so School Finder opens and works with no internet (load shedding, no data).
 
-var VERSION = "v8";                       // bump this when app files change, so phones fetch the new ones
+var VERSION = "v10";                       // bump this when app files change, so phones fetch the new ones
 var APP_FILES = [
-  "./", "index.html", "styles.css", "js/logic.js", "js/admissions.js", "js/app.js", "manifest.webmanifest",
+  "./", "index.html", "styles.css", "js/logic.js", "js/admissions.js", "js/places.js", "js/app.js", "manifest.webmanifest",
   "fonts/plus-jakarta-sans-latin.woff2", "icons/icon-192.png", "icons/icon-512.png", "data/schools.json", "data/admissions-kzn.json"
 ];
 

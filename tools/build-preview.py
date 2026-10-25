@@ -32,6 +32,7 @@ html = f"""<title>School Finder</title>
 <script>{data_js}</script>
 <script>{(root / "js/logic.js").read_text()}</script>
 <script>{(root / "js/admissions.js").read_text()}</script>
+<script>{(root / "js/places.js").read_text()}</script>
 <script>{(root / "js/app.js").read_text()}</script>
 """
 out.parent.mkdir(parents=True, exist_ok=True)
