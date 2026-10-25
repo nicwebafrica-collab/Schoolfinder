@@ -298,7 +298,8 @@
   function coord(v) { return typeof v === "number" && isFinite(v) ? v : null; }
   function list(v, fn) { return Array.isArray(v) ? v.map(fn).filter(Boolean) : []; }
   function obj(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : null; }
-  function option(v) { v = obj(v); return v ? { available: v.available === true, monthly: num(v.monthly) } : null; }
+  // available is true (offered), false (not offered) or null (the school doesn't say). Never guess "not offered".
+  function option(v) { v = obj(v); return v ? { available: v.available === true ? true : v.available === false ? false : null, monthly: num(v.monthly) } : null; }
 
   // A hidden cost from the data file. Text amounts ("1500", "R1,500") become numbers; frequencies are normalised
   // ("Monthly", "termly" -> "monthly", "per term"). Anything we can't understand is kept but flagged in

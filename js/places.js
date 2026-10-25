@@ -29,6 +29,8 @@
     { name: "Pretoria", region: "Gauteng", lat: -25.7460, lng: 28.1880, aliases: ["pta", "tshwane"] },
     { name: "East Lynne", region: "Gauteng", lat: -25.7000, lng: 28.2800 },
     { name: "Centurion", region: "Gauteng", lat: -25.8600, lng: 28.1900 },
+    { name: "Hillcrest", region: "Gauteng", lat: -25.7570, lng: 28.2360, note: "Pretoria" },
+    { name: "Waterfall", region: "Gauteng", lat: -26.0050, lng: 28.1050, note: "Midrand" },
     { name: "Johannesburg", region: "Gauteng", lat: -26.2040, lng: 28.0470, aliases: ["joburg", "jozi", "jhb", "johannesberg"] },
     { name: "Fourways", region: "Gauteng", lat: -26.0160, lng: 28.0060 },
     { name: "Sandton", region: "Gauteng", lat: -26.1070, lng: 28.0560 },
@@ -53,16 +55,45 @@
     return prev[b.length];
   }
 
-  function key(text) { return L.normalise(text).replace(/[^a-z0-9 ]/g, ""); }
+  function key(text) { return L.normalise(text).replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim(); }
 
-  // Is the whole search a place we know? "waterfall", "Botha's Hill", "jhb" → that place.
-  function findPlace(query) {
-    var q = key(query);
-    if (!q) return null;
-    return PLACES.filter(function (p) {
-      return key(p.name) === q || (p.aliases || []).some(function (a) { return key(a) === q; });
-    })[0] || null;
+  // Words for each region, so "Hillcrest, KZN" or "Waterfall Gauteng" can pick the right one.
+  var REGION_WORDS = {
+    KZN: ["kzn", "kwazulu natal", "kwazulunatal", "natal"],
+    Gauteng: ["gauteng", "gp", "gt"]
+  };
+
+  // "Hillcrest, KZN 3610" -> { text: "hillcrest", region: "KZN" }. Strips commas, postcodes and a trailing province.
+  function splitQuery(query) {
+    var q = key(String(query == null ? "" : query).replace(/,/g, " ")).replace(/\b\d{4}\b/g, "").replace(/\s+/g, " ").trim();
+    var region = null;
+    Object.keys(REGION_WORDS).forEach(function (r) {
+      REGION_WORDS[r].forEach(function (w) {
+        if (!region && q.length > w.length && q.slice(-w.length - 1) === " " + w) { region = r; q = q.slice(0, -w.length - 1).trim(); }
+      });
+    });
+    return { text: q, region: region };
   }
+
+  // Every known place whose name or nickname is exactly what was typed (two when a name exists in two provinces).
+  function findPlaces(query) {
+    var sq = splitQuery(query);
+    if (!sq.text) return [];
+    return PLACES.filter(function (p) {
+      var hit = key(p.name) === sq.text || (p.aliases || []).some(function (a) { return key(a) === sq.text; });
+      return hit && (!sq.region || p.region === sq.region);
+    });
+  }
+
+  // Is the whole search one place we know? "waterfall", "Botha's Hill", "jhb", "Hillcrest, KZN" → that place.
+  // Returns null when the name is in two provinces and the parent didn't say which, so the app can ask.
+  function findPlace(query) {
+    var found = findPlaces(query);
+    return found.length === 1 ? found[0] : null;
+  }
+
+  // "Waterfall, KZN" style label, used wherever a place is shown so same-name places can't be mixed up.
+  function placeLabel(p) { return p ? p.name + ", " + (p.note ? p.note + ", " : "") + p.region : ""; }
 
   // Closest-spelled known place or school area, for "Did you mean …?". Only offered when close enough.
   function suggest(query, schools) {
@@ -81,14 +112,18 @@
   }
 
   // Schools near a point, within radiusKm, closest first.
-  // Schools with no published location are returned separately, only if their address text matches the place.
+  // Schools with no published location are returned separately when their address names the chosen place,
+  // or (for "near me") any known place within the radius, so GPS users still see them.
   function schoolsNear(schools, point, radiusKm, placeName) {
     var near = [], unknown = [];
+    var names = placeName ? [placeName] : PLACES.filter(function (p) {
+      return L.distanceKm(point.lat, point.lng, p.lat, p.lng) <= Math.max(radiusKm, 5);
+    }).map(function (p) { return p.name; });
     schools.forEach(function (s) {
       if (typeof s.lat === "number" && typeof s.lng === "number") {
         var d = L.distanceKm(point.lat, point.lng, s.lat, s.lng);
         if (d <= radiusKm) near.push(Object.assign({}, s, { distanceKm: d }));
-      } else if (placeName && L.matchesQuery(s, placeName)) {
+      } else if (names.some(function (n) { return L.matchesQuery(s, n); })) {
         unknown.push(Object.assign({}, s, { distanceKm: null }));
       }
     });
@@ -98,7 +133,7 @@
 
   // Places whose name starts with (or contains) what the parent has typed so far, for the suggestion list.
   function matchPlaces(text, limit) {
-    var q = key(text);
+    var q = splitQuery(text).text;
     if (!q) return [];
     var starts = [], contains = [];
     PLACES.forEach(function (p) {
@@ -109,8 +144,10 @@
     return starts.concat(contains).slice(0, limit || 6);
   }
 
+  // "Waterfall" or "Waterfall|Gauteng" (how the last place is remembered) -> that place. Plain names mean the first one.
   function placeByName(name) {
-    return PLACES.filter(function (p) { return p.name === name; })[0] || null;
+    var parts = String(name || "").split("|");
+    return PLACES.filter(function (p) { return p.name === parts[0] && (!parts[1] || p.region === parts[1]); })[0] || null;
   }
 
   L.PLACES = PLACES;
@@ -119,6 +156,9 @@
   L.RADII = RADII;
   L.editDistance = editDistance;
   L.findPlace = findPlace;
+  L.findPlaces = findPlaces;
+  L.placeLabel = placeLabel;
+  L.splitQuery = splitQuery;
   L.suggestPlace = suggest;
   L.schoolsNear = schoolsNear;
   if (typeof module !== "undefined" && module.exports) module.exports = L;

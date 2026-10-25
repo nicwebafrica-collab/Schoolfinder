@@ -91,6 +91,7 @@
     app.className = (opts.wide ? "wide " : "") + (opts.sticky ? "has-sticky" : "");
     addChild(app, children);
     drawNav(opts.tab);
+    nav.hidden = !!opts.hideNav;
     var old = document.querySelector(".sticky-actions");
     if (old) old.remove();
     if (opts.sticky) document.body.appendChild(opts.sticky);
@@ -154,7 +155,7 @@
     state.near = null;
     state.query = place ? place.name : "";
     // Only the suburb name is remembered, never the parent's GPS location.
-    try { if (place) localStorage.setItem("lastPlace", place.name); else localStorage.removeItem("lastPlace"); } catch (e) { /* private mode */ }
+    try { if (place) localStorage.setItem("lastPlace", place.name + "|" + place.region); else localStorage.removeItem("lastPlace"); } catch (e) { /* private mode */ }
   }
 
   function renderSearch() {
@@ -181,7 +182,7 @@
       var text = input.value.trim();
       if (!text || (state.place && text === state.place.name)) return;
       L.matchPlaces(text, 6).forEach(function (p) {
-        var b = el("button", { type: "button", className: "suggestion", role: "option" }, icon("pin"), p.name, el("span", { className: "muted small" }, " " + p.region));
+        var b = el("button", { type: "button", className: "suggestion", role: "option" }, icon("pin"), p.name, el("span", { className: "muted small" }, " " + (p.note ? p.note + ", " : "") + p.region));
         b.addEventListener("click", function () { choosePlace(p); });
         suggestions.appendChild(b);
       });
@@ -203,11 +204,22 @@
       }
     }
 
-    input.addEventListener("input", drawSuggestions);
+    // Typing something new clears the old list, so schools near Botha's Hill never sit under "Vryburg" (T7).
+    function typed() {
+      var text = input.value.trim();
+      var same = state.place ? text === state.place.name : !text;
+      if (!same) { results.textContent = ""; Array.prototype.forEach.call(document.querySelectorAll(".radius, .filters-wrap"), function (n) { n.hidden = true; }); }
+      drawSuggestions();
+      // Parents also search by school name ("Kearsney"). Load every area once so names can be matched (T8).
+      if (text.length >= 3 && !L.matchPlaces(text, 1).length) loadAllAreas().then(function () { if (input.value.trim() === text) drawSuggestions(); });
+    }
+    input.addEventListener("input", typed);
     input.addEventListener("keydown", function (e) {
       if (e.key !== "Enter") return;
-      var p = L.findPlace(input.value) || L.matchPlaces(input.value, 1)[0];
-      if (p) choosePlace(p);
+      var all = L.findPlaces(input.value);
+      var p = all.length === 1 ? all[0] : all.length ? null : L.matchPlaces(input.value, 1)[0];
+      if (p) { choosePlace(p); return; }
+      typed(); // two places with this name, or a school name: show the choices
     });
 
     var parts = [el("h1", { className: "page-title" }, "Find a school"), searchBox, suggestions];
@@ -249,7 +261,7 @@
 
   // Primary · High school · Filters (n). "Filters" opens the less-used options.
   function filterRow(results) {
-    var wrap = el("div", {});
+    var wrap = el("div", { className: "filters-wrap" });
     var row = el("div", { className: "chips", role: "group", aria: { label: "Filters" } });
     var more = el("div", { className: "filter-sheet", hidden: !state.showFilters });
     function chip(key, value, label, parent) {
@@ -290,7 +302,7 @@
 
   function drawResults(container) {
     var centre = state.near || state.place;
-    var where = state.place ? state.place.name : "you";
+    var where = state.place ? L.placeLabel(state.place) : "you";
     var areas = state.place ? [areaForPlace(state.place)].filter(Boolean) : areasNear(state.near, 20);
     if (!areas.length) {
       container.textContent = "";
@@ -303,16 +315,24 @@
     Promise.all(areas.map(loadArea)).then(function () {
       var pool = schools.filter(function (s) { return areas.some(function (a) { return a.province === s.province; }) && filtersOk(s); });
       var found = L.schoolsNear(pool, centre, state.radius, state.place ? state.place.name : null);
-      var wider = L.RADII.filter(function (km) { return km > state.radius; })[0];
+      // The next distance that actually has more schools (T9), not just the next chip.
+      var wider = L.RADII.filter(function (km) {
+        return km > state.radius && L.schoolsNear(pool, centre, km, null).near.length > found.near.length;
+      })[0];
       var extra = wider ? L.schoolsNear(pool, centre, wider, null).near.length - found.near.length : 0;
+      var nearestKm = pool.filter(function (s) { return typeof s.lat === "number" && typeof s.lng === "number"; })
+        .map(function (s) { return L.distanceKm(centre.lat, centre.lng, s.lat, s.lng); }).sort(function (a, b) { return a - b; })[0];
 
       container.textContent = "";
       container.appendChild(el("p", { className: "count" }, found.near.length
         ? found.near.length + (found.near.length === 1 ? " school" : " schools") + " within " + state.radius + " km of " + where
         : "No schools within " + state.radius + " km of " + where));
       if (found.near.length) container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
-      if (wider && (extra > 0 || !found.near.length)) {
-        var widen = el("button", { type: "button", className: "link-btn" }, extra > 0
+      if (!found.near.length && !wider && nearestKm != null) {
+        container.appendChild(el("p", { className: "muted small" }, "The nearest school in the app is about " + Math.round(nearestKm) + " km away."));
+      }
+      if (wider) {
+        var widen = el("button", { type: "button", className: "link-btn" }, found.near.length
           ? extra + (extra === 1 ? " more school" : " more schools") + " within " + wider + " km"
           : "Search " + wider + " km");
         widen.addEventListener("click", function () { state.radius = wider; renderSearch(); });
@@ -384,33 +404,29 @@
         el("a", { href: "#/", className: "icon-btn", aria: { label: "Back to search" } }, icon("back")), saveBtn),
       el("div", { className: "initials" }, initials(s.name)),
       el("h1", {}, s.name),
-      el("div", { className: "sub" }, [s.address || [s.area, s.city].filter(Boolean).join(", "), dist != null ? dist.toFixed(1) + " km from you" : ""].filter(Boolean).join(" · ")),
+      el("div", { className: "sub one-line" }, [s.address || [s.area, s.city].filter(Boolean).join(", "), dist != null ? dist.toFixed(1) + " km from you" : ""].filter(Boolean).join(" · ")),
       el("div", { className: "pills" }, [s.type, s.phase, s.grades, s.language].filter(Boolean).map(function (t) { return el("span", { className: "pill" }, t); })));
 
-    // Grade picker, when the school charges different fees per grade.
-    var picker = null;
-    if (Array.isArray(f.byGrade) && f.byGrade.length) {
-      var sel = el("select", { id: "grade" }, el("option", { value: "" }, "Entry grade"),
-        f.byGrade.map(function (g) { return el("option", { value: g.grade, selected: g.grade === grade }, g.grade); }));
-      sel.addEventListener("change", function () { state.grade[s.id] = sel.value; renderSchool(id); });
-      picker = el("label", { className: "grade-picker", htmlFor: "grade" }, "Fees for", sel);
-    }
-
-    var feePct = total ? Math.round((fees / total) * 100) : 100;
+    // The orange part of the bar is at least 4% wide, so extras are always visible.
+    var feePct = total ? Math.min(96, Math.round((fees / total) * 100)) : 100;
+    if (extras <= 0) feePct = 100;
+    var extrasBits = [extras > 0 ? "Extras " + L.formatRand(extras) : null,
+      unpriced.length ? unpriced.length + (unpriced.length === 1 ? " cost" : " costs") + " not priced" : null].filter(Boolean);
     var trueCard = el("section", { className: "panel" },
-      el("div", { className: "label" }, "True cost per year" + (f.year ? " · " + f.year + " fees" : " · fee year unknown")),
+      el("div", { className: "label" }, "True cost per year" + (f.year ? " · " + f.year + " fees" : " · fee year unknown") + (grade ? " · " + grade : " · entry grade")),
       el("div", { className: "big-money" }, money(total)),
       total ? el("div", { className: "bar", aria: { hidden: "true" } },
         el("div", { className: "fees", css: { width: feePct + "%" } }), el("div", { className: "extra", css: { width: (100 - feePct) + "%" } })) : null,
-      total ? el("div", { className: "legend" }, el("span", {}, "Fees " + L.formatRand(fees)), el("span", { className: "h" }, extras > 0 ? "Extras " + L.formatRand(extras) : "No priced extras")) : null,
+      // One orange line, linking to the full breakdown (where "might also apply" costs and grade choice live).
+      el("a", { className: "extras-line extras-link", href: schoolHref(s, "/costs") }, icon("alert"),
+        el("span", {}, (extrasBits.length ? extrasBits.join(" + ") : "No priced extras") + " · See breakdown")),
       f.unofficial ? el("div", { className: "extras-line" }, icon("alert"), f.sourceNote || "These fees are not from the school itself. Confirm them with the school.") : null,
-      unpriced.length ? el("div", { className: "extras-line" }, icon("alert"), "Plus " + unpriced.length + (unpriced.length === 1 ? " cost" : " costs") + " the school doesn't publish a price for") : null,
-      maybe.length ? el("div", { className: "extras-line" }, icon("alert"), maybe.length + (maybe.length === 1 ? " cost that might" : " costs that might") + " also apply to you (boarding, optional or subject extras), not included") : null,
-      f.year && f.year < new Date().getFullYear() ? el("div", { className: "extras-line" }, icon("alert"), "These are " + f.year + " fees and may be out of date.") : null,
-      picker);
+      f.year && f.year < new Date().getFullYear() ? el("div", { className: "extras-line" }, icon("alert"), "These are " + f.year + " fees and may be out of date.") : null);
 
+    var payments = L.instalments(s, grade);
     var facts = el("div", { className: "facts" },
-      fact(monthlyLabel(s, grade), money(L.monthlyFees(s, grade))),
+      el("div", { className: "fact" }, el("div", { className: "label" }, "Monthly fee"), el("strong", {}, money(L.monthlyFees(s, grade))),
+        payments ? el("div", { className: "muted small" }, payments + " payments") : null),
       fact("Registration", money(f.registration)),
       fact("Once-off to start", startUpText(s, grade)),
       fact("Aftercare", optionalText(s.aftercare)));
@@ -418,30 +434,45 @@
     var rows = el("section", { className: "panel" }, el("ul", { className: "rows" },
       navRow(schoolHref(s, "/costs"), "Fees & hidden costs", hiddenCount ? el("span", { className: "badge" }, hiddenCount + (hiddenCount === 1 ? " extra" : " extras")) : null)));
 
+    // Sections with nothing published share one muted line instead of a card each.
+    var missing = [];
+    var outings = (s.outings || []).length ? outingsPanel(s) : (missing.push("Outings"), null);
+    var sports = (s.sports || []).length
+      ? panel("Sports & clubs", el("div", { className: "tags" }, s.sports.map(function (x) { return el("span", { className: "pill light" }, x); })))
+      : (missing.push("Sports & clubs"), null);
+    var careKnown = s.aftercare || s.transport;
+    var care = careKnown ? panel("Aftercare & transport", el("ul", { className: "rows" },
+      row("Aftercare", optionalText(s.aftercare)), row("Transport", optionalText(s.transport)))) : (missing.push("Aftercare & transport"), null);
+
     var parts = [
       head, trueCard, zoneBanner(s, dist), facts, rows,
-      outingsPanel(s),
-      panel("Aftercare & transport", el("ul", { className: "rows" },
-        row("Aftercare", optionalText(s.aftercare)), row("Transport", optionalText(s.transport)))),
-      admissionsPanel(s),
-      panel("Sports & clubs", (s.sports || []).length
-        ? el("div", { className: "tags" }, s.sports.map(function (x) { return el("span", { className: "pill light" }, x); }))
-        : el("p", { className: "empty" }, L.UNKNOWN)),
-      panel("Contact", el("ul", { className: "rows" },
-        row("Phone", s.phone || unknown()),
-        row("Email", s.email || unknown()),
-        row("Website", link(s.website)))),
+      outings, care, admissionsPanel(s), sports,
+      contactPanel(s),
+      missing.length ? el("p", { className: "muted small missing-line" }, "Not published yet: " + missing.join(", ")) : null,
       sourceLine(s)
     ];
 
     var phoneHref = s.phone ? "tel:" + String(s.phone).replace(/[^\d+]/g, "") : null;
-    var contact = phoneHref ? el("a", { className: "btn solid", href: phoneHref }, icon("phone"), "Contact school")
+    var contact = phoneHref ? el("a", { className: "btn solid", href: phoneHref }, icon("phone"), "Call school")
       : L.safeUrl(s.website) ? el("a", { className: "btn solid", href: L.safeUrl(s.website), target: "_blank", rel: "noopener noreferrer" }, "Visit website") : null;
-    var sticky = el("div", { className: "sticky-actions" },
+    var sticky = el("div", { className: "sticky-actions no-nav" },
       el("a", { className: "btn", href: "#/compare/" + encodeURIComponent(s.id) }, icon("compare"), "Compare"), contact);
 
-    replace(parts, { sticky: sticky, tab: "search" });
+    replace(parts, { sticky: sticky, tab: "search", hideNav: true });
     window.scrollTo(0, 0);
+  }
+
+  // Call, Email and Website as three equal buttons; the full details sit underneath as selectable text.
+  function contactPanel(s) {
+    var web = L.safeUrl(s.website);
+    var email = s.email && /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(s.email) ? s.email : null;
+    var buttons = el("div", { className: "contact-buttons" },
+      s.phone ? el("a", { className: "btn", href: "tel:" + String(s.phone).replace(/[^\d+]/g, "") }, icon("phone"), "Call") : null,
+      email ? el("a", { className: "btn", href: "mailto:" + email }, "Email") : null,
+      web ? el("a", { className: "btn", href: web, target: "_blank", rel: "noopener noreferrer" }, "Website") : null);
+    if (!buttons.firstChild) return null;
+    return panel("Contact", buttons,
+      el("p", { className: "muted small contact-text" }, [s.phone, email, s.address].filter(Boolean).join(" · ")));
   }
 
   // The teal "feeder zone" banner. Any distance is worked out on this device only.
@@ -471,6 +502,9 @@
         guide = check.tooClose ? "Rough guide: two public " + level + "s are about the same distance from you. Ask the school."
           : check.isNearest ? "Rough guide: looks like your nearest public " + level + "."
           : "Rough guide: another public " + level + " looks closer to you: " + check.nearest.name + ".";
+      } else if (L.nearestPublicCheck(schools, s, { lat: s.lat, lng: s.lng }) === null) {
+        // Not enough nearby public schools with locations in the app to compare, so don't offer a button that can't answer.
+        if (s.type === "Public") guide = "We can't check yet whether this is your nearest public school: not enough nearby public schools with locations are in the app.";
       } else if (!state.near && s.type === "Public" && typeof s.lat === "number") {
         btn = locateButton("Is this my nearest school?");
       }
@@ -517,27 +551,28 @@
       return items && items.length ? el("ul", { className: "bullets" }, items.map(function (t) { return el("li", {}, t); })) : null;
     }
     function sub(title, body) { return body ? [el("h3", { className: "sub-title" }, title), body] : null; }
+    var applyLink = a.applyUrl || a.source; // often the same page, so show it once
+
+    var howItWorks = pub ? [
+      sub("When to apply (all " + (pr.name || "public") + " public schools)", pub.windowText && el("p", { className: "small" }, pub.windowText)),
+      sub("How far can you live?", bullets(pub.howFarDetails)),
+      sub("Documents you'll need", bullets(pub.documents)),
+      sub("Age rules", bullets(pub.ageRules)),
+      sub("Your rights", bullets(pub.yourRights)),
+      sub("If you're refused", bullets(pub.ifRefused)),
+      pub.warning && el("div", { className: "extras-line" }, icon("alert"), pub.warning),
+      el("p", { className: "source" }, (pr.name || "Province") + " rules checked " + (pr.checked || "date unknown") + ". ",
+        pub.windowSource ? link(pub.windowSource, "Source") : null)
+    ] : priv ? bullets(priv.usualSteps) : null;
 
     return panel("Admissions & feeder zone",
-      sub("At this school", bullets(a.rules)),
+      bullets((a.rules || []).slice(0, 3)),
       el("ul", { className: "rows" },
         a.applyBy ? row("Apply by", dateWithStatus(a.applyBy))
           : pub && pub.closes ? row((pr.name || "Province") + " closing date", dateWithStatus(pub.closes))
-          : row("Apply by", unknown()),
-        a.applyUrl ? row("How to apply", link(a.applyUrl)) : null,
-        a.source ? row("Source", link(a.source)) : null),
-      pub ? [
-        sub("When to apply (all " + (pr.name || "public") + " public schools)", pub.windowText && el("p", { className: "small" }, pub.windowText)),
-        sub("How far can you live?", bullets(pub.howFarDetails)),
-        sub("Documents you'll need", bullets(pub.documents)),
-        sub("Age rules", bullets(pub.ageRules)),
-        sub("Your rights", bullets(pub.yourRights)),
-        sub("If you're refused", bullets(pub.ifRefused)),
-        pub.warning && el("div", { className: "extras-line" }, icon("alert"), pub.warning),
-        el("p", { className: "source" }, (pr.name || "Province") + " rules checked " + (pr.checked || "date unknown") + ". ",
-          pub.windowSource ? link(pub.windowSource, "Source") : null)
-      ] : null,
-      priv ? sub("How private school admission usually works", bullets(priv.usualSteps)) : null);
+          : row("Apply by", unknown())),
+      L.safeUrl(applyLink) ? el("a", { className: "btn apply-btn", href: L.safeUrl(applyLink), target: "_blank", rel: "noopener noreferrer" }, "Apply on school website") : null,
+      howItWorks ? el("details", { className: "how-it-works" }, el("summary", {}, "How it works"), howItWorks) : null);
   }
 
   function outingsPanel(s) {
@@ -550,6 +585,20 @@
           el("span", { className: "name" }, o.name, el("span", { className: "note" }, [o.grades, o.when, o.note].filter(Boolean).join(" · "))),
           el("span", { className: "amt" + (L.isNum(o.cost) ? "" : " unknown") }, L.isNum(o.cost) ? L.formatRand(o.cost) : L.UNKNOWN));
       })));
+  }
+
+  // Grade chips on the costs screen, when fees differ by grade. "Entry grade" is the default.
+  function gradeChips(s, grade, redraw) {
+    var byGrade = (s.fees || {}).byGrade || [];
+    if (!byGrade.length) return null;
+    var row = el("div", { className: "chips grade-chips", role: "group", aria: { label: "Fees for grade" } });
+    [{ grade: "" }].concat(byGrade).forEach(function (g) {
+      var c = el("button", { type: "button", className: "chip" }, g.grade || "Entry grade");
+      c.setAttribute("aria-pressed", (g.grade || "") === (grade || ""));
+      c.addEventListener("click", function () { state.grade[s.id] = g.grade; redraw(); });
+      row.appendChild(c);
+    });
+    return row;
   }
 
   // ---------- True cost breakdown ----------
@@ -605,6 +654,7 @@
       el("h1", { className: "screen-title" }, "True cost breakdown"),
       el("p", { className: "muted small" }, s.name + (grade ? " · " + grade : "")),
       toggle,
+      gradeChips(s, grade, function () { renderCosts(id); }),
       el("div", { className: "big-money" }, money(per(L.trueYearlyCost(s, grade)))),
       monthNote ? el("p", { className: "muted small" }, monthNote) : null,
       f.unofficial ? el("div", { className: "extras-line" }, icon("alert"), f.sourceNote || "These fees are not from the school itself. Confirm them with the school.") : null,
@@ -761,7 +811,7 @@
   }
 
   function optionalText(o) {
-    if (!o) return unknown();
+    if (!o || o.available === null || o.available === undefined) return unknown();
     if (!o.available) return "Not offered";
     return L.isNum(o.monthly) ? L.formatRand(o.monthly) + "/mo" : unknown("Offered, price not published");
   }
@@ -850,11 +900,18 @@
 
   // Areas whose schools sit within about radiusKm of a point (using each area's map bounds).
   function areasNear(point, radiusKm) {
-    var pad = radiusKm / 111; // roughly 111 km per degree
+    var pad = radiusKm / 111; // roughly 111 km per degree of latitude
+    var padLng = pad / Math.max(Math.cos(point.lat * Math.PI / 180), 0.2); // longitude degrees shrink away from the equator
     return index.areas.filter(function (a) {
       var b = a.bounds;
-      return b && point.lat >= b[0] - pad && point.lat <= b[2] + pad && point.lng >= b[1] - pad && point.lng <= b[3] + pad;
+      return b && point.lat >= b[0] - pad && point.lat <= b[2] + pad && point.lng >= b[1] - padLng && point.lng <= b[3] + padLng;
     });
+  }
+
+  // Every area, once (for searching by school name). Fine while there are a few areas; with many, index.json
+  // should carry school names instead.
+  function loadAllAreas() {
+    return Promise.all(index.areas.map(function (a) { return loadArea(a).catch(function () { return null; }); }));
   }
 
   // Load whichever areas hold these school ids (for Saved, Compare and shared links).

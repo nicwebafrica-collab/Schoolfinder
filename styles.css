@@ -205,3 +205,22 @@ main.has-sticky { padding-bottom: 180px; }
 .distance { flex: none; font-size: 13px; font-weight: 700; color: var(--primary-ink); background: var(--primary-soft); border-radius: var(--radius-pill); padding: 2px 8px; }
 .card-unknown { margin: 10px 0 0; }
 .extras-line.one-line span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+
+/* School detail (Designer clean-up v1, items 4 and 5) */
+.bottom-nav[hidden] { display: none; }
+.sticky-actions.no-nav { bottom: 0; padding-bottom: max(10px, env(safe-area-inset-bottom)); }
+main.has-sticky { padding-bottom: 110px; }
+.one-line { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.extras-link { text-decoration: none; }
+.extras-link span { min-width: 0; }
+.contact-buttons { display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 8px; }
+.contact-buttons .btn { min-height: 48px; padding: 0 8px; }
+.contact-text { margin: 10px 0 0; overflow-wrap: anywhere; }
+.apply-btn { width: 100%; margin-top: 10px; }
+.how-it-works { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 8px; }
+.how-it-works summary { min-height: 44px; display: flex; align-items: center; font-weight: 700; cursor: pointer; color: var(--primary); }
+.missing-line { margin: 4px 0 8px; }
+.grade-chips { margin: 4px 0 12px; }
+.panel { padding: 16px; }
+.panel h2 { font-size: 15px; font-weight: 700; }
+.grade-picker select, .compare-pick select { min-height: 44px; }
