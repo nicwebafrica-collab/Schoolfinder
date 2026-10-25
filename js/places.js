@@ -85,11 +85,16 @@
     });
   }
 
-  // Is the whole search one place we know? "waterfall", "Botha's Hill", "jhb", "Hillcrest, KZN" → that place.
-  // Returns null when the name is in two provinces and the parent didn't say which, so the app can ask.
+  // Is the whole search a place we know? "waterfall", "Botha's Hill", "jhb", "Hillcrest, KZN" → that place.
+  // When a name is in two provinces and the parent didn't say which, the first listed (the area we cover best) wins,
+  // and the app offers the other one ("Looking for Waterfall, Midrand, Gauteng?").
   function findPlace(query) {
-    var found = findPlaces(query);
-    return found.length === 1 ? found[0] : null;
+    return findPlaces(query)[0] || null;
+  }
+
+  // Other places with the same name in another province.
+  function namesakes(place) {
+    return place ? PLACES.filter(function (p) { return p !== place && p.name === place.name; }) : [];
   }
 
   // "Waterfall, KZN" style label, used wherever a place is shown so same-name places can't be mixed up.
@@ -117,7 +122,8 @@
   function schoolsNear(schools, point, radiusKm, placeName) {
     var near = [], unknown = [];
     var names = placeName ? [placeName] : PLACES.filter(function (p) {
-      return L.distanceKm(point.lat, point.lng, p.lat, p.lng) <= Math.max(radiusKm, 5);
+      // +3 km because place centres are rough: a school "in Forest Hills" can sit nearer than the suburb's middle.
+      return L.distanceKm(point.lat, point.lng, p.lat, p.lng) <= Math.max(radiusKm, 5) + 3;
     }).map(function (p) { return p.name; });
     schools.forEach(function (s) {
       if (typeof s.lat === "number" && typeof s.lng === "number") {
@@ -157,6 +163,7 @@
   L.editDistance = editDistance;
   L.findPlace = findPlace;
   L.findPlaces = findPlaces;
+  L.namesakes = namesakes;
   L.placeLabel = placeLabel;
   L.splitQuery = splitQuery;
   L.suggestPlace = suggest;

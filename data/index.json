@@ -32,7 +32,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 9,
+      "schoolCount": 21,
       "ids": [
         "waterfall-preparatory",
         "waterfall-college",
@@ -42,13 +42,25 @@
         "hillcrest-primary-school",
         "forest-view-primary",
         "highbury-preparatory",
-        "kearsney-college"
+        "kearsney-college",
+        "kloof-high-school",
+        "kloof-senior-primary",
+        "kloof-junior-primary",
+        "kloof-pre-primary",
+        "winston-park-primary",
+        "thomas-more-college",
+        "st-marys-dsg-kloof",
+        "roseway-waldorf",
+        "hlahlindlela-high",
+        "umngeni-primary",
+        "gwadu-zenex-primary",
+        "mathebethu-primary"
       ],
       "bounds": [
-        -29.7774,
-        30.7525,
-        -29.7442,
-        30.7953
+        -29.7987,
+        30.7341,
+        -29.7135,
+        30.8516
       ]
     }
   ]

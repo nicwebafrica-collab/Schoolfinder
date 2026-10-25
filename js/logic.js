@@ -347,6 +347,8 @@
       // Official government school number (EMIS in South Africa) and country code, used to match data from other sources.
       emis: str(s.emis), country: str(s.country) || "ZA",
       aliases: list(s.aliases, str),
+      // No-fee public schools (quintiles 1-3) charge R0 by law, so a 0 fee there is real, not missing.
+      quintile: num(s.quintile), noFee: s.noFee === true,
       fees: {
         year: num(f.year), yearly: fee(f.yearly, "yearly fee"), monthly: fee(f.monthly, "monthly fee"),
         registration: fee(f.registration, "registration"), deposit: fee(f.deposit, "deposit"), notes: str(f.notes),

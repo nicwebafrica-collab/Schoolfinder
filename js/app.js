@@ -216,10 +216,9 @@
     input.addEventListener("input", typed);
     input.addEventListener("keydown", function (e) {
       if (e.key !== "Enter") return;
-      var all = L.findPlaces(input.value);
-      var p = all.length === 1 ? all[0] : all.length ? null : L.matchPlaces(input.value, 1)[0];
+      var p = L.findPlace(input.value) || L.matchPlaces(input.value, 1)[0];
       if (p) { choosePlace(p); return; }
-      typed(); // two places with this name, or a school name: show the choices
+      typed(); // a school name or unknown place: show the choices
     });
 
     var parts = [el("h1", { className: "page-title" }, "Find a school"), searchBox, suggestions];
@@ -327,6 +326,12 @@
       container.appendChild(el("p", { className: "count" }, found.near.length
         ? found.near.length + (found.near.length === 1 ? " school" : " schools") + " within " + state.radius + " km of " + where
         : "No schools within " + state.radius + " km of " + where));
+      // Same name in another province (Waterfall, KZN vs Waterfall, Midrand): offer the other one (B29).
+      if (state.place) L.namesakes(state.place).forEach(function (p) {
+        var other = el("button", { type: "button", className: "chip" }, "Looking for " + L.placeLabel(p) + "?");
+        other.addEventListener("click", function () { setPlace(p); renderSearch(); });
+        container.appendChild(other);
+      });
       if (found.near.length) container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
       if (!found.near.length && !wider && nearestKm != null) {
         container.appendChild(el("p", { className: "muted small" }, "The nearest school in the app is about " + Math.round(nearestKm) + " km away."));
@@ -481,7 +486,7 @@
     var zone = a.feederZone || {};
     var pub = (s.provinceRules || {}).publicRules;
     var priv = (s.provinceRules || {}).privateRules;
-    var lines = [], title, guide = null, btn = null;
+    var lines = [], title, guide = null, btn = null, cantCheck = null;
     var privacyNote = "Your location is rounded to about 1 km, used only on this phone, and never saved.";
 
     function locateButton(label) {
@@ -504,7 +509,7 @@
           : "Rough guide: another public " + level + " looks closer to you: " + check.nearest.name + ".";
       } else if (L.nearestPublicCheck(schools, s, { lat: s.lat, lng: s.lng }) === null) {
         // Not enough nearby public schools with locations in the app to compare, so don't offer a button that can't answer.
-        if (s.type === "Public") guide = "We can't check yet whether this is your nearest public school: not enough nearby public schools with locations are in the app.";
+        if (s.type === "Public") cantCheck = "We can't check yet whether this is your nearest public school: not enough nearby public schools with locations are in the app.";
       } else if (!state.near && s.type === "Public" && typeof s.lat === "number") {
         btn = locateButton("Is this my nearest school?");
       }
@@ -531,6 +536,7 @@
       el("div", { className: "zone-title" }, icon("pin"), title),
       lines.filter(Boolean).map(function (t) { return el("p", { className: "zone-line" }, t); }),
       guide && el("p", { className: "zone-guide" }, guide),
+      cantCheck && el("p", { className: "zone-line" }, cantCheck),
       guide && el("p", { className: "zone-line" }, "Straight-line distance among the schools in this app only, not gate to gate."),
       btn, btn && el("p", { className: "zone-line" }, privacyNote));
   }

@@ -1098,5 +1098,940 @@
     "sample": false,
     "country": "ZA",
     "emis": "500172494"
+  },
+  {
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Kloof",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "34 Emolweni Road, Kloof",
+    "lat": -29.7832,
+    "lng": 30.8387,
+    "website": "https://kloofhigh.co.za/",
+    "phone": "031 764 0451",
+    "email": "reception@kloofhigh.co.za",
+    "language": "English",
+    "emis": "500176564",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform, camps, tours, books",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [
+      "Soccer",
+      "Rugby",
+      "Hockey",
+      "Tennis",
+      "Water polo",
+      "Cricket",
+      "Netball",
+      "Swimming",
+      "Squash",
+      "Chess",
+      "Cross country",
+      "Athletics",
+      "Softball"
+    ],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://kloofhigh.co.za/admissions/",
+      "https://kloofhigh.co.za/contact/",
+      "https://schoolhive.co.za/listing/kloof-high-school-kloof-admissions-contact-details/",
+      "https://en.wikipedia.org/wiki/Kloof_High_School"
+    ],
+    "id": "kloof-high-school",
+    "name": "Kloof High School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fee amounts are not published online. Fees are payable annually in advance; the first instalment secures a place. Fee exemptions available."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 4-7",
+    "area": "Kloof",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "1 Patrick Duncan Road, Kloof",
+    "lat": -29.7841,
+    "lng": 30.8383,
+    "website": "https://www.kloofsps.co.za/",
+    "phone": "031 764 0211",
+    "email": "reception@kloofsp.co.za",
+    "language": "English",
+    "emis": "500176675",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Learner support unit assessment",
+        "amount": null,
+        "frequency": "once",
+        "note": "Psychological assessment needed to apply for the support unit",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Camps, outings, tours, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://www.kloofsps.co.za/wp-content/uploads/2026/03/260225-KSP-Website-PDF-update.pdf",
+      "https://www.kloofsps.co.za/contact/",
+      "https://schoolhive.co.za/listing/kloof-senior-primary-school-kloof-admissions-contact-details/"
+    ],
+    "id": "kloof-senior-primary",
+    "name": "Kloof Senior Primary School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": 3000,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fee amount not published online (set at the annual budget meeting). Payable annually in advance or monthly by debit order. Fee exemptions available. One term's notice to leave."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-3",
+    "area": "Kloof",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "30 Abelia Road, Kloof",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.kloofjp.org.za/",
+    "phone": "031 764 3157",
+    "email": "kadmin@kloofjp.co.za",
+    "language": null,
+    "emis": null,
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform, outings, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://www.kloofjp.org.za/school-fees/",
+      "https://www.kloofjp.org.za/contact/"
+    ],
+    "id": "kloof-junior-primary",
+    "name": "Kloof Junior Primary School",
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school. Fees are only in a fee commitment PDF on the school site that could not be opened."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Pre-school to Gr R",
+    "area": "Kloof",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "website": "https://kloofpp.org.za/",
+    "phone": null,
+    "email": "bursar@kloofpp.org.za",
+    "language": null,
+    "emis": null,
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Fundraising levy",
+        "amount": 860,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Personal accident insurance",
+        "amount": 240,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Stationery levy",
+        "amount": 1300,
+        "frequency": "yearly",
+        "note": "Gr R; R1,000 for younger classes",
+        "applies": "everyone",
+        "included": false,
+        "priceFor": "Gr R"
+      },
+      {
+        "item": "Holiday club (annual)",
+        "amount": 2700,
+        "frequency": "yearly",
+        "note": "To 12:30; R4,000 to 17:00",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Daily holiday club",
+        "amount": 160,
+        "frequency": "once",
+        "note": "Full day; R100 to 12:30",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Late collection",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Per half hour; R200 per half hour after 17:00",
+        "applies": "penalty",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1800
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://kloofpp.org.za/wp-content/uploads/2025/10/SCHOOL-FEES-2026.pdf"
+    ],
+    "id": "kloof-pre-primary",
+    "name": "Kloof Pre-Primary School",
+    "fees": {
+      "year": 2026,
+      "yearly": 44000,
+      "monthly": 4400,
+      "registration": 200,
+      "deposit": 2000,
+      "instalments": 10,
+      "notes": "Mornings only. 2% off if paid in full by 28 Feb. Sibling 5% off from the 2nd child. One term's notice to leave.",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 44000,
+          "monthly": 4400
+        }
+      ]
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Winston Park",
+    "city": "Gillitts",
+    "province": "KwaZulu-Natal",
+    "postcode": "3603",
+    "address": "Jan Smuts Avenue, Gillitts",
+    "lat": null,
+    "lng": null,
+    "website": "https://wppschool.co.za/",
+    "phone": "031 767 3214",
+    "email": "admin@wppschool.co.za",
+    "language": null,
+    "emis": "500296592",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform, outings, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://wppschool.co.za/",
+      "https://schoolhive.co.za/listing/winston-park-primary-school-admissions-contact-details/",
+      "https://hhs.co.za/apply"
+    ],
+    "id": "winston-park-primary",
+    "name": "Winston Park Primary School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fees not published online. Listed by Hillcrest High as a feeder primary."
+    }
+  },
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Kloof",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "15 Sykes Road, Kloof",
+    "lat": -29.7882,
+    "lng": 30.8516,
+    "website": "https://www.thomasmore.co.za/",
+    "phone": "031 764 8640",
+    "email": "info@thomasmore.co.za",
+    "language": "English",
+    "emis": "500282976",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Grade tours and trips",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Included in fees",
+        "applies": "everyone",
+        "included": true
+      },
+      {
+        "item": "IEB matric exam fee",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "7 subjects",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Uniform, aftercare, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://www.thomasmore.co.za/admissions-fees/",
+      "https://www.thomasmore.co.za/wp-content/uploads/2026/10/2027-charges-table-Grade-1-12.pdf",
+      "https://lekkeslaap.co.za/attractions/thomas-more-college",
+      "https://schoolhive.co.za/listing/thomas-more-college-kloof-admissions-contact-details/"
+    ],
+    "id": "thomas-more-college",
+    "name": "Thomas More College",
+    "fees": {
+      "year": 2027,
+      "yearly": 97080,
+      "monthly": 9708,
+      "registration": 500,
+      "deposit": 18000,
+      "instalments": 10,
+      "notes": "2027 fees, Grade 1 shown. Paid yearly, termly, or monthly over 10 months (Jan-Oct). 5% off if paid by 4 Dec 2026, 4% by 15 Jan 2027. Fees INCLUDE textbooks, grade tours and trips, insurance, sport coaching, workbooks and exams. Facilities levy R18,000 for new pupils (R7,000 upfront to secure the place, R11,000 on terms).",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": 50400,
+          "monthly": 5040
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": 62840,
+          "monthly": 6284
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 72280,
+          "monthly": 7228
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": 83200,
+          "monthly": 8320
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 97080,
+          "monthly": 9708
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 105680,
+          "monthly": 10568
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 114160,
+          "monthly": 11416
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 123440,
+          "monthly": 12344
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 129920,
+          "monthly": 12992
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 134360,
+          "monthly": 13436
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 139360,
+          "monthly": 13936
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 144440,
+          "monthly": 14444
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 150640,
+          "monthly": 15064
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 161000,
+          "monthly": 16100
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 166320,
+          "monthly": 16632
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 162280,
+          "monthly": 16228
+        }
+      ]
+    }
+  },
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12 (girls)",
+    "area": "Kloof",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "30 St Marys Road, Kloof",
+    "lat": -29.7987,
+    "lng": 30.8446,
+    "website": "https://stmarysdsg.co.za/",
+    "phone": "031 764 9800",
+    "email": "marketing@stmarysdsg.co.za",
+    "language": "English",
+    "emis": null,
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Compulsory variable billings",
+        "amount": 1620,
+        "frequency": "yearly",
+        "note": "Gr R. Rises with grade: Gr 4 R8,950, Gr 9 R18,960, Gr 12 R12,380",
+        "applies": "everyone",
+        "included": false,
+        "priceFor": "Gr R"
+      },
+      {
+        "item": "Boarding (instead of day fee)",
+        "amount": 319400,
+        "frequency": "yearly",
+        "note": "Gr 8-9 boarding incl. tuition; Gr 11-12 R324,480",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Old Girls' levy",
+        "amount": 200,
+        "frequency": "per term",
+        "note": "Gr 8-12",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Bus (Hillcrest or Westville route)",
+        "amount": 1615,
+        "frequency": "per term",
+        "note": "Durban North R2,325, North Coast R2,800",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Acceptance payment",
+        "amount": 21395,
+        "frequency": "once",
+        "note": "Fee PDF lists R21,395 payable on acceptance; label unclear, confirm with school",
+        "applies": "some",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://stmarysdsg.co.za/wp-content/uploads/2025/10/2026-Fees-Page.pdf",
+      "https://stmarysdsg.co.za/fees-admissions/",
+      "https://stmarysdsg.co.za/",
+      "https://en.wikipedia.org/wiki/St._Mary%27s_Diocesan_School_for_Girls,_Kloof"
+    ],
+    "id": "st-marys-dsg-kloof",
+    "name": "St Mary's Diocesan School for Girls",
+    "fees": {
+      "year": 2026,
+      "yearly": 82380,
+      "monthly": null,
+      "registration": 800,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Girls' school, boarding Gr 8-12. 2026 day fees, Grade R shown (Gr 11-12 R180,420). Discount if paid in full by 31 Jan. Compulsory 'variable billings' come on top (see extras). Boarding Gr 8-12 about R319,400-R324,480 incl. tuition. 2027 fees on the website are higher (e.g. Gr R R87,340).",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 82380,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 109140,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 110160,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 121380,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 144400,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 144400,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 144400,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 158000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 175340,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 175340,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 178660,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 180420,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 180420,
+          "monthly": null
+        }
+      ]
+    }
+  },
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school to Gr 12",
+    "area": "Alverstone",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3650",
+    "address": "D435, Alverstone, Hillcrest",
+    "lat": -29.778,
+    "lng": 30.7341,
+    "website": "https://rosewaywaldorf.school.za/",
+    "phone": "031 768 1309",
+    "email": "secretary@rosewaywaldorf.co.za",
+    "language": "English",
+    "emis": "500223258",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roseway_Waldorf_School",
+      "https://schoolhive.co.za/listing/rosewaywaldorf-school-hillcrest-admissions-contact-details/"
+    ],
+    "id": "roseway-waldorf",
+    "name": "Roseway Waldorf School",
+    "fees": {
+      "year": null,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Waldorf school. Fees not published online."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "KwaNgcolosi",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3650",
+    "address": "Bhekisisa Road, KwaNgcolosi, Waterfall, Hillcrest",
+    "lat": -29.7135,
+    "lng": 30.8192,
+    "website": null,
+    "phone": "031 766 0263",
+    "email": "hlahlindlelahighschool@gmail.com",
+    "language": null,
+    "emis": "500155992",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform and stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://schoolhive.co.za/listing/hlahlindlela-high-school-pinetown-admissions-contact-details/",
+      "https://en.everybodywiki.com/Hlahlindlela_High_School"
+    ],
+    "id": "hlahlindlela-high",
+    "name": "Hlahlindlela High School",
+    "quintile": 3,
+    "noFee": true,
+    "fees": {
+      "year": 2026,
+      "yearly": 0,
+      "monthly": 0,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "No-fee public school (quintile 3): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "KwaNgcolosi",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3650",
+    "address": "Ngcolosi Location, KwaHqotho",
+    "lat": null,
+    "lng": null,
+    "website": null,
+    "phone": "067 296 1807",
+    "email": "umngeniprimarys@gmail.com",
+    "language": null,
+    "emis": "500288489",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform and stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://schoolhive.co.za/listing/umngeni-primary-school-hillcrest-admissions-contact-details/"
+    ],
+    "id": "umngeni-primary",
+    "name": "Umngeni Primary School",
+    "quintile": 3,
+    "noFee": true,
+    "fees": {
+      "year": 2026,
+      "yearly": 0,
+      "monthly": 0,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "No-fee public school (quintile 3): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Embo",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3650",
+    "address": "Embo, Hillcrest",
+    "lat": null,
+    "lng": null,
+    "website": null,
+    "phone": "031 761 2006",
+    "email": "gwaduzenexprimary@gmail.com",
+    "language": null,
+    "emis": "500152699",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform and stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://schoolhive.co.za/listing/gwadu-zenex-primary-school-hillcrest-admissions-contact-details/"
+    ],
+    "id": "gwadu-zenex-primary",
+    "name": "Gwadu-Zenex Primary School",
+    "quintile": 2,
+    "noFee": true,
+    "fees": {
+      "year": 2026,
+      "yearly": 0,
+      "monthly": 0,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "No-fee public school (quintile 2): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "KwaNyuswa",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3650",
+    "address": "Nyuswa Reserve, KwaNyuswa, Hillcrest",
+    "lat": null,
+    "lng": null,
+    "website": null,
+    "phone": "071 285 2974",
+    "email": "mathebethuprimary@gmail.com",
+    "language": null,
+    "emis": "500201613",
+    "country": "ZA",
+    "sample": false,
+    "hiddenCosts": [
+      {
+        "item": "Uniform and stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://schoolhive.co.za/listing/mathebethu-primary-school-hillcrest-admissions-contact-details/"
+    ],
+    "id": "mathebethu-primary",
+    "name": "Mathebethu Primary School",
+    "quintile": 2,
+    "noFee": true,
+    "fees": {
+      "year": 2026,
+      "yearly": 0,
+      "monthly": 0,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "No-fee public school (quintile 2): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
+    }
   }
 ]
