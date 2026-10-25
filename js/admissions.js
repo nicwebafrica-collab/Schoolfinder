@@ -33,7 +33,8 @@
     if (!d) return null;
     var pub = obj(d.publicRules) || {}, win = obj(pub.applicationWindow) || {}, far = obj(pub.howFarCanYouLive) || {};
     var priv = obj(d.privateRules) || {};
-    var schools = {};
+    // No prototype, so a school id like "__proto__" or "constructor" can't pick up built-in object properties.
+    var schools = Object.create(null);
     Object.keys(obj(d.schools) || {}).forEach(function (id) {
       var a = cleanSchoolAdmissions(d.schools[id]);
       if (a) schools[id] = a;
