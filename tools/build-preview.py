@@ -18,10 +18,13 @@ if m:
         "@media (prefers-color-scheme: dark) { :root:not([data-theme=\"light\"]) {" + dark + " color-scheme: dark; } }\n"
         ":root[data-theme=\"dark\"] {" + dark + " color-scheme: dark; }")
 
-data = json.loads((root / "data/schools.json").read_text())
-adm_path = root / "data/admissions-kzn.json"
-adm = json.loads(adm_path.read_text()) if adm_path.exists() else None
-data_js = ("window.SCHOOL_DATA = " + json.dumps(data) + ";\nwindow.ADMISSIONS_DATA = " + json.dumps(adm) + ";").replace("</", "<\\/")
+# Every data file is embedded, keyed by its path under data/, so the preview needs no downloads.
+embedded = {}
+for f in sorted((root / "data").rglob("*.json")):
+    rel = f.relative_to(root / "data").as_posix()
+    if not rel.endswith(".old.json"):
+        embedded[rel] = json.loads(f.read_text())
+data_js = ("window.EMBEDDED_DATA = " + json.dumps(embedded) + ";").replace("</", "<\\/")
 
 html = f"""<title>School Finder</title>
 <style>

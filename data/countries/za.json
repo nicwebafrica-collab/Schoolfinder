@@ -1,0 +1,26 @@
+{
+  "country": "ZA",
+  "name": "South Africa",
+  "currency": "ZAR",
+  "symbol": "R",
+  "locale": "en-ZA",
+  "termsPerYear": 4,
+  "budgetFilter": 3000,
+  "grades": [
+    "Gr 000",
+    "Gr 00",
+    "Gr R",
+    "Gr 1",
+    "Gr 2",
+    "Gr 3",
+    "Gr 4",
+    "Gr 5",
+    "Gr 6",
+    "Gr 7",
+    "Gr 8",
+    "Gr 9",
+    "Gr 10",
+    "Gr 11",
+    "Gr 12"
+  ]
+}

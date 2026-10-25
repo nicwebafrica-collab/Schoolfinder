@@ -37,7 +37,7 @@
     { name: "Parktown", region: "Gauteng", lat: -26.1800, lng: 28.0350 }
   ];
 
-  var RADII = [5, 10, 20]; // km choices offered on the search screen
+  var RADII = [2, 5, 10, 20]; // km choices offered on the search screen
 
   // How many single-letter edits turn a into b (Levenshtein distance). Used for spelling suggestions.
   function editDistance(a, b) {
@@ -96,7 +96,26 @@
     return { near: near, unknownLocation: unknown };
   }
 
+  // Places whose name starts with (or contains) what the parent has typed so far, for the suggestion list.
+  function matchPlaces(text, limit) {
+    var q = key(text);
+    if (!q) return [];
+    var starts = [], contains = [];
+    PLACES.forEach(function (p) {
+      var names = [p.name].concat(p.aliases || []).map(key);
+      if (names.some(function (n) { return n.indexOf(q) === 0; })) starts.push(p);
+      else if (names.some(function (n) { return n.indexOf(q) !== -1; })) contains.push(p);
+    });
+    return starts.concat(contains).slice(0, limit || 6);
+  }
+
+  function placeByName(name) {
+    return PLACES.filter(function (p) { return p.name === name; })[0] || null;
+  }
+
   L.PLACES = PLACES;
+  L.matchPlaces = matchPlaces;
+  L.placeByName = placeByName;
   L.RADII = RADII;
   L.editDistance = editDistance;
   L.findPlace = findPlace;

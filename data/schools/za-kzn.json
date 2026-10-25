@@ -147,7 +147,9 @@
       "https://www.waterfallcollege.co.za/",
       "https://www.waterfallcollege.co.za/get-in-touch"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": null
   },
   {
     "id": "waterfall-college",
@@ -288,9 +290,12 @@
     "lastChecked": "2026-10-25",
     "sources": [
       "https://www.waterfallcollege.co.za/wp-content/uploads/2026/10/WFS-Fees-2027-FINAL.pdf",
-      "https://www.waterfallcollege.co.za/get-in-touch"
+      "https://www.waterfallcollege.co.za/get-in-touch",
+      "https://schoolhive.co.za/listing/waterfall-college-hillcrest-admissions-contact-details/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": "500407777"
   },
   {
     "id": "curro-hillcrest-primary",
@@ -429,9 +434,12 @@
     },
     "lastChecked": "2026-10-25",
     "sources": [
-      "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf"
+      "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf",
+      "https://schoolhive.co.za/listing/curro-hillcrest-christian-academy-hillcrest-admissions-contact-details/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": "500155363"
   },
   {
     "id": "curro-hillcrest-high",
@@ -590,7 +598,9 @@
       "https://www.curro.co.za/media/g5bi2ca1/curro-hillcrest-2026-high-school-fee-letter-finalv4-for-web.pdf",
       "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": null
   },
   {
     "id": "hillcrest-high-school",
@@ -709,9 +719,12 @@
       "https://hhs.co.za/fees",
       "https://hhs.co.za/apply",
       "https://lekkeslaap.co.za/attractions/hillcrest-high-school",
-      "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/"
+      "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/",
+      "https://schoolhive.co.za/listing/hillcrest-high-school-hillcrest-admissions-contact-details/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": "500155400"
   },
   {
     "id": "hillcrest-primary-school",
@@ -791,7 +804,9 @@
       "https://schoolhive.co.za/listing/hillcrest-primary-school-hillcrest-admissions-contact-details/",
       "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": "500155474"
   },
   {
     "id": "forest-view-primary",
@@ -845,7 +860,9 @@
       "https://www.forestview.co.za/",
       "https://www.citizen.co.za/highway-mail/forest-view-primary-school/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": null
   },
   {
     "id": "highbury-preparatory",
@@ -983,9 +1000,12 @@
     "lastChecked": "2026-10-25",
     "sources": [
       "https://hps.co.za/apply/",
-      "https://hps.co.za/contact/"
+      "https://hps.co.za/contact/",
+      "https://schoolhive.co.za/listing/highbury-preparatory-school-hillcrest-admissions-contact-details/"
     ],
-    "sample": false
+    "sample": false,
+    "country": "ZA",
+    "emis": "500154993"
   },
   {
     "id": "kearsney-college",
@@ -1072,608 +1092,11 @@
     "sources": [
       "https://businesstech.co.za/news/lifestyle/846455/most-expensive-private-schools-in-south-africa-in-2026-with-four-now-over-r400000-a-year/",
       "https://en.wikipedia.org/wiki/Kearsney_College",
-      "https://lekkeslaap.co.za/attractions/kearsney-college"
+      "https://lekkeslaap.co.za/attractions/kearsney-college",
+      "https://schoolhive.co.za/listing/kearsney-college-bothas-hill-admissions-contact-details/"
     ],
-    "sample": false
-  },
-  {
-    "id": "curro-pretoria-primary",
-    "name": "Curro Pretoria (Primary)",
-    "type": "Private",
-    "phase": "Primary",
-    "grades": "Gr R-7",
-    "area": "East Lynne",
-    "city": "Pretoria",
-    "province": "Gauteng",
-    "address": "146 Baviaanspoort Road, East Lynne, Pretoria, 0186",
-    "lat": -25.7007,
-    "lng": 28.2822,
-    "website": "https://www.curro.co.za/",
-    "phone": "087 287 9492",
-    "email": "info.pretoria@curro.co.za",
-    "language": "English",
-    "fees": {
-      "year": 2026,
-      "yearly": 39480,
-      "monthly": 3290,
-      "registration": 1155,
-      "deposit": null,
-      "notes": "Amounts shown are for Grade R (cheapest grade); fees rise to R49,920/yr (R4,160/mo) in Gr 6-7. Paid over 12 months. 5% off if 12 months paid upfront, 2.5% off for 6 months upfront, up to 10% sibling discount from 3rd child. Textbooks included. Enrolment fee R1,155 (layout unclear on fee letter, confirm).",
-      "byGrade": [
-        {
-          "grade": "Gr R",
-          "yearly": 39480,
-          "monthly": 3290
-        },
-        {
-          "grade": "Gr 1",
-          "yearly": 42960,
-          "monthly": 3580
-        },
-        {
-          "grade": "Gr 2",
-          "yearly": 46680,
-          "monthly": 3890
-        },
-        {
-          "grade": "Gr 3",
-          "yearly": 48480,
-          "monthly": 4040
-        },
-        {
-          "grade": "Gr 4",
-          "yearly": 48480,
-          "monthly": 4040
-        },
-        {
-          "grade": "Gr 5",
-          "yearly": 48480,
-          "monthly": 4040
-        },
-        {
-          "grade": "Gr 6",
-          "yearly": 49920,
-          "monthly": 4160
-        },
-        {
-          "grade": "Gr 7",
-          "yearly": 49920,
-          "monthly": 4160
-        }
-      ],
-      "instalments": 12
-    },
-    "hiddenCosts": [
-      {
-        "item": "PMSS levy (compulsory)",
-        "amount": 130,
-        "frequency": "monthly",
-        "note": "R1,560 per year, all grades",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Workbooks",
-        "amount": 740,
-        "frequency": "yearly",
-        "note": "Gr 1 R740, Gr 2 R600, Gr 3 R360",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 1"
-      },
-      {
-        "item": "Robotics workbook",
-        "amount": 160,
-        "frequency": "yearly",
-        "note": "Gr 1-3 R160, Gr 4-6 R185",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 1"
-      },
-      {
-        "item": "Stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Amount 'to be confirmed' on fee letter",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "School uniform",
-        "amount": null,
-        "frequency": "once",
-        "note": "Not included in fees, not priced",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Excursion and sports trip costs",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Entrance, travel, accommodation and food are extra",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "School photos",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Extra, not priced",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": true,
-      "monthly": 1480
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://www.curro.co.za/media/xvykfmtz/curro-pretoria-2026-primary-school-fee-letter-finalv1-for-web.pdf",
-      "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
-    ],
-    "postcode": "0186",
-    "admissions": null
-  },
-  {
-    "id": "curro-pretoria-high",
-    "name": "Curro Pretoria (High School)",
-    "type": "Private",
-    "phase": "High",
-    "grades": "Gr 8-12",
-    "area": "East Lynne",
-    "city": "Pretoria",
-    "province": "Gauteng",
-    "address": "146 Baviaanspoort Road, East Lynne, Pretoria, 0186",
-    "lat": -25.7007,
-    "lng": 28.2822,
-    "website": "https://curro.co.za/schools/curro-academy-pretoria-high-school/",
-    "phone": "087 287 9492",
-    "email": "info.pretoria@curro.co.za",
-    "language": "English",
-    "fees": {
-      "year": 2026,
-      "yearly": 54840,
-      "monthly": 4570,
-      "registration": 1155,
-      "deposit": null,
-      "notes": "Amounts shown are for Grade 8; rises to R61,920/yr (R5,160/mo) in Gr 11-12. Paid over 12 months. 5% off for 12 months upfront, 2.5% for 6 months upfront, up to 10% sibling discount from 3rd child. Textbooks NOT included.",
-      "byGrade": [
-        {
-          "grade": "Gr 8",
-          "yearly": 54840,
-          "monthly": 4570
-        },
-        {
-          "grade": "Gr 9",
-          "yearly": 55440,
-          "monthly": 4620
-        },
-        {
-          "grade": "Gr 10",
-          "yearly": 61200,
-          "monthly": 5100
-        },
-        {
-          "grade": "Gr 11",
-          "yearly": 61920,
-          "monthly": 5160
-        },
-        {
-          "grade": "Gr 12",
-          "yearly": 61920,
-          "monthly": 5160
-        }
-      ],
-      "instalments": 12
-    },
-    "hiddenCosts": [
-      {
-        "item": "E-learning textbook levy",
-        "amount": 120,
-        "frequency": "monthly",
-        "note": "R1,440/yr. Fee letter also says R105/mo elsewhere, confirm with school",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Compulsory workbooks",
-        "amount": 1570,
-        "frequency": "yearly",
-        "note": "Gr 8 total (Afrikaans, NS, SS, LO, EMS); Gr 10 with EGD can exceed R3,000; Sepedi R250 extra if taken",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 8"
-      },
-      {
-        "item": "E-learning device (plus insurance and maintenance)",
-        "amount": null,
-        "frequency": "once",
-        "note": "Required, not included, not priced",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Extra subject (Curro Choice)",
-        "amount": 840,
-        "frequency": "monthly",
-        "note": "Optional 8th-10th subject, R10,080/yr each",
-        "applies": "optional",
-        "included": false
-      },
-      {
-        "item": "Stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "'TBC' on fee letter",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "School uniform",
-        "amount": null,
-        "frequency": "once",
-        "note": "Not included, not priced",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Excursion and sports trip costs",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Entrance, travel, accommodation and food are extra",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": false,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://www.curro.co.za/media/ofjobk1g/curro-pretoria-2026-high-school-fee-letter-finalv1-for-web.pdf",
-      "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
-    ],
-    "postcode": "0186",
-    "admissions": null
-  },
-  {
-    "id": "fourways-high-school",
-    "name": "Fourways High School",
-    "type": "Public",
-    "phase": "High",
-    "grades": "Gr 8-12",
-    "area": "Fourways",
-    "city": "Johannesburg",
-    "province": "Gauteng",
-    "address": "Kingfisher Drive, Fourways, Johannesburg",
-    "lat": -26.0276,
-    "lng": 28.0058,
-    "website": "https://www.fourwayshigh.co.za/",
-    "phone": "+27 11 704 1104",
-    "email": "admissions@4ways.co.za",
-    "language": null,
-    "fees": {
-      "year": 2026,
-      "yearly": 62500,
-      "monthly": 5550,
-      "registration": null,
-      "deposit": null,
-      "notes": "Fee-paying public school. Grade 8 shown: R62,500/yr = R7,000 once-off + 10 instalments of R5,550 (Dec-Sep). Other grades R58,000-R62,000/yr over 10 instalments. 6% off if paid in full by 31 Dec of the prior year.",
-      "byGrade": [
-        {
-          "grade": "Gr 8",
-          "yearly": 62500,
-          "monthly": 5550
-        },
-        {
-          "grade": "Gr 9",
-          "yearly": 62000,
-          "monthly": 6200
-        },
-        {
-          "grade": "Gr 10",
-          "yearly": 59000,
-          "monthly": 5900
-        },
-        {
-          "grade": "Gr 11",
-          "yearly": 58500,
-          "monthly": 5850
-        },
-        {
-          "grade": "Gr 12",
-          "yearly": 58000,
-          "monthly": 5800
-        }
-      ],
-      "instalments": 10
-    },
-    "hiddenCosts": [
-      {
-        "item": "Grade 8 once-off payment",
-        "amount": 7000,
-        "frequency": "once",
-        "note": "Part of the Gr 8 annual total; school does not say what it covers",
-        "applies": "Gr 8",
-        "included": true
-      },
-      {
-        "item": "Uniform (Legends Locker shop)",
-        "amount": null,
-        "frequency": "once",
-        "note": "Not priced online",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Textbooks, workbooks and stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Lists in school Resources section, not priced",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": false,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [
-      "Athletics",
-      "Cheerleading",
-      "Cricket",
-      "Cross country",
-      "Hockey",
-      "Netball",
-      "Orienteering",
-      "Rugby",
-      "Soccer",
-      "Swimming",
-      "Tennis",
-      "Volleyball"
-    ],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://www.fourwayshigh.co.za/admissions/#finance",
-      "https://lekkeslaap.co.za/attractions/fourways-high-school"
-    ],
-    "postcode": null,
-    "admissions": null
-  },
-  {
-    "id": "king-edward-vii-school",
-    "name": "King Edward VII School (KES)",
-    "type": "Public",
-    "phase": "High",
-    "grades": "Gr 8-12",
-    "area": "Houghton",
-    "city": "Johannesburg",
-    "province": "Gauteng",
-    "address": "44 St Patrick Road, Houghton, Johannesburg, 2198",
-    "lat": -26.1735,
-    "lng": 28.0629,
-    "website": "https://www.kes.co.za/",
-    "phone": "+27 11 551 5800",
-    "email": "info@kes.co.za",
-    "language": null,
-    "fees": {
-      "year": 2026,
-      "yearly": 79500,
-      "monthly": 7950,
-      "registration": null,
-      "deposit": null,
-      "notes": "Boys' public school. Day scholar fees shown, paid over 10 months by debit order. 5% off (R75,525) if paid in full by 31 Jan. Weekly boarding R84,600/yr, termly boarding R98,900/yr, ad-hoc weekend boarding R800. Grade 8 applications go through the GDE Admissions website.",
-      "instalments": 10
-    },
-    "hiddenCosts": [
-      {
-        "item": "Development levy (new learners)",
-        "amount": 6500,
-        "frequency": "once",
-        "note": "All new learners",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Boarding deposit",
-        "amount": 6500,
-        "frequency": "once",
-        "note": "New boarders only",
-        "applies": "boarders",
-        "included": false
-      },
-      {
-        "item": "Mattress levy",
-        "amount": 2500,
-        "frequency": "once",
-        "note": "New boarders only",
-        "applies": "boarders",
-        "included": false
-      },
-      {
-        "item": "Tours, camps, uniform",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Not priced on website",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": false,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://www.kes.co.za/admissions.html",
-      "https://lekkeslaap.co.za/attractions/king-edward-vii-school"
-    ],
-    "postcode": "2198",
-    "admissions": null
-  },
-  {
-    "id": "deutsche-internationale-schule-johannesburg",
-    "name": "Deutsche Internationale Schule Johannesburg (DSJ)",
-    "type": "Private",
-    "phase": "Combined",
-    "grades": "Pre-school to Gr 12",
-    "area": "Parktown",
-    "city": "Johannesburg",
-    "province": "Gauteng",
-    "address": "11 Sans Souci Road, Parktown, Johannesburg, 2193",
-    "lat": -26.1787,
-    "lng": 28.0192,
-    "website": "https://dsj.co.za/",
-    "phone": null,
-    "email": null,
-    "language": "German and English",
-    "fees": {
-      "year": 2026,
-      "yearly": 105240,
-      "monthly": 8770,
-      "registration": 880,
-      "deposit": null,
-      "notes": "Grade 1-4 shown (includes book levy). 5% off if paid in full by 31 Jan; quarterly option. Sibling rebate 5% (2nd), 15% (3rd), 25% (4th+). Deposit is 15% of the year's fees on acceptance (about R15,786 for Gr 1-4). Fees are higher if a company pays.",
-      "byGrade": [
-        {
-          "grade": "Toddlers (1-3 yrs)",
-          "yearly": 88980,
-          "monthly": 7415
-        },
-        {
-          "grade": "Kindergarten (4-5 yrs)",
-          "yearly": 85200,
-          "monthly": 7100
-        },
-        {
-          "grade": "Pre-Primary (6 yrs)",
-          "yearly": 93360,
-          "monthly": 7780
-        },
-        {
-          "grade": "Gr 1-4",
-          "yearly": 105240,
-          "monthly": 8770
-        },
-        {
-          "grade": "Gr 5-9",
-          "yearly": 116220,
-          "monthly": 9685
-        },
-        {
-          "grade": "Gr 10-12",
-          "yearly": 118260,
-          "monthly": 9855
-        }
-      ],
-      "instalments": 12
-    },
-    "hiddenCosts": [
-      {
-        "item": "Admission fee",
-        "amount": 1100,
-        "frequency": "once",
-        "note": "Non-refundable, per child",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Acceptance deposit",
-        "amount": 15786,
-        "frequency": "once",
-        "note": "15% of annual fees; figure shown is for Gr 1-4",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Grade 12 exam fees (NSC)",
-        "amount": 9760,
-        "frequency": "once",
-        "note": "Standard 7 subjects; Kombi stream R4,476",
-        "applies": "Gr 12",
-        "included": false
-      },
-      {
-        "item": "Holiday care",
-        "amount": 320,
-        "frequency": "once",
-        "note": "Per day: R320 full day, R280 half day (up to Gr 4)",
-        "applies": "optional",
-        "included": false,
-        "per": "day"
-      },
-      {
-        "item": "Late payment / bounced debit order",
-        "amount": 500,
-        "frequency": "once",
-        "note": "Each time",
-        "applies": "penalty",
-        "included": false
-      },
-      {
-        "item": "Uniform, extra textbooks, stationery, camps, some excursions, extramural lessons",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "School says these are extra, not priced",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Medical aid or insurance",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Required for every learner",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": true,
-      "monthly": 1985
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://dsj.co.za/wp-content/uploads/2025/10/School-Fees-2026.pdf",
-      "https://expatarrivals.com/schools/south-africa/johannesburg/deutsche-internationale-schule-johannesburg",
-      "https://en.wikipedia.org/wiki/Deutsche_Internationale_Schule_Johannesburg"
-    ],
-    "postcode": "2193",
-    "admissions": null,
-    "aliases": [
-      "German school",
-      "DSJ",
-      "Deutsche Schule"
-    ]
+    "sample": false,
+    "country": "ZA",
+    "emis": "500172494"
   }
 ]

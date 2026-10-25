@@ -3,7 +3,6 @@
   "province": "KwaZulu-Natal",
   "area": "Waterfall / Hillcrest",
   "readme": "publicRules: show on EVERY public KZN school page. privateRules: show on every private school page. schools: per-school admissions, keyed by id in schools.json. Per-school 'rules' only hold things specific to that school; the province-wide ones are in publicRules so they are not repeated.",
-
   "publicRules": {
     "applicationWindow": {
       "forYear": 2027,
@@ -57,7 +56,6 @@
       "https://www.education.gov.za/Portals/0/Admission%20Policy%20for%20ordinary%20public%20schools%20(Notice%202432%20of%201998).pdf"
     ]
   },
-
   "privateRules": {
     "short": "Private school: it sets its own rules. Where you live does not decide whether you get in.",
     "usualSteps": [
@@ -67,7 +65,6 @@
       "Many private schools take applications all year, but popular ones fill up early, sometimes a year or more ahead."
     ]
   },
-
   "feederZoneKinds": {
     "nearestSchool": "Public KZN school. First choice goes to children for whom it is the nearest public school of that level. No km radius.",
     "namedSchools": "Also gives preference to Grade 7s from the listed feeder primaries (see feederSchools).",
@@ -75,13 +72,16 @@
     "private": "Private school, own rules, address doesn't matter.",
     "unknown": "We don't know the school's type or rules yet."
   },
-
   "schools": {
     "hillcrest-high-school": {
       "feederZone": {
         "kind": "nearestSchool",
         "radiusKm": null,
-        "feederSchools": ["Hillcrest Primary", "Forest View Primary", "Winston Park Primary"],
+        "feederSchools": [
+          "Hillcrest Primary",
+          "Forest View Primary",
+          "Winston Park Primary"
+        ],
         "description": "Government (KZN) rules apply. The school names Hillcrest Primary, Forest View Primary and Winston Park Primary as its feeder primaries. Its written admission policy is not online."
       },
       "rules": [
@@ -113,13 +113,20 @@
         "feederSchools": [],
         "description": "Not published. If it is a public school, the KZN rules apply."
       },
-      "rules": ["Contact the school secretary for admission details: secretary@forestview.co.za, 031 762 1342."],
+      "rules": [
+        "Contact the school secretary for admission details: secretary@forestview.co.za, 031 762 1342."
+      ],
       "applyBy": null,
       "applyUrl": null,
       "source": "https://www.forestview.co.za/"
     },
     "waterfall-preparatory": {
-      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "feederZone": {
+        "kind": "private",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
       "rules": [
         "Applications are open all year, through the online form.",
         "Registration fee R510 when you apply, enrolment fee R4,440 on acceptance (both non-refundable).",
@@ -130,7 +137,12 @@
       "source": "https://www.waterfallcollege.co.za/how-to-apply"
     },
     "waterfall-college": {
-      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "feederZone": {
+        "kind": "private",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
       "rules": [
         "Applications are open all year, through the online form.",
         "Registration fee R510, enrolment fee R4,440 on acceptance (non-refundable)."
@@ -140,21 +152,40 @@
       "source": "https://www.waterfallcollege.co.za/how-to-apply"
     },
     "curro-hillcrest-primary": {
-      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
-      "rules": ["Apply to the school; the enrolment fee is due once the application is approved."],
+      "feederZone": {
+        "kind": "private",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Apply to the school; the enrolment fee is due once the application is approved."
+      ],
       "applyBy": null,
       "applyUrl": null,
       "source": "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf"
     },
     "curro-hillcrest-high": {
-      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
-      "rules": ["Apply to the school; the enrolment fee is due once the application is approved."],
+      "feederZone": {
+        "kind": "private",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Apply to the school; the enrolment fee is due once the application is approved."
+      ],
       "applyBy": null,
       "applyUrl": null,
       "source": null
     },
     "highbury-preparatory": {
-      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "feederZone": {
+        "kind": "private",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
       "rules": [
         "Earlier applications get priority, so apply early. Applications roll over, so there is no need to reapply.",
         "Send the form, application fee, birth certificate, latest report and latest fee statement from the current school.",
@@ -166,8 +197,15 @@
       "source": "https://hps.co.za/apply/"
     },
     "kearsney-college": {
-      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
-      "rules": ["Admission process not published online; contact the school."],
+      "feederZone": {
+        "kind": "private",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Admission process not published online; contact the school."
+      ],
       "applyBy": null,
       "applyUrl": null,
       "source": "https://www.kearsney.com/"

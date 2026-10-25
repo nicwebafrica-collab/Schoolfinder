@@ -14,7 +14,11 @@ Then open http://localhost:8000. (Opening index.html directly won't load the dat
 - `styles.css`: the look (colours and fonts are variables at the top for the Designer)
 - `js/logic.js`: search, filters and cost maths (no screen code, testable in Node: `require('./js/logic.js')`)
 - `js/app.js`: draws the search and school screens
-- `data/schools.json`: the school data (currently made-up samples marked `"sample": true`)
+- `data/index.json`: list of areas (provinces) with their files, school ids and map bounds
+- `data/schools/<area>.json`: schools in one province (e.g. `za-kzn.json`); `data/rules/<area>.json`: that province's admission rules
+- `data/countries/za.json`: country settings (currency symbol, terms per year, budget filter, grades)
+- `js/admissions.js`: admission rules and the nearest-school check; `js/places.js`: suburb centres and place search
+- `tools/split-data.py`: rebuilds `data/index.json` after school files change (run it whenever you add or remove schools)
 
 ## How "real yearly cost" is worked out
 Yearly tuition (or monthly x 12) + recurring hidden costs (yearly x1, per term x4, monthly x12) + all outings.

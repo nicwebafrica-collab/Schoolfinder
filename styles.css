@@ -183,3 +183,25 @@ main.has-sticky { padding-bottom: 180px; }
 .bullets { margin: 0; padding-left: 18px; font-size: 14px; }
 .bullets li { margin: 4px 0; }
 .chips.radius { margin-top: 14px; }
+
+/* Location search (Designer clean-up v1, item 1) */
+.search-box { position: relative; }
+.in-field-btn { width: 44px; height: 44px; margin-right: -8px; border: 0; background: transparent; color: var(--primary); display: grid; place-items: center; border-radius: 10px; }
+.in-field-btn[aria-pressed="true"] { background: var(--primary-soft); }
+.suggestions { display: grid; gap: 2px; margin: -6px 0 10px; }
+.suggestion { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: var(--radius-box); background: var(--surface); color: var(--ink); font: inherit; font-weight: 600; text-align: left; text-decoration: none; }
+.suggestion .icon { width: 16px; height: 16px; color: var(--muted); }
+.prompt h2 { font-size: 17px; }
+.prompt .chips { flex-wrap: wrap; margin-top: 10px; }
+.filter-sheet { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-box); }
+.filter-sheet[hidden] { display: none; }
+.chip .badge { margin-left: 4px; padding: 0 6px; }
+.chips.radius { margin-top: 0; margin-bottom: 8px; }
+.link-btn { display: block; margin: 12px 0; min-height: 44px; border: 0; background: none; color: var(--primary); font-weight: 700; padding: 0; text-align: left; }
+
+/* School cards (Designer clean-up v1, item 3) */
+.card-title { flex: 1; min-width: 0; }
+.card-top { align-items: flex-start; }
+.distance { flex: none; font-size: 13px; font-weight: 700; color: var(--primary-ink); background: var(--primary-soft); border-radius: var(--radius-pill); padding: 2px 8px; }
+.card-unknown { margin: 10px 0 0; }
+.extras-line.one-line span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }

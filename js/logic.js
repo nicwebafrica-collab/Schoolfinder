@@ -4,6 +4,8 @@
 (function (root) {
   // How many times a year each kind of cost is paid.
   var TIMES_PER_YEAR = { once: 0, yearly: 1, "per term": 4, monthly: 12 };
+  // Country settings (currency symbol, terms per year, ...). Loaded from data/countries/<code>.json by setCountry().
+  var COUNTRY = { symbol: "R", termsPerYear: 4, budgetFilter: 3000 };
   var SCHOOL_MONTHS = 12; // used only when a school doesn't say how many instalments it bills
 
   // Other ways schools write the same frequency. Anything not in here is "unknown" and gets flagged.
@@ -274,7 +276,7 @@
   // R34,800 (the Designer's format). Unknown amounts never show as R0.
   function formatRand(amount) {
     if (!isNum(amount)) return UNKNOWN;
-    return "R" + Math.round(amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return COUNTRY.symbol + Math.round(amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   // Only allow real web links, so a bad data file can't sneak in a "javascript:" link.
@@ -341,6 +343,8 @@
       area: str(s.area), city: str(s.city), province: str(s.province), postcode: str(s.postcode), address: str(s.address),
       lat: coord(s.lat), lng: coord(s.lng),
       website: str(s.website), phone: str(s.phone), email: str(s.email),
+      // Official government school number (EMIS in South Africa) and country code, used to match data from other sources.
+      emis: str(s.emis), country: str(s.country) || "ZA",
       aliases: list(s.aliases, str),
       fees: {
         year: num(f.year), yearly: fee(f.yearly, "yearly fee"), monthly: fee(f.monthly, "monthly fee"),
@@ -382,7 +386,18 @@
     return out;
   }
 
+  // Switch to a country's settings, e.g. setCountry({ symbol: "R", termsPerYear: 4, budgetFilter: 3000 }).
+  function setCountry(cfg) {
+    if (!cfg || typeof cfg !== "object") return COUNTRY;
+    if (typeof cfg.symbol === "string") COUNTRY.symbol = cfg.symbol.slice(0, 5);
+    if (isNum(cfg.termsPerYear) && cfg.termsPerYear > 0) COUNTRY.termsPerYear = TIMES_PER_YEAR["per term"] = cfg.termsPerYear;
+    if (isNum(cfg.budgetFilter)) COUNTRY.budgetFilter = cfg.budgetFilter;
+    if (Array.isArray(cfg.grades)) COUNTRY.grades = cfg.grades.filter(function (g) { return typeof g === "string"; });
+    return COUNTRY;
+  }
+
   var api = {
+    setCountry: setCountry, COUNTRY: COUNTRY,
     cleanSchool: cleanSchool, cleanSchools: cleanSchools,
     UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,

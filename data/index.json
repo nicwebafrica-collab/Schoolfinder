@@ -1,0 +1,55 @@
+{
+  "countries": {
+    "ZA": "countries/za.json"
+  },
+  "areas": [
+    {
+      "id": "za-gp",
+      "country": "ZA",
+      "province": "Gauteng",
+      "short": "Gauteng",
+      "file": "schools/za-gp.json",
+      "rules": null,
+      "schoolCount": 5,
+      "ids": [
+        "curro-pretoria-primary",
+        "curro-pretoria-high",
+        "fourways-high-school",
+        "king-edward-vii-school",
+        "deutsche-internationale-schule-johannesburg"
+      ],
+      "bounds": [
+        -26.1787,
+        28.0058,
+        -25.7007,
+        28.2822
+      ]
+    },
+    {
+      "id": "za-kzn",
+      "country": "ZA",
+      "province": "KwaZulu-Natal",
+      "short": "KZN",
+      "file": "schools/za-kzn.json",
+      "rules": "rules/za-kzn.json",
+      "schoolCount": 9,
+      "ids": [
+        "waterfall-preparatory",
+        "waterfall-college",
+        "curro-hillcrest-primary",
+        "curro-hillcrest-high",
+        "hillcrest-high-school",
+        "hillcrest-primary-school",
+        "forest-view-primary",
+        "highbury-preparatory",
+        "kearsney-college"
+      ],
+      "bounds": [
+        -29.7774,
+        30.7525,
+        -29.7442,
+        30.7953
+      ]
+    }
+  ]
+}

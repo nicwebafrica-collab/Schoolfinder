@@ -40,7 +40,7 @@
       if (a) schools[id] = a;
     });
     return {
-      province: str(d.province), checked: str(d.checked),
+      province: str(d.province), short: str(d.short), checked: str(d.checked),
       publicRules: {
         windowText: str(win.text), windowSource: str(win.source), opens: str(win.opens), closes: str(win.closes),
         howFarShort: str(far.short), howFarDetails: list(far.details, str),
@@ -57,10 +57,12 @@
   function mergeAdmissions(schools, adm) {
     return schools.map(function (s) {
       var copy = Object.assign({}, s);
-      copy.admissions = (adm && adm.schools[s.id]) || cleanSchoolAdmissions(s.admissions);
+      // Match by official EMIS number first, then by our own text id.
+      copy.admissions = (adm && ((s.emis && adm.schools[s.emis]) || adm.schools[s.id])) || cleanSchoolAdmissions(s.admissions);
       if (adm && adm.province && s.province === adm.province) {
         copy.provinceRules = s.type === "Private" ? { privateRules: adm.privateRules } : { publicRules: adm.publicRules };
         copy.provinceRules.checked = adm.checked;
+        copy.provinceRules.name = adm.short || adm.province;
       }
       return copy;
     });
