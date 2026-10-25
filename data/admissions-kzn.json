@@ -1,0 +1,176 @@
+{
+  "checked": "2026-10-25",
+  "province": "KwaZulu-Natal",
+  "area": "Waterfall / Hillcrest",
+  "readme": "publicRules: show on EVERY public KZN school page. privateRules: show on every private school page. schools: per-school admissions, keyed by id in schools.json. Per-school 'rules' only hold things specific to that school; the province-wide ones are in publicRules so they are not repeated.",
+
+  "publicRules": {
+    "applicationWindow": {
+      "forYear": 2027,
+      "opens": "2026-04-08",
+      "closes": "2026-08-31",
+      "text": "KZN public school applications for 2027 ran from 8 April to 31 August 2026. Some schools close earlier, so check the school's own date. Apply to at least three schools.",
+      "source": "https://witness.co.za/news/2026/04/10/kzn-public-school-admissions-are-open-for-2027/"
+    },
+    "howFarCanYouLive": {
+      "radiusKm": null,
+      "kind": "nearestSchool",
+      "short": "KZN has no fixed distance. Most public schools give first choice to children whose home is closer to this school than to any other public school of the same level.",
+      "details": [
+        "The KZN Department of Education does not draw feeder zones on a map. Each school's governing body writes its own admission policy, and the Head of Department can approve or change it (BELA Act, 2024).",
+        "A common KZN rule is 'nearest public school, measured from your home's gate to the school's gate'.",
+        "Some high schools also name feeder primary schools whose Grade 7s get preference.",
+        "Living close is a strong reason to be accepted, but it is not a guarantee. You can still apply to a school further away."
+      ],
+      "sources": [
+        "https://atmosphere.co.za/newsroom/school-yourself-on-feeder-zones-a-parents-guide/",
+        "https://dghs.co.za/wp-content/uploads/2024/09/Admission-Policy-2023.pdf"
+      ]
+    },
+    "documents": [
+      "Child's birth certificate (or proof you have applied for one)",
+      "Child's immunisation (Road to Health) card",
+      "Proof of address in the parent's name, usually a municipal, electricity or water bill or a bank statement, not older than 3 months",
+      "Parent's ID",
+      "Latest school report and transfer card, if the child is moving from another school"
+    ],
+    "ageRules": [
+      "Grade R: your child must turn 5 by 30 June of the year they start.",
+      "Grade 1: your child should turn 6 by 30 June of the year they start (school is compulsory from the year they turn 7)."
+    ],
+    "yourRights": [
+      "A public school may not refuse your child because you can't pay the fees. You can apply for a full or partial fee exemption.",
+      "Public schools may not set entrance tests.",
+      "A child without documents must still be admitted, and the school must help you get them.",
+      "If a school refuses your child, it must give you the reasons in writing. Being put on a waiting list counts as being refused."
+    ],
+    "ifRefused": [
+      "You can appeal to the MEC for Education (the provincial education minister) through the KZN Department of Education. The refusal letter should tell you how.",
+      "Go to your district or circuit education office straight away to ask for a place at another school."
+    ],
+    "warning": "Giving a false address can get your child's place cancelled and is now an offence under the BELA Act.",
+    "comingChanges": "Draft national rules (August 2025) propose a single online admissions system and this order of priority: feeder zone, siblings, staff children, then distance. Public comment closed 5 October 2025. We could not confirm they are final, so the app should not treat them as current rules.",
+    "sources": [
+      "https://iol.co.za/mercury/news/2026-04-10-kzn-parents-urged-to-apply-early-for-2027-school-admissions/",
+      "https://insideeducation.co.za/what-the-new-bela-regulations-mean-for-learners-parents-and-schools/",
+      "https://eelawcentre.org.za/wp-content/uploads/draft-admissions-final.pdf",
+      "https://www.education.gov.za/Portals/0/Admission%20Policy%20for%20ordinary%20public%20schools%20(Notice%202432%20of%201998).pdf"
+    ]
+  },
+
+  "privateRules": {
+    "short": "Private school: it sets its own rules. Where you live does not decide whether you get in.",
+    "usualSteps": [
+      "Fill in the school's application form (often online) and pay a non-refundable application or registration fee.",
+      "Your child may be invited to an assessment or interview.",
+      "If accepted, you pay an enrolment or acceptance fee to secure the place.",
+      "Many private schools take applications all year, but popular ones fill up early, sometimes a year or more ahead."
+    ]
+  },
+
+  "feederZoneKinds": {
+    "nearestSchool": "Public KZN school. First choice goes to children for whom it is the nearest public school of that level. No km radius.",
+    "namedSchools": "Also gives preference to Grade 7s from the listed feeder primaries (see feederSchools).",
+    "radius": "School publishes a fixed km radius (radiusKm). None in Waterfall so far.",
+    "private": "Private school, own rules, address doesn't matter.",
+    "unknown": "We don't know the school's type or rules yet."
+  },
+
+  "schools": {
+    "hillcrest-high-school": {
+      "feederZone": {
+        "kind": "nearestSchool",
+        "radiusKm": null,
+        "feederSchools": ["Hillcrest Primary", "Forest View Primary", "Winston Park Primary"],
+        "description": "Government (KZN) rules apply. The school names Hillcrest Primary, Forest View Primary and Winston Park Primary as its feeder primaries. Its written admission policy is not online."
+      },
+      "rules": [
+        "Grade 8 applications for 2027 opened 12 January 2026 and closed 15 May 2026. Grades 9 to 11 opened in June 2026.",
+        "A parent must hand-deliver the application to the front office with the form, signed code of conduct, financial clearance form and all documents. Incomplete applications are not accepted."
+      ],
+      "applyBy": "2026-05-15",
+      "applyUrl": "https://hhs.co.za/apply",
+      "source": "https://hhs.co.za/apply"
+    },
+    "hillcrest-primary-school": {
+      "feederZone": {
+        "kind": "nearestSchool",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Government (KZN) rules apply. The school's admission policy PDF is on its Policies page, but we could not open it, so street-level details are still unknown."
+      },
+      "rules": [
+        "Ask the school for its 2028 application dates. 2027 dates were not published online."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://hillcrestprimary.co.za/school-policies-2/",
+      "source": "https://hillcrestprimary.co.za/school-policies-2/"
+    },
+    "forest-view-primary": {
+      "feederZone": {
+        "kind": "unknown",
+        "radiusKm": null,
+        "feederSchools": [],
+        "description": "Not published. If it is a public school, the KZN rules apply."
+      },
+      "rules": ["Contact the school secretary for admission details: secretary@forestview.co.za, 031 762 1342."],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": "https://www.forestview.co.za/"
+    },
+    "waterfall-preparatory": {
+      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "rules": [
+        "Applications are open all year, through the online form.",
+        "Registration fee R510 when you apply, enrolment fee R4,440 on acceptance (both non-refundable).",
+        "Two classes of 24 per grade, so places are limited."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://www.waterfallcollege.co.za/how-to-apply",
+      "source": "https://www.waterfallcollege.co.za/how-to-apply"
+    },
+    "waterfall-college": {
+      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "rules": [
+        "Applications are open all year, through the online form.",
+        "Registration fee R510, enrolment fee R4,440 on acceptance (non-refundable)."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://www.waterfallcollege.co.za/how-to-apply",
+      "source": "https://www.waterfallcollege.co.za/how-to-apply"
+    },
+    "curro-hillcrest-primary": {
+      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "rules": ["Apply to the school; the enrolment fee is due once the application is approved."],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf"
+    },
+    "curro-hillcrest-high": {
+      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "rules": ["Apply to the school; the enrolment fee is due once the application is approved."],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": null
+    },
+    "highbury-preparatory": {
+      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "rules": [
+        "Earlier applications get priority, so apply early. Applications roll over, so there is no need to reapply.",
+        "Send the form, application fee, birth certificate, latest report and latest fee statement from the current school.",
+        "Assessment mornings: May for Grade R, July for Grades 1 to 7, in the year before entry.",
+        "The place is secured once the acceptance fee is paid."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://hps.co.za/apply/",
+      "source": "https://hps.co.za/apply/"
+    },
+    "kearsney-college": {
+      "feederZone": { "kind": "private", "radiusKm": null, "feederSchools": [], "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in." },
+      "rules": ["Admission process not published online; contact the school."],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": "https://www.kearsney.com/"
+    }
+  }
+}

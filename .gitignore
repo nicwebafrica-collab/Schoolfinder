@@ -1,0 +1,9 @@
+# Secrets and signing keys never go in git (Security rule)
+.env
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+node_modules/
+dist/
+.DS_Store
