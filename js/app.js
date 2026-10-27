@@ -817,7 +817,9 @@
             el("div", {}, el("div", { className: "sub" }, A.name), el("strong", {}, L.isNum(ta) ? L.formatRand(ta) : L.UNKNOWN)),
             el("div", {}, el("div", { className: "sub" }, B.name), el("strong", {}, L.isNum(tb) ? L.formatRand(tb) : L.UNKNOWN))),
           el("div", { className: "verdict" }, verdict)),
-        el("section", { className: "panel" },
+        el("section", { className: "panel compare-table" },
+          el("div", { className: "crow chead", aria: { hidden: "true" } }, el("div", { className: "label" }, ""),
+            el("div", { className: "two" }, el("span", {}, A.name), el("span", {}, B.name))),
           crow("School fees / year", money(L.yearlyFees(A, ga)), money(L.yearlyFees(B, gb))),
           crow("Monthly fee", [money(L.monthlyFees(A, ga)), paymentsText(A, ga)], [money(L.monthlyFees(B, gb)), paymentsText(B, gb)]),
           crow("Extras not on the fee sheet / year", L.formatRand(L.yearlyExtras(A, ga)), L.formatRand(L.yearlyExtras(B, gb)), true),
@@ -838,7 +840,7 @@
       el("h1", { className: "page-title" }, "Compare"),
       el("div", { className: "compare-pick" }, picker("compareA", state.compareA, "First school", state.compareB), picker("compareB", state.compareB, "Second school", state.compareA)),
       body
-    ], { tab: "compare" });
+    ], { tab: "compare", wide: true });
   }
 
   function crow(label, a, b, hidden) {

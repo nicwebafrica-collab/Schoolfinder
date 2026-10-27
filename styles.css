@@ -265,3 +265,13 @@ main.has-sticky { padding-bottom: 110px; }
   .detail-pane .head-bar a.icon-btn { visibility: hidden; }
   .big-money { font-size: 40px; }
 }
+
+/* ---------- Compare as a table on wider screens (Designer responsive-v1 step 4) ---------- */
+.crow.chead { display: none; }
+@media (min-width: 700px) {
+  .compare-table { padding: 0 16px; }
+  .compare-table .crow { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 16px; align-items: baseline; padding: 12px 0; }
+  .compare-table .crow .label { font-size: 13px; text-transform: none; letter-spacing: 0; font-weight: 600; }
+  .compare-table .crow.chead { display: grid; position: sticky; top: 64px; background: var(--surface); z-index: 1; font-size: 15px; }
+  .compare-table .crow.chead + .crow { border-top: 1px solid var(--line); }
+}
