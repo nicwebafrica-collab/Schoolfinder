@@ -199,7 +199,10 @@
   // "Gr 8" / "Gr 9-12" -> those grades only, "voluntary"/"optional" -> optional, other groups ("Team players") -> some.
   function outingApplies(o) {
     if (o.applies) return normaliseApplies(o.applies);
-    if (/optional|voluntary|if chosen/i.test((o.note || "") + " " + (o.name || ""))) return "optional";
+    var words = (o.note || "") + " " + (o.name || "");
+    // "not optional" / "compulsory, not voluntary" mean the opposite, so those notes never make a trip optional (B42).
+    var mustPay = /compulsory|mandatory|required|\b(not|non)[\s-]*(optional|voluntary)/i.test(words);
+    if (!mustPay && /optional|voluntary|if chosen/i.test(words)) return "optional";
     var g = String(o.grades || "").trim();
     if (!g || /^all\b/i.test(g)) return "everyone";
     return /^(gr|grade)\b/i.test(g) ? normaliseApplies(g) : "some";
