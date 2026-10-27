@@ -596,11 +596,12 @@
     "lastChecked": "2026-10-25",
     "sources": [
       "https://www.curro.co.za/media/g5bi2ca1/curro-hillcrest-2026-high-school-fee-letter-finalv4-for-web.pdf",
-      "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/"
+      "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/",
+      "https://schoolhive.co.za/listing/curro-hilcrest-high-school-hillcrest-admissions-contact-details/"
     ],
     "sample": false,
     "country": "ZA",
-    "emis": null
+    "emis": "500498316"
   },
   {
     "id": "hillcrest-high-school",
@@ -1251,7 +1252,7 @@
     "phone": "031 764 3157",
     "email": "kadmin@kloofjp.co.za",
     "language": null,
-    "emis": null,
+    "emis": "500176601",
     "country": "ZA",
     "sample": false,
     "hiddenCosts": [
@@ -1277,7 +1278,8 @@
     "lastChecked": "2026-10-25",
     "sources": [
       "https://www.kloofjp.org.za/school-fees/",
-      "https://www.kloofjp.org.za/contact/"
+      "https://www.kloofjp.org.za/contact/",
+      "https://schoolhive.co.za/listing/kloof-junior-primary-school-admissions-contact-details/"
     ],
     "id": "kloof-junior-primary",
     "name": "Kloof Junior Primary School",
@@ -1289,7 +1291,8 @@
       "deposit": null,
       "instalments": null,
       "notes": "Fee-paying public school. Fees are only in a fee commitment PDF on the school site that could not be opened."
-    }
+    },
+    "quintile": 5
   },
   {
     "type": "Public",
@@ -1621,7 +1624,7 @@
     "phone": "031 764 9800",
     "email": "marketing@stmarysdsg.co.za",
     "language": "English",
-    "emis": null,
+    "emis": "500276205",
     "country": "ZA",
     "sample": false,
     "hiddenCosts": [
@@ -1682,7 +1685,8 @@
       "https://stmarysdsg.co.za/wp-content/uploads/2025/10/2026-Fees-Page.pdf",
       "https://stmarysdsg.co.za/fees-admissions/",
       "https://stmarysdsg.co.za/",
-      "https://en.wikipedia.org/wiki/St._Mary%27s_Diocesan_School_for_Girls,_Kloof"
+      "https://en.wikipedia.org/wiki/St._Mary%27s_Diocesan_School_for_Girls,_Kloof",
+      "https://schoolhive.co.za/listing/st-marys-dsg-kloof-combined-school-kloof-admissions-contact-details/"
     ],
     "id": "st-marys-dsg-kloof",
     "name": "St Mary's Diocesan School for Girls",
@@ -1761,7 +1765,11 @@
           "monthly": null
         }
       ]
-    }
+    },
+    "aliases": [
+      "DSG",
+      "St Mary's DSG"
+    ]
   },
   {
     "type": "Private",
@@ -1807,231 +1815,6 @@
       "deposit": null,
       "instalments": null,
       "notes": "Waldorf school. Fees not published online."
-    }
-  },
-  {
-    "type": "Public",
-    "phase": "High",
-    "grades": "Gr 8-12",
-    "area": "KwaNgcolosi",
-    "city": "Hillcrest",
-    "province": "KwaZulu-Natal",
-    "postcode": "3650",
-    "address": "Bhekisisa Road, KwaNgcolosi, Waterfall, Hillcrest",
-    "lat": -29.7135,
-    "lng": 30.8192,
-    "website": null,
-    "phone": "031 766 0263",
-    "email": "hlahlindlelahighschool@gmail.com",
-    "language": null,
-    "emis": "500155992",
-    "country": "ZA",
-    "sample": false,
-    "hiddenCosts": [
-      {
-        "item": "Uniform and stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Not published",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": null,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://schoolhive.co.za/listing/hlahlindlela-high-school-pinetown-admissions-contact-details/",
-      "https://en.everybodywiki.com/Hlahlindlela_High_School"
-    ],
-    "id": "hlahlindlela-high",
-    "name": "Hlahlindlela High School",
-    "quintile": 3,
-    "noFee": true,
-    "fees": {
-      "year": 2026,
-      "yearly": 0,
-      "monthly": 0,
-      "registration": null,
-      "deposit": null,
-      "instalments": null,
-      "notes": "No-fee public school (quintile 3): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
-    }
-  },
-  {
-    "type": "Public",
-    "phase": "Primary",
-    "grades": null,
-    "area": "KwaNgcolosi",
-    "city": "Hillcrest",
-    "province": "KwaZulu-Natal",
-    "postcode": "3650",
-    "address": "Ngcolosi Location, KwaHqotho",
-    "lat": null,
-    "lng": null,
-    "website": null,
-    "phone": "067 296 1807",
-    "email": "umngeniprimarys@gmail.com",
-    "language": null,
-    "emis": "500288489",
-    "country": "ZA",
-    "sample": false,
-    "hiddenCosts": [
-      {
-        "item": "Uniform and stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Not published",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": null,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://schoolhive.co.za/listing/umngeni-primary-school-hillcrest-admissions-contact-details/"
-    ],
-    "id": "umngeni-primary",
-    "name": "Umngeni Primary School",
-    "quintile": 3,
-    "noFee": true,
-    "fees": {
-      "year": 2026,
-      "yearly": 0,
-      "monthly": 0,
-      "registration": null,
-      "deposit": null,
-      "instalments": null,
-      "notes": "No-fee public school (quintile 3): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
-    }
-  },
-  {
-    "type": "Public",
-    "phase": "Primary",
-    "grades": null,
-    "area": "Embo",
-    "city": "Hillcrest",
-    "province": "KwaZulu-Natal",
-    "postcode": "3650",
-    "address": "Embo, Hillcrest",
-    "lat": null,
-    "lng": null,
-    "website": null,
-    "phone": "031 761 2006",
-    "email": "gwaduzenexprimary@gmail.com",
-    "language": null,
-    "emis": "500152699",
-    "country": "ZA",
-    "sample": false,
-    "hiddenCosts": [
-      {
-        "item": "Uniform and stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Not published",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": null,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://schoolhive.co.za/listing/gwadu-zenex-primary-school-hillcrest-admissions-contact-details/"
-    ],
-    "id": "gwadu-zenex-primary",
-    "name": "Gwadu-Zenex Primary School",
-    "quintile": 2,
-    "noFee": true,
-    "fees": {
-      "year": 2026,
-      "yearly": 0,
-      "monthly": 0,
-      "registration": null,
-      "deposit": null,
-      "instalments": null,
-      "notes": "No-fee public school (quintile 2): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
-    }
-  },
-  {
-    "type": "Public",
-    "phase": "Primary",
-    "grades": null,
-    "area": "KwaNyuswa",
-    "city": "Hillcrest",
-    "province": "KwaZulu-Natal",
-    "postcode": "3650",
-    "address": "Nyuswa Reserve, KwaNyuswa, Hillcrest",
-    "lat": null,
-    "lng": null,
-    "website": null,
-    "phone": "071 285 2974",
-    "email": "mathebethuprimary@gmail.com",
-    "language": null,
-    "emis": "500201613",
-    "country": "ZA",
-    "sample": false,
-    "hiddenCosts": [
-      {
-        "item": "Uniform and stationery",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Not published",
-        "applies": "everyone",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": null,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-10-25",
-    "sources": [
-      "https://schoolhive.co.za/listing/mathebethu-primary-school-hillcrest-admissions-contact-details/"
-    ],
-    "id": "mathebethu-primary",
-    "name": "Mathebethu Primary School",
-    "quintile": 2,
-    "noFee": true,
-    "fees": {
-      "year": 2026,
-      "yearly": 0,
-      "monthly": 0,
-      "registration": null,
-      "deposit": null,
-      "instalments": null,
-      "notes": "No-fee public school (quintile 2): parents pay no school fees by law. Uniform, stationery and trips may still cost something, but the school publishes no list."
     }
   }
 ]

@@ -187,7 +187,8 @@
         suggestions.appendChild(b);
       });
       // Schools already loaded whose name matches, so a parent can jump straight to one.
-      schools.filter(function (s) { return L.normalise(s.name).indexOf(L.normalise(text)) !== -1; }).slice(0, 3).forEach(function (s) {
+      // Also match the school's area and address, so "Embo" finds schools there even if it isn't a known place yet.
+      schools.filter(function (s) { return L.normalise([s.name, s.area, s.address].concat(s.aliases || []).join(" ")).indexOf(L.normalise(text)) !== -1; }).slice(0, 5).forEach(function (s) {
         suggestions.appendChild(el("a", { className: "suggestion", href: schoolHref(s), role: "option" }, s.name));
       });
       if (!suggestions.firstChild) {
@@ -344,7 +345,7 @@
         container.appendChild(widen);
       }
       if (found.unknownLocation.length) {
-        container.appendChild(el("p", { className: "count" }, "Also in " + where + ", location not published"));
+        container.appendChild(el("p", { className: "count" }, (state.place ? "Also in " + where : "Also nearby") + ", location not published"));
         container.appendChild(el("div", { className: "card-grid" }, found.unknownLocation.map(schoolCard)));
       }
       if (state.place) container.appendChild(el("p", { className: "muted small" }, "Distances are straight-line from the middle of " + state.place.name + "."));
@@ -364,7 +365,7 @@
   }
 
   function schoolCard(s) {
-    var sub = [s.type, s.grades, s.language].filter(Boolean).join(" · ");
+    var sub = [s.noFee ? "No-fee school" : null, s.type, s.grades, s.language].filter(Boolean).join(" · ");
     var place = [s.area, s.city].filter(Boolean).join(", ");
     var unplaced = (state.near || state.place) && typeof s.lat !== "number";
     var extras = extrasSummary(s);
@@ -380,8 +381,8 @@
       monthly === null && total === null
         ? el("p", { className: "unknown card-unknown" }, "Fees not published yet")
         : el("div", { className: "money-pair" },
-            el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"), el("strong", {}, money(monthly))),
-            el("div", { className: "money true" }, el("div", { className: "label" }, "True cost / yr"), el("strong", {}, money(total)))),
+            el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"), el("strong", {}, feeText(s, monthly, "No fees"))),
+            el("div", { className: "money true" }, el("div", { className: "label" }, "True cost / yr"), el("strong", {}, feeText(s, total, "Extras only")))),
       extras && el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)));
   }
 
@@ -410,7 +411,7 @@
       el("div", { className: "initials" }, initials(s.name)),
       el("h1", {}, s.name),
       el("div", { className: "sub one-line" }, [s.address || [s.area, s.city].filter(Boolean).join(", "), dist != null ? dist.toFixed(1) + " km from you" : ""].filter(Boolean).join(" · ")),
-      el("div", { className: "pills" }, [s.type, s.phase, s.grades, s.language].filter(Boolean).map(function (t) { return el("span", { className: "pill" }, t); })));
+      el("div", { className: "pills" }, [s.noFee ? "No-fee school" : null, s.type, s.phase, s.grades, s.language].filter(Boolean).map(function (t) { return el("span", { className: "pill" }, t); })));
 
     // The orange part of the bar is at least 4% wide, so extras are always visible.
     var feePct = total ? Math.min(96, Math.round((fees / total) * 100)) : 100;
@@ -419,7 +420,8 @@
       unpriced.length ? unpriced.length + (unpriced.length === 1 ? " cost" : " costs") + " not priced" : null].filter(Boolean);
     var trueCard = el("section", { className: "panel" },
       el("div", { className: "label" }, "True cost per year" + (f.year ? " · " + f.year + " fees" : " · fee year unknown") + (grade ? " · " + grade : " · entry grade")),
-      el("div", { className: "big-money" }, money(total)),
+      el("div", { className: "big-money" }, feeText(s, total, "No school fees")),
+      noFeeLine(s),
       total ? el("div", { className: "bar", aria: { hidden: "true" } },
         el("div", { className: "fees", css: { width: feePct + "%" } }), el("div", { className: "extra", css: { width: (100 - feePct) + "%" } })) : null,
       // One orange line, linking to the full breakdown (where "might also apply" costs and grade choice live).
@@ -661,7 +663,8 @@
       el("p", { className: "muted small" }, s.name + (grade ? " · " + grade : "")),
       toggle,
       gradeChips(s, grade, function () { renderCosts(id); }),
-      el("div", { className: "big-money" }, money(per(L.trueYearlyCost(s, grade)))),
+      el("div", { className: "big-money" }, feeText(s, per(L.trueYearlyCost(s, grade)), "No school fees")),
+      noFeeLine(s),
       monthNote ? el("p", { className: "muted small" }, monthNote) : null,
       f.unofficial ? el("div", { className: "extras-line" }, icon("alert"), f.sourceNote || "These fees are not from the school itself. Confirm them with the school.") : null,
       extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), "Includes " + L.formatRand(extras / div) + " you would not see on the fee sheet") : null,
@@ -814,6 +817,16 @@
       return c.included && c.frequency === "once" && L.isNum(c.amount) && (!grade || L.countsInTotal({ applies: c.applies }, grade));
     })[0];
     return inFee ? L.formatRand(inFee.amount) + " (part of the yearly fee)" : unknown();
+  }
+
+  // No-fee public schools charge nothing by law, so show words instead of a bare "R0" (B36).
+  function feeText(s, amount, words) {
+    return s.noFee && amount === 0 ? words : money(amount);
+  }
+  function noFeeLine(s) {
+    if (!s.noFee) return null;
+    return el("p", { className: "muted small" }, "No-fee public school" + (s.quintile ? " (quintile " + s.quintile + ")" : "") +
+      ": parents pay no school fees by law. Uniform, stationery and trips may still cost something.");
   }
 
   function optionalText(o) {
