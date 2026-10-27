@@ -2248,12 +2248,77 @@
     "emis": "500223258",
     "country": "ZA",
     "sample": false,
-    "hiddenCosts": [],
+    "hiddenCosts": [
+      {
+        "item": "Building levy",
+        "amount": 100,
+        "frequency": "monthly",
+        "note": "Per family, not per child",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Class fund levy",
+        "amount": 350,
+        "frequency": "yearly",
+        "note": "Class 1 and up",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "Class fund levy (pre-school)",
+        "amount": 150,
+        "frequency": "yearly",
+        "note": "Play Group and Kindergarten",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Scholar insurance",
+        "amount": 135,
+        "frequency": "yearly",
+        "note": "Play Group to Class 7",
+        "applies": "Gr 1-7",
+        "included": false
+      },
+      {
+        "item": "Scholar insurance",
+        "amount": 215,
+        "frequency": "yearly",
+        "note": "Class 8 and up",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Paper levy",
+        "amount": 100,
+        "frequency": "per term",
+        "note": "Kindergarten and up",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "Sports levy",
+        "amount": 100,
+        "frequency": "per term",
+        "note": "Class 1 and up",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "Uniform, outings, camps, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
     "outings": [],
     "aftercare": {
       "available": true,
       "monthly": null,
-      "note": "R50 first hour, then R25/hour; free before 14:00 for Kindergarten to Class 2 (except Thursdays)"
+      "note": "Free for Play Group; Kindergarten to Class 2 free until 14:00 (except Thursdays); otherwise R50 first hour, R25 each extra hour"
     },
     "transport": {
       "available": null,
@@ -2269,13 +2334,90 @@
     "id": "roseway-waldorf",
     "name": "Roseway Waldorf School",
     "fees": {
-      "year": null,
-      "yearly": null,
-      "monthly": null,
-      "registration": null,
+      "year": 2026,
+      "yearly": 60660,
+      "monthly": 5055,
+      "registration": 5000,
       "deposit": null,
-      "instalments": null,
-      "notes": "Waldorf school. Class fees are only in an online fee calculator that can't be read from here. 6.5% off if paid yearly by 31 Dec 2025, 5% by 20 Jan 2026, 4% for half a year in advance."
+      "instalments": 12,
+      "notes": "2026 fees, Class 1 (Grade 1) shown, first child. Waldorf 'Class N' is Grade N; Class 13 is an optional year after matric. Paid monthly over 12 months (yearly = 12 x monthly). 2nd and 3rd child pay less (e.g. Class 1 R4,802, Class 12 R8,537 a month). The R5,000 'registration' is a non-refundable placement fee. 6.5% off if paid yearly by 31 Dec 2025, 5% by 20 Jan 2026, 4% for half a year in advance. Fees read from the school's online 2026 fee calculator (screenshots, 27 Oct 2026). Pre-school extras (class fund R150, insurance R135, paper levy) are listed but only Grade 1-12 totals include them.",
+      "byGrade": [
+        {
+          "grade": "Play Group",
+          "yearly": 53940,
+          "monthly": 4495
+        },
+        {
+          "grade": "Kindergarten",
+          "yearly": 59304,
+          "monthly": 4942
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 60660,
+          "monthly": 5055
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 63360,
+          "monthly": 5280
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 64704,
+          "monthly": 5392
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 66048,
+          "monthly": 5504
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 67392,
+          "monthly": 5616
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 70092,
+          "monthly": 5841
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 72780,
+          "monthly": 6065
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 97044,
+          "monthly": 8087
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 99744,
+          "monthly": 8312
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 102432,
+          "monthly": 8536
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 105132,
+          "monthly": 8761
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 107832,
+          "monthly": 8986
+        },
+        {
+          "grade": "Class 13 (after matric)",
+          "yearly": 117264,
+          "monthly": 9772
+        }
+      ]
     }
   },
   {
