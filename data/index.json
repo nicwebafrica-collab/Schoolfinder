@@ -32,7 +32,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 17,
+      "schoolCount": 21,
       "ids": [
         "waterfall-preparatory",
         "waterfall-college",
@@ -50,13 +50,17 @@
         "winston-park-primary",
         "thomas-more-college",
         "st-marys-dsg-kloof",
-        "roseway-waldorf"
+        "roseway-waldorf",
+        "st-benedict-pinetown",
+        "deutsche-schule-durban",
+        "pinetown-boys-high",
+        "pinetown-girls-high"
       ],
       "bounds": [
-        -29.7987,
+        -29.8264,
         30.7341,
         -29.7442,
-        30.8516
+        30.9086
       ]
     }
   ]

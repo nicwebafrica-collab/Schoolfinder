@@ -76,24 +76,6 @@
         "included": false
       },
       {
-        "item": "Workbooks",
-        "amount": 740,
-        "frequency": "yearly",
-        "note": "Gr 1 R740, Gr 2 R600, Gr 3 R360",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 1"
-      },
-      {
-        "item": "Robotics workbook",
-        "amount": 160,
-        "frequency": "yearly",
-        "note": "Gr 1-3 R160, Gr 4-6 R185",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 1"
-      },
-      {
         "item": "Stationery",
         "amount": null,
         "frequency": "yearly",
@@ -124,6 +106,78 @@
         "note": "Extra, not priced",
         "applies": "everyone",
         "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 740,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 360,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 160,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 160,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 160,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 6",
+        "included": false
       }
     ],
     "outings": [],
@@ -136,7 +190,7 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-10-27",
     "sources": [
       "https://www.curro.co.za/media/xvykfmtz/curro-pretoria-2026-primary-school-fee-letter-finalv1-for-web.pdf",
       "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
@@ -409,20 +463,12 @@
       "year": 2026,
       "yearly": 79500,
       "monthly": 7950,
-      "registration": null,
-      "deposit": null,
-      "notes": "Boys' public school. Day scholar fees shown, paid over 10 months by debit order. 5% off (R75,525) if paid in full by 31 Jan. Weekly boarding R84,600/yr, termly boarding R98,900/yr, ad-hoc weekend boarding R800. Grade 8 applications go through the GDE Admissions website.",
+      "registration": 6500,
+      "deposit": 6500,
+      "notes": "Boys' public school. Day scholar fees shown, paid over 10 months by debit order. 5% off (R75,525) if paid in full by 31 Jan. Weekly boarding R84,600/yr, termly boarding R98,900/yr, ad-hoc weekend boarding R800. Grade 8 applications go through the GDE Admissions website. New day scholars also pay a R6,500 school deposit. Registration shown is the R6,500 development levy, paid once by every new learner.",
       "instalments": 10
     },
     "hiddenCosts": [
-      {
-        "item": "Development levy (new learners)",
-        "amount": 6500,
-        "frequency": "once",
-        "note": "All new learners",
-        "applies": "everyone",
-        "included": false
-      },
       {
         "item": "Boarding deposit",
         "amount": 6500,
@@ -458,7 +504,7 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-10-27",
     "sources": [
       "https://www.kes.co.za/admissions.html",
       "https://lekkeslaap.co.za/attractions/king-edward-vii-school"
@@ -488,9 +534,9 @@
       "year": 2026,
       "yearly": 105240,
       "monthly": 8770,
-      "registration": 880,
-      "deposit": null,
-      "notes": "Grade 1-4 shown (includes book levy). 5% off if paid in full by 31 Jan; quarterly option. Sibling rebate 5% (2nd), 15% (3rd), 25% (4th+). Deposit is 15% of the year's fees on acceptance (about R15,786 for Gr 1-4). Fees are higher if a company pays.",
+      "registration": 1980,
+      "deposit": 15786,
+      "notes": "Grade 1-4 shown (includes book levy). 5% off if paid in full by 31 Jan; quarterly option. Sibling rebate 5% (2nd), 15% (3rd), 25% (4th+). Deposit is 15% of the year's fees on acceptance (about R15,786 for Gr 1-4). Fees are higher if a company pays. Deposit shown is 15% of a year's fees for Gr 1-4 (refundable). Registration shown = R880 application fee + R1,100 admission fee (both non-refundable, new learners).",
       "byGrade": [
         {
           "grade": "Toddlers (1-3 yrs)",
@@ -527,26 +573,10 @@
     },
     "hiddenCosts": [
       {
-        "item": "Admission fee",
-        "amount": 1100,
-        "frequency": "once",
-        "note": "Non-refundable, per child",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Acceptance deposit",
-        "amount": 15786,
-        "frequency": "once",
-        "note": "15% of annual fees; figure shown is for Gr 1-4",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Grade 12 exam fees (NSC)",
+        "item": "Grade 12 IEB exam fees",
         "amount": 9760,
         "frequency": "once",
-        "note": "Standard 7 subjects; Kombi stream R4,476",
+        "note": "NSC-stream 7-subject package; Kombi stream R4,476; Further Studies R1,690 per subject",
         "applies": "Gr 12",
         "included": false
       },
@@ -587,14 +617,15 @@
     "outings": [],
     "aftercare": {
       "available": true,
-      "monthly": 1985
+      "monthly": 1985,
+      "note": "Gr 1-4, 5 days. Kindergarten 5 days R2,810; Gr 5-9 R1,170"
     },
     "transport": {
       "available": null,
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-10-27",
     "sources": [
       "https://dsj.co.za/wp-content/uploads/2025/10/School-Fees-2026.pdf",
       "https://expatarrivals.com/schools/south-africa/johannesburg/deutsche-internationale-schule-johannesburg",

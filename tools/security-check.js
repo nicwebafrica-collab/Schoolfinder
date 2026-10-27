@@ -182,6 +182,41 @@ if (fs.existsSync(wf)) {
   check(unpinned.length === 0, "pages.yml: GitHub Actions must be pinned to an exact commit: " + unpinned.join(", "));
 }
 
+// 10. The Google Play app (Capacitor). These only run once the android/ folder exists.
+var capConfig = ["capacitor.config.json", "capacitor.config.ts", "capacitor.config.js"].filter(function (f) { return fs.existsSync(path.join(root, f)); })[0];
+if (capConfig) {
+  var cc = read(capConfig);
+  check(!/\burl\s*["']?\s*:/.test(cc), capConfig + ": server.url loads the app from a website. It must load the files inside the app");
+  check(!/allowNavigation/.test(cc), capConfig + ": allowNavigation lets the app open other websites inside itself");
+  check(!/cleartext\s*["']?\s*:\s*true/.test(cc), capConfig + ": cleartext (http) must stay off");
+  check(!/webContentsDebuggingEnabled\s*["']?\s*:\s*true/.test(cc), capConfig + ": debugging must be off in the store app");
+  var pkg = fs.existsSync(path.join(root, "package.json")) ? JSON.parse(read("package.json")) : {};
+  var deps = Object.assign({}, pkg.dependencies, pkg.devDependencies);
+  Object.keys(deps).forEach(function (d) {
+    check(/^\d+\.\d+\.\d+$/.test(deps[d]), "package.json: " + d + " must be pinned to an exact version (no ^ or ~): " + deps[d]);
+    check(/^@capacitor\//.test(d), "package.json: " + d + " is a new package. Ask Security first");
+  });
+  check(fs.existsSync(path.join(root, "package-lock.json")), "package-lock.json must be committed");
+}
+var manifestPath = "android/app/src/main/AndroidManifest.xml";
+if (fs.existsSync(path.join(root, manifestPath))) {
+  var am = read(manifestPath);
+  var perms = (am.match(/uses-permission[^>]*android:name="([^"]+)"/g) || []).map(function (p) { return p.match(/name="([^"]+)"/)[1]; });
+  var ALLOWED_PERMS = ["android.permission.INTERNET", "android.permission.ACCESS_COARSE_LOCATION"];
+  perms.forEach(function (p) { check(ALLOWED_PERMS.indexOf(p) !== -1, manifestPath + ": asks for " + p + ". Only coarse location (and internet) are allowed without Security's OK"); });
+  check(!/usesCleartextTraffic="true"/.test(am), manifestPath + ": cleartext (http) traffic must be off");
+  check(/allowBackup="false"/.test(am), manifestPath + ": set android:allowBackup=\"false\"");
+  check(!/android:debuggable="true"/.test(am), manifestPath + ": the app must not be debuggable");
+}
+var androidFiles = allFiles.filter(function (f) { return /^android\//.test(f); });
+androidFiles.filter(function (f) { return /\.(xml|gradle|kts|properties|json)$/.test(f); }).forEach(function (f) {
+  var t = read(f);
+  SECRET_PATTERNS.forEach(function (p) { check(!p[0].test(t), f + ": looks like a " + p[1]); });
+  check(!/storePassword|keyPassword/.test(t) || /System\.getenv|project\.findProperty|keystoreProperties/.test(t), f + ": signing passwords must not be written in the file");
+});
+var badAndroid = androidFiles.filter(function (f) { return /(key\.properties|local\.properties|google-services\.json|\.aab|\.apk)$/.test(f); });
+check(badAndroid.length === 0, "These Android files must never be committed: " + badAndroid.join(", "));
+
 if (failures.length) {
   console.error("\nSECURITY CHECK FAILED (" + failures.length + " problem" + (failures.length === 1 ? "" : "s") + "):\n");
   failures.forEach(function (f) { console.error("  ✗ " + f); });
