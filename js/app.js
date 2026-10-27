@@ -89,7 +89,7 @@
   function replace(children, opts) {
     opts = opts || {};
     app.textContent = "";
-    app.className = (opts.wide ? "wide " : "") + (opts.sticky ? "has-sticky" : "");
+    app.className = (opts.wide ? "wide " : "") + (opts.twoPane ? "two-pane " : "") + (opts.sticky ? "has-sticky" : "");
     addChild(app, children);
     drawNav(opts.tab);
     nav.hidden = !!opts.hideNav;
@@ -276,8 +276,32 @@
     }
 
     parts.push(radiusRow(results), filterRow(results), results);
-    replace(parts, { tab: "search", wide: true });
+    if (wideScreen()) {
+      // Desktop: results on the left, the selected school on the right (Designer responsive-v1 step 3).
+      replace([el("div", { className: "list-pane" }, parts), el("section", { className: "detail-pane", aria: { label: "School details" } })],
+        { tab: "search", wide: true, twoPane: true });
+    } else {
+      replace(parts, { tab: "search", wide: true });
+    }
     drawResults(results);
+  }
+
+  // Desktop browsers (1100px and wider) show results and a school side by side.
+  function wideScreen() {
+    try { return window.matchMedia("(min-width: 1100px)").matches; } catch (e) { return false; }
+  }
+  var selectedId = null; // the school shown in the desktop right-hand pane
+
+  function fillPane(pane, s) {
+    selectedId = s.id;
+    var v = schoolView(s);
+    v.sticky.className = "pane-actions"; // Compare + Call sit at the top of the pane, not stuck to the window
+    pane.textContent = "";
+    addChild(pane, [v.sticky].concat(v.parts));
+    pane.scrollTop = 0;
+    Array.prototype.forEach.call(document.querySelectorAll(".card[data-id]"), function (c) {
+      c.classList.toggle("selected", c.getAttribute("data-id") === s.id);
+    });
   }
 
   function radiusRow(results) {
@@ -385,6 +409,13 @@
         container.appendChild(el("div", { className: "card-grid" }, found.unknownLocation.map(schoolCard)));
       }
       if (state.place) container.appendChild(el("p", { className: "muted small" }, "Distances are straight-line from the middle of " + state.place.name + "."));
+      var pane = document.querySelector(".detail-pane");
+      if (pane) {
+        var first = found.near.concat(found.unknownLocation)[0];
+        var pick = (selectedId && findSchool(selectedId)) || (first && findSchool(first.id));
+        if (pick) fillPane(pane, pick);
+        else { pane.textContent = ""; pane.appendChild(el("p", { className: "muted" }, "Pick a school on the left to see its costs.")); }
+      }
     }, function () {
       container.textContent = "";
       container.appendChild(el("p", {}, "Couldn't load schools for this area. Check your internet connection and try again."));
@@ -407,7 +438,7 @@
     var extras = extrasSummary(s);
     var monthly = L.monthlyFees(s), total = L.trueYearlyCost(s);
 
-    return el("a", { className: "card", href: schoolHref(s) },
+    var card = el("a", { className: "card", href: schoolHref(s) },
       el("div", { className: "card-top" },
         el("div", { className: "initials", aria: { hidden: "true" } }, initials(s.name)),
         el("div", { className: "card-title" }, el("h3", {}, s.name), el("div", { className: "muted small" }, sub),
@@ -420,6 +451,8 @@
             el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"), el("strong", {}, feeText(s, monthly, "No fees"))),
             el("div", { className: "money true" }, el("div", { className: "label" }, "True cost / yr"), el("strong", {}, feeText(s, total, "Extras only")))),
       extras && el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)));
+    card.setAttribute("data-id", s.id);
+    return card;
   }
 
   // ---------- School profile ----------
@@ -427,6 +460,19 @@
   function renderSchool(id) {
     var s = findSchool(id);
     if (!s) return notFound();
+    if (wideScreen() && (state.place || state.near)) {
+      // Desktop with a search open: show the school in the right-hand pane, keeping the list (and its scroll).
+      var pane = document.querySelector(".detail-pane");
+      if (pane) fillPane(pane, s); else { selectedId = s.id; renderSearch(); }
+      return;
+    }
+    var v = schoolView(s);
+    replace(v.parts, { sticky: v.sticky, tab: "search", hideNav: true });
+    window.scrollTo(0, 0);
+  }
+
+  // The school page's sections and its Compare/Call bar. Used for the phone page and the desktop pane.
+  function schoolView(s) {
     var f = s.fees || {};
     var grade = gradeFor(s);
     var fees = L.yearlyFees(s, grade);
@@ -501,8 +547,7 @@
     var sticky = el("div", { className: "sticky-actions no-nav" },
       el("a", { className: "btn", href: "#/compare/" + encodeURIComponent(s.id) }, icon("compare"), "Compare"), contact);
 
-    replace(parts, { sticky: sticky, tab: "search", hideNav: true });
-    window.scrollTo(0, 0);
+    return { parts: parts, sticky: sticky };
   }
 
   // Call, Email and Website as three equal buttons; the full details sit underneath as selectable text.
@@ -895,8 +940,11 @@
     else if (parts[0] === "saved") renderSaved();
     else if (parts[0] === "compare") renderCompare(parts[1], parts[2]);
     else if (parts[0] === "privacy") renderPrivacy();
-    else renderSearch();
+    else { selectedId = null; renderSearch(); }
   }
+
+  // Redraw when the window crosses the desktop width, so the layout switches between one and two panes.
+  try { window.matchMedia("(min-width: 1100px)").addEventListener("change", function () { route(); }); } catch (e) { /* old browser */ }
 
   // Install the service worker (sw.js) so the app can be added to the home screen and work offline.
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
