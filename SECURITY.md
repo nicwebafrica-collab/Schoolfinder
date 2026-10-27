@@ -1,6 +1,6 @@
 # Security
 
-School Finder doesn't collect personal information. There are no accounts or tracking, and a parent's location stays on their own device.
+SchoolMap doesn't collect personal information. There are no accounts or tracking, and a parent's location stays on their own device.
 
 ## Reporting a problem
 If you find a security problem, please **don't open a public issue**. Use GitHub's private report instead: open the **Security** tab of this repository and click **Report a vulnerability**. We'll reply as soon as we can.

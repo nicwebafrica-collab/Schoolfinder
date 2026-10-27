@@ -1,6 +1,6 @@
 {
-  "name": "School Finder",
-  "short_name": "Schools",
+  "name": "SchoolMap",
+  "short_name": "SchoolMap",
   "description": "Find schools near you and see the true yearly cost, including hidden extras.",
   "start_url": "./#/",
   "scope": "./",

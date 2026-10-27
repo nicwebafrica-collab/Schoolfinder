@@ -1,4 +1,4 @@
-# School Finder (v1)
+# SchoolMap (v1)
 
 Parents search their area and see the real cost of each school: fees, hidden costs, outings, aftercare and transport.
 

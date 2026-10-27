@@ -876,8 +876,8 @@
     "province": "KwaZulu-Natal",
     "postcode": "3610",
     "address": "Highbury Road, Hillcrest, KwaZulu-Natal",
-    "lat": null,
-    "lng": null,
+    "lat": -29.7806,
+    "lng": 30.7578,
     "website": "https://hps.co.za/",
     "phone": "031 765 9800",
     "email": "marketing@hps.co.za",
@@ -1002,7 +1002,8 @@
     "sources": [
       "https://hps.co.za/apply/",
       "https://hps.co.za/contact/",
-      "https://schoolhive.co.za/listing/highbury-preparatory-school-hillcrest-admissions-contact-details/"
+      "https://schoolhive.co.za/listing/highbury-preparatory-school-hillcrest-admissions-contact-details/",
+      "https://en.wikipedia.org/wiki/Highbury_Preparatory_School"
     ],
     "sample": false,
     "country": "ZA",
@@ -1306,8 +1307,8 @@
     "lat": null,
     "lng": null,
     "website": "https://kloofpp.org.za/",
-    "phone": null,
-    "email": "bursar@kloofpp.org.za",
+    "phone": "031 764 1577",
+    "email": "admin@kloofpp.org.za",
     "language": null,
     "emis": null,
     "country": "ZA",

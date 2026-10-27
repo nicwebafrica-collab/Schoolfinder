@@ -5,6 +5,7 @@
   var L = window.SchoolLogic;
   var app = document.getElementById("app");
   var nav = document.getElementById("nav");
+  var topbar = document.getElementById("topbar");
   var schools = [];
 
   // Everything the parent has chosen. Location lives only in memory (never saved or sent).
@@ -131,16 +132,48 @@
     return L.distanceKm(state.near.lat, state.near.lng, s.lat, s.lng);
   }
 
-  // ---------- Bottom nav ----------
+  // ---------- Bottom nav (phones) and top bar (700px and wider) ----------
+  // Both are drawn every time; styles.css shows the bottom nav on phones and the top bar on bigger screens.
+
+  var TABS = [["search", "#/", "Search", "search"], ["saved", "#/saved", "Saved", "bookmark"], ["compare", "#/compare", "Compare", "compare"]];
 
   function drawNav(tab) {
     nav.textContent = "";
-    [["search", "#/", "Search", "search"], ["saved", "#/saved", "Saved", "bookmark"], ["compare", "#/compare", "Compare", "compare"]]
-      .forEach(function (t) {
-        var a = el("a", { href: t[1] }, icon(t[3]), t[2]);
-        if (tab === t[0]) a.setAttribute("aria-current", "page");
-        nav.appendChild(a);
-      });
+    TABS.forEach(function (t) {
+      var a = el("a", { href: t[1] }, icon(t[3]), t[2]);
+      if (tab === t[0]) a.setAttribute("aria-current", "page");
+      nav.appendChild(a);
+    });
+    topbar.textContent = "";
+    var links = el("nav", { className: "top-links", aria: { label: "Main" } }, TABS.map(function (t) {
+      var a = el("a", { href: t[1] }, t[2]);
+      if (tab === t[0]) a.setAttribute("aria-current", "page");
+      return a;
+    }));
+    topbar.appendChild(el("div", { className: "top-inner" },
+      el("a", { href: "#/", className: "brand" }, icon("pin"), "SchoolMap"), links));
+  }
+
+  // True inside the installed app (the Android app, or the website added to the home screen).
+  // The website welcome is only for people who arrive in a browser from a link.
+  function inApp() {
+    if (window.Capacitor) return true;
+    try { return window.matchMedia("(display-mode: standalone)").matches; } catch (e) { return false; }
+  }
+
+  function welcome() {
+    if (inApp()) return [];
+    var tiles = [
+      ["True cost per year", "Fees plus the extras every child pays, in one number."],
+      ["Hidden costs in orange", "Levies, uniforms, camps and outings that aren't in the fee."],
+      ["Admission rules", "Who gets in first, closing dates and feeder zones."]
+    ];
+    return [el("section", { className: "welcome" },
+      el("h1", { className: "welcome-title" }, "See what a school really costs before you apply."),
+      el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you. Free for parents."))].concat(
+      [el("div", { className: "feature-tiles" }, tiles.map(function (t) {
+        return el("div", { className: "feature-tile" }, el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
+      }))]);
   }
 
   // ---------- Search screen ----------
@@ -222,9 +255,11 @@
       typed(); // a school name or unknown place: show the choices
     });
 
-    var parts = [el("h1", { className: "page-title" }, "Find a school"), searchBox, suggestions];
+    var first = !state.place && !state.near;
+    var hello = first ? welcome() : [];
+    var parts = (hello.length ? [hello[0]] : [el("h1", { className: "page-title" }, "Find a school")]).concat([searchBox, suggestions]);
 
-    if (!state.place && !state.near) {
+    if (first) {
       // First open: ask where they live instead of listing every school in the country.
       var examples = el("div", { className: "chips" }, L.PLACES.filter(function (p) { return areaForPlace(p); }).slice(0, 6).map(function (p) {
         var b = el("button", { type: "button", className: "chip" }, p.name);
@@ -235,6 +270,7 @@
         el("h2", {}, "Where do you live?"),
         el("p", { className: "muted small" }, "Type your suburb, or tap the location button to see the schools closest to you."),
         examples));
+      if (hello[1]) parts.push(hello[1]);
       replace(parts, { tab: "search", wide: true });
       return;
     }
@@ -771,7 +807,7 @@
   function renderPrivacy() {
     replace(el("div", { className: "prose" },
       el("h1", { className: "page-title" }, "Privacy"),
-      el("p", {}, "You can use School Finder without an account. We don't use tracking, adverts or analytics."),
+      el("p", {}, "You can use SchoolMap without an account. We don't use tracking, adverts or analytics."),
       el("h2", {}, "Your location"),
       el("p", {}, "If you tap “Use my location” or “Am I in the zone?”, your location is rounded to about 1 km and used only on your device to work out distances. It is never sent to us or saved."),
       el("h2", {}, "Saved on this device"),
