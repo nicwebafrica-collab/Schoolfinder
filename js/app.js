@@ -221,7 +221,10 @@
       });
       // Schools already loaded whose name matches, so a parent can jump straight to one.
       // Also match the school's area and address, so "Embo" finds schools there even if it isn't a known place yet.
-      schools.filter(function (s) { return L.normalise([s.name, s.area, s.address].concat(s.aliases || []).join(" ")).indexOf(L.normalise(text)) !== -1; }).slice(0, 5).forEach(function (s) {
+      // Each field on its own, so "hillcrest high" can't match across "…Hillcrest Highbury Road" (B40).
+      schools.filter(function (s) {
+        return [s.name, s.area, s.address].concat(s.aliases || []).some(function (f) { return L.normalise(f).indexOf(L.normalise(text)) !== -1; });
+      }).slice(0, 5).forEach(function (s) {
         suggestions.appendChild(el("a", { className: "suggestion", href: schoolHref(s), role: "option" }, s.name));
       });
       if (!suggestions.firstChild) {
@@ -822,7 +825,7 @@
             el("div", { className: "two" }, el("span", {}, A.name), el("span", {}, B.name))),
           crow("School fees / year", money(L.yearlyFees(A, ga)), money(L.yearlyFees(B, gb))),
           crow("Monthly fee", [money(L.monthlyFees(A, ga)), paymentsText(A, ga)], [money(L.monthlyFees(B, gb)), paymentsText(B, gb)]),
-          crow("Extras not on the fee sheet / year", L.formatRand(L.yearlyExtras(A, ga)), L.formatRand(L.yearlyExtras(B, gb)), true),
+          crow("Extras not on the fee sheet / year", extrasText(A, ga), extrasText(B, gb), true),
           crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
           crow("Once-off to start", money(L.startUpCosts(A)), money(L.startUpCosts(B))),
@@ -910,6 +913,13 @@
     if (!s.noFee) return null;
     return el("p", { className: "muted small" }, "No-fee public school" + (s.quintile ? " (quintile " + s.quintile + ")" : "") +
       ": parents pay no school fees by law. Uniform, stationery and trips may still cost something.");
+  }
+
+  // Never "R0" when the extras exist but aren't priced (B41).
+  function extrasText(s, grade) {
+    var x = L.yearlyExtras(s, grade);
+    if (x > 0) return L.formatRand(x);
+    return L.unpricedCosts(s).length ? unknown("None priced yet") : "None found";
   }
 
   function optionalText(o) {

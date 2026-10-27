@@ -181,7 +181,7 @@
   function unpricedCosts(school) {
     return (school.hiddenCosts || []).filter(function (c) {
       return countsInTotal(c, null) && (!isNum(c.amount) || !normaliseFrequency(c.frequency));
-    }).concat((school.outings || []).filter(function (o) { return !isNum(o.cost); }));
+    }).concat((school.outings || []).filter(function (o) { return !isNum(o.cost) && outingCounts(school, o, null); }));
   }
 
   // Costs that are NOT in the totals because they only apply to some families:
@@ -192,12 +192,34 @@
 
   // Everything not on the fee sheet, per year: recurring hidden costs + outings.
   function yearlyExtras(school, grade) {
-    return yearlyHiddenCosts(school, grade) + yearlyOutings(school);
+    return yearlyHiddenCosts(school, grade) + yearlyOutings(school, grade);
   }
 
-  function yearlyOutings(school) {
+  // Who goes on an outing, like a hidden cost's `applies`. If the data doesn't say, work it out:
+  // "Gr 8" / "Gr 9-12" -> those grades only, "voluntary"/"optional" -> optional, other groups ("Team players") -> some.
+  function outingApplies(o) {
+    if (o.applies) return normaliseApplies(o.applies);
+    if (/optional|voluntary|if chosen/i.test((o.note || "") + " " + (o.name || ""))) return "optional";
+    var g = String(o.grades || "").trim();
+    if (!g || /^all\b/i.test(g)) return "everyone";
+    return /^(gr|grade)\b/i.test(g) ? normaliseApplies(g) : "some";
+  }
+
+  // Is this outing already listed as a hidden cost? Then it's counted there, not twice (Westville Boys).
+  function duplicateOfCost(school, o) {
+    var n = normalise(o.name);
+    return (school.hiddenCosts || []).some(function (c) { return normalise(c.item) === n; });
+  }
+
+  function outingCounts(school, o, grade) {
+    return !duplicateOfCost(school, o) && countsInTotal({ applies: outingApplies(o) }, grade);
+  }
+
+  // Outings every child goes on (plus that grade's own) per year. Optional tours, e.g. an R85,000 overseas trip,
+  // and trips for some learners only are listed but never added to the total.
+  function yearlyOutings(school, grade) {
     return (school.outings || []).reduce(function (sum, o) {
-      return isNum(o.cost) ? sum + o.cost : sum;
+      return isNum(o.cost) && outingCounts(school, o, grade) ? sum + o.cost : sum;
     }, 0);
   }
 
@@ -359,7 +381,8 @@
         byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? { grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) } : null; })
       },
       hiddenCosts: list(s.hiddenCosts, cleanCost),
-      outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? { name: str(o.name), grades: str(o.grades), cost: num(o.cost), when: str(o.when), note: str(o.note) } : null; }),
+      outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? Object.assign({ name: str(o.name), grades: str(o.grades), cost: parseAmount(o.cost), when: str(o.when), note: str(o.note) },
+        o.applies == null ? {} : { applies: normaliseApplies(str(o.applies)) }) : null; }),
       aftercare: option(s.aftercare), transport: option(s.transport),
       sports: list(s.sports, str),
       admissions: a ? {
@@ -404,7 +427,7 @@
     cleanSchool: cleanSchool, cleanSchools: cleanSchools,
     UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,
-    countsInTotal: countsInTotal, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
+    countsInTotal: countsInTotal, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
     instalments: instalments, dataProblems: dataProblems,
     normalise: normalise, yearlyFees: yearlyFees, monthlyFees: monthlyFees,
     yearlyHiddenCosts: yearlyHiddenCosts, startUpCosts: startUpCosts, yearlyOutings: yearlyOutings,
