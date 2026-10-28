@@ -1,7 +1,7 @@
 // sw.js — the "service worker": a small script the phone keeps running in the background.
 // It saves the app's files so SchoolMap opens and works with no internet (load shedding, no data).
 
-var VERSION = "v37";                       // bump this when app files change, so phones fetch the new ones
+var VERSION = "v38";                       // bump this when app files change, so phones fetch the new ones
 var APP_FILES = [
   "./", "index.html", "styles.css", "js/logic.js", "js/admissions.js", "js/places.js", "js/app.js", "js/count.js", "manifest.webmanifest",
   "fonts/plus-jakarta-sans-latin.woff2", "icons/icon-192.png", "icons/icon-512.png", "data/index.json", "data/countries/za.json"

@@ -115,7 +115,7 @@
 
   function siteFooter() {
     return el("footer", { className: "site-footer" },
-      el("p", {}, "Independent. Built by Upper Highway parents. Schools can't pay to change their numbers or ranking."),
+      el("p", {}, "Independent. Made in KZN. Schools can't pay to change their numbers or ranking."),
       el("p", {}, el("a", { href: "#/privacy" }, "Privacy")));
   }
 
