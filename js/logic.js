@@ -199,10 +199,19 @@
   // "Gr 8" / "Gr 9-12" -> those grades only, "voluntary"/"optional" -> optional, other groups ("Team players") -> some.
   function outingApplies(o) {
     if (o.applies) return normaliseApplies(o.applies);
-    var words = (o.note || "") + " " + (o.name || "");
-    // "not optional" / "compulsory, not voluntary" mean the opposite, so those notes never make a trip optional (B42).
-    var mustPay = /compulsory|mandatory|required|\b(not|non)[\s-]*(optional|voluntary)/i.test(words);
-    if (!mustPay && /optional|voluntary|if chosen/i.test(words)) return "optional";
+    var words = ((o.note || "") + " " + (o.name || "")).toLowerCase();
+    // Read "not/non-" phrases first, because they flip the meaning: "not optional" = must pay (B42),
+    // "non-compulsory" / "not required" = optional (B44). Then look at the plain words that are left.
+    var OPT = "optional|voluntary", MUST = "compulsory|mandatory|required";
+    var neg = new RegExp("\\b(?:not|non)[\\s-]*(" + OPT + "|" + MUST + ")\\b", "g");
+    var saysOptional = false, saysMust = false, m;
+    while ((m = neg.exec(words))) { if (new RegExp(OPT).test(m[1])) saysMust = true; else saysOptional = true; }
+    var rest = words.replace(neg, " ");
+    if (new RegExp("\\b(" + OPT + "|if chosen)\\b").test(rest)) saysOptional = true;
+    if (new RegExp("\\b(" + MUST + ")\\b").test(rest)) saysMust = true;
+    if (saysOptional && saysMust) return "some"; // mixed signals: list it, don't add it, ask the school
+    if (saysOptional) return "optional";
+    // "compulsory" still only means the grades the trip is for, so carry on to the grade check.
     var g = String(o.grades || "").trim();
     if (!g || /^all\b/i.test(g)) return "everyone";
     return /^(gr|grade)\b/i.test(g) ? normaliseApplies(g) : "some";
