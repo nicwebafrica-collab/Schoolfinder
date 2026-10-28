@@ -333,7 +333,15 @@
   function list(v, fn) { return Array.isArray(v) ? v.map(fn).filter(Boolean) : []; }
   function obj(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : null; }
   // available is true (offered), false (not offered) or null (the school doesn't say). Never guess "not offered".
-  function option(v) { v = obj(v); return v ? { available: v.available === true ? true : v.available === false ? false : null, monthly: num(v.monthly) } : null; }
+  function option(v) { v = obj(v); return v ? Object.assign({ available: v.available === true ? true : v.available === false ? false : null, monthly: num(v.monthly) }, evidence(v)) : null; }
+
+  // Where each number came from, for the Fact Checker (factcheck/evidence-field.md): every field named "evidence" or
+  // ending in "Evidence" is kept as plain text (capped like other text). Not shown in the app yet.
+  function evidence(v) {
+    var out = {};
+    Object.keys(v || {}).forEach(function (k) { if (/(^e|E)vidence$/.test(k) && str(v[k]) !== null) out[k] = str(v[k]); });
+    return out;
+  }
 
   // A hidden cost from the data file. Text amounts ("1500", "R1,500") become numbers; frequencies are normalised
   // ("Monthly", "termly" -> "monthly", "per term"). Anything we can't understand is kept but flagged in
@@ -351,12 +359,12 @@
     if (amount !== null && amount > MAX_COST) { problems.push("amount R" + amount + " is over R1,000,000, check it"); amount = null; }
     if (!frequency) problems.push("frequency '" + str(c.frequency) + "' is not one we know");
     if (!isKnownApplies(str(c.applies))) problems.push("applies '" + str(c.applies) + "' is not one we know");
-    return {
+    return Object.assign({
       item: str(c.item), amount: amount, frequency: frequency || str(c.frequency), note: str(c.note),
       applies: normaliseApplies(str(c.applies)), included: c.included === true,
       priceFor: str(c.priceFor), per: str(c.per),
       problem: problems.length ? problems.join("; ") : null
-    };
+    }, evidence(c));
   }
 
   function cleanSchool(raw) {
@@ -372,7 +380,8 @@
       if (v != null && v !== "" && n === null) feeProblems.push(label + " '" + str(v) + "' is not a number");
       return n;
     }
-    return {
+    var fc = obj(s.factCheck);
+    return Object.assign({
       id: str(s.id), name: str(s.name), sample: s.sample === true,
       type: str(s.type), phase: str(s.phase), grades: str(s.grades), language: str(s.language),
       area: str(s.area), city: str(s.city), province: str(s.province), postcode: str(s.postcode), address: str(s.address),
@@ -383,26 +392,28 @@
       aliases: list(s.aliases, str),
       // No-fee public schools (quintiles 1-3) charge R0 by law, so a 0 fee there is real, not missing.
       quintile: num(s.quintile), noFee: s.noFee === true,
-      fees: {
+      fees: Object.assign({
         year: num(f.year), yearly: fee(f.yearly, "yearly fee"), monthly: fee(f.monthly, "monthly fee"),
         registration: fee(f.registration, "registration"), deposit: fee(f.deposit, "deposit"), notes: str(f.notes),
         instalments: num(f.instalments), instalmentsNote: str(f.instalmentsNote),
         // Fees not from the school itself (e.g. a news survey) get a visible warning.
         unofficial: f.unofficial === true || f.sourceIsSchool === false, sourceNote: str(f.sourceNote),
         problems: feeProblems,
-        byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? { grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) } : null; })
-      },
+        byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? Object.assign({ grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) }, evidence(g)) : null; })
+      }, evidence(f)),
       hiddenCosts: list(s.hiddenCosts, cleanCost),
       outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? Object.assign({ name: str(o.name), grades: str(o.grades), cost: parseAmount(o.cost), when: str(o.when), note: str(o.note) },
-        o.applies == null ? {} : { applies: normaliseApplies(str(o.applies)) }) : null; }),
+        o.applies == null ? {} : { applies: normaliseApplies(str(o.applies)) }, evidence(o)) : null; }),
       aftercare: option(s.aftercare), transport: option(s.transport),
       sports: list(s.sports, str),
       admissions: a ? {
         feederZone: zone ? { radiusKm: num(zone.radiusKm), description: str(zone.description) } : null,
         rules: list(a.rules, str), applyBy: str(a.applyBy), applyUrl: str(a.applyUrl), source: str(a.source)
       } : null,
-      lastChecked: str(s.lastChecked), sources: list(s.sources, str)
-    };
+      lastChecked: str(s.lastChecked), sources: list(s.sources, str),
+      // Fact Checker's verdict for the whole school, e.g. { status: "verified", date: "2026-10-27" }.
+      factCheck: fc ? { status: str(fc.status), date: str(fc.date) } : null
+    }, evidence(s));
   }
 
   function cleanSchools(data) {

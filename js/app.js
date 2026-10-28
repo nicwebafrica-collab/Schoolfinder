@@ -497,6 +497,18 @@
     return a;
   }
 
+  // An invisible circle around a dot so it's easier to tap on a phone (B49). These go in a layer UNDER all the
+  // visible dots, so a neighbour's tap area can never cover a dot you can see. Hidden from screen readers and
+  // the Tab key (the visible dot is the real link). Set with .style so it beats the stylesheet's circle colours.
+  function addHit(layer, x, y, target) {
+    var a = svgEl("a", { href: typeof target === "string" ? target : "#", tabindex: "-1", "aria-hidden": "true" });
+    if (typeof target === "function") a.addEventListener("click", target);
+    var c = svgEl("circle", { cx: x, cy: y, r: 24, class: "hit" });
+    c.style.fill = "transparent"; c.style.stroke = "none"; c.style.pointerEvents = "all";
+    a.appendChild(c);
+    layer.appendChild(a);
+  }
+
   // B: home in the middle, rings at 2/5/10/20 km, schools at their real distance and rough direction (north up).
   // Where many schools share a ring and direction they become one "+N" bubble; tapping it lists them.
   function ringsView(list, centre) {
@@ -504,39 +516,70 @@
     var rings = L.RADII.filter(function (km) { return km <= state.radius; });
     var max = state.radius;
     var svg = svgEl("svg", { viewBox: "0 0 " + size + " " + size, class: "rings", role: "group", "aria-label": "Schools around " + (state.place ? state.place.name : "you") + ", north is up" });
+    // Square-root distance scale (Designer, 28 Oct): the inner rings get more room, where most schools are.
+    // Ring labels stay in true km, so the picture is still honest about distance.
+    var scale = function (km) { return Math.sqrt(Math.max(km, 0) / max) * R; };
     rings.forEach(function (km) {
-      var r = km / max * R;
+      var r = scale(km);
       svg.appendChild(svgEl("circle", { cx: C, cy: C, r: r, class: "ring" }));
       svg.appendChild(svgEl("text", { x: C, y: C + r + 13, "text-anchor": "middle", class: "ring-label" }, km + " km"));
     });
     svg.appendChild(svgEl("text", { x: C, y: 12, "text-anchor": "middle", class: "ring-label" }, "N"));
-    var cells = {};
     var kmPerLng = 111 * Math.cos(centre.lat * Math.PI / 180);
-    list.forEach(function (s) {
+    var points = list.map(function (s) {
       var east = (s.lng - centre.lng) * kmPerLng, north = (s.lat - centre.lat) * 111;
       var d = Math.min(Math.sqrt(east * east + north * north), max);
       var angle = Math.atan2(east, north); // 0 = north, clockwise
-      var band = rings.filter(function (km) { return km < d; }).length;
-      var sector = Math.round((angle + Math.PI) / (Math.PI / 4)) % 8;
-      var key = band + "-" + sector;
-      (cells[key] = cells[key] || []).push({ s: s, x: C + Math.sin(angle) * d / max * R, y: C - Math.cos(angle) * d / max * R });
+      return { s: s, d: d, x: C + Math.sin(angle) * scale(d), y: C - Math.cos(angle) * scale(d) };
+    }).sort(function (a, b) { return a.d - b.d; });
+    // Only dots that would still overlap on screen (e.g. same campus) join one "+N" bubble (B45, B46).
+    var TOUCH = 28; // a little more than two dot radii
+    var groups = [];
+    points.forEach(function (p) {
+      var g = groups.filter(function (g) { return Math.hypot(g.x - p.x, g.y - p.y) < TOUCH; })[0];
+      if (!g) { groups.push({ x: p.x, y: p.y, items: [p] }); return; }
+      g.items.push(p);
+      g.x = g.items.reduce(function (t, i) { return t + i.x; }, 0) / g.items.length;
+      g.y = g.items.reduce(function (t, i) { return t + i.y; }, 0) / g.items.length;
+    });
+    // Keep bubbles and dots off the home dot so its count stays readable.
+    groups.forEach(function (g) {
+      var dx = g.x - C, dy = g.y - C, len = Math.hypot(dx, dy);
+      if (len >= 24) return;
+      if (len < 0.5) { dx = 1; dy = 1; len = Math.SQRT2; }
+      g.x = C + dx / len * 24; g.y = C + dy / len * 24;
+      if (g.items.length === 1) { g.items[0].x = g.x; g.items[0].y = g.y; }
     });
     var extra = el("div", {});
-    Object.keys(cells).forEach(function (key) {
-      var group = cells[key];
-      if (group.length <= 5) { group.forEach(function (g) { svg.appendChild(dot(g.s, g.x, g.y, 13)); }); return; }
-      var x = group.reduce(function (t, g) { return t + g.x; }, 0) / group.length;
-      var y = group.reduce(function (t, g) { return t + g.y; }, 0) / group.length;
+    var hits = svgEl("g", { class: "hits" });
+    svg.appendChild(hits);
+    groups.forEach(function (gr) {
+      var group = gr.items;
+      if (group.length <= 3) {
+        // 2 or 3 schools at nearly the same spot (e.g. one campus): spread them in a small circle so each
+        // stays its own dot. Bigger crowds use the "+N" bubble below.
+        group.forEach(function (g, i) {
+          var a = group.length === 1 ? 0 : i / group.length * 2 * Math.PI - Math.PI / 2;
+          var off = group.length === 1 ? 0 : group.length === 2 ? 14 : 16;
+          var x = gr.x + Math.cos(a) * off, y = gr.y + Math.sin(a) * off;
+          addHit(hits, x, y, schoolHref(g.s));
+          svg.appendChild(dot(g.s, x, y, 13));
+        });
+        return;
+      }
+      var x = gr.x, y = gr.y;
       var bubble = svgEl("a", { href: "#", class: "dot bubble", role: "button" });
       bubble.setAttribute("aria-label", group.length + " schools here, show them");
       bubble.appendChild(svgEl("circle", { cx: x, cy: y, r: 16 }));
       bubble.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, "+" + group.length));
-      bubble.addEventListener("click", function (e) {
+      var showGroup = function (e) {
         e.preventDefault();
         extra.textContent = "";
-        extra.appendChild(el("p", { className: "count" }, group.length + " schools in this direction"));
+        extra.appendChild(el("p", { className: "count" }, group.length + " schools here"));
         extra.appendChild(schoolLinks(group.map(function (g) { return g.s; })));
-      });
+      };
+      bubble.addEventListener("click", showGroup);
+      addHit(hits, x, y, showGroup);
       svg.appendChild(bubble);
     });
     svg.appendChild(svgEl("circle", { cx: C, cy: C, r: 6, class: "home" })); // drawn last so schools never hide home
@@ -565,19 +608,32 @@
       var px = function (km) { return left + km / xMax * (W - left - right); };
       var py = function (r) { return H - bottom - r / yMax * (H - top - bottom); };
       var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, class: "chart", role: "group", "aria-label": "True cost a year against distance from home" });
-      // Shaded "closer + cheaper" corner: the nearer half of the distance and the cheaper half of the cost.
-      svg.appendChild(svgEl("rect", { x: px(0), y: py(yMax / 2), width: px(xMax / 2) - px(0), height: py(0) - py(yMax / 2), class: "sweet" }));
+      // Shaded "closer + cheaper" corner: closer and cheaper than the middle (median) school shown, so one very
+      // expensive school can't stretch it to cover almost everything (B47).
+      var median = function (arr) { arr = arr.slice().sort(function (a, b) { return a - b; }); var m = arr.length >> 1; return arr.length % 2 ? arr[m] : (arr[m - 1] + arr[m]) / 2; };
+      var midT = median(priced.map(function (p) { return p.t; }));
+      var midD = Math.min(median(priced.map(function (p) { return p.s.distanceKm || 0; })), xMax);
+      svg.appendChild(svgEl("rect", { x: px(0), y: py(midT), width: Math.max(px(midD) - px(0), 0), height: py(0) - py(midT), class: "sweet" }));
       svg.appendChild(svgEl("text", { x: px(0) + 6, y: py(0) - 8, class: "sweet-label" }, "Closer + cheaper"));
       for (var r = 0; r <= yMax; r += step) {
         svg.appendChild(svgEl("line", { x1: left, x2: W - right, y1: py(r), y2: py(r), class: "grid" }));
         svg.appendChild(svgEl("text", { x: left - 6, y: py(r) + 4, "text-anchor": "end", class: "tick" }, r === 0 ? "R0" : "R" + Math.round(r / 1000) + "k"));
       }
+      var lastTick = -Infinity;
       [0].concat(L.RADII.filter(function (km) { return km <= xMax; })).forEach(function (km) {
+        if (px(km) - lastTick < 34) return; // too close to the last label ("0 km2 km" at 20 km, B48)
+        lastTick = px(km);
         svg.appendChild(svgEl("text", { x: px(km), y: H - bottom + 16, "text-anchor": "middle", class: "tick" }, km + " km"));
       });
       svg.appendChild(svgEl("text", { x: (left + W - right) / 2, y: H - 4, "text-anchor": "middle", class: "axis" }, "Distance from home"));
       svg.appendChild(svgEl("text", { x: 12, y: (top + H - bottom) / 2, "text-anchor": "middle", class: "axis", transform: "rotate(-90 12 " + (top + H - bottom) / 2 + ")" }, "True cost a year"));
-      priced.forEach(function (p) { svg.appendChild(dot(p.s, px(Math.min(p.s.distanceKm, xMax)), py(p.t), 11)); });
+      var hits = svgEl("g", { class: "hits" });
+      svg.appendChild(hits);
+      priced.forEach(function (p) {
+        var x = px(Math.min(p.s.distanceKm, xMax)), y = py(p.t);
+        addHit(hits, x, y, schoolHref(p.s));
+        svg.appendChild(dot(p.s, x, y, 11));
+      });
       parts.push(svg);
     } else {
       parts.push(el("p", { className: "muted" }, "None of these schools publish fees yet, so there's nothing to plot."));
@@ -1020,11 +1076,14 @@
   function renderPrivacy() {
     replace(el("div", { className: "prose" },
       el("h1", { className: "page-title" }, "Privacy"),
-      el("p", {}, "You can use SchoolMap without an account. We don't use tracking, adverts or analytics."),
+      el("p", {}, "You can use SchoolMap without an account. There are no adverts, no cookies and nothing that follows you around the web."),
       el("h2", {}, "Your location"),
       el("p", {}, "If you tap “Use my location” or “Am I in the zone?”, your location is rounded to about 1 km and used only on your device to work out distances. It is never sent to us or saved."),
       el("h2", {}, "Saved on this device"),
       el("p", {}, "Two things are stored in your browser on this device only, and are never sent to us: the schools you bookmark, and the name of the last suburb you searched (never your exact location). Clearing your browser data removes them."),
+      el("h2", {}, "Counting visits"),
+      el("p", {}, "We count how many times each page is opened using GoatCounter, so we know how many parents use SchoolMap. It uses no cookies and doesn't identify you. It records the page, the website that sent you, and the country, and your IP address isn't stored. GoatCounter is hosted outside South Africa. If your browser asks not to be tracked, nothing is counted. ",
+        link("https://www.goatcounter.com/help/privacy", "GoatCounter's privacy notes")),
       el("h2", {}, "School information"),
       el("p", {}, "Fees and costs come from each school's public website and fee letters. Every school page shows its sources and the date we checked. Always confirm with the school before making decisions."),
       el("h2", {}, "Our web host"),

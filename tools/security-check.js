@@ -102,7 +102,21 @@ jsFiles.forEach(function (f) {
   fetches.forEach(function (call) {
     check(!/https?:/.test(call), f + ": fetches from another website: " + call);
   });
+  // Outside websites the code may mention. The visitor counter host is allowed only in js/count.js.
+  var OUTSIDE_OK = { "www.w3.org": "any", "docs.github.com": "any", "greendragon.goatcounter.com": "js/count.js", "www.goatcounter.com": "js/app.js" };
+  (text.match(/https?:\/\/[a-z0-9.\-]+/gi) || []).forEach(function (u) {
+    var host = u.replace(/^https?:\/\//i, "").toLowerCase();
+    check(OUTSIDE_OK[host] === "any" || OUTSIDE_OK[host] === f, f + ": mentions an outside website (" + host + "). Ask Security first");
+  });
 });
+// The visitor counter may only send the screen and the referring site (Security review, 2026-10-28).
+if (fs.existsSync(path.join(root, "js/count.js"))) {
+  var cnt = read("js/count.js").replace(/^\s*\/\/.*$/gm, ""); // ignore comments
+  var params = (cnt.match(/[?&]([a-z]+)=/g) || []).map(function (p) { return p.slice(1, -1); });
+  check(params.every(function (p) { return ["p", "r", "rnd"].indexOf(p) !== -1; }), "js/count.js: sends something other than the screen and referring site: " + params.join(", "));
+  check(!/localStorage|cookie|coords|state\.|getSaved|lastPlace|userAgent|screen\.|language/.test(cnt), "js/count.js: must not read saved data, location, cookies or device details");
+  check(/doNotTrack/.test(cnt), "js/count.js: must respect Do Not Track");
+}
 
 // 6. The page itself: strict Content-Security-Policy, nothing loaded from other websites.
 var html = read("index.html");
@@ -113,7 +127,7 @@ if (cspMatch) {
   ["default-src 'self'", "script-src 'self'", "object-src 'none'", "base-uri 'none'", "form-action 'none'"].forEach(function (d) {
     check(csp.indexOf(d) !== -1, "index.html: CSP must include " + d);
   });
-  check(!/unsafe-inline|unsafe-eval|\*|https?:|data:[^;]*script/.test(csp.replace("img-src 'self' data:", "")), "index.html: CSP allows unsafe sources: " + csp);
+  check(!/unsafe-inline|unsafe-eval|\*|https?:|data:[^;]*script/.test(csp.replace(/img-src 'self' data:( https:\/\/greendragon\.goatcounter\.com)?/, "")), "index.html: CSP allows unsafe sources: " + csp);
 }
 check(!/<script(?![^>]*src="js\/)[^>]*>/.test(html), "index.html: has an inline script or a script from somewhere else");
 check(!/(src|href)="(https?:)?\/\//.test(html), "index.html: loads something from another website");
