@@ -379,3 +379,19 @@ main.has-sticky { padding-bottom: 110px; }
 .site-footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .site-footer p { margin: 0 0 8px; }
 .site-footer a { color: var(--muted); }
+
+/* ---------- First impression, round 2 ---------- */
+.popular { flex-wrap: wrap; align-items: center; margin: -2px 0 12px; }
+.popular .label { margin-right: 2px; }
+.example-card { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 16px; color: var(--ink); text-decoration: none; margin: 4px 0 12px; }
+.example-card .big-money { margin: 2px 0 6px; }
+.example-card .extras-line { margin-bottom: 6px; }
+.example-more { display: inline-flex; align-items: center; gap: 2px; margin-top: 8px; color: var(--primary); font-weight: 700; font-size: 14px; }
+.example-more .icon { width: 16px; height: 16px; }
+@media (min-width: 700px) { .example-card:hover { border-color: var(--line-strong); box-shadow: 0 2px 8px rgba(20, 32, 51, .08); } }
+@media (min-width: 1100px) {
+  .hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
+  .hero .example-slot { padding-top: 40px; }
+}
+.share-row { margin: 0 0 12px; }
+.share-row .btn { width: 100%; min-height: 48px; }

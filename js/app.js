@@ -102,6 +102,32 @@
     if (opts.sticky) document.body.appendChild(opts.sticky);
   }
 
+  // ---------- Example card on the first screen (first-impression round 2) ----------
+  // Real numbers from a Fact Checker "Verified" school, but the school isn't named on the home page
+  // (Marketing: don't single a school out). Tapping it opens the real school page.
+  var EXAMPLE_SCHOOL = { id: "westville-boys-high", region: "KZN" }; // Verified 28 Oct, has priced extras
+
+  function exampleCard(slot) {
+    var area = index.areas.filter(function (a) { return a.short === EXAMPLE_SCHOOL.region; })[0];
+    if (!area) return;
+    loadArea(area).then(function () {
+      var s = findSchool(EXAMPLE_SCHOOL.id);
+      // Costs differ by grade, so the example names one: the school's first (entry) grade.
+      var grade = s && s.fees && s.fees.byGrade && s.fees.byGrade[0] ? s.fees.byGrade[0].grade : "";
+      var total = s && L.trueYearlyCost(s, grade);
+      if (!s || !L.isNum(total) || total <= 0) return; // never show an example without checked fees
+      var extras = L.yearlyExtras(s, grade), monthly = L.monthlyFees(s, grade);
+      var kind = { High: "high school", Primary: "primary school" }[s.phase] || "school";
+      slot.appendChild(el("a", { className: "example-card", href: schoolHref(s) },
+        el("div", { className: "label" }, "Example: a " + s.area + " " + String(s.type || "").toLowerCase() + " " + kind),
+        el("div", { className: "muted small" }, "True cost per year" + (grade ? " \u00b7 " + grade : "") + (s.fees && s.fees.year ? " \u00b7 " + s.fees.year + " fees" : "")),
+        el("div", { className: "big-money" }, L.formatRand(total)),
+        extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), el("span", {}, "Includes " + L.formatRand(extras) + " not on the fee sheet")) : null,
+        L.isNum(monthly) ? el("div", { className: "muted small" }, "School fees " + L.formatRand(monthly) + " a month") : null,
+        el("span", { className: "example-more" }, "See how it adds up", icon("chevron"))));
+    }, function () { /* offline or failed: just no example */ });
+  }
+
   // ---------- Trust line and footer (Designer + Marketing first-impression list, round 1) ----------
 
   // "Every number shows its source … · Updated Oct 2026". The month comes from the data (index.json), never typed in.
@@ -356,21 +382,20 @@
     var first = !state.place && !state.near;
     var hello = first ? welcome() : [];
     var parts = (hello.length ? [hello[0]] : [el("h1", { className: "page-title" }, "Find a school")]).concat([searchBox, locStatus, suggestions]);
-    if (first) parts.push(trustLine());
 
     if (first) {
       // First open: ask where they live instead of listing every school in the country.
-      var examples = el("div", { className: "chips" }, L.PLACES.filter(function (p) { return areaForPlace(p); }).slice(0, 6).map(function (p) {
-        var b = el("button", { type: "button", className: "chip" }, p.name);
-        b.addEventListener("click", function () { choosePlace(p); });
-        return b;
-      }));
-      parts.push(el("section", { className: "panel prompt" },
-        el("h2", {}, "Where do you live?"),
-        el("p", { className: "muted small" }, "Type your suburb, or tap the location button to see the schools closest to you."),
-        examples));
-      if (hello[1]) parts.push(hello[1]);
-      replace(parts, { tab: "search", wide: true });
+      // The suburb chips sit straight under the field (first-impression round 2: one box, not two).
+      var examples = el("div", { className: "chips popular" }, [el("span", { className: "label" }, "Popular:")].concat(
+        L.PLACES.filter(function (p) { return areaForPlace(p); }).slice(0, 6).map(function (p) {
+          var b = el("button", { type: "button", className: "chip" }, p.name);
+          b.addEventListener("click", function () { choosePlace(p); });
+          return b;
+        })));
+      var main = parts.concat([examples, trustLine()]);
+      var slot = el("div", { className: "example-slot" });
+      replace([el("div", { className: "hero" }, el("div", { className: "hero-main" }, main), slot)].concat(hello[1] ? [hello[1]] : []), { tab: "search", wide: true });
+      exampleCard(slot);
       return;
     }
 
@@ -985,6 +1010,7 @@
       head, trueCard, zoneBanner(s, dist), facts, rows,
       outings, care, admissionsPanel(s), sports,
       contactPanel(s),
+      shareButton(s),
       missing.length ? el("p", { className: "muted small missing-line" }, "Not published yet: " + missing.join(", ")) : null,
       sourceLine(s)
     ];
@@ -996,6 +1022,30 @@
       el("a", { className: "btn", href: "#/compare/" + encodeURIComponent(s.id) }, icon("compare"), "Compare"), contact);
 
     return { parts: parts, sticky: sticky };
+  }
+
+  // "Share on WhatsApp" (Security approved 28 Oct): a plain wa.me link with only the school's own page link.
+  // Phones with a share menu get that instead, only when tapped. Nothing is recorded.
+  function shareButton(s) {
+    // This site's own address (the live site when shared from there), plus only the school's id.
+    var url = location.origin + location.pathname + "#/school/" + encodeURIComponent(s.id);
+    var text = L.isNum(L.trueYearlyCost(s))
+      ? "This is what " + s.name + " really costs a year, including extras: " + url
+      : "Fees and extras for " + s.name + " on SchoolMap: " + url;
+    var href = "https://wa.me/?text=" + encodeURIComponent(text);
+    var a = el("a", { className: "btn share-btn", href: href, target: "_blank", rel: "noopener noreferrer" }, icon("share"), "Share on WhatsApp");
+    var useLink = false;
+    a.addEventListener("click", function (e) {
+      if (useLink || !navigator.share) { useLink = false; return; } // the plain link opens WhatsApp
+      e.preventDefault();
+      function fallback() { useLink = true; a.click(); }
+      try {
+        navigator.share({ title: s.name + " on SchoolMap", text: text.replace(": " + url, ""), url: url }).catch(function (err) {
+          if (!err || err.name !== "AbortError") fallback();
+        });
+      } catch (err) { fallback(); }
+    });
+    return el("div", { className: "share-row" }, a);
   }
 
   // Call, Email and Website as three equal buttons; the full details sit underneath as selectable text.
@@ -1310,6 +1360,8 @@
       el("h2", {}, "Counting visits"),
       el("p", {}, "We count how many times each page is opened using GoatCounter, so we know how many parents use SchoolMap. It uses no cookies and doesn't identify you. It records the page, the website that sent you, and the country, and your IP address isn't stored. GoatCounter is hosted outside South Africa. If your browser asks not to be tracked, nothing is counted. ",
         link("https://www.goatcounter.com/help/privacy", "GoatCounter's privacy notes")),
+      el("h2", {}, "Sharing"),
+      el("p", {}, "If you share a school, your phone's share menu or WhatsApp opens. SchoolMap doesn't see who you share with."),
       el("h2", {}, "School information"),
       el("p", {}, "Fees and costs come from each school's public website and fee letters. Every school page shows its sources and the date we checked. Always confirm with the school before making decisions."),
       el("h2", {}, "Our web host"),

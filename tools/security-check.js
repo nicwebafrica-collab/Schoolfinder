@@ -103,7 +103,7 @@ jsFiles.forEach(function (f) {
     check(!/https?:/.test(call), f + ": fetches from another website: " + call);
   });
   // Outside websites the code may mention. The visitor counter host is allowed only in js/count.js.
-  var OUTSIDE_OK = { "www.w3.org": "any", "docs.github.com": "any", "greendragon.goatcounter.com": "js/count.js", "www.goatcounter.com": "js/app.js" };
+  var OUTSIDE_OK = { "www.w3.org": "any", "docs.github.com": "any", "www.goatcounter.com": "js/app.js", "wa.me": "js/app.js", "greendragon.goatcounter.com": "js/count.js" };
   (text.match(/https?:\/\/[a-z0-9.\-]+/gi) || []).forEach(function (u) {
     var host = u.replace(/^https?:\/\//i, "").toLowerCase();
     check(OUTSIDE_OK[host] === "any" || OUTSIDE_OK[host] === f, f + ": mentions an outside website (" + host + "). Ask Security first");
