@@ -170,19 +170,33 @@
     var sq = splitQuery(text);
     var words = sq.text.split(" ").filter(Boolean);
     if (words.length < 2) return null; // one word is handled by the normal search
-    var best = null;
+    var found = [];
     PLACES.forEach(function (p) {
-      if (sq.region && p.region !== sq.region) return;
       [p.name].concat(p.aliases || []).forEach(function (n) {
         var nw = key(n).split(" ");
         for (var i = 0; i + nw.length <= words.length; i++) {
           if (words.slice(i, i + nw.length).join(" ") !== nw.join(" ")) continue;
           if (ROAD_WORDS.test(words[i + nw.length] || "")) continue; // "Kloof Road" is a street, not Kloof
-          var score = i + (CITIES.indexOf(p.name) === -1 ? 1000 : 0); // suburbs beat cities; later words beat earlier
-          if (!best || score > best.score) best = { place: p, score: score };
+          found.push({ place: p, i: i });
         }
       });
     });
+    // Which province does the rest of the address point to? A province word ("Gauteng"), a city we know
+    // ("Pretoria"), or the postcode (KZN postcodes are 3000-4999). Used to pick the right Hillcrest or Waterfall (B-v13).
+    var region = sq.region;
+    found.forEach(function (f) { if (!region && CITIES.indexOf(f.place.name) !== -1) region = f.place.region; });
+    // Rough postcode ranges: KZN 3000-4999; Gauteng 0001-0299 (Pretoria) and 1400-2199 (Johannesburg, East Rand, Midrand).
+    var code = Number((/\b(\d{4})\b/.exec(String(text)) || [])[1]);
+    if (!region && code > 0) region = code >= 3000 && code <= 4999 ? "KZN" : (code <= 299 || (code >= 1400 && code <= 2199)) ? "Gauteng" : "elsewhere";
+    var best = null;
+    found.forEach(function (f) {
+      if (region && f.place.region !== region) return;
+      var score = f.i + (CITIES.indexOf(f.place.name) === -1 ? 1000 : 0); // suburbs beat cities; later words beat earlier
+      // "Waterfall, Midrand": the place whose note names another word in the address wins.
+      if (f.place.note && words.indexOf(key(f.place.note)) !== -1) score += 2000;
+      if (!best || score > best.score) best = { place: f.place, score: score };
+    });
+    // A name we know, but in a province the address says we don't cover: better "not covered" than the wrong place.
     return best ? best.place : null;
   }
 
