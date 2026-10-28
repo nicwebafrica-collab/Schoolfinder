@@ -2621,15 +2621,7 @@
         "included": false
       }
     ],
-    "outings": [
-      {
-        "name": "Cultural tours and outings",
-        "grades": "All",
-        "cost": 0,
-        "when": null,
-        "note": "Included in school fees"
-      }
-    ],
+    "outings": [],
     "aftercare": {
       "available": true,
       "monthly": null,
@@ -2840,5 +2832,178 @@
       "instalments": null,
       "notes": "Fee-paying public school (quintile 5). Fees not published online."
     }
+  },
+  {
+    "id": "westville-boys-high",
+    "name": "Westville Boys' High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12 (boys)",
+    "area": "Westville",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3629",
+    "address": "26 Wandsbeck Road, Westville",
+    "lat": null,
+    "lng": null,
+    "website": "https://www.wbhs.co.za/",
+    "phone": "031 267 1330",
+    "email": null,
+    "language": "English",
+    "emis": null,
+    "country": "ZA",
+    "sample": false,
+    "quintile": null,
+    "fees": {
+      "year": 2027,
+      "yearly": 85500,
+      "monthly": null,
+      "registration": null,
+      "deposit": 7500,
+      "instalments": null,
+      "notes": "Fee-paying public boys' school (about 16 km from Waterfall). 2027 fees: R85,500 for new learners (Gr 8), R78,000 for Gr 9-12. The 'deposit' is a non-refundable R7,500 registration deposit for new enrolments. Textbooks are loaned. School warns costs may rise after printing.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 85500,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 78000,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Locker rental",
+        "amount": 750,
+        "frequency": "yearly",
+        "note": "Paid upfront",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Stationery and workbooks",
+        "amount": 1000,
+        "frequency": "yearly",
+        "note": "R1,000 to R5,000 depending on subjects",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Grade 8 Leadership Programme",
+        "amount": 4500,
+        "frequency": "once",
+        "note": "",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Leadership camp",
+        "amount": 2500,
+        "frequency": "yearly",
+        "note": "Gr 9-12, R2,500 to R4,500",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Winter exchange sports fixture",
+        "amount": 1500,
+        "frequency": "yearly",
+        "note": "Term 2 sports players",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Sports tour",
+        "amount": 2000,
+        "frequency": "once",
+        "note": "R2,000 to R10,000 depending on the tour",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Overseas educational tour",
+        "amount": 85000,
+        "frequency": "once",
+        "note": "Voluntary",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Art fee",
+        "amount": 2250,
+        "frequency": "yearly",
+        "note": "Gr 10-12, only if taking Art",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Trust Fund contribution",
+        "amount": 2000,
+        "frequency": "yearly",
+        "note": "Voluntary, R2,000 to R10,000",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Daily bus levy",
+        "amount": 15000,
+        "frequency": "yearly",
+        "note": "Upfront or over 10 months; Ballito weekly bus R7,500",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Boarding (on top of fees)",
+        "amount": 92940,
+        "frequency": "yearly",
+        "note": "Weekly boarding; full boarding R103,620; plus R7,500 boarding registration",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Uniform and sports kit",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not priced",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.wbhs.co.za/wp-content/uploads/2026/10/Summary-of-Costs-2027.pdf",
+      "https://www.wbhs.co.za/admissions",
+      "https://www.wbhs.co.za/contact-us",
+      "https://en.wikipedia.org/wiki/Westville_Boys%27_High_School"
+    ]
   }
 ]
