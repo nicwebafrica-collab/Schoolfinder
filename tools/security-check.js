@@ -79,7 +79,7 @@ jsFiles.forEach(function (f) {
 });
 
 // 4. Only these things may be stored on the phone. Anything new needs Security's OK and a line on the privacy page.
-var ALLOWED_STORAGE = ["savedSchools", "lastPlace"];
+var ALLOWED_STORAGE = ["savedSchools", "lastPlace", "homeTipHiddenUntil"];
 jsFiles.forEach(function (f) {
   var text = read(f);
   check(!/sessionStorage|indexedDB|document\.cookie/.test(text), f + ": uses cookies/sessionStorage/IndexedDB (not allowed without Security review)");

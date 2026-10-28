@@ -180,13 +180,20 @@
 
   // ---------- "Keep SchoolMap on your phone" tip (Designer ux-v2 section 2; web first, Play paused) ----------
   // Only in a phone browser, never in the installed app, and only after the parent has opened a second school
-  // or saved one. "Not now" hides it for this visit (nothing is stored until Security OKs a storage key).
+  // or saved one. "Not now" hides it for 30 days (only that date is stored, Security OK 28 Oct).
   var installPrompt = null, schoolsOpened = {}, tipHidden = false;
   window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installPrompt = e; });
   window.addEventListener("appinstalled", function () { tipHidden = true; });
 
+  function tipSnoozed() {
+    try {
+      var until = Number(localStorage.getItem("homeTipHiddenUntil"));
+      return isFinite(until) && until > Date.now() && until < Date.now() + 31 * 864e5;
+    } catch (e) { return false; }
+  }
+
   function showTip() {
-    if (tipHidden || inApp()) return false;
+    if (tipHidden || inApp() || tipSnoozed()) return false;
     try { if (!window.matchMedia("(max-width: 699px)").matches) return false; } catch (e) { return false; }
     return Object.keys(schoolsOpened).length >= 2 || getSaved().length > 0;
   }
@@ -207,7 +214,11 @@
       if (installPrompt) { var p = installPrompt; installPrompt = null; p.prompt(); tip.remove(); }
       else { steps.hidden = !steps.hidden; }
     });
-    later.addEventListener("click", function () { tipHidden = true; tip.remove(); });
+    later.addEventListener("click", function () {
+      tipHidden = true;
+      tip.remove();
+      try { localStorage.setItem("homeTipHiddenUntil", String(Date.now() + 30 * 864e5)); } catch (e) { /* private mode: hidden for this visit */ }
+    });
     return tip;
   }
 
@@ -1205,7 +1216,7 @@
       el("h2", {}, "Your location"),
       el("p", {}, "If you tap “Use my location” or “Am I in the zone?”, your location is rounded to about 1 km and used only on your device to work out distances. It is never sent to us or saved."),
       el("h2", {}, "Saved on this device"),
-      el("p", {}, "Two things are stored in your browser on this device only, and are never sent to us: the schools you bookmark, and the name of the last suburb you searched (never your exact location). Clearing your browser data removes them."),
+      el("p", {}, "Three things are stored in your browser on this device only, and are never sent to us: the schools you bookmark, the name of the last suburb you searched (never your exact location), and, if you tap \u201cNot now\u201d on the home screen tip, the date until which it stays hidden. Clearing your browser data removes them."),
       el("h2", {}, "Counting visits"),
       el("p", {}, "We count how many times each page is opened using GoatCounter, so we know how many parents use SchoolMap. It uses no cookies and doesn't identify you. It records the page, the website that sent you, and the country, and your IP address isn't stored. GoatCounter is hosted outside South Africa. If your browser asks not to be tracked, nothing is counted. ",
         link("https://www.goatcounter.com/help/privacy", "GoatCounter's privacy notes")),
