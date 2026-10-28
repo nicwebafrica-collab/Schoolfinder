@@ -410,3 +410,7 @@ main.has-sticky { padding-bottom: 110px; }
   .detail-pane .pane-actions { justify-content: flex-start; }
   .detail-pane .pane-actions > * { flex: 0 0 auto; max-width: none; padding: 0 20px; }
 }
+
+/* ---------- Home button (Nicholas 28 Oct: refresh kept opening one school; add a clear way home) ---------- */
+.icon-btn.home-btn { width: auto; display: inline-flex; align-items: center; gap: 6px; padding: 0 14px 0 10px; font-size: 15px; font-weight: 700; }
+a.brand-row { text-decoration: none; width: fit-content; min-height: 44px; margin-bottom: 4px; }

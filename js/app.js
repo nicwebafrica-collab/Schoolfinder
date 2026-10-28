@@ -41,6 +41,7 @@
     bookmark: ["M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"],
     compare: ["M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z", "M12 3v18"],
     back: ["M15 18l-6-6 6-6"],
+    home: ["M3 10.5 12 3l9 7.5", "M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"],
     chevron: ["M9 18l6-6-6-6"],
     alert: ["circle:12,12,10", "M12 8v4", "M12 16h.01"],
     locate: ["circle:12,12,3", "M12 2v3", "M12 19v3", "M2 12h3", "M19 12h3"],
@@ -211,7 +212,7 @@
   // ---------- Bottom nav (phones) and top bar (700px and wider) ----------
   // Both are drawn every time; styles.css shows the bottom nav on phones and the top bar on bigger screens.
 
-  var TABS = [["search", "#/", "Search", "search"], ["saved", "#/saved", "Saved", "bookmark"], ["compare", "#/compare", "Compare", "compare"]];
+  var TABS = [["search", "#/", "Home", "home"], ["saved", "#/saved", "Saved", "bookmark"], ["compare", "#/compare", "Compare", "compare"]];
 
   function drawNav(tab) {
     nav.textContent = "";
@@ -245,7 +246,7 @@
       ["Admission rules", "Who gets in first, closing dates and feeder zones.", "pin", ""]
     ];
     return [el("section", { className: "welcome" },
-      el("div", { className: "brand-row" }, icon("pin"), "SchoolMap"),
+      el("a", { href: "#/", className: "brand-row" }, icon("pin"), "SchoolMap"),
       el("h1", { className: "welcome-title" }, "See what a school really costs before you apply."),
       el("p", { className: "free-line" }, "Free \u00b7 No sign-up"),
       el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you."))].concat(
@@ -357,7 +358,8 @@
       if (!text || (state.place && text === state.place.name)) return;
       // A full address: offer the suburb found inside it first ("12 Old Main Road, Hillcrest" -> Hillcrest).
       var inAddress = L.placeInText(text);
-      var fromPostcode = postcodePlace(text);
+      // "Kloof 3610": the suburb typed wins over the postcode guess, the same as pressing Enter.
+      var fromPostcode = L.findPlace(text) ? null : postcodePlace(text);
       [inAddress, fromPostcode].filter(Boolean).slice(0, 1).forEach(function (p) {
         var b = el("button", { type: "button", className: "suggestion", role: "option" }, icon("pin"), "Schools near " + p.name, el("span", { className: "muted small" }, " " + (p.note ? p.note + ", " : "") + p.region));
         b.addEventListener("click", function () { choosePlace(p); });
@@ -1000,7 +1002,7 @@
 
     var head = el("div", { className: "profile-head" },
       el("div", { className: "head-bar" },
-        el("a", { href: "#/", className: "icon-btn", aria: { label: "Back to search" } }, icon("back")), saveBtn),
+        el("a", { href: "#/", className: "icon-btn home-btn" }, icon("home"), "Home"), saveBtn),
       el("div", { className: "initials" }, initials(s.name)),
       el("h1", {}, s.name),
       el("div", { className: "sub one-line" }, [s.address || [s.area, s.city].filter(Boolean).join(", "), dist != null ? dist.toFixed(1) + " km from you" : ""].filter(Boolean).join(" · ")),
@@ -1649,8 +1651,19 @@
     loadSchools(idsInRoute()).then(route, route);
   }
 
+  // The page address keeps the last school opened (#/school/...), so a refresh used to reopen that
+  // school every time. A refresh now goes back to the home screen (the remembered suburb still shows);
+  // a shared or saved school link still opens the school.
+  function isReload() {
+    try {
+      var nav = performance.getEntriesByType("navigation")[0];
+      return nav ? nav.type === "reload" : performance.navigation.type === 1;
+    } catch (e) { return false; }
+  }
+
   function start(idx, country) {
     index = idx && Array.isArray(idx.areas) ? idx : { areas: [] };
+    if (isReload() && /^#\/school\//.test(location.hash)) history.replaceState(null, "", location.pathname + location.search + "#/");
     L.setCountry(country);
     window.addEventListener("hashchange", routeWithData);
     routeWithData();
