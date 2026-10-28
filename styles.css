@@ -395,3 +395,11 @@ main.has-sticky { padding-bottom: 110px; }
 }
 .share-row { margin: 0 0 12px; }
 .share-row .btn { width: 100%; min-height: 48px; }
+
+/* ---------- First impression, round 3 ---------- */
+.feature-tile .icon { display: block; width: 22px; height: 22px; color: var(--primary); margin-bottom: 8px; }
+.feature-tile.hidden { background: var(--hidden-soft); border-color: var(--hidden-line); }
+.feature-tile.hidden .icon, .feature-tile.hidden strong { color: var(--hidden); }
+.coverage-note { margin: -6px 0 14px; font-size: 13px; color: var(--muted); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 32px; }

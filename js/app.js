@@ -47,6 +47,7 @@
     phone: ["M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"],
     close: ["M18 6L6 18", "M6 6l12 12"],
     check: ["M20 6L9 17l-5-5"],
+    coins: ["circle:9,9,6", "M15.5 9.5a6 6 0 1 1-6 6", "M9 7v4", "M7.5 8.5h2.5"],
     share: ["M12 3v12", "M8 7l4-4 4 4", "M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"]
   };
   function icon(name) {
@@ -142,7 +143,7 @@
   function siteFooter() {
     return el("footer", { className: "site-footer" },
       el("p", {}, "Independent. Made in KZN. Schools can't pay to change their numbers or ranking."),
-      el("p", {}, el("a", { href: "#/privacy" }, "Privacy")));
+      el("p", { className: "footer-links" }, el("a", { href: "#/about" }, "About"), el("a", { href: "#/how-we-check" }, "How we check fees"), el("a", { href: "#/privacy" }, "Privacy")));
   }
 
   // ---------- Saved schools (only school ids, kept on this device) ----------
@@ -237,9 +238,9 @@
   function welcome() {
     if (inApp()) return [];
     var tiles = [
-      ["True cost per year", "Fees plus the extras every child pays, in one number."],
-      ["Hidden costs in orange", "Levies, uniforms, camps and outings that aren't in the fee."],
-      ["Admission rules", "Who gets in first, closing dates and feeder zones."]
+      ["True cost per year", "Fees plus the extras every child pays, in one number.", "coins", ""],
+      ["Hidden costs in orange", "Levies, uniforms, camps and outings that aren't in the fee.", "alert", " hidden"],
+      ["Admission rules", "Who gets in first, closing dates and feeder zones.", "pin", ""]
     ];
     return [el("section", { className: "welcome" },
       el("div", { className: "brand-row" }, icon("pin"), "SchoolMap"),
@@ -247,7 +248,7 @@
       el("p", { className: "free-line" }, "Free \u00b7 No sign-up"),
       el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you."))].concat(
       [el("div", { className: "feature-tiles" }, tiles.map(function (t) {
-        return el("div", { className: "feature-tile" }, el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
+        return el("div", { className: "feature-tile" + t[3] }, icon(t[2]), el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
       }))]);
   }
 
@@ -392,7 +393,8 @@
           b.addEventListener("click", function () { choosePlace(p); });
           return b;
         })));
-      var main = parts.concat([examples, trustLine()]);
+      var main = parts.concat([examples, trustLine(),
+        el("p", { className: "coverage-note" }, "Now covering the Upper Highway and nearby areas, KZN. More areas soon.")]);
       var slot = el("div", { className: "example-slot" });
       replace([el("div", { className: "hero" }, el("div", { className: "hero-main" }, main), slot)].concat(hello[1] ? [hello[1]] : []), { tab: "search", wide: true });
       exampleCard(slot);
@@ -1347,6 +1349,27 @@
       el("div", { className: "two" }, el("span", {}, a), el("span", {}, b)));
   }
 
+  // ---------- About and "How we check fees" (first-impression round 3) ----------
+
+  function renderAbout(check) {
+    var how = el("h2", { id: "how-we-check", tabIndex: -1 }, "How we check fees");
+    replace(el("div", { className: "prose" },
+      el("h1", { className: "page-title" }, "About SchoolMap"),
+      el("p", {}, "SchoolMap shows what a school really costs before you apply: the school fees, plus the extras that aren't on the fee sheet, like levies, camps, uniforms and outings, and how admissions work."),
+      el("p", {}, "It's free for parents, with no sign-up. Independent. Made in KZN. Schools can't pay to change their numbers or ranking."),
+      el("p", {}, "We're starting with the Upper Highway in KwaZulu-Natal and adding more areas over time."),
+      how,
+      el("ul", {},
+        el("li", {}, "Every number comes from the school's own fee letter or website, or is clearly marked when it doesn't (for example a survey figure)."),
+        el("li", {}, "Each school page shows where its numbers come from and the date we checked them."),
+        el("li", {}, "Before a school goes live, its numbers are checked a second time against the school's own documents. Where a school doesn't publish its fees, the page says so."),
+        el("li", {}, "If a school doesn't publish something, we say \u201cNot published by school\u201d. We never guess, and we never show R0 for a cost we don't know."),
+        el("li", {}, "Fees change every year, so always confirm with the school before you decide.")),
+      el("p", {}, el("a", { href: "#/" }, "Back to search"))
+    ), { tab: "search" });
+    if (check) how.scrollIntoView(); else window.scrollTo(0, 0);
+  }
+
   // ---------- Privacy page (POPIA) ----------
 
   function renderPrivacy() {
@@ -1452,6 +1475,7 @@
     else if (parts[0] === "saved") renderSaved();
     else if (parts[0] === "compare") renderCompare(parts[1], parts[2]);
     else if (parts[0] === "privacy") renderPrivacy();
+    else if (parts[0] === "about" || parts[0] === "how-we-check") renderAbout(parts[0] === "how-we-check");
     else { selectedId = null; renderSearch(); }
   }
 
