@@ -403,3 +403,10 @@ main.has-sticky { padding-bottom: 110px; }
 .coverage-note { margin: -6px 0 14px; font-size: 13px; color: var(--muted); }
 .footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
 .footer-links a { display: inline-flex; align-items: center; min-height: 32px; }
+
+/* ---------- Visual polish v2 ---------- */
+.viz .dot text.long { font-size: 8px; letter-spacing: -0.2px; }
+@media (min-width: 1100px) {
+  .detail-pane .pane-actions { justify-content: flex-start; }
+  .detail-pane .pane-actions > * { flex: 0 0 auto; max-width: none; padding: 0 20px; }
+}

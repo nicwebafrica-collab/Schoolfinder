@@ -455,8 +455,10 @@
     var v = schoolView(s);
     v.sticky.className = "pane-actions"; // Compare + Call sit at the top of the pane, not stuck to the window
     pane.textContent = "";
-    // School name first, then the Compare / Call bar (Designer polish-v1 item 5).
-    addChild(pane, [v.parts[0], v.sticky].concat(v.parts.slice(1)));
+    // School name first, then the Compare / Call / Share bar (Designer polish-v1 item 5, polish-v2 item 4).
+    var share = v.parts.filter(function (p) { return p && p.classList && p.classList.contains("share-row"); })[0];
+    if (share) v.sticky.appendChild(share.firstChild);
+    addChild(pane, [v.parts[0], v.sticky].concat(v.parts.slice(1).filter(function (p) { return p !== share; })));
     pane.scrollTop = 0;
     Array.prototype.forEach.call(document.querySelectorAll(".card[data-id]"), function (c) {
       c.classList.toggle("selected", c.getAttribute("data-id") === s.id);
@@ -738,7 +740,9 @@
     a.setAttribute("aria-label", s.name + ", " + (s.distanceKm != null ? s.distanceKm.toFixed(1) + " km, " : "") + (L.isNum(total) ? feeText(s, total, "no school fees") : "fees not published"));
     a.appendChild(svgEl("title", {}, s.name));
     a.appendChild(svgEl("circle", { cx: x, cy: y, r: r }));
-    a.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, label || initials(s.name)));
+    var text = label || initials(s.name);
+    // Three letters ("CHH") need smaller type to stay inside the circle (polish-v2 item 1).
+    a.appendChild(svgEl("text", { x: x, y: y + (text.length > 2 ? 3 : 4), "text-anchor": "middle", class: text.length > 2 ? "long" : "" }, text));
     return a;
   }
 
@@ -1157,9 +1161,17 @@
   }
 
   // "2026-05-15 (closed)" once the date has passed, so parents don't plan around an old deadline.
+  // "2026-08-31" -> "31 Aug 2026", the way parents write dates. The data keeps ISO dates (polish-v2 item 2).
+  function niceDate(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+    if (!m) return iso;
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return Number(m[3]) + " " + months[Number(m[2]) - 1] + " " + m[1];
+  }
+
   function dateWithStatus(iso) {
     var past = /^\d{4}-\d{2}-\d{2}$/.test(iso) && iso < new Date().toISOString().slice(0, 10);
-    return iso + (past ? " (closed)" : "");
+    return niceDate(iso) + (past ? " (closed)" : "");
   }
 
   function admissionsPanel(s) {
@@ -1182,7 +1194,7 @@
       sub("Your rights", bullets(pub.yourRights)),
       sub("If you're refused", bullets(pub.ifRefused)),
       pub.warning && el("div", { className: "extras-line" }, icon("alert"), pub.warning),
-      el("p", { className: "source" }, (pr.name || "Province") + " rules checked " + (pr.checked || "date unknown") + ". ",
+      el("p", { className: "source" }, (pr.name || "Province") + " rules checked " + (pr.checked ? niceDate(pr.checked) : "date unknown") + ". ",
         pub.windowSource ? link(pub.windowSource, "Source") : null)
     ] : priv ? bullets(priv.usualSteps) : null;
 
@@ -1496,10 +1508,26 @@
     return L.isNum(o.monthly) ? L.formatRand(o.monthly) + "/mo" : unknown("Offered, price not published");
   }
 
+  // Sources grouped by website: "wbhs.co.za (1, 2, 3), en.wikipedia.org", each number a link (polish-v2 item 3).
   function sourceLine(s) {
-    var links = (s.sources || []).map(function (u, i) { return [i ? ", " : "", link(u)]; });
+    var sites = [], bySite = {};
+    (s.sources || []).forEach(function (u) {
+      var safe = L.safeUrl(u);
+      if (!safe) return;
+      var host = new URL(safe).hostname.replace(/^www\./, "");
+      if (!bySite[host]) { bySite[host] = []; sites.push(host); }
+      bySite[host].push(safe);
+    });
+    var links = sites.map(function (host, i) {
+      var urls = bySite[host];
+      var opts = { target: "_blank", rel: "noopener noreferrer" };
+      if (urls.length === 1) return [i ? ", " : "", el("a", Object.assign({ href: urls[0] }, opts), host)];
+      return [i ? ", " : "", host + " (", urls.map(function (u, j) {
+        return [j ? ", " : "", el("a", Object.assign({ href: u, aria: { label: host + " source " + (j + 1) } }, opts), String(j + 1))];
+      }), ")"];
+    });
     return el("p", { className: "source" },
-      "From the school's website and fee letter · checked " + (s.lastChecked || "date unknown") + ". ",
+      "From the school's website and fee letter · checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ",
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
       el("a", { href: "#/privacy" }, "Privacy"));
   }
