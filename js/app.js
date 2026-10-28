@@ -623,14 +623,106 @@
   }
 
   // A school as a tappable dot with its initials; the label says the name and true cost for screen readers.
-  function dot(s, x, y, r, extraClass) {
+  function dot(s, x, y, r, extraClass, label) {
     var total = L.trueYearlyCost(s);
     var a = svgEl("a", { href: schoolHref(s), class: "dot" + (extraClass ? " " + extraClass : "") + (s.id === selectedId ? " selected" : "") });
     a.setAttribute("aria-label", s.name + ", " + (s.distanceKm != null ? s.distanceKm.toFixed(1) + " km, " : "") + (L.isNum(total) ? feeText(s, total, "no school fees") : "fees not published"));
     a.appendChild(svgEl("title", {}, s.name));
     a.appendChild(svgEl("circle", { cx: x, cy: y, r: r }));
-    a.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, initials(s.name)));
+    a.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, label || initials(s.name)));
     return a;
+  }
+
+  // Dot labels for a set of schools: initials, but when two share them (Curro Hillcrest Primary and High are both
+  // "CH") add the first letter of the phase, or a third initial, so they can be told apart (B52).
+  function dotLabels(list) {
+    var count = {}, out = {};
+    list.forEach(function (s) { var k = initials(s.name); count[k] = (count[k] || 0) + 1; });
+    list.forEach(function (s) {
+      var k = initials(s.name);
+      if (count[k] < 2) { out[s.id] = k; return; }
+      var phase = String(s.phase || "").charAt(0).toUpperCase();
+      var third = String(s.name || "").replace(/\(.*?\)/g, "").split(/\s+/)
+        .filter(function (w) { return /^[A-Za-z]/.test(w) && !/^(of|the|and|for)$/i.test(w); })[2];
+      out[s.id] = k + (phase && phase !== "C" ? phase : third ? third[0].toUpperCase() : "");
+    });
+    return out;
+  }
+
+  // Draws schools as dots on a picture (rings or chart). Dots that would overlap on screen are grouped:
+  // 2 or 3 (e.g. one campus) are spread in a small circle so each keeps its own dot (B45, B50); 4 or more become
+  // one "+N" bubble that lists them in `extra` when tapped (B46). Bubbles are drawn after the dots so nothing
+  // covers them (B51). Tap areas go in a layer under everything. `avoid` keeps groups off a point (the home dot).
+  function placeDots(svg, points, r, extra, avoid) {
+    var TOUCH = r * 2 + 2;
+    var labels = dotLabels(points.map(function (p) { return p.s; }));
+    var groups = [];
+    points.forEach(function (p) {
+      var g = groups.filter(function (g) { return Math.hypot(g.x - p.x, g.y - p.y) < TOUCH; })[0];
+      if (!g) { groups.push({ x: p.x, y: p.y, items: [p] }); return; }
+      g.items.push(p);
+      g.x = g.items.reduce(function (t, i) { return t + i.x; }, 0) / g.items.length;
+      g.y = g.items.reduce(function (t, i) { return t + i.y; }, 0) / g.items.length;
+    });
+    // Work out every dot's and bubble's position first.
+    var items = [];
+    groups.forEach(function (gr) {
+      var group = gr.items;
+      if (group.length <= 3) {
+        var off = group.length === 1 ? 0 : group.length === 2 ? r + 1 : r + 3;
+        group.forEach(function (g, i) {
+          var a = i / group.length * 2 * Math.PI - Math.PI / 2;
+          items.push({ s: g.s, x: gr.x + Math.cos(a) * off, y: gr.y + Math.sin(a) * off, r: r });
+        });
+      } else {
+        items.push({ group: group, x: gr.x, y: gr.y, r: r + 3 });
+      }
+    });
+    // Then gently push apart anything that still touches (a spread campus next to another school, B50/B51),
+    // and keep everything off the home dot. Each move is small, so dots stay close to their true spot.
+    for (var round = 0; round < 40; round++) {
+      var moved = false;
+      for (var i = 0; i < items.length; i++) {
+        for (var j = i + 1; j < items.length; j++) {
+          var A = items[i], B = items[j], dx = B.x - A.x, dy = B.y - A.y, d = Math.hypot(dx, dy), need = A.r + B.r + 2;
+          if (d >= need) continue;
+          if (d < 0.01) { dx = 1; dy = 0; d = 1; }
+          var push = (need - d) / 2;
+          A.x -= dx / d * push; A.y -= dy / d * push; B.x += dx / d * push; B.y += dy / d * push;
+          moved = true;
+        }
+        if (avoid) {
+          var hx = items[i].x - avoid.x, hy = items[i].y - avoid.y, hd = Math.hypot(hx, hy), hneed = items[i].r + 8;
+          if (hd < hneed) { if (hd < 0.01) { hx = 1; hy = 1; hd = Math.SQRT2; } items[i].x = avoid.x + hx / hd * hneed; items[i].y = avoid.y + hy / hd * hneed; moved = true; }
+        }
+      }
+      if (!moved) break;
+    }
+    var hits = svgEl("g", { class: "hits" });
+    svg.appendChild(hits);
+    var bubbles = [];
+    items.forEach(function (it) {
+      if (it.s) {
+        addHit(hits, it.x, it.y, schoolHref(it.s));
+        svg.appendChild(dot(it.s, it.x, it.y, r, null, labels[it.s.id]));
+        return;
+      }
+      var group = it.group;
+      var bubble = svgEl("a", { href: "#", class: "dot bubble", role: "button" });
+      bubble.setAttribute("aria-label", group.length + " schools here, show them");
+      bubble.appendChild(svgEl("circle", { cx: it.x, cy: it.y, r: it.r }));
+      bubble.appendChild(svgEl("text", { x: it.x, y: it.y + 4, "text-anchor": "middle" }, "+" + group.length));
+      var showGroup = function (e) {
+        e.preventDefault();
+        extra.textContent = "";
+        extra.appendChild(el("p", { className: "count" }, group.length + " schools here"));
+        extra.appendChild(schoolLinks(group.map(function (g) { return g.s; })));
+      };
+      bubble.addEventListener("click", showGroup);
+      addHit(hits, it.x, it.y, showGroup);
+      bubbles.push(bubble);
+    });
+    bubbles.forEach(function (b) { svg.appendChild(b); });
   }
 
   // An invisible circle around a dot so it's easier to tap on a phone (B49). These go in a layer UNDER all the
@@ -668,56 +760,8 @@
       var angle = Math.atan2(east, north); // 0 = north, clockwise
       return { s: s, d: d, x: C + Math.sin(angle) * scale(d), y: C - Math.cos(angle) * scale(d) };
     }).sort(function (a, b) { return a.d - b.d; });
-    // Only dots that would still overlap on screen (e.g. same campus) join one "+N" bubble (B45, B46).
-    var TOUCH = 28; // a little more than two dot radii
-    var groups = [];
-    points.forEach(function (p) {
-      var g = groups.filter(function (g) { return Math.hypot(g.x - p.x, g.y - p.y) < TOUCH; })[0];
-      if (!g) { groups.push({ x: p.x, y: p.y, items: [p] }); return; }
-      g.items.push(p);
-      g.x = g.items.reduce(function (t, i) { return t + i.x; }, 0) / g.items.length;
-      g.y = g.items.reduce(function (t, i) { return t + i.y; }, 0) / g.items.length;
-    });
-    // Keep bubbles and dots off the home dot so its count stays readable.
-    groups.forEach(function (g) {
-      var dx = g.x - C, dy = g.y - C, len = Math.hypot(dx, dy);
-      if (len >= 24) return;
-      if (len < 0.5) { dx = 1; dy = 1; len = Math.SQRT2; }
-      g.x = C + dx / len * 24; g.y = C + dy / len * 24;
-      if (g.items.length === 1) { g.items[0].x = g.x; g.items[0].y = g.y; }
-    });
     var extra = el("div", {});
-    var hits = svgEl("g", { class: "hits" });
-    svg.appendChild(hits);
-    groups.forEach(function (gr) {
-      var group = gr.items;
-      if (group.length <= 3) {
-        // 2 or 3 schools at nearly the same spot (e.g. one campus): spread them in a small circle so each
-        // stays its own dot. Bigger crowds use the "+N" bubble below.
-        group.forEach(function (g, i) {
-          var a = group.length === 1 ? 0 : i / group.length * 2 * Math.PI - Math.PI / 2;
-          var off = group.length === 1 ? 0 : group.length === 2 ? 14 : 16;
-          var x = gr.x + Math.cos(a) * off, y = gr.y + Math.sin(a) * off;
-          addHit(hits, x, y, schoolHref(g.s));
-          svg.appendChild(dot(g.s, x, y, 13));
-        });
-        return;
-      }
-      var x = gr.x, y = gr.y;
-      var bubble = svgEl("a", { href: "#", class: "dot bubble", role: "button" });
-      bubble.setAttribute("aria-label", group.length + " schools here, show them");
-      bubble.appendChild(svgEl("circle", { cx: x, cy: y, r: 16 }));
-      bubble.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, "+" + group.length));
-      var showGroup = function (e) {
-        e.preventDefault();
-        extra.textContent = "";
-        extra.appendChild(el("p", { className: "count" }, group.length + " schools here"));
-        extra.appendChild(schoolLinks(group.map(function (g) { return g.s; })));
-      };
-      bubble.addEventListener("click", showGroup);
-      addHit(hits, x, y, showGroup);
-      svg.appendChild(bubble);
-    });
+    placeDots(svg, points, 13, extra, { x: C, y: C });
     svg.appendChild(svgEl("circle", { cx: C, cy: C, r: 6, class: "home" })); // drawn last so schools never hide home
     return el("div", { className: "panel viz" }, svg,
       el("p", { className: "muted small" }, "Blue dot: " + (state.place ? "the middle of " + state.place.name : "you") + ". Straight-line distance, not the road route. Tap a school to open it."),
@@ -763,14 +807,9 @@
       });
       svg.appendChild(svgEl("text", { x: (left + W - right) / 2, y: H - 4, "text-anchor": "middle", class: "axis" }, "Distance from home"));
       svg.appendChild(svgEl("text", { x: 12, y: (top + H - bottom) / 2, "text-anchor": "middle", class: "axis", transform: "rotate(-90 12 " + (top + H - bottom) / 2 + ")" }, "True cost a year"));
-      var hits = svgEl("g", { class: "hits" });
-      svg.appendChild(hits);
-      priced.forEach(function (p) {
-        var x = px(Math.min(p.s.distanceKm, xMax)), y = py(p.t);
-        addHit(hits, x, y, schoolHref(p.s));
-        svg.appendChild(dot(p.s, x, y, 11));
-      });
-      parts.push(svg);
+      var chartExtra = el("div", {});
+      placeDots(svg, priced.map(function (p) { return { s: p.s, x: px(Math.min(p.s.distanceKm, xMax)), y: py(p.t) }; }), 11, chartExtra, null);
+      parts.push(svg, chartExtra);
     } else {
       parts.push(el("p", { className: "muted" }, "None of these schools publish fees yet, so there's nothing to plot."));
     }
