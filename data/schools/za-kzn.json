@@ -112,7 +112,7 @@
         "item": "Phase commitment fee",
         "amount": 3600,
         "frequency": "once",
-        "note": "Due in February of Gr 00 and Gr 7 for existing pupils; offset against next January's fees, lost if you withdraw",
+        "note": "Due in February of Gr 00 and of Gr 7",
         "applies": "Gr 7",
         "included": false
       },
@@ -2856,16 +2856,16 @@
     "quintile": null,
     "fees": {
       "year": 2027,
-      "yearly": 85500,
+      "yearly": 78000,
       "monthly": null,
       "registration": null,
       "deposit": 7500,
       "instalments": null,
-      "notes": "Fee-paying public boys' school (about 16 km from Waterfall). 2027 fees: R85,500 for new learners (Gr 8), R78,000 for Gr 9-12. The 'deposit' is a non-refundable R7,500 registration deposit for new enrolments. Textbooks are loaned. School warns costs may rise after printing.",
+      "notes": "Fee-paying public boys' school (about 16 km from Waterfall). 2027 fees: R85,500 for new learners (Gr 8), R78,000 for Gr 9-12. The 'deposit' is a non-refundable R7,500 registration deposit for new enrolments. Textbooks are loaned. School warns costs may rise after printing. Gr 8 shown as R78,000 because the school's R85,500 for new boys already includes the R7,500 non-refundable registration deposit (shown separately as the deposit).",
       "byGrade": [
         {
           "grade": "Gr 8",
-          "yearly": 85500,
+          "yearly": 78000,
           "monthly": null
         },
         {
@@ -2888,7 +2888,8 @@
           "yearly": 78000,
           "monthly": null
         }
-      ]
+      ],
+      "evidence": "S1: R85,500 for new enrolments includes the R7,500 registration deposit | calc: R85 500 - R7 500 = R78 000"
     },
     "hiddenCosts": [
       {
@@ -2919,8 +2920,8 @@
         "item": "Leadership camp",
         "amount": 2500,
         "frequency": "yearly",
-        "note": "Gr 9-12, R2,500 to R4,500",
-        "applies": "some",
+        "note": "All Gr 9-12, R2,500 to R4,500",
+        "applies": "Gr 9-12",
         "included": false
       },
       {
@@ -2998,7 +2999,7 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "sources": [
       "https://www.wbhs.co.za/wp-content/uploads/2026/10/Summary-of-Costs-2027.pdf",
       "https://www.wbhs.co.za/admissions",
@@ -3136,10 +3137,19 @@
         "item": "New-learner deposit",
         "amount": 3000,
         "frequency": "once",
-        "note": "Credited against the year's fees (some pay R3,500)",
+        "note": "A prepayment, not an extra: credited against the year's fees (some pay R3,500)",
         "applies": "some",
         "included": true,
         "evidence": "S3: 'One payment of R 36 825.00 (If R 3 000.00 deposit paid)'"
+      },
+      {
+        "item": "Learner Support class (instead of the normal fee)",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Gr 4 R51,525, Gr 5 R50,525 a year instead of the normal fee",
+        "applies": "some",
+        "included": false,
+        "evidence": "S2: 'GRADE 4 LEARNER SUPPORT: R 51 525.00' 'GRADE 5 LEARNERS SUPPORT: R 50 525.00'"
       },
       {
         "item": "Unpaid debit order charge",

@@ -44,7 +44,9 @@
     chevron: ["M9 18l6-6-6-6"],
     alert: ["circle:12,12,10", "M12 8v4", "M12 16h.01"],
     locate: ["circle:12,12,3", "M12 2v3", "M12 19v3", "M2 12h3", "M19 12h3"],
-    phone: ["M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"]
+    phone: ["M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"],
+    close: ["M18 6L6 18", "M6 6l12 12"],
+    share: ["M12 3v12", "M8 7l4-4 4 4", "M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"]
   };
   function icon(name) {
     var NS = "http://www.w3.org/2000/svg";
@@ -173,31 +175,39 @@
       el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you. Free for parents."))].concat(
       [el("div", { className: "feature-tiles" }, tiles.map(function (t) {
         return el("div", { className: "feature-tile" }, el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
-      }).concat(homeScreenTip()))]);
+      }))]);
   }
 
-  // Web first (Nicholas, 28 Oct): instead of a store link, tell phone visitors how to keep SchoolMap on their home screen.
-  // Uses the browser's own install prompt where there is one (Android Chrome); nothing is stored or sent.
-  var installPrompt = null;
+  // ---------- "Keep SchoolMap on your phone" tip (Designer ux-v2 section 2; web first, Play paused) ----------
+  // Only in a phone browser, never in the installed app, and only after the parent has opened a second school
+  // or saved one. "Not now" hides it for this visit (nothing is stored until Security OKs a storage key).
+  var installPrompt = null, schoolsOpened = {}, tipHidden = false;
   window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installPrompt = e; });
+  window.addEventListener("appinstalled", function () { tipHidden = true; });
+
+  function showTip() {
+    if (tipHidden || inApp()) return false;
+    try { if (!window.matchMedia("(max-width: 699px)").matches) return false; } catch (e) { return false; }
+    return Object.keys(schoolsOpened).length >= 2 || getSaved().length > 0;
+  }
 
   function homeScreenTip() {
-    var ua = navigator.userAgent || "";
-    var iphone = /iPhone|iPad|iPod/.test(ua);
-    var how = iphone ? "In Safari, tap Share, then “Add to Home Screen”."
-      : "In your browser menu (⋮), tap “Add to Home screen” or “Install app”.";
-    var tip = el("div", { className: "feature-tile home-tip" },
-      el("strong", {}, "Keep SchoolMap on your phone"),
-      el("p", { className: "muted small" }, "Free, no app store needed, and it works offline. " + how));
-    if (installPrompt) {
-      var btn = el("button", { type: "button", className: "btn" }, "Add to home screen");
-      btn.addEventListener("click", function () {
-        var p = installPrompt; installPrompt = null;
-        p.prompt();
-        btn.remove();
-      });
-      tip.appendChild(btn);
-    }
+    if (!showTip()) return null;
+    var iphone = /iPhone|iPad|iPod/.test(navigator.userAgent || "");
+    var steps = el("ol", { className: "tip-steps", hidden: true },
+      iphone ? [el("li", {}, "Tap the Share button ", icon("share"), " in Safari"), el("li", {}, "Tap \u201cAdd to Home Screen\u201d"), el("li", {}, "Tap \u201cAdd\u201d")]
+        : [el("li", {}, "Tap the \u22ee menu"), el("li", {}, "Tap \u201cAdd to Home screen\u201d"), el("li", {}, "Tap \u201cAdd\u201d")]);
+    var add = el("button", { type: "button", className: "btn solid" }, "Add to home screen");
+    var later = el("button", { type: "button", className: "link-btn" }, "Not now");
+    var tip = el("section", { className: "home-tip", aria: { label: "Keep SchoolMap on your phone" } },
+      el("div", { className: "tip-head" }, icon("pin"), el("strong", {}, "Keep SchoolMap on your phone")),
+      el("p", { className: "small" }, "Add it to your home screen. It opens like an app and works offline."),
+      steps, el("div", { className: "tip-actions" }, add, later));
+    add.addEventListener("click", function () {
+      if (installPrompt) { var p = installPrompt; installPrompt = null; p.prompt(); tip.remove(); }
+      else { steps.hidden = !steps.hidden; }
+    });
+    later.addEventListener("click", function () { tipHidden = true; tip.remove(); });
     return tip;
   }
 
@@ -412,6 +422,8 @@
         .map(function (s) { return L.distanceKm(centre.lat, centre.lng, s.lat, s.lng); }).sort(function (a, b) { return a - b; })[0];
 
       container.textContent = "";
+      var tip = homeScreenTip();
+      if (tip) container.appendChild(tip);
       container.appendChild(el("p", { className: "count" }, found.near.length
         ? found.near.length + (found.near.length === 1 ? " school" : " schools") + " within " + state.radius + " km of " + where
         : "No schools within " + state.radius + " km of " + where));
@@ -423,7 +435,11 @@
       });
       if (found.near.length) {
         container.appendChild(viewToggle(container));
-        if (state.view === "rings") container.appendChild(ringsView(found.near, centre));
+        if (state.view === "rings") {
+          container.appendChild(ringsView(found.near, centre));
+          container.appendChild(el("p", { className: "count" }, "Nearest first"));
+          container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
+        }
         else if (state.view === "chart") container.appendChild(costChart(found.near));
         else container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
       }
@@ -455,6 +471,114 @@
       container.textContent = "";
       container.appendChild(el("p", {}, "Couldn't load schools for this area. Check your internet connection and try again."));
     });
+  }
+
+  // ---------- Phone bottom sheet for the rings and chart (Designer ux-v2 section 1) ----------
+  // Tapping a dot on a phone opens a peek sheet; "View school" (or dragging up) shows the full school.
+  // Back, Esc, the X, the dimmed area or dragging down closes it. Bigger screens follow the dot's link instead.
+
+  var sheet = null; // { node, backdrop, dot, svg }
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest(".viz a") : null;
+    var href = a && a.getAttribute("href");
+    if (!href || href.indexOf("#/school/") !== 0) return;
+    try { if (window.matchMedia("(min-width: 700px)").matches) return; } catch (err) { return; }
+    var s = findSchool(decodeURIComponent(href.slice(9)));
+    if (!s) return;
+    e.preventDefault();
+    // A tap on the invisible tap area stands for the visible dot with the same link.
+    var dotEl = a.classList.contains("dot") ? a : document.querySelector('.viz a.dot[href="' + href + '"]') || a;
+    openSheet(s, dotEl);
+  }, true);
+
+  window.addEventListener("popstate", function () { if (sheet) closeSheet(true); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && sheet) closeSheet(); });
+
+  function openSheet(s, dotEl) {
+    if (sheet) closeSheet(true, true);
+    var svg = dotEl && dotEl.closest ? dotEl.closest("svg") : null;
+    if (svg) svg.classList.add("has-selection");
+    if (dotEl) dotEl.classList.add("selected");
+    var backdrop = el("div", { className: "sheet-backdrop" });
+    var node = el("div", { className: "sheet", role: "dialog", aria: { modal: "true", labelledby: "sheet-title" } });
+    backdrop.addEventListener("click", function () { closeSheet(); });
+    document.body.appendChild(backdrop);
+    document.body.appendChild(node);
+    sheet = { node: node, backdrop: backdrop, dot: dotEl, svg: svg };
+    try { history.pushState({ sheet: true }, ""); sheet.pushed = true; } catch (e) { /* not allowed */ }
+    drawPeek(s);
+    dragToResize(node, s);
+  }
+
+  function closeSheet(fromBack, quiet) {
+    if (!sheet) return;
+    var was = sheet;
+    sheet = null;
+    was.node.remove(); was.backdrop.remove();
+    if (was.svg) was.svg.classList.remove("has-selection");
+    if (was.dot) { was.dot.classList.remove("selected"); if (!quiet && was.dot.focus) was.dot.focus(); }
+    if (!fromBack && was.pushed) history.back();
+  }
+
+  function sheetTitle(s) {
+    return el("h2", { id: "sheet-title", className: "sheet-title", tabIndex: -1 }, s.name);
+  }
+
+  function drawPeek(s) {
+    var node = sheet.node;
+    node.className = "sheet";
+    node.textContent = "";
+    var total = L.trueYearlyCost(s), extras = extrasSummary(s);
+    var centre = state.near || state.place;
+    var km = centre && typeof s.lat === "number" && typeof s.lng === "number" ? L.distanceKm(centre.lat, centre.lng, s.lat, s.lng) : null;
+    var saveBtn = el("button", { type: "button", className: "icon-btn light", aria: { label: "Save school" } }, icon("bookmark"));
+    saveBtn.setAttribute("aria-pressed", getSaved().indexOf(s.id) !== -1);
+    saveBtn.addEventListener("click", function () { saveBtn.setAttribute("aria-pressed", toggleSaved(s.id)); });
+    var view = el("button", { type: "button", className: "btn solid" }, "View school");
+    view.addEventListener("click", function () { drawFull(s); });
+    addChild(node, [
+      el("div", { className: "sheet-handle", aria: { hidden: "true" } }),
+      el("div", { className: "card-top" },
+        el("div", { className: "initials", aria: { hidden: "true" } }, initials(s.name)),
+        el("div", { className: "card-title" }, sheetTitle(s),
+          el("div", { className: "muted small" }, [s.type, s.grades, km != null ? km.toFixed(1) + " km" : null].filter(Boolean).join(" \u00b7 ")))),
+      el("div", { className: "sheet-cost" }, el("div", { className: "label" }, "True cost / yr"),
+        el("strong", {}, L.isNum(total) ? feeText(s, total, "No school fees") : "Fees not published")),
+      extras ? el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)) : null,
+      el("div", { className: "sheet-actions" }, view, saveBtn)
+    ]);
+    node.querySelector("#sheet-title").focus();
+  }
+
+  function drawFull(s) {
+    var node = sheet.node;
+    node.className = "sheet full";
+    node.textContent = "";
+    var close = el("button", { type: "button", className: "icon-btn light", aria: { label: "Close" } }, icon("close"));
+    close.addEventListener("click", function () { closeSheet(); });
+    var v = schoolView(s);
+    v.sticky.className = "pane-actions";
+    addChild(node, [el("div", { className: "sheet-handle", aria: { hidden: "true" } }),
+      el("div", { className: "sheet-bar" }, sheetTitle(s), close),
+      el("div", { className: "sheet-body" }, [v.sticky].concat(v.parts))]);
+    node.querySelector("#sheet-title").focus();
+  }
+
+  // Drag the handle up to see the whole school, or down to close.
+  function dragToResize(node, s) {
+    var startY = null;
+    node.addEventListener("touchstart", function (e) {
+      if (!e.target.closest(".sheet-handle, .sheet-bar, .card-top")) return;
+      startY = e.touches[0].clientY;
+    }, { passive: true });
+    node.addEventListener("touchend", function (e) {
+      if (startY == null) return;
+      var dy = e.changedTouches[0].clientY - startY;
+      startY = null;
+      if (dy < -40 && !node.classList.contains("full")) drawFull(s);
+      else if (dy > 60) closeSheet();
+    }, { passive: true });
   }
 
   // ---------- List / Around me / Cost chart (Designer map plan B + C, approved 28 Oct) ----------
@@ -682,6 +806,7 @@
   function renderSchool(id) {
     var s = findSchool(id);
     if (!s) return notFound();
+    schoolsOpened[s.id] = true;
     if (wideScreen() && (state.place || state.near)) {
       // Desktop with a search open: show the school in the right-hand pane, keeping the list (and its scroll).
       var pane = document.querySelector(".detail-pane");
