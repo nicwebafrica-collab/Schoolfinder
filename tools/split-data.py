@@ -57,6 +57,8 @@ for f in sorted((root / "schools").glob("*.json")):
         "id": f.stem, "country": "ZA", "province": province, "short": short,
         "file": "schools/" + f.name, "rules": ("rules/" + f.name) if rules.exists() else None,
         "schoolCount": len(schools),
+        # Newest "lastChecked" month in this area, for the "Updated Oct 2026" line on the first screen.
+        "updated": max((str(s.get("lastChecked") or "")[:7] for s in schools), default="") or None,
         # School ids per area, so a saved school or a shared link loads only its own area's file.
         "ids": [s["id"] for s in schools],
         "bounds": [min(p[0] for p in pts), min(p[1] for p in pts), max(p[0] for p in pts), max(p[1] for p in pts)] if pts else None,

@@ -11,6 +11,7 @@
       "file": "schools/za-gp.json",
       "rules": null,
       "schoolCount": 5,
+      "updated": "2026-10",
       "ids": [
         "curro-pretoria-primary",
         "curro-pretoria-high",
@@ -33,6 +34,7 @@
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
       "schoolCount": 24,
+      "updated": "2026-10",
       "ids": [
         "waterfall-preparatory",
         "waterfall-college",

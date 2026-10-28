@@ -46,6 +46,7 @@
     locate: ["circle:12,12,3", "M12 2v3", "M12 19v3", "M2 12h3", "M19 12h3"],
     phone: ["M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"],
     close: ["M18 6L6 18", "M6 6l12 12"],
+    check: ["M20 6L9 17l-5-5"],
     share: ["M12 3v12", "M8 7l4-4 4 4", "M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"]
   };
   function icon(name) {
@@ -93,11 +94,29 @@
     app.textContent = "";
     app.className = (opts.wide ? "wide " : "") + (opts.twoPane ? "two-pane " : "") + (opts.sticky ? "has-sticky" : "");
     addChild(app, children);
+    if (!opts.twoPane) app.appendChild(siteFooter());
     drawNav(opts.tab);
     nav.hidden = !!opts.hideNav;
     var old = document.querySelector(".sticky-actions");
     if (old) old.remove();
     if (opts.sticky) document.body.appendChild(opts.sticky);
+  }
+
+  // ---------- Trust line and footer (Designer + Marketing first-impression list, round 1) ----------
+
+  // "Every number shows its source … · Updated Oct 2026". The month comes from the data (index.json), never typed in.
+  function trustLine() {
+    var months = index.areas.map(function (a) { return a.updated || ""; }).filter(function (m) { return /^\d{4}-\d{2}$/.test(m); }).sort();
+    var latest = months[months.length - 1];
+    var label = latest ? new Date(Number(latest.slice(0, 4)), Number(latest.slice(5, 7)) - 1, 1).toLocaleDateString("en-ZA", { month: "short", year: "numeric" }) : null;
+    return el("p", { className: "trust-line" }, icon("check"),
+      "Every number shows its source and the date we checked it" + (label ? " \u00b7 Updated " + label : ""));
+  }
+
+  function siteFooter() {
+    return el("footer", { className: "site-footer" },
+      el("p", {}, "Independent. Built by Upper Highway parents. Schools can't pay to change their numbers or ranking."),
+      el("p", {}, el("a", { href: "#/privacy" }, "Privacy")));
   }
 
   // ---------- Saved schools (only school ids, kept on this device) ----------
@@ -197,8 +216,10 @@
       ["Admission rules", "Who gets in first, closing dates and feeder zones."]
     ];
     return [el("section", { className: "welcome" },
+      el("div", { className: "brand-row" }, icon("pin"), "SchoolMap"),
       el("h1", { className: "welcome-title" }, "See what a school really costs before you apply."),
-      el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you. Free for parents."))].concat(
+      el("p", { className: "free-line" }, "Free \u00b7 No sign-up"),
+      el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you."))].concat(
       [el("div", { className: "feature-tiles" }, tiles.map(function (t) {
         return el("div", { className: "feature-tile" }, el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
       }))]);
@@ -335,6 +356,7 @@
     var first = !state.place && !state.near;
     var hello = first ? welcome() : [];
     var parts = (hello.length ? [hello[0]] : [el("h1", { className: "page-title" }, "Find a school")]).concat([searchBox, locStatus, suggestions]);
+    if (first) parts.push(trustLine());
 
     if (first) {
       // First open: ask where they live instead of listing every school in the country.
