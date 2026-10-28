@@ -346,7 +346,8 @@
     var v = schoolView(s);
     v.sticky.className = "pane-actions"; // Compare + Call sit at the top of the pane, not stuck to the window
     pane.textContent = "";
-    addChild(pane, [v.sticky].concat(v.parts));
+    // School name first, then the Compare / Call bar (Designer polish-v1 item 5).
+    addChild(pane, [v.parts[0], v.sticky].concat(v.parts.slice(1)));
     pane.scrollTop = 0;
     Array.prototype.forEach.call(document.querySelectorAll(".card[data-id]"), function (c) {
       c.classList.toggle("selected", c.getAttribute("data-id") === s.id);
@@ -605,7 +606,7 @@
 
   function viewToggle(container) {
     var group = el("div", { className: "segmented view-toggle", role: "group", aria: { label: "Show schools as" } });
-    [["list", "List"], ["rings", "Around me"], ["chart", "Cost vs distance"]].forEach(function (v) {
+    [["list", "List"], ["rings", "Around me"], ["chart", "Cost chart"]].forEach(function (v) {
       var b = el("button", { type: "button" }, v[1]);
       b.setAttribute("aria-pressed", state.view === v[0]);
       b.addEventListener("click", function () { state.view = v[0]; drawResults(container); });

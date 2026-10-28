@@ -28,6 +28,7 @@
   --zone-line: #B9E0D8;
   --header-bg: #142033;
   --ink-on-primary: #FFFFFF;
+  --surface-2: #F4F6F9;
 
   --font: 'Plus Jakarta Sans', system-ui, sans-serif;
   --radius-card: 18px;
@@ -43,7 +44,7 @@
     --line: #26324A; --line-strong: #34425E; --primary: #6E9BFF; --ink-on-primary: #0E1624; --primary-ink: #C9D8FF;
     --primary-soft: #1D2B4A; --hidden: #FDBA74; --hidden-bar: #F59E0B; --hidden-soft: #3A2414; --hidden-line: #5C3A1E;
     --zone: #7FD4C6; --zone-soft: #12302C; --zone-line: #1F4D46; --on-dark-muted: #A3AEC2;
-    --header-bg: #172133;
+    --header-bg: #172133; --surface-2: #1D2940;
   }
 }
 
@@ -84,7 +85,7 @@ main.wide { max-width: 960px; }
 .initials { flex: none; width: 44px; height: 44px; border-radius: 12px; background: var(--primary-soft); color: var(--primary-ink); display: grid; place-items: center; font-weight: 800; font-size: 15px; }
 .card h3 { margin: 0; font-size: 16px; font-weight: 700; line-height: 1.25; overflow-wrap: anywhere; }
 .money-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
-.money { border-radius: var(--radius-box); padding: 10px 12px; background: var(--bg); }
+.money { border-radius: var(--radius-box); padding: 10px 12px; background: var(--surface-2); }
 .money.true { background: var(--primary-soft); color: var(--primary-ink); }
 .money strong { display: block; font-size: 18px; font-weight: 800; letter-spacing: -.01em; }
 .extras-line { display: flex; gap: 6px; align-items: flex-start; margin-top: 10px; color: var(--hidden); font-size: 13px; font-weight: 600; }
@@ -332,3 +333,27 @@ main.has-sticky { padding-bottom: 110px; }
 .tip-actions .btn { min-height: 44px; }
 .sheet .profile-head h1 { display: none; } /* the sheet bar already shows the name */
 .tip-actions .link-btn { margin: 0; }
+
+/* ---------- Visual polish v1 (Designer, 28 Oct) ---------- */
+/* 1. Scrollbars follow light/dark mode */
+:root { color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; } }
+* { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 999px; border: 2px solid var(--bg); }
+.chips { scrollbar-width: none; }
+/* 3. All grades visible */
+.grade-chips { flex-wrap: wrap; overflow: visible; }
+@media (min-width: 1100px) {
+  /* 2. The school header fits inside the desktop pane */
+  .detail-pane { overflow-x: hidden; }
+  .detail-pane .profile-head { margin: 0 0 16px; border-radius: 18px; border: 1px solid var(--line); position: relative; }
+  /* 5. Save button sits in the header row next to the name; the bar comes after the header */
+  .detail-pane .profile-head .head-bar { position: absolute; top: 14px; right: 16px; margin: 0; }
+  .detail-pane .profile-head .head-bar a.icon-btn { display: none; }
+  .detail-pane .profile-head h1 { padding-right: 56px; }
+  .detail-pane .pane-actions { position: static; margin-top: 0; padding-top: 0; }
+  /* 6. Both panes start at the same height */
+  .list-pane, .detail-pane { padding-top: 20px; }
+}
