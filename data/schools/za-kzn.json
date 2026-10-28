@@ -3005,5 +3005,175 @@
       "https://www.wbhs.co.za/contact-us",
       "https://en.wikipedia.org/wiki/Westville_Boys%27_High_School"
     ]
+  },
+  {
+    "country": "ZA",
+    "sample": false,
+    "province": "KwaZulu-Natal",
+    "city": "Durban",
+    "area": "Westville",
+    "postcode": "3629",
+    "language": "English",
+    "type": "Public",
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-28",
+    "id": "westville-girls-high",
+    "name": "Westville Girls' High School",
+    "phase": "High",
+    "grades": "Gr 8-12 (girls)",
+    "address": "24 Westville Road, Dawncliffe, Westville",
+    "lat": -29.8372,
+    "lng": 30.9167,
+    "website": "https://www.wghs.co.za/",
+    "phone": "031 266 1258",
+    "email": "school@wghs.co.za",
+    "emis": null,
+    "fees": {
+      "year": 2026,
+      "yearly": 63869,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (girls). Grade 8 shown: R63,869 a year; Grades 9-12 R54,669. The school's page gives annual fees only, not monthly payments, deposits or levies. No bursaries or scholarships, and no boarding.",
+      "evidence": "S1 Fees table: 'Grade 8 ... Annual fee R63,869'",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 63869,
+          "monthly": null,
+          "evidence": "S1 Fees table: 'Grade 8 ... Annual fee R63,869'"
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 54669,
+          "monthly": null,
+          "evidence": "S1 Fees table: 'Grades 9 – 12 ... Annual fee R54,669'"
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Uniform, stationery, camps, tours, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "sources": [
+      "https://www.wghs.co.za/fees/",
+      "https://www.wghs.co.za/contact-us/",
+      "https://en.wikipedia.org/wiki/Westville_Girls%27_High_School",
+      "https://www.wghs.co.za/application-process/"
+    ],
+    "locationEvidence": "S3 infobox coordinates: '-29.83722, 30.91667'"
+  },
+  {
+    "country": "ZA",
+    "sample": false,
+    "province": "KwaZulu-Natal",
+    "city": "Durban",
+    "area": "Westville",
+    "postcode": "3629",
+    "language": "English",
+    "type": "Public",
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-28",
+    "id": "westville-senior-primary",
+    "name": "Westville Senior Primary School",
+    "phase": "Primary",
+    "grades": "Gr 4-7",
+    "address": "42 Westville Road, Westville",
+    "lat": -29.8398,
+    "lng": 30.9163,
+    "website": "https://www.wsps.co.za/",
+    "phone": "031 266 5218",
+    "email": null,
+    "emis": "500296000",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": 42925,
+      "monthly": 4292.5,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public school. Grade 4 shown: R42,925 a year; Grades 5-7 R41,925 (ten payments of R4,192.50). Learner-support classes cost more: Gr 4 R51,525, Gr 5 R50,525. R2,100 off if paid in one go by 28 Feb 2026. New learners pay a R3,000 or R3,500 deposit that is credited against the year's fees.",
+      "evidence": "S2: 'GRADE 4: R 42 925.00' | Gr 4 monthly calc: R42 925 / 10",
+      "byGrade": [
+        {
+          "grade": "Gr 4",
+          "yearly": 42925,
+          "monthly": 4292.5,
+          "evidence": "S2: 'GRADE 4: R 42 925.00' | monthly calc: R42 925 / 10"
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": 41925,
+          "monthly": 4192.5,
+          "evidence": "S3: 'the 2026 school fee/s of R 41 925.00 per pupil' ... 'Ten payments of R 4 192.50 each'"
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "New-learner deposit",
+        "amount": 3000,
+        "frequency": "once",
+        "note": "Credited against the year's fees (some pay R3,500)",
+        "applies": "some",
+        "included": true,
+        "evidence": "S3: 'One payment of R 36 825.00 (If R 3 000.00 deposit paid)'"
+      },
+      {
+        "item": "Unpaid debit order charge",
+        "amount": 25,
+        "frequency": "once",
+        "note": "Each time",
+        "applies": "penalty",
+        "included": false,
+        "evidence": "S3: 'There is a R25 charge un unpaid debit orders'"
+      },
+      {
+        "item": "Uniform, stationery, camps, outings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Mon-Thu 14:00-17:00, Fri 13:00-17:00; cost not published",
+      "evidence": "S5: 'Monday to Thursday 14:00 – 17:00' 'Fridays 13.00 – 17:00'"
+    },
+    "sources": [
+      "https://www.wsps.co.za/school-fees/",
+      "https://www.wsps.co.za/wp-content/uploads/2026/09/Fee-Notice_Applications.pdf",
+      "https://www.wsps.co.za/wp-content/uploads/2026/01/FEES-COMMITMENT-FORM-2026-GR-5-7.pdf",
+      "https://www.wsps.co.za/contact-us/",
+      "https://www.wsps.co.za/aftercare/",
+      "https://schoolhive.co.za/listing/westville-senior-primary-school-westville-admissions-contact-details/"
+    ],
+    "locationEvidence": "S4 Google Maps embed: '!2d30.916320415651814!3d-29.83978702874914'",
+    "emisEvidence": "S6: 'EMIS number 500296000'"
   }
 ]

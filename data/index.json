@@ -32,7 +32,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 22,
+      "schoolCount": 24,
       "ids": [
         "waterfall-preparatory",
         "waterfall-college",
@@ -55,13 +55,15 @@
         "deutsche-schule-durban",
         "pinetown-boys-high",
         "pinetown-girls-high",
-        "westville-boys-high"
+        "westville-boys-high",
+        "westville-girls-high",
+        "westville-senior-primary"
       ],
       "bounds": [
-        -29.8264,
+        -29.8398,
         30.7341,
         -29.7442,
-        30.9086
+        30.9167
       ]
     }
   ]
