@@ -173,7 +173,32 @@
       el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you. Free for parents."))].concat(
       [el("div", { className: "feature-tiles" }, tiles.map(function (t) {
         return el("div", { className: "feature-tile" }, el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
-      }))]);
+      }).concat(homeScreenTip()))]);
+  }
+
+  // Web first (Nicholas, 28 Oct): instead of a store link, tell phone visitors how to keep SchoolMap on their home screen.
+  // Uses the browser's own install prompt where there is one (Android Chrome); nothing is stored or sent.
+  var installPrompt = null;
+  window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installPrompt = e; });
+
+  function homeScreenTip() {
+    var ua = navigator.userAgent || "";
+    var iphone = /iPhone|iPad|iPod/.test(ua);
+    var how = iphone ? "In Safari, tap Share, then “Add to Home Screen”."
+      : "In your browser menu (⋮), tap “Add to Home screen” or “Install app”.";
+    var tip = el("div", { className: "feature-tile home-tip" },
+      el("strong", {}, "Keep SchoolMap on your phone"),
+      el("p", { className: "muted small" }, "Free, no app store needed, and it works offline. " + how));
+    if (installPrompt) {
+      var btn = el("button", { type: "button", className: "btn" }, "Add to home screen");
+      btn.addEventListener("click", function () {
+        var p = installPrompt; installPrompt = null;
+        p.prompt();
+        btn.remove();
+      });
+      tip.appendChild(btn);
+    }
+    return tip;
   }
 
   // ---------- Search screen ----------
