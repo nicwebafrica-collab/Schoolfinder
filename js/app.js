@@ -9,7 +9,7 @@
   var schools = [];
 
   // Everything the parent has chosen. Location lives only in memory (never saved or sent).
-  var state = { radius: 5, place: undefined, showFilters: false, query: "", type: "", phase: "", under3000: false, near: null, grade: {}, costView: "year", compareA: "", compareB: "" };
+  var state = { radius: 5, view: "list", place: undefined, showFilters: false, query: "", type: "", phase: "", under3000: false, near: null, grade: {}, costView: "year", compareA: "", compareB: "" };
 
   // ---------- Small helpers ----------
 
@@ -396,7 +396,12 @@
         other.addEventListener("click", function () { setPlace(p); renderSearch(); });
         container.appendChild(other);
       });
-      if (found.near.length) container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
+      if (found.near.length) {
+        container.appendChild(viewToggle(container));
+        if (state.view === "rings") container.appendChild(ringsView(found.near, centre));
+        else if (state.view === "chart") container.appendChild(costChart(found.near));
+        else container.appendChild(el("div", { className: "card-grid" }, found.near.map(schoolCard)));
+      }
       if (!found.near.length && !wider && nearestKm != null) {
         container.appendChild(el("p", { className: "muted small" }, "The nearest school in the app is about " + Math.round(nearestKm) + " km away."));
       }
@@ -409,7 +414,9 @@
       }
       if (found.unknownLocation.length) {
         container.appendChild(el("p", { className: "count" }, (state.place ? "Also in " + where : "Also nearby") + ", location not published"));
-        container.appendChild(el("div", { className: "card-grid" }, found.unknownLocation.map(schoolCard)));
+        container.appendChild(state.view === "list" || !found.near.length
+          ? el("div", { className: "card-grid" }, found.unknownLocation.map(schoolCard))
+          : schoolLinks(found.unknownLocation));
       }
       if (state.place) container.appendChild(el("p", { className: "muted small" }, "Distances are straight-line from the middle of " + state.place.name + "."));
       var pane = document.querySelector(".detail-pane");
@@ -423,6 +430,137 @@
       container.textContent = "";
       container.appendChild(el("p", {}, "Couldn't load schools for this area. Check your internet connection and try again."));
     });
+  }
+
+  // ---------- List / Around me / Cost chart (Designer map plan B + C, approved 28 Oct) ----------
+  // Plain SVG, no map library or tile server, so it costs nothing and works offline.
+
+  var SVG_NS = "http://www.w3.org/2000/svg";
+  function svgEl(tag, attrs, text) {
+    var n = document.createElementNS(SVG_NS, tag);
+    Object.keys(attrs || {}).forEach(function (k) { n.setAttribute(k, attrs[k]); });
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function viewToggle(container) {
+    var group = el("div", { className: "segmented view-toggle", role: "group", aria: { label: "Show schools as" } });
+    [["list", "List"], ["rings", "Around me"], ["chart", "Cost vs distance"]].forEach(function (v) {
+      var b = el("button", { type: "button" }, v[1]);
+      b.setAttribute("aria-pressed", state.view === v[0]);
+      b.addEventListener("click", function () { state.view = v[0]; drawResults(container); });
+      group.appendChild(b);
+    });
+    return group;
+  }
+
+  // Short list of links, for schools that can't be drawn (no location, or no checked fees).
+  function schoolLinks(list) {
+    return el("ul", { className: "school-links" }, list.map(function (s) {
+      return el("li", {}, el("a", { href: schoolHref(s) }, s.name));
+    }));
+  }
+
+  // A school as a tappable dot with its initials; the label says the name and true cost for screen readers.
+  function dot(s, x, y, r, extraClass) {
+    var total = L.trueYearlyCost(s);
+    var a = svgEl("a", { href: schoolHref(s), class: "dot" + (extraClass ? " " + extraClass : "") + (s.id === selectedId ? " selected" : "") });
+    a.setAttribute("aria-label", s.name + ", " + (s.distanceKm != null ? s.distanceKm.toFixed(1) + " km, " : "") + (L.isNum(total) ? feeText(s, total, "no school fees") : "fees not published"));
+    a.appendChild(svgEl("title", {}, s.name));
+    a.appendChild(svgEl("circle", { cx: x, cy: y, r: r }));
+    a.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, initials(s.name)));
+    return a;
+  }
+
+  // B: home in the middle, rings at 2/5/10/20 km, schools at their real distance and rough direction (north up).
+  // Where many schools share a ring and direction they become one "+N" bubble; tapping it lists them.
+  function ringsView(list, centre) {
+    var R = 145, C = 170, size = 340;
+    var rings = L.RADII.filter(function (km) { return km <= state.radius; });
+    var max = state.radius;
+    var svg = svgEl("svg", { viewBox: "0 0 " + size + " " + size, class: "rings", role: "group", "aria-label": "Schools around " + (state.place ? state.place.name : "you") + ", north is up" });
+    rings.forEach(function (km) {
+      var r = km / max * R;
+      svg.appendChild(svgEl("circle", { cx: C, cy: C, r: r, class: "ring" }));
+      svg.appendChild(svgEl("text", { x: C, y: C + r + 13, "text-anchor": "middle", class: "ring-label" }, km + " km"));
+    });
+    svg.appendChild(svgEl("text", { x: C, y: 12, "text-anchor": "middle", class: "ring-label" }, "N"));
+    var cells = {};
+    var kmPerLng = 111 * Math.cos(centre.lat * Math.PI / 180);
+    list.forEach(function (s) {
+      var east = (s.lng - centre.lng) * kmPerLng, north = (s.lat - centre.lat) * 111;
+      var d = Math.min(Math.sqrt(east * east + north * north), max);
+      var angle = Math.atan2(east, north); // 0 = north, clockwise
+      var band = rings.filter(function (km) { return km < d; }).length;
+      var sector = Math.round((angle + Math.PI) / (Math.PI / 4)) % 8;
+      var key = band + "-" + sector;
+      (cells[key] = cells[key] || []).push({ s: s, x: C + Math.sin(angle) * d / max * R, y: C - Math.cos(angle) * d / max * R });
+    });
+    var extra = el("div", {});
+    Object.keys(cells).forEach(function (key) {
+      var group = cells[key];
+      if (group.length <= 5) { group.forEach(function (g) { svg.appendChild(dot(g.s, g.x, g.y, 13)); }); return; }
+      var x = group.reduce(function (t, g) { return t + g.x; }, 0) / group.length;
+      var y = group.reduce(function (t, g) { return t + g.y; }, 0) / group.length;
+      var bubble = svgEl("a", { href: "#", class: "dot bubble", role: "button" });
+      bubble.setAttribute("aria-label", group.length + " schools here, show them");
+      bubble.appendChild(svgEl("circle", { cx: x, cy: y, r: 16 }));
+      bubble.appendChild(svgEl("text", { x: x, y: y + 4, "text-anchor": "middle" }, "+" + group.length));
+      bubble.addEventListener("click", function (e) {
+        e.preventDefault();
+        extra.textContent = "";
+        extra.appendChild(el("p", { className: "count" }, group.length + " schools in this direction"));
+        extra.appendChild(schoolLinks(group.map(function (g) { return g.s; })));
+      });
+      svg.appendChild(bubble);
+    });
+    svg.appendChild(svgEl("circle", { cx: C, cy: C, r: 6, class: "home" })); // drawn last so schools never hide home
+    return el("div", { className: "panel viz" }, svg,
+      el("p", { className: "muted small" }, "Blue dot: " + (state.place ? "the middle of " + state.place.name : "you") + ". Straight-line distance, not the road route. Tap a school to open it."),
+      extra);
+  }
+
+  // C: distance along the bottom, true cost a year up the side. Only schools with checked fees are plotted;
+  // the rest are listed underneath, never hidden and never drawn at R0.
+  function costChart(list) {
+    var W = 340, H = 260, left = 66, right = 22, top = 12, bottom = 40;
+    var priced = [], noFee = [], unpriced = [];
+    list.forEach(function (s) {
+      var t = L.trueYearlyCost(s);
+      if (s.noFee && t === 0) noFee.push(s);
+      else if (L.isNum(t) && t > 0) priced.push({ s: s, t: t });
+      else unpriced.push(s);
+    });
+    var parts = [];
+    if (priced.length) {
+      var top$ = Math.max.apply(null, priced.map(function (p) { return p.t; }));
+      var step = top$ > 200000 ? 100000 : top$ > 80000 ? 50000 : 20000;
+      var yMax = Math.ceil(top$ / step) * step;
+      var xMax = state.radius;
+      var px = function (km) { return left + km / xMax * (W - left - right); };
+      var py = function (r) { return H - bottom - r / yMax * (H - top - bottom); };
+      var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, class: "chart", role: "group", "aria-label": "True cost a year against distance from home" });
+      // Shaded "closer + cheaper" corner: the nearer half of the distance and the cheaper half of the cost.
+      svg.appendChild(svgEl("rect", { x: px(0), y: py(yMax / 2), width: px(xMax / 2) - px(0), height: py(0) - py(yMax / 2), class: "sweet" }));
+      svg.appendChild(svgEl("text", { x: px(0) + 6, y: py(0) - 8, class: "sweet-label" }, "Closer + cheaper"));
+      for (var r = 0; r <= yMax; r += step) {
+        svg.appendChild(svgEl("line", { x1: left, x2: W - right, y1: py(r), y2: py(r), class: "grid" }));
+        svg.appendChild(svgEl("text", { x: left - 6, y: py(r) + 4, "text-anchor": "end", class: "tick" }, r === 0 ? "R0" : "R" + Math.round(r / 1000) + "k"));
+      }
+      [0].concat(L.RADII.filter(function (km) { return km <= xMax; })).forEach(function (km) {
+        svg.appendChild(svgEl("text", { x: px(km), y: H - bottom + 16, "text-anchor": "middle", class: "tick" }, km + " km"));
+      });
+      svg.appendChild(svgEl("text", { x: (left + W - right) / 2, y: H - 4, "text-anchor": "middle", class: "axis" }, "Distance from home"));
+      svg.appendChild(svgEl("text", { x: 12, y: (top + H - bottom) / 2, "text-anchor": "middle", class: "axis", transform: "rotate(-90 12 " + (top + H - bottom) / 2 + ")" }, "True cost a year"));
+      priced.forEach(function (p) { svg.appendChild(dot(p.s, px(Math.min(p.s.distanceKm, xMax)), py(p.t), 11)); });
+      parts.push(svg);
+    } else {
+      parts.push(el("p", { className: "muted" }, "None of these schools publish fees yet, so there's nothing to plot."));
+    }
+    if (noFee.length) parts.push(el("p", { className: "count" }, "No fees: " + noFee.length + (noFee.length === 1 ? " school" : " schools")), schoolLinks(noFee));
+    if (unpriced.length) parts.push(el("p", { className: "count" }, unpriced.length + (unpriced.length === 1 ? " school" : " schools") + " not shown: fees not published"), schoolLinks(unpriced));
+    parts.push(el("p", { className: "muted small" }, "True cost = fees plus extras every child pays. Tap a dot to open the school."));
+    return el("div", { className: "panel viz" }, parts);
   }
 
   // One short orange line for the card: "R1,020 extras not on fee sheet · 3 unpriced".

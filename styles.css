@@ -275,3 +275,22 @@ main.has-sticky { padding-bottom: 110px; }
   .compare-table .crow.chead { display: grid; position: sticky; top: 64px; background: var(--surface); z-index: 1; font-size: 15px; }
   .compare-table .crow.chead + .crow { border-top: 1px solid var(--line); }
 }
+
+/* ---------- Around me rings and cost chart (map plan B + C) ---------- */
+.view-toggle { display: flex; width: 100%; margin: 4px 0 12px; }
+.view-toggle button { flex: 1; padding: 0 8px; min-height: 40px; }
+.viz svg { display: block; width: 100%; max-width: 420px; height: auto; margin: 0 auto 8px; font-family: var(--font); }
+.viz .ring { fill: none; stroke: var(--line-strong); stroke-dasharray: 4 4; }
+.viz .ring-label, .viz .tick { fill: var(--muted); font-size: 11px; }
+.viz .axis { fill: var(--muted); font-size: 12px; font-weight: 700; }
+.viz .grid { stroke: var(--line); }
+.viz .home { fill: var(--primary); stroke: var(--surface); stroke-width: 3; }
+.viz .dot circle { fill: var(--surface); stroke: var(--primary); stroke-width: 2; }
+.viz .dot text { fill: var(--ink); font-size: 10px; font-weight: 800; pointer-events: none; }
+.viz .dot:hover circle, .viz .dot:focus circle, .viz .dot.selected circle { fill: var(--primary-soft); stroke-width: 3; }
+.viz .bubble circle { fill: var(--primary); stroke: var(--surface); }
+.viz .bubble text { fill: #fff; font-size: 12px; }
+.viz .sweet { fill: var(--zone-soft); }
+.viz .sweet-label { fill: var(--zone); font-size: 11px; font-weight: 700; }
+.school-links { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.school-links a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px; border: 1px solid var(--line); border-radius: var(--radius-pill); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 600; font-size: 14px; }
