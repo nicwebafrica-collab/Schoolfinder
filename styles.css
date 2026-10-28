@@ -357,3 +357,14 @@ main.has-sticky { padding-bottom: 110px; }
   /* 6. Both panes start at the same height */
   .list-pane, .detail-pane { padding-top: 20px; }
 }
+
+/* 8. Location button: spinner only; the field and a status line say what's happening */
+.in-field-btn.busy .icon { display: none; }
+.in-field-btn.busy::after { content: ""; width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--primary); border-right-color: transparent; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 50% { opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .in-field-btn.busy::after { animation: pulse 1.2s ease-in-out infinite; border-right-color: var(--primary); } }
+.search-box input.finding { color: var(--muted); }
+.loc-status { display: flex; align-items: center; gap: 6px; margin: -6px 0 10px; font-size: 13px; color: var(--muted); }
+.loc-status .icon { width: 16px; height: 16px; color: var(--hidden); }
+.loc-status[hidden] { display: none; }

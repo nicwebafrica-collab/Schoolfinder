@@ -118,14 +118,40 @@
 
   // ---------- Location (rounded to about 1 km, memory only) ----------
 
-  function askLocation(button, done) {
-    if (!navigator.geolocation) { button.textContent = "Location not supported, type your suburb instead"; return; }
-    button.textContent = "Finding you…";
+  // With opts.field (the search box) the icon button only ever shows a spinner; the field and a status line
+  // under it say what's happening (Designer polish-v1 item 8). Other buttons show the words on themselves.
+  function askLocation(button, done, opts) {
+    opts = opts || {};
+    function fail(text) {
+      if (opts.field) {
+        button.disabled = false; button.removeAttribute("aria-busy"); button.setAttribute("aria-label", "Use my location");
+        button.classList.remove("busy");
+        opts.field.placeholder = opts.placeholder || "";
+        opts.field.classList.remove("finding");
+        opts.status.textContent = "";
+        opts.status.appendChild(icon("alert"));
+        opts.status.appendChild(document.createTextNode(text));
+        opts.status.hidden = false;
+      } else {
+        button.textContent = text;
+      }
+    }
+    if (!navigator.geolocation) { fail(opts.field ? "Your browser can't share location. Type your suburb instead." : "Location not supported, type your suburb instead"); return; }
+    if (opts.field) {
+      button.disabled = true; button.setAttribute("aria-busy", "true"); button.setAttribute("aria-label", "Finding your location");
+      button.classList.add("busy");
+      opts.status.hidden = true;
+      opts.placeholder = opts.field.placeholder;
+      opts.field.placeholder = "Finding you\u2026";
+      opts.field.classList.add("finding");
+    } else {
+      button.textContent = "Finding you\u2026";
+    }
     navigator.geolocation.getCurrentPosition(function (pos) {
       state.near = { lat: Math.round(pos.coords.latitude * 100) / 100, lng: Math.round(pos.coords.longitude * 100) / 100 };
       done();
     }, function () {
-      button.textContent = "Couldn't get your location. Type your suburb instead.";
+      fail(opts.field ? "Couldn't find you. Type your suburb instead." : "Couldn't get your location. Type your suburb instead.");
     }, { maximumAge: 600000, timeout: 10000 });
   }
 
@@ -247,11 +273,13 @@
     if (state.near) pinBtn.setAttribute("aria-pressed", "true");
     var searchBox = el("div", { className: "search-box" }, icon("pin"),
       el("label", { htmlFor: "q", className: "sr-only" }, "Where do you live?"), input, pinBtn);
+    var locStatus = el("p", { className: "loc-status", role: "status", hidden: true });
+    if (state.near && !state.place) input.value = "Near me";
     var suggestions = el("div", { className: "suggestions", role: "listbox", aria: { label: "Suggestions" } });
     var results = el("div", {});
 
     pinBtn.addEventListener("click", function () {
-      askLocation(pinBtn, function () { state.place = null; state.query = ""; renderSearch(); });
+      askLocation(pinBtn, function () { state.place = null; state.query = ""; renderSearch(); }, { field: input, status: locStatus });
     });
 
     function choosePlace(place) { setPlace(place); renderSearch(); }
@@ -296,7 +324,7 @@
       // Parents also search by school name ("Kearsney"). Load every area once so names can be matched (T8).
       if (text.length >= 3 && !L.matchPlaces(text, 1).length) loadAllAreas().then(function () { if (input.value.trim() === text) drawSuggestions(); });
     }
-    input.addEventListener("input", typed);
+    input.addEventListener("input", function () { locStatus.hidden = true; typed(); });
     input.addEventListener("keydown", function (e) {
       if (e.key !== "Enter") return;
       var p = L.findPlace(input.value) || L.matchPlaces(input.value, 1)[0];
@@ -306,7 +334,7 @@
 
     var first = !state.place && !state.near;
     var hello = first ? welcome() : [];
-    var parts = (hello.length ? [hello[0]] : [el("h1", { className: "page-title" }, "Find a school")]).concat([searchBox, suggestions]);
+    var parts = (hello.length ? [hello[0]] : [el("h1", { className: "page-title" }, "Find a school")]).concat([searchBox, locStatus, suggestions]);
 
     if (first) {
       // First open: ask where they live instead of listing every school in the country.
