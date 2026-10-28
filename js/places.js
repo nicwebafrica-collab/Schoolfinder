@@ -162,6 +162,31 @@
     return PLACES.filter(function (p) { return p.name === parts[0] && (!parts[1] || p.region === parts[1]); })[0] || null;
   }
 
+  // A full address ("12 Old Main Road, Hillcrest, 3610") -> the known suburb inside it, so typing your
+  // address works too. Skips names used as street names ("Kloof Road"), and prefers a suburb over a big city.
+  var ROAD_WORDS = /^(road|rd|street|st|avenue|ave|drive|dr|lane|ln|crescent|cres|way|close|place|pl|boulevard|blvd|terrace|highway|hwy|park|grove)$/;
+  var CITIES = ["Durban", "Pietermaritzburg", "Johannesburg", "Pretoria"];
+  function placeInText(text) {
+    var sq = splitQuery(text);
+    var words = sq.text.split(" ").filter(Boolean);
+    if (words.length < 2) return null; // one word is handled by the normal search
+    var best = null;
+    PLACES.forEach(function (p) {
+      if (sq.region && p.region !== sq.region) return;
+      [p.name].concat(p.aliases || []).forEach(function (n) {
+        var nw = key(n).split(" ");
+        for (var i = 0; i + nw.length <= words.length; i++) {
+          if (words.slice(i, i + nw.length).join(" ") !== nw.join(" ")) continue;
+          if (ROAD_WORDS.test(words[i + nw.length] || "")) continue; // "Kloof Road" is a street, not Kloof
+          var score = i + (CITIES.indexOf(p.name) === -1 ? 1000 : 0); // suburbs beat cities; later words beat earlier
+          if (!best || score > best.score) best = { place: p, score: score };
+        }
+      });
+    });
+    return best ? best.place : null;
+  }
+
+  L.placeInText = placeInText;
   L.PLACES = PLACES;
   L.matchPlaces = matchPlaces;
   L.placeByName = placeByName;

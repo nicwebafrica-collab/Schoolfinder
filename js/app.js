@@ -334,10 +334,35 @@
 
     function choosePlace(place) { setPlace(place); renderSearch(); }
 
+    // "3610" -> the suburb where the schools with that postcode are (from the loaded school data).
+    function postcodePlace(text) {
+      var code = (/\b(\d{4})\b/.exec(text) || [])[1];
+      if (!code) return null;
+      // The area most of those schools are in (3610 covers Hillcrest, Waterfall and more; most say Hillcrest).
+      var votes = {}, best = null;
+      schools.forEach(function (x) {
+        if (String(x.postcode || "") !== code || !x.area) return;
+        var p = L.findPlace(x.area + " " + (x.province === "Gauteng" ? "Gauteng" : "KZN"));
+        if (!p) return;
+        var k = p.name + "|" + p.region;
+        votes[k] = (votes[k] || 0) + 1;
+        if (!best || votes[k] > votes[best.name + "|" + best.region]) best = p;
+      });
+      return best;
+    }
+
     function drawSuggestions() {
       suggestions.textContent = "";
       var text = input.value.trim();
       if (!text || (state.place && text === state.place.name)) return;
+      // A full address: offer the suburb found inside it first ("12 Old Main Road, Hillcrest" -> Hillcrest).
+      var inAddress = L.placeInText(text);
+      var fromPostcode = postcodePlace(text);
+      [inAddress, fromPostcode].filter(Boolean).slice(0, 1).forEach(function (p) {
+        var b = el("button", { type: "button", className: "suggestion", role: "option" }, icon("pin"), "Schools near " + p.name, el("span", { className: "muted small" }, " " + (p.note ? p.note + ", " : "") + p.region));
+        b.addEventListener("click", function () { choosePlace(p); });
+        suggestions.appendChild(b);
+      });
       L.matchPlaces(text, 6).forEach(function (p) {
         var b = el("button", { type: "button", className: "suggestion", role: "option" }, icon("pin"), p.name, el("span", { className: "muted small" }, " " + (p.note ? p.note + ", " : "") + p.region));
         b.addEventListener("click", function () { choosePlace(p); });
@@ -353,8 +378,13 @@
       });
       if (!suggestions.firstChild) {
         var guess = L.suggestPlace(text, schools);
-        var msg = el("p", { className: "muted small" }, "We don't know “" + text.slice(0, 40) + "” yet. ");
-        if (guess) {
+        var looksLikeAddress = /\d|,/.test(text) || text.split(/\s+/).length > 3;
+        var msg = el("p", { className: "muted small" }, looksLikeAddress
+          ? "We couldn't find a suburb we cover in that address. Type just your suburb (like Hillcrest), or tap the location button. "
+          : "We don't know “" + text.slice(0, 40) + "” yet. ");
+        if (looksLikeAddress && !guess) {
+          // nothing more to add
+        } else if (guess) {
           var g = el("button", { type: "button", className: "chip" }, "Did you mean " + guess + "?");
           g.addEventListener("click", function () { var p = L.findPlace(guess); if (p) choosePlace(p); else { input.value = guess; drawSuggestions(); } });
           msg.appendChild(g);
@@ -377,7 +407,7 @@
     input.addEventListener("input", function () { locStatus.hidden = true; typed(); });
     input.addEventListener("keydown", function (e) {
       if (e.key !== "Enter") return;
-      var p = L.findPlace(input.value) || L.matchPlaces(input.value, 1)[0];
+      var p = L.findPlace(input.value) || L.placeInText(input.value) || postcodePlace(input.value) || L.matchPlaces(input.value, 1)[0];
       if (p) { choosePlace(p); return; }
       typed(); // a school name or unknown place: show the choices
     });
