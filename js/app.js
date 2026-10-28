@@ -113,19 +113,21 @@
     if (!area) return;
     loadArea(area).then(function () {
       var s = findSchool(EXAMPLE_SCHOOL.id);
-      // Costs differ by grade, so the example names one: the school's first (entry) grade.
-      var grade = s && s.fees && s.fees.byGrade && s.fees.byGrade[0] ? s.fees.byGrade[0].grade : "";
+      // Costs differ by grade, so the example names one (the school's first grade) and opens the page on it (B53).
+      var grade = s ? gradeOptions(s)[0] || "" : "";
       var total = s && L.trueYearlyCost(s, grade);
       if (!s || !L.isNum(total) || total <= 0) return; // never show an example without checked fees
       var extras = L.yearlyExtras(s, grade), monthly = L.monthlyFees(s, grade);
       var kind = { High: "high school", Primary: "primary school" }[s.phase] || "school";
-      slot.appendChild(el("a", { className: "example-card", href: schoolHref(s) },
+      var card = el("a", { className: "example-card", href: schoolHref(s) },
         el("div", { className: "label" }, "Example: a " + s.area + " " + String(s.type || "").toLowerCase() + " " + kind),
         el("div", { className: "muted small" }, "True cost per year" + (grade ? " \u00b7 " + grade : "") + (s.fees && s.fees.year ? " \u00b7 " + s.fees.year + " fees" : "")),
         el("div", { className: "big-money" }, L.formatRand(total)),
         extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), el("span", {}, "Includes " + L.formatRand(extras) + " not on the fee sheet")) : null,
         L.isNum(monthly) ? el("div", { className: "muted small" }, "School fees " + L.formatRand(monthly) + " a month") : null,
-        el("span", { className: "example-more" }, "See how it adds up", icon("chevron"))));
+        el("span", { className: "example-more" }, "See how it adds up", icon("chevron")));
+      card.addEventListener("click", function () { if (grade) state.grade[s.id] = grade; });
+      slot.appendChild(card);
     }, function () { /* offline or failed: just no example */ });
   }
 
@@ -1177,11 +1179,24 @@
   }
 
   // Grade chips on the costs screen, when fees differ by grade. "Entry grade" is the default.
-  function gradeChips(s, grade, redraw) {
+  // Grades a parent can pick: the fee table's grades, or, when only some extras depend on the grade
+  // (e.g. a Gr 8 camp), every grade the school teaches (B53).
+  function gradeOptions(s) {
     var byGrade = (s.fees || {}).byGrade || [];
-    if (!byGrade.length) return null;
+    if (byGrade.length) return byGrade.map(function (g) { return g.grade; });
+    var gradeCosts = (s.hiddenCosts || []).some(function (c) { return /^Gr /.test(String(c.applies || "")); });
+    var m = /Gr\s*(R|\d+)\s*[-\u2013]\s*(\d+)/.exec(s.grades || "");
+    if (!gradeCosts || !m) return [];
+    var list = [], from = m[1] === "R" ? 0 : Number(m[1]);
+    for (var g = from; g <= Number(m[2]); g++) list.push(g === 0 ? "Gr R" : "Gr " + g);
+    return list;
+  }
+
+  function gradeChips(s, grade, redraw) {
+    var options = gradeOptions(s);
+    if (!options.length) return null;
     var row = el("div", { className: "chips grade-chips", role: "group", aria: { label: "Fees for grade" } });
-    [{ grade: "" }].concat(byGrade).forEach(function (g) {
+    [{ grade: "" }].concat(options.map(function (g) { return { grade: g }; })).forEach(function (g) {
       var c = el("button", { type: "button", className: "chip" }, g.grade || "Entry grade");
       c.setAttribute("aria-pressed", (g.grade || "") === (grade || ""));
       c.addEventListener("click", function () { state.grade[s.id] = g.grade; redraw(); });
