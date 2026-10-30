@@ -6,9 +6,10 @@
 
 (function () {
   var ENDPOINT = "https://greendragon.goatcounter.com/count";
-  var LIVE_HOST = "nicwebafrica-collab.github.io";
+  // The live site: our own address (schoolmap.co.za, from Nov 2026) and the old GitHub address it moved from.
+  var LIVE_HOSTS = ["schoolmap.co.za", "www.schoolmap.co.za", "nicwebafrica-collab.github.io"];
 
-  if (location.hostname !== LIVE_HOST) return;
+  if (LIVE_HOSTS.indexOf(location.hostname) === -1) return;
   if (navigator.doNotTrack === "1" || window.doNotTrack === "1" || navigator.globalPrivacyControl) return;
 
   // Only the kind of screen and a school id. Never searches, suburbs, locations or saved/compare lists.
@@ -24,7 +25,7 @@
   function referrerSite() {
     try {
       var r = new URL(document.referrer);
-      return r.hostname === LIVE_HOST ? "" : r.hostname;
+      return LIVE_HOSTS.indexOf(r.hostname) !== -1 ? "" : r.hostname;
     } catch (e) { return ""; }
   }
 
