@@ -2,6 +2,8 @@
 
 Parents search their area and see the real cost of each school: fees, hidden costs, outings, aftercare and transport.
 
+Live at https://schoolmap.co.za
+
 ## Run it
 ```
 cd /mnt/project-files/app
