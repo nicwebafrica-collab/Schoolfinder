@@ -143,10 +143,14 @@
       "Every number shows its source and the date we checked it" + (label ? " \u00b7 Updated " + label : ""));
   }
 
+  // Public contact address (Security OK 30 Oct): a plain mailto link, no form and no outside service.
+  var CONTACT = "info@schoolmap.co.za";
+  function contactLink(text) { return el("a", { href: "mailto:" + CONTACT }, text || CONTACT); }
+
   function siteFooter() {
     return el("footer", { className: "site-footer" },
       el("p", {}, "Independent. Made in KZN. Schools can't pay to change their numbers or ranking."),
-      el("p", { className: "footer-links" }, el("a", { href: "#/about" }, "About"), el("a", { href: "#/how-we-check" }, "How we check fees"), el("a", { href: "#/privacy" }, "Privacy")));
+      el("p", { className: "footer-links" }, el("a", { href: "#/about" }, "About"), el("a", { href: "#/how-we-check" }, "How we check fees"), el("a", { href: "#/privacy" }, "Privacy"), contactLink("Contact")));
   }
 
   // ---------- Saved schools (only school ids, kept on this device) ----------
@@ -1424,6 +1428,8 @@
         el("li", {}, "Before a school goes live, its numbers are checked a second time against the school's own documents. Where a school doesn't publish its fees, the page says so."),
         el("li", {}, "If a school doesn't publish something, we say \u201cNot published by school\u201d. We never guess, and we never show R0 for a cost we don't know."),
         el("li", {}, "Fees change every year, so always confirm with the school before you decide.")),
+      el("h2", {}, "Spot a wrong price?"),
+      el("p", {}, "Email ", contactLink(), " with the school's name and what looks wrong. We check it against the school's own documents before we change anything."),
       el("p", {}, el("a", { href: "#/" }, "Back to search"))
     ), { tab: "search" });
     if (check) how.scrollIntoView(); else window.scrollTo(0, 0);
@@ -1449,8 +1455,10 @@
       el("h2", {}, "Our web host"),
       el("p", {}, "The app is hosted on GitHub Pages. Like every web host, GitHub keeps basic access logs (such as your IP address and the time) for security. We don't see these logs or use them to identify you. ",
         link("https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement", "GitHub's privacy statement")),
+      el("h2", {}, "Emailing us"),
+      el("p", {}, "If you email us, we only use your email to reply. We don't add you to any list or share your address."),
       el("h2", {}, "Your rights"),
-      el("p", {}, "We follow South Africa's Protection of Personal Information Act (POPIA). We don't collect personal information ourselves, so there is nothing about you for us to store or delete.")
+      el("p", {}, "We follow South Africa's Protection of Personal Information Act (POPIA). We don't collect personal information ourselves, so there is nothing about you for us to store or delete. Questions? Email ", contactLink(), ".")
     ), {});
   }
 
