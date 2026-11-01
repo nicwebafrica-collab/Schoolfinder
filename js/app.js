@@ -1458,7 +1458,7 @@
       el("h2", {}, "Emailing us"),
       el("p", {}, "If you email us, we only use your email to reply. We don't add you to any list or share your address."),
       el("h2", {}, "Your rights"),
-      el("p", {}, "We follow South Africa's Protection of Personal Information Act (POPIA). We don't collect personal information ourselves, so there is nothing about you for us to store or delete. Questions? Email ", contactLink(), ".")
+      el("p", {}, "We follow South Africa's Protection of Personal Information Act (POPIA). Apart from emails you choose to send us, we don't collect personal information. To have an email deleted, ask us at ", contactLink(), ".")
     ), {});
   }
 
