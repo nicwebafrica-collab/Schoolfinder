@@ -33,7 +33,7 @@ var SECRET_PATTERNS = [
   [/AIza[0-9A-Za-z_\-]{35}/, "Google API key"],
   [/\bgh[pousr]_[A-Za-z0-9]{36,}/, "GitHub token"],
   [/\bsk_(live|test)_[A-Za-z0-9]{16,}/, "Stripe secret key"],
-  [/\bsk-[A-Za-z0-9_\-]{32,}/, "API secret key"],
+  [/\bsk-(?=[A-Za-z0-9_\-]*[A-Z])(?=[A-Za-z0-9_\-]*[0-9])[A-Za-z0-9_\-]{32,}/, "API secret key"], // real keys mix capitals and digits; school ids like "sk-moseneke-..." are lowercase
   [/\bAKIA[0-9A-Z]{16}\b/, "AWS access key"],
   [/-----BEGIN [A-Z ]*PRIVATE KEY-----/, "private key"],
   [/\bxox[baprs]-[A-Za-z0-9-]{10,}/, "Slack token"],
