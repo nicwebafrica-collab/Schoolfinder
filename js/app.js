@@ -1542,7 +1542,7 @@
       }), ")"];
     });
     return el("p", { className: "source" },
-      "From the school's website and fee letter · checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ",
+      "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ", // no claim about the kind of source (Breaker B59: some are surveys)
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
       el("a", { href: "#/privacy" }, "Privacy"));
   }
