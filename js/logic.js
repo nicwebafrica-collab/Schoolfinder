@@ -327,7 +327,21 @@
   // School data comes from scraped websites, so check every field's type before the app uses it.
   // Wrong types become null / empty lists, so one bad value can't break the whole app.
 
-  function str(v) { return typeof v === "string" ? v.slice(0, 500) : (typeof v === "number" && isFinite(v) ? String(v) : null); }
+  // Text is capped so a huge scraped value can't swamp the page. A cut never stops mid-word (B61): it ends at the
+  // last full sentence (or else the last whole word) and adds "…", so a note can't end in a half-sentence.
+  function capText(v, max) {
+    if (v.length <= max) return v;
+    var head = v.slice(0, max - 1);
+    var stop = Math.max(head.lastIndexOf(". "), head.lastIndexOf("! "), head.lastIndexOf("? "));
+    if (stop >= max / 2) return head.slice(0, stop + 1) + " \u2026";
+    var space = head.lastIndexOf(" ");
+    return (space >= max / 2 ? head.slice(0, space) : head).replace(/[\s,;:(\-]+$/, "") + "\u2026";
+  }
+  function text(v, max) { return typeof v === "string" ? capText(v, max) : (typeof v === "number" && isFinite(v) ? String(v) : null); }
+  // One argument only: str and longStr are also passed to .map(), which hands over the index as a second argument.
+  function str(v) { return text(v, 500); }
+  // Notes and other sentences parents read in full (fees.notes is up to ~700 characters).
+  function longStr(v) { return text(v, 1000); }
   function num(v) { return isNum(v) ? v : null; }
   function coord(v) { return typeof v === "number" && isFinite(v) ? v : null; }
   function list(v, fn) { return Array.isArray(v) ? v.map(fn).filter(Boolean) : []; }
@@ -339,7 +353,7 @@
   // ending in "Evidence" is kept as plain text (capped like other text). Not shown in the app yet.
   function evidence(v) {
     var out = {};
-    Object.keys(v || {}).forEach(function (k) { if (/(^e|E)vidence$/.test(k) && str(v[k]) !== null) out[k] = str(v[k]); });
+    Object.keys(v || {}).forEach(function (k) { if (/(^e|E)vidence$/.test(k) && str(v[k]) !== null) out[k] = longStr(v[k]); });
     return out;
   }
 
@@ -360,7 +374,7 @@
     if (!frequency) problems.push("frequency '" + str(c.frequency) + "' is not one we know");
     if (!isKnownApplies(str(c.applies))) problems.push("applies '" + str(c.applies) + "' is not one we know");
     return Object.assign({
-      item: str(c.item), amount: amount, frequency: frequency || str(c.frequency), note: str(c.note),
+      item: str(c.item), amount: amount, frequency: frequency || str(c.frequency), note: longStr(c.note),
       applies: normaliseApplies(str(c.applies)), included: c.included === true,
       priceFor: str(c.priceFor), per: str(c.per),
       problem: problems.length ? problems.join("; ") : null
@@ -394,21 +408,21 @@
       quintile: num(s.quintile), noFee: s.noFee === true,
       fees: Object.assign({
         year: num(f.year), yearly: fee(f.yearly, "yearly fee"), monthly: fee(f.monthly, "monthly fee"),
-        registration: fee(f.registration, "registration"), deposit: fee(f.deposit, "deposit"), notes: str(f.notes),
-        instalments: num(f.instalments), instalmentsNote: str(f.instalmentsNote),
+        registration: fee(f.registration, "registration"), deposit: fee(f.deposit, "deposit"), notes: longStr(f.notes),
+        instalments: num(f.instalments), instalmentsNote: longStr(f.instalmentsNote),
         // Fees not from the school itself (e.g. a news survey) get a visible warning.
-        unofficial: f.unofficial === true || f.sourceIsSchool === false, sourceNote: str(f.sourceNote),
+        unofficial: f.unofficial === true || f.sourceIsSchool === false, sourceNote: longStr(f.sourceNote),
         problems: feeProblems,
         byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? Object.assign({ grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) }, evidence(g)) : null; })
       }, evidence(f)),
       hiddenCosts: list(s.hiddenCosts, cleanCost),
-      outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? Object.assign({ name: str(o.name), grades: str(o.grades), cost: parseAmount(o.cost), when: str(o.when), note: str(o.note) },
+      outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? Object.assign({ name: str(o.name), grades: str(o.grades), cost: parseAmount(o.cost), when: str(o.when), note: longStr(o.note) },
         o.applies == null ? {} : { applies: normaliseApplies(str(o.applies)) }, evidence(o)) : null; }),
       aftercare: option(s.aftercare), transport: option(s.transport),
       sports: list(s.sports, str),
       admissions: a ? {
-        feederZone: zone ? { radiusKm: num(zone.radiusKm), description: str(zone.description) } : null,
-        rules: list(a.rules, str), applyBy: str(a.applyBy), applyUrl: str(a.applyUrl), source: str(a.source)
+        feederZone: zone ? { radiusKm: num(zone.radiusKm), description: longStr(zone.description) } : null,
+        rules: list(a.rules, longStr), applyBy: str(a.applyBy), applyUrl: str(a.applyUrl), source: str(a.source)
       } : null,
       lastChecked: str(s.lastChecked), sources: list(s.sources, str),
       // Fact Checker's verdict for the whole school, e.g. { status: "verified", date: "2026-10-27" }.

@@ -24,8 +24,40 @@
     return n;
   }
 
-  // Remove the saved copy, refresh the browser's own copy of each file, then reload.
+  // Is the internet really there? A HEAD request skips the service worker (it only answers GET),
+  // so a saved copy can't pretend we're online. Gives up after 6 seconds.
+  function online() {
+    if (navigator.onLine === false) return Promise.resolve(false);
+    if (!window.fetch) return Promise.resolve(true);
+    var probe = fetch("index.html?online=" + Date.now(), { method: "HEAD", cache: "no-store" })
+      .then(function (r) { return r.ok; }, function () { return false; });
+    var slow = new Promise(function (ok) { setTimeout(function () { ok(false); }, 6000); });
+    return Promise.race([probe, slow]);
+  }
+
+  // Try again: only with a working connection (B58). Offline, keep the saved copy and say so,
+  // instead of reloading into the browser's own "No internet" page.
   function freshStart(button) {
+    if (button) { button.disabled = true; button.textContent = "Checking your connection…"; }
+    online().then(function (yes) {
+      if (yes) { wipeAndReload(button); return; }
+      if (button) {
+        button.disabled = false;
+        button.textContent = "Try again";
+        var note = document.getElementById("boot-offline");
+        if (!note) {
+          note = make("p", "", "");
+          note.id = "boot-offline";
+          note.setAttribute("role", "status");
+          button.parentNode.insertBefore(note, button);
+        }
+        note.textContent = "You're offline. Connect to Wi-Fi or mobile data, then tap Try again.";
+      }
+    });
+  }
+
+  // Remove the saved copy, refresh the browser's own copy of each file, then reload.
+  function wipeAndReload(button) {
     if (button) { button.disabled = true; button.textContent = "Getting a fresh copy…"; }
     var jobs = [];
     try {
