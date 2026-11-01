@@ -130,7 +130,7 @@ if (cspMatch) {
   check(!/unsafe-inline|unsafe-eval|\*|https?:|data:[^;]*script/.test(csp.replace(/img-src 'self' data:( https:\/\/greendragon\.goatcounter\.com)?/, "")), "index.html: CSP allows unsafe sources: " + csp);
 }
 check(!/<script(?![^>]*src="js\/)[^>]*>/.test(html), "index.html: has an inline script or a script from somewhere else");
-check(!/(src|href)="(https?:)?\/\//.test(html), "index.html: loads something from another website");
+check(!/(src|href)="(https?:)?\/\//.test(html.replace('<link rel="canonical" href="https://schoolmap.co.za/">', "")), "index.html: loads something from another website"); // the canonical link only names our own address
 check(!/\son\w+=/.test(html), "index.html: has an inline event handler");
 check(/<meta name="referrer" content="(strict-origin-when-cross-origin|no-referrer)">/.test(html), "index.html: referrer policy missing");
 check(!/@import|url\(\s*["']?(https?:)?\/\//.test(read("styles.css")), "styles.css: loads something from another website");
@@ -230,6 +230,58 @@ androidFiles.filter(function (f) { return /\.(xml|gradle|kts|properties|json)$/.
 });
 var badAndroid = androidFiles.filter(function (f) { return /(key\.properties|local\.properties|google-services\.json|\.aab|\.apk)$/.test(f); });
 check(badAndroid.length === 0, "These Android files must never be committed: " + badAndroid.join(", "));
+
+// 12. The plain school pages for Google (school/<id>/index.html, school/index.html, sitemap.xml, robots.txt).
+// They are made by tools/build-pages.js in the private repo. Same strict rules as index.html, and they must match
+// the live data exactly: a page left over from old data could show an old price (golden rule).
+var pageFiles = allFiles.filter(function (f) { return /^school\/.*\.html$/.test(f); });
+if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
+  var crypto = require("crypto");
+  var mainCsp = (html.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/) || [])[1];
+  pageFiles.forEach(function (f) {
+    var p = read(f);
+    var c = (p.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/) || [])[1];
+    check(!!c && c === mainCsp, f + ": must have the same Content-Security-Policy as index.html");
+    var scripts = p.match(/<script\b[^>]*>/g) || [];
+    check(scripts.every(function (s) { return s === '<script src="/js/count.js">'; }), f + ": only <script src=\"/js/count.js\"> is allowed on these pages");
+    check(!/<script\b[^>]*>[^<]+<\/script>/.test(p), f + ": has an inline script");
+    var loads = p.match(/<(script|link|img|iframe|object|embed|source|video|audio|frame)\b[^>]*\s(src|href)="(https?:)?\/\/[^"]*"/gi) || [];
+    check(loads.every(function (l) { return /^<link rel="canonical" href="https:\/\/schoolmap\.co\.za\//.test(l) || /^<link itemprop="url" href="https:\/\/schoolmap\.co\.za\//.test(l); }), f + ": loads something from another website: " + loads.join(" "));
+    check(!/<(iframe|object|embed|form|base|frame)\b/i.test(p), f + ": has an iframe, object, embed, form or base tag");
+    check(!/\son\w+\s*=/i.test(p), f + ": has an inline event handler");
+    check(!/javascript:|vbscript:|data:text/i.test(p), f + ": has a dangerous link");
+    (p.match(/<a\b[^>]*href="https?:[^"]*"[^>]*>/g) || []).forEach(function (a) {
+      check(/rel="noopener noreferrer"/.test(a), f + ": an outside link is missing rel=\"noopener noreferrer\": " + a.slice(0, 80));
+    });
+    check(/<meta name="referrer" content="(strict-origin-when-cross-origin|no-referrer)">/.test(p), f + ": referrer policy missing");
+    check(/<link rel="canonical" href="https:\/\/schoolmap\.co\.za\/school\//.test(p), f + ": canonical link missing");
+  });
+  // Every live school has a page, every page is a live school, and each page was built from today's data and cost maths.
+  var maths = read("js/logic.js") + read("js/admissions.js");
+  var liveIds = {}, sitemap = fs.existsSync(path.join(root, "sitemap.xml")) ? read("sitemap.xml") : "";
+  (index.areas || []).forEach(function (a) {
+    JSON.parse(read("data/" + a.file)).forEach(function (raw) {
+      liveIds[raw.id] = true;
+      var pf = "school/" + raw.id + "/index.html";
+      if (!fs.existsSync(path.join(root, pf))) { fail(pf + ": missing. Run node tools/build-pages.js <this repo> in schoolmap-private"); return; }
+      var want = crypto.createHash("sha256").update(JSON.stringify(raw) + "\n" + maths).digest("hex").slice(0, 32);
+      var got = (read(pf).match(/<meta name="schoolmap-data" content="([0-9a-f]+)">/) || [])[1];
+      check(got === want, pf + ": out of date (the data or the cost maths changed). Run node tools/build-pages.js <this repo> in schoolmap-private");
+      check(sitemap.indexOf("<loc>https://schoolmap.co.za/school/" + raw.id + "/</loc>") !== -1, "sitemap.xml: missing " + raw.id);
+    });
+  });
+  pageFiles.forEach(function (f) {
+    var m = /^school\/([^\/]+)\/index\.html$/.exec(f);
+    if (m) check(!!liveIds[m[1]], f + ": not a live school (removed, or not verified). It must not be published");
+    else check(f === "school/index.html", f + ": unexpected file in school/");
+  });
+  (sitemap.match(/<loc>[^<]*<\/loc>/g) || []).forEach(function (l) {
+    var m = /^<loc>https:\/\/schoolmap\.co\.za\/(?:school\/(?:([a-z0-9-]+)\/)?)?<\/loc>$/.exec(l);
+    check(!!m && (!m[1] || !!liveIds[m[1]]), "sitemap.xml: lists something that isn't a live page: " + l);
+  });
+  check(fs.existsSync(path.join(root, "robots.txt")) && /^Sitemap: https:\/\/schoolmap\.co\.za\/sitemap\.xml$/m.test(read("robots.txt")) && !/^Disallow:\s*\/\s*$/m.test(read("robots.txt")), "robots.txt: must exist, point at the sitemap and not block the site");
+  if (fs.existsSync(wf)) check(/cp -r[^\n]*\bschool\b[^\n]*\bsitemap\.xml\b[^\n]*\brobots\.txt\b/.test(fs.readFileSync(wf, "utf8")), "pages.yml: must publish school/, sitemap.xml and robots.txt");
+}
 
 // 11. Private stuff never goes in the public repo (bot, raw research, unchecked prices, data-building tools).
 var PRIVATE_ONLY = allFiles.filter(function (f) {

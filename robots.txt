@@ -1,0 +1,5 @@
+# SchoolMap: every page may be read by search engines.
+User-agent: *
+Allow: /
+
+Sitemap: https://schoolmap.co.za/sitemap.xml

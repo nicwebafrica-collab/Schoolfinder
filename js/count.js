@@ -14,6 +14,10 @@
 
   // Only the kind of screen and a school id. Never searches, suburbs, locations or saved/compare lists.
   function screenPath() {
+    // The plain school pages Google links to (/school/<id>/ and /school/) are counted as "/page/...",
+    // so we can see how many parents arrive from search. Same rule: only a school id, nothing else.
+    var page = /^\/school\/(?:([a-z0-9-]{1,80})\/)?(?:index\.html)?$/.exec(location.pathname);
+    if (page) return "/page/school" + (page[1] ? "/" + page[1] : "");
     var parts = location.hash.replace(/^#\/?/, "").split("/");
     var id = /^[a-z0-9-]{1,80}$/.test(parts[1] || "") ? parts[1] : "";
     if (parts[0] === "school") return "/school/" + id + (parts[2] === "costs" ? "/costs" : "");

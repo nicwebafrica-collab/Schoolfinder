@@ -414,3 +414,23 @@ main.has-sticky { padding-bottom: 110px; }
 /* ---------- Home button (Nicholas 28 Oct: refresh kept opening one school; add a clear way home) ---------- */
 .icon-btn.home-btn { width: auto; display: inline-flex; align-items: center; gap: 6px; padding: 0 14px 0 10px; font-size: 15px; font-weight: 700; }
 a.brand-row { text-decoration: none; width: fit-content; min-height: 44px; margin-bottom: 4px; }
+
+/* ---------- Plain pages for Google (school/<id>/ and school/), built by build-pages.js in the private repo ---------- */
+.static-top { background: var(--surface); border-bottom: 1px solid var(--line); }
+.static-top-inner { max-width: 640px; margin: 0 auto; padding: 0 var(--gutter); min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.static-top .brand { display: inline-flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 800; color: var(--ink); text-decoration: none; min-height: 44px; }
+.static-top .brand .icon { width: 26px; height: 26px; color: var(--primary); }
+.static-top-link { font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+main.static-page { max-width: 640px; padding-bottom: 24px; }
+.crumbs { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+.crumbs a { color: var(--muted); }
+.static-head { margin: 0 0 16px; border-radius: var(--radius-card); padding: 18px var(--gutter) 20px; }
+.static-head h1 { margin-top: 0; }
+.static-actions { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 20px 0 8px; }
+@media (min-width: 520px) { .static-actions { grid-template-columns: 1fr 1fr; } }
+.school-list a.name { color: var(--ink); text-decoration: none; min-height: 28px; }
+.school-list a.name:hover { color: var(--primary); text-decoration: underline; }
+.static-footer { max-width: 640px; margin: 8px auto 0; padding: 16px var(--gutter) 32px; }
+/* index.html: the words shown before the app starts (and to search engines) */
+.pre-app h1 { font-size: 26px; font-weight: 800; margin: 0 0 6px; line-height: 1.2; }
+.pre-app p { margin: 0 0 10px; }
