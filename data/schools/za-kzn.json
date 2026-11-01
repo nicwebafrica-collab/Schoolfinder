@@ -872,8 +872,8 @@
     "province": "KwaZulu-Natal",
     "postcode": "3610",
     "address": "17 Emoyeni Drive, Hilldene, Hillcrest, 3610",
-    "lat": null,
-    "lng": null,
+    "lat": -29.7867,
+    "lng": 30.76,
     "website": "https://hillcrestprimary.co.za/",
     "phone": "031 765 1214",
     "email": "admin@hillcrestprimary.co.za",
@@ -1048,7 +1048,8 @@
     ],
     "sample": false,
     "country": "ZA",
-    "emis": "500155474"
+    "emis": "500155474",
+    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7867, 30.76"
   },
   {
     "id": "forest-view-primary",
@@ -1061,8 +1062,8 @@
     "province": "KwaZulu-Natal",
     "postcode": "3610",
     "address": "1 Ridge Road, Forest Hills, KZN, 3610",
-    "lat": null,
-    "lng": null,
+    "lat": -29.7568,
+    "lng": 30.8315,
     "website": "https://www.forestview.co.za/",
     "phone": "031 762 1342",
     "email": "secretary@forestview.co.za",
@@ -1104,7 +1105,10 @@
     ],
     "sample": false,
     "country": "ZA",
-    "emis": null
+    "emis": "500145299",
+    "emisEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv), NatEmis 500145299",
+    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7568, 30.8315",
+    "quintile": 4
   },
   {
     "id": "highbury-preparatory",
@@ -1270,26 +1274,174 @@
     "language": "English",
     "fees": {
       "year": 2026,
-      "yearly": 275000,
-      "monthly": null,
-      "registration": null,
-      "deposit": null,
-      "notes": "Boys' boarding and day school. Day fee shown; boarding R399,740/yr. Figures come from a BusinessTech fee survey, not the school's own fee schedule, which isn't public.",
-      "instalments": null,
-      "unofficial": true,
-      "sourceNote": "From a BusinessTech fee survey, not the school. Confirm with Kearsney."
+      "yearly": 251130,
+      "monthly": 22830,
+      "registration": 1050,
+      "deposit": 45000,
+      "instalments": 11,
+      "notes": "Boys' boarding and day school. 2026 day fee for Gr 8-9 shown (R22,830 x 11, Jan-Nov debit order); Gr 10-12 R275,000 (Gr 12 may pay R27,500 x 10). Boarding instead: Gr 8-9 R375,870, Gr 10-12 R399,740. 'Registration' is the non-refundable R1,050 application fee; 'deposit' is the non-refundable R45,000 acceptance fee. Non-SA pupils also pay a refundable deposit of three months' fees. Upfront discounts 5.5% / 4.5% / 3.5% depending on payment date; brothers 5% each (two) or 10% each (three or more).",
+      "evidence": "S1 Day scholar fees: annual 'R 251 130' ... per month over 11 months 'R 22 830'",
+      "registrationEvidence": "S1: 'Application Fee (to cover administrative costs and is non-refundable) R 1 050 per application'",
+      "depositEvidence": "S1: 'Acceptance Fee (payable at the time of acceptance and is non-refundable) R 45 000 per pupil'",
+      "byGrade": [
+        {
+          "grade": "Gr 8-9",
+          "yearly": 251130,
+          "monthly": 22830,
+          "evidence": "S1 Day scholar fees: 'R 251 130' / 11 months 'R 22 830'"
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 275000,
+          "monthly": 25000,
+          "evidence": "S1 Day scholar fees: 'R 275 000' / 11 months 'R 25 000'"
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 275000,
+          "monthly": 25000,
+          "evidence": "S1 Day scholar fees: 'R 275 000' / 11 months 'R 25 000' (or 10 months 'R 27 500')"
+        }
+      ]
     },
     "hiddenCosts": [
       {
-        "item": "Boarding",
-        "amount": 399740,
+        "item": "Accident insurance",
+        "amount": 400,
         "frequency": "yearly",
-        "note": "Instead of the day fee, for boarders",
-        "applies": "boarders",
-        "included": false
+        "note": "Compulsory, cover up to R250,000 per incident",
+        "applies": "everyone",
+        "included": false,
+        "evidence": "S1 Compulsory fees: 'Pupil Emergency Accident Insurance (annual) R 400'"
       },
       {
-        "item": "Uniform, tours, levies",
+        "item": "Baseline concussion testing",
+        "amount": 419,
+        "frequency": "yearly",
+        "note": "Compulsory",
+        "applies": "everyone",
+        "included": false,
+        "evidence": "S1 Compulsory fees: 'Baseline Concussion Testing (annual) R 419'"
+      },
+      {
+        "item": "Technology fee",
+        "amount": 800,
+        "frequency": "per term",
+        "note": "Compulsory once the pupil's grade has laptops",
+        "applies": "some",
+        "included": false,
+        "evidence": "S1 Compulsory fees: 'Technology Fee (refer to note below) (per term) R 800'"
+      },
+      {
+        "item": "Old Boys' life subscription",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory: 2.5% of one year's full fees, paid termly (about R6,280 for a Gr 8 day boy, our calculation)",
+        "applies": "everyone",
+        "included": false,
+        "evidence": "S1: 'The total fee is 2.5% of one year's full tuition and boarding fees' | calc: R251 130 x 2.5% = R6 278"
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 9760,
+        "frequency": "once",
+        "note": "Invoiced in nine instalments, Jan-Sep",
+        "applies": "Gr 12",
+        "included": false,
+        "evidence": "S1: 'IEB Examination Fee of R 9 760'"
+      },
+      {
+        "item": "Boarding (Gr 8-9)",
+        "amount": 375870,
+        "frequency": "yearly",
+        "note": "Instead of the day fee",
+        "applies": "boarders",
+        "included": false,
+        "evidence": "S1 Boarder fees: annual 'R 375 870'"
+      },
+      {
+        "item": "Boarding (Gr 10-12)",
+        "amount": 399740,
+        "frequency": "yearly",
+        "note": "Instead of the day fee",
+        "applies": "boarders",
+        "included": false,
+        "evidence": "S1 Boarder fees: annual 'R 399 740'"
+      },
+      {
+        "item": "Academic Inclusion levy",
+        "amount": 1360,
+        "frequency": "per term",
+        "note": "Only for pupils in the programme",
+        "applies": "some",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Academic Inclusion levy (per term) R 1 360'"
+      },
+      {
+        "item": "Literacy Support levy",
+        "amount": 450,
+        "frequency": "per term",
+        "note": "Only for pupils who need it",
+        "applies": "some",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Literacy Support levy (per term) R 450'"
+      },
+      {
+        "item": "Gym membership",
+        "amount": 750,
+        "frequency": "per term",
+        "note": "",
+        "applies": "optional",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Gym Membership (per term) R 750'"
+      },
+      {
+        "item": "Music tuition",
+        "amount": 1050,
+        "frequency": "monthly",
+        "note": "Per instrument",
+        "applies": "optional",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Music Tuition per instrument (per month) R 1 050'"
+      },
+      {
+        "item": "Day scholar overnight stay",
+        "amount": 300,
+        "frequency": "once",
+        "note": "Per night",
+        "applies": "optional",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Day Scholar Overnight Rate (per night) R 300'"
+      },
+      {
+        "item": "Immigration status levy",
+        "amount": 820,
+        "frequency": "per term",
+        "note": "Non-SA pupils",
+        "applies": "some",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Immigration Status levy (per term) R 820'"
+      },
+      {
+        "item": "Parents' Society levy",
+        "amount": 1040,
+        "frequency": "yearly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false,
+        "evidence": "S1 Additional extras: 'Parents' Society levy (optional) (per annum) R 1 040'"
+      },
+      {
+        "item": "Returned debit order",
+        "amount": null,
+        "frequency": "once",
+        "note": "Fee charged each time; amount not stated",
+        "applies": "penalty",
+        "included": false,
+        "evidence": "S1: 'Returned debit orders incur a fee'"
+      },
+      {
+        "item": "Uniform, tours, camps",
         "amount": null,
         "frequency": "yearly",
         "note": "Not published",
@@ -1303,8 +1455,10 @@
       "monthly": null
     },
     "transport": {
-      "available": null,
-      "monthly": null
+      "available": true,
+      "monthly": null,
+      "note": "School buses from Berea, Umhlanga, Ballito, Zululand and Hilton/Pietermaritzburg: R380 to R2,320 a month depending on route",
+      "evidence": "S1 Transport: amounts 'R 1 550' 'R 380' 'R 2 320' 'R 1 150' 'R 810' 'R 1 060' (routes not clearly paired)"
     },
     "sports": [
       "Basketball",
@@ -1332,9 +1486,10 @@
       "applyUrl": null,
       "source": null
     },
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-01",
     "sources": [
-      "https://businesstech.co.za/news/lifestyle/846455/most-expensive-private-schools-in-south-africa-in-2026-with-four-now-over-r400000-a-year/",
+      "https://www.kearsney.com/college/wp-content/uploads/2026/04/2026-Fee-Schedule.pdf",
+      "https://www.kearsney.com/college/admissions/",
       "https://en.wikipedia.org/wiki/Kearsney_College",
       "https://lekkeslaap.co.za/attractions/kearsney-college",
       "https://schoolhive.co.za/listing/kearsney-college-bothas-hill-admissions-contact-details/"
@@ -1489,8 +1644,8 @@
     "province": "KwaZulu-Natal",
     "postcode": "3610",
     "address": "30 Abelia Road, Kloof",
-    "lat": null,
-    "lng": null,
+    "lat": -29.7886,
+    "lng": 30.8284,
     "website": "https://www.kloofjp.org.za/",
     "phone": "031 764 3157",
     "email": "kadmin@kloofjp.co.za",
@@ -1574,7 +1729,8 @@
         }
       ]
     },
-    "quintile": 5
+    "quintile": 5,
+    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7886, 30.8284"
   },
   {
     "type": "Public",
@@ -1704,8 +1860,8 @@
     "province": "KwaZulu-Natal",
     "postcode": "3603",
     "address": "Jan Smuts Avenue, Gillitts",
-    "lat": null,
-    "lng": null,
+    "lat": -29.7973,
+    "lng": 30.7817,
     "website": "https://wppschool.co.za/",
     "phone": "031 767 3214",
     "email": "admin@wppschool.co.za",
@@ -1750,7 +1906,8 @@
       "deposit": null,
       "instalments": null,
       "notes": "Fee-paying public school (quintile 5). Fees not published online. Listed by Hillcrest High as a feeder primary."
-    }
+    },
+    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7973, 30.7817"
   },
   {
     "type": "Private",
@@ -2592,7 +2749,7 @@
     "phone": "031 267 1307",
     "email": null,
     "language": "German and English",
-    "emis": null,
+    "emis": "500311503",
     "country": "ZA",
     "sample": false,
     "hiddenCosts": [
@@ -2704,7 +2861,8 @@
           "monthly": 8436
         }
       ]
-    }
+    },
+    "emisEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv), NatEmis 500311503"
   },
   {
     "type": "Public",
@@ -2844,13 +3002,13 @@
     "province": "KwaZulu-Natal",
     "postcode": "3629",
     "address": "26 Wandsbeck Road, Westville",
-    "lat": null,
-    "lng": null,
+    "lat": -29.8297,
+    "lng": 30.9285,
     "website": "https://www.wbhs.co.za/",
     "phone": "031 267 1330",
     "email": null,
     "language": "English",
-    "emis": null,
+    "emis": "500295852",
     "country": "ZA",
     "sample": false,
     "quintile": null,
@@ -3005,7 +3163,9 @@
       "https://www.wbhs.co.za/admissions",
       "https://www.wbhs.co.za/contact-us",
       "https://en.wikipedia.org/wiki/Westville_Boys%27_High_School"
-    ]
+    ],
+    "emisEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv), NatEmis 500295852",
+    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.8297, 30.9285"
   },
   {
     "country": "ZA",

@@ -34,7 +34,7 @@
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
       "schoolCount": 24,
-      "updated": "2026-10",
+      "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
         "waterfall-college",
@@ -65,7 +65,7 @@
         -29.8398,
         30.7341,
         -29.7442,
-        30.9167
+        30.9285
       ]
     }
   ]
