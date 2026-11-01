@@ -231,6 +231,13 @@ androidFiles.filter(function (f) { return /\.(xml|gradle|kts|properties|json)$/.
 var badAndroid = androidFiles.filter(function (f) { return /(key\.properties|local\.properties|google-services\.json|\.aab|\.apk)$/.test(f); });
 check(badAndroid.length === 0, "These Android files must never be committed: " + badAndroid.join(", "));
 
+// 11. Private stuff never goes in the public repo (bot, raw research, unchecked prices, data-building tools).
+var PRIVATE_ONLY = allFiles.filter(function (f) {
+  return /^(bot|raw|waiting|verified|downloads|cache)\//.test(f) || /\.pdf$/i.test(f) ||
+    /^tools\//.test(f) && f !== "tools/security-check.js";
+});
+check(PRIVATE_ONLY.length === 0, "These belong in the private repo (schoolmap-private), not the public one: " + PRIVATE_ONLY.join(", "));
+
 if (failures.length) {
   console.error("\nSECURITY CHECK FAILED (" + failures.length + " problem" + (failures.length === 1 ? "" : "s") + "):\n");
   failures.forEach(function (f) { console.error("  ✗ " + f); });
