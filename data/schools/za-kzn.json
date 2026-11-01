@@ -183,7 +183,6 @@
       "https://www.waterfallcollege.co.za/",
       "https://www.waterfallcollege.co.za/get-in-touch"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": null
   },
@@ -354,7 +353,6 @@
       "https://www.waterfallcollege.co.za/get-in-touch",
       "https://schoolhive.co.za/listing/waterfall-college-hillcrest-admissions-contact-details/"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500407777"
   },
@@ -531,7 +529,6 @@
       "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf",
       "https://schoolhive.co.za/listing/curro-hillcrest-christian-academy-hillcrest-admissions-contact-details/"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500155363"
   },
@@ -733,7 +730,6 @@
       "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/",
       "https://schoolhive.co.za/listing/curro-hilcrest-high-school-hillcrest-admissions-contact-details/"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500498316"
   },
@@ -857,7 +853,6 @@
       "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/",
       "https://schoolhive.co.za/listing/hillcrest-high-school-hillcrest-admissions-contact-details/"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500155400"
   },
@@ -1046,10 +1041,8 @@
       "https://schoolhive.co.za/listing/hillcrest-primary-school-hillcrest-admissions-contact-details/",
       "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/"
     ],
-    "sample": false,
     "country": "ZA",
-    "emis": "500155474",
-    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7867, 30.76"
+    "emis": "500155474"
   },
   {
     "id": "forest-view-primary",
@@ -1103,11 +1096,8 @@
       "https://www.forestview.co.za/",
       "https://www.citizen.co.za/highway-mail/forest-view-primary-school/"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500145299",
-    "emisEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv), NatEmis 500145299",
-    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7568, 30.8315",
     "quintile": 4
   },
   {
@@ -1251,7 +1241,6 @@
       "https://schoolhive.co.za/listing/highbury-preparatory-school-hillcrest-admissions-contact-details/",
       "https://en.wikipedia.org/wiki/Highbury_Preparatory_School"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500154993"
   },
@@ -1280,27 +1269,21 @@
       "deposit": 45000,
       "instalments": 11,
       "notes": "Boys' boarding and day school. 2026 day fee for Gr 8-9 shown (R22,830 x 11, Jan-Nov debit order); Gr 10-12 R275,000 (Gr 12 may pay R27,500 x 10). Boarding instead: Gr 8-9 R375,870, Gr 10-12 R399,740. 'Registration' is the non-refundable R1,050 application fee; 'deposit' is the non-refundable R45,000 acceptance fee. Non-SA pupils also pay a refundable deposit of three months' fees. Upfront discounts 5.5% / 4.5% / 3.5% depending on payment date; brothers 5% each (two) or 10% each (three or more).",
-      "evidence": "S1 Day scholar fees: annual 'R 251 130' ... per month over 11 months 'R 22 830'",
-      "registrationEvidence": "S1: 'Application Fee (to cover administrative costs and is non-refundable) R 1 050 per application'",
-      "depositEvidence": "S1: 'Acceptance Fee (payable at the time of acceptance and is non-refundable) R 45 000 per pupil'",
       "byGrade": [
         {
           "grade": "Gr 8-9",
           "yearly": 251130,
-          "monthly": 22830,
-          "evidence": "S1 Day scholar fees: 'R 251 130' / 11 months 'R 22 830'"
+          "monthly": 22830
         },
         {
           "grade": "Gr 10-11",
           "yearly": 275000,
-          "monthly": 25000,
-          "evidence": "S1 Day scholar fees: 'R 275 000' / 11 months 'R 25 000'"
+          "monthly": 25000
         },
         {
           "grade": "Gr 12",
           "yearly": 275000,
-          "monthly": 25000,
-          "evidence": "S1 Day scholar fees: 'R 275 000' / 11 months 'R 25 000' (or 10 months 'R 27 500')"
+          "monthly": 25000
         }
       ]
     },
@@ -1311,8 +1294,7 @@
         "frequency": "yearly",
         "note": "Compulsory, cover up to R250,000 per incident",
         "applies": "everyone",
-        "included": false,
-        "evidence": "S1 Compulsory fees: 'Pupil Emergency Accident Insurance (annual) R 400'"
+        "included": false
       },
       {
         "item": "Baseline concussion testing",
@@ -1320,8 +1302,7 @@
         "frequency": "yearly",
         "note": "Compulsory",
         "applies": "everyone",
-        "included": false,
-        "evidence": "S1 Compulsory fees: 'Baseline Concussion Testing (annual) R 419'"
+        "included": false
       },
       {
         "item": "Technology fee",
@@ -1329,8 +1310,7 @@
         "frequency": "per term",
         "note": "Compulsory once the pupil's grade has laptops",
         "applies": "some",
-        "included": false,
-        "evidence": "S1 Compulsory fees: 'Technology Fee (refer to note below) (per term) R 800'"
+        "included": false
       },
       {
         "item": "Old Boys' life subscription",
@@ -1338,8 +1318,7 @@
         "frequency": "once",
         "note": "Compulsory: 2.5% of one year's full fees, paid termly (about R6,280 for a Gr 8 day boy, our calculation)",
         "applies": "everyone",
-        "included": false,
-        "evidence": "S1: 'The total fee is 2.5% of one year's full tuition and boarding fees' | calc: R251 130 x 2.5% = R6 278"
+        "included": false
       },
       {
         "item": "IEB exam fee",
@@ -1347,8 +1326,7 @@
         "frequency": "once",
         "note": "Invoiced in nine instalments, Jan-Sep",
         "applies": "Gr 12",
-        "included": false,
-        "evidence": "S1: 'IEB Examination Fee of R 9 760'"
+        "included": false
       },
       {
         "item": "Boarding (Gr 8-9)",
@@ -1356,8 +1334,7 @@
         "frequency": "yearly",
         "note": "Instead of the day fee",
         "applies": "boarders",
-        "included": false,
-        "evidence": "S1 Boarder fees: annual 'R 375 870'"
+        "included": false
       },
       {
         "item": "Boarding (Gr 10-12)",
@@ -1365,8 +1342,7 @@
         "frequency": "yearly",
         "note": "Instead of the day fee",
         "applies": "boarders",
-        "included": false,
-        "evidence": "S1 Boarder fees: annual 'R 399 740'"
+        "included": false
       },
       {
         "item": "Academic Inclusion levy",
@@ -1374,8 +1350,7 @@
         "frequency": "per term",
         "note": "Only for pupils in the programme",
         "applies": "some",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Academic Inclusion levy (per term) R 1 360'"
+        "included": false
       },
       {
         "item": "Literacy Support levy",
@@ -1383,8 +1358,7 @@
         "frequency": "per term",
         "note": "Only for pupils who need it",
         "applies": "some",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Literacy Support levy (per term) R 450'"
+        "included": false
       },
       {
         "item": "Gym membership",
@@ -1392,8 +1366,7 @@
         "frequency": "per term",
         "note": "",
         "applies": "optional",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Gym Membership (per term) R 750'"
+        "included": false
       },
       {
         "item": "Music tuition",
@@ -1401,8 +1374,7 @@
         "frequency": "monthly",
         "note": "Per instrument",
         "applies": "optional",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Music Tuition per instrument (per month) R 1 050'"
+        "included": false
       },
       {
         "item": "Day scholar overnight stay",
@@ -1410,8 +1382,7 @@
         "frequency": "once",
         "note": "Per night",
         "applies": "optional",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Day Scholar Overnight Rate (per night) R 300'"
+        "included": false
       },
       {
         "item": "Immigration status levy",
@@ -1419,8 +1390,7 @@
         "frequency": "per term",
         "note": "Non-SA pupils",
         "applies": "some",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Immigration Status levy (per term) R 820'"
+        "included": false
       },
       {
         "item": "Parents' Society levy",
@@ -1428,8 +1398,7 @@
         "frequency": "yearly",
         "note": "Optional",
         "applies": "optional",
-        "included": false,
-        "evidence": "S1 Additional extras: 'Parents' Society levy (optional) (per annum) R 1 040'"
+        "included": false
       },
       {
         "item": "Returned debit order",
@@ -1437,8 +1406,7 @@
         "frequency": "once",
         "note": "Fee charged each time; amount not stated",
         "applies": "penalty",
-        "included": false,
-        "evidence": "S1: 'Returned debit orders incur a fee'"
+        "included": false
       },
       {
         "item": "Uniform, tours, camps",
@@ -1457,8 +1425,7 @@
     "transport": {
       "available": true,
       "monthly": null,
-      "note": "School buses from Berea, Umhlanga, Ballito, Zululand and Hilton/Pietermaritzburg: R380 to R2,320 a month depending on route",
-      "evidence": "S1 Transport: amounts 'R 1 550' 'R 380' 'R 2 320' 'R 1 150' 'R 810' 'R 1 060' (routes not clearly paired)"
+      "note": "School buses from Berea, Umhlanga, Ballito, Zululand and Hilton/Pietermaritzburg: R380 to R2,320 a month depending on route"
     },
     "sports": [
       "Basketball",
@@ -1494,7 +1461,6 @@
       "https://lekkeslaap.co.za/attractions/kearsney-college",
       "https://schoolhive.co.za/listing/kearsney-college-bothas-hill-admissions-contact-details/"
     ],
-    "sample": false,
     "country": "ZA",
     "emis": "500172494"
   },
@@ -1515,7 +1481,6 @@
     "language": "English",
     "emis": "500176564",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Uniform, camps, tours, books",
@@ -1587,7 +1552,6 @@
     "language": "English",
     "emis": "500176675",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Learner support unit assessment",
@@ -1652,7 +1616,6 @@
     "language": null,
     "emis": "500176601",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Academic Support Unit (instead of normal fee)",
@@ -1729,8 +1692,7 @@
         }
       ]
     },
-    "quintile": 5,
-    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7886, 30.8284"
+    "quintile": 5
   },
   {
     "type": "Public",
@@ -1749,7 +1711,6 @@
     "language": null,
     "emis": null,
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Fundraising levy",
@@ -1868,7 +1829,6 @@
     "language": null,
     "emis": "500296592",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Uniform, outings, aftercare",
@@ -1906,8 +1866,7 @@
       "deposit": null,
       "instalments": null,
       "notes": "Fee-paying public school (quintile 5). Fees not published online. Listed by Hillcrest High as a feeder primary."
-    },
-    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.7973, 30.7817"
+    }
   },
   {
     "type": "Private",
@@ -1926,7 +1885,6 @@
     "language": "English",
     "emis": "500282976",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Grade tours and trips",
@@ -2113,7 +2071,6 @@
     "language": "English",
     "emis": "500276205",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Compulsory variable billings",
@@ -2404,7 +2361,6 @@
     "language": "English",
     "emis": "500223258",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Building levy",
@@ -2594,7 +2550,6 @@
     "language": "English",
     "emis": "500250453",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "IEB matric exam fee",
@@ -2751,7 +2706,6 @@
     "language": "German and English",
     "emis": "500311503",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Cultural tours and outings",
@@ -2861,8 +2815,7 @@
           "monthly": 8436
         }
       ]
-    },
-    "emisEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv), NatEmis 500311503"
+    }
   },
   {
     "type": "Public",
@@ -2881,7 +2834,6 @@
     "language": "English",
     "emis": "500250416",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Uniform, tours, camps, books",
@@ -2951,7 +2903,6 @@
     "language": "English",
     "emis": "500250490",
     "country": "ZA",
-    "sample": false,
     "hiddenCosts": [
       {
         "item": "Uniform, tours, camps, books",
@@ -3010,7 +2961,6 @@
     "language": "English",
     "emis": "500295852",
     "country": "ZA",
-    "sample": false,
     "quintile": null,
     "fees": {
       "year": 2027,
@@ -3046,8 +2996,7 @@
           "yearly": 78000,
           "monthly": null
         }
-      ],
-      "evidence": "S1: R85,500 for new enrolments includes the R7,500 registration deposit | calc: R85 500 - R7 500 = R78 000"
+      ]
     },
     "hiddenCosts": [
       {
@@ -3163,13 +3112,10 @@
       "https://www.wbhs.co.za/admissions",
       "https://www.wbhs.co.za/contact-us",
       "https://en.wikipedia.org/wiki/Westville_Boys%27_High_School"
-    ],
-    "emisEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv), NatEmis 500295852",
-    "locationEvidence": "DBE School Masterlist Q3 2025 (raw/dbe-masterlist-2025q3/KZN.csv): GIS_Lat/GIS_Long -29.8297, 30.9285"
+    ]
   },
   {
     "country": "ZA",
-    "sample": false,
     "province": "KwaZulu-Natal",
     "city": "Durban",
     "area": "Westville",
@@ -3202,19 +3148,16 @@
       "deposit": null,
       "instalments": null,
       "notes": "Fee-paying public school (girls). Grade 8 shown: R63,869 a year; Grades 9-12 R54,669. The school's page gives annual fees only, not monthly payments, deposits or levies. No bursaries or scholarships, and no boarding.",
-      "evidence": "S1 Fees table: 'Grade 8 ... Annual fee R63,869'",
       "byGrade": [
         {
           "grade": "Gr 8",
           "yearly": 63869,
-          "monthly": null,
-          "evidence": "S1 Fees table: 'Grade 8 ... Annual fee R63,869'"
+          "monthly": null
         },
         {
           "grade": "Gr 9-12",
           "yearly": 54669,
-          "monthly": null,
-          "evidence": "S1 Fees table: 'Grades 9 – 12 ... Annual fee R54,669'"
+          "monthly": null
         }
       ]
     },
@@ -3237,12 +3180,10 @@
       "https://www.wghs.co.za/contact-us/",
       "https://en.wikipedia.org/wiki/Westville_Girls%27_High_School",
       "https://www.wghs.co.za/application-process/"
-    ],
-    "locationEvidence": "S3 infobox coordinates: '-29.83722, 30.91667'"
+    ]
   },
   {
     "country": "ZA",
-    "sample": false,
     "province": "KwaZulu-Natal",
     "city": "Durban",
     "area": "Westville",
@@ -3276,19 +3217,16 @@
       "deposit": null,
       "instalments": 10,
       "notes": "Fee-paying public school. Grade 4 shown: R42,925 a year; Grades 5-7 R41,925 (ten payments of R4,192.50). Learner-support classes cost more: Gr 4 R51,525, Gr 5 R50,525. R2,100 off if paid in one go by 28 Feb 2026. New learners pay a R3,000 or R3,500 deposit that is credited against the year's fees.",
-      "evidence": "S2: 'GRADE 4: R 42 925.00' | Gr 4 monthly calc: R42 925 / 10",
       "byGrade": [
         {
           "grade": "Gr 4",
           "yearly": 42925,
-          "monthly": 4292.5,
-          "evidence": "S2: 'GRADE 4: R 42 925.00' | monthly calc: R42 925 / 10"
+          "monthly": 4292.5
         },
         {
           "grade": "Gr 5-7",
           "yearly": 41925,
-          "monthly": 4192.5,
-          "evidence": "S3: 'the 2026 school fee/s of R 41 925.00 per pupil' ... 'Ten payments of R 4 192.50 each'"
+          "monthly": 4192.5
         }
       ]
     },
@@ -3299,8 +3237,7 @@
         "frequency": "once",
         "note": "A prepayment, not an extra: credited against the year's fees (some pay R3,500)",
         "applies": "some",
-        "included": true,
-        "evidence": "S3: 'One payment of R 36 825.00 (If R 3 000.00 deposit paid)'"
+        "included": true
       },
       {
         "item": "Learner Support class (instead of the normal fee)",
@@ -3308,8 +3245,7 @@
         "frequency": "yearly",
         "note": "Gr 4 R51,525, Gr 5 R50,525 a year instead of the normal fee",
         "applies": "some",
-        "included": false,
-        "evidence": "S2: 'GRADE 4 LEARNER SUPPORT: R 51 525.00' 'GRADE 5 LEARNERS SUPPORT: R 50 525.00'"
+        "included": false
       },
       {
         "item": "Unpaid debit order charge",
@@ -3317,8 +3253,7 @@
         "frequency": "once",
         "note": "Each time",
         "applies": "penalty",
-        "included": false,
-        "evidence": "S3: 'There is a R25 charge un unpaid debit orders'"
+        "included": false
       },
       {
         "item": "Uniform, stationery, camps, outings",
@@ -3332,8 +3267,7 @@
     "aftercare": {
       "available": true,
       "monthly": null,
-      "note": "Mon-Thu 14:00-17:00, Fri 13:00-17:00; cost not published",
-      "evidence": "S5: 'Monday to Thursday 14:00 – 17:00' 'Fridays 13.00 – 17:00'"
+      "note": "Mon-Thu 14:00-17:00, Fri 13:00-17:00; cost not published"
     },
     "sources": [
       "https://www.wsps.co.za/school-fees/",
@@ -3342,8 +3276,6 @@
       "https://www.wsps.co.za/contact-us/",
       "https://www.wsps.co.za/aftercare/",
       "https://schoolhive.co.za/listing/westville-senior-primary-school-westville-admissions-contact-details/"
-    ],
-    "locationEvidence": "S4 Google Maps embed: '!2d30.916320415651814!3d-29.83978702874914'",
-    "emisEvidence": "S6: 'EMIS number 500296000'"
+    ]
   }
 ]

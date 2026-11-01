@@ -27,7 +27,7 @@
     };
   }
 
-  // The whole rules file from the Admissions Rules thread (data/admissions-kzn.json).
+  // The whole admission rules file for a province (data/rules/<area>.json).
   function cleanAdmissionsFile(raw) {
     var d = obj(raw);
     if (!d) return null;

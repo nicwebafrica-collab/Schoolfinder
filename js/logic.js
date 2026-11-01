@@ -1,5 +1,5 @@
 // logic.js — the "brain" of the app: searching, filtering and cost maths.
-// It has no screen code in it, so the Tester can run it on its own in Node.
+// It has no screen code in it, so it can be tested on its own in Node.
 
 (function (root) {
   // How many times a year each kind of cost is paid.
@@ -200,8 +200,8 @@
   function outingApplies(o) {
     if (o.applies) return normaliseApplies(o.applies);
     var words = ((o.note || "") + " " + (o.name || "")).toLowerCase();
-    // Read "not/non-" phrases first, because they flip the meaning: "not optional" = must pay (B42),
-    // "non-compulsory" / "not required" = optional (B44). Then look at the plain words that are left.
+    // Read "not/non-" phrases first, because they flip the meaning: "not optional" = must pay,
+    // "non-compulsory" / "not required" = optional. Then look at the plain words that are left.
     var OPT = "optional|voluntary", MUST = "compulsory|mandatory|required";
     var neg = new RegExp("\\b(?:not|non)[\\s-]*(" + OPT + "|" + MUST + ")\\b", "g");
     var saysOptional = false, saysMust = false, m;
@@ -307,7 +307,7 @@
 
   var UNKNOWN = "Not published by school";
 
-  // R34,800 (the Designer's format). Unknown amounts never show as R0.
+  // R34,800 (the site's money format). Unknown amounts never show as R0.
   function formatRand(amount) {
     if (!isNum(amount)) return UNKNOWN;
     return COUNTRY.symbol + Math.round(amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -335,8 +335,8 @@
   // available is true (offered), false (not offered) or null (the school doesn't say). Never guess "not offered".
   function option(v) { v = obj(v); return v ? Object.assign({ available: v.available === true ? true : v.available === false ? false : null, monthly: num(v.monthly) }, evidence(v)) : null; }
 
-  // Where each number came from, for the Fact Checker (factcheck/evidence-field.md): every field named "evidence" or
-  // ending in "Evidence" is kept as plain text (capped like other text). Not shown in the app yet.
+  // Optional note fields named "evidence" or ending in "Evidence" are kept as plain text (capped like other text).
+  // Not shown in the app, and not in the public data.
   function evidence(v) {
     var out = {};
     Object.keys(v || {}).forEach(function (k) { if (/(^e|E)vidence$/.test(k) && str(v[k]) !== null) out[k] = str(v[k]); });
@@ -345,7 +345,7 @@
 
   // A hidden cost from the data file. Text amounts ("1500", "R1,500") become numbers; frequencies are normalised
   // ("Monthly", "termly" -> "monthly", "per term"). Anything we can't understand is kept but flagged in
-  // `problem`, so it's shown as unpriced (never silently dropped) and the Info Puller can see it.
+  // `problem`, so it's shown as unpriced (never silently dropped) and our checks can see it.
   var MAX_COST = 1000000;
 
   function cleanCost(c) {
@@ -411,7 +411,7 @@
         rules: list(a.rules, str), applyBy: str(a.applyBy), applyUrl: str(a.applyUrl), source: str(a.source)
       } : null,
       lastChecked: str(s.lastChecked), sources: list(s.sources, str),
-      // Fact Checker's verdict for the whole school, e.g. { status: "verified", date: "2026-10-27" }.
+      // Our check result for the whole school, e.g. { status: "verified", date: "2026-10-27" }.
       factCheck: fc ? { status: str(fc.status), date: str(fc.date) } : null
     }, evidence(s));
   }

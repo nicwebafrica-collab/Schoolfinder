@@ -2,7 +2,7 @@
 // No cookies, nothing saved on the phone, nothing about the parent: only which screen was opened
 // (e.g. "/school/waterfall-college") and which website sent them (e.g. "facebook.com").
 // Skipped when the browser asks not to be tracked, when offline, and when running anywhere but the live site.
-// Reviewed by Security: don't add anything to what is sent without asking.
+// Security-reviewed: don't add anything to what is sent without asking.
 
 (function () {
   var ENDPOINT = "https://greendragon.goatcounter.com/count";

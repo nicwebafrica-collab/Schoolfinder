@@ -1,4 +1,4 @@
-// boot.js: a safety net for the first screen (Fixer, 1 Nov, "stuck on Loading schools…").
+// boot.js: a safety net for the first screen (for when it gets stuck on "Loading schools…").
 // It loads before the rest of the app. If the app hasn't drawn its first screen after a while, or a
 // script fails to load or crashes, it swaps "Loading schools…" for a clear message and a Try again button.
 // Try again throws away the copy of SchoolMap saved on the phone (service worker + saved files),

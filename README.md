@@ -6,21 +6,21 @@ Live at https://schoolmap.co.za
 
 ## Run it
 ```
-cd /mnt/project-files/app
+cd <this folder>
 python3 -m http.server 8000
 ```
 Then open http://localhost:8000. (Opening index.html directly won't load the data, because browsers block reading local files.)
 
 ## Files
 - `index.html`: the page shell
-- `styles.css`: the look (colours and fonts are variables at the top for the Designer)
+- `styles.css`: the look (colours and fonts are variables at the top)
 - `js/logic.js`: search, filters and cost maths (no screen code, testable in Node: `require('./js/logic.js')`)
 - `js/app.js`: draws the search and school screens
 - `data/index.json`: list of areas (provinces) with their files, school ids and map bounds
 - `data/schools/<area>.json`: schools in one province (e.g. `za-kzn.json`); `data/rules/<area>.json`: that province's admission rules
 - `data/countries/za.json`: country settings (currency symbol, terms per year, budget filter, grades)
 - `js/admissions.js`: admission rules and the nearest-school check; `js/places.js`: suburb centres and place search
-- `data/` is built from Fact-Checker-approved data by a tool in the private repo (schoolmap-private), never edited by hand
+- `data/` is built and checked in a separate private process, never edited by hand
 
 ## How "real yearly cost" is worked out
 Yearly tuition (or monthly x 12) + recurring hidden costs (yearly x1, per term x4, monthly x12) + all outings.
@@ -29,9 +29,6 @@ Unknown amounts show "Not published by school", never R0. Prices look like R34,8
 
 ## Screens (v1)
 Search (`#/`), school profile (`#/school/<id>`), true cost breakdown (`#/school/<id>/costs`), Saved (`#/saved`, ids in localStorage on this device only), Compare (`#/compare/<a>/<b>`), Privacy (`#/privacy`).
-
-## Shareable preview
-The one-file preview tool lives in the private repo (schoolmap-private): `python3 tools/build-preview.py <this checkout> <out.html>`.
 
 ## Phone app (installable web app / PWA)
 - `manifest.webmanifest` gives the app its name, icon and full-screen mode when added to the home screen.

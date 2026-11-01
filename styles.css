@@ -7,7 +7,7 @@
   src: url(fonts/plus-jakarta-sans-latin.woff2) format('woff2');
 }
 
-/* Design tokens from the Designer's guide (design/design-guide.md). */
+/* Design tokens: colours, sizes and fonts. */
 :root {
   --bg: #F4F6F9;
   --surface: #FFFFFF;
@@ -38,7 +38,7 @@
   --gutter: 20px;
 }
 @media (prefers-color-scheme: dark) {
-  /* Designer ux-v2 section 3: contrast-checked dark colours */
+  /* Contrast-checked dark colours */
   :root {
     --bg: #0E1624; --surface: #172133; --ink: #E8EDF5; --muted: #A3AEC2;
     --line: #26324A; --line-strong: #34425E; --primary: #6E9BFF; --ink-on-primary: #0E1624; --primary-ink: #C9D8FF;
@@ -188,7 +188,7 @@ main.has-sticky { padding-bottom: 180px; }
 .bullets li { margin: 4px 0; }
 .chips.radius { margin-top: 14px; }
 
-/* Location search (Designer clean-up v1, item 1) */
+/* Location search */
 .search-box { position: relative; }
 .in-field-btn { width: 44px; height: 44px; margin-right: -8px; border: 0; background: transparent; color: var(--primary); display: grid; place-items: center; border-radius: 10px; }
 .in-field-btn[aria-pressed="true"] { background: var(--primary-soft); }
@@ -203,14 +203,14 @@ main.has-sticky { padding-bottom: 180px; }
 .chips.radius { margin-top: 0; margin-bottom: 8px; }
 .link-btn { display: block; margin: 12px 0; min-height: 44px; border: 0; background: none; color: var(--primary); font-weight: 700; padding: 0; text-align: left; }
 
-/* School cards (Designer clean-up v1, item 3) */
+/* School cards */
 .card-title { flex: 1; min-width: 0; }
 .card-top { align-items: flex-start; }
 .distance { flex: none; font-size: 13px; font-weight: 700; color: var(--primary-ink); background: var(--primary-soft); border-radius: var(--radius-pill); padding: 2px 8px; }
 .card-unknown { margin: 10px 0 0; }
 .extras-line.one-line span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 
-/* School detail (Designer clean-up v1, items 4 and 5) */
+/* School detail */
 .bottom-nav[hidden] { display: none; }
 .sticky-actions.no-nav { bottom: 0; padding-bottom: max(10px, env(safe-area-inset-bottom)); }
 main.has-sticky { padding-bottom: 110px; }
@@ -229,7 +229,7 @@ main.has-sticky { padding-bottom: 110px; }
 .panel h2 { font-size: 15px; font-weight: 700; }
 .grade-picker select, .compare-pick select { min-height: 44px; }
 
-/* ---------- Top bar and website welcome (Designer responsive-v1, steps 1-2) ---------- */
+/* ---------- Top bar and website welcome ---------- */
 .top-bar { display: none; }
 .welcome-title { font-size: 24px; font-weight: 800; line-height: 1.2; margin: 4px 0 8px; }
 .welcome-line { font-size: 16px; margin: 0 0 4px; }
@@ -254,7 +254,7 @@ main.has-sticky { padding-bottom: 110px; }
   .feature-tiles { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* ---------- Desktop two panes (Designer responsive-v1 step 3) ---------- */
+/* ---------- Desktop two panes ---------- */
 @media (min-width: 700px) {
   .card { cursor: pointer; }
   .card:hover { border-color: var(--line-strong); box-shadow: 0 2px 8px rgba(20, 32, 51, .08); }
@@ -270,7 +270,7 @@ main.has-sticky { padding-bottom: 110px; }
   .big-money { font-size: 40px; }
 }
 
-/* ---------- Compare as a table on wider screens (Designer responsive-v1 step 4) ---------- */
+/* ---------- Compare as a table on wider screens ---------- */
 .crow.chead { display: none; }
 @media (min-width: 700px) {
   .compare-table { padding: 0 16px; }
@@ -301,7 +301,7 @@ main.has-sticky { padding-bottom: 110px; }
 
 
 
-/* ---------- Phone bottom sheet (Designer ux-v2 section 1) ---------- */
+/* ---------- Phone bottom sheet ---------- */
 .sheet-backdrop { position: fixed; inset: 0; background: rgba(14, 22, 36, .35); z-index: 30; }
 .sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; background: var(--surface); color: var(--ink); border-radius: 22px 22px 0 0; box-shadow: 0 -4px 16px rgba(20, 32, 51, .12); padding: 6px var(--gutter) max(16px, env(safe-area-inset-bottom)); max-height: 92vh; overflow-y: auto; }
 .sheet.full { height: 92vh; }
@@ -334,7 +334,7 @@ main.has-sticky { padding-bottom: 110px; }
 .sheet .profile-head h1 { display: none; } /* the sheet bar already shows the name */
 .tip-actions .link-btn { margin: 0; }
 
-/* ---------- Visual polish v1 (Designer, 28 Oct) ---------- */
+/* ---------- Visual polish v1 ---------- */
 /* 1. Scrollbars follow light/dark mode */
 :root { color-scheme: light; }
 @media (prefers-color-scheme: dark) { :root { color-scheme: dark; } }
@@ -369,7 +369,7 @@ main.has-sticky { padding-bottom: 110px; }
 .loc-status .icon { width: 16px; height: 16px; color: var(--hidden); }
 .loc-status[hidden] { display: none; }
 
-/* ---------- First impression, round 1 (Designer + Marketing) ---------- */
+/* ---------- First impression, round 1 ---------- */
 .brand-row { display: flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 800; color: var(--ink); margin: 0 0 14px; }
 .brand-row .icon { color: var(--primary); width: 22px; height: 22px; }
 @media (min-width: 700px) { .brand-row { display: none; } } /* the top bar shows the name there */
@@ -415,7 +415,7 @@ main.has-sticky { padding-bottom: 110px; }
 .icon-btn.home-btn { width: auto; display: inline-flex; align-items: center; gap: 6px; padding: 0 14px 0 10px; font-size: 15px; font-weight: 700; }
 a.brand-row { text-decoration: none; width: fit-content; min-height: 44px; margin-bottom: 4px; }
 
-/* ---------- Plain pages for Google (school/<id>/ and school/), built by build-pages.js in the private repo ---------- */
+/* ---------- Plain pages for Google (school/<id>/ and school/) ---------- */
 .static-top { background: var(--surface); border-bottom: 1px solid var(--line); }
 .static-top-inner { max-width: 640px; margin: 0 auto; padding: 0 var(--gutter); min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .static-top .brand { display: inline-flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 800; color: var(--ink); text-decoration: none; min-height: 44px; }
