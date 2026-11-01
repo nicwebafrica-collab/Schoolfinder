@@ -42,10 +42,10 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
-      - name: Collect the files the website needs (never tools, notes or old data)
+      - name: Collect the files the website needs, incl. the plain school pages for Google (never tools, notes or old data)
         run: |
           mkdir _site
-          cp -r index.html styles.css manifest.webmanifest sw.js js fonts icons _site/
+          cp -r index.html styles.css manifest.webmanifest sw.js js fonts icons school sitemap.xml robots.txt _site/
           mkdir _site/data
           cd data && find . -name '*.json' ! -name '*.old.json' -exec cp --parents {} ../_site/data/ \;
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3

@@ -7,6 +7,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>SchoolMap: what schools really cost</title>
   <meta name="description" content="See what a school really costs before you apply: fees, hidden extras and admission rules. Free, no sign-up.">
+  <link rel="canonical" href="https://schoolmap.co.za/">
   <!-- Link previews for WhatsApp, Facebook and others (Designer + Marketing first-impression item 12) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SchoolMap">
@@ -31,7 +32,15 @@
   <header id="topbar" class="top-bar"></header>
 
   <main id="app">
-    <p class="muted" id="boot-loading">Loading schools…</p>
+    <!-- Shown until the app starts, and read by search engines. The app replaces all of this. -->
+    <section class="pre-app">
+      <h1>See what a school really costs before you apply.</h1>
+      <p class="free-line">Free · No sign-up</p>
+      <p class="muted">Fees, hidden extras, outings and admission rules for schools in the Upper Highway and nearby areas of KwaZulu-Natal, plus a few in Gauteng. Every school page lists its sources and the date we checked it.</p>
+      <p><a href="school/">See every school we cover</a></p>
+      <p class="muted small" id="boot-loading">Loading schools…</p>
+      <noscript><p class="muted small">The search needs JavaScript. You can still browse <a href="school/">every school we cover</a>.</p></noscript>
+    </section>
   </main>
 
   <nav id="nav" class="bottom-nav" aria-label="Main"></nav>

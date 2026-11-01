@@ -6,6 +6,9 @@
 (function () {
   "use strict";
 
+  // Shows the "Loading schools…" line (styles.css hides it when JavaScript is off; a <noscript> line shows then).
+  document.documentElement.classList.add("js");
+
   var WAIT_MS = 15000;       // slow phone on a weak signal: give it this long before offering Try again
   var AFTER_ERROR_MS = 3000; // a script failed: wait a moment in case the app still draws
   var FILES = ["./", "index.html", "styles.css", "js/boot.js", "js/logic.js", "js/admissions.js", "js/places.js",
