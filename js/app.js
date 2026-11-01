@@ -596,9 +596,14 @@
         if (pick) fillPane(pane, pick);
         else { pane.textContent = ""; pane.appendChild(el("p", { className: "muted" }, "Pick a school on the left to see its costs.")); }
       }
-    }, function () {
+    }).catch(function (e) {
+      // A failed or too-slow download (or a crash while drawing): say so and offer Try again, never a stuck "Loading".
+      if (window.console) console.error(e);
       container.textContent = "";
-      container.appendChild(el("p", {}, "Couldn't load schools for this area. Check your internet connection and try again."));
+      container.appendChild(el("p", {}, "Couldn't load schools for this area. This is usually a weak or slow internet connection."));
+      var again = el("button", { type: "button", className: "btn solid" }, "Try again");
+      again.addEventListener("click", function () { drawResults(container); });
+      container.appendChild(again);
     });
   }
 
@@ -1596,7 +1601,16 @@
     if (window.EMBEDDED_DATA && Object.prototype.hasOwnProperty.call(window.EMBEDDED_DATA, path)) {
       return Promise.resolve(window.EMBEDDED_DATA[path]);
     }
-    return fetch("data/" + path).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+    // A weak signal can leave a download hanging for minutes: give up after 20 seconds so the parent sees Try again.
+    var download = fetch("data/" + path).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+    var tooSlow = new Promise(function (ok, fail) { setTimeout(function () { fail(new Error("timeout")); }, 20000); });
+    return Promise.race([download, tooSlow]);
+  }
+
+  // "Couldn't load the schools" + Try again (boot.js draws it, so the first screen and this one match).
+  function loadProblem(container) {
+    if (window.SchoolMapBoot) window.SchoolMapBoot.showProblem(container);
+    else { container.textContent = ""; container.appendChild(el("p", {}, "Couldn't load the schools. Check your internet connection and refresh the page.")); }
   }
 
   function loadArea(area) {
@@ -1656,7 +1670,10 @@
 
   // Make sure the schools a screen needs are loaded, then draw it.
   function routeWithData() {
-    loadSchools(idsInRoute()).then(route, route);
+    function draw() {
+      try { route(); } catch (e) { if (window.console) console.error(e); loadProblem(app); }
+    }
+    loadSchools(idsInRoute()).then(draw, draw);
   }
 
   // The page address keeps the last school opened (#/school/...), so a refresh used to reopen that
@@ -1681,9 +1698,9 @@
     var code = Object.keys(idx.countries || {})[0];
     var countryFile = code ? getJson(idx.countries[code]).catch(function () { return null; }) : null;
     return Promise.resolve(countryFile).then(function (country) { start(idx, country); });
-  }, function () {
-    // Only a failed download lands here; a bug while drawing shows up in the console instead.
-    replace([el("h1", { className: "screen-title" }, "Can't load schools"),
-      el("p", {}, "Check your internet connection and refresh the page.")], {});
+  }).catch(function (e) {
+    // A failed or too-slow download, or a crash while starting: never leave "Loading schools…" up.
+    if (window.console) console.error(e);
+    loadProblem(app);
   });
 })();
