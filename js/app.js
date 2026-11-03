@@ -1527,6 +1527,13 @@
   }
 
   // Sources grouped by website: "wbhs.co.za (1, 2, 3), en.wikipedia.org", each number a link (polish-v2 item 3).
+  // " against the school's own 2026 fee schedule", only when our checks recorded that kind of document for this
+  // school and its fees aren't marked as coming from somewhere else (a survey, say). Otherwise no claim at all.
+  function checkedAgainst(s) {
+    var f = s.fees || {};
+    return f.sourceKind && !f.unofficial ? " against " + f.sourceKind : "";
+  }
+
   function sourceLine(s) {
     var sites = [], bySite = {};
     (s.sources || []).forEach(function (u) {
@@ -1545,7 +1552,7 @@
       }), ")"];
     });
     return el("p", { className: "source" },
-      "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ", // no claim about the kind of source (some are surveys)
+      "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + checkedAgainst(s) + ". ",
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
       // Same words as the plain school pages: a mailto link with the school's name in the subject, nothing else.
       "Spot a wrong price? Email ", el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Wrong price: " + s.name) }, CONTACT), " and we fix it fast. ",

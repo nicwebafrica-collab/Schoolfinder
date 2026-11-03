@@ -64,7 +64,8 @@
           "monthly": 4160
         }
       ],
-      "instalments": 12
+      "instalments": 12,
+      "sourceKind": "the school's 2026 fee letter"
     },
     "hiddenCosts": [
       {
@@ -250,7 +251,8 @@
           "monthly": 5160
         }
       ],
-      "instalments": 12
+      "instalments": 12,
+      "sourceKind": "the school's 2026 fee letter"
     },
     "hiddenCosts": [
       {
@@ -381,7 +383,8 @@
           "monthly": 5800
         }
       ],
-      "instalments": 10
+      "instalments": 10,
+      "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": [
       {
@@ -466,7 +469,8 @@
       "registration": 6500,
       "deposit": 6500,
       "notes": "Boys' public school. Day scholar fees shown, paid over 10 months by debit order. 5% off (R75,525) if paid in full by 31 Jan. Weekly boarding R84,600/yr, termly boarding R98,900/yr, ad-hoc weekend boarding R800. Grade 8 applications go through the GDE Admissions website. New day scholars also pay a R6,500 school deposit. Registration shown is the R6,500 development levy, paid once by every new learner.",
-      "instalments": 10
+      "instalments": 10,
+      "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": [
       {
@@ -569,7 +573,8 @@
           "monthly": 9855
         }
       ],
-      "instalments": 12
+      "instalments": 12,
+      "sourceKind": "the school's own 2026 fee schedule"
     },
     "hiddenCosts": [
       {
