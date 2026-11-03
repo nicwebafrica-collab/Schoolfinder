@@ -760,7 +760,7 @@
       "monthly": null,
       "registration": null,
       "deposit": null,
-      "notes": "Fee-paying public school. Gr 8 R55,720, Gr 9-12 R53,720. Learning Support Unit: Gr 8 R61,720, Gr 9 R59,720. 2027 fees set at the November budget meeting. Instalment options not published.",
+      "notes": "Fee-paying public school. Gr 8 R55,720, Gr 9-12 R53,720. Learning Support Unit: Gr 8 R61,720, Gr 9 R59,720. 2027 fees set at the November budget meeting. Instalment options not published. Uniform prices are from the A-Team Uniforms July 2026 price list in the school's uniform shop (photo taken on site); the shop says prices can change and are quoted on average sizes.",
       "byGrade": [
         {
           "grade": "Gr 8",
@@ -792,12 +792,67 @@
     },
     "hiddenCosts": [
       {
-        "item": "Uniform (school uniform shop)",
+        "item": "Compulsory school uniform",
+        "amount": 1885,
+        "frequency": "once",
+        "note": "One of each compulsory item: boys R1,885, girls R2,230 (shoes at the 'from' price). The R75 blazer badge isn't added because the blazer comes with one. The girls' total counts both skirt and navy pants and both blouses, which may be alternatives, so it can be lower. Blazer compulsory from the second term. Bought from the school's uniform shop (A-Team Uniforms).",
+        "applies": "everyone",
+        "included": false,
+        "evidence": "Photo of the A-Team Uniforms 'July 2026 price list' in the HHS uniform shop (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-prices.jpg): Boys 'WHITE SHORT SLEEVE SHIRT R 140,00' 'WHITE LONG SLEEVE SHIRT R 150,00' 'LONG GREY TROUSERS R 250,00' 'GREY ANKLE SOCKS R 50,00' 'BLAZER WITH BADGE R 620,00' 'STRIPED SCHOOL TIE R 95,00' 'BLACK LEATHER BELT R 160,00' 'BATA TOUGHEE SHOES From: R 420,00' | calc: boys total R1 885; girls 245+260+180+270+620+50+85+370+150 = R2 230"
+      },
+      {
+        "item": "Grade 8 backpack",
+        "amount": 500,
+        "frequency": "once",
+        "note": "Compulsory for Grade 8",
+        "applies": "Gr 8",
+        "included": false,
+        "evidence": "Photo of the A-Team Uniforms 'July 2026 price list' in the HHS uniform shop (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-prices.jpg): 'GR 8 COMPUSORY BACKPACK R 500,00'"
+      },
+      {
+        "item": "Winter uniform",
         "amount": null,
         "frequency": "once",
-        "note": "Not priced online",
-        "applies": "everyone",
-        "included": false
+        "note": "Not marked compulsory: sleeveless pullover R250, long-sleeve jersey R350, winter tights R150, gloves R100, scarf R125",
+        "applies": "optional",
+        "included": false,
+        "evidence": "Photo of the A-Team Uniforms 'July 2026 price list' in the HHS uniform shop (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-prices.jpg): Winter uniform 'NAVY SLEEVELESS PULLOVER R 250,00' 'NAVY LONG SLEEVE JERSEY R 350,00'"
+      },
+      {
+        "item": "Sports kit",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory if playing sport or selected for a team. Items R115 to R950 each, e.g. PE shirt R150, house shirt R150, tracksuit top R430 and pants R280, swimming kit R800 (boys) / R950 (girls)",
+        "applies": "some",
+        "included": false,
+        "evidence": "Photo of the A-Team Uniforms 'July 2026 price list' in the HHS uniform shop (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-prices.jpg): 'COMPULSORY ITEMS IF PLAYING SPORT OR SELECTED FOR A SPORTS TEAM' 'P.E SHIRT - WHITE R 150,00' 'TRACKSUIT TOP R 430,00' 'SWIMMING KIT (1x TYR 1X TRAINING 1X CAP) R 800,00' / girls 'R 950,00'"
+      },
+      {
+        "item": "Consumer Studies apron",
+        "amount": 190,
+        "frequency": "once",
+        "note": "Consumer Studies learners",
+        "applies": "subject",
+        "included": false,
+        "evidence": "Photo of the A-Team Uniforms 'July 2026 price list' in the HHS uniform shop (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-prices.jpg): Subject choice 'CONSUMER STUDIES APRON R 190,00'"
+      },
+      {
+        "item": "Matric jersey and badge",
+        "amount": null,
+        "frequency": "once",
+        "note": "Optional Grade 12 items: badge R60, long-sleeve jersey R360, sleeveless pullover R250, scarf R230",
+        "applies": "optional",
+        "included": false,
+        "evidence": "Photo of the A-Team Uniforms 'July 2026 price list' in the HHS uniform shop (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-prices.jpg): Matric 'MATRIC BADGE R 60,00' 'MATRIC LONG SLEEVE JERSEY R 360,00'"
+      },
+      {
+        "item": "Locker rental",
+        "amount": 450,
+        "frequency": "yearly",
+        "note": "Optional: half locker R450 or full-length locker R800 a year, from the uniform shop",
+        "applies": "optional",
+        "included": false,
+        "evidence": "Photo of the HHS uniform shop notice, 'JULY 2026 PRICE LIST' (raw/factcheck/evidence/hillcrest-high-school/2026-11-03-uniform-shop-info-redacted.jpg): 'Half Locker R 450 P/Y' 'Full length Locker R 800 P/Y'"
       },
       {
         "item": "Camps, tours, books, transport",
@@ -849,7 +904,7 @@
       "applyUrl": "https://hhs.co.za/apply",
       "source": "https://hhs.co.za/apply"
     },
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-03",
     "sources": [
       "https://hhs.co.za/fees",
       "https://hhs.co.za/apply",
