@@ -1437,7 +1437,7 @@
         el("li", {}, "If a school doesn't publish something, we say \u201cNot published by school\u201d. We never guess, and we never show R0 for a cost we don't know."),
         el("li", {}, "Fees change every year, so always confirm with the school before you decide.")),
       el("h2", {}, "Spot a wrong price?"),
-      el("p", {}, "Email ", contactLink(), " with the school's name and what looks wrong. We check it against the school's own documents before we change anything."),
+      el("p", {}, "Email ", contactLink(), " with the school's name and what looks wrong. We check every report against the school's own documents within a week, and fix the page if it's wrong."),
       el("p", {}, el("a", { href: "#/" }, "Back to search"))
     ), { tab: "search" });
     if (check) how.scrollIntoView(); else window.scrollTo(0, 0);
@@ -1555,7 +1555,7 @@
       "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + checkedAgainst(s) + ". ",
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
       // Same words as the plain school pages: a mailto link with the school's name in the subject, nothing else.
-      "Spot a wrong price? Email ", el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Wrong price: " + s.name) }, CONTACT), " and we fix it fast. ",
+      "Spot a wrong price? Email ", el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Wrong price: " + s.name) }, CONTACT), ". We check every report within a week and fix the page if it's wrong. ",
       el("a", { href: "#/privacy" }, "Privacy"));
   }
 
