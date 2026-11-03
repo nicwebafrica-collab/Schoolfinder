@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// security-check.js — the Security role's automatic checks. Run before every release:
+// security-check.js — automatic security checks. Run before every release:
 //   node tools/security-check.js
 // It runs on GitHub before every deploy too, and if any check fails the website is NOT updated.
 // No packages needed, just Node.
@@ -232,7 +232,7 @@ var badAndroid = androidFiles.filter(function (f) { return /(key\.properties|loc
 check(badAndroid.length === 0, "These Android files must never be committed: " + badAndroid.join(", "));
 
 // 12. The plain school pages for Google (school/<id>/index.html, school/index.html, sitemap.xml, robots.txt).
-// They are made by tools/build-pages.js in the private repo. Same strict rules as index.html, and they must match
+// They are built together with the data. Same strict rules as index.html, and they must match
 // the live data exactly: a page left over from old data could show an old price (golden rule).
 var pageFiles = allFiles.filter(function (f) { return /^school\/.*\.html$/.test(f); });
 if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
@@ -263,10 +263,10 @@ if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
     JSON.parse(read("data/" + a.file)).forEach(function (raw) {
       liveIds[raw.id] = true;
       var pf = "school/" + raw.id + "/index.html";
-      if (!fs.existsSync(path.join(root, pf))) { fail(pf + ": missing. Run node tools/build-pages.js <this repo> in schoolmap-private"); return; }
+      if (!fs.existsSync(path.join(root, pf))) { fail(pf + ": missing. Rebuild the school pages"); return; }
       var want = crypto.createHash("sha256").update(JSON.stringify(raw) + "\n" + maths).digest("hex").slice(0, 32);
       var got = (read(pf).match(/<meta name="schoolmap-data" content="([0-9a-f]+)">/) || [])[1];
-      check(got === want, pf + ": out of date (the data or the cost maths changed). Run node tools/build-pages.js <this repo> in schoolmap-private");
+      check(got === want, pf + ": out of date (the data or the cost maths changed). Rebuild the school pages");
       check(sitemap.indexOf("<loc>https://schoolmap.co.za/school/" + raw.id + "/</loc>") !== -1, "sitemap.xml: missing " + raw.id);
     });
   });
@@ -288,12 +288,27 @@ var PRIVATE_ONLY = allFiles.filter(function (f) {
   return /^(bot|raw|waiting|verified|downloads|cache)\//.test(f) || /\.pdf$/i.test(f) ||
     /^tools\//.test(f) && f !== "tools/security-check.js";
 });
-check(PRIVATE_ONLY.length === 0, "These belong in the private repo (schoolmap-private), not the public one: " + PRIVATE_ONLY.join(", "));
+check(PRIVATE_ONLY.length === 0, "These must not be in the public site: " + PRIVATE_ONLY.join(", "));
+
+// 13. Public data holds only what the app shows. The exact quotes behind each number (any field named "evidence"
+// or ending in "Evidence", at any depth) and the "sample" flag are kept out, so they can't come back by accident.
+var dataFiles = allFiles.filter(function (f) { return /^data\/.*\.json$/.test(f); });
+dataFiles.forEach(function (f) {
+  var bad = {};
+  (function scan(v, where) {
+    if (Array.isArray(v)) v.forEach(function (x, i) { scan(x, where + "[" + i + "]"); });
+    else if (v && typeof v === "object") Object.keys(v).forEach(function (k) {
+      if (/(^e|E)vidence$/.test(k) || k === "sample") bad[k] = true;
+      scan(v[k], where + "." + k);
+    });
+  })(JSON.parse(read(f)), "");
+  check(Object.keys(bad).length === 0, f + ": has fields that must not be public: " + Object.keys(bad).join(", ") + ". Rebuild the data");
+});
 
 if (failures.length) {
   console.error("\nSECURITY CHECK FAILED (" + failures.length + " problem" + (failures.length === 1 ? "" : "s") + "):\n");
   failures.forEach(function (f) { console.error("  ✗ " + f); });
-  console.error("\nFix these before releasing. Ask the Security thread if unsure.\n");
+  console.error("\nFix these before releasing.\n");
   process.exit(1);
 }
 console.log("Security check passed (" + passed + " checks).");

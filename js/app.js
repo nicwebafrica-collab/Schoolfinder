@@ -105,8 +105,8 @@
   }
 
   // ---------- Example card on the first screen (first-impression round 2) ----------
-  // Real numbers from a Fact Checker "Verified" school, but the school isn't named on the home page
-  // (Marketing: don't single a school out). Tapping it opens the real school page.
+  // Real numbers from a checked school, but the school isn't named on the home page
+  // (we don't single a school out). Tapping it opens the real school page.
   var EXAMPLE_SCHOOL = { id: "westville-boys-high", region: "KZN" }; // Verified 28 Oct, has priced extras
 
   function exampleCard(slot) {
@@ -114,7 +114,7 @@
     if (!area) return;
     loadArea(area).then(function () {
       var s = findSchool(EXAMPLE_SCHOOL.id);
-      // Costs differ by grade, so the example names one (the school's first grade) and opens the page on it (B53).
+      // Costs differ by grade, so the example names one (the school's first grade) and opens the page on it.
       var grade = s ? gradeOptions(s)[0] || "" : "";
       var total = s && L.trueYearlyCost(s, grade);
       if (!s || !L.isNum(total) || total <= 0) return; // never show an example without checked fees
@@ -132,7 +132,7 @@
     }, function () { /* offline or failed: just no example */ });
   }
 
-  // ---------- Trust line and footer (Designer + Marketing first-impression list, round 1) ----------
+  // ---------- Trust line and footer ----------
 
   // "Every number shows its source … · Updated Oct 2026". The month comes from the data (index.json), never typed in.
   function trustLine() {
@@ -143,7 +143,7 @@
       "Every number shows its source and the date we checked it" + (label ? " \u00b7 Updated " + label : ""));
   }
 
-  // Public contact address (Security OK 30 Oct): a plain mailto link, no form and no outside service.
+  // Public contact address (security-reviewed): a plain mailto link, no form and no outside service.
   var CONTACT = "info@schoolmap.co.za";
   function contactLink(text) { return el("a", { href: "mailto:" + CONTACT }, text || CONTACT); }
 
@@ -172,7 +172,7 @@
   // ---------- Location (rounded to about 1 km, memory only) ----------
 
   // With opts.field (the search box) the icon button only ever shows a spinner; the field and a status line
-  // under it say what's happening (Designer polish-v1 item 8). Other buttons show the words on themselves.
+  // under it say what's happening. Other buttons show the words on themselves.
   function askLocation(button, done, opts) {
     opts = opts || {};
     function fail(text) {
@@ -259,9 +259,9 @@
       }))]);
   }
 
-  // ---------- "Keep SchoolMap on your phone" tip (Designer ux-v2 section 2; web first, Play paused) ----------
+  // ---------- "Keep SchoolMap on your phone" tip ----------
   // Only in a phone browser, never in the installed app, and only after the parent has opened a second school
-  // or saved one. "Not now" hides it for 30 days (only that date is stored, Security OK 28 Oct).
+  // or saved one. "Not now" hides it for 30 days (only that date is stored, security-reviewed).
   var installPrompt = null, schoolsOpened = {}, tipHidden = false;
   window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installPrompt = e; });
   window.addEventListener("appinstalled", function () { tipHidden = true; });
@@ -376,7 +376,7 @@
       });
       // Schools already loaded whose name matches, so a parent can jump straight to one.
       // Also match the school's area and address, so "Embo" finds schools there even if it isn't a known place yet.
-      // Each field on its own, so "hillcrest high" can't match across "…Hillcrest Highbury Road" (B40).
+      // Each field on its own, so "hillcrest high" can't match across "…Hillcrest Highbury Road".
       schools.filter(function (s) {
         return [s.name, s.area, s.address].concat(s.aliases || []).some(function (f) { return L.normalise(f).indexOf(L.normalise(text)) !== -1; });
       }).slice(0, 5).forEach(function (s) {
@@ -441,7 +441,7 @@
 
     parts.push(radiusRow(results), filterRow(results), results);
     if (wideScreen()) {
-      // Desktop: results on the left, the selected school on the right (Designer responsive-v1 step 3).
+      // Desktop: results on the left, the selected school on the right.
       replace([el("div", { className: "list-pane" }, parts), el("section", { className: "detail-pane", aria: { label: "School details" } })],
         { tab: "search", wide: true, twoPane: true });
     } else {
@@ -461,7 +461,7 @@
     var v = schoolView(s);
     v.sticky.className = "pane-actions"; // Compare + Call sit at the top of the pane, not stuck to the window
     pane.textContent = "";
-    // School name first, then the Compare / Call / Share bar (Designer polish-v1 item 5, polish-v2 item 4).
+    // School name first, then the Compare / Call / Share bar.
     var share = v.parts.filter(function (p) { return p && p.classList && p.classList.contains("share-row"); })[0];
     if (share) v.sticky.appendChild(share.firstChild);
     addChild(pane, [v.parts[0], v.sticky].concat(v.parts.slice(1).filter(function (p) { return p !== share; })));
@@ -556,7 +556,7 @@
       container.appendChild(el("p", { className: "count" }, found.near.length
         ? found.near.length + (found.near.length === 1 ? " school" : " schools") + " within " + state.radius + " km of " + where
         : "No schools within " + state.radius + " km of " + where));
-      // Same name in another province (Waterfall, KZN vs Waterfall, Midrand): offer the other one (B29).
+      // Same name in another province (Waterfall, KZN vs Waterfall, Midrand): offer the other one.
       if (state.place) L.namesakes(state.place).forEach(function (p) {
         var other = el("button", { type: "button", className: "chip" }, "Looking for " + L.placeLabel(p) + "?");
         other.addEventListener("click", function () { setPlace(p); renderSearch(); });
@@ -607,7 +607,7 @@
     });
   }
 
-  // ---------- Phone bottom sheet for the rings and chart (Designer ux-v2 section 1) ----------
+  // ---------- Phone bottom sheet for the rings and chart ----------
   // Tapping a dot on a phone opens a peek sheet; "View school" (or dragging up) shows the full school.
   // Back, Esc, the X, the dimmed area or dragging down closes it. Bigger screens follow the dot's link instead.
 
@@ -715,7 +715,7 @@
     }, { passive: true });
   }
 
-  // ---------- List / Around me / Cost chart (Designer map plan B + C, approved 28 Oct) ----------
+  // ---------- List / Around me / Cost chart ----------
   // Plain SVG, no map library or tile server, so it costs nothing and works offline.
 
   var SVG_NS = "http://www.w3.org/2000/svg";
@@ -758,7 +758,7 @@
   }
 
   // Dot labels for a set of schools: initials, but when two share them (Curro Hillcrest Primary and High are both
-  // "CH") add the first letter of the phase, or a third initial, so they can be told apart (B52).
+  // "CH") add the first letter of the phase, or a third initial, so they can be told apart.
   function dotLabels(list) {
     var count = {}, out = {};
     list.forEach(function (s) { var k = initials(s.name); count[k] = (count[k] || 0) + 1; });
@@ -774,9 +774,9 @@
   }
 
   // Draws schools as dots on a picture (rings or chart). Dots that would overlap on screen are grouped:
-  // 2 or 3 (e.g. one campus) are spread in a small circle so each keeps its own dot (B45, B50); 4 or more become
-  // one "+N" bubble that lists them in `extra` when tapped (B46). Bubbles are drawn after the dots so nothing
-  // covers them (B51). Tap areas go in a layer under everything. `avoid` keeps groups off a point (the home dot).
+  // 2 or 3 (e.g. one campus) are spread in a small circle so each keeps its own dot; 4 or more become
+  // one "+N" bubble that lists them in `extra` when tapped. Bubbles are drawn after the dots so nothing
+  // covers them. Tap areas go in a layer under everything. `avoid` keeps groups off a point (the home dot).
   function placeDots(svg, points, r, extra, avoid) {
     var TOUCH = r * 2 + 2;
     var labels = dotLabels(points.map(function (p) { return p.s; }));
@@ -802,7 +802,7 @@
         items.push({ group: group, x: gr.x, y: gr.y, r: r + 3 });
       }
     });
-    // Then gently push apart anything that still touches (a spread campus next to another school, B50/B51),
+    // Then gently push apart anything that still touches (a spread campus next to another school),
     // and keep everything off the home dot. Each move is small, so dots stay close to their true spot.
     for (var round = 0; round < 40; round++) {
       var moved = false;
@@ -849,7 +849,7 @@
     bubbles.forEach(function (b) { svg.appendChild(b); });
   }
 
-  // An invisible circle around a dot so it's easier to tap on a phone (B49). These go in a layer UNDER all the
+  // An invisible circle around a dot so it's easier to tap on a phone. These go in a layer UNDER all the
   // visible dots, so a neighbour's tap area can never cover a dot you can see. Hidden from screen readers and
   // the Tab key (the visible dot is the real link). Set with .style so it beats the stylesheet's circle colours.
   function addHit(layer, x, y, target) {
@@ -868,7 +868,7 @@
     var rings = L.RADII.filter(function (km) { return km <= state.radius; });
     var max = state.radius;
     var svg = svgEl("svg", { viewBox: "0 0 " + size + " " + size, class: "rings", role: "group", "aria-label": "Schools around " + (state.place ? state.place.name : "you") + ", north is up" });
-    // Square-root distance scale (Designer, 28 Oct): the inner rings get more room, where most schools are.
+    // Square-root distance scale: the inner rings get more room, where most schools are.
     // Ring labels stay in true km, so the picture is still honest about distance.
     var scale = function (km) { return Math.sqrt(Math.max(km, 0) / max) * R; };
     rings.forEach(function (km) {
@@ -913,7 +913,7 @@
       var py = function (r) { return H - bottom - r / yMax * (H - top - bottom); };
       var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, class: "chart", role: "group", "aria-label": "True cost a year against distance from home" });
       // Shaded "closer + cheaper" corner: closer and cheaper than the middle (median) school shown, so one very
-      // expensive school can't stretch it to cover almost everything (B47).
+      // expensive school can't stretch it to cover almost everything.
       var median = function (arr) { arr = arr.slice().sort(function (a, b) { return a - b; }); var m = arr.length >> 1; return arr.length % 2 ? arr[m] : (arr[m - 1] + arr[m]) / 2; };
       var midT = median(priced.map(function (p) { return p.t; }));
       var midD = Math.min(median(priced.map(function (p) { return p.s.distanceKm || 0; })), xMax);
@@ -925,7 +925,7 @@
       }
       var lastTick = -Infinity;
       [0].concat(L.RADII.filter(function (km) { return km <= xMax; })).forEach(function (km) {
-        if (px(km) - lastTick < 34) return; // too close to the last label ("0 km2 km" at 20 km, B48)
+        if (px(km) - lastTick < 34) return; // too close to the last label ("0 km2 km" at 20 km)
         lastTick = px(km);
         svg.appendChild(svgEl("text", { x: px(km), y: H - bottom + 16, "text-anchor": "middle", class: "tick" }, km + " km"));
       });
@@ -1073,7 +1073,7 @@
     return { parts: parts, sticky: sticky };
   }
 
-  // "Share on WhatsApp" (Security approved 28 Oct): a plain wa.me link with only the school's own page link.
+  // "Share on WhatsApp" (security-reviewed): a plain wa.me link with only the school's own page link.
   // Phones with a share menu get that instead, only when tapped. Nothing is recorded.
   function shareButton(s) {
     // This site's own address (the live site when shared from there), plus only the school's id.
@@ -1233,7 +1233,7 @@
 
   // Grade chips on the costs screen, when fees differ by grade. "Entry grade" is the default.
   // Grades a parent can pick: the fee table's grades, or, when only some extras depend on the grade
-  // (e.g. a Gr 8 camp), every grade the school teaches (B53).
+  // (e.g. a Gr 8 camp), every grade the school teaches.
   function gradeOptions(s) {
     var byGrade = (s.fees || {}).byGrade || [];
     if (byGrade.length) return byGrade.map(function (g) { return g.grade; });
@@ -1322,7 +1322,7 @@
           ? row("School fees" + (payments ? " (" + payments + " payments a year)" : ""), L.formatRand(L.monthlyFees(s, grade)))
           : row("School fees", money(per(L.yearlyFees(s, grade)))),
         row("Registration (once)", money(f.registration)),
-        // Hide the empty deposit row when the deposit is listed as a hidden cost instead (B23).
+        // Hide the empty deposit row when the deposit is listed as a hidden cost instead.
         f.deposit == null && (s.hiddenCosts || []).some(function (c) { return /deposit/i.test(c.item); }) ? null : row("Deposit (once)", money(f.deposit))),
         f.notes ? el("p", { className: "muted small" }, f.notes) : null),
       el("section", { className: "panel hidden-panel" },
@@ -1357,7 +1357,7 @@
     if (state.compareA && state.compareA === state.compareB) state.compareB = "";
     var A = findSchool(state.compareA), B = findSchool(state.compareB);
 
-    // Each picker leaves out the school already chosen in the other one (B15).
+    // Each picker leaves out the school already chosen in the other one.
     function picker(key, current, label, other) {
       var sel = el("select", { aria: { label: label } },
         el("option", { value: "" }, "Choose a school"),
@@ -1500,7 +1500,7 @@
     return inFee ? L.formatRand(inFee.amount) + " (part of the yearly fee)" : unknown();
   }
 
-  // No-fee public schools charge nothing by law, so show words instead of a bare "R0" (B36).
+  // No-fee public schools charge nothing by law, so show words instead of a bare "R0".
   function feeText(s, amount, words) {
     return s.noFee && amount === 0 ? words : money(amount);
   }
@@ -1510,7 +1510,7 @@
       ": parents pay no school fees by law. Uniform, stationery and trips may still cost something.");
   }
 
-  // Never "R0" when the extras exist but aren't priced (B41).
+  // Never "R0" when the extras exist but aren't priced.
   function extrasText(s, grade) {
     var x = L.yearlyExtras(s, grade);
     if (x > 0) return L.formatRand(x);
@@ -1542,7 +1542,7 @@
       }), ")"];
     });
     return el("p", { className: "source" },
-      "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ", // no claim about the kind of source (Breaker B59: some are surveys)
+      "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ", // no claim about the kind of source (some are surveys)
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
       el("a", { href: "#/privacy" }, "Privacy"));
   }

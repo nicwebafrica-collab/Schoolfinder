@@ -192,7 +192,7 @@
     found.forEach(function (f) {
       if (region && f.place.region !== region) return;
       // Suburbs beat cities; then the first place named wins, because an address goes from the suburb to the bigger
-      // area ("Inanda Road, Waterfall, Hillcrest" is in Waterfall, B55).
+      // area ("Inanda Road, Waterfall, Hillcrest" is in Waterfall).
       var score = (CITIES.indexOf(f.place.name) === -1 ? 1000 : 0) - f.i;
       // "Waterfall, Midrand": the place whose note names another word in the address wins.
       if (f.place.note && words.indexOf(key(f.place.note)) !== -1) score += 2000;

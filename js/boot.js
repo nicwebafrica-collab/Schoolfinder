@@ -1,4 +1,4 @@
-// boot.js: a safety net for the first screen (Fixer, 1 Nov, "stuck on Loading schools…").
+// boot.js: a safety net for the first screen (for when it gets stuck on "Loading schools…").
 // It loads before the rest of the app. If the app hasn't drawn its first screen after a while, or a
 // script fails to load or crashes, it swaps "Loading schools…" for a clear message and a Try again button.
 // Try again throws away the copy of SchoolMap saved on the phone (service worker + saved files),
@@ -35,7 +35,7 @@
     return Promise.race([probe, slow]);
   }
 
-  // Try again: only with a working connection (B58). Offline, keep the saved copy and say so,
+  // Try again: only with a working connection. Offline, keep the saved copy and say so,
   // instead of reloading into the browser's own "No internet" page.
   function freshStart(button) {
     if (button) { button.disabled = true; button.textContent = "Checking your connection…"; }
