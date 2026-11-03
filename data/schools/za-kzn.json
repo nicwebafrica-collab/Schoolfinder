@@ -22,7 +22,7 @@
       "monthly": 5129,
       "registration": 510,
       "deposit": 4440,
-      "notes": "2027 fees (Grade R shown). Paid over 12 months, or 5% off if paid in full by 31 Jan. Sibling discount 5% / 10% / 15% for 2nd / 3rd / 4th child, must be requested by email. Stationery, workbooks and textbooks included for Gr R-3; unclear for Gr 4-7 (parents supply stationery). Withdrawal needs a full term's notice. 2026 Grade R was R57,250.",
+      "notes": "2027 fees (Grade R shown). Paid over 12 months, or 5% off if paid in full by 31 Jan. Sibling discount 5% / 10% / 15% for 2nd / 3rd / 4th child, must be requested by email. Stationery, workbooks and textbooks included for Gr R-3; unclear for Gr 4-7 (parents supply stationery). Withdrawal needs a full term's notice. 2026 Grade R was R57,250. Twice on the journey (February of Grade 00 and of Grade 7) the school asks for R3,600 as a 'promise to stay'; it melts into the next January's account, but stays behind with the school if you leave.",
       "byGrade": [
         {
           "grade": "Gr R",
@@ -756,7 +756,7 @@
       "monthly": null,
       "registration": null,
       "deposit": null,
-      "notes": "Fee-paying public school. Gr 8 R55,720, Gr 9-12 R53,720. Learning Support Unit: Gr 8 R61,720, Gr 9 R59,720. 2027 fees set at the November budget meeting. Instalment options not published.",
+      "notes": "Fee-paying public school. Gr 8 R55,720, Gr 9-12 R53,720. Learning Support Unit: Gr 8 R61,720, Gr 9 R59,720. 2027 fees set at the November budget meeting. Instalment options not published. Uniform prices are from the A-Team Uniforms July 2026 price list in the school's uniform shop (photo taken on site); the shop says prices can change and are quoted on average sizes.",
       "byGrade": [
         {
           "grade": "Gr 8",
@@ -788,11 +788,59 @@
     },
     "hiddenCosts": [
       {
-        "item": "Uniform (school uniform shop)",
+        "item": "Compulsory school uniform",
+        "amount": 1885,
+        "frequency": "once",
+        "note": "One of each compulsory item: boys R1,885, girls R2,230 (shoes at the 'from' price). The R75 blazer badge isn't added because the blazer comes with one. The girls' total counts both skirt and navy pants and both blouses, which may be alternatives, so it can be lower. Blazer compulsory from the second term. Bought from the school's uniform shop (A-Team Uniforms).",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Grade 8 backpack",
+        "amount": 500,
+        "frequency": "once",
+        "note": "Compulsory for Grade 8",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Winter uniform",
         "amount": null,
         "frequency": "once",
-        "note": "Not priced online",
-        "applies": "everyone",
+        "note": "Not marked compulsory: sleeveless pullover R250, long-sleeve jersey R350, winter tights R150, gloves R100, scarf R125",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Sports kit",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory if playing sport or selected for a team. Items R115 to R950 each, e.g. PE shirt R150, house shirt R150, tracksuit top R430 and pants R280, swimming kit R800 (boys) / R950 (girls)",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Consumer Studies apron",
+        "amount": 190,
+        "frequency": "once",
+        "note": "Consumer Studies learners",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Matric jersey and badge",
+        "amount": null,
+        "frequency": "once",
+        "note": "Optional Grade 12 items: badge R60, long-sleeve jersey R360, sleeveless pullover R250, scarf R230",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Locker rental",
+        "amount": 450,
+        "frequency": "yearly",
+        "note": "Optional: half locker R450 or full-length locker R800 a year, from the uniform shop",
+        "applies": "optional",
         "included": false
       },
       {
@@ -845,7 +893,7 @@
       "applyUrl": "https://hhs.co.za/apply",
       "source": "https://hhs.co.za/apply"
     },
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-03",
     "sources": [
       "https://hhs.co.za/fees",
       "https://hhs.co.za/apply",
@@ -1268,7 +1316,7 @@
       "registration": 1050,
       "deposit": 45000,
       "instalments": 11,
-      "notes": "Boys' boarding and day school. 2026 day fee for Gr 8-9 shown (R22,830 x 11, Jan-Nov debit order); Gr 10-12 R275,000 (Gr 12 may pay R27,500 x 10). Boarding instead: Gr 8-9 R375,870, Gr 10-12 R399,740. 'Registration' is the non-refundable R1,050 application fee; 'deposit' is the non-refundable R45,000 acceptance fee. Non-SA pupils also pay a refundable deposit of three months' fees. Upfront discounts 5.5% / 4.5% / 3.5% depending on payment date; brothers 5% each (two) or 10% each (three or more).",
+      "notes": "Boys' boarding and day school. 2026 day fee for Gr 8-9 shown (R22,830 x 11, Jan-Nov debit order); Gr 10-12 R275,000 (Gr 12 may pay R27,500 x 10). Boarding instead: Gr 8-9 R375,870, Gr 10-12 R399,740. 'Registration' is the non-refundable R1,050 application fee; 'deposit' is the non-refundable R45,000 acceptance fee. Non-SA pupils also pay a refundable deposit of three months' fees. Upfront discounts 5.5% / 4.5% / 3.5% depending on payment date; brothers 5% each (two) or 10% each (three or more). Matric boys may squeeze the year into ten instalments instead of eleven, a choice that hardens into a rule from 2030.",
       "byGrade": [
         {
           "grade": "Gr 8-9",
@@ -1787,7 +1835,7 @@
       "registration": 200,
       "deposit": 2000,
       "instalments": 10,
-      "notes": "Mornings only. Same fee for every class (RRRR to R). 2% off if paid in full by 28 Feb. Sibling fee R41,800 (5% off) from the 2nd child. The 'deposit' is a non-refundable admission fee. One term's notice to leave.",
+      "notes": "Mornings only. Same fee for every class (RRRR to R). 2% off if paid in full by 28 Feb. Sibling fee R41,800 (5% off) from the 2nd child. The 'deposit' is a non-refundable admission fee. One term's notice to leave. Collect late and the meter runs at R50 per half hour until five o'clock, then quadruples to R200 per half hour.",
       "byGrade": [
         {
           "grade": "Gr RRRR",
@@ -2270,7 +2318,7 @@
       "registration": 800,
       "deposit": 22680,
       "instalments": 10,
-      "notes": "2027 day fees, Grade R shown (Gr 11-12 R191,280). Discount if paid in full by 31 Jan; otherwise monthly over 10 months (Jan-Oct). Compulsory variable billings come on top, per grade (see extras). The 'deposit' is the Capital Development & Enrolment Fee (R22,680 in 2027). Application fee R800 (website also says R750). One full term's notice to leave.",
+      "notes": "2027 day fees, Grade R shown (Gr 11-12 R191,280). Discount if paid in full by 31 Jan; otherwise monthly over 10 months (Jan-Oct). Compulsory variable billings come on top, per grade (see extras). The 'deposit' is the Capital Development & Enrolment Fee (R22,680 in 2027). Application fee R800 (website also says R750). One full term's notice to leave. Grade 9 carries the heaviest 'variable billing' of the whole school, because The Journey is folded into it.",
       "byGrade": [
         {
           "grade": "Gr R",
@@ -2453,7 +2501,7 @@
       "registration": 5000,
       "deposit": null,
       "instalments": 12,
-      "notes": "2026 fees, Class 1 (Grade 1) shown, first child. Waldorf 'Class N' is Grade N; Class 13 is an optional year after matric. Paid monthly over 12 months (yearly = 12 x monthly). 2nd and 3rd child pay less (e.g. Class 1 R4,802, Class 12 R8,537 a month). The R5,000 'registration' is a non-refundable placement fee. 6.5% off if paid yearly by 31 Dec 2025, 5% by 20 Jan 2026, 4% for half a year in advance. Fees read from the school's online 2026 fee calculator (screenshots, 27 Oct 2026). Pre-school extras (class fund R150, insurance R135, paper levy) are listed but only Grade 1-12 totals include them.",
+      "notes": "2026 fees, Class 1 (Grade 1) shown, first child. Waldorf 'Class N' is Grade N; Class 13 is an optional year after matric. Paid monthly over 12 months (yearly = 12 x monthly). 2nd and 3rd child pay less (e.g. Class 1 R4,802, Class 12 R8,537 a month). The R5,000 'registration' is a non-refundable placement fee. 6.5% off if paid yearly by 31 Dec 2025, 5% by 20 Jan 2026, 4% for half a year in advance. Fees read from the school's online 2026 fee calculator (screenshots, 27 Oct 2026). Pre-school extras (class fund R150, insurance R135, paper levy) are listed but only Grade 1-12 totals include them. The R100 building levy is counted per household, not per child, so a second sibling doesn't double it.",
       "byGrade": [
         {
           "grade": "Play Group",
