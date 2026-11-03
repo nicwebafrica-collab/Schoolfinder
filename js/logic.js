@@ -431,6 +431,8 @@
         instalments: num(f.instalments), instalmentsNote: longStr(f.instalmentsNote),
         // Fees not from the school itself (e.g. a news survey) get a visible warning.
         unofficial: f.unofficial === true || f.sourceIsSchool === false, sourceNote: longStr(f.sourceNote),
+        // What kind of document the main fee was checked against, e.g. "the school's own 2026 fee schedule".
+        sourceKind: str(f.sourceKind),
         problems: feeProblems,
         byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? Object.assign({ grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) }, evidence(g)) : null; })
       }, evidence(f)),

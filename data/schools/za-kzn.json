@@ -65,7 +65,8 @@
           "monthly": 6213
         }
       ],
-      "instalments": 12
+      "instalments": 12,
+      "sourceKind": "the school's own 2027 fee schedule"
     },
     "hiddenCosts": [
       {
@@ -239,7 +240,8 @@
         }
       ],
       "instalments": 12,
-      "instalmentsNote": "Grade 12 pays over 10 months"
+      "instalmentsNote": "Grade 12 pays over 10 months",
+      "sourceKind": "the school's own 2027 fee schedule"
     },
     "hiddenCosts": [
       {
@@ -417,7 +419,8 @@
           "monthly": 10510
         }
       ],
-      "instalments": 12
+      "instalments": 12,
+      "sourceKind": "the school's 2026 fee letter"
     },
     "hiddenCosts": [
       {
@@ -583,7 +586,8 @@
           "monthly": 11760
         }
       ],
-      "instalments": 12
+      "instalments": 12,
+      "sourceKind": "the school's 2026 fee letter"
     },
     "hiddenCosts": [
       {
@@ -784,7 +788,8 @@
           "monthly": null
         }
       ],
-      "instalments": null
+      "instalments": null,
+      "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": [
       {
@@ -970,7 +975,8 @@
           "yearly": 36027,
           "monthly": 3603
         }
-      ]
+      ],
+      "sourceKind": "the school's 2025 school fee policy"
     },
     "hiddenCosts": [
       {
@@ -1204,7 +1210,8 @@
           "monthly": 14551
         }
       ],
-      "instalments": 11
+      "instalments": 11,
+      "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": [
       {
@@ -1333,7 +1340,8 @@
           "yearly": 275000,
           "monthly": 25000
         }
-      ]
+      ],
+      "sourceKind": "the school's own 2026 fee schedule"
     },
     "hiddenCosts": [
       {
@@ -1738,7 +1746,8 @@
           "yearly": 40824,
           "monthly": 4082
         }
-      ]
+      ],
+      "sourceKind": "the school's 2026 fee document"
     },
     "quintile": 5
   },
@@ -1857,7 +1866,8 @@
           "yearly": 44000,
           "monthly": 4400
         }
-      ]
+      ],
+      "sourceKind": "the school's 2026 fee schedule"
     }
   },
   {
@@ -2099,7 +2109,8 @@
           "yearly": 162280,
           "monthly": 16228
         }
-      ]
+      ],
+      "sourceKind": "the school's own 2027 charges table"
     }
   },
   {
@@ -2385,7 +2396,8 @@
           "yearly": 191280,
           "monthly": 19128
         }
-      ]
+      ],
+      "sourceKind": "the school's own 2027 fee schedule"
     },
     "aliases": [
       "DSG",
@@ -2578,7 +2590,8 @@
           "yearly": 117264,
           "monthly": 9772
         }
-      ]
+      ],
+      "sourceKind": "the school's online 2026 fee calculator"
     }
   },
   {
@@ -2734,7 +2747,8 @@
           "yearly": 98460,
           "monthly": 8950
         }
-      ]
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
     }
   },
   {
@@ -2862,7 +2876,8 @@
           "yearly": 92793,
           "monthly": 8436
         }
-      ]
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
     }
   },
   {
@@ -3044,7 +3059,8 @@
           "yearly": 78000,
           "monthly": null
         }
-      ]
+      ],
+      "sourceKind": "the school's 2027 summary of costs"
     },
     "hiddenCosts": [
       {
@@ -3207,7 +3223,8 @@
           "yearly": 54669,
           "monthly": null
         }
-      ]
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": [
       {
@@ -3276,7 +3293,8 @@
           "yearly": 41925,
           "monthly": 4192.5
         }
-      ]
+      ],
+      "sourceKind": "the school's 2026 fee notice"
     },
     "hiddenCosts": [
       {
