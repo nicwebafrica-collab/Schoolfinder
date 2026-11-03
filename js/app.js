@@ -1295,7 +1295,7 @@
     }
     // No single amount, but the note lists the school's prices ("pullover R250, jersey R350"): don't say the school
     // didn't publish them (B63). Still not added to the total.
-    function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "Several prices, see note" : L.UNKNOWN; }
+    function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "See note" : L.UNKNOWN; }
     var hidden = (s.hiddenCosts || []).filter(function (c) { return L.countsInTotal(c, L.costGrade(s, grade)); }).map(function (c) { return costRow(c, true); });
     var maybe = L.mightAlsoApply(s, grade).map(function (c) { return costRow(c, false); });
 
