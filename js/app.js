@@ -1547,6 +1547,8 @@
     return el("p", { className: "source" },
       "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + ". ", // no claim about the kind of source (some are surveys)
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
+      // Same words as the plain school pages: a mailto link with the school's name in the subject, nothing else.
+      "Spot a wrong price? Email ", el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Wrong price: " + s.name) }, CONTACT), " and we fix it fast. ",
       el("a", { href: "#/privacy" }, "Privacy"));
   }
 
