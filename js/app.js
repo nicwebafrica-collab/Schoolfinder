@@ -1291,9 +1291,12 @@
       var noteParts = [counted ? how : L.appliesLabel(c), c.priceFor ? c.priceFor + " price, other grades may differ" : null, c.note, c.problem ? "Data problem: " + c.problem : null];
       return el("li", {},
         el("span", { className: "name" }, c.item, el("span", { className: "note" }, noteParts.filter(Boolean).join(" · "))),
-        el("span", { className: "amt" + (shown ? "" : " unknown") }, shown || L.UNKNOWN));
+        el("span", { className: "amt" + (shown ? "" : " unknown") }, shown || unpricedLabel(c)));
     }
-    var hidden = (s.hiddenCosts || []).filter(function (c) { return L.countsInTotal(c, grade); }).map(function (c) { return costRow(c, true); });
+    // No single amount, but the note lists the school's prices ("pullover R250, jersey R350"): don't say the school
+    // didn't publish them (B63). Still not added to the total.
+    function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "Several prices, see note" : L.UNKNOWN; }
+    var hidden = (s.hiddenCosts || []).filter(function (c) { return L.countsInTotal(c, L.costGrade(s, grade)); }).map(function (c) { return costRow(c, true); });
     var maybe = L.mightAlsoApply(s, grade).map(function (c) { return costRow(c, false); });
 
     // B9: the per-month view is an average over 12 months; say so when the school bills over fewer months.

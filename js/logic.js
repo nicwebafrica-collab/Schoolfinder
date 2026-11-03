@@ -72,6 +72,17 @@
     return gradeSet(picked).every(function (g) { return cost.indexOf(g) !== -1; });
   }
 
+  // The grade a new child starts in: the lowest grade the school lists ("Gr 8-12 (boys)" -> "Gr 8").
+  // null when the school starts before Gr R ("Pre-school to Gr 12") or doesn't say.
+  function entryGrade(school) {
+    var m = /^\s*gr(?:ade)?\.?\s*(R|\d+)\b/i.exec(String((school && school.grades) || ""));
+    return m ? "Gr " + m[1].toUpperCase() : null;
+  }
+
+  // Which grade's own costs to count. No grade picked ("Entry grade" view) means the entry grade, so a compulsory
+  // Gr 8 item counts in the default view and in the once-off-to-start figure, as on the Gr 8 chip (B62).
+  function costGrade(school, grade) { return grade || entryGrade(school); }
+
   // Does this cost go into the totals for this grade? Everyone-items (not already inside the fee) always do;
   // grade-only items (e.g. "Gr 12" exam fee) only when the picked grade falls inside them.
   function countsInTotal(c, grade) {
@@ -155,6 +166,7 @@
   // Recurring hidden costs that every child pays, turned into a per-year amount.
   // Grade-only costs (e.g. the Gr 12 exam fee) are added when that grade is picked; once-off ones count in that year.
   function yearlyHiddenCosts(school, grade) {
+    grade = costGrade(school, grade);
     return (school.hiddenCosts || []).reduce(function (sum, c) {
       if (!countsInTotal(c, grade)) return sum;
       if (isGradeOnly(c) && normaliseFrequency(c.frequency) === "once") return isNum(c.amount) ? sum + c.amount : sum;
@@ -169,7 +181,7 @@
     var f = school.fees || {};
     var amounts = [f.registration, f.deposit];
     (school.hiddenCosts || []).forEach(function (c) {
-      if (normaliseFrequency(c.frequency) === "once" && countsInTotal(c, null)) amounts.push(c.amount);
+      if (normaliseFrequency(c.frequency) === "once" && countsInTotal(c, entryGrade(school))) amounts.push(c.amount);
     });
     var known = amounts.filter(isNum);
     // null (unknown) rather than R 0 when the school hasn't published any of these.
@@ -180,13 +192,14 @@
   // or whose frequency we couldn't understand, so the app can warn rather than show a too-low total.
   function unpricedCosts(school) {
     return (school.hiddenCosts || []).filter(function (c) {
-      return countsInTotal(c, null) && (!isNum(c.amount) || !normaliseFrequency(c.frequency));
-    }).concat((school.outings || []).filter(function (o) { return !isNum(o.cost) && outingCounts(school, o, null); }));
+      return countsInTotal(c, entryGrade(school)) && (!isNum(c.amount) || !normaliseFrequency(c.frequency));
+    }).concat((school.outings || []).filter(function (o) { return !isNum(o.cost) && outingCounts(school, o, entryGrade(school)); }));
   }
 
   // Costs that are NOT in the totals because they only apply to some families:
   // optional, subject-only, boarders, penalties, other grades, or already inside the fees.
   function mightAlsoApply(school, grade) {
+    grade = costGrade(school, grade);
     return (school.hiddenCosts || []).filter(function (c) { return !countsInTotal(c, grade); });
   }
 
@@ -230,6 +243,7 @@
   // Outings every child goes on (plus that grade's own) per year. Optional tours, e.g. an R85,000 overseas trip,
   // and trips for some learners only are listed but never added to the total.
   function yearlyOutings(school, grade) {
+    grade = costGrade(school, grade);
     return (school.outings || []).reduce(function (sum, o) {
       return isNum(o.cost) && outingCounts(school, o, grade) ? sum + o.cost : sum;
     }, 0);
@@ -464,7 +478,7 @@
     cleanSchool: cleanSchool, cleanSchools: cleanSchools,
     UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,
-    countsInTotal: countsInTotal, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
+    countsInTotal: countsInTotal, entryGrade: entryGrade, costGrade: costGrade, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
     instalments: instalments, dataProblems: dataProblems,
     normalise: normalise, yearlyFees: yearlyFees, monthlyFees: monthlyFees,
     yearlyHiddenCosts: yearlyHiddenCosts, startUpCosts: startUpCosts, yearlyOutings: yearlyOutings,
