@@ -169,7 +169,12 @@
     grade = costGrade(school, grade);
     return (school.hiddenCosts || []).reduce(function (sum, c) {
       if (!countsInTotal(c, grade)) return sum;
-      if (isGradeOnly(c) && normaliseFrequency(c.frequency) === "once") return isNum(c.amount) ? sum + c.amount : sum;
+      if (isGradeOnly(c) && normaliseFrequency(c.frequency) === "once") {
+        // A once-off for the entry grade (Gr 8 backpack) is paid when starting: it goes in "Once-off to start" only,
+        // never in the yearly total too (Fact Checker, B62). A later grade's once-off (Gr 12 exam) stays in that year.
+        if (gradeCovers(normaliseApplies(c.applies), entryGrade(school))) return sum;
+        return isNum(c.amount) ? sum + c.amount : sum;
+      }
       var y = perYear(c);
       return y === null ? sum : sum + y;
     }, 0);
