@@ -553,76 +553,121 @@
     "email": "admin.hillcresths@curro.co.za",
     "language": "English",
     "fees": {
-      "year": 2026,
-      "yearly": 137520,
-      "monthly": 11460,
+      "year": 2027,
+      "yearly": 140940,
+      "monthly": 11745,
       "registration": 5775,
       "deposit": null,
-      "notes": "Grade 8 shown; Gr 10-12 R141,120/yr. 12 monthly debit orders; 5% / 2.5% upfront discounts, up to 10% sibling discount from 3rd child. IEB matric. The R5,775 is called 'High School Fee' on the letter; the enrolment fee amount itself is not stated.",
+      "instalments": 12,
+      "notes": "2027 fees, Grade 8 shown; Gr 9 R145,980, Gr 10-12 R150,540 a year. 12 monthly payments. 5% off if paid 12 months in advance, 2.5% for 6 months; up to 10% sibling saving from the third child. IEB matric. The R5,775 is called 'High School Fee' on the letter, listed under the non-refundable enrolment fee. Tours and sports/cultural photos are not included.",
+      "sourceKind": "the school's 2027 fee letter",
       "byGrade": [
         {
           "grade": "Gr 8",
-          "yearly": 137520,
-          "monthly": 11460
+          "yearly": 140940,
+          "monthly": 11745
         },
         {
           "grade": "Gr 9",
-          "yearly": 138720,
-          "monthly": 11560
+          "yearly": 145980,
+          "monthly": 12165
         },
         {
           "grade": "Gr 10",
-          "yearly": 141120,
-          "monthly": 11760
+          "yearly": 150540,
+          "monthly": 12545
         },
         {
           "grade": "Gr 11",
-          "yearly": 141120,
-          "monthly": 11760
+          "yearly": 150540,
+          "monthly": 12545
         },
         {
           "grade": "Gr 12",
-          "yearly": 141120,
-          "monthly": 11760
+          "yearly": 150540,
+          "monthly": 12545
         }
-      ],
-      "instalments": 12,
-      "sourceKind": "the school's 2026 fee letter"
+      ]
     },
     "hiddenCosts": [
       {
-        "item": "Workbooks (LO, isiZulu)",
-        "amount": 635,
+        "item": "Workbooks",
+        "amount": 965,
         "frequency": "yearly",
-        "note": "Gr 8; R505-R740 other grades",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 8"
+        "note": "English R310, Life Orientation R230, isiZulu R425; payable in March",
+        "applies": "Gr 8",
+        "included": false
       },
       {
-        "item": "Yearbook, photos and labels",
-        "amount": 550,
+        "item": "Workbooks",
+        "amount": 910,
         "frequency": "yearly",
-        "note": "Gr 8",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 8"
+        "note": "English R310, Life Orientation R235, isiZulu R365; payable in March",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 520,
+        "frequency": "yearly",
+        "note": "Life Orientation R240, isiZulu R280; payable in March",
+        "applies": "Gr 10",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "Life Orientation R240, isiZulu R360; payable in March",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 610,
+        "frequency": "yearly",
+        "note": "Life Orientation R195, isiZulu R415; payable in March",
+        "applies": "Gr 12",
+        "included": false
       },
       {
         "item": "PE Biokinetics",
         "amount": 65,
         "frequency": "per term",
         "note": "Gr 8-11",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 8"
+        "applies": "Gr 8-11",
+        "included": false
       },
       {
-        "item": "TruLife Enrichment",
-        "amount": 115,
+        "item": "TruLife Enrichment Productions",
+        "amount": 75,
         "frequency": "yearly",
-        "note": "All grades",
+        "note": "All grades, payable in April",
         "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Leadership Development Programme",
+        "amount": 55,
+        "frequency": "yearly",
+        "note": "Gr 10 and 11, payable in May",
+        "applies": "Gr 10-11",
+        "included": false
+      },
+      {
+        "item": "Accounting Real Life for Teens",
+        "amount": 150,
+        "frequency": "yearly",
+        "note": "Payable in June",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 10400,
+        "frequency": "once",
+        "note": "Grade 12, compulsory; R1,040 a month Feb-Nov",
+        "applies": "Gr 12",
         "included": false
       },
       {
@@ -635,73 +680,49 @@
       },
       {
         "item": "Extra subject (Curro Choice)",
-        "amount": 1020,
+        "amount": 1065,
         "frequency": "monthly",
-        "note": "Optional, R12,240/yr per subject",
+        "note": "Optional 8th, 9th or 10th subject, R12,780/yr per subject",
         "applies": "optional",
         "included": false
       },
       {
-        "item": "IEB exam fee",
-        "amount": 9760,
-        "frequency": "once",
-        "note": "Grade 12, compulsory",
-        "applies": "Gr 12",
+        "item": "Consumer Studies levy and chef jacket",
+        "amount": 1530,
+        "frequency": "yearly",
+        "note": "Gr 10, only if taking the subject (R840 levy + R690 jacket)",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Consumer Studies levy",
+        "amount": 840,
+        "frequency": "yearly",
+        "note": "Gr 11 R840, Gr 12 R820, only if taking the subject",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Art bags and equipment",
+        "amount": 755,
+        "frequency": "yearly",
+        "note": "Gr 9 R755, Gr 10 R745, Gr 11 R680, only if taking Art",
+        "applies": "subject",
         "included": false
       },
       {
         "item": "Academic, sports and cultural tours",
         "amount": null,
         "frequency": "yearly",
-        "note": "Not included",
+        "note": "Not included in fees; also sports and cultural photos",
         "applies": "everyone",
         "included": false
       },
       {
-        "item": "Consumer Studies levy and chef jacket",
-        "amount": 1430,
-        "frequency": "yearly",
-        "note": "Gr 10, only if taking the subject (R770 + R660)",
-        "applies": "subject",
-        "included": false
-      },
-      {
-        "item": "Consumer Studies levy",
-        "amount": 750,
-        "frequency": "yearly",
-        "note": "Gr 11-12, only if taking the subject",
-        "applies": "subject",
-        "included": false
-      },
-      {
-        "item": "Art bags and equipment",
-        "amount": 590,
-        "frequency": "yearly",
-        "note": "Gr 9-10 (R620 in Gr 11), only if taking Art",
-        "applies": "subject",
-        "included": false
-      },
-      {
-        "item": "Accounting Real Life for Teens",
-        "amount": 100,
-        "frequency": "yearly",
-        "note": "",
-        "applies": "Gr 9",
-        "included": false
-      },
-      {
-        "item": "GLS Leadership",
-        "amount": 80,
-        "frequency": "yearly",
-        "note": "Gr 10-11",
-        "applies": "some",
-        "included": false
-      },
-      {
         "item": "Morning bus",
-        "amount": 300,
+        "amount": 390,
         "frequency": "monthly",
-        "note": "Waterfall route; Hillcrest R370, Kloof R550, Pinetown R845",
+        "note": "Mornings only: Waterfall R390, Hillcrest R480, Kloof R710, Pinetown R1,090",
         "applies": "optional",
         "included": false
       }
@@ -713,7 +734,8 @@
     },
     "transport": {
       "available": true,
-      "monthly": 300
+      "monthly": 390,
+      "note": "Morning bus only: Waterfall R390, Hillcrest R480, Kloof R710, Pinetown R1,090 a month"
     },
     "sports": [],
     "admissions": {
@@ -728,9 +750,9 @@
       "applyUrl": null,
       "source": null
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-11-03",
     "sources": [
-      "https://www.curro.co.za/media/g5bi2ca1/curro-hillcrest-2026-high-school-fee-letter-finalv4-for-web.pdf",
+      "https://www.curro.co.za/media/jkvdbcw1/curro-hillcrest-2027-high-school-fee-letter-final-for-web.pdf",
       "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/",
       "https://schoolhive.co.za/listing/curro-hilcrest-high-school-hillcrest-admissions-contact-details/"
     ],
@@ -1636,9 +1658,9 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-03",
     "sources": [
-      "https://www.kloofsps.co.za/wp-content/uploads/2026/03/260225-KSP-Website-PDF-update.pdf",
+      "https://www.kloofsps.co.za/wp-content/uploads/2026/04/260326-KSP-Website-PDF-update.pdf",
       "https://www.kloofsps.co.za/contact/",
       "https://schoolhive.co.za/listing/kloof-senior-primary-school-kloof-admissions-contact-details/"
     ],
