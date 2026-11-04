@@ -224,7 +224,7 @@
       "registration": 1155,
       "deposit": null,
       "instalments": 12,
-      "notes": "2027 fees, Grade 8 shown; rises to R65,520/yr (R5,460/mo) in Gr 11-12. Paid over 12 months, January to December. 5% off for 12 months upfront, 2.5% for 6 months upfront, up to 10% sibling discount from the 3rd child. The R1,155 is the non-refundable high school enrolment fee. Textbooks are provided by the school (lost or damaged ones are charged); workbooks, exercise books and stationery are billed extra.",
+      "notes": "2027 fees, Grade 8 shown; rises to R65,520/yr (R5,460/mo) in Gr 11-12. Paid over 12 months, January to December. 5% off for 12 months upfront, 2.5% for 6 months upfront, up to 10% sibling discount from the 3rd child. The R1,155 is the non-refundable high school enrolment fee. The letter lists all textbooks among the things school fees exclude, and also says the school provides (issues) the textbooks and charges a replacement fee if one is lost or damaged; it doesn't say whether there is a charge for using them, so ask the school. Workbooks, exercise books and stationery are billed extra.",
       "sourceKind": "the school's 2027 fee letter",
       "byGrade": [
         {
@@ -267,7 +267,7 @@
         "item": "Textbooks",
         "amount": null,
         "frequency": "yearly",
-        "note": "Fees exclude all textbooks (Gr 8-12); lost or damaged school textbooks are charged",
+        "note": "Not part of school fees. The school issues the textbooks; a replacement fee is charged if one is lost or damaged. Any other charge isn't stated.",
         "applies": "everyone",
         "included": false
       },
@@ -577,10 +577,10 @@
         "included": false
       },
       {
-        "item": "Pre-school support classes",
+        "item": "Compulsory support classes (Integrated Kindergarten and Pre-school phase)",
         "amount": 12480,
         "frequency": "yearly",
-        "note": "Integrated Kindergarten and Pre-school support classes (Mon-Thu until 14:30), only for children who need them",
+        "note": "Listed by the school as 'Compulsory support classes' for the Integrated Kindergarten and Pre-school phase, Monday to Thursday until 14:30",
         "applies": "some",
         "included": false
       },
