@@ -161,10 +161,21 @@ dataFiles.forEach(function (f) {
   }
 });
 var index = JSON.parse(read("data/index.json"));
+// Each area's tiles: data/schools/<area>/<tile>.json. Every tile listed exists and every tile file is listed.
+function tilePath(a, t) { return "schools/" + a.id + "/" + t + ".json"; }
+var listedTiles = {};
 (index.areas || []).forEach(function (a) {
-  [a.file, a.rules].filter(Boolean).forEach(function (p) {
+  check(/^[a-z0-9][a-z0-9-]*$/.test(String(a.id)) && Array.isArray(a.tiles) && a.tiles.length > 0, "data/index.json: area " + a.id + " needs a safe id and a list of tiles");
+  (a.tiles || []).forEach(function (t) {
+    check(/^[a-z0-9][a-z0-9-]{0,40}$/.test(String(t)), "data/index.json: bad tile name " + t);
+    listedTiles["data/" + tilePath(a, t)] = true;
+  });
+  [a.search, a.rules].concat((a.tiles || []).map(function (t) { return tilePath(a, t); })).filter(Boolean).forEach(function (p) {
     check(/^[a-z0-9\-\/]+\.json$/.test(p) && p.indexOf("..") === -1 && fs.existsSync(path.join(root, "data", p)), "data/index.json: bad file path " + p);
   });
+});
+allFiles.filter(function (f) { return /^data\/schools\//.test(f); }).forEach(function (f) {
+  check(!!listedTiles[f], f + ": not listed in data/index.json (left over from old data?). Rebuild the data");
 });
 
 // 8. The cleaning code must survive junk without crashing (a bad scrape must never break the app).
@@ -260,7 +271,7 @@ if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
   var maths = read("js/logic.js") + read("js/admissions.js");
   var liveIds = {}, sitemap = fs.existsSync(path.join(root, "sitemap.xml")) ? read("sitemap.xml") : "";
   (index.areas || []).forEach(function (a) {
-    JSON.parse(read("data/" + a.file)).forEach(function (raw) {
+    (a.tiles || []).map(function (t) { return JSON.parse(read("data/" + tilePath(a, t))); }).reduce(function (x, y) { return x.concat(y); }, []).forEach(function (raw) {
       liveIds[raw.id] = true;
       var pf = "school/" + raw.id + "/index.html";
       if (!fs.existsSync(path.join(root, pf))) { fail(pf + ": missing. Rebuild the school pages"); return; }
@@ -310,6 +321,33 @@ allFiles.filter(function (f) { return /^data\/schools\/.*\.json$/.test(f); }).fo
   var ids = JSON.parse(read(f)).map(function (s) { return s && s.id; }).filter(function (id) { return /^zz-/.test(String(id)); });
   check(ids.length === 0, f + ": test schools must never be public: " + ids.join(", "));
 });
+
+// 15. The search files and the id lookup must match the tiles exactly (an old entry could show an old fee in the
+// list, or send a shared link to the wrong place). Recomputed here with the app's own function.
+(function () {
+  var wantLookup = {}, ok = true;
+  (index.areas || []).forEach(function (a) {
+    var want = [];
+    (a.tiles || []).forEach(function (t) {
+      L.cleanSchools(JSON.parse(read("data/" + tilePath(a, t)))).forEach(function (s) {
+        want.push(L.searchEntry(s, t));
+        var b = L.lookupBucket(s.id);
+        (wantLookup[b] = wantLookup[b] || {})[s.id] = [a.id, t];
+      });
+    });
+    var sortById = function (x, y) { return x.id < y.id ? -1 : 1; };
+    var got = a.search && fs.existsSync(path.join(root, "data", a.search)) ? JSON.parse(read("data/" + a.search)) : null;
+    check(Array.isArray(got) && JSON.stringify(got.slice().sort(sortById)) === JSON.stringify(want.sort(sortById)), "data/" + a.search + ": doesn't match the school tiles. Rebuild the data");
+  });
+  var lookupFiles = allFiles.filter(function (f) { return /^data\/lookup\//.test(f); });
+  lookupFiles.forEach(function (f) {
+    var m = /^data\/lookup\/(\d\d)\.json$/.exec(f);
+    check(!!m && JSON.stringify(JSON.parse(read(f))) === JSON.stringify(wantLookup[m[1]] || null), f + ": doesn't match the school tiles. Rebuild the data");
+  });
+  Object.keys(wantLookup).forEach(function (b) {
+    check(lookupFiles.indexOf("data/lookup/" + b + ".json") !== -1, "data/lookup/" + b + ".json: missing. Rebuild the data");
+  });
+})();
 
 if (failures.length) {
   console.error("\nSECURITY CHECK FAILED (" + failures.length + " problem" + (failures.length === 1 ? "" : "s") + "):\n");
