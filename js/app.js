@@ -256,7 +256,7 @@
       el("p", { className: "muted welcome-line" }, "Fees, hidden extras, outings and admission rules for schools near you."))].concat(
       [el("div", { className: "feature-tiles" }, tiles.map(function (t) {
         return el("div", { className: "feature-tile" + t[3] }, icon(t[2]), el("strong", {}, t[0]), el("p", { className: "muted small" }, t[1]));
-      }))]);
+      })), letterAsk("your school's", "Fee letter")]);
   }
 
   // ---------- "Keep SchoolMap on your phone" tip ----------
@@ -434,7 +434,7 @@
       var main = parts.concat([examples, trustLine(),
         el("p", { className: "coverage-note" }, "Now covering the Upper Highway and nearby areas, KZN. More areas soon.")]);
       var slot = el("div", { className: "example-slot" });
-      replace([el("div", { className: "hero" }, el("div", { className: "hero-main" }, main), slot)].concat(hello[1] ? [hello[1]] : []), { tab: "search", wide: true });
+      replace([el("div", { className: "hero" }, el("div", { className: "hero-main" }, main), slot)].concat(hello.slice(1)), { tab: "search", wide: true });
       exampleCard(slot);
       return;
     }
@@ -1061,7 +1061,8 @@
       contactPanel(s),
       shareButton(s),
       missing.length ? el("p", { className: "muted small missing-line" }, "Not published yet: " + missing.join(", ")) : null,
-      sourceLine(s)
+      sourceLine(s),
+      letterAsk("this school's", "Fee letter: " + s.name)
     ];
 
     var phoneHref = s.phone ? "tel:" + String(s.phone).replace(/[^\d+]/g, "") : null;
@@ -1336,7 +1337,8 @@
         el("p", { className: "muted small" }, "Not in the total above: only some families pay these."),
         el("ul", { className: "rows" }, maybe)) : null,
       byGrade,
-      sourceLine(s)
+      sourceLine(s),
+      letterAsk("this school's", "Fee letter: " + s.name)
     ], { tab: "search" });
     window.scrollTo(0, 0);
   }
@@ -1465,6 +1467,7 @@
         link("https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement", "GitHub's privacy statement")),
       el("h2", {}, "Emailing us"),
       el("p", {}, "If you email us, we only use your email to reply. We don't add you to any list or share your address."),
+      el("p", {}, "If you send us a school letter: we remove any personal details, keep only a cleaned copy to check the prices, and delete your email and the original within 30 days. We never publish the letter or your name."),
       el("h2", {}, "Your rights"),
       el("p", {}, "We follow South Africa's Protection of Personal Information Act (POPIA). Apart from emails you choose to send us, we don't collect personal information. To have an email deleted, ask us at ", contactLink(), ".")
     ), {});
@@ -1557,6 +1560,14 @@
       // Same words as the plain school pages: a mailto link with the school's name in the subject, nothing else.
       "Spot a wrong price? Email ", el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Wrong price: " + s.name) }, CONTACT), ". We check every report within a week and fix the page if it's wrong. ",
       el("a", { href: "#/privacy" }, "Privacy"));
+  }
+
+  // Parents can send a school's letter (security-reviewed: a plain mailto link, nothing stored or uploaded here).
+  function letterAsk(whose, subject) {
+    return el("p", { className: "source letter-ask" },
+      "Have " + whose + " 2027 fee letter, uniform list or camp letter? Email a photo to ",
+      el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent(subject) }, CONTACT),
+      ". Please cover your child's name and account number first. We only use the prices, never the letter itself.");
   }
 
   function notFound() {
