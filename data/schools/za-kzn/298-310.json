@@ -1,0 +1,77 @@
+[
+  {
+    "id": "northwood-school",
+    "name": "Northwood School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Durban North",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4016",
+    "address": "140 Kensington Drive, Durban North",
+    "lat": -29.7743,
+    "lng": 31.0452,
+    "website": "https://northwoodschool.co.za/",
+    "phone": "031 563 6501",
+    "email": null,
+    "language": null,
+    "emis": "500236615",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://northwoodschool.co.za/wp-content/uploads/2026/02/Fees-Letter-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 73370,
+      "monthly": 6670,
+      "registration": null,
+      "deposit": 4000,
+      "instalments": 11,
+      "notes": "Fee-paying public high school. Grade 8 and new learners: R77,370 for 2026 in all, made up of a non-refundable R4,000 advance payment (paid in 2025) plus R73,370 (R6,670 x 11, January to November). Grades 9-12: R73,370 (R6,670 x 11). Upfront discounts (school fees only, cash or EFT): 7.5% by 31 Dec 2025 down to 4% by 28 Feb 2026; card payments and scholarship holders get no discount. Textbooks, stationery, uniforms, sport equipment, tours, functions and cultural evenings are extra and not priced.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 73370,
+          "monthly": 6670
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 73370,
+          "monthly": 6670
+        }
+      ],
+      "sourceKind": "the school's 2026 fees letter"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding",
+        "amount": 74030,
+        "frequency": "yearly",
+        "note": "On top of school fees; R18,507.50 a quarter in advance or R6,730 x 11",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Textbooks, stationery, uniform, sport equipment, tours, functions, cultural evenings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included in school fees; not priced",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  }
+]

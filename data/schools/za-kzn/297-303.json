@@ -185,5 +185,112 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "maritzburg-college",
+    "name": "Maritzburg College",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Pelham",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3200",
+    "address": "54 College Road, Pelham, Pietermaritzburg",
+    "lat": -29.6165,
+    "lng": 30.3816,
+    "website": "https://maritzburgcollege.co.za/",
+    "phone": "033 342 9376",
+    "email": null,
+    "language": null,
+    "emis": "500199800",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://maritzburgcollege.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 87600,
+      "monthly": 8760,
+      "registration": null,
+      "deposit": 10000,
+      "instalments": 10,
+      "notes": "Fee-paying public high school with boarding. Day tuition: Gr 8 R87,600 (includes a 'differential rate'), Gr 9-12 R82,100. Due by 31 January, or over 10 months (January to October or November) by debit order; the monthly figure is our calculation. The school's page is headed '2026 Fees', but a few lines still say 'Fees for 2025' with the same amounts. A R10,000 tuition deposit (50% refundable) is paid on acceptance; the page doesn't say if it comes off the fees. Estimated incidentals about R7,500 a year, not counting tours.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 87600,
+          "monthly": 8760
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 82100,
+          "monthly": 8210
+        }
+      ],
+      "sourceKind": "the fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Incidentals (estimate)",
+        "amount": 7500,
+        "frequency": "yearly",
+        "note": "School's estimate per learner; academic, cultural and sports tours are extra",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 8)",
+        "amount": 122800,
+        "frequency": "yearly",
+        "note": "On top of tuition (R210,400 in total); monthly or quarterly payment adds interest",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 9-12)",
+        "amount": 117300,
+        "frequency": "yearly",
+        "note": "On top of tuition (R199,400 in total)",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding deposit",
+        "amount": 20000,
+        "frequency": "once",
+        "note": "50% refundable, includes the development levy; paid on acceptance",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding development levy (Gr 9-10)",
+        "amount": 1250,
+        "frequency": "yearly",
+        "note": "Boarders in Form 3-4 only; charged separately",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Boarding development levy (Gr 11-12)",
+        "amount": 750,
+        "frequency": "yearly",
+        "note": "Boarders in Form 5-6 only; charged separately",
+        "applies": "some",
+        "included": false
+      }
+    ]
   }
 ]

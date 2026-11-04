@@ -1,0 +1,160 @@
+[
+  {
+    "id": "epworth-school",
+    "name": "Epworth School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-12",
+    "area": "Scottsville",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3209",
+    "address": "95 Golf Road, Scottsville, Pietermaritzburg",
+    "lat": -29.6303,
+    "lng": 30.402,
+    "website": "https://epworth.co.za/",
+    "phone": "033 846 2500",
+    "email": null,
+    "language": null,
+    "emis": "500139305",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Gr RRR to Gr 7: R42 a day, at most R1,900 a term"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://epworth.co.za/wp-content/uploads/2025/09/Epworth-Fee-Structure-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 62689,
+      "monthly": 5699,
+      "registration": 800,
+      "deposit": 5280,
+      "instalments": 11,
+      "notes": "Independent school from Gr RRR to Gr 12. Yearly totals include tuition, a general-purpose levy (per pupil) and a R8,140 development levy that is charged per family, not per child, so a second child costs less than the table total. Gr RRR shown; Gr 8 is R174,240 a year (R15,840 x 11). Paid by debit order monthly over 11 months. 'Registration' is the non-refundable R800 application fee. 'Deposit' is the non-refundable acceptance fee of 10% of the annual tuition (R5,280 for Gr RRR, R15,180 for Gr 8; boarders also pay 10% of the boarding fee). Pupils from outside South Africa pay a R2,500 yearly surcharge and a deposit of two terms' fees. Discounts: 6.5% if paid in full before 30 Nov 2025, 3.5% before 31 Dec 2025; 10% off tuition for the second and later siblings in Gr 1-12. Uniform, transport, Parents' Association levies and extras like music are not priced.",
+      "byGrade": [
+        {
+          "grade": "Gr RRR",
+          "yearly": 62689,
+          "monthly": 5699
+        },
+        {
+          "grade": "Gr RR",
+          "yearly": 62689,
+          "monthly": 5699
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 67870,
+          "monthly": 6170
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 102520,
+          "monthly": 9320
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": 121880,
+          "monthly": 11080
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 124080,
+          "monthly": 11280
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 147730,
+          "monthly": 13430
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 149600,
+          "monthly": 13600
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 174240,
+          "monthly": 15840
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 181500,
+          "monthly": 16500
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 174240,
+          "monthly": 15840
+        },
+        {
+          "grade": "Gr 11-12",
+          "yearly": 176440,
+          "monthly": 16040
+        }
+      ],
+      "sourceKind": "the school's own 2026 fee structure"
+    },
+    "hiddenCosts": [
+      {
+        "item": "General-purpose levy",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Already inside the yearly totals. Covers accident insurance, IEB exams, Prep stationery, some textbooks, grade outings and overnight tours, Gr 10 Vogue Ball and Matric Dance",
+        "applies": "everyone",
+        "included": true
+      },
+      {
+        "item": "Boarding (Gr 6-12)",
+        "amount": 144000,
+        "frequency": "yearly",
+        "note": "On top of the day fee; total boarder fee e.g. R318,240 for Gr 8 (R28,931 x 11)",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Lunch (Gr 1-7)",
+        "amount": 1900,
+        "frequency": "per term",
+        "note": "Ordered per term",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Non-resident surcharge",
+        "amount": 2500,
+        "frequency": "yearly",
+        "note": "Only pupils living outside South Africa, or local parents paying in foreign currency",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Grade 8 laptop",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory from 2027; amount to be announced in August of the year before",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Uniform, transport, Parents' Association levy, music and other extras",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced in the fee document",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  }
+]
