@@ -1369,12 +1369,14 @@
     function picker(key, current, label, other) {
       var sel = el("select", { aria: { label: label } },
         el("option", { value: "" }, "Choose a school"),
-        schools.slice().sort(function (x, y) { return x.name.localeCompare(y.name); })
+        // Every school in the provinces looked at so far (their search files), not just the details loaded.
+        entries.slice().sort(function (x, y) { return x.name.localeCompare(y.name); })
           .filter(function (s) { return s.id !== other; })
           .map(function (s) { return el("option", { value: s.id, selected: s.id === current }, s.name); }));
       sel.addEventListener("change", function () {
         state[key] = sel.value;
-        if (location.hash === "#/compare") renderCompare(); else location.hash = "#/compare";
+        function go() { if (location.hash === "#/compare") renderCompare(); else location.hash = "#/compare"; }
+        loadSchools([sel.value]).then(go, go); // fetch the chosen school's tile first
       });
       return sel;
     }
