@@ -33,7 +33,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 24,
+      "schoolCount": 28,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -59,12 +59,16 @@
         "pinetown-girls-high",
         "westville-boys-high",
         "westville-girls-high",
-        "westville-senior-primary"
+        "westville-senior-primary",
+        "queensburgh-girls-high",
+        "laddsworth-primary",
+        "the-browns-school",
+        "st-nicholas-diocesan"
       ],
       "bounds": [
-        -29.8398,
-        30.7341,
-        -29.7442,
+        -29.8798,
+        30.299,
+        -29.5536,
         30.9285
       ]
     }
