@@ -3482,7 +3482,7 @@
     "id": "the-browns-school",
     "name": "The Browns' School",
     "type": "Public",
-    "phase": "Special needs",
+    "phase": "Primary",
     "grades": "Pre-primary to Gr 7 (special needs)",
     "area": "Ashwood",
     "city": "Durban",
@@ -3552,6 +3552,10 @@
         "applies": "everyone",
         "included": false
       }
+    ],
+    "specialNeeds": true,
+    "aliases": [
+      "Browns School for special needs"
     ]
   },
   {

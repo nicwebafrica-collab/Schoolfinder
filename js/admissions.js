@@ -74,7 +74,9 @@
   function nearestPublicCheck(schools, school, near) {
     if (!near || !school || school.type !== "Public" || typeof school.lat !== "number" || typeof school.lng !== "number") return null;
     function samePhase(x) { return x.phase === school.phase || x.phase === "Combined" || school.phase === "Combined"; }
-    var rivals = schools.filter(function (x) { return x.type === "Public" && x.province === school.province && samePhase(x); });
+    // A special-needs school (admission by assessment) is never "your nearest school", nor checked against others.
+    if (school.specialNeeds) return null;
+    var rivals = schools.filter(function (x) { return x.type === "Public" && x.province === school.province && samePhase(x) && !x.specialNeeds; });
     if (rivals.length < 2) return null;
     if (rivals.some(function (x) { return typeof x.lat !== "number" || typeof x.lng !== "number"; })) return null;
     var ranked = rivals.map(function (x) { return { school: x, km: L.distanceKm(near.lat, near.lng, x.lat, x.lng) }; })
