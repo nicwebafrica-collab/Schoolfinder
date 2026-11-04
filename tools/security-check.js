@@ -305,6 +305,12 @@ dataFiles.forEach(function (f) {
   check(Object.keys(bad).length === 0, f + ": has fields that must not be public: " + Object.keys(bad).join(", ") + ". Rebuild the data");
 });
 
+// 14. Test schools (ids starting "zz-", used only to test the fee bot) must never be in the public data.
+allFiles.filter(function (f) { return /^data\/schools\/.*\.json$/.test(f); }).forEach(function (f) {
+  var ids = JSON.parse(read(f)).map(function (s) { return s && s.id; }).filter(function (id) { return /^zz-/.test(String(id)); });
+  check(ids.length === 0, f + ": test schools must never be public: " + ids.join(", "));
+});
+
 if (failures.length) {
   console.error("\nSECURITY CHECK FAILED (" + failures.length + " problem" + (failures.length === 1 ? "" : "s") + "):\n");
   failures.forEach(function (f) { console.error("  ✗ " + f); });
