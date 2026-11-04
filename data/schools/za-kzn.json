@@ -3744,5 +3744,345 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "epworth-school",
+    "name": "Epworth School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-12",
+    "area": "Scottsville",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3209",
+    "address": "95 Golf Road, Scottsville, Pietermaritzburg",
+    "lat": -29.6303,
+    "lng": 30.402,
+    "website": "https://epworth.co.za/",
+    "phone": "033 846 2500",
+    "email": null,
+    "language": null,
+    "emis": "500139305",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Gr RRR to Gr 7: R42 a day, at most R1,900 a term"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://epworth.co.za/wp-content/uploads/2025/09/Epworth-Fee-Structure-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 62689,
+      "monthly": 5699,
+      "registration": 800,
+      "deposit": 5280,
+      "instalments": 11,
+      "notes": "Independent school from Gr RRR to Gr 12. Yearly totals include tuition, a general-purpose levy (per pupil) and a R8,140 development levy that is charged per family, not per child, so a second child costs less than the table total. Gr RRR shown; Gr 8 is R174,240 a year (R15,840 x 11). Paid by debit order monthly over 11 months. 'Registration' is the non-refundable R800 application fee. 'Deposit' is the non-refundable acceptance fee of 10% of the annual tuition (R5,280 for Gr RRR, R15,180 for Gr 8; boarders also pay 10% of the boarding fee). Pupils from outside South Africa pay a R2,500 yearly surcharge and a deposit of two terms' fees. Discounts: 6.5% if paid in full before 30 Nov 2025, 3.5% before 31 Dec 2025; 10% off tuition for the second and later siblings in Gr 1-12. Uniform, transport, Parents' Association levies and extras like music are not priced.",
+      "byGrade": [
+        {
+          "grade": "Gr RRR",
+          "yearly": 62689,
+          "monthly": 5699
+        },
+        {
+          "grade": "Gr RR",
+          "yearly": 62689,
+          "monthly": 5699
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 67870,
+          "monthly": 6170
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 102520,
+          "monthly": 9320
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": 121880,
+          "monthly": 11080
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 124080,
+          "monthly": 11280
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 147730,
+          "monthly": 13430
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 149600,
+          "monthly": 13600
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 174240,
+          "monthly": 15840
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 181500,
+          "monthly": 16500
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 174240,
+          "monthly": 15840
+        },
+        {
+          "grade": "Gr 11-12",
+          "yearly": 176440,
+          "monthly": 16040
+        }
+      ],
+      "sourceKind": "the school's own 2026 fee structure"
+    },
+    "hiddenCosts": [
+      {
+        "item": "General-purpose levy",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Already inside the yearly totals. Covers accident insurance, IEB exams, Prep stationery, some textbooks, grade outings and overnight tours, Gr 10 Vogue Ball and Matric Dance",
+        "applies": "everyone",
+        "included": true
+      },
+      {
+        "item": "Boarding (Gr 6-12)",
+        "amount": 144000,
+        "frequency": "yearly",
+        "note": "On top of the day fee; total boarder fee e.g. R318,240 for Gr 8 (R28,931 x 11)",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Lunch (Gr 1-7)",
+        "amount": 1900,
+        "frequency": "per term",
+        "note": "Ordered per term",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Non-resident surcharge",
+        "amount": 2500,
+        "frequency": "yearly",
+        "note": "Only pupils living outside South Africa, or local parents paying in foreign currency",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Grade 8 laptop",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory from 2027; amount to be announced in August of the year before",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Uniform, transport, Parents' Association levy, music and other extras",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced in the fee document",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "northwood-school",
+    "name": "Northwood School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Durban North",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4016",
+    "address": "140 Kensington Drive, Durban North",
+    "lat": -29.7743,
+    "lng": 31.0452,
+    "website": "https://northwoodschool.co.za/",
+    "phone": "031 563 6501",
+    "email": null,
+    "language": null,
+    "emis": "500236615",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://northwoodschool.co.za/wp-content/uploads/2026/02/Fees-Letter-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 73370,
+      "monthly": 6670,
+      "registration": null,
+      "deposit": 4000,
+      "instalments": 11,
+      "notes": "Fee-paying public high school. Grade 8 and new learners: R77,370 for 2026 in all, made up of a non-refundable R4,000 advance payment (paid in 2025) plus R73,370 (R6,670 x 11, January to November). Grades 9-12: R73,370 (R6,670 x 11). Upfront discounts (school fees only, cash or EFT): 7.5% by 31 Dec 2025 down to 4% by 28 Feb 2026; card payments and scholarship holders get no discount. Textbooks, stationery, uniforms, sport equipment, tours, functions and cultural evenings are extra and not priced.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 73370,
+          "monthly": 6670
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 73370,
+          "monthly": 6670
+        }
+      ],
+      "sourceKind": "the school's 2026 fees letter"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding",
+        "amount": 74030,
+        "frequency": "yearly",
+        "note": "On top of school fees; R18,507.50 a quarter in advance or R6,730 x 11",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Textbooks, stationery, uniform, sport equipment, tours, functions, cultural evenings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included in school fees; not priced",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "maritzburg-college",
+    "name": "Maritzburg College",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Pelham",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3200",
+    "address": "54 College Road, Pelham, Pietermaritzburg",
+    "lat": -29.6165,
+    "lng": 30.3816,
+    "website": "https://maritzburgcollege.co.za/",
+    "phone": "033 342 9376",
+    "email": null,
+    "language": null,
+    "emis": "500199800",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://maritzburgcollege.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 87600,
+      "monthly": 8760,
+      "registration": null,
+      "deposit": 10000,
+      "instalments": 10,
+      "notes": "Fee-paying public high school with boarding. Day tuition: Gr 8 R87,600 (includes a 'differential rate'), Gr 9-12 R82,100. Due by 31 January, or over 10 months (January to October or November) by debit order; the monthly figure is our calculation. The school's page is headed '2026 Fees', but a few lines still say 'Fees for 2025' with the same amounts. A R10,000 tuition deposit (50% refundable) is paid on acceptance; the page doesn't say if it comes off the fees. Estimated incidentals about R7,500 a year, not counting tours.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 87600,
+          "monthly": 8760
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 82100,
+          "monthly": 8210
+        }
+      ],
+      "sourceKind": "the fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Incidentals (estimate)",
+        "amount": 7500,
+        "frequency": "yearly",
+        "note": "School's estimate per learner; academic, cultural and sports tours are extra",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 8)",
+        "amount": 122800,
+        "frequency": "yearly",
+        "note": "On top of tuition (R210,400 in total); monthly or quarterly payment adds interest",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 9-12)",
+        "amount": 117300,
+        "frequency": "yearly",
+        "note": "On top of tuition (R199,400 in total)",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding deposit",
+        "amount": 20000,
+        "frequency": "once",
+        "note": "50% refundable, includes the development levy; paid on acceptance",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding development levy (Gr 9-10)",
+        "amount": 1250,
+        "frequency": "yearly",
+        "note": "Boarders in Form 3-4 only; charged separately",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Boarding development levy (Gr 11-12)",
+        "amount": 750,
+        "frequency": "yearly",
+        "note": "Boarders in Form 5-6 only; charged separately",
+        "applies": "some",
+        "included": false
+      }
+    ]
   }
 ]

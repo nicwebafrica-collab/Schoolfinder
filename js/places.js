@@ -32,8 +32,11 @@
     { name: "Malvern", region: "KZN", lat: -29.8750, lng: 30.9150, note: "Queensburgh" },
     { name: "Durban", region: "KZN", lat: -29.8580, lng: 31.0290, aliases: ["dbn"] },
     { name: "Umhlanga", region: "KZN", lat: -29.7270, lng: 31.0850 },
+    { name: "Durban North", region: "KZN", lat: -29.7830, lng: 31.0300, aliases: ["durban nth", "dbn north"] },
     { name: "Pietermaritzburg", region: "KZN", lat: -29.6000, lng: 30.3790, aliases: ["pmb"] },
     { name: "Hilton", region: "KZN", lat: -29.5530, lng: 30.2970, aliases: ["hilton kzn"] },
+    { name: "Scottsville", region: "KZN", lat: -29.6200, lng: 30.4000, note: "Pietermaritzburg" },
+    { name: "Pelham", region: "KZN", lat: -29.6250, lng: 30.3800, note: "Pietermaritzburg" },
     // Gauteng
     { name: "Pretoria", region: "Gauteng", lat: -25.7460, lng: 28.1880, aliases: ["pta", "tshwane"] },
     { name: "East Lynne", region: "Gauteng", lat: -25.7000, lng: 28.2800 },

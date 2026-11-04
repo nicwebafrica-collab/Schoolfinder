@@ -33,7 +33,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 28,
+      "schoolCount": 31,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -63,13 +63,16 @@
         "queensburgh-girls-high",
         "laddsworth-primary",
         "the-browns-school",
-        "st-nicholas-diocesan"
+        "st-nicholas-diocesan",
+        "epworth-school",
+        "northwood-school",
+        "maritzburg-college"
       ],
       "bounds": [
         -29.8798,
         30.299,
         -29.5536,
-        30.9285
+        31.0452
       ]
     }
   ]
