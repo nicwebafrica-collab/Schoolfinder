@@ -1,0 +1,219 @@
+[
+  {
+    "id": "king-edward-vii-school",
+    "name": "King Edward VII School (KES)",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Houghton",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "address": "44 St Patrick Road, Houghton, Johannesburg, 2198",
+    "lat": -26.1735,
+    "lng": 28.0629,
+    "website": "https://www.kes.co.za/",
+    "phone": "+27 11 551 5800",
+    "email": "info@kes.co.za",
+    "language": null,
+    "fees": {
+      "year": 2026,
+      "yearly": 79500,
+      "monthly": 7950,
+      "registration": 6500,
+      "deposit": 6500,
+      "notes": "Boys' public school. Day scholar fees shown, paid over 10 months by debit order. 5% off (R75,525) if paid in full by 31 Jan. Weekly boarding R84,600/yr, termly boarding R98,900/yr, ad-hoc weekend boarding R800. Grade 8 applications go through the GDE Admissions website. New day scholars also pay a R6,500 school deposit. Registration shown is the R6,500 development levy, paid once by every new learner.",
+      "instalments": 10,
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding deposit",
+        "amount": 6500,
+        "frequency": "once",
+        "note": "New boarders only",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Mattress levy",
+        "amount": 2500,
+        "frequency": "once",
+        "note": "New boarders only",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Tours, camps, uniform",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced on website",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.kes.co.za/admissions.html",
+      "https://lekkeslaap.co.za/attractions/king-edward-vii-school"
+    ],
+    "postcode": "2198",
+    "admissions": null,
+    "country": "ZA",
+    "emis": null
+  },
+  {
+    "id": "deutsche-internationale-schule-johannesburg",
+    "name": "Deutsche Internationale Schule Johannesburg (DSJ)",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school to Gr 12",
+    "area": "Parktown",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "address": "11 Sans Souci Road, Parktown, Johannesburg, 2193",
+    "lat": -26.1787,
+    "lng": 28.0192,
+    "website": "https://dsj.co.za/",
+    "phone": null,
+    "email": null,
+    "language": "German and English",
+    "fees": {
+      "year": 2027,
+      "yearly": 111000,
+      "monthly": 9250,
+      "registration": 2090,
+      "deposit": 16650,
+      "instalments": 12,
+      "notes": "2027 fees, Grade 1-4 shown (includes the school book levy). 5% off if paid in full by 31 Jan 2027; quarterly option. Sibling rebate 5% (2nd), 15% (3rd), 25% (4th+). Fees are higher if a company or other third party pays (e.g. Gr 1-4 R144,360). Registration shown = R930 application fee + R1,160 admission fee (both non-refundable, new learners). Deposit shown = 15% of the year's fees on acceptance (R16,650 for Gr 1-4, our calculation; refundable, interest-free). Learners need medical aid or insurance.",
+      "sourceKind": "the school's own 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Toddlers (1-3 yrs)",
+          "yearly": 93900,
+          "monthly": 7825
+        },
+        {
+          "grade": "Kindergarten (4-5 yrs)",
+          "yearly": 89880,
+          "monthly": 7490
+        },
+        {
+          "grade": "Pre-Primary (6 yrs)",
+          "yearly": 98520,
+          "monthly": 8210
+        },
+        {
+          "grade": "Gr 1-4",
+          "yearly": 111000,
+          "monthly": 9250
+        },
+        {
+          "grade": "Gr 5-9",
+          "yearly": 122640,
+          "monthly": 10220
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 124800,
+          "monthly": 10400
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "NSC-stream 7-subject package; Kombi stream R4,767; Further Studies R1,800 per subject",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Support classes (Integrated Kindergarten and Pre-school phase)",
+        "amount": 12480,
+        "frequency": "yearly",
+        "note": "The school lists these as compulsory for children in its Integrated Kindergarten and Pre-school phase (Monday to Thursday until 14:30). Ask the school which children this covers.",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Holiday care",
+        "amount": 338,
+        "frequency": "once",
+        "note": "Per day: R338 full day, R295 half day (up to Gr 4, incl. lunch)",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Unpaid or reversed debit order",
+        "amount": 500,
+        "frequency": "once",
+        "note": "Each time; also R500 reminder fee for outstanding fees",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "EFT without account number",
+        "amount": 75,
+        "frequency": "once",
+        "note": "Admin fee each time",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Uniform, extra textbooks, stationery, camps, some excursions, extramural lessons",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "School says these are extra, not priced",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Medical aid or insurance",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Required for every learner",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 2095,
+      "note": "Gr 1-4, 5 days (12:40-17:30). Fewer days cost less (4 days R1,885). Kindergarten-Pre-Primary 5 days R2,965; Gr 5-9 R1,235; toddlers R2,330"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://dsj.co.za/wp-content/uploads/2026/10/School-fee-schedules-2027-1.pdf",
+      "https://expatarrivals.com/schools/south-africa/johannesburg/deutsche-internationale-schule-johannesburg",
+      "https://en.wikipedia.org/wiki/Deutsche_Internationale_Schule_Johannesburg",
+      "https://schoolhive.co.za/listing/deutsche-schule-johannesburg-parktown-admissions-contact-details/"
+    ],
+    "postcode": "2193",
+    "admissions": null,
+    "aliases": [
+      "German school",
+      "DSJ",
+      "Deutsche Schule"
+    ],
+    "country": "ZA",
+    "emis": "700130260"
+  }
+]

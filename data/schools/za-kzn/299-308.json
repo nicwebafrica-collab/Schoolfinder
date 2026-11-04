@@ -1,0 +1,284 @@
+[
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school to Gr 12",
+    "area": "Pinetown",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "31 Mariannhill Road, Pinetown",
+    "lat": -29.8206,
+    "lng": 30.853,
+    "website": "https://stbenedictschool.co.za/",
+    "phone": "031 702 6989",
+    "email": null,
+    "language": "English",
+    "emis": "500250453",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "IEB matric exam fee",
+        "amount": 9800,
+        "frequency": "once",
+        "note": "Due by 31 January",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Remedial class (Gr 2)",
+        "amount": 6575,
+        "frequency": "yearly",
+        "note": "Gr 2 remedial costs R78,875 instead of R72,300",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Sport/cultural tours, excursions, photos, ear/eye tests",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Billed in advance; amounts not published",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Uniform",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://stbenedictschool.co.za/fees/",
+      "https://en.wikipedia.org/wiki/St_Benedict_School_Pinetown",
+      "https://schoolhive.co.za/listing/st-benedict-school-admissions-contact-details/"
+    ],
+    "id": "st-benedict-pinetown",
+    "name": "St Benedict School",
+    "fees": {
+      "year": 2026,
+      "yearly": 72300,
+      "monthly": 6572,
+      "registration": 350,
+      "deposit": 5000,
+      "instalments": 11,
+      "notes": "Catholic co-ed school, IEB matric. Grade 1 shown. Pay yearly, termly, or 11 debit orders (Feb-Dec). 5% off if paid in full by 31 Jan 2026. Sibling discount (amount not stated). Fees include a development levy and accident insurance. The 'deposit' is a non-refundable R5,000 acceptance fee. One term's notice to leave.",
+      "byGrade": [
+        {
+          "grade": "Gr RRR",
+          "yearly": 32500,
+          "monthly": 2931
+        },
+        {
+          "grade": "Gr RR",
+          "yearly": 32500,
+          "monthly": 2931
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 43280,
+          "monthly": 3934
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 72300,
+          "monthly": 6572
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 72300,
+          "monthly": 6572
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 78875,
+          "monthly": 7170
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 88020,
+          "monthly": 8001
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 88020,
+          "monthly": 8001
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 88020,
+          "monthly": 8001
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 90300,
+          "monthly": 8209
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 97520,
+          "monthly": 8865
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 97520,
+          "monthly": 8865
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 100900,
+          "monthly": 9172
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 100900,
+          "monthly": 9172
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 98460,
+          "monthly": 8950
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12 (boys)",
+    "area": "Cowies Hill Park",
+    "city": "Pinetown",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "18 Prospect Road, Cowies Hill Park, Pinetown",
+    "lat": -29.8264,
+    "lng": 30.8819,
+    "website": "https://www.pbhs.co.za/",
+    "phone": "031 701 3450",
+    "email": null,
+    "language": "English",
+    "emis": "500250416",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Uniform, tours, camps, books",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [
+      "Athletics",
+      "Badminton",
+      "Basketball",
+      "Chess",
+      "Cricket",
+      "Cross country",
+      "Hockey",
+      "Rugby",
+      "Soccer",
+      "Swimming",
+      "Tennis",
+      "Volleyball",
+      "Water polo"
+    ],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pinetown_Boys%27_High_School",
+      "https://schoolhive.co.za/listing/pinetown-boys-high-school-2017-cowies-hill-park-admissions-contact-details/"
+    ],
+    "id": "pinetown-boys-high",
+    "name": "Pinetown Boys' High School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fees not published online."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12 (girls)",
+    "area": "New Germany",
+    "city": "Pinetown",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "136 Old Main Road, New Germany, Pinetown",
+    "lat": -29.8197,
+    "lng": 30.8736,
+    "website": "https://pghs.co.za/",
+    "phone": "031 701 1394",
+    "email": "pghsadmin@pghs.co.za",
+    "language": "English",
+    "emis": "500250490",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Uniform, tours, camps, books",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pinetown_Girls%27_High_School",
+      "https://schoolhive.co.za/listing/pinetown-girls-high-school-admissions-contact-details/",
+      "https://pghs.co.za/"
+    ],
+    "id": "pinetown-girls-high",
+    "name": "Pinetown Girls' High School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fees not published online."
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Pre-school to Gr R",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "website": "https://kloofpp.org.za/",
+    "phone": "031 764 1577",
+    "email": "admin@kloofpp.org.za",
+    "language": null,
+    "emis": null,
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Fundraising levy",
+        "amount": 860,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Personal accident insurance",
+        "amount": 240,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Stationery levy",
+        "amount": 1300,
+        "frequency": "yearly",
+        "note": "Gr R; R1,000 for younger classes",
+        "applies": "everyone",
+        "included": false,
+        "priceFor": "Gr R"
+      },
+      {
+        "item": "Holiday club (annual)",
+        "amount": 2700,
+        "frequency": "yearly",
+        "note": "To 12:30; R4,000 to 17:00",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Daily holiday club",
+        "amount": 160,
+        "frequency": "once",
+        "note": "Full day; R100 to 12:30",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Late collection",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Per half hour; R200 per half hour after 17:00",
+        "applies": "penalty",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1800,
+      "note": "To 17:00; to 14:00 R1,070, to 15:30 R1,280 (x 10 months)"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://kloofpp.org.za/wp-content/uploads/2025/10/SCHOOL-FEES-2026.pdf"
+    ],
+    "id": "kloof-pre-primary",
+    "name": "Kloof Pre-Primary School",
+    "fees": {
+      "year": 2026,
+      "yearly": 44000,
+      "monthly": 4400,
+      "registration": 200,
+      "deposit": 2000,
+      "instalments": 10,
+      "notes": "Mornings only. Same fee for every class (RRRR to R). 2% off if paid in full by 28 Feb. Sibling fee R41,800 (5% off) from the 2nd child. The 'deposit' is a non-refundable admission fee. One term's notice to leave. Collect late and the meter runs at R50 per half hour until five o'clock, then quadruples to R200 per half hour.",
+      "byGrade": [
+        {
+          "grade": "Gr RRRR",
+          "yearly": 44000,
+          "monthly": 4400
+        },
+        {
+          "grade": "Gr RRR",
+          "yearly": 44000,
+          "monthly": 4400
+        },
+        {
+          "grade": "Gr RR",
+          "yearly": 44000,
+          "monthly": 4400
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 44000,
+          "monthly": 4400
+        }
+      ],
+      "sourceKind": "the school's 2026 fee schedule"
+    }
+  }
+]

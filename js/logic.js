@@ -471,6 +471,31 @@
     return out;
   }
 
+  // ---------- Search files and the id lookup (so the app copes with thousands of schools) ----------
+  // A province's schools live in small map tiles (data/schools/<area>/<tile>.json). The app first loads only
+  // the province's search file, one short entry per school, and fetches a tile when it needs a school's details.
+  // build-pages.js writes these entries and the public security check recomputes them, both with this function.
+  function searchEntry(s, tile) {
+    var e = { id: s.id, name: s.name, area: s.area, city: s.city, type: s.type, phase: s.phase, tile: tile };
+    if (typeof s.lat === "number" && typeof s.lng === "number") { e.lat = s.lat; e.lng = s.lng; }
+    else e.address = s.address; // only searched by place when there's no map position
+    e.postcode = s.postcode;     // "3610" finds the suburb
+    if (s.aliases && s.aliases.length) e.aliases = s.aliases;
+    var m = monthlyFees(s);
+    if (isNum(m)) e.monthly = m; // for the "Under R3,000/mo" filter
+    Object.keys(e).forEach(function (k) { if (e[k] === undefined || e[k] === null || e[k] === "") delete e[k]; });
+    return e;
+  }
+
+  // Which of the 64 lookup files (data/lookup/NN.json) says where a school id lives, so a saved school or
+  // a shared link loads one small file and one tile, never a whole province.
+  function lookupBucket(id) {
+    var h = 0, str = String(id);
+    for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 65536;
+    var n = h % 64;
+    return (n < 10 ? "0" : "") + n;
+  }
+
   // Switch to a country's settings, e.g. setCountry({ symbol: "R", termsPerYear: 4, budgetFilter: 3000 }).
   function setCountry(cfg) {
     if (!cfg || typeof cfg !== "object") return COUNTRY;
@@ -492,6 +517,7 @@
     yearlyHiddenCosts: yearlyHiddenCosts, startUpCosts: startUpCosts, yearlyOutings: yearlyOutings,
     trueYearlyCost: trueYearlyCost, distanceKm: distanceKm, matchesQuery: matchesQuery,
     searchSchools: searchSchools, formatRand: formatRand, safeUrl: safeUrl,
+    searchEntry: searchEntry, lookupBucket: lookupBucket,
     TIMES_PER_YEAR: TIMES_PER_YEAR
   };
 

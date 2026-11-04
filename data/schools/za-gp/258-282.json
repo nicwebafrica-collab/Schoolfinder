@@ -1,0 +1,327 @@
+[
+  {
+    "id": "curro-pretoria-primary",
+    "name": "Curro Pretoria (Primary)",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "East Lynne",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "address": "146 Baviaanspoort Road, East Lynne, Pretoria, 0186",
+    "lat": -25.7007,
+    "lng": 28.2822,
+    "website": "https://www.curro.co.za/",
+    "phone": "087 287 9492",
+    "email": "info.pretoria@curro.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2026,
+      "yearly": 39480,
+      "monthly": 3290,
+      "registration": 1155,
+      "deposit": null,
+      "notes": "Amounts shown are for Grade R (cheapest grade); fees rise to R49,920/yr (R4,160/mo) in Gr 6-7. Paid over 12 months. 5% off if 12 months paid upfront, 2.5% off for 6 months upfront, up to 10% sibling discount from 3rd child. Textbooks included. Enrolment fee R1,155 (layout unclear on fee letter, confirm).",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 39480,
+          "monthly": 3290
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 42960,
+          "monthly": 3580
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 46680,
+          "monthly": 3890
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 48480,
+          "monthly": 4040
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 48480,
+          "monthly": 4040
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 48480,
+          "monthly": 4040
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 49920,
+          "monthly": 4160
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 49920,
+          "monthly": 4160
+        }
+      ],
+      "instalments": 12,
+      "sourceKind": "the school's 2026 fee letter"
+    },
+    "hiddenCosts": [
+      {
+        "item": "PMSS levy (compulsory)",
+        "amount": 130,
+        "frequency": "monthly",
+        "note": "R1,560 per year, all grades",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Amount 'to be confirmed' on fee letter",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "School uniform",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not included in fees, not priced",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Excursion and sports trip costs",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Entrance, travel, accommodation and food are extra",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "School photos",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Extra, not priced",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 740,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 360,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 160,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 160,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 160,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Robotics workbook",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 6",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1480
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.curro.co.za/media/xvykfmtz/curro-pretoria-2026-primary-school-fee-letter-finalv1-for-web.pdf",
+      "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
+    ],
+    "postcode": "0186",
+    "admissions": null,
+    "country": "ZA",
+    "emis": null
+  },
+  {
+    "id": "curro-pretoria-high",
+    "name": "Curro Pretoria (High School)",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "East Lynne",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "address": "146 Baviaanspoort Road, East Lynne, Pretoria, 0186",
+    "lat": -25.7007,
+    "lng": 28.2822,
+    "website": "https://curro.co.za/schools/curro-academy-pretoria-high-school/",
+    "phone": "087 287 9492",
+    "email": "info.pretoria@curro.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2027,
+      "yearly": 57960,
+      "monthly": 4830,
+      "registration": 1155,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "2027 fees, Grade 8 shown; rises to R65,520/yr (R5,460/mo) in Gr 11-12. Paid over 12 months, January to December. 5% off for 12 months upfront, 2.5% for 6 months upfront, up to 10% sibling discount from the 3rd child. The R1,155 is the non-refundable high school enrolment fee. The letter lists all textbooks among the things school fees exclude, and also says the school provides (issues) the textbooks and charges a replacement fee if one is lost or damaged; it doesn't say whether there is a charge for using them, so ask the school. Workbooks, exercise books and stationery are billed extra.",
+      "sourceKind": "the school's 2027 fee letter",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 57960,
+          "monthly": 4830
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 58560,
+          "monthly": 4880
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 62160,
+          "monthly": 5180
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 65520,
+          "monthly": 5460
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 65520,
+          "monthly": 5460
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Compulsory workbooks",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Charged to the parent's account; 2027 list not yet published",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Textbooks",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not part of school fees. The school issues the textbooks; a replacement fee is charged if one is lost or damaged. Any other charge isn't stated.",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Extra subject (Curro Choice)",
+        "amount": 875,
+        "frequency": "monthly",
+        "note": "Optional 8th-10th subject, R10,500/yr each",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Stationery list given to parents; not priced",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "School uniform",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not included, not priced",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Excursion and sports trip costs",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included; also school photos",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://www.curro.co.za/media/yrmdwkgj/curro-pretoria-2027-high-school-fee-letter-final-for-web.pdf",
+      "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
+    ],
+    "postcode": "0186",
+    "admissions": null,
+    "country": "ZA",
+    "emis": null
+  }
+]

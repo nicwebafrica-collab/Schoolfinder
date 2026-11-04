@@ -8,17 +8,15 @@
       "country": "ZA",
       "province": "Gauteng",
       "short": "Gauteng",
-      "file": "schools/za-gp.json",
+      "tiles": [
+        "258-282",
+        "261-280",
+        "262-280"
+      ],
+      "search": "search/za-gp.json",
       "rules": null,
       "schoolCount": 5,
       "updated": "2026-11",
-      "ids": [
-        "curro-pretoria-primary",
-        "curro-pretoria-high",
-        "fourways-high-school",
-        "king-edward-vii-school",
-        "deutsche-internationale-schule-johannesburg"
-      ],
       "bounds": [
         -26.1787,
         28.0058,
@@ -31,6 +29,7 @@
       "country": "ZA",
       "province": "KwaZulu-Natal",
       "short": "KZN",
+<<<<<<< HEAD
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
       "schoolCount": 31,
@@ -67,12 +66,31 @@
         "epworth-school",
         "northwood-school",
         "maritzburg-college"
+=======
+      "tiles": [
+        "298-307",
+        "298-308",
+        "299-308",
+        "299-309",
+        "none"
+>>>>>>> 27c5752 (WIP: area tiles)
       ],
+      "search": "search/za-kzn.json",
+      "rules": "rules/za-kzn.json",
+      "schoolCount": 24,
+      "updated": "2026-11",
       "bounds": [
+<<<<<<< HEAD
         -29.8798,
         30.299,
         -29.5536,
         31.0452
+=======
+        -29.8398,
+        30.7341,
+        -29.7442,
+        30.9285
+>>>>>>> 27c5752 (WIP: area tiles)
       ]
     }
   ]

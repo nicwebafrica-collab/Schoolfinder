@@ -1,0 +1,1735 @@
+[
+  {
+    "id": "waterfall-preparatory",
+    "name": "Waterfall Preparatory",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Waterfall",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "iThemba Campus, 111 Ngwele Road, Hillcrest, KwaZulu-Natal",
+    "lat": -29.7442,
+    "lng": 30.7905,
+    "website": "https://www.waterfallcollege.co.za/preparatory/",
+    "phone": "031 710 1814",
+    "email": "hello@waterfallprep.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2027,
+      "yearly": 61544,
+      "monthly": 5129,
+      "registration": 510,
+      "deposit": 4440,
+      "notes": "2027 fees (Grade R shown). Paid over 12 months, or 5% off if paid in full by 31 Jan. Sibling discount 5% / 10% / 15% for 2nd / 3rd / 4th child, must be requested by email. Stationery, workbooks and textbooks included for Gr R-3; unclear for Gr 4-7 (parents supply stationery). Withdrawal needs a full term's notice. 2026 Grade R was R57,250. Twice on the journey (February of Grade 00 and of Grade 7) the school asks for R3,600 as a 'promise to stay'; it melts into the next January's account, but stays behind with the school if you leave.",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 61544,
+          "monthly": 5129
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 63533,
+          "monthly": 5294
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 65231,
+          "monthly": 5436
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 67241,
+          "monthly": 5603
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 68929,
+          "monthly": 5744
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 69628,
+          "monthly": 5802
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 71638,
+          "monthly": 5970
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 74551,
+          "monthly": 6213
+        }
+      ],
+      "instalments": 12,
+      "sourceKind": "the school's own 2027 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 85,
+        "frequency": "monthly",
+        "note": "All contracts since 2020",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Chromebook",
+        "amount": null,
+        "frequency": "once",
+        "note": "Required from Grade 7",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Parents buy from Gr 4",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Exam concession (accommodations) levy",
+        "amount": 200,
+        "frequency": "monthly",
+        "note": "Only if your child has exam concessions",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Uniform, camps, outings, tours, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced in fee schedule",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Phase commitment fee",
+        "amount": 3600,
+        "frequency": "once",
+        "note": "Due in February of Gr 00 and of Gr 7",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Unpaid debit order",
+        "amount": 300,
+        "frequency": "once",
+        "note": "Each time",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "IEB electronic reader",
+        "amount": 185,
+        "frequency": "once",
+        "note": "Per exam, only learners with accommodations",
+        "applies": "some",
+        "included": false,
+        "per": "exam"
+      },
+      {
+        "item": "Casual aftercare",
+        "amount": 55,
+        "frequency": "once",
+        "note": "R55 to R120 per session depending on hours",
+        "applies": "optional",
+        "included": false,
+        "per": "session"
+      },
+      {
+        "item": "Holiday care",
+        "amount": 215,
+        "frequency": "once",
+        "note": "Full day; R150 to 13:00",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1570,
+      "note": "Permanent aftercare R18,840/yr, R17,898 if paid by 31 Jan"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Applications are open all year, through the online form.",
+        "Registration fee R510 when you apply, enrolment fee R4,440 on acceptance (both non-refundable).",
+        "Book a campus tour first if you want."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://www.waterfallcollege.co.za/how-to-apply",
+      "source": "https://www.waterfallcollege.co.za/how-to-apply"
+    },
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.waterfallcollege.co.za/wp-content/uploads/2026/10/WFS-Fees-2027-FINAL.pdf",
+      "https://www.waterfallcollege.co.za/",
+      "https://www.waterfallcollege.co.za/get-in-touch"
+    ],
+    "country": "ZA",
+    "emis": null
+  },
+  {
+    "id": "waterfall-college",
+    "name": "Waterfall College",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Waterfall",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "iThemba Campus, 111 Ngwele Road, Hillcrest, KwaZulu-Natal",
+    "lat": -29.7442,
+    "lng": 30.7905,
+    "website": "https://www.waterfallcollege.co.za/college/",
+    "phone": "031 710 1830",
+    "email": "info@waterfallcollege.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2027,
+      "yearly": 94423,
+      "monthly": 7869,
+      "registration": 510,
+      "deposit": 4440,
+      "notes": "2027 fees (Grade 8 shown). 12 monthly payments (Gr 12 over 10 months), or 5% off if paid in full by 31 Jan. Sibling discount 5-15%. IEB matric exams. Parents buy textbooks, stationery and a Chromebook.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 94423,
+          "monthly": 7869
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 97629,
+          "monthly": 8136
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 101867,
+          "monthly": 8489
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 101867,
+          "monthly": 8489
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 101867,
+          "monthly": 10187,
+          "instalments": 10
+        }
+      ],
+      "instalments": 12,
+      "instalmentsNote": "Grade 12 pays over 10 months",
+      "sourceKind": "the school's own 2027 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 85,
+        "frequency": "monthly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Textbooks",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Parents buy from the College book list",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Chromebook",
+        "amount": null,
+        "frequency": "once",
+        "note": "Required",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "IEB matric exam fee",
+        "amount": 10400,
+        "frequency": "once",
+        "note": "Grade 12, R1,040/month Jan-Oct",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Consumer Studies levy",
+        "amount": 120,
+        "frequency": "monthly",
+        "note": "Gr 10-12, only if taking the subject",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Rugby 7s insurance",
+        "amount": 425,
+        "frequency": "yearly",
+        "note": "Compulsory for 7s players",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Uniform, camps, tours, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced in fee schedule",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Unpaid debit order",
+        "amount": 300,
+        "frequency": "once",
+        "note": "Each time",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Exam concession (accommodations) levy",
+        "amount": 200,
+        "frequency": "monthly",
+        "note": "Only learners with exam concessions",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "IEB electronic reader",
+        "amount": 185,
+        "frequency": "once",
+        "note": "Per exam, only learners with accommodations",
+        "applies": "some",
+        "included": false,
+        "per": "exam"
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Applications are open all year, through the online form.",
+        "Registration fee R510, enrolment fee R4,440 on acceptance (non-refundable)."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://www.waterfallcollege.co.za/how-to-apply",
+      "source": "https://www.waterfallcollege.co.za/how-to-apply"
+    },
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.waterfallcollege.co.za/wp-content/uploads/2026/10/WFS-Fees-2027-FINAL.pdf",
+      "https://www.waterfallcollege.co.za/get-in-touch",
+      "https://schoolhive.co.za/listing/waterfall-college-hillcrest-admissions-contact-details/"
+    ],
+    "country": "ZA",
+    "emis": "500407777"
+  },
+  {
+    "id": "curro-hillcrest-primary",
+    "name": "Curro Hillcrest Christian Academy (Primary)",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Hillcrest",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "Cnr Inanda Road and JF Bailes Drive, Hillcrest, 3610",
+    "lat": -29.7571,
+    "lng": 30.7953,
+    "website": "https://www.curro.co.za/",
+    "phone": "087 287 9374",
+    "email": "admin.hca@curro.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2026,
+      "yearly": 83040,
+      "monthly": 6920,
+      "registration": 5775,
+      "deposit": null,
+      "notes": "Grade 1 shown; rises to R126,120/yr (R10,510/mo) in Gr 7. 12 monthly debit orders, 5% off for 12 months upfront, 2.5% for 6 months, up to 10% sibling discount from 3rd child. 3 months' written notice to leave. Coordinates are from the Curro Hillcrest high school page (same corner). Per-grade extras follow the fee letter, whose layout is messy; confirm with the school.",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": 83040,
+          "monthly": 6920
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 90960,
+          "monthly": 7580
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 100920,
+          "monthly": 8410
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 110160,
+          "monthly": 9180
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 114000,
+          "monthly": 9500
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 118800,
+          "monthly": 9900
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 126120,
+          "monthly": 10510
+        }
+      ],
+      "instalments": 12,
+      "sourceKind": "the school's 2026 fee letter"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Robotics licence",
+        "amount": 125,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Academic, sports and cultural tours",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included in fees",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Yearbook, photos and labels",
+        "amount": 550,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Stationery pack and bags",
+        "amount": 1685,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Book covers and exercise books",
+        "amount": 585,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Book covers and exercise books",
+        "amount": 445,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 750,
+        "frequency": "yearly",
+        "note": "All-learner R400 + Afrikaans R100 + isiZulu R250 (R240/R260)",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 780,
+        "frequency": "yearly",
+        "note": "R410 + R100 + R270",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 620,
+        "frequency": "yearly",
+        "note": "R220 + R110 + R290",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Morning bus",
+        "amount": 300,
+        "frequency": "monthly",
+        "note": "Waterfall route; Hillcrest R370, Kloof R550, Pinetown R845",
+        "applies": "optional",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1480,
+      "note": "13:00-17:00. Half-day (13:00-15:00 or 15:00-17:00) R755/month"
+    },
+    "transport": {
+      "available": true,
+      "monthly": 300
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Apply to the school; enrolment fee is due once the application is approved."
+      ],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": null
+    },
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf",
+      "https://schoolhive.co.za/listing/curro-hillcrest-christian-academy-hillcrest-admissions-contact-details/"
+    ],
+    "country": "ZA",
+    "emis": "500155363"
+  },
+  {
+    "id": "curro-hillcrest-high",
+    "name": "Curro Hillcrest High School",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Hillcrest",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "Cnr Inanda Road and JF Bailes Drive, Hillcrest, 3610",
+    "lat": -29.7571,
+    "lng": 30.7953,
+    "website": "https://www.curro.co.za/schools/curro-hillcrest-high-school/",
+    "phone": "087 285 2148",
+    "email": "admin.hillcresths@curro.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2027,
+      "yearly": 140940,
+      "monthly": 11745,
+      "registration": 5775,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "2027 fees, Grade 8 shown; Gr 9 R145,980, Gr 10-12 R150,540 a year. 12 monthly payments. 5% off if paid 12 months in advance, 2.5% for 6 months; up to 10% sibling saving from the third child. IEB matric. The R5,775 is called 'High School Fee' on the letter, listed under the non-refundable enrolment fee. Tours and sports/cultural photos are not included.",
+      "sourceKind": "the school's 2027 fee letter",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 140940,
+          "monthly": 11745
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 145980,
+          "monthly": 12165
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 150540,
+          "monthly": 12545
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 150540,
+          "monthly": 12545
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 150540,
+          "monthly": 12545
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Workbooks",
+        "amount": 965,
+        "frequency": "yearly",
+        "note": "English R310, Life Orientation R230, isiZulu R425; payable in March",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 910,
+        "frequency": "yearly",
+        "note": "English R310, Life Orientation R235, isiZulu R365; payable in March",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 520,
+        "frequency": "yearly",
+        "note": "Life Orientation R240, isiZulu R280; payable in March",
+        "applies": "Gr 10",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "Life Orientation R240, isiZulu R360; payable in March",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "Workbooks",
+        "amount": 610,
+        "frequency": "yearly",
+        "note": "Life Orientation R195, isiZulu R415; payable in March",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "PE Biokinetics",
+        "amount": 65,
+        "frequency": "per term",
+        "note": "Gr 8-11",
+        "applies": "Gr 8-11",
+        "included": false
+      },
+      {
+        "item": "TruLife Enrichment Productions",
+        "amount": 75,
+        "frequency": "yearly",
+        "note": "All grades, payable in April",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Leadership Development Programme",
+        "amount": 55,
+        "frequency": "yearly",
+        "note": "Gr 10 and 11, payable in May",
+        "applies": "Gr 10-11",
+        "included": false
+      },
+      {
+        "item": "Accounting Real Life for Teens",
+        "amount": 150,
+        "frequency": "yearly",
+        "note": "Payable in June",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 10400,
+        "frequency": "once",
+        "note": "Grade 12, compulsory; R1,040 a month Feb-Nov",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Learning device",
+        "amount": null,
+        "frequency": "once",
+        "note": "Required, not priced",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Extra subject (Curro Choice)",
+        "amount": 1065,
+        "frequency": "monthly",
+        "note": "Optional 8th, 9th or 10th subject, R12,780/yr per subject",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Consumer Studies levy and chef jacket",
+        "amount": 1530,
+        "frequency": "yearly",
+        "note": "Gr 10, only if taking the subject (R840 levy + R690 jacket)",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Consumer Studies levy",
+        "amount": 840,
+        "frequency": "yearly",
+        "note": "Gr 11 R840, Gr 12 R820, only if taking the subject",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Art bags and equipment",
+        "amount": 755,
+        "frequency": "yearly",
+        "note": "Gr 9 R755, Gr 10 R745, Gr 11 R680, only if taking Art",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Academic, sports and cultural tours",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included in fees; also sports and cultural photos",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Morning bus",
+        "amount": 390,
+        "frequency": "monthly",
+        "note": "Mornings only: Waterfall R390, Hillcrest R480, Kloof R710, Pinetown R1,090",
+        "applies": "optional",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": 390,
+      "note": "Morning bus only: Waterfall R390, Hillcrest R480, Kloof R710, Pinetown R1,090 a month"
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Apply to the school; enrolment fee is due once the application is approved."
+      ],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": null
+    },
+    "lastChecked": "2026-11-03",
+    "sources": [
+      "https://www.curro.co.za/media/jkvdbcw1/curro-hillcrest-2027-high-school-fee-letter-final-for-web.pdf",
+      "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/",
+      "https://schoolhive.co.za/listing/curro-hilcrest-high-school-hillcrest-admissions-contact-details/"
+    ],
+    "country": "ZA",
+    "emis": "500498316"
+  },
+  {
+    "id": "hillcrest-high-school",
+    "name": "Hillcrest High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Hillcrest",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "40 Ridge Road, Hillcrest, KwaZulu-Natal",
+    "lat": -29.7774,
+    "lng": 30.7766,
+    "website": "https://hhs.co.za/",
+    "phone": "031 765 1215",
+    "email": "admin@hhs.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2026,
+      "yearly": 55720,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "notes": "Fee-paying public school. Gr 8 R55,720, Gr 9-12 R53,720. Learning Support Unit: Gr 8 R61,720, Gr 9 R59,720. 2027 fees set at the November budget meeting. Instalment options not published. Uniform prices are from the A-Team Uniforms July 2026 price list in the school's uniform shop (photo taken on site); the shop says prices can change and are quoted on average sizes.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 55720,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 53720,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 53720,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 53720,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 53720,
+          "monthly": null
+        }
+      ],
+      "instalments": null,
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Compulsory school uniform",
+        "amount": 1885,
+        "frequency": "once",
+        "note": "One of each compulsory item: boys R1,885, girls R2,230 (shoes at the 'from' price). The R75 blazer badge isn't added because the blazer comes with one. The girls' total counts both skirt and navy pants and both blouses, which may be alternatives, so it can be lower. Blazer compulsory from the second term. Bought from the school's uniform shop (A-Team Uniforms).",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Grade 8 backpack",
+        "amount": 500,
+        "frequency": "once",
+        "note": "Compulsory for Grade 8",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Winter uniform",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not marked compulsory: sleeveless pullover R250, long-sleeve jersey R350, winter tights R150, gloves R100, scarf R125",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Sports kit",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory if playing sport or selected for a team. Items R115 to R950 each, e.g. PE shirt R150, house shirt R150, tracksuit top R430 and pants R280, swimming kit R800 (boys) / R950 (girls)",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Consumer Studies apron",
+        "amount": 190,
+        "frequency": "once",
+        "note": "Consumer Studies learners",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Matric jersey and badge",
+        "amount": null,
+        "frequency": "once",
+        "note": "Optional Grade 12 items: badge R60, long-sleeve jersey R360, sleeveless pullover R250, scarf R230",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Locker rental",
+        "amount": 450,
+        "frequency": "yearly",
+        "note": "Optional: half locker R450 or full-length locker R800 a year, from the uniform shop",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Camps, tours, books, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [
+      "Rugby",
+      "Hockey",
+      "Cricket",
+      "Soccer",
+      "Tennis",
+      "Swimming",
+      "Netball",
+      "Badminton",
+      "Equestrian",
+      "Chess"
+    ],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Government (KZN) rules apply. The school names Hillcrest Primary, Forest View Primary and Winston Park Primary as its feeder primaries. Its own written admission policy is not online."
+      },
+      "rules": [
+        "Grade 8 applications for 2027 opened 12 Jan 2026 and closed 15 May 2026. Grades 9-11 open in June.",
+        "Hand-deliver the application form, code of conduct, financial clearance form and documents to the front office. Incomplete applications are not accepted.",
+        "KZN does not draw official feeder zones. Each public school's governing body writes its own admission policy under the SA Schools Act and KZN regulations, and the Head of Department now has the final say on it (BELA Act, 2024).",
+        "Many KZN schools give first preference to children for whom the school is their NEAREST public school of that phase, measured from your home gate to the school gate. There is no fixed km radius.",
+        "A public school may not refuse your child because you can't afford the fees, and you can apply for a full or partial fee exemption.",
+        "Public schools may not set admission tests.",
+        "You need proof of address, usually a municipal or utility bill or a bank statement not older than 3 months, in the parent's name. Giving a false address can get the place cancelled and is now a criminal offence.",
+        "If your child is refused, you can appeal to the KZN Department of Education. For late placement help, go to your district or circuit office.",
+        "Draft national rules (Aug 2025) propose one online system with priority: feeder zone, then siblings, then staff children, then distance. These were still drafts and disputed at last check."
+      ],
+      "applyBy": "2026-05-15",
+      "applyUrl": "https://hhs.co.za/apply",
+      "source": "https://hhs.co.za/apply"
+    },
+    "lastChecked": "2026-11-03",
+    "sources": [
+      "https://hhs.co.za/fees",
+      "https://hhs.co.za/apply",
+      "https://lekkeslaap.co.za/attractions/hillcrest-high-school",
+      "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/",
+      "https://schoolhive.co.za/listing/hillcrest-high-school-hillcrest-admissions-contact-details/"
+    ],
+    "country": "ZA",
+    "emis": "500155400"
+  },
+  {
+    "id": "hillcrest-primary-school",
+    "name": "Hillcrest Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Hilldene",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "17 Emoyeni Drive, Hilldene, Hillcrest, 3610",
+    "lat": -29.7867,
+    "lng": 30.76,
+    "website": "https://hillcrestprimary.co.za/",
+    "phone": "031 765 1214",
+    "email": "admin@hillcrestprimary.co.za",
+    "language": null,
+    "fees": {
+      "year": 2025,
+      "yearly": 36027,
+      "monthly": 3603,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "LAST KNOWN fees (2025); the 2026 amount is not published online. Baseline fee is the same for Gr R-7. 10 monthly instalments Jan-Oct (12 for Remedial/LEAP). 5% off by 31 Dec, 3% by 31 Jan. Mandatory costs come on top, are never discounted and can't be exempted. Withdrawal without a term's notice: next term's fees payable. 2025 increase was 6.2%.",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 36027,
+          "monthly": 3603
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 36027,
+          "monthly": 3603
+        }
+      ],
+      "sourceKind": "the school's 2025 school fee policy"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 2702,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 2625,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 2678,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 2706,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 3266,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 2846,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 3219,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Mandatory costs (books, insurance, photos, outings, theatre)",
+        "amount": 3587,
+        "frequency": "yearly",
+        "note": "Never discounted",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Remedial unit (on top of baseline)",
+        "amount": 8706,
+        "frequency": "yearly",
+        "note": "Plus higher mandatory costs R2,995-R4,174",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "LEAP class (on top of baseline)",
+        "amount": 12289,
+        "frequency": "yearly",
+        "note": "Gr 5-7; mandatory costs R4,885-R5,412",
+        "applies": "some",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Government (KZN) rules apply. The school has an admission policy PDF on its Policies page; we couldn't open it, so check it for street-level details."
+      },
+      "rules": [
+        "KZN does not draw official feeder zones. Each public school's governing body writes its own admission policy under the SA Schools Act and KZN regulations, and the Head of Department now has the final say on it (BELA Act, 2024).",
+        "Many KZN schools give first preference to children for whom the school is their NEAREST public school of that phase, measured from your home gate to the school gate. There is no fixed km radius.",
+        "A public school may not refuse your child because you can't afford the fees, and you can apply for a full or partial fee exemption.",
+        "Public schools may not set admission tests.",
+        "You need proof of address, usually a municipal or utility bill or a bank statement not older than 3 months, in the parent's name. Giving a false address can get the place cancelled and is now a criminal offence.",
+        "If your child is refused, you can appeal to the KZN Department of Education. For late placement help, go to your district or circuit office.",
+        "Draft national rules (Aug 2025) propose one online system with priority: feeder zone, then siblings, then staff children, then distance. These were still drafts and disputed at last check."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://hillcrestprimary.co.za/school-policies-2/",
+      "source": "https://hillcrestprimary.co.za/school-policies-2/"
+    },
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://dl.d6.co.za/attachments/cf_672c63a94aeb8760653126/SchoolFeePolicy2025.pdf",
+      "https://hillcrestprimary.co.za/school-fees/",
+      "https://schoolhive.co.za/listing/hillcrest-primary-school-hillcrest-admissions-contact-details/",
+      "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/"
+    ],
+    "country": "ZA",
+    "emis": "500155474"
+  },
+  {
+    "id": "highbury-preparatory",
+    "name": "Highbury Preparatory School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Pre-school to Gr 7 (boys)",
+    "area": "Hillcrest",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "Highbury Road, Hillcrest, KwaZulu-Natal",
+    "lat": -29.7806,
+    "lng": 30.7578,
+    "website": "https://hps.co.za/",
+    "phone": "031 765 9800",
+    "email": "marketing@hps.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2026,
+      "yearly": 77500,
+      "monthly": 7045,
+      "registration": 800,
+      "deposit": 15500,
+      "notes": "Boys' school. Grade R shown. Monthly figure is the annual fee split over the 11 compulsory debit orders (Jan-Nov), calculated by us. Up to 5% off for early payment. Gr 1-2 R105,060, Gr 3 R122,900, Gr 4-6 R148,040, Gr 7 R160,060. The 'deposit' is the non-refundable acceptance fee (R15,500 Gr R-7; R3,700 Gr 0000-00). Early payment 5% by 31 Dec, 4% by 31 Jan, 3% by 28 Feb. The 11 debit orders also include an estimate of incidentals, so the real monthly debit is higher than the fee divided by 11.",
+      "byGrade": [
+        {
+          "grade": "Gr 0000-00",
+          "yearly": 65240,
+          "monthly": 5931
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 77500,
+          "monthly": 7045
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 105060,
+          "monthly": 9551
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 122900,
+          "monthly": 11173
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 148040,
+          "monthly": 13458
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 160060,
+          "monthly": 14551
+        }
+      ],
+      "instalments": 11,
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Building recovery fee",
+        "amount": 3772,
+        "frequency": "yearly",
+        "note": "Gr 000-7 (not Gr 0000)",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "IT recovery fee",
+        "amount": 2140,
+        "frequency": "yearly",
+        "note": "Gr R-7 only",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 481.5,
+        "frequency": "yearly",
+        "note": "Compulsory",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Old Boy subscription",
+        "amount": 636,
+        "frequency": "yearly",
+        "note": "Gr R-7 only",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Missed debit order fee",
+        "amount": 180,
+        "frequency": "once",
+        "note": "Each time",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Camps, tours, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "R57 first hour incl. lunch, then R40/hour; after 17:30 R110 per 15 min"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Apply with the form, application fee, birth certificate, latest report and latest fee statement from the current school.",
+        "Assessment mornings: May for Grade R, July for Grades 1-7, the year before entry.",
+        "Earlier applications get priority. Applications roll over, no need to reapply.",
+        "Place is secured once the acceptance fee is paid."
+      ],
+      "applyBy": null,
+      "applyUrl": "https://hps.co.za/apply/",
+      "source": "https://hps.co.za/apply/"
+    },
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://hps.co.za/apply/",
+      "https://hps.co.za/contact/",
+      "https://schoolhive.co.za/listing/highbury-preparatory-school-hillcrest-admissions-contact-details/",
+      "https://en.wikipedia.org/wiki/Highbury_Preparatory_School"
+    ],
+    "country": "ZA",
+    "emis": "500154993"
+  },
+  {
+    "id": "kearsney-college",
+    "name": "Kearsney College",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12 (boys)",
+    "area": "Botha's Hill",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3660",
+    "address": "Old Main Road, Botha's Hill, KwaZulu-Natal",
+    "lat": -29.7583,
+    "lng": 30.7525,
+    "website": "https://www.kearsney.com/",
+    "phone": "031 765 9600",
+    "email": null,
+    "language": "English",
+    "fees": {
+      "year": 2026,
+      "yearly": 251130,
+      "monthly": 22830,
+      "registration": 1050,
+      "deposit": 45000,
+      "instalments": 11,
+      "notes": "Boys' boarding and day school. 2026 day fee for Gr 8-9 shown (R22,830 x 11, Jan-Nov debit order); Gr 10-12 R275,000 (Gr 12 may pay R27,500 x 10). Boarding instead: Gr 8-9 R375,870, Gr 10-12 R399,740. 'Registration' is the non-refundable R1,050 application fee; 'deposit' is the non-refundable R45,000 acceptance fee. Non-SA pupils also pay a refundable deposit of three months' fees. Upfront discounts 5.5% / 4.5% / 3.5% depending on payment date; brothers 5% each (two) or 10% each (three or more). Matric boys may squeeze the year into ten instalments instead of eleven, a choice that hardens into a rule from 2030.",
+      "byGrade": [
+        {
+          "grade": "Gr 8-9",
+          "yearly": 251130,
+          "monthly": 22830
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 275000,
+          "monthly": 25000
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 275000,
+          "monthly": 25000
+        }
+      ],
+      "sourceKind": "the school's own 2026 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Accident insurance",
+        "amount": 400,
+        "frequency": "yearly",
+        "note": "Compulsory, cover up to R250,000 per incident",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Baseline concussion testing",
+        "amount": 419,
+        "frequency": "yearly",
+        "note": "Compulsory",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Technology fee",
+        "amount": 800,
+        "frequency": "per term",
+        "note": "Compulsory once the pupil's grade has laptops",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Old Boys' life subscription",
+        "amount": null,
+        "frequency": "once",
+        "note": "Compulsory: 2.5% of one year's full fees, paid termly (about R6,280 for a Gr 8 day boy, our calculation)",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 9760,
+        "frequency": "once",
+        "note": "Invoiced in nine instalments, Jan-Sep",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 8-9)",
+        "amount": 375870,
+        "frequency": "yearly",
+        "note": "Instead of the day fee",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 10-12)",
+        "amount": 399740,
+        "frequency": "yearly",
+        "note": "Instead of the day fee",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Academic Inclusion levy",
+        "amount": 1360,
+        "frequency": "per term",
+        "note": "Only for pupils in the programme",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Literacy Support levy",
+        "amount": 450,
+        "frequency": "per term",
+        "note": "Only for pupils who need it",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Gym membership",
+        "amount": 750,
+        "frequency": "per term",
+        "note": "",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music tuition",
+        "amount": 1050,
+        "frequency": "monthly",
+        "note": "Per instrument",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Day scholar overnight stay",
+        "amount": 300,
+        "frequency": "once",
+        "note": "Per night",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Immigration status levy",
+        "amount": 820,
+        "frequency": "per term",
+        "note": "Non-SA pupils",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Parents' Society levy",
+        "amount": 1040,
+        "frequency": "yearly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Returned debit order",
+        "amount": null,
+        "frequency": "once",
+        "note": "Fee charged each time; amount not stated",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Uniform, tours, camps",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null,
+      "note": "School buses from Berea, Umhlanga, Ballito, Zululand and Hilton/Pietermaritzburg: R380 to R2,320 a month depending on route"
+    },
+    "sports": [
+      "Basketball",
+      "Canoeing",
+      "Cricket",
+      "Cross country",
+      "Golf",
+      "Hockey",
+      "Rugby",
+      "Soccer",
+      "Squash",
+      "Swimming",
+      "Tennis",
+      "Water polo"
+    ],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Private school: it sets its own admission rules. Where you live does not decide whether you get in."
+      },
+      "rules": [
+        "Admission process not published online; contact the school."
+      ],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": null
+    },
+    "lastChecked": "2026-11-01",
+    "sources": [
+      "https://www.kearsney.com/college/wp-content/uploads/2026/04/2026-Fee-Schedule.pdf",
+      "https://www.kearsney.com/college/admissions/",
+      "https://en.wikipedia.org/wiki/Kearsney_College",
+      "https://lekkeslaap.co.za/attractions/kearsney-college",
+      "https://schoolhive.co.za/listing/kearsney-college-bothas-hill-admissions-contact-details/"
+    ],
+    "country": "ZA",
+    "emis": "500172494"
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Winston Park",
+    "city": "Gillitts",
+    "province": "KwaZulu-Natal",
+    "postcode": "3603",
+    "address": "Jan Smuts Avenue, Gillitts",
+    "lat": -29.7973,
+    "lng": 30.7817,
+    "website": "https://wppschool.co.za/",
+    "phone": "031 767 3214",
+    "email": "admin@wppschool.co.za",
+    "language": null,
+    "emis": "500296592",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Uniform, outings, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://wppschool.co.za/",
+      "https://schoolhive.co.za/listing/winston-park-primary-school-admissions-contact-details/",
+      "https://hhs.co.za/apply"
+    ],
+    "id": "winston-park-primary",
+    "name": "Winston Park Primary School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fees not published online. Listed by Hillcrest High as a feeder primary."
+    }
+  },
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school to Gr 12",
+    "area": "Alverstone",
+    "city": "Hillcrest",
+    "province": "KwaZulu-Natal",
+    "postcode": "3650",
+    "address": "D435, Alverstone, Hillcrest",
+    "lat": -29.778,
+    "lng": 30.7341,
+    "website": "https://rosewaywaldorf.school.za/",
+    "phone": "031 768 1309",
+    "email": "secretary@rosewaywaldorf.co.za",
+    "language": "English",
+    "emis": "500223258",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Building levy",
+        "amount": 100,
+        "frequency": "monthly",
+        "note": "Per family, not per child",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Class fund levy",
+        "amount": 350,
+        "frequency": "yearly",
+        "note": "Class 1 and up",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "Class fund levy (pre-school)",
+        "amount": 150,
+        "frequency": "yearly",
+        "note": "Play Group and Kindergarten",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Scholar insurance",
+        "amount": 135,
+        "frequency": "yearly",
+        "note": "Play Group to Class 7",
+        "applies": "Gr 1-7",
+        "included": false
+      },
+      {
+        "item": "Scholar insurance",
+        "amount": 215,
+        "frequency": "yearly",
+        "note": "Class 8 and up",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Paper levy",
+        "amount": 100,
+        "frequency": "per term",
+        "note": "Kindergarten and up",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "Sports levy",
+        "amount": 100,
+        "frequency": "per term",
+        "note": "Class 1 and up",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "Uniform, outings, camps, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Free for Play Group; Kindergarten to Class 2 free until 14:00 (except Thursdays); otherwise R50 first hour, R25 each extra hour"
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roseway_Waldorf_School",
+      "https://schoolhive.co.za/listing/rosewaywaldorf-school-hillcrest-admissions-contact-details/",
+      "https://rosewaywaldorf.school.za/fee-calculator"
+    ],
+    "id": "roseway-waldorf",
+    "name": "Roseway Waldorf School",
+    "fees": {
+      "year": 2026,
+      "yearly": 60660,
+      "monthly": 5055,
+      "registration": 5000,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "2026 fees, Class 1 (Grade 1) shown, first child. Waldorf 'Class N' is Grade N; Class 13 is an optional year after matric. Paid monthly over 12 months (yearly = 12 x monthly). 2nd and 3rd child pay less (e.g. Class 1 R4,802, Class 12 R8,537 a month). The R5,000 'registration' is a non-refundable placement fee. 6.5% off if paid yearly by 31 Dec 2025, 5% by 20 Jan 2026, 4% for half a year in advance. Fees read from the school's online 2026 fee calculator (screenshots, 27 Oct 2026). Pre-school extras (class fund R150, insurance R135, paper levy) are listed but only Grade 1-12 totals include them. The R100 building levy is counted per household, not per child, so a second sibling doesn't double it.",
+      "byGrade": [
+        {
+          "grade": "Play Group",
+          "yearly": 53940,
+          "monthly": 4495
+        },
+        {
+          "grade": "Kindergarten",
+          "yearly": 59304,
+          "monthly": 4942
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 60660,
+          "monthly": 5055
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 63360,
+          "monthly": 5280
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 64704,
+          "monthly": 5392
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 66048,
+          "monthly": 5504
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 67392,
+          "monthly": 5616
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 70092,
+          "monthly": 5841
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 72780,
+          "monthly": 6065
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 97044,
+          "monthly": 8087
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 99744,
+          "monthly": 8312
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 102432,
+          "monthly": 8536
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 105132,
+          "monthly": 8761
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 107832,
+          "monthly": 8986
+        },
+        {
+          "grade": "Class 13 (after matric)",
+          "yearly": 117264,
+          "monthly": 9772
+        }
+      ],
+      "sourceKind": "the school's online 2026 fee calculator"
+    }
+  }
+]

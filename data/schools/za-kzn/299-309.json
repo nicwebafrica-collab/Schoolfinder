@@ -1,0 +1,471 @@
+[
+  {
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Toddler to Gr 7",
+    "area": "Cowies Hill",
+    "city": "Westville",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "34 Stafford Road, Cowies Hill",
+    "lat": -29.821,
+    "lng": 30.9086,
+    "website": "https://dsdurban.co.za/",
+    "phone": "031 267 1307",
+    "email": null,
+    "language": "German and English",
+    "emis": "500311503",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Cultural tours and outings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Included in fees",
+        "applies": "everyone",
+        "included": true
+      },
+      {
+        "item": "School bus",
+        "amount": 2065,
+        "frequency": "per term",
+        "note": "Cowies Hill/Westville/Pinetown return; Kloof R3,795; Hillcrest R5,195; Waterfall R6,295 per quarter",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Late payment interest",
+        "amount": null,
+        "frequency": "monthly",
+        "note": "2% per month on overdue fees",
+        "applies": "penalty",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Included for Toddlers until 15:30; not priced for other grades"
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://dsdurban.co.za/en/about/school-fees/",
+      "https://dsdurban.co.za/wp-content/uploads/2026/01/2026-School-Fees-pdf-file.pdf",
+      "https://en.wikipedia.org/wiki/Deutsche_Schule_Durban",
+      "https://dsdurban.co.za/en/contact-us/"
+    ],
+    "id": "deutsche-schule-durban",
+    "name": "Deutsche Schule Durban",
+    "aliases": [
+      "German School Durban",
+      "DSD"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 89880,
+      "monthly": 8171,
+      "registration": null,
+      "deposit": 4000,
+      "instalments": 11,
+      "notes": "German/English primary school. Grade 1 shown (Gr 1-3). Pay yearly, termly or 11 debit orders. Discount if paid once-off by 31 Jan 2026 (Gr 1-7 R87,160). Sibling discounts. Fees INCLUDE tuition, accident insurance, all sport, cultural tours and outings, and workbooks. The 'deposit' is a non-refundable R4,000 enrolment fee. The website also shows a termly table that doesn't match the annual table; confirm with the school.",
+      "byGrade": [
+        {
+          "grade": "Toddler",
+          "yearly": 51330,
+          "monthly": 4666
+        },
+        {
+          "grade": "Kindergarten",
+          "yearly": 56035,
+          "monthly": 5094
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 65380,
+          "monthly": 5944
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 89880,
+          "monthly": 8171
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 89880,
+          "monthly": 8171
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 89880,
+          "monthly": 8171
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 91338,
+          "monthly": 8303
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 92793,
+          "monthly": 8436
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 92793,
+          "monthly": 8436
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 92793,
+          "monthly": 8436
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    }
+  },
+  {
+    "id": "westville-boys-high",
+    "name": "Westville Boys' High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12 (boys)",
+    "area": "Westville",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3629",
+    "address": "26 Wandsbeck Road, Westville",
+    "lat": -29.8297,
+    "lng": 30.9285,
+    "website": "https://www.wbhs.co.za/",
+    "phone": "031 267 1330",
+    "email": null,
+    "language": "English",
+    "emis": "500295852",
+    "country": "ZA",
+    "quintile": null,
+    "fees": {
+      "year": 2027,
+      "yearly": 78000,
+      "monthly": null,
+      "registration": null,
+      "deposit": 7500,
+      "instalments": null,
+      "notes": "Fee-paying public boys' school (about 16 km from Waterfall). 2027 fees: R85,500 for new learners (Gr 8), R78,000 for Gr 9-12. The 'deposit' is a non-refundable R7,500 registration deposit for new enrolments. Textbooks are loaned. School warns costs may rise after printing. Gr 8 shown as R78,000 because the school's R85,500 for new boys already includes the R7,500 non-refundable registration deposit (shown separately as the deposit).",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 78000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 78000,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the school's 2027 summary of costs"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Locker rental",
+        "amount": 750,
+        "frequency": "yearly",
+        "note": "Paid upfront",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Stationery and workbooks",
+        "amount": 1000,
+        "frequency": "yearly",
+        "note": "R1,000 to R5,000 depending on subjects",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Grade 8 Leadership Programme",
+        "amount": 4500,
+        "frequency": "once",
+        "note": "",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Leadership camp",
+        "amount": 2500,
+        "frequency": "yearly",
+        "note": "All Gr 9-12, R2,500 to R4,500",
+        "applies": "Gr 9-12",
+        "included": false
+      },
+      {
+        "item": "Winter exchange sports fixture",
+        "amount": 1500,
+        "frequency": "yearly",
+        "note": "Term 2 sports players",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Sports tour",
+        "amount": 2000,
+        "frequency": "once",
+        "note": "R2,000 to R10,000 depending on the tour",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Overseas educational tour",
+        "amount": 85000,
+        "frequency": "once",
+        "note": "Voluntary",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Art fee",
+        "amount": 2250,
+        "frequency": "yearly",
+        "note": "Gr 10-12, only if taking Art",
+        "applies": "subject",
+        "included": false
+      },
+      {
+        "item": "Trust Fund contribution",
+        "amount": 2000,
+        "frequency": "yearly",
+        "note": "Voluntary, R2,000 to R10,000",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Daily bus levy",
+        "amount": 15000,
+        "frequency": "yearly",
+        "note": "Upfront or over 10 months; Ballito weekly bus R7,500",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Boarding (on top of fees)",
+        "amount": 92940,
+        "frequency": "yearly",
+        "note": "Weekly boarding; full boarding R103,620; plus R7,500 boarding registration",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Uniform and sports kit",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not priced",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-28",
+    "sources": [
+      "https://www.wbhs.co.za/wp-content/uploads/2026/10/Summary-of-Costs-2027.pdf",
+      "https://www.wbhs.co.za/admissions",
+      "https://www.wbhs.co.za/contact-us",
+      "https://en.wikipedia.org/wiki/Westville_Boys%27_High_School"
+    ]
+  },
+  {
+    "country": "ZA",
+    "province": "KwaZulu-Natal",
+    "city": "Durban",
+    "area": "Westville",
+    "postcode": "3629",
+    "language": "English",
+    "type": "Public",
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-28",
+    "id": "westville-girls-high",
+    "name": "Westville Girls' High School",
+    "phase": "High",
+    "grades": "Gr 8-12 (girls)",
+    "address": "24 Westville Road, Dawncliffe, Westville",
+    "lat": -29.8372,
+    "lng": 30.9167,
+    "website": "https://www.wghs.co.za/",
+    "phone": "031 266 1258",
+    "email": "school@wghs.co.za",
+    "emis": null,
+    "fees": {
+      "year": 2026,
+      "yearly": 63869,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (girls). Grade 8 shown: R63,869 a year; Grades 9-12 R54,669. The school's page gives annual fees only, not monthly payments, deposits or levies. No bursaries or scholarships, and no boarding.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 63869,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 54669,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Uniform, stationery, camps, tours, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "sources": [
+      "https://www.wghs.co.za/fees/",
+      "https://www.wghs.co.za/contact-us/",
+      "https://en.wikipedia.org/wiki/Westville_Girls%27_High_School",
+      "https://www.wghs.co.za/application-process/"
+    ]
+  },
+  {
+    "country": "ZA",
+    "province": "KwaZulu-Natal",
+    "city": "Durban",
+    "area": "Westville",
+    "postcode": "3629",
+    "language": "English",
+    "type": "Public",
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-28",
+    "id": "westville-senior-primary",
+    "name": "Westville Senior Primary School",
+    "phase": "Primary",
+    "grades": "Gr 4-7",
+    "address": "42 Westville Road, Westville",
+    "lat": -29.8398,
+    "lng": 30.9163,
+    "website": "https://www.wsps.co.za/",
+    "phone": "031 266 5218",
+    "email": null,
+    "emis": "500296000",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": 42925,
+      "monthly": 4292.5,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public school. Grade 4 shown: R42,925 a year; Grades 5-7 R41,925 (ten payments of R4,192.50). Learner-support classes cost more: Gr 4 R51,525, Gr 5 R50,525. R2,100 off if paid in one go by 28 Feb 2026. New learners pay a R3,000 or R3,500 deposit that is credited against the year's fees.",
+      "byGrade": [
+        {
+          "grade": "Gr 4",
+          "yearly": 42925,
+          "monthly": 4292.5
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": 41925,
+          "monthly": 4192.5
+        }
+      ],
+      "sourceKind": "the school's 2026 fee notice"
+    },
+    "hiddenCosts": [
+      {
+        "item": "New-learner deposit",
+        "amount": 3000,
+        "frequency": "once",
+        "note": "A prepayment, not an extra: credited against the year's fees (some pay R3,500)",
+        "applies": "some",
+        "included": true
+      },
+      {
+        "item": "Learner Support class (instead of the normal fee)",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Gr 4 R51,525, Gr 5 R50,525 a year instead of the normal fee",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Unpaid debit order charge",
+        "amount": 25,
+        "frequency": "once",
+        "note": "Each time",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Uniform, stationery, camps, outings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Mon-Thu 14:00-17:00, Fri 13:00-17:00; cost not published"
+    },
+    "sources": [
+      "https://www.wsps.co.za/school-fees/",
+      "https://www.wsps.co.za/wp-content/uploads/2026/09/Fee-Notice_Applications.pdf",
+      "https://www.wsps.co.za/wp-content/uploads/2026/01/FEES-COMMITMENT-FORM-2026-GR-5-7.pdf",
+      "https://www.wsps.co.za/contact-us/",
+      "https://www.wsps.co.za/aftercare/",
+      "https://schoolhive.co.za/listing/westville-senior-primary-school-westville-admissions-contact-details/"
+    ]
+  }
+]

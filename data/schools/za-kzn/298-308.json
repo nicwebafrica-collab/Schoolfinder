@@ -1,0 +1,767 @@
+[
+  {
+    "id": "forest-view-primary",
+    "name": "Forest View Primary School",
+    "type": null,
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Forest Hills",
+    "city": "Kloof",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "1 Ridge Road, Forest Hills, KZN, 3610",
+    "lat": -29.7568,
+    "lng": 30.8315,
+    "website": "https://www.forestview.co.za/",
+    "phone": "031 762 1342",
+    "email": "secretary@forestview.co.za",
+    "language": "English",
+    "fees": {
+      "year": null,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "notes": "Fees not published online. Listed by Hillcrest High as one of its feeder primaries. Public/private not stated on its website.",
+      "instalments": null
+    },
+    "hiddenCosts": [],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "admissions": {
+      "feederZone": {
+        "radiusKm": null,
+        "description": "Not published. If it is a public school, the KZN rules apply."
+      },
+      "rules": [],
+      "applyBy": null,
+      "applyUrl": null,
+      "source": null
+    },
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://www.forestview.co.za/",
+      "https://www.citizen.co.za/highway-mail/forest-view-primary-school/"
+    ],
+    "country": "ZA",
+    "emis": "500145299",
+    "quintile": 4
+  },
+  {
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "34 Emolweni Road, Kloof",
+    "lat": -29.7832,
+    "lng": 30.8387,
+    "website": "https://kloofhigh.co.za/",
+    "phone": "031 764 0451",
+    "email": "reception@kloofhigh.co.za",
+    "language": "English",
+    "emis": "500176564",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Uniform, camps, tours, books",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [
+      "Soccer",
+      "Rugby",
+      "Hockey",
+      "Tennis",
+      "Water polo",
+      "Cricket",
+      "Netball",
+      "Swimming",
+      "Squash",
+      "Chess",
+      "Cross country",
+      "Athletics",
+      "Softball"
+    ],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://kloofhigh.co.za/admissions/",
+      "https://kloofhigh.co.za/contact/",
+      "https://schoolhive.co.za/listing/kloof-high-school-kloof-admissions-contact-details/",
+      "https://en.wikipedia.org/wiki/Kloof_High_School"
+    ],
+    "id": "kloof-high-school",
+    "name": "Kloof High School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fee amounts are not published online. Fees are payable annually in advance; the first instalment secures a place. Fee exemptions available."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 4-7",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "1 Patrick Duncan Road, Kloof",
+    "lat": -29.7841,
+    "lng": 30.8383,
+    "website": "https://www.kloofsps.co.za/",
+    "phone": "031 764 0211",
+    "email": "reception@kloofsp.co.za",
+    "language": "English",
+    "emis": "500176675",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Learner support unit assessment",
+        "amount": null,
+        "frequency": "once",
+        "note": "Psychological assessment needed to apply for the support unit",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Camps, outings, tours, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-03",
+    "sources": [
+      "https://www.kloofsps.co.za/wp-content/uploads/2026/04/260326-KSP-Website-PDF-update.pdf",
+      "https://www.kloofsps.co.za/contact/",
+      "https://schoolhive.co.za/listing/kloof-senior-primary-school-kloof-admissions-contact-details/"
+    ],
+    "id": "kloof-senior-primary",
+    "name": "Kloof Senior Primary School",
+    "quintile": 5,
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": null,
+      "registration": null,
+      "deposit": 3000,
+      "instalments": null,
+      "notes": "Fee-paying public school (quintile 5). Fee amount not published online (set at the annual budget meeting). Payable annually in advance or monthly by debit order. Fee exemptions available. One term's notice to leave."
+    }
+  },
+  {
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-3",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3610",
+    "address": "30 Abelia Road, Kloof",
+    "lat": -29.7886,
+    "lng": 30.8284,
+    "website": "https://www.kloofjp.org.za/",
+    "phone": "031 764 3157",
+    "email": "kadmin@kloofjp.co.za",
+    "language": null,
+    "emis": "500176601",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Academic Support Unit (instead of normal fee)",
+        "amount": 50701,
+        "frequency": "yearly",
+        "note": "Gr 1-3, only if placed in the unit",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Stationery fee",
+        "amount": null,
+        "frequency": "once",
+        "note": "Payable after the principal interview; amount not published",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Uniform, outings, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "http://www.kloofjp.org.za/wp-content/uploads/2026/01/School-Fee-Document-2026.pdf",
+      "https://www.kloofjp.org.za/school-fees/",
+      "https://www.kloofjp.org.za/contact/",
+      "https://schoolhive.co.za/listing/kloof-junior-primary-school-admissions-contact-details/"
+    ],
+    "id": "kloof-junior-primary",
+    "name": "Kloof Junior Primary School",
+    "fees": {
+      "year": 2026,
+      "yearly": 47048,
+      "monthly": 4705,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Gr R shown; Gr 1-3 R40,824 (R4,082.40 x 10). Academic Support Unit Gr 1-3 R50,701. 10 EFT instalments 31 Jan-31 Oct. Discounts 6% by 31 Dec 2025, 5% by 6 Feb, 2% by 30 Jun. A stationery fee is payable after the principal interview (amount not published).",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 47048,
+          "monthly": 4705
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 40824,
+          "monthly": 4082
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 40824,
+          "monthly": 4082
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 40824,
+          "monthly": 4082
+        }
+      ],
+      "sourceKind": "the school's 2026 fee document"
+    },
+    "quintile": 5
+  },
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school to Gr 12",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "15 Sykes Road, Kloof",
+    "lat": -29.7882,
+    "lng": 30.8516,
+    "website": "https://www.thomasmore.co.za/",
+    "phone": "031 764 8640",
+    "email": "info@thomasmore.co.za",
+    "language": "English",
+    "emis": "500282976",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Grade tours and trips",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Included in fees",
+        "applies": "everyone",
+        "included": true
+      },
+      {
+        "item": "IEB matric exam fee",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "7 subjects",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Uniform, aftercare, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Photocopying, workbooks and notebooks",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included in fees; amount not published",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Exams, tests and benchmarking assessments",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included in fees; amount not published",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "AP Maths / AP English",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "High school, not included; amount not published",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "AEU small-group support",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not included; amount not published",
+        "applies": "some",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://www.thomasmore.co.za/admissions-fees/",
+      "https://www.thomasmore.co.za/wp-content/uploads/2026/10/2027-charges-table-Grade-1-12.pdf",
+      "https://lekkeslaap.co.za/attractions/thomas-more-college",
+      "https://schoolhive.co.za/listing/thomas-more-college-kloof-admissions-contact-details/"
+    ],
+    "id": "thomas-more-college",
+    "name": "Thomas More College",
+    "fees": {
+      "year": 2027,
+      "yearly": 97080,
+      "monthly": 9708,
+      "registration": 500,
+      "deposit": 18000,
+      "instalments": 10,
+      "notes": "2027 fees, Grade 1 shown. Paid yearly, termly, or monthly over 10 months (Jan-Oct); pre-primary can also pay over 12 months (e.g. Gr 0000 R4,200/month). 5% off if paid by 4 Dec 2026, 4% by 15 Jan 2027. Fees include textbooks, grade tours and trips, insurance and sport coaching. NOT included: photocopying, workbooks, notebooks, exams and tests, benchmarking, AP Maths/English and AEU support. The 'deposit' is a non-refundable R18,000 facilities levy for new pupils (R7,000 upfront to secure the place, R11,000 on terms).",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": 50400,
+          "monthly": 5040
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": 62840,
+          "monthly": 6284
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 72280,
+          "monthly": 7228
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": 83200,
+          "monthly": 8320
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 97080,
+          "monthly": 9708
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 105680,
+          "monthly": 10568
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 114160,
+          "monthly": 11416
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 123440,
+          "monthly": 12344
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 129920,
+          "monthly": 12992
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 134360,
+          "monthly": 13436
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 139360,
+          "monthly": 13936
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 144440,
+          "monthly": 14444
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 150640,
+          "monthly": 15064
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 161000,
+          "monthly": 16100
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 166320,
+          "monthly": 16632
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 162280,
+          "monthly": 16228
+        }
+      ],
+      "sourceKind": "the school's own 2027 charges table"
+    }
+  },
+  {
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12 (girls)",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "30 St Marys Road, Kloof",
+    "lat": -29.7987,
+    "lng": 30.8446,
+    "website": "https://stmarysdsg.co.za/",
+    "phone": "031 764 9800",
+    "email": "marketing@stmarysdsg.co.za",
+    "language": "English",
+    "emis": "500276205",
+    "country": "ZA",
+    "hiddenCosts": [
+      {
+        "item": "Compulsory variable billings",
+        "amount": 1660,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 2900,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 3120,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 3320,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 9820,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 9820,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 7820,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 8520,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 10020,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 21070,
+        "frequency": "yearly",
+        "note": "Includes The Journey in Gr 9",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 6000,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 10",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 7720,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "Compulsory variable billings",
+        "amount": 13470,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Boarding (instead of day fee)",
+        "amount": 338580,
+        "frequency": "yearly",
+        "note": "Gr 8-9 incl. tuition; Gr 10 R342,100; Gr 11-12 R343,980",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Accident insurance and Netcare 911",
+        "amount": 336,
+        "frequency": "yearly",
+        "note": "Compulsory",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "IEB exam levy",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Accommodations levy",
+        "amount": 530,
+        "frequency": "per term",
+        "note": "Only learners with exam concessions",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Old Girls' levy",
+        "amount": 200,
+        "frequency": "per term",
+        "note": "Gr 8-12",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Lunch",
+        "amount": 3325,
+        "frequency": "per term",
+        "note": "",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Bus (Hillcrest or Westville route)",
+        "amount": 1715,
+        "frequency": "per term",
+        "note": "Durban North R2,490, North Coast R2,970",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Late payment",
+        "amount": 100,
+        "frequency": "once",
+        "note": "",
+        "applies": "penalty",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "R42.50/hour or R5,830/term"
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-10-27",
+    "sources": [
+      "https://stmarysdsg.co.za/wp-content/uploads/2026/10/Fee-schedule-2027.pdf",
+      "https://stmarysdsg.co.za/wp-content/uploads/2025/10/2026-Fees-Page.pdf",
+      "https://stmarysdsg.co.za/fees-admissions/",
+      "https://stmarysdsg.co.za/",
+      "https://en.wikipedia.org/wiki/St._Mary%27s_Diocesan_School_for_Girls,_Kloof",
+      "https://schoolhive.co.za/listing/st-marys-dsg-kloof-combined-school-kloof-admissions-contact-details/"
+    ],
+    "id": "st-marys-dsg-kloof",
+    "name": "St Mary's Diocesan School for Girls",
+    "fees": {
+      "year": 2027,
+      "yearly": 87340,
+      "monthly": 8734,
+      "registration": 800,
+      "deposit": 22680,
+      "instalments": 10,
+      "notes": "2027 day fees, Grade R shown (Gr 11-12 R191,280). Discount if paid in full by 31 Jan; otherwise monthly over 10 months (Jan-Oct). Compulsory variable billings come on top, per grade (see extras). The 'deposit' is the Capital Development & Enrolment Fee (R22,680 in 2027). Application fee R800 (website also says R750). One full term's notice to leave. Grade 9 carries the heaviest 'variable billing' of the whole school, because The Journey is folded into it.",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 87340,
+          "monthly": 8734
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 115700,
+          "monthly": 11570
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 116780,
+          "monthly": 11678
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 128680,
+          "monthly": 12868
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 153080,
+          "monthly": 15308
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 153080,
+          "monthly": 15308
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 153080,
+          "monthly": 15308
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 167480,
+          "monthly": 16748
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 185880,
+          "monthly": 18588
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 185880,
+          "monthly": 18588
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 189400,
+          "monthly": 18940
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 191280,
+          "monthly": 19128
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 191280,
+          "monthly": 19128
+        }
+      ],
+      "sourceKind": "the school's own 2027 fee schedule"
+    },
+    "aliases": [
+      "DSG",
+      "St Mary's DSG"
+    ]
+  }
+]

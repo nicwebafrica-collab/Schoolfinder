@@ -1,0 +1,115 @@
+[
+  {
+    "id": "fourways-high-school",
+    "name": "Fourways High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Fourways",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "address": "42 Kingfisher Drive, Fourways, Sandton, Johannesburg",
+    "lat": -26.0276,
+    "lng": 28.0058,
+    "website": "https://www.fourwayshigh.co.za/",
+    "phone": "+27 11 704 1104",
+    "email": "admissions@4ways.co.za",
+    "language": null,
+    "fees": {
+      "year": 2026,
+      "yearly": 62500,
+      "monthly": 5550,
+      "registration": null,
+      "deposit": null,
+      "notes": "Fee-paying public school. Grade 8 shown: R62,500/yr = R7,000 once-off + 10 instalments of R5,550 (Dec-Sep). Other grades R58,000-R62,000/yr over 10 instalments. 6% off if paid in full by 31 Dec of the prior year.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 62500,
+          "monthly": 5550
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 62000,
+          "monthly": 6200
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 59000,
+          "monthly": 5900
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 58500,
+          "monthly": 5850
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 58000,
+          "monthly": 5800
+        }
+      ],
+      "instalments": 10,
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 8 once-off payment",
+        "amount": 7000,
+        "frequency": "once",
+        "note": "Part of the Gr 8 annual total; school does not say what it covers",
+        "applies": "Gr 8",
+        "included": true
+      },
+      {
+        "item": "Uniform (Legends Locker shop)",
+        "amount": null,
+        "frequency": "once",
+        "note": "Not priced online",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Textbooks, workbooks and stationery",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Lists in school Resources section, not priced",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": false,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [
+      "Athletics",
+      "Cheerleading",
+      "Cricket",
+      "Cross country",
+      "Hockey",
+      "Netball",
+      "Orienteering",
+      "Rugby",
+      "Soccer",
+      "Swimming",
+      "Tennis",
+      "Volleyball"
+    ],
+    "lastChecked": "2026-10-25",
+    "sources": [
+      "https://www.fourwayshigh.co.za/admissions/#finance",
+      "https://lekkeslaap.co.za/attractions/fourways-high-school",
+      "https://schoolhive.co.za/listing/fourways-high-school-sandton-admissions-contact-details/"
+    ],
+    "postcode": null,
+    "admissions": null,
+    "country": "ZA",
+    "emis": "700150466"
+  }
+]

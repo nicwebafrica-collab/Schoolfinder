@@ -110,9 +110,7 @@
   var EXAMPLE_SCHOOL = { id: "westville-boys-high", region: "KZN" }; // Verified 28 Oct, has priced extras
 
   function exampleCard(slot) {
-    var area = index.areas.filter(function (a) { return a.short === EXAMPLE_SCHOOL.region; })[0];
-    if (!area) return;
-    loadArea(area).then(function () {
+    loadSchools([EXAMPLE_SCHOOL.id]).then(function () {
       var s = findSchool(EXAMPLE_SCHOOL.id);
       // Costs differ by grade, so the example names one (the school's first grade) and opens the page on it.
       var grade = s ? gradeOptions(s)[0] || "" : "";
@@ -345,7 +343,7 @@
       if (!code) return null;
       // The area most of those schools are in (3610 covers Hillcrest, Waterfall and more; most say Hillcrest).
       var votes = {}, best = null;
-      schools.forEach(function (x) {
+      entries.forEach(function (x) {
         if (String(x.postcode || "") !== code || !x.area) return;
         var p = L.findPlace(x.area + " " + (x.province === "Gauteng" ? "Gauteng" : "KZN"));
         if (!p) return;
@@ -377,13 +375,13 @@
       // Schools already loaded whose name matches, so a parent can jump straight to one.
       // Also match the school's area and address, so "Embo" finds schools there even if it isn't a known place yet.
       // Each field on its own, so "hillcrest high" can't match across "…Hillcrest Highbury Road".
-      schools.filter(function (s) {
+      entries.filter(function (s) {
         return [s.name, s.area, s.address].concat(s.aliases || []).some(function (f) { return L.normalise(f).indexOf(L.normalise(text)) !== -1; });
       }).slice(0, 5).forEach(function (s) {
         suggestions.appendChild(el("a", { className: "suggestion", href: schoolHref(s), role: "option" }, s.name));
       });
       if (!suggestions.firstChild) {
-        var guess = L.suggestPlace(text, schools);
+        var guess = L.suggestPlace(text, entries);
         var looksLikeAddress = /\d|,/.test(text) || text.split(/\s+/).length > 3;
         var msg = el("p", { className: "muted small" }, looksLikeAddress
           ? "We couldn't find a suburb we cover in that address. Type just your suburb (like Hillcrest), or tap the location button. "
@@ -408,7 +406,7 @@
       if (!same) { results.textContent = ""; Array.prototype.forEach.call(document.querySelectorAll(".radius, .filters-wrap"), function (n) { n.hidden = true; }); }
       drawSuggestions();
       // Parents also search by school name ("Kearsney"). Load every area once so names can be matched (T8).
-      if (text.length >= 3 && !L.matchPlaces(text, 1).length) loadAllAreas().then(function () { if (input.value.trim() === text) drawSuggestions(); });
+      if (text.length >= 3 && !L.matchPlaces(text, 1).length) loadAllSearch().then(function () { if (input.value.trim() === text) drawSuggestions(); });
     }
     input.addEventListener("input", function () { locStatus.hidden = true; typed(); });
     input.addEventListener("keydown", function (e) {
@@ -523,7 +521,7 @@
   function filtersOk(s) {
     if (state.type && s.type !== state.type) return false;
     if (state.phase && s.phase !== state.phase && s.phase !== "Combined") return false;
-    if (state.under3000) { var m = L.monthlyFees(s); if (m === null || m > L.COUNTRY.budgetFilter) return false; }
+    if (state.under3000) { var m = s.monthly; if (typeof m !== "number" || m > L.COUNTRY.budgetFilter) return false; }
     return true;
   }
 
@@ -539,16 +537,23 @@
     }
     container.textContent = "";
     container.appendChild(el("p", { className: "muted small" }, "Loading schools…"));
-    Promise.all(areas.map(loadArea)).then(function () {
-      var pool = schools.filter(function (s) { return areas.some(function (a) { return a.province === s.province; }) && filtersOk(s); });
-      var found = L.schoolsNear(pool, centre, state.radius, state.place ? state.place.name : null);
+    var found, wider, extra, nearestKm;
+    // First the province's search file (short entries), then only the tiles holding the schools found.
+    Promise.all(areas.map(loadSearch)).then(function () {
+      var pool = entries.filter(function (s) { return areas.some(function (a) { return a.province === s.province; }) && filtersOk(s); });
+      found = L.schoolsNear(pool, centre, state.radius, state.place ? state.place.name : null);
       // The next distance that actually has more schools (T9), not just the next chip.
-      var wider = L.RADII.filter(function (km) {
+      wider = L.RADII.filter(function (km) {
         return km > state.radius && L.schoolsNear(pool, centre, km, null).near.length > found.near.length;
       })[0];
-      var extra = wider ? L.schoolsNear(pool, centre, wider, null).near.length - found.near.length : 0;
-      var nearestKm = pool.filter(function (s) { return typeof s.lat === "number" && typeof s.lng === "number"; })
+      extra = wider ? L.schoolsNear(pool, centre, wider, null).near.length - found.near.length : 0;
+      nearestKm = pool.filter(function (s) { return typeof s.lat === "number" && typeof s.lng === "number"; })
         .map(function (s) { return L.distanceKm(centre.lat, centre.lng, s.lat, s.lng); }).sort(function (a, b) { return a - b; })[0];
+      return loadEntries(found.near.concat(found.unknownLocation));
+    }).then(function () {
+      // Swap each short entry for the school's full details, keeping its distance.
+      function full(e) { var s = findSchool(e.id); return s ? Object.assign({}, s, { distanceKm: e.distanceKm }) : null; }
+      found = { near: found.near.map(full).filter(Boolean), unknownLocation: found.unknownLocation.map(full).filter(Boolean) };
 
       container.textContent = "";
       var tip = homeScreenTip();
@@ -1131,13 +1136,13 @@
     } else if (zone.kind === "nearestSchool") {
       title = "Feeder zone: nearest-school rule";
       lines.push((pub && pub.howFarShort) || zone.description);
-      var check = L.nearestPublicCheck(schools, s, state.near);
+      var check = L.nearestPublicCheck(entries, s, state.near);
       if (check) {
         var level = s.phase === "High" ? "high school" : s.phase === "Primary" ? "primary" : "school";
         guide = check.tooClose ? "Rough guide: two public " + level + "s are about the same distance from you. Ask the school."
           : check.isNearest ? "Rough guide: looks like your nearest public " + level + "."
           : "Rough guide: another public " + level + " looks closer to you: " + check.nearest.name + ".";
-      } else if (L.nearestPublicCheck(schools, s, { lat: s.lat, lng: s.lng }) === null) {
+      } else if (L.nearestPublicCheck(entries, s, { lat: s.lat, lng: s.lng }) === null) {
         // Not enough nearby public schools with locations in the app to compare, so don't offer a button that can't answer.
         if (s.type === "Public") cantCheck = "We can't check yet whether this is your nearest public school: not enough nearby public schools with locations are in the app.";
       } else if (!state.near && s.type === "Public" && typeof s.lat === "number") {
@@ -1601,12 +1606,20 @@
   window.addEventListener("offline", showOffline);
   showOffline();
 
-  // ---------- Loading data, one province at a time ----------
-  // data/index.json lists the areas (provinces) and their files. A province's schools are only
-  // downloaded when the parent searches there or opens one of its schools.
+  // ---------- Loading data in small pieces, so the app copes with thousands of schools ----------
+  // data/index.json lists the areas (provinces). Each has a small search file (one short entry per school:
+  // name, place, map position, type, monthly fee) and its schools' full details split into map tiles of
+  // about 10 x 10 km (data/schools/<area>/<tile>.json). A search loads the province's search file, then only
+  // the tiles that hold the schools it shows. A saved school or a shared link looks up its tile in one of the
+  // small files in data/lookup/, so it never needs a whole province.
 
   var index = { areas: [] };
-  var loading = {}; // area id -> promise, so each file is fetched once
+  var entries = [];       // search entries loaded so far, from every area searched
+  var loadingSearch = {}; // area id -> promise, so each file is fetched once
+  var loadingTile = {};   // "area/tile" -> promise
+  var loadingRules = {};  // area id -> promise
+  var loadingLookup = {}; // lookup file -> promise
+  var SAFE_NAME = /^[a-z0-9][a-z0-9-]{0,40}$/; // area and tile names, before they go into a file path
 
   // In the single-file preview every data file is embedded in window.EMBEDDED_DATA instead of fetched.
   function getJson(path) {
@@ -1625,21 +1638,59 @@
     else { container.textContent = ""; container.appendChild(el("p", {}, "Couldn't load the schools. Check your internet connection and refresh the page.")); }
   }
 
-  function loadArea(area) {
-    if (!loading[area.id]) {
-      loading[area.id] = Promise.all([
-        getJson(area.file),
-        area.rules ? getJson(area.rules).catch(function () { return null; }) : null // rules are optional
-      ]).then(function (both) {
-        var fresh = L.mergeAdmissions(L.cleanSchools(both[0]), L.cleanAdmissionsFile(both[1]));
+  function areaById(id) { return index.areas.filter(function (a) { return a.id === id; })[0] || null; }
+
+  // Once per fetch: forget a failed download, so Try again really tries again.
+  function once(store, key, make) {
+    if (!store[key]) store[key] = make().catch(function (err) { delete store[key]; throw err; });
+    return store[key];
+  }
+
+  // A search entry, checked: only the fields the list needs, each of the right kind (shown as text, never HTML).
+  function cleanEntry(e, area) {
+    if (!e || typeof e !== "object" || typeof e.id !== "string" || typeof e.tile !== "string" || !SAFE_NAME.test(e.tile)) return null;
+    function str(v) { return typeof v === "string" ? v.slice(0, 300) : undefined; }
+    function num(v) { return typeof v === "number" && isFinite(v) ? v : undefined; }
+    return {
+      id: e.id, name: str(e.name) || e.id, area: str(e.area), city: str(e.city), type: str(e.type), phase: str(e.phase),
+      lat: num(e.lat), lng: num(e.lng), address: str(e.address), postcode: str(e.postcode), monthly: num(e.monthly),
+      aliases: Array.isArray(e.aliases) ? e.aliases.filter(function (a) { return typeof a === "string"; }).slice(0, 10) : [],
+      tile: e.tile, province: area.province, areaId: area.id
+    };
+  }
+
+  function loadSearch(area) {
+    return once(loadingSearch, area.id, function () {
+      return getJson(area.search).then(function (list) {
+        var have = {};
+        entries.forEach(function (e) { have[e.id] = true; });
+        (Array.isArray(list) ? list : []).forEach(function (raw) {
+          var e = cleanEntry(raw, area);
+          if (e && !have[e.id]) { have[e.id] = true; entries.push(e); }
+        });
+      });
+    });
+  }
+
+  function loadRules(area) {
+    if (!area.rules) return Promise.resolve(null);
+    return once(loadingRules, area.id, function () {
+      return getJson(area.rules).then(L.cleanAdmissionsFile, function () { return null; }); // rules are optional
+    });
+  }
+
+  function loadTile(area, tile) {
+    if (!SAFE_NAME.test(area.id) || !SAFE_NAME.test(tile)) return Promise.reject(new Error("bad tile name"));
+    return once(loadingTile, area.id + "/" + tile, function () {
+      return Promise.all([getJson("schools/" + area.id + "/" + tile + ".json"), loadRules(area)]).then(function (both) {
+        var fresh = L.mergeAdmissions(L.cleanSchools(both[0]), both[1]);
         var have = {};
         schools.forEach(function (s) { have[s.id] = true; });
         schools = schools.concat(fresh.filter(function (s) { return !have[s.id]; }));
         var problems = L.dataProblems(fresh);
         if (problems.length && window.console) console.warn("School data problems (shown as unpriced):\n" + problems.join("\n"));
-      }, function (err) { delete loading[area.id]; throw err; });
-    }
-    return loading[area.id];
+      });
+    });
   }
 
   function areaForPlace(place) {
@@ -1656,18 +1707,54 @@
     });
   }
 
-  // Every area, once (for searching by school name). Fine while there are a few areas; with many, index.json
-  // should carry school names instead.
-  function loadAllAreas() {
-    return Promise.all(index.areas.map(function (a) { return loadArea(a).catch(function () { return null; }); }));
+  // Every area's search file, once (for searching by school name). Small files, one short entry per school.
+  function loadAllSearch() {
+    return Promise.all(index.areas.map(function (a) { return loadSearch(a).catch(function () { return null; }); }));
   }
 
-  // Load whichever areas hold these school ids (for Saved, Compare and shared links).
-  function loadSchools(ids) {
-    var need = index.areas.filter(function (a) {
-      return (a.ids || []).some(function (id) { return ids.indexOf(id) !== -1; });
+  // Where each of these school ids lives (area and tile), from the lookup files. Unknown ids are left out.
+  function whereAre(ids) {
+    var buckets = {};
+    ids.forEach(function (id) { buckets[L.lookupBucket(id)] = true; });
+    return Promise.all(Object.keys(buckets).map(function (b) {
+      return once(loadingLookup, b, function () {
+        // A missing lookup file just means none of these schools are live.
+        return getJson("lookup/" + b + ".json").catch(function (err) { if (String(err.message) === "404") return {}; throw err; });
+      });
+    })).then(function (files) {
+      var found = {};
+      files.forEach(function (f) {
+        ids.forEach(function (id) {
+          var w = f && Object.prototype.hasOwnProperty.call(f, id) ? f[id] : null;
+          if (Array.isArray(w) && areaById(w[0]) && typeof w[1] === "string") found[id] = { area: areaById(w[0]), tile: w[1] };
+        });
+      });
+      return found;
     });
-    return Promise.all(need.map(loadArea));
+  }
+
+  // Load the tiles holding these search entries (each entry says its tile).
+  function loadEntries(list) {
+    var jobs = {};
+    list.forEach(function (e) {
+      var area = areaById(e.areaId);
+      if (area && !findSchool(e.id)) jobs[area.id + "/" + e.tile] = loadTile(area, e.tile);
+    });
+    return Promise.all(Object.keys(jobs).map(function (k) { return jobs[k]; }));
+  }
+
+  // Load the full details of these schools (for a school page, Saved, Compare and shared links), plus their
+  // province's search file (the "nearest public school" check compares against every school in the province).
+  function loadSchools(ids) {
+    var need = ids.filter(function (id) { return id && !findSchool(id); });
+    if (!need.length) return Promise.resolve();
+    return whereAre(need).then(function (found) {
+      var jobs = [];
+      Object.keys(found).forEach(function (id) {
+        jobs.push(loadTile(found[id].area, found[id].tile), loadSearch(found[id].area));
+      });
+      return Promise.all(jobs);
+    });
   }
 
   function idsInRoute() {
