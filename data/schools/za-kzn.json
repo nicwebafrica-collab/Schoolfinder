@@ -2803,7 +2803,7 @@
         "item": "School bus",
         "amount": 2065,
         "frequency": "per term",
-        "note": "Cowies Hill/Westville/Pinetown return; Kloof R3,795; Hillcrest R5,195; Waterfall R6,295 per term",
+        "note": "Cowies Hill/Westville/Pinetown return; Kloof R3,795; Hillcrest R5,195; Waterfall R6,295 per quarter",
         "applies": "optional",
         "included": false
       },
@@ -2827,9 +2827,10 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-11-04",
     "sources": [
-      "https://dsdurban.co.za/about/school-fees/",
+      "https://dsdurban.co.za/en/about/school-fees/",
+      "https://dsdurban.co.za/wp-content/uploads/2026/01/2026-School-Fees-pdf-file.pdf",
       "https://en.wikipedia.org/wiki/Deutsche_Schule_Durban",
       "https://dsdurban.co.za/en/contact-us/"
     ],

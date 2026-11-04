@@ -218,73 +218,64 @@
     "email": "info.pretoria@curro.co.za",
     "language": "English",
     "fees": {
-      "year": 2026,
-      "yearly": 54840,
-      "monthly": 4570,
+      "year": 2027,
+      "yearly": 57960,
+      "monthly": 4830,
       "registration": 1155,
       "deposit": null,
-      "notes": "Amounts shown are for Grade 8; rises to R61,920/yr (R5,160/mo) in Gr 11-12. Paid over 12 months. 5% off for 12 months upfront, 2.5% for 6 months upfront, up to 10% sibling discount from 3rd child. Textbooks NOT included.",
+      "instalments": 12,
+      "notes": "2027 fees, Grade 8 shown; rises to R65,520/yr (R5,460/mo) in Gr 11-12. Paid over 12 months, January to December. 5% off for 12 months upfront, 2.5% for 6 months upfront, up to 10% sibling discount from the 3rd child. The R1,155 is the non-refundable high school enrolment fee. Textbooks are provided by the school (lost or damaged ones are charged); workbooks, exercise books and stationery are billed extra.",
+      "sourceKind": "the school's 2027 fee letter",
       "byGrade": [
         {
           "grade": "Gr 8",
-          "yearly": 54840,
-          "monthly": 4570
+          "yearly": 57960,
+          "monthly": 4830
         },
         {
           "grade": "Gr 9",
-          "yearly": 55440,
-          "monthly": 4620
+          "yearly": 58560,
+          "monthly": 4880
         },
         {
           "grade": "Gr 10",
-          "yearly": 61200,
-          "monthly": 5100
+          "yearly": 62160,
+          "monthly": 5180
         },
         {
           "grade": "Gr 11",
-          "yearly": 61920,
-          "monthly": 5160
+          "yearly": 65520,
+          "monthly": 5460
         },
         {
           "grade": "Gr 12",
-          "yearly": 61920,
-          "monthly": 5160
+          "yearly": 65520,
+          "monthly": 5460
         }
-      ],
-      "instalments": 12,
-      "sourceKind": "the school's 2026 fee letter"
+      ]
     },
     "hiddenCosts": [
       {
-        "item": "E-learning textbook levy",
-        "amount": 120,
-        "frequency": "monthly",
-        "note": "R1,440/yr. Fee letter also says R105/mo elsewhere, confirm with school",
+        "item": "Compulsory workbooks",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Charged to the parent's account; 2027 list not yet published",
         "applies": "everyone",
         "included": false
       },
       {
-        "item": "Compulsory workbooks",
-        "amount": 1570,
-        "frequency": "yearly",
-        "note": "Gr 8 total (Afrikaans, NS, SS, LO, EMS); Gr 10 with EGD can exceed R3,000; Sepedi R250 extra if taken",
-        "applies": "everyone",
-        "included": false,
-        "priceFor": "Gr 8"
-      },
-      {
-        "item": "E-learning device (plus insurance and maintenance)",
+        "item": "Textbooks",
         "amount": null,
-        "frequency": "once",
-        "note": "Required, not included, not priced",
+        "frequency": "yearly",
+        "note": "Fees exclude all textbooks (Gr 8-12); lost or damaged school textbooks are charged",
         "applies": "everyone",
         "included": false
       },
       {
         "item": "Extra subject (Curro Choice)",
-        "amount": 840,
+        "amount": 875,
         "frequency": "monthly",
-        "note": "Optional 8th-10th subject, R10,080/yr each",
+        "note": "Optional 8th-10th subject, R10,500/yr each",
         "applies": "optional",
         "included": false
       },
@@ -292,7 +283,7 @@
         "item": "Stationery",
         "amount": null,
         "frequency": "yearly",
-        "note": "'TBC' on fee letter",
+        "note": "Stationery list given to parents; not priced",
         "applies": "everyone",
         "included": false
       },
@@ -308,7 +299,7 @@
         "item": "Excursion and sports trip costs",
         "amount": null,
         "frequency": "yearly",
-        "note": "Entrance, travel, accommodation and food are extra",
+        "note": "Not included; also school photos",
         "applies": "everyone",
         "included": false
       }
@@ -323,9 +314,9 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-04",
     "sources": [
-      "https://www.curro.co.za/media/ofjobk1g/curro-pretoria-2026-high-school-fee-letter-finalv1-for-web.pdf",
+      "https://www.curro.co.za/media/yrmdwkgj/curro-pretoria-2027-high-school-fee-letter-final-for-web.pdf",
       "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
     ],
     "postcode": "0186",
@@ -535,70 +526,86 @@
     "email": null,
     "language": "German and English",
     "fees": {
-      "year": 2026,
-      "yearly": 105240,
-      "monthly": 8770,
-      "registration": 1980,
-      "deposit": 15786,
-      "notes": "Grade 1-4 shown (includes book levy). 5% off if paid in full by 31 Jan; quarterly option. Sibling rebate 5% (2nd), 15% (3rd), 25% (4th+). Deposit is 15% of the year's fees on acceptance (about R15,786 for Gr 1-4). Fees are higher if a company pays. Deposit shown is 15% of a year's fees for Gr 1-4 (refundable). Registration shown = R880 application fee + R1,100 admission fee (both non-refundable, new learners).",
+      "year": 2027,
+      "yearly": 111000,
+      "monthly": 9250,
+      "registration": 2090,
+      "deposit": 16650,
+      "instalments": 12,
+      "notes": "2027 fees, Grade 1-4 shown (includes the school book levy). 5% off if paid in full by 31 Jan 2027; quarterly option. Sibling rebate 5% (2nd), 15% (3rd), 25% (4th+). Fees are higher if a company or other third party pays (e.g. Gr 1-4 R144,360). Registration shown = R930 application fee + R1,160 admission fee (both non-refundable, new learners). Deposit shown = 15% of the year's fees on acceptance (R16,650 for Gr 1-4, our calculation; refundable, interest-free). Learners need medical aid or insurance.",
+      "sourceKind": "the school's own 2027 fee schedule",
       "byGrade": [
         {
           "grade": "Toddlers (1-3 yrs)",
-          "yearly": 88980,
-          "monthly": 7415
+          "yearly": 93900,
+          "monthly": 7825
         },
         {
           "grade": "Kindergarten (4-5 yrs)",
-          "yearly": 85200,
-          "monthly": 7100
+          "yearly": 89880,
+          "monthly": 7490
         },
         {
           "grade": "Pre-Primary (6 yrs)",
-          "yearly": 93360,
-          "monthly": 7780
+          "yearly": 98520,
+          "monthly": 8210
         },
         {
           "grade": "Gr 1-4",
-          "yearly": 105240,
-          "monthly": 8770
+          "yearly": 111000,
+          "monthly": 9250
         },
         {
           "grade": "Gr 5-9",
-          "yearly": 116220,
-          "monthly": 9685
+          "yearly": 122640,
+          "monthly": 10220
         },
         {
           "grade": "Gr 10-12",
-          "yearly": 118260,
-          "monthly": 9855
+          "yearly": 124800,
+          "monthly": 10400
         }
-      ],
-      "instalments": 12,
-      "sourceKind": "the school's own 2026 fee schedule"
+      ]
     },
     "hiddenCosts": [
       {
         "item": "Grade 12 IEB exam fees",
-        "amount": 9760,
+        "amount": 10394,
         "frequency": "once",
-        "note": "NSC-stream 7-subject package; Kombi stream R4,476; Further Studies R1,690 per subject",
+        "note": "NSC-stream 7-subject package; Kombi stream R4,767; Further Studies R1,800 per subject",
         "applies": "Gr 12",
         "included": false
       },
       {
+        "item": "Pre-school support classes",
+        "amount": 12480,
+        "frequency": "yearly",
+        "note": "Integrated Kindergarten and Pre-school support classes (Mon-Thu until 14:30), only for children who need them",
+        "applies": "some",
+        "included": false
+      },
+      {
         "item": "Holiday care",
-        "amount": 320,
+        "amount": 338,
         "frequency": "once",
-        "note": "Per day: R320 full day, R280 half day (up to Gr 4)",
+        "note": "Per day: R338 full day, R295 half day (up to Gr 4, incl. lunch)",
         "applies": "optional",
         "included": false,
         "per": "day"
       },
       {
-        "item": "Late payment / bounced debit order",
+        "item": "Unpaid or reversed debit order",
         "amount": 500,
         "frequency": "once",
-        "note": "Each time",
+        "note": "Each time; also R500 reminder fee for outstanding fees",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "EFT without account number",
+        "amount": 75,
+        "frequency": "once",
+        "note": "Admin fee each time",
         "applies": "penalty",
         "included": false
       },
@@ -622,17 +629,17 @@
     "outings": [],
     "aftercare": {
       "available": true,
-      "monthly": 1985,
-      "note": "Gr 1-4, 5 days. Kindergarten 5 days R2,810; Gr 5-9 R1,170"
+      "monthly": 2095,
+      "note": "Gr 1-4, 5 days (12:40-17:30). Fewer days cost less (4 days R1,885). Kindergarten-Pre-Primary 5 days R2,965; Gr 5-9 R1,235; toddlers R2,330"
     },
     "transport": {
       "available": null,
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-11-04",
     "sources": [
-      "https://dsj.co.za/wp-content/uploads/2025/10/School-Fees-2026.pdf",
+      "https://dsj.co.za/wp-content/uploads/2026/10/School-fee-schedules-2027-1.pdf",
       "https://expatarrivals.com/schools/south-africa/johannesburg/deutsche-internationale-schule-johannesburg",
       "https://en.wikipedia.org/wiki/Deutsche_Internationale_Schule_Johannesburg",
       "https://schoolhive.co.za/listing/deutsche-schule-johannesburg-parktown-admissions-contact-details/"
