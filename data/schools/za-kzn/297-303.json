@@ -1,0 +1,189 @@
+[
+  {
+    "id": "st-nicholas-diocesan",
+    "name": "St Nicholas Diocesan School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school to Gr 12",
+    "area": "Pietermaritzburg",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3200",
+    "address": "34 Loop Street, Pietermaritzburg",
+    "lat": -29.6109,
+    "lng": 30.3739,
+    "website": "https://www.stnicholas.co.za/",
+    "phone": "033 345 1566",
+    "email": null,
+    "language": "English",
+    "emis": "500276390",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://www.stnicholas.co.za/wp-content/uploads/2025/11/Fee-Structure-2026.pdf",
+      "https://www.stnicholas.co.za/admissions/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 43000,
+      "monthly": 4300,
+      "registration": 400,
+      "deposit": 3250,
+      "instalments": 10,
+      "notes": "Independent day and boarding school (Pre-school to Gr 12). Grade 1 shown. Fees can be paid over 10 months (January to October). Fees include all curriculum subjects, class music, PE, swimming, computer education and sport. A yearly General Purpose Levy is charged in January on top (R4,650 in Gr 1-3), covering accident insurance, basic textbooks, basic stationery, photos, the magazine, school trips and camps and most compulsory outings. 'Registration' is the non-refundable R400 application fee (R100 extra if late); 'deposit' is the non-refundable R3,250 enrolment fee (R250 extra if late). Boarding R91,000 a year. One full term's notice to leave.",
+      "byGrade": [
+        {
+          "grade": "Pre-school (Gr RRR-R)",
+          "yearly": 34500,
+          "monthly": 3450
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 43000,
+          "monthly": 4300
+        },
+        {
+          "grade": "Gr 3-7",
+          "yearly": 49500,
+          "monthly": 4950
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 55000,
+          "monthly": 5500
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 61700,
+          "monthly": 6170
+        }
+      ],
+      "sourceKind": "the school's 2026 fee structure"
+    },
+    "hiddenCosts": [
+      {
+        "item": "General Purpose Levy",
+        "amount": 4650,
+        "frequency": "yearly",
+        "note": "Gr 1-3; charged in January. Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
+        "applies": "Gr 1-3",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy",
+        "amount": 5350,
+        "frequency": "yearly",
+        "note": "Gr 4-7; charged in January",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy",
+        "amount": 5750,
+        "frequency": "yearly",
+        "note": "Gr 8; charged in January",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy",
+        "amount": 5500,
+        "frequency": "yearly",
+        "note": "Gr 9; charged in January",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy",
+        "amount": 6000,
+        "frequency": "yearly",
+        "note": "Gr 10; charged in January",
+        "applies": "Gr 10",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy",
+        "amount": 5800,
+        "frequency": "yearly",
+        "note": "Gr 11; charged in January",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy",
+        "amount": 6000,
+        "frequency": "yearly",
+        "note": "Gr 12; charged in January",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "General Purpose Levy (Reception)",
+        "amount": 3800,
+        "frequency": "yearly",
+        "note": "Reception class (ask the school which ages); charged in January",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 9760,
+        "frequency": "once",
+        "note": "Grade 12, paid in full before the exams",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Grade 8 place deposit (current St Nicholas Gr 7s)",
+        "amount": 2000,
+        "frequency": "once",
+        "note": "Refundable in January, but not if the learner doesn't return for Grade 8",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Boarding",
+        "amount": 91000,
+        "frequency": "yearly",
+        "note": "Instead of day only: R22,750 a term, plus a one-term (R22,750) boarding enrolment fee in advance",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Late payment interest",
+        "amount": null,
+        "frequency": "monthly",
+        "note": "10% a year on overdue accounts",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Medical aid",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Parents are asked to have medical aid; without it hospitalisation is limited to R50,000",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Uniform, aftercare, transport",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  }
+]

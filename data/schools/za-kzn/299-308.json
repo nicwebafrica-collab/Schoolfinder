@@ -210,7 +210,8 @@
     "lastChecked": "2026-10-27",
     "sources": [
       "https://en.wikipedia.org/wiki/Pinetown_Boys%27_High_School",
-      "https://schoolhive.co.za/listing/pinetown-boys-high-school-2017-cowies-hill-park-admissions-contact-details/"
+      "https://schoolhive.co.za/listing/pinetown-boys-high-school-2017-cowies-hill-park-admissions-contact-details/",
+      "https://www.pbhs.co.za/"
     ],
     "id": "pinetown-boys-high",
     "name": "Pinetown Boys' High School",
@@ -280,5 +281,85 @@
       "instalments": null,
       "notes": "Fee-paying public school (quintile 5). Fees not published online."
     }
+  },
+  {
+    "id": "the-browns-school",
+    "name": "The Browns' School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Pre-primary to Gr 7 (special needs)",
+    "area": "Ashwood",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3600",
+    "address": "28 Marianridge Drive, Pinetown, Ashwood",
+    "lat": -29.8336,
+    "lng": 30.8354,
+    "website": "https://brownsschool.co.za/",
+    "phone": "031 700 3535",
+    "email": null,
+    "language": "English",
+    "emis": "500112702",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null,
+      "note": "Term tickets R1,600 to R2,100 depending on distance"
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://brownsschool.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 25200,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school for children with special educational needs. 2026 fee per first child: R25,200 (Gr 1-7, Aut 2-8, SN 1-6) or R27,300 (Pre-Primary and Aut 1). Second child R23,940 / R25,935, third child R22,680 / R24,570. Every family pays at least R2,000 per learner, even with a fee remission (it is part of the annual fee). 5% off if paid in full by 28 Feb 2026 or within 30 days of admission. Monthly plans must be settled by 31 Oct 2026.",
+      "byGrade": [
+        {
+          "grade": "Gr 1-7",
+          "yearly": 25200,
+          "monthly": null
+        },
+        {
+          "grade": "Pre-Primary",
+          "yearly": 27300,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "School transport",
+        "amount": 1600,
+        "frequency": "per term",
+        "note": "Optional term ticket: short trip (Malvern, Yellowwood Park) R1,600; medium (Hillcrest, Newlands, Glenwood) R1,830; long (Durban North, Amanzimtoti) R2,100. Half-term tickets also sold; reviewed quarterly with the fuel price",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Uniform, stationery, therapy, outings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ],
+    "specialNeeds": true,
+    "aliases": [
+      "Browns School for special needs"
+    ]
   }
 ]

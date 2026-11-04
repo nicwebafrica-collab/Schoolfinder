@@ -1718,8 +1718,7 @@
     ids.forEach(function (id) { buckets[L.lookupBucket(id)] = true; });
     return Promise.all(Object.keys(buckets).map(function (b) {
       return once(loadingLookup, b, function () {
-        // A missing lookup file just means none of these schools are live.
-        return getJson("lookup/" + b + ".json").catch(function (err) { if (String(err.message) === "404") return {}; throw err; });
+        return getJson("lookup/" + b + ".json"); // all 64 files exist, empty ones too
       });
     })).then(function (files) {
       var found = {};

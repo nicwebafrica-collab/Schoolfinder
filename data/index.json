@@ -29,68 +29,24 @@
       "country": "ZA",
       "province": "KwaZulu-Natal",
       "short": "KZN",
-<<<<<<< HEAD
-      "file": "schools/za-kzn.json",
-      "rules": "rules/za-kzn.json",
-      "schoolCount": 31,
-      "updated": "2026-11",
-      "ids": [
-        "waterfall-preparatory",
-        "waterfall-college",
-        "curro-hillcrest-primary",
-        "curro-hillcrest-high",
-        "hillcrest-high-school",
-        "hillcrest-primary-school",
-        "forest-view-primary",
-        "highbury-preparatory",
-        "kearsney-college",
-        "kloof-high-school",
-        "kloof-senior-primary",
-        "kloof-junior-primary",
-        "kloof-pre-primary",
-        "winston-park-primary",
-        "thomas-more-college",
-        "st-marys-dsg-kloof",
-        "roseway-waldorf",
-        "st-benedict-pinetown",
-        "deutsche-schule-durban",
-        "pinetown-boys-high",
-        "pinetown-girls-high",
-        "westville-boys-high",
-        "westville-girls-high",
-        "westville-senior-primary",
-        "queensburgh-girls-high",
-        "laddsworth-primary",
-        "the-browns-school",
-        "st-nicholas-diocesan",
-        "epworth-school",
-        "northwood-school",
-        "maritzburg-college"
-=======
       "tiles": [
+        "296-302",
+        "297-303",
         "298-307",
         "298-308",
         "299-308",
         "299-309",
         "none"
->>>>>>> 27c5752 (WIP: area tiles)
       ],
       "search": "search/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 24,
+      "schoolCount": 28,
       "updated": "2026-11",
       "bounds": [
-<<<<<<< HEAD
         -29.8798,
         30.299,
         -29.5536,
-        31.0452
-=======
-        -29.8398,
-        30.7341,
-        -29.7442,
         30.9285
->>>>>>> 27c5752 (WIP: area tiles)
       ]
     }
   ]

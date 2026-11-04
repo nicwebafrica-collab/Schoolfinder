@@ -1,0 +1,57 @@
+[
+  {
+    "id": "laddsworth-primary",
+    "name": "Laddsworth Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Hilton",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3245",
+    "address": "Winkslead Road, Hilton, Howick",
+    "lat": -29.5536,
+    "lng": 30.299,
+    "website": "https://www.laddsworth.co.za/",
+    "phone": "033 343 3256",
+    "email": null,
+    "language": "English",
+    "emis": "500184741",
+    "country": "ZA",
+    "quintile": 4,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-04",
+    "sources": [
+      "https://www.laddsworth.co.za/admissions/school-fees"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 41500,
+      "monthly": 4150,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public primary school. 2026 fee R41,500 per child (same for every grade on the page), or R4,150 a month over 10 months (January to October). 5% off if paid in full (R39,425); the page dates this 'by 28/2/2025', which looks like a typo for 2026, so check with the school. Deposits, levies, aftercare and camps are not published. The page doesn't say which grades the school has (the government list gives only 'primary school').",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Uniform, stationery, camps, aftercare",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not published",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  }
+]

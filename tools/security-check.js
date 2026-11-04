@@ -342,11 +342,12 @@ allFiles.filter(function (f) { return /^data\/schools\/.*\.json$/.test(f); }).fo
   var lookupFiles = allFiles.filter(function (f) { return /^data\/lookup\//.test(f); });
   lookupFiles.forEach(function (f) {
     var m = /^data\/lookup\/(\d\d)\.json$/.exec(f);
-    check(!!m && JSON.stringify(JSON.parse(read(f))) === JSON.stringify(wantLookup[m[1]] || null), f + ": doesn't match the school tiles. Rebuild the data");
+    check(!!m && Number(m[1]) < 64 && JSON.stringify(JSON.parse(read(f))) === JSON.stringify(wantLookup[m[1]] || {}), f + ": doesn't match the school tiles. Rebuild the data");
   });
-  Object.keys(wantLookup).forEach(function (b) {
-    check(lookupFiles.indexOf("data/lookup/" + b + ".json") !== -1, "data/lookup/" + b + ".json: missing. Rebuild the data");
-  });
+  for (var bn = 0; bn < 64; bn++) {
+    var bk = (bn < 10 ? "0" : "") + bn;
+    check(lookupFiles.indexOf("data/lookup/" + bk + ".json") !== -1, "data/lookup/" + bk + ".json: missing (all 64 must exist). Rebuild the data");
+  }
 })();
 
 if (failures.length) {
