@@ -173,6 +173,14 @@
     return null;
   }
 
+  // When the school doesn't publish a monthly amount or its number of payments: the yearly fee spread over
+  // 12 months, shown clearly as our own calculation next to "Not published by school" (Nicholas, 5 Nov).
+  function monthlyEstimate(school, grade) {
+    if (monthlyFees(school, grade) !== null) return null;
+    var y = yearlyFees(school, grade);
+    return isNum(y) && y > 0 ? Math.round(y / 12) : null;
+  }
+
   // Amount per year for one hidden cost, or null if it can't be worked out.
   function perYear(c) {
     var times = TIMES_PER_YEAR[normaliseFrequency(c.frequency)];
@@ -505,7 +513,7 @@
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,
     countsInTotal: countsInTotal, entryGrade: entryGrade, headlineGrade: headlineGrade, defaultGrade: defaultGrade, costGrade: costGrade, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
     instalments: instalments, dataProblems: dataProblems,
-    normalise: normalise, yearlyFees: yearlyFees, monthlyFees: monthlyFees,
+    normalise: normalise, yearlyFees: yearlyFees, monthlyFees: monthlyFees, monthlyEstimate: monthlyEstimate,
     yearlyHiddenCosts: yearlyHiddenCosts, startUpCosts: startUpCosts, yearlyOutings: yearlyOutings,
     trueYearlyCost: trueYearlyCost, distanceKm: distanceKm, matchesQuery: matchesQuery,
     searchSchools: searchSchools, formatRand: formatRand, safeUrl: safeUrl,

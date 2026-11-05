@@ -75,6 +75,13 @@
   function unknown(text) { return el("span", { className: "unknown" }, text || L.UNKNOWN); }
   function money(amount) { return L.isNum(amount) ? L.formatRand(amount) : unknown(); }
 
+  // Monthly fee, or when the school doesn't publish one: "About R4,643" plus a line saying it's our 12-month sum.
+  var ESTIMATE_NOTE = "Not published by school. Our calculation: yearly fee \u00f7 12.";
+  function monthlyText(s, grade) {
+    var est = L.monthlyEstimate(s, grade);
+    return est !== null ? "About " + L.formatRand(est) : money(L.monthlyFees(s, grade));
+  }
+
   function link(url, text) {
     var safe = L.safeUrl(url);
     if (!safe) return unknown();
@@ -969,7 +976,10 @@
       monthly === null && total === null
         ? el("p", { className: "unknown card-unknown" }, "Fees not published yet")
         : el("div", { className: "money-pair" },
-            el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"), el("strong", {}, feeText(s, monthly, "No fees"))),
+            el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"),
+              L.monthlyEstimate(s) !== null
+                ? [el("strong", {}, monthlyText(s)), el("div", { className: "muted small" }, "Not published. Yearly \u00f7 12")]
+                : el("strong", {}, feeText(s, monthly, "No fees"))),
             el("div", { className: "money true" }, el("div", { className: "label" }, "True cost / yr"), el("strong", {}, feeText(s, total, "Extras only")))),
       extras && el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)));
     card.setAttribute("data-id", s.id);
@@ -1036,8 +1046,9 @@
 
     var payments = L.instalments(s, grade);
     var facts = el("div", { className: "facts" },
-      el("div", { className: "fact" }, el("div", { className: "label" }, "Monthly fee"), el("strong", {}, money(L.monthlyFees(s, grade))),
-        payments ? el("div", { className: "muted small" }, payments + " payments") : null),
+      el("div", { className: "fact" }, el("div", { className: "label" }, "Monthly fee"), el("strong", {}, monthlyText(s, grade)),
+        L.monthlyEstimate(s, grade) !== null ? el("div", { className: "muted small" }, ESTIMATE_NOTE)
+          : payments ? el("div", { className: "muted small" }, payments + " payments") : null),
       fact("Registration", money(f.registration)),
       fact("Once-off to start", startUpText(s, grade)),
       fact("Aftercare", optionalText(s.aftercare)));
@@ -1398,7 +1409,8 @@
           el("div", { className: "crow chead", aria: { hidden: "true" } }, el("div", { className: "label" }, ""),
             el("div", { className: "two" }, el("span", {}, A.name), el("span", {}, B.name))),
           crow("School fees / year", money(L.yearlyFees(A, ga)), money(L.yearlyFees(B, gb))),
-          crow("Monthly fee", [money(L.monthlyFees(A, ga)), paymentsText(A, ga)], [money(L.monthlyFees(B, gb)), paymentsText(B, gb)]),
+          crow("Monthly fee", [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not published; yearly \u00f7 12)" : paymentsText(A, ga)],
+            [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not published; yearly \u00f7 12)" : paymentsText(B, gb)]),
           crow("Extras not on the fee sheet / year", extrasText(A, ga), extrasText(B, gb), true),
           crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
