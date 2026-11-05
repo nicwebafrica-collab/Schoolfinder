@@ -1126,7 +1126,11 @@
       return b;
     }
 
-    if (zone.kind === "private" || (s.type === "Private" && !zone.kind)) {
+    if (s.specialNeeds) {
+      // Special-needs schools admit by assessment, not by distance, so no feeder-zone or nearest-school text (V36-3).
+      title = "Admission by assessment";
+      lines.push("This school is for learners with special educational needs. Places depend on an assessment, not on where you live. Contact the school to apply.");
+    } else if (zone.kind === "private" || (s.type === "Private" && !zone.kind)) {
       title = "Admission rules";
       lines.push((priv && priv.short) || zone.description);
     } else if (zone.kind === "nearestSchool") {

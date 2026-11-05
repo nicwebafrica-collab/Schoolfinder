@@ -81,7 +81,21 @@
 
   // Which grade's own costs to count. No grade picked ("Entry grade" view) means the entry grade, so a compulsory
   // Gr 8 item counts in the default view and in the once-off-to-start figure, as on the Gr 8 chip (B62).
-  function costGrade(school, grade) { return grade || entryGrade(school); }
+  // The grade the headline fee is for: the fee-by-grade row with the same fee as the headline. St Nicholas starts at
+  // pre-school but its headline is the Gr 1-2 fee ("Grade 1 shown"), so its Gr 1-3 levy counts there (V36-1).
+  function headlineGrade(school) {
+    var f = (school && school.fees) || {};
+    var rows = Array.isArray(f.byGrade) ? f.byGrade : [];
+    var key = isNum(f.yearly) ? "yearly" : isNum(f.monthly) ? "monthly" : null;
+    if (!key) return null;
+    var row = rows.filter(function (g) { return g && g.grade && g[key] === f[key]; })[0];
+    return row ? row.grade : null;
+  }
+
+  // The grade the default view stands for: the headline fee's grade, otherwise the entry grade.
+  function defaultGrade(school) { return headlineGrade(school) || entryGrade(school); }
+
+  function costGrade(school, grade) { return grade || defaultGrade(school); }
 
   // Does this cost go into the totals for this grade? Everyone-items (not already inside the fee) always do;
   // grade-only items (e.g. "Gr 12" exam fee) only when the picked grade falls inside them.
@@ -152,7 +166,10 @@
   function monthlyFees(school, grade) {
     var f = feeRow(school, grade);
     if (isNum(f.monthly)) return f.monthly;
-    if (isNum(f.yearly)) return Math.round(f.yearly / (instalments(school, grade) || SCHOOL_MONTHS));
+    // Only when the school says how many payments: otherwise R25,200 / 12 = "R2,100 a month" is our guess, not
+    // the school's figure (it may bill 10 times). Show "Not published by school" instead (V36-2).
+    var n = instalments(school, grade);
+    if (isNum(f.yearly) && n) return Math.round(f.yearly / n);
     return null;
   }
 
@@ -172,7 +189,7 @@
       if (isGradeOnly(c) && normaliseFrequency(c.frequency) === "once") {
         // A once-off for the entry grade (Gr 8 backpack) is paid when starting: it goes in "Once-off to start" only,
         // never in the yearly total too (Fact Checker, B62). A later grade's once-off (Gr 12 exam) stays in that year.
-        if (gradeCovers(normaliseApplies(c.applies), entryGrade(school))) return sum;
+        if (gradeCovers(normaliseApplies(c.applies), defaultGrade(school))) return sum;
         return isNum(c.amount) ? sum + c.amount : sum;
       }
       var y = perYear(c);
@@ -186,7 +203,7 @@
     var f = school.fees || {};
     var amounts = [f.registration, f.deposit];
     (school.hiddenCosts || []).forEach(function (c) {
-      if (normaliseFrequency(c.frequency) === "once" && countsInTotal(c, entryGrade(school))) amounts.push(c.amount);
+      if (normaliseFrequency(c.frequency) === "once" && countsInTotal(c, defaultGrade(school))) amounts.push(c.amount);
     });
     var known = amounts.filter(isNum);
     // null (unknown) rather than R 0 when the school hasn't published any of these.
@@ -197,8 +214,8 @@
   // or whose frequency we couldn't understand, so the app can warn rather than show a too-low total.
   function unpricedCosts(school) {
     return (school.hiddenCosts || []).filter(function (c) {
-      return countsInTotal(c, entryGrade(school)) && (!isNum(c.amount) || !normaliseFrequency(c.frequency));
-    }).concat((school.outings || []).filter(function (o) { return !isNum(o.cost) && outingCounts(school, o, entryGrade(school)); }));
+      return countsInTotal(c, defaultGrade(school)) && (!isNum(c.amount) || !normaliseFrequency(c.frequency));
+    }).concat((school.outings || []).filter(function (o) { return !isNum(o.cost) && outingCounts(school, o, defaultGrade(school)); }));
   }
 
   // Costs that are NOT in the totals because they only apply to some families:
@@ -486,7 +503,7 @@
     cleanSchool: cleanSchool, cleanSchools: cleanSchools,
     UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,
-    countsInTotal: countsInTotal, entryGrade: entryGrade, costGrade: costGrade, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
+    countsInTotal: countsInTotal, entryGrade: entryGrade, headlineGrade: headlineGrade, defaultGrade: defaultGrade, costGrade: costGrade, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
     instalments: instalments, dataProblems: dataProblems,
     normalise: normalise, yearlyFees: yearlyFees, monthlyFees: monthlyFees,
     yearlyHiddenCosts: yearlyHiddenCosts, startUpCosts: startUpCosts, yearlyOutings: yearlyOutings,
