@@ -27,6 +27,18 @@
   <meta name="apple-mobile-web-app-title" content="SchoolMap">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="styles.css">
+  <!-- Start the two small data files straight away, in parallel with the scripts (T11: slow 3G). -->
+  <link rel="preload" href="data/index.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="data/countries/za.json" as="fetch" crossorigin="anonymous">
+  <!-- The app's scripts: deferred, so they download in parallel and run in this order once the page is read (T11). -->
+  <script src="js/boot.js" defer></script>
+  <script src="js/logic.js" defer></script>
+  <script src="js/admissions.js" defer></script>
+  <script src="js/places.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/count.js" defer></script>
+  <!-- Last in <head> and not deferred on purpose: sets two classes before anything is drawn (T10). Keep it tiny. -->
+  <script src="js/head.js"></script>
 </head>
 <body>
   <header id="topbar" class="top-bar"></header>
@@ -45,11 +57,5 @@
 
   <nav id="nav" class="bottom-nav" aria-label="Main"></nav>
 
-  <script src="js/boot.js"></script>
-  <script src="js/logic.js"></script>
-  <script src="js/admissions.js"></script>
-  <script src="js/places.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/count.js"></script>
 </body>
 </html>

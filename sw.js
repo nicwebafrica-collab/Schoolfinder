@@ -1,9 +1,9 @@
 // sw.js — the "service worker": a small script the phone keeps running in the background.
 // It saves the app's files so SchoolMap opens and works with no internet (load shedding, no data).
 
-var VERSION = "v66";                       // bump this when app files change, so phones fetch the new ones
+var VERSION = "v67";                       // bump this when app files change, so phones fetch the new ones
 var APP_FILES = [
-  "./", "index.html", "styles.css", "js/boot.js", "js/logic.js", "js/admissions.js", "js/places.js", "js/app.js", "js/count.js", "manifest.webmanifest",
+  "./", "index.html", "styles.css", "js/head.js", "js/boot.js", "js/logic.js", "js/admissions.js", "js/places.js", "js/app.js", "js/count.js", "manifest.webmanifest",
   "fonts/plus-jakarta-sans-latin.woff2", "icons/icon-192.png", "icons/icon-512.png", "data/index.json", "data/countries/za.json"
 ];
 
@@ -28,6 +28,20 @@ self.addEventListener("activate", function (event) {
   self.clients.claim();
 });
 
+// A page that was never opened, asked for with no internet (B60): a short plain message instead of the browser's
+// error page. Fixed text only, no scripts, and a policy that blocks everything else.
+function offlinePage() {
+  var html = "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">" +
+    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" +
+    "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'; base-uri 'none'; form-action 'none'\">" +
+    "<title>You're offline · SchoolMap</title></head><body>" +
+    "<h1>You're offline</h1>" +
+    "<p>This page isn't saved on your phone yet. Connect to Wi-Fi or mobile data and try again.</p>" +
+    "<p><a href=\"/\">Open SchoolMap</a> to see the schools saved on this phone.</p>" +
+    "</body></html>";
+  return new Response(html, { status: 503, headers: { "Content-Type": "text/html; charset=utf-8" } });
+}
+
 self.addEventListener("fetch", function (event) {
   var url = new URL(event.request.url);
   if (event.request.method !== "GET" || url.origin !== location.origin) return;
@@ -51,7 +65,9 @@ self.addEventListener("fetch", function (event) {
       // Offline or too slow: the saved copy. With no saved copy keep waiting for the internet,
       // and if that fails too, answer with an error (never nothing, which leaves the page stuck).
       return caches.match(event.request, { ignoreSearch: true }).then(function (saved) {
-        return saved || network.catch(function () { return Response.error(); });
+        return saved || network.catch(function () {
+          return event.request.mode === "navigate" ? offlinePage() : Response.error();
+        });
       });
     }));
     return;

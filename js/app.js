@@ -76,7 +76,7 @@
   function money(amount) { return L.isNum(amount) ? L.formatRand(amount) : unknown(); }
 
   // Monthly fee, or when the school doesn't publish one: "About R4,643" plus a line saying it's our 12-month sum.
-  var ESTIMATE_NOTE = "Not published by school. Our calculation: yearly fee \u00f7 12.";
+  var ESTIMATE_NOTE = "Not published by school. Our calculation: yearly fee\u00a0\u00f7\u00a012.";
   function monthlyText(s, grade) {
     var est = L.monthlyEstimate(s, grade);
     return est !== null ? "About " + L.formatRand(est) : money(L.monthlyFees(s, grade));
@@ -978,7 +978,7 @@
         : el("div", { className: "money-pair" },
             el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"),
               L.monthlyEstimate(s) !== null
-                ? [el("strong", {}, monthlyText(s)), el("div", { className: "muted small" }, "Not published. Yearly \u00f7 12")]
+                ? [el("strong", {}, monthlyText(s)), el("div", { className: "muted small" }, "Not published. Yearly\u00a0\u00f7\u00a012")]
                 : el("strong", {}, feeText(s, monthly, "No fees"))),
             el("div", { className: "money true" }, el("div", { className: "label" }, "True cost / yr"), el("strong", {}, feeText(s, total, "Extras only")))),
       extras && el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)));
@@ -1339,7 +1339,9 @@
       panel("On the fee sheet" + (f.year ? " (" + f.year + ")" : ""), el("ul", { className: "rows" },
         state.costView === "month" && L.isNum(L.monthlyFees(s, grade))
           ? row("School fees" + (payments ? " (" + payments + " payments a year)" : ""), L.formatRand(L.monthlyFees(s, grade)))
-          : row("School fees", money(per(L.yearlyFees(s, grade)))),
+          // Per month with no published instalment: say it's the year split in 12, so it isn't read as the school's
+          // monthly amount (V39-1, costs page).
+          : row(state.costView === "month" ? "School fees (yearly\u00a0\u00f7\u00a012)" : "School fees", money(per(L.yearlyFees(s, grade)))),
         row("Registration (once)", money(f.registration)),
         // Hide the empty deposit row when the deposit is listed as a hidden cost instead.
         f.deposit == null && (s.hiddenCosts || []).some(function (c) { return /deposit/i.test(c.item); }) ? null : row("Deposit (once)", money(f.deposit))),
@@ -1409,8 +1411,8 @@
           el("div", { className: "crow chead", aria: { hidden: "true" } }, el("div", { className: "label" }, ""),
             el("div", { className: "two" }, el("span", {}, A.name), el("span", {}, B.name))),
           crow("School fees / year", money(L.yearlyFees(A, ga)), money(L.yearlyFees(B, gb))),
-          crow("Monthly fee", [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not published; yearly \u00f7 12)" : paymentsText(A, ga)],
-            [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not published; yearly \u00f7 12)" : paymentsText(B, gb)]),
+          crow("Monthly fee", [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not published; yearly\u00a0\u00f7\u00a012)" : paymentsText(A, ga)],
+            [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not published; yearly\u00a0\u00f7\u00a012)" : paymentsText(B, gb)]),
           crow("Extras not on the fee sheet / year", extrasText(A, ga), extrasText(B, gb), true),
           crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
