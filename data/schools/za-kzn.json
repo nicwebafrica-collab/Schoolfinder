@@ -4166,7 +4166,7 @@
         "item": "Development levy",
         "amount": 1138,
         "frequency": "yearly",
-        "note": "Gr 00. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 00",
         "included": false
       },
@@ -4174,7 +4174,7 @@
         "item": "Book charge",
         "amount": 683,
         "frequency": "yearly",
-        "note": "Gr 00. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 00",
         "included": false
       },
@@ -4182,7 +4182,7 @@
         "item": "Development levy",
         "amount": 1284,
         "frequency": "yearly",
-        "note": "Gr R. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr R",
         "included": false
       },
@@ -4190,7 +4190,7 @@
         "item": "Book charge",
         "amount": 993,
         "frequency": "yearly",
-        "note": "Gr R. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr R",
         "included": false
       },
@@ -4198,7 +4198,7 @@
         "item": "Development levy",
         "amount": 6230,
         "frequency": "yearly",
-        "note": "Gr 1. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 1",
         "included": false
       },
@@ -4206,7 +4206,7 @@
         "item": "Book charge",
         "amount": 1307,
         "frequency": "yearly",
-        "note": "Gr 1. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 1",
         "included": false
       },
@@ -4214,7 +4214,7 @@
         "item": "Development levy",
         "amount": 6804,
         "frequency": "yearly",
-        "note": "Gr 2-3. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 2-3",
         "included": false
       },
@@ -4222,7 +4222,7 @@
         "item": "Book charge",
         "amount": 1412,
         "frequency": "yearly",
-        "note": "Gr 2-3. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 2-3",
         "included": false
       },
@@ -4230,7 +4230,7 @@
         "item": "Development levy",
         "amount": 8530,
         "frequency": "yearly",
-        "note": "Gr 4-7. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 4-7",
         "included": false
       },
@@ -4238,7 +4238,7 @@
         "item": "Book charge",
         "amount": 1726,
         "frequency": "yearly",
-        "note": "Gr 4-7. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 4-7",
         "included": false
       },
@@ -4246,7 +4246,7 @@
         "item": "Development levy",
         "amount": 30302,
         "frequency": "yearly",
-        "note": "Gr 8-12. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 8-12",
         "included": false
       },
@@ -4254,7 +4254,7 @@
         "item": "Book charge",
         "amount": 4763,
         "frequency": "yearly",
-        "note": "Gr 8-12. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 8-12",
         "included": false
       },
@@ -4262,7 +4262,7 @@
         "item": "Accident insurance",
         "amount": 920,
         "frequency": "yearly",
-        "note": "Gr 00. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 00",
         "included": false
       },
@@ -4270,7 +4270,7 @@
         "item": "Accident insurance",
         "amount": 920,
         "frequency": "yearly",
-        "note": "Gr R. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr R",
         "included": false
       },
@@ -4278,7 +4278,7 @@
         "item": "Accident insurance",
         "amount": 920,
         "frequency": "yearly",
-        "note": "Gr 1. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 1",
         "included": false
       },
@@ -4286,7 +4286,7 @@
         "item": "Accident insurance",
         "amount": 920,
         "frequency": "yearly",
-        "note": "Gr 2-3. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 2-3",
         "included": false
       },
@@ -4294,7 +4294,7 @@
         "item": "Accident insurance",
         "amount": 920,
         "frequency": "yearly",
-        "note": "Gr 4-7. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 4-7",
         "included": false
       },
@@ -4302,7 +4302,7 @@
         "item": "Accident insurance",
         "amount": 1060,
         "frequency": "yearly",
-        "note": "Gr 8-12. Listed with the tuition fee; the page doesn't say 'per year'",
+        "note": "The school's page doesn't say 'per year'",
         "applies": "Gr 8-12",
         "included": false
       },
