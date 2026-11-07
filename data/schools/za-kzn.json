@@ -4084,5 +4084,252 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "clifton-school",
+    "name": "Clifton School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 00-12 (boys)",
+    "area": "Morningside",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4001",
+    "address": "102 Lamert Road, Morningside, Durban",
+    "lat": -29.8265,
+    "lng": 31.0193,
+    "website": "https://www.cliftonschool.co.za/",
+    "phone": "031 312 2147",
+    "email": null,
+    "language": null,
+    "emis": "500117401",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "lastChecked": "2026-11-07",
+    "sources": [
+      "https://www.cliftonschool.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 56920,
+      "monthly": null,
+      "registration": null,
+      "deposit": 4500,
+      "instalments": null,
+      "notes": "Independent boys' school from Grade 00 to Grade 12. 2026 tuition: Gr 00 R56,920, Gr R R85,000, Gr 1 R122,040, Gr 2-3 R133,840, Gr 4-7 R150,120, Gr 8-12 R183,520. On top of tuition each grade pays a development levy, a book charge and accident insurance (amounts differ by grade), plus a voluntary levy (R5,380 Gr 00, R5,700 other grades). 'Deposit' is the once-off acceptance fee, which rises with the grade (R4,500 for Gr 00 up to R11,500 for Gr 8-12). Gr 12 pays a R9,760 IEB exam fee. Weekly boarding for Gr 8-12 is R129,800 a year. A 33% tuition discount applies to the third and later brothers at the school at the same time. The school's page lists the amounts without saying 'per year' or how to pay; they are shown here as yearly amounts (boarding is listed as R129,800 a year or R32,450 a term).",
+      "byGrade": [
+        {
+          "grade": "Gr 00",
+          "yearly": 56920,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 85000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 122040,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 2-3",
+          "yearly": 133840,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 150120,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8-12",
+          "yearly": 183520,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 1138,
+        "frequency": "yearly",
+        "note": "Gr 00. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 683,
+        "frequency": "yearly",
+        "note": "Gr 00. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 1284,
+        "frequency": "yearly",
+        "note": "Gr R. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 993,
+        "frequency": "yearly",
+        "note": "Gr R. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 6230,
+        "frequency": "yearly",
+        "note": "Gr 1. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 1307,
+        "frequency": "yearly",
+        "note": "Gr 1. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 6804,
+        "frequency": "yearly",
+        "note": "Gr 2-3. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 1412,
+        "frequency": "yearly",
+        "note": "Gr 2-3. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 8530,
+        "frequency": "yearly",
+        "note": "Gr 4-7. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 1726,
+        "frequency": "yearly",
+        "note": "Gr 4-7. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 30302,
+        "frequency": "yearly",
+        "note": "Gr 8-12. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 4763,
+        "frequency": "yearly",
+        "note": "Gr 8-12. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "Gr 00. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "Gr R. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "Gr 1. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "Gr 2-3. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "Gr 4-7. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 1060,
+        "frequency": "yearly",
+        "note": "Gr 8-12. Listed with the tuition fee; the page doesn't say 'per year'",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Voluntary levy",
+        "amount": 5700,
+        "frequency": "yearly",
+        "note": "Voluntary. R5,380 for Gr 00, R5,700 for Gr R-12. The page doesn't say what it covers",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 9760,
+        "frequency": "once",
+        "note": "Grade 12 only, set by the IEB",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding (Gr 8-12)",
+        "amount": 129800,
+        "frequency": "yearly",
+        "note": "Or R32,450 a term; casual boarding R775 a night",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
   }
 ]

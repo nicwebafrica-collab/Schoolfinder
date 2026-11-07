@@ -33,7 +33,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 31,
+      "schoolCount": 32,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -66,7 +66,8 @@
         "st-nicholas-diocesan",
         "epworth-school",
         "northwood-school",
-        "maritzburg-college"
+        "maritzburg-college",
+        "clifton-school"
       ],
       "bounds": [
         -29.8798,
