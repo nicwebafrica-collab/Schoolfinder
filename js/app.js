@@ -1034,7 +1034,8 @@
       unpriced.length ? unpriced.length + (unpriced.length === 1 ? " cost" : " costs") + " not priced" : null].filter(Boolean);
     var trueCard = el("section", { className: "panel" },
       el("div", { className: "label" }, "True cost per year" + (f.year ? " · " + f.year + " fees" : " · fee year unknown") + (grade ? " · " + grade : " · entry grade")),
-      el("div", { className: "big-money" }, feeText(s, total, "No school fees")),
+      // A grade whose yearly fee isn't confirmed (Penzance Gr 4-7): same words as the costs page (V44-1).
+      el("div", { className: "big-money" }, total === null && grade && (L.feeRow(s, grade) || {}).note ? unknown("Not confirmed, see note") : feeText(s, total, "No school fees")),
       noFeeLine(s),
       total ? el("div", { className: "bar", aria: { hidden: "true" } },
         el("div", { className: "fees", css: { width: feePct + "%" } }), el("div", { className: "extra", css: { width: (100 - feePct) + "%" } })) : null,
