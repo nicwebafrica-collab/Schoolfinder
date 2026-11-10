@@ -33,7 +33,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 31,
+      "schoolCount": 35,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -66,11 +66,15 @@
         "st-nicholas-diocesan",
         "epworth-school",
         "northwood-school",
-        "maritzburg-college"
+        "maritzburg-college",
+        "berea-west-prep",
+        "charlton-scholars",
+        "penzance-primary",
+        "jens-primary"
       ],
       "bounds": [
-        -29.8798,
-        30.299,
+        -30.545351,
+        29.418402,
         -29.5536,
         31.0452
       ]

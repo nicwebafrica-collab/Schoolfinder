@@ -4084,5 +4084,437 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "berea-west-prep",
+    "name": "Berea West Preparatory School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr RR-3",
+    "area": "Westville",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3629",
+    "address": "2 Eleanora Road, Westville",
+    "lat": -29.8329,
+    "lng": 30.9478,
+    "website": "https://bwprep.co.za/",
+    "phone": "031 266 6683",
+    "email": null,
+    "language": null,
+    "emis": "500107226",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-10",
+    "sources": [
+      "https://bwprep.co.za/files/14/uploads/files/2026-fee-summary.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 32000,
+      "monthly": 2900,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public school, Grade RR to Grade 3. Includes a R3,000 registration fee paid each year; the rest is 4 x R7,250 a term or 10 x R2,900 a month (Gr R: R8,000 / R3,200). R27,800 (Gr R R30,800) if paid in full by 27 February, after the registration fee. Uniform, stationery and outings are not priced on the fee summary.",
+      "byGrade": [
+        {
+          "grade": "Gr RR",
+          "yearly": 32000,
+          "monthly": 2900
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 35000,
+          "monthly": 3200
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 32000,
+          "monthly": 2900
+        }
+      ],
+      "sourceKind": "the school's 2026 fee summary"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Registration fee (inside the yearly fee)",
+        "amount": 3000,
+        "frequency": "yearly",
+        "note": "Every child pays it every year; already part of the R32,000 / R35,000",
+        "applies": "everyone",
+        "included": true
+      },
+      {
+        "item": "Uniform, stationery, outings",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced on the fee summary",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "charlton-scholars",
+    "name": "Charlton Scholars",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-10",
+    "area": "Kloof",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "3640",
+    "address": "30 Marievale Drive, Zamokuhle, Kloof",
+    "lat": -29.7829,
+    "lng": 30.852,
+    "website": "https://charltonscholars.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "500490065",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-10",
+    "sources": [
+      "https://charltonscholars.co.za/wp-content/uploads/2025/08/2026-SCHOOL-FEES-1-1.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 59400,
+      "monthly": 5400,
+      "registration": null,
+      "deposit": 6500,
+      "instalments": 11,
+      "notes": "Independent school, Grade 1 to Grade 10 in 2026 (no Grade 11-12 yet). Gr 1 shown: R59,400 a year, 4 x R14,850 a term or 11 x R5,400 a month (January to November); up to R81,400 for Gr 10. 'Deposit' is the once-off, non-refundable R6,500 Primary School deposit for new learners on acceptance; High School is R8,500. The fee sheet doesn't say which grades are 'Primary' and 'High School'; we've taken Gr 1-7 and Gr 8-10. Every child also pays a R3,500 stationery fee a year (Primary: stationery, consumables and school bags; High School: Wi-Fi, consumables and stationery; textbooks not included for High School). The school's home page says it caters for children with learning barriers.",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": 59400,
+          "monthly": 5400
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 60500,
+          "monthly": 5500
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 61600,
+          "monthly": 5600
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 66000,
+          "monthly": 6000
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 68200,
+          "monthly": 6200
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 70400,
+          "monthly": 6400
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 73700,
+          "monthly": 6700
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 77000,
+          "monthly": 7000
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 79200,
+          "monthly": 7200
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 81400,
+          "monthly": 7400
+        }
+      ],
+      "sourceKind": "the school's 2026 fee sheet"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Stationery fee",
+        "amount": 3500,
+        "frequency": "yearly",
+        "note": "Every child; High School fee covers Wi-Fi, consumables and stationery but not textbooks",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "High School deposit (new learners)",
+        "amount": 8500,
+        "frequency": "once",
+        "note": "Once-off, non-refundable, on acceptance; Gr 8-10 taken as High School",
+        "applies": "Gr 8-10",
+        "included": false
+      },
+      {
+        "item": "Textbooks (High School), uniform",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "penzance-primary",
+    "name": "Penzance Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 000-7",
+    "area": "Umbilo",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4013",
+    "address": "10 Bartle Road, Umbilo",
+    "lat": -29.8764,
+    "lng": 30.9878,
+    "website": "https://www.penzance.co.za/",
+    "phone": "031 205 2271",
+    "email": null,
+    "language": null,
+    "emis": "500247012",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 715,
+      "note": "Session 2 (2:00-5:00 pm, Gr 1-7): R80 a day, R715 a month or R7,510 upfront. Session 1 (12:30-2:00 pm, Gr 1-2): R70 a day, R640 a month or R6,720 upfront. Gr 1-2 children fetched after 2:10 pm pay for Session 1 and Session 2. Late collection R100 per 15 minutes."
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-10",
+    "sources": [
+      "https://www.penzance.co.za/fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 44660,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school, Grade 000 to Grade 7. Pre-primary (Gr 000 to Gr R): R44,660 a year (no payment options listed). Gr 1-3: R39,875 a year, or 11 debit orders of R3,625, or R38,625 paid upfront by 27 February 2026. Gr 4-7: the school's page gives R38,270 a year but 11 debit orders of R3,570 (R39,270); ask the school which is right. Gr 4-7 upfront payment R38,020 by 27 February 2026. The page doesn't say how often the stationery levy and the R500 levy are charged; we show them once a year. Overnight excursions and tours are payable in addition (not priced).",
+      "byGrade": [
+        {
+          "grade": "Gr 000",
+          "yearly": 44660,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 44660,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 44660,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 39875,
+          "monthly": 3625
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": null,
+          "monthly": 3570,
+          "note": "Unconfirmed: the page says R38,270 a year but 11 x R3,570 = R39,270"
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Stationery levy (Gr 000)",
+        "amount": 900,
+        "frequency": "yearly",
+        "note": "Page doesn't say how often",
+        "applies": "Gr 000",
+        "included": false
+      },
+      {
+        "item": "Stationery levy (Gr 00)",
+        "amount": 1050,
+        "frequency": "yearly",
+        "note": "Page doesn't say how often",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Stationery levy (Gr R)",
+        "amount": 1300,
+        "frequency": "yearly",
+        "note": "Page doesn't say how often",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Levy on school fee account",
+        "amount": 500,
+        "frequency": "yearly",
+        "note": "Page doesn't say how often",
+        "applies": "Gr 1-7",
+        "included": false
+      },
+      {
+        "item": "Aftercare late collection",
+        "amount": 100,
+        "frequency": "once",
+        "note": "Only if fetched late from aftercare",
+        "applies": "penalty",
+        "included": false,
+        "per": "15 minutes"
+      },
+      {
+        "item": "Overnight excursions and tours",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Payable in addition to school fees; not priced",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "jens-primary",
+    "name": "Jens Primary School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-2",
+    "area": "Kokstad",
+    "city": "Kokstad",
+    "province": "KwaZulu-Natal",
+    "postcode": "4700",
+    "address": "164 Main Street, Kokstad",
+    "lat": -30.545351,
+    "lng": 29.418402,
+    "website": "https://jensprimaryschool.com/",
+    "phone": "083 357 2513",
+    "email": null,
+    "language": null,
+    "emis": "500492766",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-10",
+    "sources": [
+      "https://jensprimaryschool.com/fees"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 23500,
+      "monthly": 2350,
+      "registration": 300,
+      "deposit": 2350,
+      "instalments": 10,
+      "notes": "Independent school, Grade R to Grade 2. 2027 school fee R23,500: paid in full by 1 February 2027, or 4 x R5,875 a term, or 10 x R2,350 a month (February to November). 'Registration' is the R300 application fee for a new learner (R150 for a learner already at the school). 'Deposit' is the non-refundable R2,350 enrolment fee, paid on acceptance to secure the place, due 31 October 2026; the page doesn't say whether it comes off the 2027 fees. Every child also pays a R1,300 book fee, R600 sports, art and culture fee and R200 development fee (by 11 January 2027) and R100 photograph money (by 1 March 2027). Penalties: R100 a month on overdue fees, R100 for a cash payment, and late collection R300 per hour or part after 20 minutes' grace.",
+      "sourceKind": "the 2027 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Book fee",
+        "amount": 1300,
+        "frequency": "yearly",
+        "note": "By 11 January 2027",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Sports, art and culture fee",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "By 11 January 2027",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Development fee",
+        "amount": 200,
+        "frequency": "yearly",
+        "note": "By 11 January 2027",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Photograph money",
+        "amount": 100,
+        "frequency": "yearly",
+        "note": "By 1 March 2027",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Overdue fees penalty",
+        "amount": 100,
+        "frequency": "monthly",
+        "note": "Only if fees are overdue",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Cash payment penalty",
+        "amount": 100,
+        "frequency": "once",
+        "note": "Only if paying cash into the school account",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Late collection",
+        "amount": 300,
+        "frequency": "once",
+        "note": "After 20 minutes' grace, per hour or part",
+        "applies": "penalty",
+        "included": false,
+        "per": "hour"
+      }
+    ]
   }
 ]
