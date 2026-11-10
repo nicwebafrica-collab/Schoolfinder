@@ -1049,7 +1049,7 @@
       el("div", { className: "fact" }, el("div", { className: "label" }, "Monthly fee"), el("strong", {}, monthlyText(s, grade)),
         L.monthlyEstimate(s, grade) !== null ? el("div", { className: "muted small" }, ESTIMATE_NOTE)
           : payments ? el("div", { className: "muted small" }, payments + " payments") : null),
-      fact("Registration", money(f.registration)),
+      fact("Registration", registrationText(s, grade)),
       fact("Once-off to start", startUpText(s, grade)),
       fact("Aftercare", optionalText(s.aftercare)));
 
@@ -1313,7 +1313,11 @@
     // didn't publish them (B63). Still not added to the total.
     function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "See note" : L.UNKNOWN; }
     var hidden = (s.hiddenCosts || []).filter(function (c) { return L.countsInTotal(c, L.costGrade(s, grade)); }).map(function (c) { return costRow(c, true); });
-    var maybe = L.mightAlsoApply(s, grade).map(function (c) { return costRow(c, false); });
+    // Items already inside the school fee get their own short list, not "only some families pay these" (V43-4).
+    var maybe = L.mightAlsoApply(s, grade).filter(function (c) { return !c.included; }).map(function (c) { return costRow(c, false); });
+    var inFee = (s.hiddenCosts || []).filter(function (c) { return c.included; }).map(function (c) { return costRow(c, false); });
+    // A grade whose yearly fee isn't confirmed (Penzance Gr 4-7, V43-1): say so and show the school's note.
+    var gradeNote = grade ? (L.feeRow(s, grade) || {}).note : null;
 
     // B9: the per-month view is an average over 12 months; say so when the school bills over fewer months.
     var monthNote = state.costView === "month" && payments && payments !== 12 && L.isNum(L.monthlyFees(s, grade))
@@ -1322,7 +1326,8 @@
 
     var byGrade = Array.isArray(f.byGrade) && f.byGrade.length
       ? panel("Fees by grade" + (f.year ? " (" + f.year + ")" : ""), el("ul", { className: "rows" }, f.byGrade.map(function (g) {
-          return row(g.grade, money(per(L.yearlyFees({ fees: g }))));
+          var y = L.yearlyFees(s, g.grade);
+          return row(g.grade, y === null && g.note ? unknown("Not confirmed, see note") : money(per(y)));
         }))) : null;
 
     replace([
@@ -1331,7 +1336,7 @@
       el("p", { className: "muted small" }, s.name + (grade ? " · " + grade : "")),
       toggle,
       gradeChips(s, grade, function () { renderCosts(id); }),
-      el("div", { className: "big-money" }, feeText(s, per(L.trueYearlyCost(s, grade)), "No school fees")),
+      el("div", { className: "big-money" }, L.trueYearlyCost(s, grade) === null && gradeNote ? unknown("Not confirmed, see note") : feeText(s, per(L.trueYearlyCost(s, grade)), "No school fees")),
       noFeeLine(s),
       monthNote ? el("p", { className: "muted small" }, monthNote) : null,
       f.unofficial ? el("div", { className: "extras-line" }, icon("alert"), f.sourceNote || "These fees are not from the school itself. Confirm them with the school.") : null,
@@ -1341,14 +1346,20 @@
           ? row("School fees" + (payments ? " (" + payments + " payments a year)" : ""), L.formatRand(L.monthlyFees(s, grade)))
           // Per month with no published instalment: say it's the year split in 12, so it isn't read as the school's
           // monthly amount (V39-1, costs page).
-          : row(state.costView === "month" ? "School fees (yearly\u00a0\u00f7\u00a012)" : "School fees", money(per(L.yearlyFees(s, grade)))),
-        row("Registration (once)", money(f.registration)),
+          : row(state.costView === "month" ? "School fees (yearly\u00a0\u00f7\u00a012)" : "School fees",
+            L.yearlyFees(s, grade) === null && gradeNote ? unknown("Not confirmed, see note") : money(per(L.yearlyFees(s, grade)))),
+        row("Registration (once)", registrationText(s, grade)),
         // Hide the empty deposit row when the deposit is listed as a hidden cost instead.
-        f.deposit == null && (s.hiddenCosts || []).some(function (c) { return /deposit/i.test(c.item); }) ? null : row("Deposit (once)", money(f.deposit))),
+        L.depositFor(s, grade) == null && (s.hiddenCosts || []).some(function (c) { return /deposit/i.test(c.item); }) ? null : row("Deposit (once)", money(L.depositFor(s, grade)))),
+        gradeNote ? el("p", { className: "muted small" }, (grade ? grade + ": " : "") + gradeNote) : null,
         f.notes ? el("p", { className: "muted small" }, f.notes) : null),
       el("section", { className: "panel hidden-panel" },
         el("h2", { className: "hidden-text" }, icon("alert"), "Hidden costs, not on the fee sheet"),
         hidden.length ? el("ul", { className: "rows" }, hidden) : el("p", { className: "empty" }, "No hidden costs found yet. That doesn't mean there are none.")),
+      inFee.length ? el("section", { className: "panel" },
+        el("h2", {}, "Already inside the school fees"),
+        el("p", { className: "muted small" }, "Listed by the school, but part of the fees above, so not added again."),
+        el("ul", { className: "rows" }, inFee)) : null,
       maybe.length ? el("section", { className: "panel" },
         el("h2", {}, "Might also apply to you"),
         el("p", { className: "muted small" }, "Not in the total above: only some families pay these."),
@@ -1416,7 +1427,7 @@
           crow("Extras not on the fee sheet / year", extrasText(A, ga), extrasText(B, gb), true),
           crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
-          crow("Once-off to start", money(L.startUpCosts(A)), money(L.startUpCosts(B))),
+          crow("Once-off to start", money(L.startUpCosts(A, ga)), money(L.startUpCosts(B, gb))),
           crow("Aftercare", optionalText(A.aftercare), optionalText(B.aftercare)),
           crow("Transport", optionalText(A.transport), optionalText(B.transport)),
           crow("Type", A.type || unknown(), B.type || unknown()),
@@ -1515,8 +1526,16 @@
   }
 
   // Start-up cost, or a once-off payment that is already part of the yearly fee (Fourways Gr 8 R7,000).
+  // Registration for the grade, or "R3,000 (part of the yearly fee)" when the school lists it inside the fee (V43-4).
+  function registrationText(s, grade) {
+    var r = L.registrationFor(s, grade);
+    if (L.isNum(r)) return money(r);
+    var inFee = (s.hiddenCosts || []).filter(function (c) { return c.included && /registration/i.test(c.item || "") && L.isNum(c.amount); })[0];
+    return inFee ? L.formatRand(inFee.amount) + " (part of the yearly fee)" : money(null);
+  }
+
   function startUpText(s, grade) {
-    var start = L.startUpCosts(s);
+    var start = L.startUpCosts(s, grade);
     if (L.isNum(start)) return L.formatRand(start);
     var inFee = (s.hiddenCosts || []).filter(function (c) {
       return c.included && c.frequency === "once" && L.isNum(c.amount) && (!grade || L.countsInTotal({ applies: c.applies }, grade));

@@ -4211,52 +4211,62 @@
         {
           "grade": "Gr 1",
           "yearly": 59400,
-          "monthly": 5400
+          "monthly": 5400,
+          "deposit": 6500
         },
         {
           "grade": "Gr 2",
           "yearly": 60500,
-          "monthly": 5500
+          "monthly": 5500,
+          "deposit": 6500
         },
         {
           "grade": "Gr 3",
           "yearly": 61600,
-          "monthly": 5600
+          "monthly": 5600,
+          "deposit": 6500
         },
         {
           "grade": "Gr 4",
           "yearly": 66000,
-          "monthly": 6000
+          "monthly": 6000,
+          "deposit": 6500
         },
         {
           "grade": "Gr 5",
           "yearly": 68200,
-          "monthly": 6200
+          "monthly": 6200,
+          "deposit": 6500
         },
         {
           "grade": "Gr 6",
           "yearly": 70400,
-          "monthly": 6400
+          "monthly": 6400,
+          "deposit": 6500
         },
         {
           "grade": "Gr 7",
           "yearly": 73700,
-          "monthly": 6700
+          "monthly": 6700,
+          "deposit": 6500
         },
         {
           "grade": "Gr 8",
           "yearly": 77000,
-          "monthly": 7000
+          "monthly": 7000,
+          "deposit": 8500
         },
         {
           "grade": "Gr 9",
           "yearly": 79200,
-          "monthly": 7200
+          "monthly": 7200,
+          "deposit": 8500
         },
         {
           "grade": "Gr 10",
           "yearly": 81400,
-          "monthly": 7400
+          "monthly": 7400,
+          "deposit": 8500
         }
       ],
       "sourceKind": "the school's 2026 fee sheet"
@@ -4268,14 +4278,6 @@
         "frequency": "yearly",
         "note": "Every child; High School fee covers Wi-Fi, consumables and stationery but not textbooks",
         "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "High School deposit (new learners)",
-        "amount": 8500,
-        "frequency": "once",
-        "note": "Once-off, non-refundable, on acceptance; Gr 8-10 taken as High School",
-        "applies": "Gr 8-10",
         "included": false
       },
       {
@@ -4427,7 +4429,7 @@
     "lat": -30.545351,
     "lng": 29.418402,
     "website": "https://jensprimaryschool.com/",
-    "phone": "083 357 2513",
+    "phone": null,
     "email": null,
     "language": null,
     "emis": "500492766",

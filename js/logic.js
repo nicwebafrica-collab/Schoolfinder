@@ -27,7 +27,7 @@
 
   var APPLIES_LABELS = {
     optional: "Optional", subject: "Only if your child takes the subject", boarders: "Boarders only",
-    penalty: "Penalty, only if a payment is late or missed", some: "Only some learners"
+    penalty: "Penalty, only if it applies to you", some: "Only some learners"
   };
 
   function isNum(n) {
@@ -157,9 +157,21 @@
   function yearlyFees(school, grade) {
     var f = feeRow(school, grade);
     if (isNum(f.yearly)) return f.yearly;
-    if (isNum(f.monthly)) return f.monthly * (instalments(school, grade) || SCHOOL_MONTHS);
+    // Monthly x payments only when the school says how many payments (V43-1: Penzance Gr 4-7 is R3,570 a month but
+    // its year isn't confirmed, so 12 x R3,570 = "R42,840 a year" would be our number, not the school's).
+    var n = instalments(school, grade);
+    if (isNum(f.monthly) && n) return f.monthly * n;
     return null;
   }
+
+  // Registration and deposit for a grade: the grade's own row when it has one (Charlton: Gr 1-7 R6,500, Gr 8-10
+  // R8,500 deposit, V43-2), otherwise the school's headline figure.
+  function onceFee(school, grade, key) {
+    var f = school.fees || {}, row = feeRow(school, grade);
+    return isNum(row[key]) ? row[key] : isNum(f[key]) ? f[key] : null;
+  }
+  function depositFor(school, grade) { return onceFee(school, grade, "deposit"); }
+  function registrationFor(school, grade) { return onceFee(school, grade, "registration"); }
 
   // Monthly tuition: the stated monthly figure, otherwise yearly / the school's instalments.
   // This is a real instalment (e.g. 10 x R7,950), not a 12-month average.
@@ -207,9 +219,11 @@
 
   // Once-off costs every new child pays when they start (registration, deposit, "once" items for everyone).
   // Boarder-only, optional, penalty and later-grade costs are left out; so are items already inside the fees.
-  function startUpCosts(school) {
-    var f = school.fees || {};
-    var amounts = [f.registration, f.deposit];
+  function startUpCosts(school, grade) {
+    // Registration and deposit follow the picked grade (or the default view's grade); once-off items keep the
+    // entry-grade rule (B62).
+    var g = costGrade(school, grade);
+    var amounts = [registrationFor(school, g), depositFor(school, g)];
     (school.hiddenCosts || []).forEach(function (c) {
       if (normaliseFrequency(c.frequency) === "once" && countsInTotal(c, defaultGrade(school))) amounts.push(c.amount);
     });
@@ -460,7 +474,8 @@
         // What kind of document the main fee was checked against, e.g. "the school's own 2026 fee schedule".
         sourceKind: str(f.sourceKind),
         problems: feeProblems,
-        byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? Object.assign({ grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments) }, evidence(g)) : null; })
+        byGrade: list(f.byGrade, function (g) { g = obj(g); return g && str(g.grade) ? Object.assign({ grade: str(g.grade), yearly: fee(g.yearly, str(g.grade) + " yearly fee"), monthly: fee(g.monthly, str(g.grade) + " monthly fee"), instalments: num(g.instalments),
+          deposit: fee(g.deposit, str(g.grade) + " deposit"), registration: fee(g.registration, str(g.grade) + " registration"), note: longStr(g.note) }, evidence(g)) : null; })
       }, evidence(f)),
       hiddenCosts: list(s.hiddenCosts, cleanCost),
       outings: list(s.outings, function (o) { o = obj(o); return o && str(o.name) ? Object.assign({ name: str(o.name), grades: str(o.grades), cost: parseAmount(o.cost), when: str(o.when), note: longStr(o.note) },
@@ -509,7 +524,7 @@
   var api = {
     setCountry: setCountry, COUNTRY: COUNTRY,
     cleanSchool: cleanSchool, cleanSchools: cleanSchools,
-    UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
+    UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, depositFor: depositFor, registrationFor: registrationFor, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,
     countsInTotal: countsInTotal, entryGrade: entryGrade, headlineGrade: headlineGrade, defaultGrade: defaultGrade, costGrade: costGrade, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
     instalments: instalments, dataProblems: dataProblems,
