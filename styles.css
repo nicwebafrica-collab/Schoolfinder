@@ -146,8 +146,13 @@ main.wide { max-width: 960px; }
 main.has-sticky { padding-bottom: 180px; }
 
 /* Compare */
-.compare-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
-.compare-pick select { width: 100%; }
+.compare-pick { display: grid; grid-template-columns: 1fr; gap: 4px 12px; margin: 12px 0; align-items: start; }
+@media (min-width: 700px) { .compare-pick { grid-template-columns: 1fr 1fr; } }
+.compare-slot { min-width: 0; }
+.compare-slot .search-box { margin: 6px 0 10px; }
+.compare-slot .suggestions { margin-top: -4px; }
+.compare-slot .suggestion { flex-wrap: wrap; column-gap: 8px; padding: 8px 12px; }
+.compare-chosen-name { flex: 1; min-width: 0; padding: 10px 0; font-weight: 700; overflow-wrap: anywhere; }
 .compare-total { background: var(--header-bg); color: #fff; border-radius: var(--radius-card); padding: 16px; margin-bottom: 12px; }
 .compare-total .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .compare-total strong { display: block; font-size: 22px; font-weight: 800; }

@@ -1391,18 +1391,67 @@
     if (state.compareA && state.compareA === state.compareB) state.compareB = "";
     var A = findSchool(state.compareA), B = findSchool(state.compareB);
 
-    // Each picker leaves out the school already chosen in the other one.
+    // Each picker is a search box: type part of a school's name or its area to find it, from every
+    // province (not only the one searched on the home screen). It leaves out the school chosen in the other picker.
     function picker(key, current, label, other) {
-      var sel = el("select", { aria: { label: label } },
-        el("option", { value: "" }, "Choose a school"),
-        schools.slice().sort(function (x, y) { return x.name.localeCompare(y.name); })
-          .filter(function (s) { return s.id !== other; })
-          .map(function (s) { return el("option", { value: s.id, selected: s.id === current }, s.name); }));
-      sel.addEventListener("change", function () {
-        state[key] = sel.value;
-        if (location.hash === "#/compare") renderCompare(); else location.hash = "#/compare";
+      var chosen = findSchool(current);
+      if (chosen) {
+        var change = el("button", { type: "button", className: "in-field-btn", aria: { label: "Change " + label.toLowerCase() } }, icon("close"));
+        change.addEventListener("click", function () {
+          state[key] = "";
+          if (location.hash === "#/compare") renderCompare(); else location.hash = "#/compare";
+          var again = document.getElementById("pick-" + key);
+          if (again) again.focus();
+        });
+        return el("div", { className: "compare-slot" },
+          el("div", { className: "label" }, label),
+          el("div", { className: "search-box compare-chosen" },
+            el("span", { className: "compare-chosen-name" }, chosen.name,
+              el("span", { className: "muted small" }, " " + [chosen.area, chosen.city].filter(Boolean).filter(function (v, i, all) { return all.indexOf(v) === i; }).join(", "))),
+            change));
+      }
+      var input = el("input", { type: "search", id: "pick-" + key, placeholder: "School name or area", maxLength: 100, autocomplete: "off", aria: { label: label + ": search by school name or area" } });
+      var list = el("div", { className: "suggestions", role: "listbox", aria: { label: label + " matches" } });
+      function choose(s) {
+        state[key] = s.id;
+        if (location.hash !== "#/compare") { location.hash = "#/compare"; return; }
+        renderCompare();
+        var next = document.querySelector(".compare-slot input"); // straight on to the other school, if not chosen yet
+        if (next) next.focus();
+      }
+      function draw() {
+        var text = L.normalise(input.value.trim());
+        list.textContent = "";
+        if (!text) return;
+        var found = schools.filter(function (s) {
+          return s.id !== other && [s.name, s.area, s.city, s.address].concat(s.aliases || []).some(function (f) { return L.normalise(f).indexOf(text) !== -1; });
+        }).sort(function (x, y) {
+          // Names that start with what was typed come first, then A to Z.
+          var nx = L.normalise(x.name).indexOf(text) === 0 ? 0 : 1, ny = L.normalise(y.name).indexOf(text) === 0 ? 0 : 1;
+          return nx - ny || x.name.localeCompare(y.name);
+        });
+        found.slice(0, 8).forEach(function (s) {
+          var b = el("button", { type: "button", className: "suggestion", role: "option" }, s.name,
+            el("span", { className: "muted small" }, " " + [s.area, s.city].filter(Boolean).filter(function (v, i, all) { return all.indexOf(v) === i; }).join(", ")));
+          b.addEventListener("click", function () { choose(s); });
+          list.appendChild(b);
+        });
+        if (found.length > 8) list.appendChild(el("p", { className: "muted small" }, (found.length - 8) + " more. Type more of the name to narrow it down."));
+        if (!found.length) list.appendChild(el("p", { className: "muted small" }, "No school matches \u201c" + input.value.trim().slice(0, 40) + "\u201d yet. We're adding more schools all the time."));
+      }
+      input.addEventListener("input", draw);
+      // Enter picks the first match.
+      input.addEventListener("keydown", function (e) {
+        if (e.key !== "Enter") return;
+        var first = list.querySelector("button");
+        if (first) { e.preventDefault(); first.click(); }
       });
-      return sel;
+      // Every province's schools, so a parent can find any school here (each file is fetched once).
+      loadAllAreas().then(function () { if (input.isConnected) draw(); });
+      return el("div", { className: "compare-slot" },
+        el("label", { className: "label", htmlFor: "pick-" + key }, label),
+        el("div", { className: "search-box" }, icon("search"), input),
+        list);
     }
 
     var body;
