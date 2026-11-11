@@ -356,7 +356,48 @@
       "https://schoolhive.co.za/listing/waterfall-college-hillcrest-admissions-contact-details/"
     ],
     "country": "ZA",
-    "emis": "500407777"
+    "emis": "500407777",
+    "facts": {
+      "matric": {
+        "exam": "IEB",
+        "passRate": 100,
+        "passRateYear": null,
+        "by": "school",
+        "source": "https://www.waterfallcollege.co.za/college/",
+        "checked": "2026-11-11"
+      },
+      "classSize": {
+        "text": "14 to 24 learners",
+        "min": 14,
+        "max": 24,
+        "kind": "range stated by school",
+        "source": "https://www.waterfallcollege.co.za/college/learning-experience/",
+        "checked": "2026-11-11"
+      },
+      "subjects": {
+        "grades": "Gr 10-12",
+        "list": [
+          "English Home Language",
+          "Afrikaans or isiZulu First Additional Language",
+          "Mathematics",
+          "Mathematical Literacy",
+          "Physical Sciences",
+          "Life Sciences",
+          "Accounting",
+          "Engineering Graphics and Design",
+          "Business Studies",
+          "History",
+          "Geography",
+          "Consumer Studies",
+          "Dramatic Arts",
+          "Visual Arts",
+          "Tourism (from 2026)",
+          "Life Orientation"
+        ],
+        "source": "https://www.waterfallcollege.co.za/college/learning-experience/",
+        "checked": "2026-11-11"
+      }
+    }
   },
   {
     "id": "curro-hillcrest-primary",
@@ -929,7 +970,15 @@
       "https://schoolhive.co.za/listing/hillcrest-high-school-hillcrest-admissions-contact-details/"
     ],
     "country": "ZA",
-    "emis": "500155400"
+    "emis": "500155400",
+    "facts": {
+      "learners": {
+        "count": 1215,
+        "year": 2025,
+        "source": "DBE School Masterlist Q3 2025",
+        "checked": "2026-11-11"
+      }
+    }
   },
   {
     "id": "hillcrest-primary-school",
@@ -1540,7 +1589,53 @@
       "https://schoolhive.co.za/listing/kearsney-college-bothas-hill-admissions-contact-details/"
     ],
     "country": "ZA",
-    "emis": "500172494"
+    "emis": "500172494",
+    "facts": {
+      "matric": {
+        "exam": "IEB",
+        "passRate": 100,
+        "passRateYear": null,
+        "bachelorRate": 99,
+        "bachelorRateYear": 2025,
+        "by": "school",
+        "source": "https://www.kearsney.com/",
+        "checked": "2026-11-11"
+      },
+      "subjects": {
+        "grades": "Gr 10-12",
+        "list": [
+          "English Home Language",
+          "Afrikaans or isiZulu First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Accounting",
+          "Business Studies",
+          "CAT",
+          "Dramatic Arts",
+          "Engineering Graphics and Design",
+          "Geography",
+          "History",
+          "Information Technology",
+          "Life Sciences",
+          "Music",
+          "Physical Sciences",
+          "Visual Arts"
+        ],
+        "note": "Three electives from 12. Geography is offered in place of a second language to boys who have immigrant status.",
+        "source": "https://www.kearsney.com/college/academics/",
+        "checked": "2026-11-11"
+      },
+      "conduct": {
+        "doc": "https://www.kearsney.com/college/kearsneys-honour-code/",
+        "docKind": "honour code",
+        "points": [
+          "A violation of the Honour Code will result in standard disciplinary action and punishment."
+        ],
+        "note": "No full code of conduct online.",
+        "source": "https://www.kearsney.com/college/kearsneys-honour-code/",
+        "checked": "2026-11-11"
+      }
+    }
   },
   {
     "type": "Public",
@@ -2133,6 +2228,43 @@
         }
       ],
       "sourceKind": "the school's own 2027 charges table"
+    },
+    "facts": {
+      "learners": {
+        "count": 1047,
+        "year": 2025,
+        "note": "whole school, pre-primary to Gr 12",
+        "source": "DBE School Masterlist Q3 2025",
+        "checked": "2026-11-11"
+      },
+      "subjects": {
+        "grades": "Gr 10-12",
+        "list": [
+          "Core Mathematics or Mathematical Literacy",
+          "Afrikaans",
+          "isiZulu",
+          "English",
+          "Life Orientation",
+          "Physical Literacy (PE)",
+          "Accounting",
+          "Design",
+          "Engineering Graphics and Design",
+          "History",
+          "Physical Sciences",
+          "Visual Art",
+          "Business Studies",
+          "Dramatic Arts",
+          "Geography",
+          "Information Technology",
+          "Life Sciences",
+          "Further Studies Mathematics",
+          "Further Studies Physics",
+          "Marine Science (online)",
+          "Further Studies English"
+        ],
+        "source": "https://www.thomasmore.co.za/high-school/",
+        "checked": "2026-11-11"
+      }
     }
   },
   {

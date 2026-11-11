@@ -1069,7 +1069,7 @@
 
     var parts = [
       head, trueCard, zoneBanner(s, dist), facts, rows,
-      outings, care, admissionsPanel(s), sports,
+      outings, care, admissionsPanel(s), sports, factsPanel(s),
       contactPanel(s),
       shareButton(s),
       missing.length ? el("p", { className: "muted small missing-line" }, "Not published yet: " + missing.join(", ")) : null,
@@ -1553,6 +1553,47 @@
   }
 
   // ---------- Shared pieces ----------
+
+  // "Academics and conduct": only for schools with a facts record (pilot). Every line names its source and checked
+  // date; anything missing says "Not published by the school". Never used for sorting, filters or totals.
+  function factsPanel(s) {
+    var f = s.facts;
+    if (!f) return null;
+    var NOT = "Not published by the school";
+    function whereFrom(part) {
+      if (!part || (!part.source && !part.checked)) return null;
+      var safe = L.safeUrl(part.source);
+      return el("div", { className: "muted small source" },
+        part.source ? ["Source: ", safe ? link(safe) : part.source] : null,
+        part.checked ? (part.source ? " \u00b7 " : "") + "Checked on " + niceDate(part.checked) : null);
+    }
+    function item(title, body, part) { return el("div", { className: "fact-block" }, el("h3", {}, title), body, whereFrom(part)); }
+    function none() { return el("p", { className: "unknown" }, NOT); }
+    var m = f.matric, c = f.classSize, l = f.learners, sub = f.subjects, co = f.conduct;
+    var matricOk = m && (L.isNum(m.passRate) || L.isNum(m.bachelorRate));
+    var who = m && m.by === "dbe" ? "DBE report" : "school's figure";
+    function figure(label, rate, year) {
+      return L.isNum(rate) ? el("p", {}, label + " " + rate + "% (" + [year ? String(year) : null, m.exam, who].filter(Boolean).join(", ") + (year ? "" : ", no year given") + ")") : null;
+    }
+    var parts = [
+      item("Matric results", matricOk ? [
+        figure("Matric pass", m.passRate, m.passRateYear), figure("Bachelor's pass", m.bachelorRate, m.bachelorRateYear),
+        L.isNum(m.candidates) ? el("p", {}, m.candidates + " candidates") : null,
+        el("p", { className: "muted small" }, "IEB and DBE are different exams, so compare with care.")] : none(), matricOk ? m : null),
+      item("Class size", c && c.text ? el("p", {}, c.text + " (school's own figure)") : none(), c && c.text ? c : null),
+      item("School size", l && L.isNum(l.count) ? el("p", {}, String(l.count).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " learners" + (l.note ? ", " + l.note : "") + (l.year ? " (" + l.year + ")" : "")) : none(), l && L.isNum(l.count) ? l : null),
+      item("Subjects" + (sub && sub.grades && sub.list.length ? " (" + sub.grades + ")" : ""), sub && sub.list.length ? [
+        el("div", { className: "tags" }, sub.list.map(function (x) { return el("span", { className: "pill light" }, x); })),
+        sub.note ? el("p", { className: "muted small" }, sub.note) : null] : none(), sub && sub.list.length ? sub : null),
+      item("Code of conduct", co && (L.safeUrl(co.doc) || co.points.length) ? [
+        L.safeUrl(co.doc) ? el("p", {}, link(co.doc, "Read the school's " + (co.docKind || "code of conduct"))) : null,
+        co.points.length ? el("ul", { className: "quotes" }, co.points.map(function (q) { return el("li", {}, "\u201c" + q + "\u201d"); })) : null,
+        co.note ? el("p", { className: "muted small" }, co.note) : null] : none(),
+        co && (L.safeUrl(co.doc) || co.points.length) ? co : null)
+    ];
+    return panel("Academics and conduct", parts,
+      el("p", { className: "muted small" }, "For information only. We don't rank schools or use these in totals."));
+  }
 
   function panel(title) {
     var section = el("section", { className: "panel" }, el("h2", {}, title));
