@@ -368,7 +368,13 @@
   // R34,800 (the site's money format). Unknown amounts never show as R0.
   function formatRand(amount) {
     if (!isNum(amount)) return UNKNOWN;
-    return COUNTRY.symbol + Math.round(amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // Whole rands as before. An amount the school printed with cents keeps them (Linpark 10 x R2,373.50, V46-2), so we
+    // never print a rounded figure the school didn't. Our own divisions (R32,500 / 11 = 2954.5454...) still round to the rand.
+    var exactCents = Math.abs(amount * 100 - Math.round(amount * 100)) < 1e-6;
+    var cents = exactCents ? Math.round(amount * 100) : Math.round(amount) * 100;
+    var whole = Math.trunc(cents / 100).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    var part = Math.abs(cents % 100);
+    return COUNTRY.symbol + (cents < 0 && whole.charAt(0) !== "-" ? "-" : "") + whole + (part ? "." + (part < 10 ? "0" : "") + part : "");
   }
 
   // Only allow real web links, so a bad data file can't sneak in a "javascript:" link.
