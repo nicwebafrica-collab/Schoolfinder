@@ -5335,7 +5335,8 @@
     "lastChecked": "2026-11-11",
     "sources": [
       "https://www.weston.co.za/images/Schedule_of_Fees_2026_Weston_New.pdf",
-      "https://www.weston.co.za/admissions/fee-structure.html"
+      "https://www.weston.co.za/admissions/fee-structure.html",
+      "https://www.weston.co.za/"
     ],
     "fees": {
       "year": 2026,
@@ -5344,7 +5345,7 @@
       "registration": 1000,
       "deposit": null,
       "instalments": null,
-      "notes": "Fee-paying public agricultural boys' high school with boarding and day scholars. 2026 tuition R55,060 for every grade. The schedule doesn't write 'per year' next to tuition, but its 'Total Annual Fees for Boarders' is tuition plus boarding (Gr 8-9 R126,472, Gr 10-12 R140,120). Boarders pay R31,618 (Gr 8-9) or R35,030 (Gr 10-12) a term, or R12,647.20 or R14,012 a month. The schedule doesn't list a separate day-scholar total. Fees can be paid over 10 months (January to October); 10%, 5% and 1.5% discounts for paying early are listed, with dates that still say 2025. 'Registration' is the R1,000 non-refundable fee sent with the application. Extras are billed monthly.",
+      "notes": "Fee-paying public agricultural boys' high school with boarding and day scholars. 2026 tuition R55,060 for every grade. The schedule doesn't write 'per year' next to tuition, but its 'Total Annual Fees for Boarders' is tuition plus boarding (Gr 8-9 R126,472, Gr 10-12 R140,120). Boarders pay R31,618 (Gr 8-9) or R35,030 (Gr 10-12) a term, or R12,647.20 or R14,012 a month. The schedule doesn't list a separate day-scholar total. Fees can be paid over 10 months (January to October). 10% off if paid in full by 30 December 2025, 5% by 31 January 2026 (the schedule calls them '2025 annual fees'), 1.5% off termly fees paid in advance. 'Registration' is the R1,000 non-refundable fee sent with the application. Extras are billed monthly.",
       "sourceKind": "the school's 2026 schedule of fees"
     },
     "hiddenCosts": [
