@@ -4518,5 +4518,852 @@
         "per": "hour"
       }
     ]
+  },
+  {
+    "id": "arena-park-secondary",
+    "name": "Arena Park Secondary School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Chatsworth",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4030",
+    "address": "Rose Heights Road, Arena Park, Chatsworth, Durban",
+    "lat": -29.9142,
+    "lng": 30.8765,
+    "website": "https://www.arenaparksecondary.com/",
+    "phone": "031 404 8862",
+    "email": null,
+    "language": null,
+    "emis": "500103526",
+    "country": "ZA",
+    "quintile": "Q5",
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://www.arenaparksecondary.com/school-fees"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 4800,
+      "monthly": 480,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public high school. 2026 school fee R4,800 a year, or 10 equal instalments of R480 a month. Paying in full earlier was cheaper: R4,000 by 31 December 2025 or R4,500 by 31 March 2026.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "clifton-school",
+    "name": "Clifton School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 00-12 (boys)",
+    "area": "Morningside",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4001",
+    "address": "102 Lamert Road, Morningside, Durban",
+    "lat": -29.8265,
+    "lng": 31.0193,
+    "website": "https://www.cliftonschool.co.za/",
+    "phone": "031 312 2147",
+    "email": null,
+    "language": null,
+    "emis": "500117401",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "lastChecked": "2026-11-07",
+    "sources": [
+      "https://www.cliftonschool.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 56920,
+      "monthly": null,
+      "registration": null,
+      "deposit": 4500,
+      "instalments": null,
+      "notes": "Independent boys' school from Grade 00 to Grade 12. 2026 tuition: Gr 00 R56,920, Gr R R85,000, Gr 1 R122,040, Gr 2-3 R133,840, Gr 4-7 R150,120, Gr 8-12 R183,520. On top of tuition each grade pays a development levy, a book charge and accident insurance (amounts differ by grade), plus a voluntary levy (R5,380 Gr 00, R5,700 other grades). 'Deposit' is the once-off acceptance fee, which rises with the grade (R4,500 for Gr 00 up to R11,500 for Gr 8-12). Gr 12 pays a R9,760 IEB exam fee. Weekly boarding for Gr 8-12 is R129,800 a year. A 33% tuition discount applies to the third and later brothers at the school at the same time. The school's page lists the amounts without saying 'per year' or how to pay; they are shown here as yearly amounts (boarding is listed as R129,800 a year or R32,450 a term).",
+      "byGrade": [
+        {
+          "grade": "Gr 00",
+          "yearly": 56920,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 85000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 122040,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 2-3",
+          "yearly": 133840,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 150120,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8-12",
+          "yearly": 183520,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 1138,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 683,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 1284,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 993,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 6230,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 1307,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 6804,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 1412,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 8530,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 1726,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Development levy",
+        "amount": 30302,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Book charge",
+        "amount": 4763,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 920,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Accident insurance",
+        "amount": 1060,
+        "frequency": "yearly",
+        "note": "The school's page doesn't say 'per year'",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Voluntary levy",
+        "amount": 5700,
+        "frequency": "yearly",
+        "note": "Voluntary. R5,380 for Gr 00, R5,700 for Gr R-12. The page doesn't say what it covers",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 9760,
+        "frequency": "once",
+        "note": "Grade 12 only, set by the IEB",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding (Gr 8-12)",
+        "amount": 129800,
+        "frequency": "yearly",
+        "note": "Or R32,450 a term; casual boarding R775 a night",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "durban-girls-college",
+    "name": "Durban Girls' College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 00-12",
+    "area": "Musgrave",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4001",
+    "address": "586 Musgrave Road, Berea, Durban",
+    "lat": -29.835,
+    "lng": 31.0074,
+    "website": "https://www.dgc.co.za/",
+    "phone": "031 268 7233",
+    "email": "info@dgc.co.za",
+    "language": null,
+    "emis": "500125208",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-05",
+    "sources": [
+      "https://dgc.co.za/fees/",
+      "http://dgc.co.za/wp-content/uploads/2025/11/FEE-SCHEDULE-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 79900,
+      "monthly": null,
+      "registration": null,
+      "deposit": 9988,
+      "instalments": null,
+      "notes": "Independent school from Grade 00 to Grade 12. 2026 tuition per year: Gr 00 R79,900, Gr R R85,600, Gr 1-3 R120,400, Gr 4-7 R139,400, Gr 8-12 R170,900. On top of tuition every child pays a development levy of R1,550 a term and R185 a year for accident insurance and Netcare 911. 'Deposit' is the once-off acceptance fee, which rises with the grade (R9,988 for Gr 00 up to R21,363 for Gr 8-12). Gr 12 pays a R9,669 IEB fee. Weekly boarding for Gr 8-12 is R139,400 a year. The development levy is charged every term. The acceptance fee is non-refundable. The school's 2026 fee schedule gives cheaper totals for paying tuition in full by 14 Jan 2026 (e.g. Gr 00 R76,300, Gr 8-12 R163,210), termly payments (Gr 00 R19,975, Gr 8-12 R42,725 a term), or an estimated monthly debit order from January to October that includes other charges (e.g. Gr 00 about R8,800, Gr 8-11 about R17,950, Gr 12 about R18,900).",
+      "byGrade": [
+        {
+          "grade": "Gr 00",
+          "yearly": 79900,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 85600,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 120400,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 139400,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8-12",
+          "yearly": 170900,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "aftercare": {
+      "available": true,
+      "monthly": null,
+      "note": "Per term: full time R4,790; part time R3,485 (over 2 hours a day) or R3,225 (under 2 hours); casual R110 a day"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 1550,
+        "frequency": "per term",
+        "note": "Every child, every grade; charged in terms 1-4 (Capital R1,000 + Facility R550)",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Accident insurance and Netcare 911",
+        "amount": 185,
+        "frequency": "yearly",
+        "note": "Every child",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "IEB exam fee",
+        "amount": 9669,
+        "frequency": "once",
+        "note": "Grade 12 only",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding (Gr 8-12)",
+        "amount": 139400,
+        "frequency": "yearly",
+        "note": "Optional, on top of tuition",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Uniform, stationery, transport, tours",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Not priced on the fees page",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "glenwood-high-school",
+    "name": "Glenwood High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Glenwood",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4001",
+    "address": "1 Nicolson Road, Glenwood, Durban",
+    "lat": -29.8643,
+    "lng": 30.9935,
+    "website": "https://www.glenwoodhighschool.co.za/",
+    "phone": "031 205 5241",
+    "email": null,
+    "language": null,
+    "emis": "500149924",
+    "country": "ZA",
+    "quintile": "Q5",
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://www.glenwoodhighschool.co.za/fees"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 80825,
+      "monthly": 8082.5,
+      "registration": null,
+      "deposit": 3500,
+      "instalments": 10,
+      "notes": "Fee-paying public high school with boarding (Gibson House). 2027 day fees: Grade 8 R82,025 plus a once-off R5,000 Capital Development Levy (the school gives R87,025 including the levy); Grades 9-12 R80,825. Pay in full, per term (Gr 8 R20,506.25, Gr 9-12 R20,206.25), 10 monthly EFT payments January to October (Gr 8 R8,202.50, Gr 9-12 R8,082.50) or 11 debit orders January to November (Gr 8 R7,456.82, Gr 9-12 R7,347.73). Discounts of 3.5% to 7.5% for paying in full early (by 31 December 2026 or 28 February 2027), as listed on the school's page. 'Deposit' is the R3,500 non-refundable acceptance deposit that secures the place; the school says it is not credited to the fee account. New pupils joining in Grade 9 to 12 pay a smaller once-off levy (R4,000 down to R1,000).",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 82025,
+          "monthly": 8202.5
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 80825,
+          "monthly": 8082.5
+        }
+      ],
+      "sourceKind": "the 2027 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Capital Development Levy (Gr 8)",
+        "amount": 5000,
+        "frequency": "once",
+        "note": "Once-off, paid upfront, not discounted or refunded",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Capital Development Levy (new pupils, Gr 9-12)",
+        "amount": 4000,
+        "frequency": "once",
+        "note": "Once-off for new pupils: Gr 9 R4,000, Gr 10 R3,000, Gr 11 R2,000, Gr 12 R1,000",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gibson House)",
+        "amount": 110000,
+        "frequency": "yearly",
+        "note": "On top of day fees; R27,500 a term; excludes the levy",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding",
+        "amount": 6600,
+        "frequency": "monthly",
+        "note": "Instead of full boarding; paid at the start of each month",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "glenwood-preparatory",
+    "name": "Glenwood Preparatory School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Glenwood",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4001",
+    "address": "Bath Road, Glenwood, Durban",
+    "lat": -29.8616,
+    "lng": 30.9944,
+    "website": "https://www.glenwoodprep.co.za/",
+    "phone": "031 201 5165",
+    "email": null,
+    "language": null,
+    "emis": "500246198",
+    "country": "ZA",
+    "quintile": "Q5",
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://www.glenwoodprep.co.za/media/SCHOOL-FEE-OPTION-FORM-2026.pdf",
+      "https://www.glenwoodprep.co.za/media/BE-Fee-Commitment-Form-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 40000,
+      "monthly": 4000,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public primary school. 2026 school fee for Grades 1 to 7: R40,000 a year, or 10 equal instalments of R4,000. The school's form also lists discounts for paying in full early (7.5% or 3.75% by 31 December 2025, 5% or 2.5% by 28 February 2026, depending on EFT or card/cash). The school's boarding commitment form for 2026 gives R60,000 for the year, which can also be paid in 10 instalments (31 January to 31 October).",
+      "sourceKind": "the school's 2026 fee option form"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding",
+        "amount": 60000,
+        "frequency": "yearly",
+        "note": "From the school's 2026 boarding commitment form; can be paid in 10 instalments",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "khethani-christian-school",
+    "name": "Khethani Christian School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr RR-7",
+    "area": "Ingwavuma",
+    "city": "Ingwavuma",
+    "province": "KwaZulu-Natal",
+    "postcode": "3968",
+    "address": "Magistrate Road, Magugu Area, Ingwavuma",
+    "lat": -27.1272,
+    "lng": 32.0316,
+    "website": "https://khethani.co.za/",
+    "phone": null,
+    "email": "info@khethani.co.za",
+    "language": null,
+    "emis": "500493765",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://khethani.co.za/Fee-structures-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 1870,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent Christian school. 2026 fees are listed per month, paid 10 times: Grade RR R1,870, Grade R R2,130, Grade 1-3 R2,410, Grade 4-7 R2,680. 5% off for paying the full fees by 28 February 2026; 5% off for the 2nd child and 10% for the 3rd and more children of the same parents. The school's only published phone number is a cellphone, so we don't show it; use the school's email.",
+      "byGrade": [
+        {
+          "grade": "Gr RR",
+          "yearly": null,
+          "monthly": 1870
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 2130
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 2410
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": null,
+          "monthly": 2680
+        }
+      ],
+      "sourceKind": "the school's 2026 fee sheet"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "linpark-high-school",
+    "name": "Linpark High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Boughton",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3201",
+    "address": "Boughton, Pietermaritzburg",
+    "lat": -29.602,
+    "lng": 30.3158,
+    "website": "https://linparkhighschool.co.za/",
+    "phone": "033 344 1544",
+    "email": null,
+    "language": null,
+    "emis": "500186998",
+    "country": "ZA",
+    "quintile": "Q5",
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://linparkhighschool.co.za/school-fees-scholarships/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 23735,
+      "monthly": 2373.5,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public high school with boarding. 2026 school fee R23,735 per learner a year, or 4 x R5,933.75 a term, or 10 x R2,373.50 a month (January to October). 5% off if paid in full before 28 February 2026 (R22,548.25). Weekly boarding (Monday to Friday) is R210 a day, R550 a weekend, plus an R800 once-off maintenance fee.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding",
+        "amount": 46400,
+        "frequency": "yearly",
+        "note": "Includes an R800 maintenance fee; Term 1 R12,200, Terms 2-4 R11,400 each. The school gives boarding plus school fees as R70,135 a year",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "the-beaches-primary",
+    "name": "The Beaches Primary School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Ballito",
+    "city": "Ballito",
+    "province": "KwaZulu-Natal",
+    "postcode": "4420",
+    "address": "Compensation Station Road, Ballito",
+    "lat": null,
+    "lng": null,
+    "website": "https://beachesprimary.co.za/",
+    "phone": null,
+    "email": "admin@beachesprimary.co.za",
+    "language": null,
+    "emis": "500504717",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://beachesprimary.co.za/admissions-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 3500,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent primary school, Grade R to Grade 7. 2026 fee R3,500 a month, paid in advance. The page doesn't say how many months a year are charged, so we don't show a yearly total. The school's only published phone number is a cellphone, so we don't show it; use the school's email. We have no map pin for this school yet.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "werda-skool",
+    "name": "Werda Skool",
+    "type": "Public",
+    "phase": "Combined",
+    "grades": "Gr RR-12",
+    "area": "Hillary",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4055",
+    "address": "90 Parkside Road, Hillary, Durban",
+    "lat": -29.8875,
+    "lng": 30.9293,
+    "website": "https://werda.co.za/",
+    "phone": "031 464 7801",
+    "email": null,
+    "language": null,
+    "emis": "500295519",
+    "country": "ZA",
+    "quintile": "Q5",
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://werda.co.za/af/skoolgeld/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 23917,
+      "monthly": 2004,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school from Grade RR to Grade 12 (the fee page is in Afrikaans). 2026 fees for the first child: Gr RR-3 R23,917 a year or R2,004 a month by EFT; Gr 4-12 R27,789 a year or R2,329 a month by EFT. By debit order over 11 months (January to November): Gr RR-3 R1,924, Gr 4-12 R2,236 a month. The page doesn't say over how many months the EFT amount is paid. The page also lists discounts of 8% and 6% for paying early, but prints those dates as 2025, so check them with the school. Other children in the family may pay a different amount; ask the school.",
+      "byGrade": [
+        {
+          "grade": "Gr RR-3",
+          "yearly": 23917,
+          "monthly": 2004
+        },
+        {
+          "grade": "Gr 4-12",
+          "yearly": 27789,
+          "monthly": 2329
+        }
+      ],
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "weston-agricultural-college",
+    "name": "Weston Agricultural College",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12 (boys)",
+    "area": "Mooi River",
+    "city": "Mooi River",
+    "province": "KwaZulu-Natal",
+    "postcode": "3300",
+    "address": "R622 Greytown Road, Mooi River",
+    "lat": -29.213,
+    "lng": 30.0378,
+    "website": "https://www.weston.co.za/",
+    "phone": "033 263 1328",
+    "email": "contact@weston.co.za",
+    "language": null,
+    "emis": "500295778",
+    "country": "ZA",
+    "quintile": "Q4",
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-11",
+    "sources": [
+      "https://www.weston.co.za/images/Schedule_of_Fees_2026_Weston_New.pdf",
+      "https://www.weston.co.za/admissions/fee-structure.html"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 55060,
+      "monthly": null,
+      "registration": 1000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public agricultural boys' high school with boarding and day scholars. 2026 tuition R55,060 for every grade. The schedule doesn't write 'per year' next to tuition, but its 'Total Annual Fees for Boarders' is tuition plus boarding (Gr 8-9 R126,472, Gr 10-12 R140,120). Boarders pay R31,618 (Gr 8-9) or R35,030 (Gr 10-12) a term, or R12,647.20 or R14,012 a month. The schedule doesn't list a separate day-scholar total. Fees can be paid over 10 months (January to October); 10%, 5% and 1.5% discounts for paying early are listed, with dates that still say 2025. 'Registration' is the R1,000 non-refundable fee sent with the application. Extras are billed monthly.",
+      "sourceKind": "the school's 2026 schedule of fees"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding (Gr 8-9)",
+        "amount": 71412,
+        "frequency": "yearly",
+        "note": "On top of tuition; the school gives R126,472 a year in total",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding (Gr 10-12)",
+        "amount": 85060,
+        "frequency": "yearly",
+        "note": "On top of tuition; the school gives R140,120 a year in total",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
   }
 ]

@@ -33,7 +33,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 35,
+      "schoolCount": 45,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -70,13 +70,23 @@
         "berea-west-prep",
         "charlton-scholars",
         "penzance-primary",
-        "jens-primary"
+        "jens-primary",
+        "arena-park-secondary",
+        "clifton-school",
+        "durban-girls-college",
+        "glenwood-high-school",
+        "glenwood-preparatory",
+        "khethani-christian-school",
+        "linpark-high-school",
+        "the-beaches-primary",
+        "werda-skool",
+        "weston-agricultural-college"
       ],
       "bounds": [
         -30.545351,
         29.418402,
-        -29.5536,
-        31.0452
+        -27.1272,
+        32.0316
       ]
     }
   ]
