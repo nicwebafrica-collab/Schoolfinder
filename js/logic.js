@@ -416,7 +416,7 @@
     v = obj(v);
     if (!v) return null;
     function src(o) { return { source: str(o.source), checked: str(o.checked) }; }
-    function pct(x) { return isNum(x) && x <= 100 ? x : null; }
+    function pct(x) { return isNum(x) && x >= 0 && x <= 100 ? x : null; }
     var m = obj(v.matric), c = obj(v.classSize), l = obj(v.learners), sub = obj(v.subjects), co = obj(v.conduct);
     return {
       // Each figure keeps its own year: a school can state "100% pass" with no year and "99% bachelor 2025" (Fact Checker).
