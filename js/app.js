@@ -1555,11 +1555,11 @@
   // ---------- Shared pieces ----------
 
   // "Academics and conduct": only for schools with a facts record (pilot). Every line names its source and checked
-  // date; anything missing says "Not published by the school". Never used for sorting, filters or totals.
+  // date. A missing item says "Not published by the school" only when the Fact Checker confirmed it (facts.notPublished),
+  // otherwise "Not checked yet" (V47-1). Never used for sorting, filters or totals.
   function factsPanel(s) {
     var f = s.facts;
     if (!f) return null;
-    var NOT = "Not published by the school";
     function whereFrom(part) {
       if (!part || (!part.source && !part.checked)) return null;
       var safe = L.safeUrl(part.source);
@@ -1568,10 +1568,10 @@
         part.checked ? (part.source ? " \u00b7 " : "") + "Checked on " + niceDate(part.checked) : null);
     }
     function item(title, body, part) { return el("div", { className: "fact-block" }, el("h3", {}, title), body, whereFrom(part)); }
-    function none() { return el("p", { className: "unknown" }, NOT); }
+    function none(key) { return el("p", { className: "unknown" }, f.notPublished.indexOf(key) >= 0 ? "Not published by the school" : "Not checked yet"); }
     var m = f.matric, c = f.classSize, l = f.learners, sub = f.subjects, co = f.conduct;
     var matricOk = m && (L.isNum(m.passRate) || L.isNum(m.bachelorRate));
-    var who = m && m.by === "dbe" ? "DBE report" : "school's figure";
+    var who = m && m.by === "dbe" ? "DBE report" : m && m.by === "school" ? "school's figure" : null;
     function figure(label, rate, year) {
       return L.isNum(rate) ? el("p", {}, label + " " + rate + "% (" + [year ? String(year) : null, m.exam, who].filter(Boolean).join(", ") + (year ? "" : ", no year given") + ")") : null;
     }
@@ -1579,16 +1579,16 @@
       item("Matric results", matricOk ? [
         figure("Matric pass", m.passRate, m.passRateYear), figure("Bachelor's pass", m.bachelorRate, m.bachelorRateYear),
         L.isNum(m.candidates) ? el("p", {}, m.candidates + " candidates") : null,
-        el("p", { className: "muted small" }, "IEB and DBE are different exams, so compare with care.")] : none(), matricOk ? m : null),
-      item("Class size", c && c.text ? el("p", {}, c.text + " (school's own figure)") : none(), c && c.text ? c : null),
-      item("School size", l && L.isNum(l.count) ? el("p", {}, String(l.count).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " learners" + (l.note ? ", " + l.note : "") + (l.year ? " (" + l.year + ")" : "")) : none(), l && L.isNum(l.count) ? l : null),
+        el("p", { className: "muted small" }, "IEB and DBE are different exams, so compare with care.")] : none("matric"), matricOk ? m : null),
+      item("Class size", c && c.text ? el("p", {}, c.text + " (school's own figure)") : none("classSize"), c && c.text ? c : null),
+      item("School size", l && L.isNum(l.count) ? el("p", {}, String(l.count).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " learners" + (l.note ? ", " + l.note : "") + (l.year ? " (" + l.year + ")" : "")) : none("learners"), l && L.isNum(l.count) ? l : null),
       item("Subjects" + (sub && sub.grades && sub.list.length ? " (" + sub.grades + ")" : ""), sub && sub.list.length ? [
         el("div", { className: "tags" }, sub.list.map(function (x) { return el("span", { className: "pill light" }, x); })),
-        sub.note ? el("p", { className: "muted small" }, sub.note) : null] : none(), sub && sub.list.length ? sub : null),
+        sub.note ? el("p", { className: "muted small" }, sub.note) : null] : none("subjects"), sub && sub.list.length ? sub : null),
       item("Code of conduct", co && (L.safeUrl(co.doc) || co.points.length) ? [
         L.safeUrl(co.doc) ? el("p", {}, link(co.doc, "Read the school's " + (co.docKind || "code of conduct"))) : null,
         co.points.length ? el("ul", { className: "quotes" }, co.points.map(function (q) { return el("li", {}, "\u201c" + q + "\u201d"); })) : null,
-        co.note ? el("p", { className: "muted small" }, co.note) : null] : none(),
+        co.note ? el("p", { className: "muted small" }, co.note) : null] : none("conduct"),
         co && (L.safeUrl(co.doc) || co.points.length) ? co : null)
     ];
     return panel("Academics and conduct", parts,

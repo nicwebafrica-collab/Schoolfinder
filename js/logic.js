@@ -428,7 +428,9 @@
       classSize: c ? Object.assign({ text: str(c.text), min: num(c.min), max: num(c.max), kind: str(c.kind) }, src(c)) : null,
       learners: l ? Object.assign({ count: num(l.count), year: num(l.year), note: str(l.note) }, src(l)) : null,
       subjects: sub ? Object.assign({ grades: str(sub.grades), list: list(sub.list, str).slice(0, 40), note: longStr(sub.note) }, src(sub)) : null,
-      conduct: co ? Object.assign({ doc: str(co.doc), docKind: str(co.docKind), points: list(co.points, str).slice(0, 3), note: str(co.note) }, src(co)) : null
+      conduct: co ? Object.assign({ doc: str(co.doc), docKind: str(co.docKind), points: list(co.points, str).slice(0, 3), note: str(co.note) }, src(co)) : null,
+      // Items the Fact Checker looked for and confirmed the school doesn't publish. Anything else missing is "not checked yet".
+      notPublished: list(v.notPublished, str).filter(function (k) { return ["matric", "classSize", "learners", "subjects", "conduct"].indexOf(k) >= 0; })
     };
   }
   // available is true (offered), false (not offered) or null (the school doesn't say). Never guess "not offered".

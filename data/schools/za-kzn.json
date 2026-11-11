@@ -396,7 +396,10 @@
         ],
         "source": "https://www.waterfallcollege.co.za/college/learning-experience/",
         "checked": "2026-11-11"
-      }
+      },
+      "notPublished": [
+        "conduct"
+      ]
     }
   },
   {
@@ -2264,7 +2267,11 @@
         ],
         "source": "https://www.thomasmore.co.za/high-school/",
         "checked": "2026-11-11"
-      }
+      },
+      "notPublished": [
+        "matric",
+        "conduct"
+      ]
     }
   },
   {
