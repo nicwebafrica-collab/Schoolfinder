@@ -449,3 +449,11 @@ main.static-page { max-width: 640px; padding-bottom: 24px; }
 #boot-loading { display: none; }
 .js #boot-loading { display: block; }
 .deep-link .pre-app > :not(#boot-loading) { display: none; } /* shared school link: no home text flash (T10) */
+
+/* Academics and conduct panel (school facts pilot) */
+.fact-block { padding: 10px 0; border-top: 1px solid var(--line); }
+.fact-block:first-of-type { border-top: 0; }
+.fact-block h3 { font-size: 0.95rem; margin: 0 0 4px; }
+.fact-block p { margin: 2px 0; }
+.fact-block .quotes { margin: 6px 0 0; padding-left: 18px; }
+.fact-block .quotes li { margin: 2px 0; font-style: italic; }

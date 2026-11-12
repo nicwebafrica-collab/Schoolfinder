@@ -410,6 +410,29 @@
   function coord(v) { return typeof v === "number" && isFinite(v) ? v : null; }
   function list(v, fn) { return Array.isArray(v) ? v.map(fn).filter(Boolean) : []; }
   function obj(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : null; }
+  // "Academics and conduct" (school-facts/plan.md section 3). Each part keeps its own source and checked date.
+  // null means not published: never guessed. Shown as text only, never used for sorting, filters or totals.
+  function cleanFacts(v) {
+    v = obj(v);
+    if (!v) return null;
+    function src(o) { return { source: str(o.source), checked: str(o.checked) }; }
+    function pct(x) { return isNum(x) && x >= 0 && x <= 100 ? x : null; }
+    var m = obj(v.matric), c = obj(v.classSize), l = obj(v.learners), sub = obj(v.subjects), co = obj(v.conduct);
+    return {
+      // Each figure keeps its own year: a school can state "100% pass" with no year and "99% bachelor 2025" (Fact Checker).
+      // passRateYear / bachelorRateYear: a year, or null for "no year given"; when left out, the matric year applies.
+      matric: m ? Object.assign({ year: num(m.year), exam: str(m.exam), candidates: num(m.candidates), passRate: pct(m.passRate),
+        passRateYear: "passRateYear" in m ? num(m.passRateYear) : num(m.year), bachelorRate: pct(m.bachelorRate),
+        bachelorRateYear: "bachelorRateYear" in m ? num(m.bachelorRateYear) : num(m.year),
+        by: m.by === "dbe" || m.by === "school" ? m.by : null }, src(m)) : null,
+      classSize: c ? Object.assign({ text: str(c.text), min: num(c.min), max: num(c.max), kind: str(c.kind) }, src(c)) : null,
+      learners: l ? Object.assign({ count: num(l.count), year: num(l.year), note: str(l.note) }, src(l)) : null,
+      subjects: sub ? Object.assign({ grades: str(sub.grades), list: list(sub.list, str).slice(0, 40), note: longStr(sub.note) }, src(sub)) : null,
+      conduct: co ? Object.assign({ doc: str(co.doc), docKind: str(co.docKind), points: list(co.points, str).slice(0, 3), note: str(co.note) }, src(co)) : null,
+      // Items the Fact Checker looked for and confirmed the school doesn't publish. Anything else missing is "not checked yet".
+      notPublished: list(v.notPublished, str).filter(function (k) { return ["matric", "classSize", "learners", "subjects", "conduct"].indexOf(k) >= 0; })
+    };
+  }
   // available is true (offered), false (not offered) or null (the school doesn't say). Never guess "not offered".
   function option(v) { v = obj(v); return v ? Object.assign({ available: v.available === true ? true : v.available === false ? false : null, monthly: num(v.monthly) }, evidence(v)) : null; }
 
@@ -488,6 +511,7 @@
         o.applies == null ? {} : { applies: normaliseApplies(str(o.applies)) }, evidence(o)) : null; }),
       aftercare: option(s.aftercare), transport: option(s.transport),
       sports: list(s.sports, str),
+      facts: cleanFacts(s.facts),
       admissions: a ? {
         feederZone: zone ? { radiusKm: num(zone.radiusKm), description: longStr(zone.description) } : null,
         rules: list(a.rules, longStr), applyBy: str(a.applyBy), applyUrl: str(a.applyUrl), source: str(a.source)
