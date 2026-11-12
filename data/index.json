@@ -176,7 +176,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 14,
+      "schoolCount": 13,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -190,14 +190,13 @@
         "fish-hoek-high-school",
         "applewood-preparatory-school",
         "capella-house",
-        "carnegie-house-preparatory-paarl",
         "edgemead-primary-school",
         "ellerton-primary-school"
       ],
       "bounds": [
         -34.172504,
         18.398072,
-        -33.73326,
+        -33.807102,
         19.035857
       ]
     }

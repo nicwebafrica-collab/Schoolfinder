@@ -294,9 +294,9 @@
       "yearly": 33561,
       "monthly": 3051,
       "registration": null,
-      "deposit": 5000,
-      "instalments": null,
-      "notes": "Fee-paying public girls' primary school in Queenstown (Komani). 2026 fee structure: R33,561 a year; R8,390.25 a term (first week of each term); R3,051 a month (by the last school day of each month). The number of monthly instalments is not printed, so ask the school. New pupils pay a R5,000 deposit and then R7,140.25 a term or R2,596.50 a month (R2,596 in November) as printed. A R1,000 settlement discount is allowed if fees are settled in full by 31 January 2026, bringing the year to R32,561. This is the 2026 schedule; no 2027 schedule was found. The school's boarding page gives no amounts and describes boarding at Queenstown Girls' High School.",
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Fee-paying public girls' primary school in Queenstown (Komani). 2026 fee structure: R33,561 a year; R8,390.25 a term (first week of each term); R3,051 a month (by the last school day of each month). New pupils pay a R5,000 deposit, which is part of the R33,561, and then R7,140.25 a term or R2,596.50 a month (R2,596 in November) as printed. A R1,000 settlement discount is allowed if fees are settled in full by 31 January 2026, bringing the year to R32,561. This is the 2026 schedule; no 2027 schedule was found. The school's boarding page gives no amounts and describes boarding at Queenstown Girls' High School.",
       "sourceKind": "the school's 2026 fee schedule"
     },
     "hiddenCosts": []
