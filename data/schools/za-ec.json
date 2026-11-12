@@ -53,5 +53,206 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "bedford-country-school",
+    "name": "Bedford Country School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Pre-Primary-Gr 7",
+    "area": "Bedford",
+    "city": "Bedford",
+    "province": "Eastern Cape",
+    "postcode": "5780",
+    "address": "Graham Street, Bedford",
+    "lat": -32.67759,
+    "lng": 26.08855,
+    "website": "https://www.bedfordcountryschool.co.za/",
+    "phone": "046 685 1605",
+    "email": null,
+    "language": null,
+    "emis": "200601188",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.bedfordcountryschool.co.za/wp-content/uploads/2026/05/2026-TUITION-FEE-STRUCTURE-3.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 35970,
+      "monthly": 3270,
+      "registration": null,
+      "deposit": 1200,
+      "instalments": 11,
+      "notes": "Independent primary school with boarding. 2026 tuition: Grade R R35,970 a year or R3,270 a month for 11 months (January to November), rising to R50,270 a year (R4,570 a month) for Grades 4 to 7. Pre-Primary is R12,870 (1 day), R21,230 (2-3 days) or R29,480 (4-5 days) a year, or R300 a day. A R1,200 non-refundable enrolment fee is paid on acceptance; the sheet doesn't say if it comes off the fees. Boarding (Grades R-7, Monday to Friday) is extra: see the boarding items. The book fee (once-off, Grades R-7) was not yet set on the sheet and is invoiced in Term 1; uniform has no price listed. Ask the school for both.",
+      "byGrade": [
+        {
+          "grade": "Pre-Primary 1 day",
+          "yearly": 12870,
+          "monthly": 1170
+        },
+        {
+          "grade": "Pre-Primary 2-3 days",
+          "yearly": 21230,
+          "monthly": 1930
+        },
+        {
+          "grade": "Pre-Primary 4-5 days",
+          "yearly": 29480,
+          "monthly": 2680
+        },
+        {
+          "grade": "Grade R",
+          "yearly": 35970,
+          "monthly": 3270
+        },
+        {
+          "grade": "Grade 1",
+          "yearly": 44660,
+          "monthly": 4060
+        },
+        {
+          "grade": "Grade 2",
+          "yearly": 47740,
+          "monthly": 4340
+        },
+        {
+          "grade": "Grade 3",
+          "yearly": 49170,
+          "monthly": 4470
+        },
+        {
+          "grade": "Grades 4-7",
+          "yearly": 50270,
+          "monthly": 4570
+        }
+      ],
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding, 4 nights a week",
+        "amount": 50765,
+        "frequency": "yearly",
+        "note": "Or R4,615 a month for 11 months (January to November); on top of tuition",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding, 3 nights a week",
+        "amount": 42020,
+        "frequency": "yearly",
+        "note": "Or R3,820 a month for 11 months (January to November); on top of tuition",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding, 2 nights a week",
+        "amount": 30250,
+        "frequency": "yearly",
+        "note": "Or R2,750 a month for 11 months (January to November); on top of tuition",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Boarding, 1 night a week",
+        "amount": 16225,
+        "frequency": "yearly",
+        "note": "Or R1,475 a month for 11 months (January to November); on top of tuition",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Pre-Primary day rate",
+        "amount": 300,
+        "frequency": "once",
+        "note": "For pre-primary children attending by the day",
+        "applies": "some",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "collegiate-girls-high-school",
+    "name": "Collegiate Girls High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Parsons Hill",
+    "city": "Gqeberha",
+    "province": "Eastern Cape",
+    "postcode": "6001",
+    "address": "Kestell Street, Parsons Hill, Gqeberha",
+    "lat": -33.94978,
+    "lng": 25.58993,
+    "website": "https://www.collegiatehigh.co.za/",
+    "phone": "041 373 7705",
+    "email": null,
+    "language": null,
+    "emis": "200100131",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.collegiatehigh.co.za/uploads/files/School-Fee-Structure-2026-with-EFT-details.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 57156,
+      "monthly": 5196,
+      "registration": 5000,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public girls' high school with a hostel. 2026 school fees R57,156 a year, or R5,196 a month for 11 months (January to November, debit order). Pay the year before 28 February 2026 and the fee is R51,440. New learners pay a R50 application administration fee and a R5,000 admission orientation registration fee. Hostel is extra: R87,000 a year for Grades 8-11 (R78,300 if paid before 28 February 2026) or R21,750 a term; Grade 12 R87,000 (R78,300) or R29,000 before each of the first 3 terms. Hostel leavers in Grades 8-11 who don't give the required notice pay a penalty equal to three months' fees (no rand amount printed). Music (instrument hire or practical music) is R480 a month for 10 months, R1,200 a term or R4,800 a year. Hospitality/Consumer Studies (Food) R550 a year.",
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Hostel fees",
+        "amount": 87000,
+        "frequency": "yearly",
+        "note": "Grades 8-11 and Grade 12; also R21,750 a term (Gr 8-11) or R29,000 for 3 terms (Gr 12); R78,300 if paid before 28 February 2026",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Music instrument hire or practical music",
+        "amount": 4800,
+        "frequency": "yearly",
+        "note": "Only for learners taking music; also R1,200 a term or R480 a month for 10 months",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Hospitality/Consumer Studies (Food) subject fee",
+        "amount": 550,
+        "frequency": "yearly",
+        "note": "Only for learners taking the subject; due by 28 February 2026",
+        "applies": "some",
+        "included": false
+      }
+    ]
   }
 ]

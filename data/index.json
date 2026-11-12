@@ -10,16 +10,18 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 1,
+      "schoolCount": 3,
       "updated": "2026-11",
       "ids": [
-        "clarendon-park-primary-school"
+        "clarendon-park-primary-school",
+        "bedford-country-school",
+        "collegiate-girls-high-school"
       ],
       "bounds": [
         -33.97262,
         25.58833,
-        -33.97262,
-        25.58833
+        -32.67759,
+        26.08855
       ]
     },
     {
@@ -29,7 +31,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 38,
+      "schoolCount": 42,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -69,7 +71,11 @@
         "maryvale-college",
         "mayfair-academy",
         "michael-mount-waldorf-school",
-        "dainfern-college"
+        "dainfern-college",
+        "cotswold-montessori-school",
+        "cresta-college",
+        "glen-austin-high-school",
+        "laerskool-wierdapark"
       ],
       "bounds": [
         -26.7360185101,
@@ -85,7 +91,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 46,
+      "schoolCount": 51,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -133,7 +139,12 @@
         "the-beaches-primary",
         "werda-skool",
         "weston-agricultural-college",
-        "south-coast-academy"
+        "south-coast-academy",
+        "ashton-international-college-ballito",
+        "maritzburg-preparatory-school",
+        "st-gregory-primary-school",
+        "st-henrys-marist-college",
+        "tree-tops-junior-primary-school"
       ],
       "bounds": [
         -30.8726,
@@ -149,7 +160,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 9,
+      "schoolCount": 11,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -160,13 +171,15 @@
         "bergvliet-primary-school",
         "eversdal-primary-school",
         "auburn-house-school",
-        "fish-hoek-high-school"
+        "fish-hoek-high-school",
+        "applewood-preparatory-school",
+        "capella-house"
       ],
       "bounds": [
-        -34.134839,
+        -34.172504,
         18.420551,
         -33.807102,
-        19.029346
+        19.035857
       ]
     }
   ]

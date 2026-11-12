@@ -4019,5 +4019,437 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "cotswold-montessori-school",
+    "name": "Cotswold Montessori School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Pre-primary-Gr 7",
+    "area": "Benoni North",
+    "city": "Benoni",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "51 Dickinson Road, Benoni North, Benoni",
+    "lat": -26.134163,
+    "lng": 28.302516,
+    "website": "https://cotswoldmontessori.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "700400074",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://cotswoldmontessori.co.za/wp-content/uploads/2026/06/Cotswold2026FeesBrochureJuly-Dec.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 6050,
+      "registration": null,
+      "deposit": 4000,
+      "instalments": null,
+      "notes": "Independent Montessori school with preschool and primary (Year 1-7). The fee sheet is headed 'Fee Schedule 2026'. Monthly tuition, paid over 12 months (January to December) in advance on the 1st: 2 to 4 year olds R4,035; 5 year olds R4,100; Pre-primary R4,800; Year 1-3 R6,050; Year 4-7 R6,300. The monthly figure shown is for Year 1-3. A non-refundable R4,000 enrolment fee is paid (shown here as the deposit). Pay the whole year before the end of February for a 5% discount; each pupil after the oldest gets 6% off the listed fees. Early Morning Class, Waiting Class and Aftercare are also billed as a monthly amount for 11 months (R125, R580, R900); that is not listed as a yearly amount, so ask the school. Cash is not accepted.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Preschool (2-4 years)",
+          "yearly": null,
+          "monthly": 4035
+        },
+        {
+          "grade": "Preschool (5 years)",
+          "yearly": null,
+          "monthly": 4100
+        },
+        {
+          "grade": "Pre-primary",
+          "yearly": null,
+          "monthly": 4800
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 6050
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": null,
+          "monthly": 6300
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Early Morning Class (07h00-07h30)",
+        "amount": 14,
+        "frequency": "once",
+        "note": "Per day used",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Waiting Class (12h45-14h30)",
+        "amount": 36,
+        "frequency": "once",
+        "note": "Per day used",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Aftercare (12h45-18h00)",
+        "amount": 69,
+        "frequency": "once",
+        "note": "Per day used",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Vacation Care (preschoolers)",
+        "amount": 70,
+        "frequency": "once",
+        "note": "Per day, preschool holidays only",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Late payment administrative charge",
+        "amount": 100,
+        "frequency": "monthly",
+        "note": "For any month in which fees are not paid by the due date",
+        "applies": "penalty",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "cresta-college",
+    "name": "Cresta College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-school-Gr 12",
+    "area": "Wierdapark",
+    "city": "Centurion",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "164 Springbok Street, Wierdapark, Centurion",
+    "lat": -25.854873,
+    "lng": 28.146428,
+    "website": "https://crestacollege.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "700212233",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://crestacollege.co.za/wp-content/uploads/2026/08/1-Fee-structure-2027-Gr-RRR-9-Final-Web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 49200,
+      "monthly": 4100,
+      "registration": 2500,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school from pre-school to Grade 12. The 2027 fee structure gives an annual amount and a monthly amount for each phase; the sheet does not say how many months the monthly amount is billed. Pre-school R49,200 a year or 4,100 a month; Gr 1-3 R56,400 or 4,700; Gr 4-6 R58,200 or 4,850; Gr 7-9 R62,400 or 5,200. Gr 10-12 is 'ON REQUEST'. Amounts are printed without the R sign except the first. Per learner, non-refundable: R2,500 once-off registration fee and an enrolment fee of R1,000 per year. Aftercare is optional: pre-school R7,700 for 11 months or 700 a month; Gr 1-6 R10,780 for 11 months or 980 a month; Gr 7-9 R13,200 for 11 months or 1,200 a month.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Pre-school",
+          "yearly": 49200,
+          "monthly": 4100
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 56400,
+          "monthly": 4700
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 58200,
+          "monthly": 4850
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": 62400,
+          "monthly": 5200
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare (pre-school), 11 months",
+        "amount": 7700,
+        "frequency": "yearly",
+        "note": "Total for 11 months; monthly option is 700",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare (Gr 1-3), 11 months",
+        "amount": 10780,
+        "frequency": "yearly",
+        "note": "Total for 11 months; monthly option is 980",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare (Gr 4-6), 11 months",
+        "amount": 10780,
+        "frequency": "yearly",
+        "note": "Total for 11 months; monthly option is 980",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare (Gr 7-9), 11 months",
+        "amount": 13200,
+        "frequency": "yearly",
+        "note": "Total for 11 months; monthly option is 1,200",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "glen-austin-high-school",
+    "name": "Glen Austin High School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Glen Austin",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "38 Hampton Road, Glen Austin, Midrand",
+    "lat": -25.979666,
+    "lng": 28.160098,
+    "website": "https://glenaustinhigh.co.za/",
+    "phone": "011 023 7340",
+    "email": "admin@glenaustinhigh.co.za",
+    "language": null,
+    "emis": "700400706",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://glenaustinhigh.co.za/docs/2026-GAH-SchoolFeesStructure2.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 2750,
+      "registration": 1000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Grade R to Grade 12, with an early childhood centre. The 2026 sheet gives three ways to pay tuition: monthly, termly (3% discount) or yearly before 31 January 2026 (6% discount). Because the yearly figures are discounted prices, the grade list shows the monthly fee. Gr R-1: R2,750 a month, R8,003 a term or R31,020 a year; Gr 2-7: R2,850, R8,294 or R32,148; Gr 8: R3,424, R9,963 or R38,623; Gr 12: R4,730, R13,765 or R53,354 (other grades in the grade list). Early childhood RR and RRR programmes are listed separately (full day R2,950 a month). Registration fee: R1,000 for the early childhood centre and preparatory school, R800 for high school. A levy is payable once, due 31 January 2026, and discounts do not apply to it. Sibling discount is 5% per sibling. Late payments attract interest at 18.5%. Bus is paid to a separate account.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R-1",
+          "yearly": null,
+          "monthly": 2750,
+          "registration": 1000
+        },
+        {
+          "grade": "Gr 2-7",
+          "yearly": null,
+          "monthly": 2850,
+          "registration": 1000
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 3424,
+          "registration": 800
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 3532,
+          "registration": 800
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 4050,
+          "registration": 800
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 4644,
+          "registration": 800
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 4730,
+          "registration": 800
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Levy (early childhood and foundation phase)",
+        "amount": 2100,
+        "frequency": "once",
+        "note": "Payable once, due 31 January 2026; discounts do not apply",
+        "applies": "Gr R-7",
+        "included": false
+      },
+      {
+        "item": "Levy (Gr 8-11)",
+        "amount": 2150,
+        "frequency": "once",
+        "note": "Payable once, due 31 January 2026; discounts do not apply",
+        "applies": "Gr 8-11",
+        "included": false
+      },
+      {
+        "item": "After care",
+        "amount": 700,
+        "frequency": "monthly",
+        "note": "Optional; the sheet lists R700 a month for the early childhood centre and for preparatory/high school",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Bus, one way",
+        "amount": 850,
+        "frequency": "monthly",
+        "note": "Paid to a separate account",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Bus, morning and afternoon",
+        "amount": 1600,
+        "frequency": "monthly",
+        "note": "Paid to a separate account",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "laerskool-wierdapark",
+    "name": "Laerskool Wierdapark",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Centurion",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "256 Willem Botha, Wierdapark, Centurion, Pretoria",
+    "lat": -25.854576,
+    "lng": 28.141146,
+    "website": "https://www.laerskoolwierdapark.co.za/",
+    "phone": "012 654 3350",
+    "email": null,
+    "language": null,
+    "emis": "700210856",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.laerskoolwierdapark.co.za/wp-content/uploads/2026/02/SKOOLGELDE-VIR-2026-VIR-WEBSITE.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 39215,
+      "monthly": 3565,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public primary school (Afrikaans fee sheet) with a Naskool (after-school care). 2026 school fees are paid in equal instalments from January to November 2026. Grade R: R39,215 a year (printed as 'R39 215.00.00') or R3,565 a month; Grade 1-6: R32,890 a year or R2,990 a month; Grade 7: R33,440 a year or R3,040 a month. Pay in full by 28 February 2026 for a once-off discount: Gr R R1,960.75 (so R37,254.25), Gr 1-6 R1,644.50 (R31,245.50), Gr 7 R1,672 (R31,768). There is 2.5% off for debit order accounts, credited monthly, and 5% off school fees for families with 3 or more learners. Naskool is optional, by debit order only: R15,290 a year or R1,390 a month, plus a R150 Naskool registration fee.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 39215,
+          "monthly": 3565
+        },
+        {
+          "grade": "Gr 1-6",
+          "yearly": 32890,
+          "monthly": 2990
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 33440,
+          "monthly": 3040
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Naskool (after-school care)",
+        "amount": 15290,
+        "frequency": "yearly",
+        "note": "Optional; debit order only; paid in equal instalments from January to November 2026, R1,390 a month",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]

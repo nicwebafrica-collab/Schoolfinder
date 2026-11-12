@@ -47,6 +47,7 @@
     { name: "Chatsworth", region: "KZN", lat: -29.9120, lng: 30.8850, note: "Durban" },
     { name: "Ballito", region: "KZN", lat: -29.5390, lng: 31.2140 },
     { name: "Mooi River", region: "KZN", lat: -29.2100, lng: 29.9940 },
+    { name: "Estcourt", region: "KZN", lat: -29.0100, lng: 29.8700 },
     { name: "Ingwavuma", region: "KZN", lat: -27.1340, lng: 32.0000 },
     // Gauteng
     { name: "Pretoria", region: "Gauteng", lat: -25.7460, lng: 28.1880, aliases: ["pta", "tshwane"] },
@@ -72,6 +73,7 @@
     { name: "Krugersdorp", region: "Gauteng", lat: -26.0857, lng: 27.7750 },
     { name: "Roodepoort", region: "Gauteng", lat: -26.1625, lng: 27.8725 },
     { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 },
+    { name: "Benoni", region: "Gauteng", lat: -26.1885, lng: 28.3208 },
     // Western Cape (centres from the DBE school list's own locations, 2025 Q3)
     { name: "Cape Town", region: "Western Cape", lat: -33.9249, lng: 18.4241, aliases: ["kaapstad", "cpt"] },
     { name: "Bergvliet", region: "Western Cape", lat: -34.0522, lng: 18.4587, note: "Cape Town" },
@@ -84,8 +86,10 @@
     { name: "Franschhoek", region: "Western Cape", lat: -33.8943, lng: 19.1069, aliases: ["franshoek"] },
     { name: "Edgemead", region: "Western Cape", lat: -33.8727, lng: 18.5491, note: "Cape Town" },
     { name: "Pinelands", region: "Western Cape", lat: -33.9384, lng: 18.5098, note: "Cape Town" },
+    { name: "Grabouw", region: "Western Cape", lat: -34.1532, lng: 19.0153 },
     // Eastern Cape
-    { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] }
+    { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] },
+    { name: "Bedford", region: "Eastern Cape", lat: -32.6797, lng: 26.0856 }
   ];
 
   var RADII = [2, 5, 10, 20]; // km choices offered on the search screen

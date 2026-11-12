@@ -1107,5 +1107,176 @@
       "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "applewood-preparatory-school",
+    "name": "Applewood Preparatory School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Apple Blossoms-Gr 7",
+    "area": "Grabouw",
+    "city": "Grabouw",
+    "province": "Western Cape",
+    "postcode": "7180",
+    "address": "10 Appletiser Road, Grabouw",
+    "lat": -34.172504,
+    "lng": 19.035857,
+    "website": "https://www.applewood.co.za/",
+    "phone": "021 848 9121",
+    "email": null,
+    "language": null,
+    "emis": "114007201",
+    "country": "ZA",
+    "quintile": 2,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.applewood.co.za/_files/ugd/b6b20c_a5f80813d9084bb5bfc0eb5ad78a2a7c.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 40590,
+      "monthly": 3690,
+      "registration": 300,
+      "deposit": 3000,
+      "instalments": 11,
+      "notes": "Independent school, Apple Blossoms to Grade 7. 2026 fees: Apple Blossoms R40,590 a year or R3,690 a month for 11 months (January to November); fees rise by grade up to R91,300 a year for Grades 4 to 7 (see grade list). Part-week places for Apple Blossoms: 2 days R22,990, 3 days R27,830, 4 days R33,000 a year. Annual payment by 31 January gets a 2.5% discount on school fees. R300 application fee, non-refundable, paid with the application. R3,000 non-refundable acceptance fee per child enrolled, which the sheet doesn't say comes off the fees. A swimming pool levy of R180 per child per month is not included in the fees; the sheet doesn't say for how many months or who pays, so ask the school.",
+      "byGrade": [
+        {
+          "grade": "Apple Blossoms",
+          "yearly": 40590,
+          "monthly": 3690
+        },
+        {
+          "grade": "Apple Pips",
+          "yearly": 44990,
+          "monthly": 4090
+        },
+        {
+          "grade": "Busy Bees",
+          "yearly": 44990,
+          "monthly": 4090
+        },
+        {
+          "grade": "Grade R",
+          "yearly": 62810,
+          "monthly": 5710
+        },
+        {
+          "grade": "Grades 1-2",
+          "yearly": 79420,
+          "monthly": 7220
+        },
+        {
+          "grade": "Grade 3",
+          "yearly": 82940,
+          "monthly": 7540
+        },
+        {
+          "grade": "Grades 4-7",
+          "yearly": 91300,
+          "monthly": 8300
+        }
+      ],
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "capella-house",
+    "name": "Capella House",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Pre 1/2-Gr 6",
+    "area": "Sunnydale",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7975",
+    "address": "Banks Road, Sunnydale, Fish Hoek",
+    "lat": -34.131976,
+    "lng": 18.432249,
+    "website": "https://capellahouse.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "100000271",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://capellahouse.co.za/wp-content/uploads/2026/05/2026-Capella-Fees-Schedule.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 4315,
+      "registration": null,
+      "deposit": 7000,
+      "instalments": null,
+      "notes": "Independent primary school, Pre 1/2 to Grade 6. 2026 fees: Pre 1/2 R4,315 a month for 12 payments (5 January to 1 December), rising to R6,470 a month in Grade 6. The monthly amount includes the Development and Stationery Fee. Other options, also including that fee: 4 termly payments with a 3% discount (Pre 1/2 R12,617) or 1 annual payment with a 5% discount (Pre 1/2 R49,592); all grades are in the grade list. The sheet doesn't print the yearly fee before discount. A R7,000 Acceptance Fee (once-off, non-refundable) applies for children enrolling from 1 January 2024. Younger siblings get 7% off school fees and 50% off the Acceptance Fee. Bi-annual payment (5 January and 1 July) gets 3.5% off.",
+      "byGrade": [
+        {
+          "grade": "Pre 1/2",
+          "yearly": null,
+          "monthly": 4315
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 4680
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 4960
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 5260
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 5580
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 5880
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 6180
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 6470
+        }
+      ],
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": []
   }
 ]

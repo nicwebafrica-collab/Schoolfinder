@@ -5582,5 +5582,678 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "ashton-international-college-ballito",
+    "name": "Ashton International College Ballito",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-Form 5",
+    "area": "Ballito",
+    "city": "Ballito",
+    "province": "KwaZulu-Natal",
+    "postcode": "4420",
+    "address": "Abertina Way, Ballito",
+    "lat": -29.5307,
+    "lng": 31.2008,
+    "website": "https://ashtonballito.co.za/",
+    "phone": "032 946 2096",
+    "email": null,
+    "language": null,
+    "emis": "500413586",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://ashtonballito.co.za/site/pdfs/2026-school-fees/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 50620,
+      "monthly": null,
+      "registration": null,
+      "deposit": 4000,
+      "instalments": null,
+      "notes": "Independent school; fees shown are for the youngest group, Gr 0000 (turning 3). The 2027 sheet has a yearly column and a monthly column headed 'INSTALMENTS X 12 (NO DISCOUNT)'; Form 5 pays over 11 months, January to November. Fees differ by grade (see grade list), from R50,620 a year for Gr 0000 to R158,000 for Form 5. A non-refundable enrolment fee of R4,000 is payable on acceptance. Discounts: 5% per annum for payment before 7 January; 10% from the 2nd biological child. Adventure Club (Gr 0000 to Gr 3, optional, paid over ten months Feb to Nov): full time R1,680, three times a week R1,010, half day R840, day visitor R110 per day. Exam fees (Cambridge/IEB) and items such as textbooks, stationery, uniform and excursions are extra; the exam fee lines are hard to match to subjects, so ask the school. A 12-instalment option is also printed; it adds up to more than the yearly fee.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": 50620,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": 57460,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 57460,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 73420,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 82540,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 95760,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 98150,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 111490,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 113890,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 120160,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 123230,
+          "monthly": null
+        },
+        {
+          "grade": "Form 1",
+          "yearly": 124150,
+          "monthly": null
+        },
+        {
+          "grade": "Form 2",
+          "yearly": 134060,
+          "monthly": null
+        },
+        {
+          "grade": "Form 3",
+          "yearly": 136000,
+          "monthly": null
+        },
+        {
+          "grade": "Form 4",
+          "yearly": 154470,
+          "monthly": null
+        },
+        {
+          "grade": "Form 5",
+          "yearly": 158000,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Adventure Club, full time",
+        "amount": 1680,
+        "frequency": "yearly",
+        "note": "Optional; annual registration paid over ten months (Feb to Nov); Gr 0000 to Gr 3",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Adventure Club, three times a week",
+        "amount": 1010,
+        "frequency": "yearly",
+        "note": "Optional; annual registration paid over ten months (Feb to Nov)",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Adventure Club, half day",
+        "amount": 840,
+        "frequency": "yearly",
+        "note": "Optional; annual registration paid over ten months (Feb to Nov)",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Adventure Club, day visitor",
+        "amount": 110,
+        "frequency": "once",
+        "note": "Optional; per day visit",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "maritzburg-preparatory-school",
+    "name": "Maritzburg Preparatory School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr RRR-4",
+    "area": "Bisley",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3201",
+    "address": "498 Alexandra Road, Bisley, Pietermaritzburg",
+    "lat": -29.6463,
+    "lng": 30.3837,
+    "website": "https://maritzburgprep.co.za/",
+    "phone": "033 346 0763",
+    "email": "admin@maritzburgprep.co.za",
+    "language": null,
+    "emis": "500103267",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://maritzburgprep.co.za/wp-content/uploads/2026/05/Maritzburg-Prep-Fee-Schedule-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 33220,
+      "monthly": 3020,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Independent school, Pre-School (Gr RRR/RR and Gr R) and Gr 1 to 4; Gr 5 is added in 2028, Gr 6 in 2029 and Gr 7 in 2030. Fees shown are for Pre-School Gr RRR/RR: R33,220 a year, or R3,020 a month (the sheet says 'Per Annum 11 months'; fees run 1 January to 1 November 2027). Fees differ by grade (see grade list). Every learner also pays medical insurance R240 and ISASA R240 (each once-off, in January) and Pop Up (outings, shows, events) R440 a year. A stationery fee is due by 1 November 2026 (Gr RR/RRR R1,450; Gr R R1,700; Gr 1 to 3 R2,050; Gr 4 R2,250); the sheet does not say how often, so ask the school. Optional aftercare: R750 a month for 10 months (February to November), or R75 per day casual. Early settlement discounts exist; contact the bursar before 1 December 2026. The sheet lists no registration or enrolment fee.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr RRR/RR",
+          "yearly": 33220,
+          "monthly": 3020
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 37675,
+          "monthly": 3425
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 43560,
+          "monthly": 3960
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 46750,
+          "monthly": 4250
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Medical insurance",
+        "amount": 240,
+        "frequency": "once",
+        "note": "Paid in January",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "ISASA (Independent School Association fee)",
+        "amount": 240,
+        "frequency": "once",
+        "note": "Paid in January",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Pop Up (outings, shows, events)",
+        "amount": 440,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Aftercare, casual daily rate",
+        "amount": 75,
+        "frequency": "once",
+        "note": "Optional; per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "st-gregory-primary-school",
+    "name": "St Gregory Primary School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr RRR-7",
+    "area": "Estcourt",
+    "city": "Estcourt",
+    "province": "KwaZulu-Natal",
+    "postcode": "3310",
+    "address": "99 Victoria Street, Estcourt",
+    "lat": -29.01,
+    "lng": 29.877,
+    "website": "https://www.stgregory.co.za/",
+    "phone": "036 352 6637",
+    "email": "office@stgregory.co.za",
+    "language": null,
+    "emis": "500413216",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.stgregory.co.za/wp-content/uploads/2026/10/School-Fees-for-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 21750,
+      "monthly": 1980,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Independent school, pre-school to Gr 7, in Estcourt. Fees shown are for Pre-school Gr RRR & RR: R21,750 a year, or 4 quarterly payments of R5,437.50, or R1,980 a month over 11 months (15 January to 15 November 2027). Fees differ by grade (see grade list). The school says its fees include education, sport fixtures, excursions, art supplies, 2027 textbooks and learner accident insurance. Discounts: 5% off all fees if paid in full by the end of February; sibling discounts on full fees of 5% for the 2nd child, 7.5% for the 3rd and 10% for the 4th. Fees are due in advance, at the start of each month or term. Cash is not accepted at the office. The sheet lists no registration, deposit or other levies.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Pre-school Gr RRR & RR",
+          "yearly": 21750,
+          "monthly": 1980
+        },
+        {
+          "grade": "Pre-school Gr R R",
+          "yearly": 24650,
+          "monthly": 2241
+        },
+        {
+          "grade": "Gr 1-5",
+          "yearly": 42750,
+          "monthly": 3890
+        },
+        {
+          "grade": "Gr 6-7",
+          "yearly": 44000,
+          "monthly": 4000
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "st-henrys-marist-college",
+    "name": "St Henry's Marist College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Little Lions-Gr 12",
+    "area": "Westridge",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4058",
+    "address": "210 South Ridge Road, Westridge, Berea, Durban",
+    "lat": -29.857,
+    "lng": 30.9857,
+    "website": "https://www.sthenrys.co.za/",
+    "phone": "031 261 7369",
+    "email": null,
+    "language": null,
+    "emis": "500199689",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.sthenrys.co.za/docs/Fee-Structure.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 61960,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Little Lions to Gr 12; boarding for boys in Gr 7 to 12. Fees shown are for Little Lions (also Gr 000, Gr 00 and Gr R): R61,960 a year, or 4 termly payments of R15,490, or R6,196 for 10 months. Monthly options over 11 or 12 months are debit order only and interest bearing, so no single monthly figure is shown. Fees differ by grade (see grade list), up to R161,890 for Gr 10 to 12. A Capital Development Levy is charged per family: R4,000 for one child, R6,000 for more than one child (lump sum or over ten months). Discounts (school fees only, one type per student): 6% if the full annual fee is paid by 31 December 2026, 5% by 31 January 2027; 5% sibling discount for the 2nd and further children. Interest of 2% per month applies to overdue accounts. Notice period is one term. The sheet lists no registration or deposit.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Little Lions-Gr R",
+          "yearly": 61960,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 84100,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 94670,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-5",
+          "yearly": 108180,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 6-7",
+          "yearly": 120160,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 143060,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 161890,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Capital Development Levy",
+        "amount": 4000,
+        "frequency": "yearly",
+        "note": "Per family; R6,000 for a family with more than one child; may be paid over ten months",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Alumni Levy",
+        "amount": 300,
+        "frequency": "yearly",
+        "note": "Each student in Gr 10 to 12",
+        "applies": "Gr 10-12",
+        "included": false
+      },
+      {
+        "item": "IEB Grade 12 examination fee",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Levied in Gr 11; 7 subjects, including VAT; R1,800 for each subject beyond seven",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding (boys, Gr 7-12)",
+        "amount": 122300,
+        "frequency": "yearly",
+        "note": "Also payable as R12,230 for 10 months",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Full-time boarding (boys, Gr 7-12)",
+        "amount": 143000,
+        "frequency": "yearly",
+        "note": "Also payable as R14,300 for 10 months",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Temporary boarding",
+        "amount": 920,
+        "frequency": "once",
+        "note": "By arrangement only; R4,010 per week",
+        "applies": "boarders",
+        "included": false,
+        "per": "night"
+      },
+      {
+        "item": "Aftercare Pre-Prep/Junior Prep, 5 days a week until 14h30",
+        "amount": 11500,
+        "frequency": "yearly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Pre-Prep/Junior Prep, 5 days a week until 15h30",
+        "amount": 13800,
+        "frequency": "yearly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Pre-Prep/Junior Prep, 5 days a week until 17h00",
+        "amount": 22900,
+        "frequency": "yearly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Senior Prep, 5 days a week until 17h00",
+        "amount": 11600,
+        "frequency": "yearly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Transport, South Route: Amanzimtoti",
+        "amount": 21600,
+        "frequency": "yearly",
+        "note": "Optional bus",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Transport, South Route: Bluff",
+        "amount": 16200,
+        "frequency": "yearly",
+        "note": "Optional bus",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Transport, North Route: North of Umgeni River",
+        "amount": 22680,
+        "frequency": "yearly",
+        "note": "Optional bus",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Transport, North Route: Morningside",
+        "amount": 15120,
+        "frequency": "yearly",
+        "note": "Optional bus",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Transport, Upper Highway",
+        "amount": 23760,
+        "frequency": "yearly",
+        "note": "Optional bus",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Late collection fee",
+        "amount": 190,
+        "frequency": "once",
+        "note": "Per hour or part thereof",
+        "applies": "penalty",
+        "included": false,
+        "per": "hour"
+      },
+      {
+        "item": "Unpaid debit order charge",
+        "amount": 250,
+        "frequency": "once",
+        "note": "Bank charge",
+        "applies": "penalty",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "tree-tops-junior-primary-school",
+    "name": "Tree Tops Junior Primary School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Tree Tots-Gr 4",
+    "area": "Berea",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4001",
+    "address": "74 Silverton Road, Berea, Durban",
+    "lat": -29.848498,
+    "lng": 30.997779,
+    "website": "https://treetops.org.za/",
+    "phone": "031 201 7305",
+    "email": null,
+    "language": null,
+    "emis": "500497354",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://treetops.org.za/wp-content/uploads/2027_Fees_Schedule_Info.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 40960,
+      "monthly": 4096,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Independent school, Tree Tots (from 18 months) to Gr 4. Fees shown are for Tree Tots: R40,960 a year, or R4,096 a month for 10 months (January to October), or 4 termly payments of R10,240. Fees differ by grade (see grade list). Paying the annual fee by 31 January earns a 2.5% discount (Tree Tots R39,936). Sibling discount: R1,200 a year (R300 a term) on school fees for younger siblings only. Levies are listed without saying how often, so ask the school: sports levy R2,500 (Gr 1 to 4), accident insurance R250, toiletry levy R600, and stationery levies that vary by grade and whose figures are hard to match. Cash is not accepted. The sheet lists no registration or deposit.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Tree Tots (from 18 months)",
+          "yearly": 40960,
+          "monthly": 4096
+        },
+        {
+          "grade": "Gr 0000/000",
+          "yearly": 50580,
+          "monthly": 5058
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 55176,
+          "monthly": 5517.6
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 60192,
+          "monthly": 6019.2
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 67300,
+          "monthly": 6730
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 76700,
+          "monthly": 7670
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare Junior Primary (Gr 1-3) until 2.30 pm",
+        "amount": 900,
+        "frequency": "per term",
+        "note": "Optional; 4 or 5 days a week",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Pre-Primary & Gr R until 2.30 pm",
+        "amount": 1820,
+        "frequency": "per term",
+        "note": "Optional; 4 or 5 days a week",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Junior Primary (Gr 1-3) until 5.00 pm",
+        "amount": 3360,
+        "frequency": "per term",
+        "note": "Optional; 4 or 5 days a week",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Pre-Primary & Gr R until 5.00 pm",
+        "amount": 3860,
+        "frequency": "per term",
+        "note": "Optional; 4 or 5 days a week",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Senior Primary (Gr 4) until 5.00 pm",
+        "amount": 2500,
+        "frequency": "per term",
+        "note": "Optional; 4 or 5 days a week",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]
