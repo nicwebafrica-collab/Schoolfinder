@@ -34,7 +34,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 62,
+      "schoolCount": 63,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -98,7 +98,8 @@
         "rand-park-high-school",
         "brooklyn-primary-school",
         "anchorage-academy",
-        "addnum-academy"
+        "addnum-academy",
+        "blue-hills-college"
       ],
       "bounds": [
         -26.7360185101,

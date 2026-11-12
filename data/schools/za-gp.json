@@ -6147,5 +6147,90 @@
         "per": "day"
       }
     ]
+  },
+  {
+    "id": "blue-hills-college",
+    "name": "Blue Hills College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Blue Hills",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "16 Summit Road, Blue Hills, Midrand",
+    "lat": -25.932425,
+    "lng": 28.079227,
+    "website": "https://bluehillscollege.co.za/",
+    "phone": "011 318 7955",
+    "email": null,
+    "language": null,
+    "emis": "700133694",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://bluehillscollege.co.za/admin/add_prospectus/uploads/1761731252Gr. R Fees 2026.pdf",
+      "https://bluehillscollege.co.za/admin/add_prospectus/uploads/1761731557Fee Gr. 1 - 7 2026.pdf",
+      "https://bluehillscollege.co.za/admin/add_prospectus/uploads/1761729811BHC SCHOOL FEES STRUCTURE (2025).pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 50930,
+      "monthly": 4630,
+      "registration": 4000,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Independent school with boarding, Grade R to 12. 2026 fees for South African (national) students: Grade R R50,930 a year or R4,630 a month for 11 months (January to November); Grade 1-7 R68,145 a year or R6,195 a month for 11 months. Registration R4,000 (Grade R-7) or R6,000 (Grade 8-12), non-refundable. Grade 8-12 day scholars pay R5,590 to R6,100 a month and boarders R11,585 to R12,260 a month (11 payments, a larger first payment in January), plus a R7,000 development levy, R4,000 modules and stationery and a R2,500 sports levy a year. International students pay more. 5% off if paid in full by 31 January 2026; 5% sibling discount on tuition.",
+      "sourceKind": "the school's 2026 fee structures",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 50930,
+          "monthly": 4630
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 68145,
+          "monthly": 6195
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy (Grade 8-12)",
+        "amount": 7000,
+        "frequency": "yearly",
+        "note": "Non-refundable",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Modules and stationery (Grade 8-12)",
+        "amount": 4000,
+        "frequency": "yearly",
+        "note": "",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Sports levy (Grade 8-12)",
+        "amount": 2500,
+        "frequency": "yearly",
+        "note": "Non-refundable",
+        "applies": "Gr 8-12",
+        "included": false
+      }
+    ]
   }
 ]
