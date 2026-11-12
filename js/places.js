@@ -74,6 +74,8 @@
     { name: "Roodepoort", region: "Gauteng", lat: -26.1625, lng: 27.8725 },
     { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 },
     { name: "Benoni", region: "Gauteng", lat: -26.1885, lng: 28.3208 },
+    { name: "Kempton Park", region: "Gauteng", lat: -26.1000, lng: 28.2300, aliases: ["kemptonpark"] },
+    { name: "Meyerton", region: "Gauteng", lat: -26.5582, lng: 28.0150 },
     // Western Cape (centres from the DBE school list's own locations, 2025 Q3)
     { name: "Cape Town", region: "Western Cape", lat: -33.9249, lng: 18.4241, aliases: ["kaapstad", "cpt"] },
     { name: "Bergvliet", region: "Western Cape", lat: -34.0522, lng: 18.4587, note: "Cape Town" },
@@ -87,9 +89,11 @@
     { name: "Edgemead", region: "Western Cape", lat: -33.8727, lng: 18.5491, note: "Cape Town" },
     { name: "Pinelands", region: "Western Cape", lat: -33.9384, lng: 18.5098, note: "Cape Town" },
     { name: "Grabouw", region: "Western Cape", lat: -34.1532, lng: 19.0153 },
+    { name: "Paarl", region: "Western Cape", lat: -33.7342, lng: 18.9621 },
     // Eastern Cape
     { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] },
-    { name: "Bedford", region: "Eastern Cape", lat: -32.6797, lng: 26.0856 }
+    { name: "Bedford", region: "Eastern Cape", lat: -32.6797, lng: 26.0856 },
+    { name: "Queenstown", region: "Eastern Cape", lat: -31.8976, lng: 26.8753, aliases: ["komani"] }
   ];
 
   var RADII = [2, 5, 10, 20]; // km choices offered on the search screen

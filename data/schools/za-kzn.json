@@ -6330,5 +6330,51 @@
     "aliases": [
       "Tree Tops Junior Primary"
     ]
+  },
+  {
+    "id": "athlone-primary-school",
+    "name": "Athlone Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Wembley",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": "3202",
+    "address": "1 Old Howick Road, Wembley, Pietermaritzburg",
+    "lat": -29.5872,
+    "lng": 30.3507,
+    "website": "https://athloneprimary.co.za/",
+    "phone": "033 342 9530",
+    "email": "reception@athloneprimary.co.za",
+    "language": null,
+    "emis": "500104266",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://athloneprimary.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 35952,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public primary school in Wembley, Pietermaritzburg. Annual school fee R35,952 per learner. Pay in full before 31 January 2026 and get R2,876.16 off, or before 28 February 2026 and get R2,516.64 off. A ten-monthly payment option is printed but with 2025 dates, so it is not shown here; ask the school. Families with 3 or more children get a 6% discount (R215.71 a month): ten monthly payments of R2,157.10 per child, 31 January 2026 to 31 October 2026. Parents set up their own debit order. The page lists no registration fee, aftercare or other levies, and gives no grades.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": []
   }
 ]
