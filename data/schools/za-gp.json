@@ -3924,7 +3924,7 @@
       "yearly": 113770,
       "monthly": null,
       "registration": 500,
-      "deposit": 12500,
+      "deposit": 25000,
       "instalments": null,
       "notes": "Independent school, Gr 0 to Gr 12. 2026 annual fee for Gr 0 is R113,770 (Gr 1 R118,400, rising to R189,770 in Gr 12; see the by-grade list). Fees are payable annually in advance, termly (three equal instalments at the start of each term) or monthly over ten months (February to November) by debit order; the school does not print the instalment amounts. Paying in full in advance earns a 5% rebate. Fees not paid in full by 31 January 2026 are payable in termly instalments. Application fee R500 per child, non-refundable. Entrance fees payable on acceptance: Gr 0-7 R25,000 (R12,500 refundable and a R12,500 non-refundable development levy), Gr 8-12 R30,000 (R15,000 refundable and R15,000 non-refundable levy). Sibling rebates: 2nd child less 2.5%, 3rd less 7.5%, 4th less 15%, 5th less 20%. A 'B' debenture (R47,000) gives R4,700 off fees a year; Gr 0 with debenture is R109,070.",
       "sourceKind": "the school's 2026 fee schedule",
@@ -3932,67 +3932,80 @@
         {
           "grade": "Gr 0",
           "yearly": 113770,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 1",
           "yearly": 118400,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 2",
           "yearly": 126200,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 3",
           "yearly": 133600,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 4",
           "yearly": 138800,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 5",
           "yearly": 142270,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 6",
           "yearly": 148930,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 7",
           "yearly": 155760,
-          "monthly": null
+          "monthly": null,
+          "deposit": 25000
         },
         {
           "grade": "Gr 8",
           "yearly": 160940,
-          "monthly": null
+          "monthly": null,
+          "deposit": 30000
         },
         {
           "grade": "Gr 9",
           "yearly": 166210,
-          "monthly": null
+          "monthly": null,
+          "deposit": 30000
         },
         {
           "grade": "Gr 10",
           "yearly": 173680,
-          "monthly": null
+          "monthly": null,
+          "deposit": 30000
         },
         {
           "grade": "Gr 11",
           "yearly": 186450,
-          "monthly": null
+          "monthly": null,
+          "deposit": 30000
         },
         {
           "grade": "Gr 12",
           "yearly": 189770,
-          "monthly": null
+          "monthly": null,
+          "deposit": 30000
         }
       ]
     },

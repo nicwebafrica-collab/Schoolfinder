@@ -212,52 +212,62 @@
         {
           "grade": "Pre-Reception & Reception",
           "yearly": 65864,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 1",
           "yearly": 76951,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 2",
           "yearly": 85857,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 3-4",
           "yearly": 94917,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 5-6",
           "yearly": 98331,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 7-8",
           "yearly": 102200,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 9",
           "yearly": 104901,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 10",
           "yearly": 108270,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 11",
           "yearly": 113712,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         },
         {
           "grade": "Year 12",
           "yearly": 114745,
-          "monthly": null
+          "monthly": null,
+          "deposit": 12000
         }
       ]
     },
