@@ -1278,5 +1278,290 @@
       "sourceKind": "the school's 2026 fee schedule"
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "carnegie-house-preparatory-paarl",
+    "name": "Carnegie House Preparatory (Paarl)",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "The Nest-Gr 7",
+    "area": "Paarl Central East",
+    "city": "Paarl",
+    "province": "Western Cape",
+    "postcode": "7646",
+    "address": "7 Van der Lingen Street, Paarl",
+    "lat": -33.73326,
+    "lng": 18.96425,
+    "website": "https://carnegiehouse.co.za/",
+    "phone": "021 872 7599",
+    "email": "info@carnegiehouse.co.za",
+    "language": null,
+    "emis": "100000307",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://carnegiehouse.co.za/wp-content/uploads/2025/12/Fees-Paarl-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 3025,
+      "registration": 500,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, babies (The Nest) to Grade 7; this is the Paarl fee sheet. 2026 tuition has four payment options per class: monthly by EFT, monthly by debit order (3% less), termly (5% discount) or annual (7.5% discount); all are in the grade list. For example Grade R, 5 days, is R3,960 a month by EFT. Junior House (Gr 1-3) is R5,110 and Senior House (Gr 4-7) R5,660 a month by EFT. Once-off on entry: R500 application fee per family; refundable deposit R4,000 per child (preschool) or R5,500 (primary); non-refundable development fee R1,500. Sheet totals: R6,000 preschool, R7,500 primary. Annual levy: preschool R1,200, primary R2,100 (also payable termly or monthly). Second and third child get 10% off school fees. Aftercare amounts are on the sheet but how often they are charged is unclear; ask the school.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "The Nest (babies), 4 days",
+          "yearly": null,
+          "monthly": 3025,
+          "registration": 500,
+          "deposit": 4000
+        },
+        {
+          "grade": "The Nest (babies), 5 days",
+          "yearly": null,
+          "monthly": 3795
+        },
+        {
+          "grade": "The Den (toddlers), 4 days",
+          "yearly": null,
+          "monthly": 2860
+        },
+        {
+          "grade": "The Den (toddlers), 5 days",
+          "yearly": null,
+          "monthly": 3630
+        },
+        {
+          "grade": "The Hive (3-6 years), 5 days",
+          "yearly": null,
+          "monthly": 3630
+        },
+        {
+          "grade": "Grade R",
+          "yearly": null,
+          "monthly": 3960,
+          "registration": 500,
+          "deposit": 5500
+        },
+        {
+          "grade": "Junior House (Gr 1-3)",
+          "yearly": null,
+          "monthly": 5110
+        },
+        {
+          "grade": "Senior House (Gr 4-7)",
+          "yearly": null,
+          "monthly": 5660
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Annual levy (preschool)",
+        "amount": 1200,
+        "frequency": "yearly",
+        "note": "Also payable R300 a term or R100 a month",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Annual levy (primary)",
+        "amount": 2100,
+        "frequency": "yearly",
+        "note": "Also payable R525 a term or R175 a month",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Late collection",
+        "amount": 10,
+        "frequency": "once",
+        "note": "After 5:30pm (5:00pm on Fridays), per 5 minutes",
+        "applies": "penalty",
+        "included": false,
+        "per": "5 minutes"
+      },
+      {
+        "item": "Holiday care until 3pm",
+        "amount": 170,
+        "frequency": "once",
+        "note": "Primary, invoiced per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Holiday care until 5:30pm",
+        "amount": 200,
+        "frequency": "once",
+        "note": "Primary, invoiced per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Overdue accounts penalty",
+        "amount": 200,
+        "frequency": "monthly",
+        "note": "If not settled by the 5th of the month",
+        "applies": "penalty",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "edgemead-primary-school",
+    "name": "Edgemead Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Edgemead",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7441",
+    "address": "Denison Way, Edgemead, Cape Town",
+    "lat": -33.867379,
+    "lng": 18.549141,
+    "website": "https://edgemeadprimary.co.za/school-fees/",
+    "phone": "021 558 1007",
+    "email": null,
+    "language": null,
+    "emis": "102309238",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://edgemeadprimary.co.za/wp-content/uploads/2026/11/Parent-Finance-Letter-2027-FINAL.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 31920,
+      "monthly": 3192,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public primary school. 2027 school fees per learner: Grades 1-4 R31,920 a year (R3,192 a month, or R7,980 a term); Grades 5-7 R32,190 (R3,219 a month, or R8,048 a term). Grade 1 learners whose deposit was paid pay R30,420 (R3,042 a month, R7,605 a term) because the R1,500 Grade 1 advance payment is deducted. Monthly debit orders run for 10 months, February to November 2027, due on the 1st. Pay in full for a discount on the annual fee: 8% by 31 December 2026 (Grades 1-4 R29,366), 7% by 31 January 2027 (R29,686) or 6% by 28 February 2027 (R30,005); Grades 5-7 R29,615, R29,937 and R30,259. The letter lists no registration fee. Fee relief applications open from 15 February 2027.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1-4",
+          "yearly": 31920,
+          "monthly": 3192
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": 32190,
+          "monthly": 3219
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "After-school care, up to 3 days a week",
+        "amount": 12600,
+        "frequency": "yearly",
+        "note": "Or R1,260 a month over 10 months; 8% off if paid in full by 31 December 2026, 7% by 31 January 2027",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "After-school care, 4 or 5 days a week",
+        "amount": 19500,
+        "frequency": "yearly",
+        "note": "Or R1,950 a month over 10 months; 8% off if paid in full by 31 December 2026, 7% by 31 January 2027",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music tuition, per instrument",
+        "amount": 2180,
+        "frequency": "per term",
+        "note": "Optional; instrument hire R770, theory R220, drum or guitar lessons R2,030, marimba band R1,130 (each per term)",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "ellerton-primary-school",
+    "name": "Ellerton Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Three Anchor Bay",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "8005",
+    "address": "227 Main Road, Three Anchor Bay, Cape Town",
+    "lat": -33.908649,
+    "lng": 18.398072,
+    "website": "https://ellertonprimaryschool.co.za/",
+    "phone": "021 434 2441",
+    "email": null,
+    "language": null,
+    "emis": "103309241",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://ellertonprimaryschool.co.za/images/document/22860342/Schoolfees2026-JqYRlyw8EHgrN0ofywYnDw.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 11000,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public primary school. 2026 annual fee for new learners: Gr R R11,000, Gr 1-7 R10,000. A R2,000 registration payment on acceptance counts towards the annual fee; the balance is R9,000 (Gr R) or R8,000 (Gr 1-7), payable as R900 or R800 a month from January to October 2026. Existing learners pay R10,000: R2,000 before 15 December 2025 then R800 a month from January to October 2026, or no deposit and R1,000 a month from January to October 2026. Discounts, shown as percentages only: 5% off if the full account is paid before 28 February 2026, or a 5% sibling discount; only one of the two can be used. Monthly amounts are not shown as a figure because they cover only the balance after the R2,000.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 11000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 10000,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

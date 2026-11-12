@@ -4459,5 +4459,1048 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "baken-akademie",
+    "name": "Baken Akademie",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-7",
+    "area": "North Riding",
+    "city": "Roodepoort",
+    "province": "Gauteng",
+    "postcode": "2188",
+    "address": "372 Boundary Road, North Riding, Roodepoort",
+    "lat": -26.047408,
+    "lng": 27.930282,
+    "website": "https://www.bakenakademie.com/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "700400955",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.bakenakademie.com/_files/ugd/47e5c3_96746c87891e4240810ff5291538f0fe.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 51940,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school; the 2026 schedule covers Gr 000 to Gr 7 only (Gr 8-12 fees are on a separate college schedule, not read). Annual fee: Gr 000 R51,940, Gr R R65,720, Gr 1-3 R72,292, Gr 4-6 R78,864, Gr 7 R81,832. Two monthly options are printed, over 12 months or over 11 months (Gr 000: R4,328 or R4,722; Gr R: R5,477 or R5,975; Gr 1-3: R6,024 or R6,572; Gr 4-6: R6,572 or R7,169; Gr 7: R6,819 or R7,439). Once-off payment discounts are dated 2025 (before 15 October 2025 minus 9%, before 15 November minus 7%, before 15 December minus 5%; Gr 000 R46,820, R47,849, R48,878); ask the school if they still apply. Sibling discount: 8% for the 2nd child, 12% for the 3rd. A R3,350 capital fund per learner is payable by 1 December of the preceding year.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000",
+          "yearly": 51940,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 65720,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 72292,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 78864,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 81832,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Capital fund",
+        "amount": 3350,
+        "frequency": "yearly",
+        "note": "Per learner; payable by 1 December of the preceding year",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "colin-mann-primary-school",
+    "name": "Colin Mann Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Lambton",
+    "city": "Germiston",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "24 6th Avenue, Lambton, Germiston",
+    "lat": -26.242475,
+    "lng": 28.183848,
+    "website": "https://www.colinmannschool.org.za/",
+    "phone": "011 827 5580",
+    "email": null,
+    "language": null,
+    "emis": "700160275",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.colinmannschool.org.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 31130,
+      "monthly": 2830,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public primary school. 2026 annual fee: Gr R R31,130, Gr 1 R22,330, Gr 2-7 R19,195. Parents can pay monthly over 11 months (invoiced 31 January to 30 November 2026): Gr R R2,830, Gr 1 R2,030, Gr 2-7 R1,745. Or termly in the first week of each term: Gr R R7,782.50, Gr 1 R5,582.50, Gr 2-7 R4,798.75. Or one single payment by 31 March 2026 with 5% off: Gr R R29,574, Gr 1 R21,214, Gr 2-7 R18,236. There is no debit order; parents set up a stop order. The page lists no registration fee, aftercare, stationery or other levies.",
+      "sourceKind": "the 2026 fees on the school's website",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 31130,
+          "monthly": 2830
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 22330,
+          "monthly": 2030
+        },
+        {
+          "grade": "Gr 2-7",
+          "yearly": 19195,
+          "monthly": 1745
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "curamus-school",
+    "name": "Curamus School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Rant-en-Dal",
+    "city": "Krugersdorp",
+    "province": "Gauteng",
+    "postcode": "1751",
+    "address": "94 Sterkfontein Road, Rant-en-Dal, Krugersdorp",
+    "lat": -26.082679,
+    "lng": 27.767388,
+    "website": "https://curamusschool.co.za/",
+    "phone": "011 665 1033",
+    "email": null,
+    "language": null,
+    "emis": "700250977",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://curamusschool.co.za/wp-content/uploads/2026/01/2026-GENERAL-FEES.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 12100,
+      "monthly": 1100,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public special-needs school (child welfare). 2026 school fees R12,100 per year, or R1,100 a month for 11 months. If paid in full before the end of February 2026, one month's fees is discounted. Optional extras: school bus R7,200 a year (or R600 a month for 12 months); hostel R6,600 a year (R600 a month for 11 months, no discount on hostel fees, subject to availability). A stationery fee and a uniform price list also appear; the stationery fee is dated 'end of January 2025' so it is left out, and uniform is priced by size. Grades are not stated.",
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "School bus",
+        "amount": 7200,
+        "frequency": "yearly",
+        "note": "Or R600 a month for 12 months",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Hostel",
+        "amount": 6600,
+        "frequency": "yearly",
+        "note": "Or R600 a month for 11 months; no discount on hostel fees",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "eagle-house-learning-centre",
+    "name": "Eagle House Learning Centre",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Poortview",
+    "city": "Roodepoort",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "73 Lawrence Street, Poortview, Roodepoort",
+    "lat": -26.093251,
+    "lng": 27.85635,
+    "website": "https://www.eaglehouse.co.za/",
+    "phone": "010 590 0680",
+    "email": null,
+    "language": null,
+    "emis": "700400287",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.eaglehouse.co.za/wp-content/uploads/2020/09/Eagle-House-Schedule-of-Fees-2027-final.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 75600,
+      "monthly": 6300,
+      "registration": 4800,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent IEB high school, Grade 8 to 12. Tuition for 2027 is printed per year and per month (payable over 12 months), and differs by grade: Gr 8-9 R75,600 (R6,300 a month), Gr 10 R80,400 (R6,700), Gr 11-12 R87,600 (R7,300). Monthly fees are due on or before the 7th. Once-off Application Fee R800 (Gr 8 to 12). Once-off Registration Fee R4,800, payable on registration and non-refundable. An Annual Development Fund of R1,950 per learner is payable in November 2026. Family discounts: 5% for the second child, 10% for the third and more. Upfront yearly payment discounts on tuition: paid before 31 October 2026, you pay 2026 rates; before 30 November 2026, 5% off 2027 fees; before 31 December 2026, 2.5% off.",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 75600,
+          "monthly": 6300
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 75600,
+          "monthly": 6300
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 80400,
+          "monthly": 6700
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 87600,
+          "monthly": 7300
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 87600,
+          "monthly": 7300
+        }
+      ],
+      "sourceKind": "the school's 2027 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Annual Development Fund",
+        "amount": 1950,
+        "frequency": "yearly",
+        "note": "Payable November 2026; same for every grade",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "glenoaks-school",
+    "name": "Glenoaks School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Kensington",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "72 Roberts Avenue, Kensington, Johannesburg",
+    "lat": -26.199278,
+    "lng": 28.083852,
+    "website": "https://glenoaks.org.za/",
+    "phone": "011 624 1160",
+    "email": null,
+    "language": null,
+    "emis": "700130385",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://glenoaks.org.za/wp-content/uploads/2025/10/Glenoaks-School-Fee-Structure-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 225600,
+      "monthly": null,
+      "instalments": null,
+      "registration": 17500,
+      "deposit": null,
+      "notes": "Independent school for learners with special needs. Fees are set by class, not grade: Remedial (Grade 1-7) R225,600 a year (R18,800 a month); ACORN R230,400 (R19,200); SVP R228,000 (R19,000); GOAL R228,000 (R19,000); Academy PVP Year 2 R225,600 (R18,800); Academy Year 3-5 R228,000 (R19,000). The yearly figure shown is the Remedial class. Once-off registration R17,500 per family on enrolment. Everyone also pays a capital development levy and a sport levy. Pay by 31 January, termly (3 payments), or over 11 or 12 months; the monthly amounts differ by option, so no single monthly is shown (see the sheet). Siblings get 10% off school fees. Compulsory stationery is listed with no amount. Aftercare is optional, per day: homework club without lunch R50, with lunch R70, full aftercare R90, ad-hoc emergency attendance R120; late pick-up R50 per 30 minutes.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Remedial (Grade 1-7)",
+          "yearly": 225600,
+          "monthly": 18800
+        },
+        {
+          "grade": "ACORN Class",
+          "yearly": 230400,
+          "monthly": 19200
+        },
+        {
+          "grade": "SVP Class",
+          "yearly": 228000,
+          "monthly": 19000
+        },
+        {
+          "grade": "GOAL Stream",
+          "yearly": 228000,
+          "monthly": 19000
+        },
+        {
+          "grade": "Academy (PVP – Year 2)",
+          "yearly": 225600,
+          "monthly": 18800
+        },
+        {
+          "grade": "Academy (Year 3-5)",
+          "yearly": 228000,
+          "monthly": 19000
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Capital development levy",
+        "amount": 3600,
+        "frequency": "yearly",
+        "note": "R300 monthly for all learners",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Sport levy",
+        "amount": 3000,
+        "frequency": "yearly",
+        "note": "R250 monthly for all learners",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Assistance with toilet training",
+        "amount": 24000,
+        "frequency": "yearly",
+        "note": "ACORN class only; R2,000 monthly",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "greenside-high-school",
+    "name": "Greenside High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Greenside",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Geers Avenue, Greenside, Johannesburg",
+    "lat": -26.152048,
+    "lng": 28.017434,
+    "website": "https://www.greensidehigh.co.za/",
+    "phone": "011 646 0113",
+    "email": null,
+    "language": null,
+    "emis": "700130427",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.greensidehigh.co.za/wp-content/uploads/2026/04/SCHOOL-FEES-BREAKDOWN-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 54500,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public high school. 2026 fees breakdown: annual school fees per learner including the development fee are R54 500 for Grade 8 (development fee R7 000) and R53 500 for Grades 9 to 12 (development fee R6 000). The development fee is deducted from the annual fee and payable in December, so it is part of the annual amount, not extra. Options for both groups: pay in full in December after a 7% discount, R44 175; pay in full in January after a 5% discount, R45 125; or monthly payments January to October, R4 750 a month. The monthly option is not the whole annual fee on its own, so we show no monthly figure; ask the school how the December development fee is billed with it. Sibling discount: R1 000 per annum after the fees are settled in full.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 54500,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 53500,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "oakmeade-prep-academy",
+    "name": "Oakmeade Prep Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Meyerton Farms",
+    "city": "Meyerton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "20 Morris Road, Meyerton Farms, Meyerton",
+    "lat": -26.548004,
+    "lng": 28.009544,
+    "website": "https://www.oakmeade.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "700401303",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.oakmeade.co.za/wp-content/uploads/2026/01/Oakmeade-fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 4980,
+      "registration": 300,
+      "deposit": 3000,
+      "instalments": null,
+      "notes": "Independent school with pre-primary groups (RRRR to RR, R3,200 a month), Grade R to Grade 12. 2026 monthly fees (12 instalments, January to December, on or before the 1st): Grade R R4,980; Grades 1-3 R5,140; Grades 4-6 R6,160; Grades 7-9 R6,590; Grades 10-11 R7,400; Grade 12 R7,670 (includes IEB exam fees). Sibling monthly rates are lower (for example Grade R R4,230). A discounted annual fee applies only if paid in full by 31 January 2026 (Grade R R54,780; Grades 1-3 R56,540; Grades 4-6 R67,760; Grades 7-9 R72,490; Grades 10-11 R81,400). Application fee R300 per child, non-refundable, with the application form. Enrolment fee R3,000 per child, once-off, non-refundable, within 30 days of acceptance. Fee schedule is for 2026.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 4980
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 5140
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": null,
+          "monthly": 6160
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": null,
+          "monthly": 6590
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": 7400
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 7670
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Homework supervision and aftercare (Gr R-6)",
+        "amount": 1550,
+        "frequency": "monthly",
+        "note": "Starts 13h00, includes a mid-afternoon snack, latest pick-up 17h00",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Afternoon playgroup (pre-primary)",
+        "amount": 800,
+        "frequency": "monthly",
+        "note": "Starts 14h00, includes a mid-afternoon snack, latest pick-up 17h00",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "oos-rand-akademie",
+    "name": "Oos-Rand Akademie",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-12",
+    "area": "Pomona",
+    "city": "Kempton Park",
+    "province": "Gauteng",
+    "postcode": "1619",
+    "address": "72 Maple Street, Pomona, Kempton Park",
+    "lat": -26.091477,
+    "lng": 28.273597,
+    "website": "https://oosrandakademie.co.za/",
+    "phone": "011 396 3316",
+    "email": null,
+    "language": "Afrikaans",
+    "emis": "700261677",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://oosrandakademie.co.za/images/images/dokumente/2027/fooie-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 2368,
+      "registration": 3267,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school (Afrikaans), Grade RRR to 12. The 2027 sheet prints monthly fees only, paid in advance by the 7th, over 12 months from January to December; no yearly amount is printed. Monthly fee by grade: RRR and RR R2,368; Gr R R2,656; Gr 1-3 R3,834; Gr 4-6 R4,730; Gr 7-9 R5,044; Gr 10-11 R5,430; Gr 12 R5,586. Registration R3,267 and re-registration R2,360 are the same for every grade; the sheet does not say who pays which. Photostats ('Fotostate') R453 for RRR and RR and R805 for R to Gr 3, listed without saying how often; ask the school. Discounts: 5% if the 12 months are paid in advance on or before 31 January 2027; 2.5% for the 2nd and 3rd child. One month's written notice is needed to leave.",
+      "byGrade": [
+        {
+          "grade": "Gr RRR",
+          "yearly": null,
+          "monthly": 2368
+        },
+        {
+          "grade": "Gr RR",
+          "yearly": null,
+          "monthly": 2368
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 2656
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 3834
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": null,
+          "monthly": 4730
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": null,
+          "monthly": 5044
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": 5430
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 5586
+        }
+      ],
+      "sourceKind": "the school's 2027 fee schedule"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "qurtuba-islamic-academy",
+    "name": "Qurtuba Islamic Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-12",
+    "area": "Linbro Park",
+    "city": "Sandton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "53 2nd Road, Linbro Park, Sandton",
+    "lat": -26.089028,
+    "lng": 28.121723,
+    "website": "https://qurtubaislamic.co.za/",
+    "phone": "011 608 0527",
+    "email": null,
+    "language": null,
+    "emis": "700401029",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://qurtubaislamic.co.za/wp-content/uploads/Fees-Document-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 21200,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Grade RRR to 12. 2027 school fees per year (entry grade RRR/RR R21,200): Gr R R27,700; Gr 1-3 R43,000; Gr 4-7 R43,500; Gr 8-11 R51,500; Gr 12 R54,600. Monthly option: 10 instalments; the deposit/re-registration fee (10% of the grade's fee, R2,120 for RRR/RR) is instalment 1, due by 30 November 2026, and instalments 2 to 10 are billed January to September 2027; their amount is not printed. Early payment by 28 February 2027 is shown as 'discounted at 2.5%': RRR/RR R18,550, Gr 1-3 R37,625, Gr 12 R47,775; these do not match 2.5% off the fees above; ask the school. Sibling discount 2.5% from the second child. Foreign nationals pay a deposit before enrolment: R10,000 for one learner, R15,000 for two, R17,000 for three, R20,000 for four or more (per learner). Bus (2026 rates, may change): R550 a month per route plus R660 or R1,450 by trip length.",
+      "byGrade": [
+        {
+          "grade": "Gr RRR/RR",
+          "yearly": 21200,
+          "monthly": null
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 27700,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 43000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 43500,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8-11",
+          "yearly": 51500,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 54600,
+          "monthly": null
+        }
+      ],
+      "sourceKind": "the school's 2027 fee schedule"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "rabasotho-combined-school",
+    "name": "Rabasotho Combined School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Diepsloot",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": "2189",
+    "address": "2026 Diepsloot West, Diepsloot, Midrand",
+    "lat": -25.940627,
+    "lng": 28.016994,
+    "website": "https://rabasothoschool.co.za/",
+    "phone": "010 822 8278",
+    "email": "info@rabasothoschool.co.za",
+    "language": null,
+    "emis": "700152851",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://rabasothoschool.co.za/wp/wp-content/uploads/2026/11/Rabasotho-Fee-Structure.pdf-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 6600,
+      "monthly": 550,
+      "registration": 750,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent combined school, Grade R to 12. 2027 fees are printed three ways for each phase: monthly, quarterly and annual. Foundation Phase (Gr R-3): R550 monthly, R1,650 quarterly, R6,600 annual. Intermediate (Gr 4-6): R600, R1,800, R7,200. Senior (Gr 7-9): R650, R1,950, R7,800. FET (Gr 10-12): R750, R2,250, R9,000. The number of instalments is not printed. Grade R registration is R750 with no assessment fee. Other grades: assessment fee R500 per learner and administration/registration fee R2,000 for new enrolments; the sheet does not say how often these are charged. Fees are non-refundable and non-transferable once a learner is registered.",
+      "byGrade": [
+        {
+          "grade": "Gr R-3",
+          "yearly": 6600,
+          "monthly": 550
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 7200,
+          "monthly": 600
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": 7800,
+          "monthly": 650
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 9000,
+          "monthly": 750
+        }
+      ],
+      "sourceKind": "the school's 2027 fee schedule"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "radford-house",
+    "name": "Radford House",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Fairland",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "224 Cornelis Street, Fairland, Johannesburg",
+    "lat": -26.124523,
+    "lng": 27.944088,
+    "website": "https://www.radfordhouse.co.za/",
+    "phone": "011 478 1864",
+    "email": "info@radfordhouse.co.za",
+    "language": null,
+    "emis": "700400999",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.radfordhouse.co.za/tuition-fees/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 8200,
+      "registration": 7000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Grade 000 to 12. 2027 fees are printed as a yearly fee and a monthly fee by phase. The yearly fee applies only if paid in full by 31 January 2027, so we show the monthly fee. Entry (Gr 000-0): yearly R90,550, monthly R8,200. Gr 1-3: R118,150 / R10,700. Gr 4-6: R123,650 / R11,200. Gr 7-9: R129,150 / R11,700. Gr 10-11: R136,350 / R12,350. Gr 12: R147,400 / R13,350 (includes IEB exam costs). Registration is a once-off R7,000, non-refundable. Sibling discount 10%. A yearly educational provision pack (stationery, transport levy, paper, workbooks) is charged each year; the school's 2027 learner levy letter lists R3,820 to R5,310 by grade (R4,450 for Gr 000-0), with extras for Gr 10-12 subjects, but does not say how often; ask the school. One term's notice is needed to leave.",
+      "byGrade": [
+        {
+          "grade": "Gr 000-0",
+          "yearly": null,
+          "monthly": 8200
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 10700
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": null,
+          "monthly": 11200
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": null,
+          "monthly": 11700
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": 12350
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 13350
+        }
+      ],
+      "sourceKind": "the 2027 fees on the school's website"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "radley-private-school",
+    "name": "Radley Private School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Ferndale",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "320 York Street, Ferndale, Randburg",
+    "lat": -26.091132,
+    "lng": 27.992757,
+    "website": "https://radley.co.za/",
+    "phone": "011 781 3647",
+    "email": "info@radley.co.za",
+    "language": null,
+    "emis": "700401032",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://radley.co.za/wp-content/uploads/2025/10/Radley-Private-School-Tuition-Fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 5270,
+      "instalments": null,
+      "registration": 1650,
+      "deposit": null,
+      "notes": "Independent school, Grade R to Grade 12. Monthly tuition by grade: Gr R R5 270; Gr 1-3 R6 690; Gr 4 R7 180; Gr 5-6 R7 316; Gr 7 R8 070; Gr 8-9 R8 470; Gr 10 R8 730; Gr 11 R9 140; Gr 12 R11 280. Gr R to 11 pay over 11 months, Gr 12 over 10 months, so no yearly total is shown; the headline is the Gr R monthly fee. Paying the full year upfront gets 5% off (Gr R R55 071.50 up to Gr 12 R107 160.00). Non-refundable application fee: R1 650 once off for South African learners, R4 370 for international learners. The sheet lists no other fees apart from transport. Optional transport by area, from R439 one-way (Ferndale) to R4 053 one-way (Lanseria), round trip R773 to R7 197 a month; ask the school for your area (info@radley.co.za).",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 5270
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 6690
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 6690
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 6690
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 7180
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 7316
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 7316
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 8070
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 8470
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 8470
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 8730
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 9140
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 11280
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "redruth-academy",
+    "name": "Redruth Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-10",
+    "area": "New Redruth",
+    "city": "Alberton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "19 Clinton Road, New Redruth, Alberton",
+    "lat": -26.26605,
+    "lng": 28.121183,
+    "website": "https://redruthacademy.co.za/",
+    "phone": "010 335 0334",
+    "email": "info@redruthacademy.co.za",
+    "language": null,
+    "emis": "700401183",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://redruthacademy.co.za/wp-content/uploads/2026/08/Redruth-Academy-2027-Fee-Structure.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 2400,
+      "registration": 2600,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent combined school, Grade 1 to Grade 10. 2027 fee schedule: 'Monthly Fee (12 Months)' is R2,400 for Grades 1 to 6, R2,850 for Grades 7 to 9 and R3,150 for Grade 10. A registration fee of R2,600 is charged for every grade, payable on registration for new and existing learners, and is non-refundable. Monthly fees are paid in advance by EFT, cash or debit order. Cash deposits into the school's account are not allowed and carry a R200 penalty. The school prints no yearly total, so we show none. Fees cover tuition and curriculum; parents buy textbooks and stationery (no amounts given). No early-payment discount is listed.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1-6",
+          "yearly": null,
+          "monthly": 2400
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": null,
+          "monthly": 2850
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 3150
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Cash deposit penalty",
+        "amount": 200,
+        "frequency": "once",
+        "note": "Only if cash is deposited into the school's account, which is not allowed",
+        "applies": "penalty",
+        "included": false
+      }
+    ]
   }
 ]

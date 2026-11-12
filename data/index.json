@@ -10,18 +10,20 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 3,
+      "schoolCount": 5,
       "updated": "2026-11",
       "ids": [
         "clarendon-park-primary-school",
         "bedford-country-school",
-        "collegiate-girls-high-school"
+        "collegiate-girls-high-school",
+        "balmoral-girls-primary-school",
+        "cape-recife-high-school"
       ],
       "bounds": [
-        -33.97262,
+        -33.9965,
         25.58833,
-        -32.67759,
-        26.08855
+        -31.88691,
+        26.88258
       ]
     },
     {
@@ -31,7 +33,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 42,
+      "schoolCount": 55,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -75,11 +77,24 @@
         "cotswold-montessori-school",
         "cresta-college",
         "glen-austin-high-school",
-        "laerskool-wierdapark"
+        "laerskool-wierdapark",
+        "baken-akademie",
+        "colin-mann-primary-school",
+        "curamus-school",
+        "eagle-house-learning-centre",
+        "glenoaks-school",
+        "greenside-high-school",
+        "oakmeade-prep-academy",
+        "oos-rand-akademie",
+        "qurtuba-islamic-academy",
+        "rabasotho-combined-school",
+        "radford-house",
+        "radley-private-school",
+        "redruth-academy"
       ],
       "bounds": [
         -26.7360185101,
-        27.8034802542,
+        27.767388,
         -25.7007,
         28.435031
       ]
@@ -91,7 +106,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 51,
+      "schoolCount": 52,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -144,7 +159,8 @@
         "maritzburg-preparatory-school",
         "st-gregory-primary-school",
         "st-henrys-marist-college",
-        "tree-tops-junior-primary-school"
+        "tree-tops-junior-primary-school",
+        "athlone-primary-school"
       ],
       "bounds": [
         -30.8726,
@@ -160,7 +176,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 11,
+      "schoolCount": 14,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -173,12 +189,15 @@
         "auburn-house-school",
         "fish-hoek-high-school",
         "applewood-preparatory-school",
-        "capella-house"
+        "capella-house",
+        "carnegie-house-preparatory-paarl",
+        "edgemead-primary-school",
+        "ellerton-primary-school"
       ],
       "bounds": [
         -34.172504,
-        18.420551,
-        -33.807102,
+        18.398072,
+        -33.73326,
         19.035857
       ]
     }

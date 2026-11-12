@@ -254,5 +254,126 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "balmoral-girls-primary-school",
+    "name": "Balmoral Girls Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Balmoral",
+    "city": "Queenstown",
+    "province": "Eastern Cape",
+    "postcode": "5319",
+    "address": "20 Haig Avenue, Balmoral, Queenstown",
+    "lat": -31.88691,
+    "lng": 26.88258,
+    "website": "https://www.balmoralprimary.co.za/",
+    "phone": "045 838 3760",
+    "email": "reception@balmoralprimary.co.za",
+    "language": null,
+    "emis": "200600024",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.balmoralprimary.co.za/_files/ugd/86ac33_772b452b5905463e96e7eef359899d39.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 33561,
+      "monthly": 3051,
+      "registration": null,
+      "deposit": 5000,
+      "instalments": null,
+      "notes": "Fee-paying public girls' primary school in Queenstown (Komani). 2026 fee structure: R33,561 a year; R8,390.25 a term (first week of each term); R3,051 a month (by the last school day of each month). The number of monthly instalments is not printed, so ask the school. New pupils pay a R5,000 deposit and then R7,140.25 a term or R2,596.50 a month (R2,596 in November) as printed. A R1,000 settlement discount is allowed if fees are settled in full by 31 January 2026, bringing the year to R32,561. This is the 2026 schedule; no 2027 schedule was found. The school's boarding page gives no amounts and describes boarding at Queenstown Girls' High School.",
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "cape-recife-high-school",
+    "name": "Cape Recife High School",
+    "type": "Public",
+    "phase": "Combined",
+    "grades": "Primary and Secondary",
+    "area": "Summerstrand",
+    "city": "Gqeberha",
+    "province": "Eastern Cape",
+    "postcode": "6001",
+    "address": "58 Admiralty Way, Summerstrand, Gqeberha",
+    "lat": -33.9965,
+    "lng": 25.66782,
+    "website": "https://caperecifeschool.co.za/",
+    "phone": "041 583 2147",
+    "email": null,
+    "language": null,
+    "emis": "200100104",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://caperecifeschool.co.za/PDF/SCHOOL FEES CRHS 2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 26566,
+      "monthly": 2415,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public school with Primary and Secondary levels (grades not listed; the DBE lists it as a special needs school). Fees from 1 January 2026. Primary: R26,566 a year, R6,642 a term, or 11 instalments of R2,415. Secondary: R27,904 a year, R6,976 a term, or 11 instalments of R2,537. Paying in full by 28 February 2026 gives 5% off (Primary R1,328, Secondary R1,395). Optional transport: R26,923 a year, R6,731 a term or 11 x R2,448. Hostel (boarders): R33,000 a year, R8,250 a term or 11 x R3,000. Combined monthly: school plus hostel R5,415 (Primary) or R5,537 (Secondary); school plus transport R4,863 (Primary) or R4,985 (Secondary). No other levies are listed.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Primary",
+          "yearly": 26566,
+          "monthly": 2415
+        },
+        {
+          "grade": "Secondary",
+          "yearly": 27904,
+          "monthly": 2537
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Transport",
+        "amount": 26923,
+        "frequency": "yearly",
+        "note": "Optional; or R6,731 a term, or 11 x R2,448",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Hostel",
+        "amount": 33000,
+        "frequency": "yearly",
+        "note": "Boarders only; or R8,250 a term, or 11 x R3,000",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
   }
 ]
