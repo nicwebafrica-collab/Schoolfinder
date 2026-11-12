@@ -6313,16 +6313,16 @@
       {
         "item": "Personal accident insurance",
         "amount": 250,
-        "frequency": "once",
-        "note": "Compulsory; no frequency printed",
+        "frequency": "yearly",
+        "note": "Compulsory; on the 2027 fee notice for all grades; no frequency printed, taken as one payment for the year",
         "applies": "everyone",
         "included": false
       },
       {
         "item": "Toiletry levy",
         "amount": 600,
-        "frequency": "once",
-        "note": "No frequency printed",
+        "frequency": "yearly",
+        "note": "on the 2027 fee notice for all grades; no frequency printed, taken as one payment for the year",
         "applies": "everyone",
         "included": false
       }
