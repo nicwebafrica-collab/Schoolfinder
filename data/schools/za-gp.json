@@ -6032,73 +6032,17 @@
       "registration": 2500,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school, Grade R to Grade 9. 2027 school fees: R4,200 a month for 12 months, payable before the 7th of each month (the school prints no yearly total). Registration R2,500, once-off and non-refundable, for new enrolments only. Book levy, essentials, stationery and textbooks are charged per grade once a year, to be paid by 31 December 2026: Grade R R2,610, Grade 1-3 R3,460, Grade 4 R4,020, Grade 5 R4,040, Grade 6 R4,130, Grade 7 R4,830, Grade 8 R4,975, Grade 9 R5,070. Aftercare R900 a month for 12 months, optional.",
+      "notes": "Independent school, Grade R to Grade 9. 2027 school fees: R4,200 a month for 12 months, payable before the 7th of each month (the school prints no yearly total). Registration R2,500, once-off and non-refundable, for new enrolments only. Every grade pays a compulsory book levy (R480) and essentials (R480) once a year, by 31 December 2026. Stationery and textbooks are bought through the school's order form; the sheet's totals with them are Grade R R2,610, Grade 1-3 R3,460, Grade 4 R4,020, Grade 5 R4,040, Grade 6 R4,130, Grade 7 R4,830, Grade 8 R4,975, Grade 9 R5,070. Aftercare R900 a month for 12 months, optional.",
       "sourceKind": "the school's 2027 fee structure",
       "byGrade": []
     },
     "hiddenCosts": [
       {
-        "item": "Books, stationery and essentials (Gr R)",
-        "amount": 2610,
+        "item": "Book levy and essentials",
+        "amount": 960,
         "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr R",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 1-3)",
-        "amount": 3460,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 1-3",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 4)",
-        "amount": 4020,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 4",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 5)",
-        "amount": 4040,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 5",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 6)",
-        "amount": 4130,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 6",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 7)",
-        "amount": 4830,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 7",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 8)",
-        "amount": 4975,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 8",
-        "included": false
-      },
-      {
-        "item": "Books, stationery and essentials (Gr 9)",
-        "amount": 5070,
-        "frequency": "yearly",
-        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
-        "applies": "Gr 9",
+        "note": "Book levy R480 and essentials R480, compulsory, paid by 31 December",
+        "applies": "everyone",
         "included": false
       },
       {
