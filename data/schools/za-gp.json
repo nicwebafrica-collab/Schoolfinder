@@ -806,7 +806,7 @@
       "registration": 3500,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school, Grade RR to Grade 12 plus a post-matric A Level year. 2027 tuition for Grade RR: R4,960 a month, or R59,520 for the year; it rises by grade up to R9,400 a month / R112,800 a year for A Level. Twelve monthly instalments from 30 December to 30 November, paid in advance on the 30th. 'Registration' is the R3,500 once-off registration fee. Curriculum fee (PACEs) for Prep: Grade RR R2,200, Grades R to 7 R8,500; the page calls it annual but also says it is paid per term, without the split. Once-off: application R500, diagnostic testing (Prep) R650. Discounts: annual payment by 1 December 10%, by 31 December 7%, twice-yearly 4%; siblings 5% (2nd) and 10% (3rd). The page lists aftercare (R1,300 full-time, R850 half-day) and Cambridge exam fees (Gr 8 R1,050 up to A Level R3,900) without saying how often they are paid; ask the school. Cambridge textbooks are extra (no amount).",
+      "notes": "Independent school, Grade RR to Grade 12 plus a post-matric A Level year. 2027 tuition for Grade RR: R4,960 a month, or R59,520 for the year; it rises by grade up to R9,400 a month / R112,800 a year for A Level. Twelve monthly instalments from 30 December to 30 November, paid in advance on the 30th. 'Registration' is the R3,500 once-off registration fee. Curriculum fee (PACEs) for Prep: Grade RR R2,200, Grades R to 7 R8,500; the page calls it annual but also says it is paid per term, without the split. Once-off: application R500, diagnostic testing (Prep) R650. Discounts: annual payment by 1 December 10%, by 31 December 7%, twice-yearly 4%; siblings 5% (2nd) and 10% (3rd). The page lists aftercare (R1,300 full-time, R850 half-day) without saying how often; ask the school. Cambridge exams: R1,050 (Gr 8) to R3,900 (A Level) per subject, about R3,150 to R18,900 a year (school's estimate). Cambridge textbooks are extra (no amount).",
       "sourceKind": "the 2027 fees on the school's website",
       "byGrade": [
         {
@@ -908,7 +908,7 @@
         "amount": 500,
         "frequency": "once",
         "note": "New learners; the page doesn't say who pays",
-        "applies": "some",
+        "applies": "everyone",
         "included": false
       },
       {
@@ -1054,12 +1054,12 @@
         "item": "Design resource pack",
         "amount": 800,
         "frequency": "yearly",
-        "note": "Compulsory for Design learners; paid in full at the start of the year, not added to the child's account",
-        "applies": "Gr 10-12",
+        "note": "For Grade 10-12 Design learners only; compulsory for Design learners; paid in full at the start of the year, not added to the child's account",
+        "applies": "some",
         "included": false
       },
       {
-        "item": "Grade R stationery pack",
+        "item": "Grade R stationery pack (approx.)",
         "amount": 800,
         "frequency": "once",
         "note": "School says 'approximately R800.00'; exact price to be confirmed",
@@ -1500,7 +1500,7 @@
       "instalments": 12,
       "registration": 500,
       "deposit": 1500,
-      "notes": "Independent school, Grade R to Grade 12. Grade R: R3,520 a month for 12 months (January to December), R42,240 a year, or R40,128 if the year is paid by 31 January (the school calls this a 5% saving). Grade 1-7: R4,050 a month, R48,600 a year, R46,170 if paid by 31 January. Grade 8-9: R5,090 a month, R61,080 a year, R58,026 by 31 January. Grade 10-12: R5,725 a month, R68,700 a year, R65,265 by 31 January. R500 application fee (once-off, non-refundable) and R1,500 enrolment fee (paid in full once the child is accepted); the sheet doesn't say if the enrolment fee comes off the fees. Siblings: 5% off the second child's tuition and 10% off the third and later. Coding and Robotics is compulsory for Grade 1-7 (see extra costs). The sheet mentions an additive fee for licences, workbooks, paper and tissues but prints no amount; ask the school.",
+      "notes": "Independent school, Grade R to Grade 12. Grade R: R3,520 a month for 12 months (January to December), R42,240 a year, or R40,128 if the year is paid by 31 January (the school calls this a 5% saving). Grade 1-7: R4,050 a month, R48,600 a year, R46,170 if paid by 31 January. Grade 8-9: R5,090 a month, R61,080 a year, R58,026 by 31 January. Grade 10-12: R5,725 a month, R68,700 a year, R65,265 by 31 January. R500 application fee (once-off, non-refundable) and R1,500 enrolment fee (paid in full once the child is accepted); the sheet doesn't say if the enrolment fee comes off the fees. Siblings: 5% off the second child's tuition and 10% off the third and later. Coding and Robotics is compulsory for Grade 1-7: R350 a month for 11 months (January to November), billed with the fees. The sheet mentions an additive fee for licences, workbooks, paper and tissues but prints no amount; ask the school.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -1525,16 +1525,7 @@
         }
       ]
     },
-    "hiddenCosts": [
-      {
-        "item": "Coding and Robotics",
-        "amount": 350,
-        "frequency": "monthly",
-        "note": "Compulsory for Grade 1-7; R350 a month for 11 months (January to November), invoiced with school fees; covers workbooks and equipment",
-        "applies": "Gr 1-7",
-        "included": false
-      }
-    ]
+    "hiddenCosts": []
   },
   {
     "id": "empro-academy",
@@ -1924,7 +1915,7 @@
         "amount": 500,
         "frequency": "once",
         "note": "Must accompany all new applications",
-        "applies": "some",
+        "applies": "everyone",
         "included": false
       },
       {
@@ -2064,31 +2055,39 @@
       "year": 2027,
       "yearly": 110000,
       "monthly": 10000,
-      "registration": null,
-      "deposit": 2000,
+      "registration": 2000,
+      "deposit": null,
       "instalments": 11,
-      "notes": "Independent school, Grade R to Grade 7 (listed by the education department as a special needs centre). 2027 tuition for Grade R: R10,000 a month over 11 months (January to November), or R110,000 a year. Gr 1-3 R17,040 a month / R187,440 a year; Gr 4-5 R16,280 / R179,080; Gr 6-7 R15,940 / R175,340. From 2027, Grades 1 to 5 get group therapy and individual speech and occupational therapy; Grades 6 and 7 get support where needed. 'Deposit' is the Grade R enrolment fee of R2,000 (non-refundable), due on accepting a place. For Grades 1 to 7 the enrolment fee is R15,000 (non-refundable) plus a R10,000 deposit refunded when the child leaves. Early settlement discounts on the annual fee, Grades 1 to 7 only: before 15 November 2026 10% (Gr 1-3 R18,744; Gr 4-5 R17,908; Gr 6-7 R17,534); before 15 December 2026 8% (R14,995; R14,326; R14,027); before 31 January 2027 5% (R9,372; R8,954; R8,767). Stationery packs are invoiced in January 2027 (no amount).",
+      "notes": "Independent school, Grade R to Grade 7 (listed by the education department as a special needs centre). 2027 tuition for Grade R: R10,000 a month over 11 months (January to November), or R110,000 a year. Gr 1-3 R17,040 a month / R187,440 a year; Gr 4-5 R16,280 / R179,080; Gr 6-7 R15,940 / R175,340. From 2027, Grades 1 to 5 get group therapy and individual speech and occupational therapy; Grades 6 and 7 get support where needed. 'Registration' is the non-refundable enrolment fee, due on accepting a place: Grade R R2,000, Grades 1 to 7 R15,000. Grades 1 to 7 also pay a R10,000 'Deposit', refunded when the child leaves. Early settlement discounts on the annual fee, Grades 1 to 7 only: 10% off before 15 November 2026 (saves Gr 1-3 R18,744; Gr 4-5 R17,908; Gr 6-7 R17,534); 8% off before 15 December 2026 (saves R14,995; R14,326; R14,027); 5% off before 31 January 2027 (saves R9,372; R8,954; R8,767). Stationery packs are invoiced in January 2027 (no amount).",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
           "grade": "Gr R",
           "yearly": 110000,
-          "monthly": 10000
+          "monthly": 10000,
+          "registration": 2000,
+          "deposit": null
         },
         {
           "grade": "Gr 1-3",
           "yearly": 187440,
-          "monthly": 17040
+          "monthly": 17040,
+          "registration": 15000,
+          "deposit": 10000
         },
         {
           "grade": "Gr 4-5",
           "yearly": 179080,
-          "monthly": 16280
+          "monthly": 16280,
+          "registration": 15000,
+          "deposit": 10000
         },
         {
           "grade": "Gr 6-7",
           "yearly": 175340,
-          "monthly": 15940
+          "monthly": 15940,
+          "registration": 15000,
+          "deposit": 10000
         }
       ]
     },
@@ -2114,22 +2113,6 @@
         "amount": 2000,
         "frequency": "yearly",
         "note": "",
-        "applies": "Gr 1-7",
-        "included": false
-      },
-      {
-        "item": "Enrolment fee",
-        "amount": 15000,
-        "frequency": "once",
-        "note": "Non-refundable; paid on accepting a place",
-        "applies": "Gr 1-7",
-        "included": false
-      },
-      {
-        "item": "Deposit",
-        "amount": 10000,
-        "frequency": "once",
-        "note": "Refundable when your child leaves the school",
         "applies": "Gr 1-7",
         "included": false
       },
