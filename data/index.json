@@ -33,7 +33,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 55,
+      "schoolCount": 56,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -90,7 +90,8 @@
         "rabasotho-combined-school",
         "radford-house",
         "radley-private-school",
-        "redruth-academy"
+        "redruth-academy",
+        "redwood-academy"
       ],
       "bounds": [
         -26.7360185101,
@@ -176,7 +177,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 13,
+      "schoolCount": 14,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -191,7 +192,8 @@
         "applewood-preparatory-school",
         "capella-house",
         "edgemead-primary-school",
-        "ellerton-primary-school"
+        "ellerton-primary-school",
+        "cresca-primary-school"
       ],
       "bounds": [
         -34.172504,

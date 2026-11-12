@@ -4646,7 +4646,7 @@
       "registration": null,
       "deposit": null,
       "instalments": 11,
-      "notes": "Public special-needs school (child welfare). 2026 school fees R12,100 per year, or R1,100 a month for 11 months. If paid in full before the end of February 2026, one month's fees is discounted. Optional extras: school bus R7,200 a year (or R600 a month for 12 months); hostel R6,600 a year (R600 a month for 11 months, no discount on hostel fees, subject to availability). A stationery fee and a uniform price list also appear; the stationery fee is dated 'end of January 2025' so it is left out, and uniform is priced by size. Grades are not stated.",
+      "notes": "Public special-needs school (child welfare). 2026 school fees R12,100 per year, or R1,100 a month for 11 months. If paid in full before the end of February 2026, one month's fees is discounted. Optional extras: school bus R7,200 a year (or R600 a month for 12 months); hostel R6,600 a year (R600 a month for 11 months, no discount on hostel fees, subject to availability). A stationery fee and a uniform price list also appear; the R400 stationery fee is printed with a 2025 date, so it is shown without an amount; uniform is priced by size. Grades are not stated.",
       "sourceKind": "the school's 2026 fee schedule"
     },
     "hiddenCosts": [
@@ -5635,6 +5635,73 @@
         "frequency": "once",
         "note": "Only if cash is deposited into the school's account, which is not allowed",
         "applies": "penalty",
+        "included": false
+      }
+    ]
+  },
+  {
+    "country": "ZA",
+    "quintile": null,
+    "language": null,
+    "email": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "id": "redwood-academy",
+    "name": "Redwood Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-3",
+    "area": "Lenasia",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "20 Topaas Street, Lenasia Ext 7, Lenasia, Johannesburg",
+    "lat": -26.32422,
+    "lng": 27.84953,
+    "website": "https://redwoodacademy.co.za/",
+    "phone": "011 852 4744",
+    "emis": "700400891",
+    "sources": [
+      "https://redwoodacademy.co.za/wp-content/uploads/2026/10/redwood-2027-Redwood-ECD-Prospectus.pdf",
+      "https://redwoodacademy.co.za/wp-content/uploads/2026/10/redwood-2027-Redwood-Foundation-Phase-Prospectus.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 2950,
+      "instalments": null,
+      "registration": 2800,
+      "notes": "Independent school; the 2027 prospectuses cover Grade RRR to Grade 3. Monthly fee is R 2 950 per month in the ECD prospectus (Grade RRR to R) and R 5 100 per month in the Foundation Phase prospectus (Grade 1-3). The school prints no yearly total or number of months. Registration is listed as its own item: new applicants R 2 800; current learners R 2 000. The prospectus also prints 'payable over 12 months' (new applicants) and 'payable over 11 months' (current learners), but it is not clear whether this refers to the registration or the monthly fee; ask the school. Shown here is the new-applicant amount. After care is R 950 per month (optional). Madressah Islamic Studies is optional at an extra cost, no amount printed. Coding, robotics, swimming, soccer and netball are listed as free.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr RRR-R",
+          "yearly": null,
+          "monthly": 2950
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 5100
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "After care",
+        "amount": 950,
+        "frequency": "monthly",
+        "note": "Optional, Monday to Friday until 17:00; months billed not printed",
+        "applies": "optional",
         "included": false
       }
     ]
