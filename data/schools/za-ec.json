@@ -1,0 +1,57 @@
+[
+  {
+    "id": "clarendon-park-primary-school",
+    "name": "Clarendon Park Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Walmer",
+    "city": "Gqeberha",
+    "province": "Eastern Cape",
+    "postcode": "6070",
+    "address": "Corner Church Road & 7th Avenue, Walmer, Gqeberha",
+    "lat": -33.97262,
+    "lng": 25.58833,
+    "website": "https://clarendonpark.co.za/",
+    "phone": "041 581 4231",
+    "email": null,
+    "language": null,
+    "emis": "200100120",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://clarendonpark.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 31955,
+      "monthly": 2905,
+      "instalments": 11,
+      "registration": null,
+      "deposit": null,
+      "notes": "Public primary school. School fees for 2026 by monthly debit order or EFT, payable in advance: R2,905 for 11 months, R31,955 as printed. Paid in full by 11 December 2025: R28,759.50 (a saving of R3,195.50). Paid in full by 31 January 2026: R29,718.00 (a saving of R2,237.00). The page doesn't split fees by grade. Optional aftercare: R1,525 per child per month for 11 months, R16,775 as printed, payable in advance; or R15,936.00 if paid by 31 January 2026 (a saving of R839.00). No registration fee is listed.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 16775,
+        "frequency": "yearly",
+        "note": "Optional; R1,525 a month for 11 months, or R15,936 if paid by 31 January 2026",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  }
+]
