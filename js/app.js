@@ -1686,7 +1686,7 @@
       }), ")"];
     });
     return el("p", { className: "source" },
-      "Checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + checkedAgainst(s) + ". ",
+      "Fees checked " + (s.lastChecked ? niceDate(s.lastChecked) : "date unknown") + checkedAgainst(s) + ". ",
       links.length ? ["Sources: ", links, ". "] : "No source links yet. ",
       // Same words as the plain school pages: a mailto link with the school's name in the subject, nothing else.
       "Spot a wrong price? Email ", el("a", { href: "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Wrong price: " + s.name) }, CONTACT), ". We check every report within a week and fix the page if it's wrong. ",
