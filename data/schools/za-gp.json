@@ -2248,7 +2248,7 @@
       "registration": 3500,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school. 2026 annual fees by grade: Gr RRR R58,800; Gr 1-3 R71,160; Gr 4-7 R75,960; Gr 8-9 R81,120; Gr 10-11 R90,240; Gr 12 R95,700. Annual fee if paid by 31 January: R55,860 / R67,600 / R72,160 / R77,060 / R85,730 / R90,920. Quarterly, 4 payments of R14,190 / R17,170 / R18,330 / R19,570 / R21,770 / R23,090. Monthly: R4,900 / R5,930 / R6,330 / R6,760 / R7,520 for 12 months; Gr 12 R9,570 for 10 months. Registration R3,500 once-off, new learners only. Sibling discount R270 per month. Fees are payable for the full year whatever the registration date. The sheet says fees include learning materials and extramurals.",
+      "notes": "Independent school. 2026 annual fees by grade: Gr RRR R58,800 (printed as 'Grade RRR'; the next row is Gr 1-3); Gr 1-3 R71,160; Gr 4-7 R75,960; Gr 8-9 R81,120; Gr 10-11 R90,240; Gr 12 R95,700. Annual fee if paid by 31 January: R55,860 / R67,600 / R72,160 / R77,060 / R85,730 / R90,920. Quarterly, 4 payments of R14,190 / R17,170 / R18,330 / R19,570 / R21,770 / R23,090. Monthly: R4,900 / R5,930 / R6,330 / R6,760 / R7,520 for 12 months; Gr 12 R9,570 for 10 months. Registration R3,500 once-off, new learners only. Sibling discount R270 per month. Fees are payable for the full year whatever the registration date. The sheet says fees include learning materials and extramurals.",
       "sourceKind": "the school's 2026 fee schedule",
       "byGrade": [
         {
@@ -2304,8 +2304,8 @@
         "item": "Vetting fee",
         "amount": 160,
         "frequency": "once",
-        "note": "Only charged on applications that are declined",
-        "applies": "penalty",
+        "note": "Charged on applications that are declined",
+        "applies": "some",
         "included": false
       },
       {
@@ -2585,7 +2585,7 @@
     "lat": -26.1423366667,
     "lng": 28.0032316664,
     "website": "https://delasalleholycrosscollege.co.za/",
-    "phone": "011 888 1692",
+    "phone": "011 782 4896",
     "email": null,
     "language": null,
     "emis": "700150383",
@@ -2612,7 +2612,7 @@
       "registration": null,
       "deposit": null,
       "instalments": 10,
-      "notes": "Independent school, Grade RR to Grade 12. Fees differ by grade; the lowest grade (RR) is R84,000 a year, up to R140,500 for Grade 12. Pay per year, per term (due on the first day of term: January, May and September) or per month for 10 months (January to October); for Grade RR that is R28,000 a term or R8,400 a month. A capital levy of R3,500 per family is charged each January, due by March. Extra subject costs apply to some learners (AP Maths, Visual Arts, IT and CAT, Geography). Grade 7 shows two unlabelled amounts, R250 and R300; ask the school what they are for. Discounts: paying the full annual fee by EFT earns 5% if received by 15 December 2025, or 4% by 6 February 2026; the third child's annual fee is reduced by 25%, and a fourth child pays no annual fee, when all are enrolled together. The sheet lists no registration fee and no book pack price.",
+      "notes": "Independent school, Grade RR to Grade 12. Fees differ by grade; the lowest grade (RR) is R84,000 a year, up to R140,500 for Grade 12. Pay per year, per term (due on the first day of term: January, May and September) or per month for 10 months (January to October); for Grade RR that is R28,000 a term or R8,400 a month. A capital levy of R3,500 per family is charged each January, due by March. Extra subject costs apply to some learners (AP Maths, Visual Arts, IT and CAT, Geography). Some extra-subject amounts are not labelled by subject on the sheet (Gr 7 and Gr 8-9: R250 and R300; Gr 10: R1,500 and R930); ask the school. Junior School phone: 011 782 5217. Discounts: paying the full annual fee by EFT earns 5% if received by 15 December 2025, or 4% by 6 February 2026; the third child's annual fee is reduced by 25%, and a fourth child pays no annual fee, when all are enrolled together. The sheet lists no registration fee and no book pack price.",
       "sourceKind": "the school's 2026 fee schedule",
       "byGrade": [
         {
@@ -2705,40 +2705,8 @@
         "included": false
       },
       {
-        "item": "Visual Arts (Gr 8-9)",
-        "amount": 250,
-        "frequency": "yearly",
-        "note": "Only learners taking it",
-        "applies": "some",
-        "included": false
-      },
-      {
-        "item": "Visual Arts (Gr 10)",
-        "amount": 1500,
-        "frequency": "yearly",
-        "note": "Only learners taking it",
-        "applies": "some",
-        "included": false
-      },
-      {
         "item": "Visual Arts (Gr 11-12)",
         "amount": 1300,
-        "frequency": "yearly",
-        "note": "Only learners taking it",
-        "applies": "some",
-        "included": false
-      },
-      {
-        "item": "IT and CAT (Gr 8-9)",
-        "amount": 300,
-        "frequency": "yearly",
-        "note": "Only learners taking it",
-        "applies": "some",
-        "included": false
-      },
-      {
-        "item": "IT and CAT (Gr 10-12)",
-        "amount": 930,
         "frequency": "yearly",
         "note": "Only learners taking it",
         "applies": "some",
@@ -2870,7 +2838,24 @@
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "Stationery (Gr R-3)",
+        "amount": 2600,
+        "frequency": "yearly",
+        "note": "Included in the school's own 'Total for the year'",
+        "applies": "Gr R-3",
+        "included": false
+      },
+      {
+        "item": "Stationery (Gr 4-7)",
+        "amount": 3000,
+        "frequency": "yearly",
+        "note": "Included in the school's own 'Total for the year'",
+        "applies": "Gr 4-7",
+        "included": false
+      }
+    ]
   },
   {
     "id": "greenlane-college",
@@ -3013,86 +2998,6 @@
       "sourceKind": "the school's 2026 fee schedule"
     },
     "hiddenCosts": []
-  },
-  {
-    "id": "hillside-akademie",
-    "name": "Hillside Akademie",
-    "type": "Private",
-    "phase": "Combined",
-    "grades": null,
-    "area": "Colbyn",
-    "city": "Pretoria",
-    "province": "Gauteng",
-    "postcode": null,
-    "address": "76 Jan Shoba Street, Colbyn, Pretoria",
-    "lat": null,
-    "lng": null,
-    "website": "https://hillsideakademie.co.za/",
-    "phone": null,
-    "email": null,
-    "language": null,
-    "emis": "700401181",
-    "country": "ZA",
-    "quintile": null,
-    "outings": [],
-    "aftercare": {
-      "available": null,
-      "monthly": null
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-11-12",
-    "sources": [
-      "https://hillsideakademie.co.za/wp-content/uploads/2026/11/Hillside_2027_Fee_Schedule_with_Consent.pdf"
-    ],
-    "fees": {
-      "year": 2027,
-      "yearly": 97200,
-      "monthly": null,
-      "registration": null,
-      "deposit": 16200,
-      "instalments": null,
-      "notes": "Independent school; the sheet does not list the grades. 2027 school fees R97,200 a year, with three payment options: 12 monthly payments of R8,100 (January to December), 10 monthly payments of R9,720 (January to October), or once-off by 31 October 2026 with a 15% discount, R82,620. Payments are due in advance by the 1st of each month. Registration deposit R16,200, payable on acceptance. Sibling discount: the sheet gives both 10% of the monthly fee and R7,290 a month; ask the school. Optional aftercare until 15:15 is R1,300 a month and until 17:30 R1,800 a month, both January to November; ad hoc aftercare R165 per day. Books for Gr 1-3 and the Learner Support Programme R1,800; Gr 4-12 buy their own.",
-      "sourceKind": "the school's 2027 fee schedule"
-    },
-    "hiddenCosts": [
-      {
-        "item": "Books (Gr 1-3 and Learner Support Programme)",
-        "amount": 1800,
-        "frequency": "once",
-        "note": "Payable on registration for new learners",
-        "applies": "some",
-        "included": false
-      },
-      {
-        "item": "Ad hoc aftercare",
-        "amount": 165,
-        "frequency": "once",
-        "note": "Optional; subject to availability",
-        "applies": "optional",
-        "included": false,
-        "per": "day"
-      },
-      {
-        "item": "Late collection",
-        "amount": 500,
-        "frequency": "once",
-        "note": "If collected after 17:30",
-        "applies": "penalty",
-        "included": false
-      },
-      {
-        "item": "Late payment administration fee",
-        "amount": 250,
-        "frequency": "once",
-        "note": "Once per overdue monthly instalment",
-        "applies": "penalty",
-        "included": false
-      }
-    ]
   },
   {
     "id": "isiqalo-primary-school",
@@ -3384,7 +3289,7 @@
         "amount": 1250,
         "frequency": "yearly",
         "note": "Listed for the whole year, Gr RR and R only",
-        "applies": "some",
+        "applies": "Gr RR-R",
         "included": false
       },
       {
@@ -3560,7 +3465,7 @@
       {
         "item": "Annual extra fees (Gr R)",
         "amount": 170,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January",
         "applies": "Gr R",
         "included": false
@@ -3568,7 +3473,7 @@
       {
         "item": "Annual extra fees (Gr 1)",
         "amount": 850,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January",
         "applies": "Gr 1",
         "included": false
@@ -3576,7 +3481,7 @@
       {
         "item": "Annual extra fees (Gr 2)",
         "amount": 885,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January",
         "applies": "Gr 2",
         "included": false
@@ -3584,7 +3489,7 @@
       {
         "item": "Annual extra fees (Gr 3)",
         "amount": 885,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January",
         "applies": "Gr 3",
         "included": false
@@ -3592,7 +3497,7 @@
       {
         "item": "Annual extra fees (Gr 4-6)",
         "amount": 865,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January",
         "applies": "Gr 4-6",
         "included": false
@@ -3600,7 +3505,7 @@
       {
         "item": "Annual extra fees (Gr 7)",
         "amount": 935,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January",
         "applies": "Gr 7",
         "included": false
@@ -3608,7 +3513,7 @@
       {
         "item": "Annual extra fees (Gr 8)",
         "amount": 2470,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January ; includes camp cost in Term 2",
         "applies": "Gr 8",
         "included": false
@@ -3616,7 +3521,7 @@
       {
         "item": "Annual extra fees (Gr 9)",
         "amount": 3075,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January ; includes camp cost in Term 2",
         "applies": "Gr 9",
         "included": false
@@ -3624,7 +3529,7 @@
       {
         "item": "Annual extra fees (Gr 10-11)",
         "amount": 2525,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January ; includes camp cost in Term 2",
         "applies": "Gr 10-11",
         "included": false
@@ -3632,7 +3537,7 @@
       {
         "item": "Annual extra fees (Gr 12)",
         "amount": 725,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "Billed 1 January 2027, paid by end of January ; includes camp cost in Term 2",
         "applies": "Gr 12",
         "included": false
@@ -3640,8 +3545,8 @@
       {
         "item": "Building levy",
         "amount": 850,
-        "frequency": "once",
-        "note": "Charged once-off per account in January 2027",
+        "frequency": "yearly",
+        "note": "R850 charged once per account in January 2027",
         "applies": "everyone",
         "included": false
       },
@@ -3850,7 +3755,7 @@
       "registration": 700,
       "deposit": null,
       "instalments": 11,
-      "notes": "Independent Waldorf school, Baby Care to Class 12 (Gr R shown as the entry grade; Gr R tuition R105,732 a year, R9,612 a month for 11 months, January to November). Levies are extra: infrastructure R1,900, pupil insurance R205 and class fund R216 for Gr R; Gr 1 and up add a sports levy of R1,450 and a larger class fund. First month's fee including levies for Gr R is R11,933. Discount: 5% if the annual total is paid by 30 November 2026 (Gr R R102,766); the sheet gives both 3.5% and 5% for 31 January 2027; ask the school. Registration fee R700 per child; enrolment fee R10,000 for entering Class 1 to 12 (the page does not say about Gr R). Aftercare is optional, billed monthly for 11 months; amounts are on the school's page.",
+      "notes": "Independent Waldorf school, Baby Care to Class 12 (Gr R shown as the entry grade; Gr R tuition R105,732 a year, R9,612 a month for 11 months, January to November). Levies are extra, per child each year: infrastructure R1,900 and pupil insurance R205, plus a class fund (R216 for Gr R); Gr 1 and up add a sports levy of R1,450 and a larger class fund. First month's fee including levies for Gr R is R11,933. Discount: 5% if the annual total is paid by 30 November 2026 (Gr R R102,766); the sheet gives both 3.5% and 5% for 31 January 2027; ask the school. Registration fee R700 per child; enrolment fee R10,000 for entering Class 1 to 12 (the page does not say about Gr R). Aftercare is optional, billed monthly for 11 months; amounts are on the school's page.",
       "sourceKind": "the 2027 fees on the school's website",
       "byGrade": [
         {

@@ -10,7 +10,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 38,
+      "schoolCount": 37,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -41,7 +41,6 @@
         "gold-reef-private-school",
         "greenlane-college",
         "highveld-primary-school",
-        "hillside-akademie",
         "isiqalo-primary-school",
         "krugersdorp-high-school",
         "la-salle-college",
