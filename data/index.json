@@ -10,20 +10,34 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 5,
+      "schoolCount": 19,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
         "curro-pretoria-high",
         "fourways-high-school",
         "king-edward-vii-school",
-        "deutsche-internationale-schule-johannesburg"
+        "deutsche-internationale-schule-johannesburg",
+        "alberton-stars-private-school",
+        "andrews-academy",
+        "balmoral-college",
+        "birnel-college",
+        "carlswald-house-preparatory-school",
+        "cedarwood-school",
+        "centennial-schools",
+        "dalpark-private-school",
+        "empro-academy",
+        "gallagher-combined-school",
+        "glenstantia-primary-school",
+        "holy-family-college",
+        "japari-school",
+        "laerskool-emfulenipark"
       ],
       "bounds": [
-        -26.1787,
-        28.0058,
+        -26.7360185101,
+        27.8485897297,
         -25.7007,
-        28.2822
+        28.435031
       ]
     },
     {
@@ -33,7 +47,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 45,
+      "schoolCount": 46,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -80,10 +94,11 @@
         "linpark-high-school",
         "the-beaches-primary",
         "werda-skool",
-        "weston-agricultural-college"
+        "weston-agricultural-college",
+        "south-coast-academy"
       ],
       "bounds": [
-        -30.545351,
+        -30.8726,
         29.418402,
         -27.1272,
         32.0316

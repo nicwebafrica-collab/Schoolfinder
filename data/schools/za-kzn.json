@@ -5366,5 +5366,82 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "south-coast-academy",
+    "name": "South Coast Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-12",
+    "area": "Margate",
+    "city": "Margate",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "1 Elgin Place, Margate",
+    "lat": -30.8726,
+    "lng": 30.3418,
+    "website": "https://southcoastacademy.co.za/",
+    "phone": "039 312 0162",
+    "email": null,
+    "language": null,
+    "emis": "500342472",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://southcoastacademy.co.za/assets/files/3.-SCHOOLFEES2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 25300,
+      "monthly": 2300,
+      "registration": 400,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Independent school, Gr 1 to Gr 12. 2027 tuition by grade: Gr 1-3 11 x R2300 (R25 300 per year), Gr 4-7 11 x R2400 (R26 400 per year), Gr 8-11 11 x R2500 (R27 500 per year), Gr 12 11 x R2600 (R28 600 per year). Fees are paid in 11 payments, January to November, up front at the start of each month and before the 15th; the school says payment in instalments is allowed. 'Registration' is the R400 application fee for new students (non-refundable, paid with the application). After an acceptance letter a holding fee (deposit) equal to one month's fee must be paid; it is deducted from the January fees. The school prints no rand figure for it, so none is shown. Current learners pay a R200 re-registration fee (non-refundable). The sheet lists no other levies and no discounts.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1-3",
+          "yearly": 25300,
+          "monthly": 2300
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 26400,
+          "monthly": 2400
+        },
+        {
+          "grade": "Gr 8-11",
+          "yearly": 27500,
+          "monthly": 2500
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 28600,
+          "monthly": 2600
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Re-registration",
+        "amount": 200,
+        "frequency": "once",
+        "note": "Current learners only; non-refundable",
+        "applies": "some",
+        "included": false
+      }
+    ]
   }
 ]

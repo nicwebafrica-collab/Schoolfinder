@@ -39,6 +39,7 @@
     { name: "Scottsville", region: "KZN", lat: -29.6200, lng: 30.4000, note: "Pietermaritzburg" },
     { name: "Pelham", region: "KZN", lat: -29.6250, lng: 30.3800, note: "Pietermaritzburg" },
     { name: "Kokstad", region: "KZN", lat: -30.5470, lng: 29.4220 },
+    { name: "Margate", region: "KZN", lat: -30.8640, lng: 30.3700 },
     { name: "Glenwood", region: "KZN", lat: -29.8640, lng: 30.9930, note: "Durban" },
     { name: "Morningside", region: "KZN", lat: -29.8270, lng: 31.0150, note: "Durban" },
     { name: "Musgrave", region: "KZN", lat: -29.8400, lng: 31.0060, note: "Durban" },
@@ -60,7 +61,13 @@
     { name: "Sandton", region: "Gauteng", lat: -26.1070, lng: 28.0560 },
     { name: "Randburg", region: "Gauteng", lat: -26.0940, lng: 28.0060 },
     { name: "Houghton", region: "Gauteng", lat: -26.1700, lng: 28.0600 },
-    { name: "Parktown", region: "Gauteng", lat: -26.1800, lng: 28.0350 }
+    { name: "Parktown", region: "Gauteng", lat: -26.1800, lng: 28.0350 },
+    { name: "Alberton", region: "Gauteng", lat: -26.2680, lng: 28.1220 },
+    { name: "Germiston", region: "Gauteng", lat: -26.2310, lng: 28.1770 },
+    { name: "Boksburg", region: "Gauteng", lat: -26.2120, lng: 28.2600 },
+    { name: "Brakpan", region: "Gauteng", lat: -26.2370, lng: 28.3690 },
+    { name: "Nigel", region: "Gauteng", lat: -26.4310, lng: 28.4770 },
+    { name: "Vanderbijlpark", region: "Gauteng", lat: -26.7110, lng: 27.8380 }
   ];
 
   var RADII = [2, 5, 10, 20]; // km choices offered on the search screen
