@@ -67,7 +67,11 @@
     { name: "Boksburg", region: "Gauteng", lat: -26.2120, lng: 28.2600 },
     { name: "Brakpan", region: "Gauteng", lat: -26.2370, lng: 28.3690 },
     { name: "Nigel", region: "Gauteng", lat: -26.4310, lng: 28.4770 },
-    { name: "Vanderbijlpark", region: "Gauteng", lat: -26.7110, lng: 27.8380 }
+    { name: "Vanderbijlpark", region: "Gauteng", lat: -26.7110, lng: 27.8380 },
+    { name: "Vereeniging", region: "Gauteng", lat: -26.6736, lng: 27.9319 },
+    { name: "Krugersdorp", region: "Gauteng", lat: -26.0857, lng: 27.7750 },
+    { name: "Roodepoort", region: "Gauteng", lat: -26.1625, lng: 27.8725 },
+    { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 }
   ];
 
   var RADII = [2, 5, 10, 20]; // km choices offered on the search screen

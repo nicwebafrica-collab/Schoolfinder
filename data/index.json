@@ -10,7 +10,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 19,
+      "schoolCount": 38,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -31,11 +31,30 @@
         "glenstantia-primary-school",
         "holy-family-college",
         "japari-school",
-        "laerskool-emfulenipark"
+        "laerskool-emfulenipark",
+        "amberfield-college",
+        "basa-freedom-school",
+        "cliffview-primary-school",
+        "crossroads-school",
+        "de-la-salle-holy-cross-college",
+        "dunvegan-primary-school",
+        "gold-reef-private-school",
+        "greenlane-college",
+        "highveld-primary-school",
+        "hillside-akademie",
+        "isiqalo-primary-school",
+        "krugersdorp-high-school",
+        "la-salle-college",
+        "laerskool-tygerpoort",
+        "linksfield-primary-school",
+        "loreto-convent-school",
+        "maryvale-college",
+        "mayfair-academy",
+        "michael-mount-waldorf-school"
       ],
       "bounds": [
         -26.7360185101,
-        27.8485897297,
+        27.8034802542,
         -25.7007,
         28.435031
       ]
