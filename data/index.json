@@ -10,14 +10,15 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 5,
+      "schoolCount": 6,
       "updated": "2026-11",
       "ids": [
         "clarendon-park-primary-school",
         "bedford-country-school",
         "collegiate-girls-high-school",
         "balmoral-girls-primary-school",
-        "cape-recife-high-school"
+        "cape-recife-high-school",
+        "erica-girls-primary-school"
       ],
       "bounds": [
         -33.9965,
@@ -33,7 +34,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 59,
+      "schoolCount": 62,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -94,7 +95,10 @@
         "redwood-academy",
         "craighall-primary-school",
         "parkview-junior-school",
-        "rand-park-high-school"
+        "rand-park-high-school",
+        "brooklyn-primary-school",
+        "anchorage-academy",
+        "addnum-academy"
       ],
       "bounds": [
         -26.7360185101,

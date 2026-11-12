@@ -5923,5 +5923,285 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "brooklyn-primary-school",
+    "name": "Brooklyn Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Brooklyn",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "279 Murray Street, Brooklyn, Pretoria",
+    "lat": -25.764443,
+    "lng": 28.243307,
+    "website": "https://brooklynprimary.co.za/",
+    "phone": "012 460 3238",
+    "email": null,
+    "language": null,
+    "emis": "700210047",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://brooklynprimary.co.za/wp-content/uploads/2026/11/2027-School-Fee-Structure.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 25200,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public primary school. 2027 school fees: Grade R R25,200 a year (an initial R4,000 by 30 November 2026, then 10 equal payments of R2,120 from February to November 2027); Grade 1-7 R22,200 a year (an initial R3,000, by 30 November 2026 for Grade 1 or 11 January 2027 for Grade 2-7, then 10 payments of R1,920). The initial payment is part of the year's fee. Aftercare R9,300 a year (R800 then 10 payments of R850), optional. Discounts: 5% if paid in full by 28 February 2027; 2.5% for debit orders; 10% per child for three or more children (no other discount then).",
+      "sourceKind": "the school's 2027 fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 25200,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 22200,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 9300,
+        "frequency": "yearly",
+        "note": "R800 first, then 10 payments of R850",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "anchorage-academy",
+    "name": "Anchorage Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-9",
+    "area": "Centurion",
+    "city": "Centurion",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "21 Tamara Street, Tamara Park, Centurion",
+    "lat": -25.838672,
+    "lng": 28.165638,
+    "website": "http://anchorageacademy.co.za/",
+    "phone": "012 653 1190",
+    "email": null,
+    "language": null,
+    "emis": "700401381",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "http://anchorageacademy.co.za/wp-content/uploads/2026/10/Anchorage-Academy-Fee-Structure-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4200,
+      "registration": 2500,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Grade R to Grade 9. 2027 school fees: R4,200 a month for 12 months, payable before the 7th of each month (the school prints no yearly total). Registration R2,500, once-off and non-refundable, for new enrolments only. Book levy, essentials, stationery and textbooks are charged per grade once a year, to be paid by 31 December 2026: Grade R R2,610, Grade 1-3 R3,460, Grade 4 R4,020, Grade 5 R4,040, Grade 6 R4,130, Grade 7 R4,830, Grade 8 R4,975, Grade 9 R5,070. Aftercare R900 a month for 12 months, optional.",
+      "sourceKind": "the school's 2027 fee structure",
+      "byGrade": []
+    },
+    "hiddenCosts": [
+      {
+        "item": "Books, stationery and essentials (Gr R)",
+        "amount": 2610,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 1-3)",
+        "amount": 3460,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 1-3",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 4)",
+        "amount": 4020,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 5)",
+        "amount": 4040,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 6)",
+        "amount": 4130,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 7)",
+        "amount": 4830,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 8)",
+        "amount": 4975,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Books, stationery and essentials (Gr 9)",
+        "amount": 5070,
+        "frequency": "yearly",
+        "note": "Book levy, essentials, stationery and textbooks, paid by 31 December",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Aftercare",
+        "amount": 900,
+        "frequency": "monthly",
+        "note": "For 12 months",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "addnum-academy",
+    "name": "Addnum Academy",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr RRR-7",
+    "area": "Birch Acres",
+    "city": "Kempton Park",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Suikerbekkie Road, Birch Acres, Kempton Park",
+    "lat": -26.065393,
+    "lng": 28.211501,
+    "website": "https://addnum.co.za/",
+    "phone": null,
+    "email": "info@addnum.co.za",
+    "language": null,
+    "emis": "700401214",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://addnum.co.za/assets/documents/2027-SCHOOL-FEES-GAUTENG.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 38280,
+      "monthly": 3190,
+      "registration": 750,
+      "deposit": 2000,
+      "instalments": 12,
+      "notes": "Independent school (Gauteng campus, Kempton Park), Grade RRR to Grade 7. 2027 fees, monthly or as a yearly amount: Grade RRR-RR half day R3,190 a month (R38,280 a year), full day R3,960 (R47,520); Grade R-3 R3,740 (R44,880); Grade 4-6 R3,795 (R45,540); Grade 7 R3,905 (R46,860). New learners pay a non-refundable registration fee (R750 for RRR-RR, R1,000 for Grade R-7), a R500 assessment fee (Grade R-7) and a R2,000 non-refundable deposit. Aftercare R1,100 a month, optional (the sheet's yearly amounts with aftercare are R11,000 more, so it looks like 10 months; ask the school). Fees are payable in advance by the 1st. Late fee R100 a day. Third child 10% off tuition.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr RRR-RR (half day)",
+          "yearly": 38280,
+          "monthly": 3190,
+          "registration": 750,
+          "deposit": 2000
+        },
+        {
+          "grade": "Gr RRR-RR (full day)",
+          "yearly": 47520,
+          "monthly": 3960,
+          "registration": 750,
+          "deposit": 2000
+        },
+        {
+          "grade": "Gr R-3",
+          "yearly": 44880,
+          "monthly": 3740,
+          "registration": 1000,
+          "deposit": 2000
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 45540,
+          "monthly": 3795,
+          "registration": 1000,
+          "deposit": 2000
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 46860,
+          "monthly": 3905,
+          "registration": 1000,
+          "deposit": 2000
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Late fee",
+        "amount": 100,
+        "frequency": "once",
+        "note": "Per day late",
+        "applies": "penalty",
+        "included": false,
+        "per": "day"
+      }
+    ]
   }
 ]

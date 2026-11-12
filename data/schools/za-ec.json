@@ -375,5 +375,61 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "erica-girls-primary-school",
+    "name": "Erica Girls' Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 00-7",
+    "area": "Mount Croix",
+    "city": "Gqeberha",
+    "province": "Eastern Cape",
+    "postcode": "6001",
+    "address": "Bayview Avenue, Mount Croix, Gqeberha",
+    "lat": -33.95589,
+    "lng": 25.60302,
+    "website": "https://www.ericaprimary.co.za/",
+    "phone": "041 391 9300",
+    "email": null,
+    "language": null,
+    "emis": "200100209",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.ericaprimary.co.za/wp-content/uploads/2026/01/2026-School-Fee-Resolution.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 25652,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public girls' primary school. Compulsory school fees for 2026: R25,652 a year per child for Grade 00 to 7, due on the first day of the school year. Options: pay in full by 31 December 2025 and get 10% off (R23,087), pay in full by 31 January 2026 (R23,857), or 11 monthly payments on the last day of the month; ask the school for the monthly amount. The discount applies only to school fees. Optional extras: aftercare (12:30 to 17:15) R700 a month for 10 months, casual day R50; music tuition R320, instrument hire R270 and percussion R60 a month for 10 months; remedial lessons R480 a term.",
+      "sourceKind": "the school's 2026 fee resolution",
+      "byGrade": []
+    },
+    "hiddenCosts": [
+      {
+        "item": "Remedial lessons",
+        "amount": 480,
+        "frequency": "per term",
+        "note": "Only for learners who need them",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]
