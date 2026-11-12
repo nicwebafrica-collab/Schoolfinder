@@ -1525,7 +1525,16 @@
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "Coding and Robotics (R350 a month for 11 months)",
+        "amount": null,
+        "frequency": "monthly",
+        "note": "Compulsory for Grade 1-7; R350 a month, January to November, billed with the fees. Not included in the totals shown here",
+        "applies": "Gr 1-7",
+        "included": false
+      }
+    ]
   },
   {
     "id": "empro-academy",
