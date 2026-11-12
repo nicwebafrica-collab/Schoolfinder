@@ -354,7 +354,10 @@
       var votes = {}, best = null;
       schools.forEach(function (x) {
         if (String(x.postcode || "") !== code || !x.area) return;
-        var p = L.findPlace(x.area + " " + (x.province === "Gauteng" ? "Gauteng" : "KZN"));
+        // Province -> the region word places.js uses. A province with no place list yet gives no vote (never KZN by default).
+        var region = { "KwaZulu-Natal": "KZN", "Gauteng": "Gauteng", "Western Cape": "Western Cape", "Eastern Cape": "Eastern Cape" }[x.province];
+        if (!region) return;
+        var p = L.findPlace(x.area + " " + region);
         if (!p) return;
         var k = p.name + "|" + p.region;
         votes[k] = (votes[k] || 0) + 1;

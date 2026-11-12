@@ -71,7 +71,21 @@
     { name: "Vereeniging", region: "Gauteng", lat: -26.6736, lng: 27.9319 },
     { name: "Krugersdorp", region: "Gauteng", lat: -26.0857, lng: 27.7750 },
     { name: "Roodepoort", region: "Gauteng", lat: -26.1625, lng: 27.8725 },
-    { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 }
+    { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 },
+    // Western Cape (centres from the DBE school list's own locations, 2025 Q3)
+    { name: "Cape Town", region: "Western Cape", lat: -33.9249, lng: 18.4241, aliases: ["kaapstad", "cpt"] },
+    { name: "Bergvliet", region: "Western Cape", lat: -34.0522, lng: 18.4587, note: "Cape Town" },
+    { name: "Fish Hoek", region: "Western Cape", lat: -34.1318, lng: 18.4233, aliases: ["fishhoek", "vishoek"] },
+    { name: "Durbanville", region: "Western Cape", lat: -33.8347, lng: 18.6502 },
+    { name: "Kenilworth", region: "Western Cape", lat: -33.9985, lng: 18.4731, note: "Cape Town" },
+    { name: "Table View", region: "Western Cape", lat: -33.8309, lng: 18.5092, aliases: ["tableview"] },
+    { name: "Bloubergstrand", region: "Western Cape", lat: -33.8000, lng: 18.4630, aliases: ["blouberg"] },
+    { name: "Somerset West", region: "Western Cape", lat: -34.0849, lng: 18.8441 },
+    { name: "Franschhoek", region: "Western Cape", lat: -33.8943, lng: 19.1069, aliases: ["franshoek"] },
+    { name: "Edgemead", region: "Western Cape", lat: -33.8727, lng: 18.5491, note: "Cape Town" },
+    { name: "Pinelands", region: "Western Cape", lat: -33.9384, lng: 18.5098, note: "Cape Town" },
+    // Eastern Cape
+    { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] }
   ];
 
   var RADII = [2, 5, 10, 20]; // km choices offered on the search screen
@@ -95,7 +109,9 @@
   // Words for each region, so "Hillcrest, KZN" or "Waterfall Gauteng" can pick the right one.
   var REGION_WORDS = {
     KZN: ["kzn", "kwazulu natal", "kwazulunatal", "natal"],
-    Gauteng: ["gauteng", "gp", "gt"]
+    Gauteng: ["gauteng", "gp", "gt"],
+    "Western Cape": ["western cape", "wc", "w cape"],
+    "Eastern Cape": ["eastern cape", "ec", "e cape"]
   };
 
   // "Hillcrest, KZN 3610" -> { text: "hillcrest", region: "KZN" }. Strips commas, postcodes and a trailing province.
@@ -194,7 +210,7 @@
   // A full address ("12 Old Main Road, Hillcrest, 3610") -> the known suburb inside it, so typing your
   // address works too. Skips names used as street names ("Kloof Road"), and prefers a suburb over a big city.
   var ROAD_WORDS = /^(road|rd|street|st|avenue|ave|drive|dr|lane|ln|crescent|cres|way|close|place|pl|boulevard|blvd|terrace|highway|hwy|park|grove)$/;
-  var CITIES = ["Durban", "Pietermaritzburg", "Johannesburg", "Pretoria"];
+  var CITIES = ["Durban", "Pietermaritzburg", "Johannesburg", "Pretoria", "Cape Town", "Gqeberha"];
   function placeInText(text) {
     var sq = splitQuery(text);
     var words = sq.text.split(" ").filter(Boolean);
@@ -214,9 +230,11 @@
     // ("Pretoria"), or the postcode (KZN postcodes are 3000-4999). Used to pick the right Hillcrest or Waterfall (B-v13).
     var region = sq.region;
     found.forEach(function (f) { if (!region && CITIES.indexOf(f.place.name) !== -1) region = f.place.region; });
-    // Rough postcode ranges: KZN 3000-4999; Gauteng 0001-0299 (Pretoria) and 1400-2199 (Johannesburg, East Rand, Midrand).
+    // Rough postcode ranges: KZN 3000-4999; Gauteng 0001-0299 (Pretoria) and 1400-2199 (Johannesburg, East Rand, Midrand);
+    // Eastern Cape 5000-6499 (East London, Gqeberha); Western Cape 6500-8299 (George to Cape Town and the West Coast).
     var code = Number((/\b(\d{4})\b/.exec(String(text)) || [])[1]);
-    if (!region && code > 0) region = code >= 3000 && code <= 4999 ? "KZN" : (code <= 299 || (code >= 1400 && code <= 2199)) ? "Gauteng" : "elsewhere";
+    if (!region && code > 0) region = code >= 3000 && code <= 4999 ? "KZN" : (code <= 299 || (code >= 1400 && code <= 2199)) ? "Gauteng"
+      : code >= 5000 && code <= 6499 ? "Eastern Cape" : code >= 6500 && code <= 8299 ? "Western Cape" : "elsewhere";
     var best = null;
     found.forEach(function (f) {
       if (region && f.place.region !== region) return;
