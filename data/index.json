@@ -33,7 +33,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 56,
+      "schoolCount": 59,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -91,7 +91,10 @@
         "radford-house",
         "radley-private-school",
         "redruth-academy",
-        "redwood-academy"
+        "redwood-academy",
+        "craighall-primary-school",
+        "parkview-junior-school",
+        "rand-park-high-school"
       ],
       "bounds": [
         -26.7360185101,

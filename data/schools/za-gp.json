@@ -5705,5 +5705,223 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "craighall-primary-school",
+    "name": "Craighall Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Craighall Park",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Cnr Grosvenor and Rothesay Avenue, Craighall Park, Johannesburg",
+    "lat": -26.122852,
+    "lng": 28.024841,
+    "website": "https://craighallprimary.co.za/",
+    "phone": "011 788 7223",
+    "email": "reception@craighallprimary.co.za",
+    "language": null,
+    "emis": "700150359",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://craighallprimary.co.za/wp-content/uploads/2025/11/2026-School-Fees.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 51000,
+      "monthly": 5100,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public primary school. 2026 school fee per learner: Grade R R51,000 (or R5,100 a month for 10 months); Grade 4-7 R39,000 (or R3,900 a month for 10 months). On top of the school fee the sheet adds a levy (Grade R R2,000, Grade 4-7 R1,200) and a book fee (Grade R R1,500, Grade 4-7 R1,300). Grade R also shows a R8,600 deposit, which is taken off the amount payable, so it is part of the year's fees, not extra. Discounts on the school fee: 8% if paid in full by 31 December 2025, 2% by 31 January 2026. The sheet also has tables for Grades 1-3, but their grade labels could not be read from the scanned sheet, so ask the school for Grade 1-3 fees.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 51000,
+          "monthly": 5100
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 39000,
+          "monthly": 3900
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Levy (Grade R)",
+        "amount": 2000,
+        "frequency": "yearly",
+        "note": "Added to the Grade R school fee on the sheet",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Book fee (Grade R)",
+        "amount": 1500,
+        "frequency": "yearly",
+        "note": "Added to the Grade R school fee on the sheet",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Levy (Grade 4-7)",
+        "amount": 1200,
+        "frequency": "yearly",
+        "note": "Added to the school fee on the sheet",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Book fee (Grade 4-7)",
+        "amount": 1300,
+        "frequency": "yearly",
+        "note": "Added to the school fee on the sheet",
+        "applies": "Gr 4-7",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "parkview-junior-school",
+    "name": "Parkview Junior School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-3",
+    "area": "Parkview",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": "2193",
+    "address": "39 Ennis Road, Parkview, Johannesburg",
+    "lat": -26.158987,
+    "lng": 28.02377,
+    "website": "https://www.parkviewjunior.co.za/",
+    "phone": "011 646 5542",
+    "email": "admin@parkviewjunior.co.za",
+    "language": null,
+    "emis": "700131177",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.parkviewjunior.co.za/wp-content/uploads/2026/01/Grade-R-Fees-2026.pdf",
+      "https://www.parkviewjunior.co.za/wp-content/uploads/2026/01/Grade-1-3-Fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 33300,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Compulsory fee-paying public school, Grade R to Grade 3. 2026 annual school fees per learner: Grade R R33,300; Grade 1-3 R31,200, payable in advance or in 10 equal monthly payments from January to October 2026 (R3,120 a month for Grade 1-3). Grade R pays a R5,950 fee deposit, and Grade 1 and new learners a R3,950 deposit; these come off the year's fee, so they are not extra. Grade R then pays R2,735 a month for 10 months. Compulsory book fee R550 per learner. Discounts: R1,800 if paid in full by 31 December 2025, R1,400 by 31 January 2026, or R1,000 off in October after 10 successful debit orders.",
+      "sourceKind": "the school's 2026 fee letters",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 33300,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 31200,
+          "monthly": 3120
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Compulsory book fee",
+        "amount": 550,
+        "frequency": "yearly",
+        "note": "Per learner, due by 31 December before the school year",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "rand-park-high-school",
+    "name": "Rand Park High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Randpark Ridge",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Assgaai Avenue, Randpark Ridge, Randburg",
+    "lat": -26.093558,
+    "lng": 27.957269,
+    "website": "https://randparkhigh.co.za/",
+    "phone": "011 793 1246",
+    "email": null,
+    "language": null,
+    "emis": "700151241",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://randparkhigh.co.za/wp-content/uploads/2026/10/2027-School-Fees-and-Payment-Terms.pdf",
+      "https://randparkhigh.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 66000,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public high school. 2027 annual school fees (approved at the AGM on 28 October 2026): R66,000 for Grade 8 and new learners, R63,500 for existing learners. Fees are due in advance, or in 10 equal instalments from January to October 2027. Current learners pay R6,350 a month. New learners pay an initial R6,500 on registration, which counts towards the year, then 10 monthly payments; ask the school for the exact monthly amount. Discounts if settled in full: 10% by 31 January, 7% by 28 February, 5% by 31 March 2027.",
+      "sourceKind": "the school's 2027 fee letter",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 66000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 63500,
+          "monthly": 6350
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]
