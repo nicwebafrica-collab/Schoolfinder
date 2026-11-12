@@ -4057,11 +4057,11 @@
     "fees": {
       "year": 2026,
       "yearly": null,
-      "monthly": 6050,
+      "monthly": 4035,
       "registration": null,
       "deposit": 4000,
       "instalments": null,
-      "notes": "Independent Montessori school with preschool and primary (Year 1-7). The fee sheet is headed 'Fee Schedule 2026'. Monthly tuition, paid over 12 months (January to December) in advance on the 1st: 2 to 4 year olds R4,035; 5 year olds R4,100; Pre-primary R4,800; Year 1-3 R6,050; Year 4-7 R6,300. The monthly figure shown is for Year 1-3. A non-refundable R4,000 enrolment fee is paid (shown here as the deposit). Pay the whole year before the end of February for a 5% discount; each pupil after the oldest gets 6% off the listed fees. Early Morning Class, Waiting Class and Aftercare are also billed as a monthly amount for 11 months (R125, R580, R900); that is not listed as a yearly amount, so ask the school. Cash is not accepted.",
+      "notes": "Independent Montessori school with preschool and primary (Year 1-7). The fee sheet is headed 'Fee Schedule 2026'. Monthly tuition, paid over 12 months (January to December) in advance on the 1st: 2 to 4 year olds R4,035; 5 year olds R4,100; Pre-primary R4,800; Year 1-3 R6,050; Year 4-7 R6,300. Fees shown are for 2 to 4 year olds. A non-refundable R4,000 enrolment fee is paid (shown here as the deposit). Pay the whole year before the end of February for a 5% discount; each pupil after the oldest gets 6% off the listed fees. Early Morning Class, Waiting Class and Aftercare are also billed as a monthly amount for 11 months (R125, R580, R900); that is not listed as a yearly amount, so ask the school. Cash is not accepted.",
       "sourceKind": "the school's 2026 fee schedule",
       "byGrade": [
         {
@@ -4246,6 +4246,14 @@
         "note": "Total for 11 months; monthly option is 1,200",
         "applies": "optional",
         "included": false
+      },
+      {
+        "item": "Enrolment fee (every year)",
+        "amount": 1000,
+        "frequency": "yearly",
+        "note": "Non-refundable, per learner, each year",
+        "applies": "everyone",
+        "included": false
       }
     ]
   },
@@ -4290,7 +4298,7 @@
       "registration": 1000,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school, Grade R to Grade 12, with an early childhood centre. The 2026 sheet gives three ways to pay tuition: monthly, termly (3% discount) or yearly before 31 January 2026 (6% discount). Because the yearly figures are discounted prices, the grade list shows the monthly fee. Gr R-1: R2,750 a month, R8,003 a term or R31,020 a year; Gr 2-7: R2,850, R8,294 or R32,148; Gr 8: R3,424, R9,963 or R38,623; Gr 12: R4,730, R13,765 or R53,354 (other grades in the grade list). Early childhood RR and RRR programmes are listed separately (full day R2,950 a month). Registration fee: R1,000 for the early childhood centre and preparatory school, R800 for high school. A levy is payable once, due 31 January 2026, and discounts do not apply to it. Sibling discount is 5% per sibling. Late payments attract interest at 18.5%. Bus is paid to a separate account.",
+      "notes": "Independent school, Grade R to Grade 12, with an early childhood centre. The 2026 sheet gives three ways to pay tuition: monthly, termly (3% discount) or yearly before 31 January 2026 (6% discount). Gr R-1: R2,750 a month, R8,003 a term or R31,020 a year; Gr 2-7: R2,850, R8,294 or R32,148; Gr 8: R3,424, R9,963 or R38,623; Gr 12: R4,730, R13,765 or R53,354 (other grades in the grade list). Early childhood RR and RRR programmes are listed separately (full day R2,950 a month). Registration fee: R1,000 for the early childhood centre and preparatory school, R800 for high school. A yearly levy (R2,100 Gr R-7, R2,150 Gr 8-11) is due by 31 January; discounts do not apply to it. The sheet prints the RRR half-day yearly fee (R34,968) higher than full day (R33,276). Sibling discount is 5% per sibling. Late payments attract interest at 18.5%.",
       "sourceKind": "the school's 2026 fee schedule",
       "byGrade": [
         {
@@ -4341,16 +4349,16 @@
       {
         "item": "Levy (early childhood and foundation phase)",
         "amount": 2100,
-        "frequency": "once",
-        "note": "Payable once, due 31 January 2026; discounts do not apply",
+        "frequency": "yearly",
+        "note": "Due 31 January each year; discounts do not apply",
         "applies": "Gr R-7",
         "included": false
       },
       {
         "item": "Levy (Gr 8-11)",
         "amount": 2150,
-        "frequency": "once",
-        "note": "Payable once, due 31 January 2026; discounts do not apply",
+        "frequency": "yearly",
+        "note": "Due 31 January each year; discounts do not apply",
         "applies": "Gr 8-11",
         "included": false
       },

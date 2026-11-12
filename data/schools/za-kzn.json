@@ -5713,24 +5713,24 @@
       {
         "item": "Adventure Club, full time",
         "amount": 1680,
-        "frequency": "yearly",
-        "note": "Optional; annual registration paid over ten months (Feb to Nov); Gr 0000 to Gr 3",
+        "frequency": "monthly",
+        "note": "10 months, February to November",
         "applies": "optional",
         "included": false
       },
       {
         "item": "Adventure Club, three times a week",
         "amount": 1010,
-        "frequency": "yearly",
-        "note": "Optional; annual registration paid over ten months (Feb to Nov)",
+        "frequency": "monthly",
+        "note": "10 months, February to November",
         "applies": "optional",
         "included": false
       },
       {
         "item": "Adventure Club, half day",
         "amount": 840,
-        "frequency": "yearly",
-        "note": "Optional; annual registration paid over ten months (Feb to Nov)",
+        "frequency": "monthly",
+        "note": "10 months, February to November",
         "applies": "optional",
         "included": false
       },
@@ -5815,16 +5815,16 @@
       {
         "item": "Medical insurance",
         "amount": 240,
-        "frequency": "once",
-        "note": "Paid in January",
+        "frequency": "yearly",
+        "note": "Paid in January each year (2027 schedule: 'Once off paid in January')",
         "applies": "everyone",
         "included": false
       },
       {
         "item": "ISASA (Independent School Association fee)",
         "amount": 240,
-        "frequency": "once",
-        "note": "Paid in January",
+        "frequency": "yearly",
+        "note": "Paid in January each year (2027 schedule: 'Once off paid in January')",
         "applies": "everyone",
         "included": false
       },
@@ -5844,6 +5844,38 @@
         "applies": "optional",
         "included": false,
         "per": "day"
+      },
+      {
+        "item": "Stationery (Gr RRR-RR)",
+        "amount": 1450,
+        "frequency": "yearly",
+        "note": "2027 stationery, due by 1 November 2026",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Stationery (Gr R)",
+        "amount": 1700,
+        "frequency": "yearly",
+        "note": "2027 stationery, due by 1 November 2026",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Stationery (Gr 1-3)",
+        "amount": 2050,
+        "frequency": "yearly",
+        "note": "2027 stationery, due by 1 November 2026",
+        "applies": "Gr 1-3",
+        "included": false
+      },
+      {
+        "item": "Stationery (Gr 4)",
+        "amount": 2250,
+        "frequency": "yearly",
+        "note": "2027 stationery, due by 1 November 2026",
+        "applies": "Gr 4",
+        "included": false
       }
     ]
   },
@@ -6139,7 +6171,7 @@
   },
   {
     "id": "tree-tops-junior-primary-school",
-    "name": "Tree Tops Junior Primary School",
+    "name": "Tree Tops School",
     "type": "Private",
     "phase": "Primary",
     "grades": "Tree Tots-Gr 4",
@@ -6178,7 +6210,7 @@
       "registration": null,
       "deposit": null,
       "instalments": 10,
-      "notes": "Independent school, Tree Tots (from 18 months) to Gr 4. Fees shown are for Tree Tots: R40,960 a year, or R4,096 a month for 10 months (January to October), or 4 termly payments of R10,240. Fees differ by grade (see grade list). Paying the annual fee by 31 January earns a 2.5% discount (Tree Tots R39,936). Sibling discount: R1,200 a year (R300 a term) on school fees for younger siblings only. Levies are listed without saying how often, so ask the school: sports levy R2,500 (Gr 1 to 4), accident insurance R250, toiletry levy R600, and stationery levies that vary by grade and whose figures are hard to match. Cash is not accepted. The sheet lists no registration or deposit.",
+      "notes": "Independent school, Tree Tots (from 18 months) to Gr 4. Fees shown are for Tree Tots: R40,960 a year, or R4,096 a month for 10 months (January to October), or 4 termly payments of R10,240. Fees differ by grade (see grade list). Paying the annual fee by 31 January earns a 2.5% discount (Tree Tots R39,936). Sibling discount: R1,200 a year (R300 a term) on school fees for younger siblings only. The sheet lists once-off sports and stationery levies, compulsory accident insurance and a toiletry levy (see extra costs). Cash is not accepted. The sheet lists no registration or deposit.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -6253,7 +6285,50 @@
         "note": "Optional; 4 or 5 days a week",
         "applies": "optional",
         "included": false
+      },
+      {
+        "item": "Sports levy (Gr 1-4)",
+        "amount": 2500,
+        "frequency": "yearly",
+        "note": "Printed as 'once-off' on the 2027 fee notice: one payment for the year",
+        "applies": "Gr 1-4",
+        "included": false
+      },
+      {
+        "item": "Stationery levy (Gr 1-4)",
+        "amount": 1600,
+        "frequency": "yearly",
+        "note": "Printed as 'once-off' on the 2027 fee notice: one payment for the year",
+        "applies": "Gr 1-4",
+        "included": false
+      },
+      {
+        "item": "Stationery levy (Gr 0000 to Gr R)",
+        "amount": 950,
+        "frequency": "yearly",
+        "note": "Printed as 'once-off' on the 2027 fee notice: one payment for the year",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Personal accident insurance",
+        "amount": 250,
+        "frequency": "once",
+        "note": "Compulsory; no frequency printed",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Toiletry levy",
+        "amount": 600,
+        "frequency": "once",
+        "note": "No frequency printed",
+        "applies": "everyone",
+        "included": false
       }
+    ],
+    "aliases": [
+      "Tree Tops Junior Primary"
     ]
   }
 ]
