@@ -4,13 +4,32 @@
   },
   "areas": [
     {
+      "id": "za-ec",
+      "country": "ZA",
+      "province": "Eastern Cape",
+      "short": "Eastern Cape",
+      "file": "schools/za-ec.json",
+      "rules": null,
+      "schoolCount": 1,
+      "updated": "2026-11",
+      "ids": [
+        "clarendon-park-primary-school"
+      ],
+      "bounds": [
+        -33.97262,
+        25.58833,
+        -33.97262,
+        25.58833
+      ]
+    },
+    {
       "id": "za-gp",
       "country": "ZA",
       "province": "Gauteng",
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 37,
+      "schoolCount": 38,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -49,7 +68,8 @@
         "loreto-convent-school",
         "maryvale-college",
         "mayfair-academy",
-        "michael-mount-waldorf-school"
+        "michael-mount-waldorf-school",
+        "dainfern-college"
       ],
       "bounds": [
         -26.7360185101,
@@ -120,6 +140,33 @@
         29.418402,
         -27.1272,
         32.0316
+      ]
+    },
+    {
+      "id": "za-wc",
+      "country": "ZA",
+      "province": "Western Cape",
+      "short": "Western Cape",
+      "file": "schools/za-wc.json",
+      "rules": null,
+      "schoolCount": 9,
+      "updated": "2026-11",
+      "ids": [
+        "bizweni-primary-school",
+        "fish-hoek-primary-school",
+        "blouberg-international-academy",
+        "cannons-creek-school",
+        "bridge-house-school",
+        "bergvliet-primary-school",
+        "eversdal-primary-school",
+        "auburn-house-school",
+        "fish-hoek-high-school"
+      ],
+      "bounds": [
+        -34.134839,
+        18.420551,
+        -33.807102,
+        19.029346
       ]
     }
   ]

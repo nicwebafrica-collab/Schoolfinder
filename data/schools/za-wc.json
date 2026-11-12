@@ -1,0 +1,1101 @@
+[
+  {
+    "id": "bizweni-primary-school",
+    "name": "Bizweni Primary School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Cherrywood Gardens",
+    "city": "Somerset West",
+    "province": "Western Cape",
+    "postcode": "7130",
+    "address": "Bizweni Avenue, Somerset West",
+    "lat": -34.087199,
+    "lng": 18.859472,
+    "website": "https://bizweniprimaryschool.co.za/",
+    "phone": "021 851 2048",
+    "email": null,
+    "language": null,
+    "emis": "100000562",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://bizweniprimaryschool.co.za/wp-content/uploads/2026/04/Fee-Structure-2027-Bizweni-Primary-School.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 40320,
+      "monthly": 3360,
+      "registration": 350,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Gr R to Gr 7. Entry grade is Gr R (half day): R40,320 a year, R10,080 a term or R3,360 a month for 12 months. Gr 1-7 tuition is R57,360 a year, R14,340 a term or R4,780 a month for 12 months. Gr R pays a R350 non-refundable application fee and R600 stationery (once-off). Gr 1-7 pays a R500 non-refundable application fee and a R3,000 non-refundable registration fee. Gr 1-7 also pays a Resource Fee of R800, listed without saying how often; ask the school. Paying tuition per term or annually in advance earns a 5% discount on tuition only. Monthly payments are due on or before the 3rd, January to December. Sibling discount: 10% off tuition for the second and later children. Aftercare (no meals) is R1,140 a month for 12 months, R3,420 a term or R13,680 a year. Holiday club is R120 a day.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 40320,
+          "monthly": 3360,
+          "registration": 350
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 57360,
+          "monthly": 4780,
+          "registration": 3000
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Stationery",
+        "amount": 600,
+        "frequency": "once",
+        "note": "Gr R only, once-off",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Aftercare (no meals)",
+        "amount": 1140,
+        "frequency": "monthly",
+        "note": "Optional; for 12 months; R3,420 a term or R13,680 a year",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Holiday club (no meals)",
+        "amount": 120,
+        "frequency": "once",
+        "note": "Optional; per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "fish-hoek-primary-school",
+    "name": "Fish Hoek Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Pre Gr R-7",
+    "area": "Fish Hoek",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7975",
+    "address": "Upper Recreation Road, Fish Hoek",
+    "lat": -34.130335,
+    "lng": 18.421963,
+    "website": null,
+    "phone": "021 782 6113",
+    "email": "reception@fishhoekprimary.co.za",
+    "language": null,
+    "emis": "104309247",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://img1.wsimg.com/blobby/go/dff5c150-73bd-43f0-a92a-cd7cea8a8fb2/downloads/b6d75251-5d7a-426a-aed1-ff5b09b1d7f6/2027%20Fees.pdf?ver=1792580922111"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 41730,
+      "monthly": 4173,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-charging public primary school, Pre Gr R to Gr 7. 2027 fees for Pre Gr R and Gr R are R41,730 a year, or R4,173 a month for 10 months (1 February to 1 November). Gr 1-7 is R36,500 a year, or R3,650 a month for 10 months. Paying in full by the end of February gives a discount: Pre Gr R and Gr R R2,086.50 (R39,643.50 to pay); Gr 1-7 with 1 child R1,825 (R34,675), 2 children R3,650 (R69,350), 3 children R5,475 (R104,025). Aftercare, listed 'over 11 months (1 Jan - 1 Nov)' and including lunch, is R1,616 (13h00-18h00), R1,380 (14h30-18h00) or R1,129 (13h00-16h00); the sheet doesn't say how often these are charged, so ask the school. Holiday care is R180 for a full day and R130 for a half day (5.5 hours), also without a stated frequency. Optional music is R658 a month half time or R1,065 a month full time. No registration fee is listed.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Pre Gr R-Gr R",
+          "yearly": 41730,
+          "monthly": 4173
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 36500,
+          "monthly": 3650
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Music, half time",
+        "amount": 658,
+        "frequency": "monthly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, full time",
+        "amount": 1065,
+        "frequency": "monthly",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "blouberg-international-academy",
+    "name": "Blouberg International Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Nursery-Year 12",
+    "area": "Parklands",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7441",
+    "address": "74 Ringwood Drive, Parklands, Cape Town",
+    "lat": -33.807102,
+    "lng": 18.499321,
+    "website": "https://blouberginternational.co.za/",
+    "phone": "021 557 9071",
+    "email": null,
+    "language": null,
+    "emis": "103008272",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://blouberginternational.co.za/wp-content/uploads/sites/5/2026/09/Blouberg-2027-Fee-Structure.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 59235,
+      "monthly": null,
+      "registration": 800,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent combined school, Nursery to Year 12. Entry grade is Nursery: R59,235 a year, with effect from 1 January 2027 (Pre-Reception and Reception R65,864; see the by-grade list). Options: R57,162 if paid in full by 31 December 2026 (3.5% discount, Nursery), R14,809 a term for four terms, or R6,072 a month for 10 months, January to October 2027, which includes a 2.5% surcharge. Application fee R800 (non-refundable); placement fee R12,000 on acceptance (non-refundable); re-enrolment contract R3,000, deducted from the first invoice in January 2027. Foreign students pay a refundable R20,000 deposit. Aftercare, early care and exam fees (GBP, invoiced August 2027) cost extra. Sibling discounts: second child 5%, third 10%, fourth 30%. A 6.5% late penalty applies if tuition isn't paid by the 7th of the month.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Nursery",
+          "yearly": 59235,
+          "monthly": null
+        },
+        {
+          "grade": "Pre-Reception & Reception",
+          "yearly": 65864,
+          "monthly": null
+        },
+        {
+          "grade": "Year 1",
+          "yearly": 76951,
+          "monthly": null
+        },
+        {
+          "grade": "Year 2",
+          "yearly": 85857,
+          "monthly": null
+        },
+        {
+          "grade": "Year 3-4",
+          "yearly": 94917,
+          "monthly": null
+        },
+        {
+          "grade": "Year 5-6",
+          "yearly": 98331,
+          "monthly": null
+        },
+        {
+          "grade": "Year 7-8",
+          "yearly": 102200,
+          "monthly": null
+        },
+        {
+          "grade": "Year 9",
+          "yearly": 104901,
+          "monthly": null
+        },
+        {
+          "grade": "Year 10",
+          "yearly": 108270,
+          "monthly": null
+        },
+        {
+          "grade": "Year 11",
+          "yearly": 113712,
+          "monthly": null
+        },
+        {
+          "grade": "Year 12",
+          "yearly": 114745,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Half day aftercare (07:00-15:30)",
+        "amount": 11171,
+        "frequency": "yearly",
+        "note": "Optional; also R2,793 a term or R1,041 a month for 11 months",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Full day aftercare (07:00-18:00)",
+        "amount": 20238,
+        "frequency": "yearly",
+        "note": "Optional; also R5,060 a term or R1,886 a month for 11 months",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Early care (07:00-08:00)",
+        "amount": 6522,
+        "frequency": "yearly",
+        "note": "Optional; also R1,630 a term or R608 a month for 11 months",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Casual care (ad hoc)",
+        "amount": 220,
+        "frequency": "once",
+        "note": "Optional; per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Holiday care (ad hoc)",
+        "amount": 250,
+        "frequency": "once",
+        "note": "Optional; per day, includes a daily snack, 07:00-18:00",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "cannons-creek-school",
+    "name": "Cannons Creek School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RR-12",
+    "area": "Pinelands",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7405",
+    "address": "Nursery Way, Pinelands, Cape Town",
+    "lat": -33.939781,
+    "lng": 18.506927,
+    "website": "https://cannonscreek.co.za/",
+    "phone": "021 531 0912",
+    "email": null,
+    "language": null,
+    "emis": "102007105",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://cannonscreek.co.za/wp-content/uploads/2026/08/CC-2027-Fees-A5-flyer.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 91740,
+      "monthly": 8340,
+      "registration": 580,
+      "deposit": 7720,
+      "instalments": 11,
+      "notes": "Independent school, Grade RR to Grade 12, 2027 fees. Tuition per year: RR and R R91 740, Gr 1-6 R103 620, Gr 7 R120 560, Gr 8-12 R127 600. Or monthly for 11 months: R8 340, R9 420, R10 960 and R11 600 (a small sibling discount applies to monthly payers). Paying the year before 31 March: R88 070, R99 470, R115 738 and R122 496. New learners pay an application fee of R580 and a non-refundable enrolment fee of R7 720 on acceptance. The R3 000 development levy is not payable in the first year. The school says tuition includes photographs, outings, software licences and sport transport. Book levy, stationery fee, textbooks, Chromebook (Gr 6+) and excursions are listed without amounts; ask the school. Drama is R695 to R1 130 and Orff R670 to R960 a term by grade; aftercare to 15h00 and club grades are unclear on the flyer.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr RR-R",
+          "yearly": 91740,
+          "monthly": 8340
+        },
+        {
+          "grade": "Gr 1-6",
+          "yearly": 103620,
+          "monthly": 9420
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 120560,
+          "monthly": 10960
+        },
+        {
+          "grade": "Gr 8-12",
+          "yearly": 127600,
+          "monthly": 11600
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy (from the second year)",
+        "amount": 3000,
+        "frequency": "yearly",
+        "note": "Non-refundable, payable by 31 March 2027; not payable in the first year",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Creative Arts annual levy",
+        "amount": 530,
+        "frequency": "yearly",
+        "note": "Grades 7-9",
+        "applies": "Gr 7-9",
+        "included": false
+      },
+      {
+        "item": "Design & Technology subject",
+        "amount": 1050,
+        "frequency": "per term",
+        "note": "Grades 10-12",
+        "applies": "Gr 10-12",
+        "included": false
+      },
+      {
+        "item": "Music Subject Practical",
+        "amount": 3585,
+        "frequency": "per term",
+        "note": "Only learners taking the subject",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Aftercare until 17h00, Gr RR-R",
+        "amount": 2910,
+        "frequency": "per term",
+        "note": "Paid in advance; other grades differ, see notes",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare until 17h00, Gr 1-2",
+        "amount": 4690,
+        "frequency": "per term",
+        "note": "Paid in advance",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare until 17h00, Gr 3-6",
+        "amount": 3680,
+        "frequency": "per term",
+        "note": "Paid in advance",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare until 17h30, Gr RR-R",
+        "amount": 3640,
+        "frequency": "per term",
+        "note": "Paid in advance",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare until 17h30, Gr 1-2",
+        "amount": 5300,
+        "frequency": "per term",
+        "note": "Paid in advance",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare until 17h30, Gr 3-6",
+        "amount": 4180,
+        "frequency": "per term",
+        "note": "Paid in advance",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Holiday care / occasional daily rate",
+        "amount": 200,
+        "frequency": "once",
+        "note": "Per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Art club",
+        "amount": 1150,
+        "frequency": "per term",
+        "note": "Optional club",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "STEAM club",
+        "amount": 480,
+        "frequency": "per term",
+        "note": "Optional club",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Coding, Grade 3",
+        "amount": 480,
+        "frequency": "per term",
+        "note": "Optional club",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Music instrument or vocal lessons",
+        "amount": 2395,
+        "frequency": "per term",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Marimbas",
+        "amount": 1010,
+        "frequency": "per term",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "bridge-house-school",
+    "name": "Bridge House School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Playschool-Gr 12",
+    "area": "Franschhoek",
+    "city": "Franschhoek",
+    "province": "Western Cape",
+    "postcode": "7690",
+    "address": "Waterval Farm, off R45, Franschhoek",
+    "lat": -33.881181,
+    "lng": 19.029346,
+    "website": "https://www.bridgehouse.org.za/",
+    "phone": "021 874 8100",
+    "email": "info@bridgehouse.org.za",
+    "language": null,
+    "emis": "108006016",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.bridgehouse.org.za/wp-content/uploads/2026/09/2027-Fee-Schedule.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 70700,
+      "monthly": null,
+      "registration": 500,
+      "deposit": 4000,
+      "instalments": null,
+      "notes": "Independent school, Playschool to Grade 12 with boarding, 2027 fees. Playschool/Gr 000 tuition is R70,700 for the year (due 4 January 2027), or 4 termly payments of R18,330, or 11 monthly payments of R6,880 (debit order only). Monthly payments add up to more than paying the year upfront; other grades' monthly amounts are on the school's schedule. Gr 12 termly and monthly options run over three terms and 9 months. New learners pay a R500 application fee per family and a placement fee on acceptance: R4,000 (Playschool to Gr 0) or R8,000 (Gr 1-12). New Gr 1-12 learners also pay a non-refundable capital development levy: Gr 1-10 R21,500 once-off or R7,500 a year for three years; Gr 11 R15,000 or R7,500 a year; Gr 12 R7,500 once-off. Sibling rebate on tuition: 2.5% second child, 5% third child or more.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Playschool-Gr 000",
+          "yearly": 70700,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 4000
+        },
+        {
+          "grade": "Gr 00-0",
+          "yearly": 80400,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 4000
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 109800,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 131700,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        },
+        {
+          "grade": "Gr 4-5",
+          "yearly": 137600,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        },
+        {
+          "grade": "Gr 6-7",
+          "yearly": 140500,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 180600,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 185400,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 185400,
+          "monthly": null,
+          "registration": 500,
+          "deposit": 8000
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Boarding",
+        "amount": 158800,
+        "frequency": "yearly",
+        "note": "Same annual amount for Gr 12 boarders; termly R41,250 or monthly R16,080 (Gr 12: R54,980 or R19,730)",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Playschool",
+        "amount": 200,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 000",
+        "amount": 430,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 000",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 00",
+        "amount": 430,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 00",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 0",
+        "amount": 690,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 0",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 1",
+        "amount": 3815,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 2",
+        "amount": 2470,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 2",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 3",
+        "amount": 3735,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 3",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 4",
+        "amount": 4190,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 5",
+        "amount": 3930,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 6",
+        "amount": 4790,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 7",
+        "amount": 5970,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 8",
+        "amount": 7110,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 8",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 9",
+        "amount": 6990,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 10",
+        "amount": 9990,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 10",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 11",
+        "amount": 9990,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "Annual grade levy, Gr 12",
+        "amount": 5690,
+        "frequency": "yearly",
+        "note": "Payable on presentation in January; not payable termly or monthly",
+        "applies": "Gr 12",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "bergvliet-primary-school",
+    "name": "Bergvliet Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Bergvliet",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7945",
+    "address": "19 Children's Way, Bergvliet, Cape Town",
+    "lat": -34.046332,
+    "lng": 18.459903,
+    "website": "https://bergvlietprimary.co.za/",
+    "phone": "021 715 1103",
+    "email": "reception@bergvlietprimary.co.za",
+    "language": null,
+    "emis": "105309209",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://bergvlietprimary.co.za/fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 35105,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public primary school, Grade R to Grade 7, 2026 fees as printed on the school's page. Grade R is R35,105 for the year and Gr 1-7 R31,535. Options: pay termly (Gr R R8,776.25, Gr 1-7 R7,883.75, in the first two weeks of term), or for 11 months (Gr R R3,192, Gr 1-7 R2,867), or for 10 months (Gr R R3,510.50, Gr 1-7 R3,153.50). A 5% discount applies if paid by 28 February 2026 (Gr R R33,349.75, Gr 1-7 R29,958.25). The page does not say which fees are compulsory. Aftercare is R17,600 for the year, or R1,600 for 11 months, R1,760 for 10 months, or R4,400 a term. Music prices are in the extras. Camp: Gr 7 R2,210 (loaded on the Karri app); Gr 5 and 6 amounts not printed. These are 2026 fees; ask the school for 2027.",
+      "sourceKind": "the 2026 fees on the school's website",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 35105,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 31535,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 17600,
+        "frequency": "yearly",
+        "note": "Or R1,600 for 11 months, R1,760 for 10 months, or R4,400 a term",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, one individual lesson a week",
+        "amount": 6500,
+        "frequency": "yearly",
+        "note": "Also payable over 10 months, see school page",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, two individual lessons a week",
+        "amount": 13000,
+        "frequency": "yearly",
+        "note": "Also payable over 10 months, see school page",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, wind and brass instrument hire",
+        "amount": 2600,
+        "frequency": "yearly",
+        "note": "Also payable over 10 months, see school page",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, Orff percussion group",
+        "amount": 3300,
+        "frequency": "yearly",
+        "note": "Also payable over 10 months, see school page",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, violin instrument hire",
+        "amount": 2900,
+        "frequency": "yearly",
+        "note": "Also payable over 10 months, see school page",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music, one group lesson a week",
+        "amount": 3300,
+        "frequency": "yearly",
+        "note": "Also payable over 10 months, see school page",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "eversdal-primary-school",
+    "name": "Eversdal Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Durbanville",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7550",
+    "address": "Stepping Stones, Eversdal, Durbanville",
+    "lat": -33.861786,
+    "lng": 18.651362,
+    "website": "https://www.eversdal.org.za/",
+    "phone": "021 976 8134",
+    "email": "info@eversdal.org.za",
+    "language": null,
+    "emis": "101309242",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.eversdal.org.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 31350,
+      "monthly": 3135,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Public primary school, 2026 fees as printed on the school's page. School fees are R31,350 for the year, or R3,135 a month for 10 payments (1 February to 1 November 2026). A 3% discount applies if the full amount is paid by 1 February 2026 (discount amount not printed). The page does not say which grades the fees cover or which fees are compulsory; it links an application for exemption from compulsory school fees. Aftercare (13:00-18:00, lunch included) is R1,965 a month for 10 payments, or R19,061 in full (3% discount already included) if paid by 28 February 2026. Holiday care is R150 a day. Music, robotics and art are optional extras per term. These are 2026 fees; ask the school for 2027.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Music",
+        "amount": 1580,
+        "frequency": "per term",
+        "note": "Extra",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Robotics",
+        "amount": 875,
+        "frequency": "per term",
+        "note": "Extra",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Art",
+        "amount": 935,
+        "frequency": "per term",
+        "note": "Extra",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Holiday care (07:30-18:00)",
+        "amount": 150,
+        "frequency": "once",
+        "note": "Per day, booked as an extra",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "auburn-house-school",
+    "name": "Auburn House School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Pre-primary-Gr 7",
+    "area": "Kenilworth",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7708",
+    "address": "3 Auburn Road, Kenilworth, Cape Town",
+    "lat": -33.998347,
+    "lng": 18.468998,
+    "website": "https://www.auburnhouse.co.za/",
+    "phone": "021 797 7872",
+    "email": "info@auburnhouse.co.za",
+    "language": null,
+    "emis": "105007061",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://www.auburnhouse.co.za/wp-content/uploads/2025/10/AHS-Fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 57178,
+      "monthly": 5198,
+      "instalments": 11,
+      "registration": 5000,
+      "deposit": null,
+      "notes": "Independent school, pre-primary (3-6 years) to Grade 7. Fees are billed monthly for 11 months, January to November. Printed totals per year: Pre-primary R57,178 (R5,198 a month), Grades 1-3 R79,035 (R7,185 a month), Grades 4-7 R86,845 (R7,895 a month). Paying the year in full by 5 February 2026 costs R54,320 (Pre-primary), R75,080 (Grades 1-3) or R81,860 (Grades 4-7). Enrolment fee R5,000 per child, non-refundable, all levels; the sheet doesn't say how often or whether it comes off the fees. Afterschool care per term: R3,000 (12:30-15:00), R3,000 (14:00-17:00), R3,800 (12:30-17:00); casual R95 per afternoon or part thereof. Individual music lessons (32 per year) R2,000 per term. Overdue accounts may carry surcharges.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Pre-primary",
+          "yearly": 57178,
+          "monthly": 5198
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 79035,
+          "monthly": 7185
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 86845,
+          "monthly": 7895
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Afterschool care (12:30-15:00)",
+        "amount": 3000,
+        "frequency": "per term",
+        "note": "Per child",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Afterschool care (14:00-17:00)",
+        "amount": 3000,
+        "frequency": "per term",
+        "note": "Per child",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Afterschool care (12:30-17:00)",
+        "amount": 3800,
+        "frequency": "per term",
+        "note": "Per child",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Afterschool care (casual)",
+        "amount": 95,
+        "frequency": "once",
+        "note": "Per child per afternoon or part thereof",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Music lessons (individual)",
+        "amount": 2000,
+        "frequency": "per term",
+        "note": "32 lessons per year",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "fish-hoek-high-school",
+    "name": "Fish Hoek High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": null,
+    "area": "Fish Hoek",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7975",
+    "address": "13th Avenue, Fish Hoek, Cape Town",
+    "lat": -34.134839,
+    "lng": 18.420551,
+    "website": "https://fishhoekhighschool.co.za/",
+    "phone": "021 782 1107",
+    "email": null,
+    "language": null,
+    "emis": "104314201",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-12",
+    "sources": [
+      "https://fishhoekhighschool.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 37800,
+      "monthly": null,
+      "instalments": null,
+      "registration": null,
+      "deposit": null,
+      "notes": "Public high school. The school's annual fee for 2026 is R37,800 per learner, the same for every learner as printed. Pay annually in advance and get a 5% discount if paid by the end of February (the school doesn't print the rand amount), or pay monthly in advance over ten months, from 1 February to 1 November (no monthly amount is printed). EFT is preferred; the Bursar's office also accepts credit cards. Fee exemptions are available; the application form comes from the Finance Department in February. The page lists no other fees.",
+      "sourceKind": "the 2026 fees on the school's website"
+    },
+    "hiddenCosts": []
+  }
+]
