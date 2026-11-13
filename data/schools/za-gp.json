@@ -9740,5 +9740,704 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "curro-riverside",
+    "name": "Curro Riverside",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Fourways",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Blue Crane Drive, Riverside View, Fourways",
+    "lat": -25.958463,
+    "lng": 28.007614,
+    "website": "https://www.curro.co.za/",
+    "phone": null,
+    "email": "info.riverside@curro.co.za",
+    "language": null,
+    "emis": "700401108",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/241crvgz/curro-riverside-2027-primary-school-fee-letter-final-for-web.pdf",
+      "https://www.curro.co.za/media/iwvdmdc5/curro-riverside-2027-high-school-fee-letter-final-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 49440,
+      "monthly": 4120,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent combined school, Grade R to Grade 12. 2027 school fees for Grade R: R4,120 a month, R49,440 for the year, payable over 12 months (January to December); fees rise by grade (Grade 7 R4,820 a month, Grade 12 R5,950 a month). A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letters also list a R3,300 amount under a 'School Fee' heading (primary and high) without saying what it is or how often it is paid; ask the school. Primary learners pay the compulsory PMYF, R130 a month. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. Stationery, uniforms, trips and photos are extra. Grade R aftercare is included.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 49440,
+          "monthly": 4120
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 51600,
+          "monthly": 4300
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 52800,
+          "monthly": 4400
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 54840,
+          "monthly": 4570
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 56640,
+          "monthly": 4720
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": 57840,
+          "monthly": 4820
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 63840,
+          "monthly": 5320
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 68520,
+          "monthly": 5710
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 71400,
+          "monthly": 5950
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "PMYF (compulsory)",
+        "amount": 130,
+        "frequency": "monthly",
+        "note": "Grade R to Grade 7; R1,560 for the year",
+        "applies": "Gr R-7",
+        "included": false
+      },
+      {
+        "item": "Aftercare",
+        "amount": 500,
+        "frequency": "monthly",
+        "note": "Grade 1 to Grade 7; R6,000 for the year; Grade R aftercare is included in the school fee",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Bus",
+        "amount": 1840,
+        "frequency": "monthly",
+        "note": "Five routes; R22,080 for the year; subject to change",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Curro Choice (extra 8th, 9th or 10th subject)",
+        "amount": 875,
+        "frequency": "monthly",
+        "note": "High school; R10,500 for the year",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare day visitor",
+        "amount": 95,
+        "frequency": "once",
+        "note": "Per day",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Late pickup (17:30 to 18:00)",
+        "amount": 110,
+        "frequency": "once",
+        "note": "Per day",
+        "applies": "penalty",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "curro-the-blyde",
+    "name": "Curro The Blyde",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Pretoria East",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1736 Tropical Street, The Blyde Estate, Pretoria East",
+    "lat": -25.756368,
+    "lng": 28.37603,
+    "website": "https://www.curro.co.za/",
+    "phone": null,
+    "email": "info.theblyde@curro.co.za",
+    "language": null,
+    "emis": "700401088",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/noypoagv/curro-the-blyde-2027-primary-school-fee-letter-finalv1-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 54120,
+      "monthly": 4510,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Grade R to Grade 7. 2027 school fees for Grade R: R4,510 a month, R54,120 for the year, payable over 12 months (January to December); Grades 4 to 7 pay R5,010 a month. A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letter also lists R3,280 under a 'Primary School Fee' heading without saying what it is or how often it is paid; ask the school. The compulsory PMYF is R160 a month. A one-time stationery pack is extra (amount not printed). Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. The campus also has a preschool (Groups 4 and 5) with its own letter, not included here.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 54120,
+          "monthly": 4510
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 57480,
+          "monthly": 4790
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 58680,
+          "monthly": 4890
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 59160,
+          "monthly": 4930
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 60120,
+          "monthly": 5010
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "PMYF (compulsory)",
+        "amount": 160,
+        "frequency": "monthly",
+        "note": "Grade R to Grade 7; R1,920 for the year",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Aftercare",
+        "amount": 1600,
+        "frequency": "monthly",
+        "note": "Includes one meal a day, supervision and limited homework support; R19,200 for the year",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "courtney-house-international-primary",
+    "name": "Courtney House International Primary",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Reception-Year 6",
+    "area": "Bailey's Muckleneuk",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "47 Charles Bramley Street, Bailey's Muckleneuk, Pretoria",
+    "lat": -25.7675,
+    "lng": 28.22353,
+    "website": "https://www.curro.co.za/",
+    "phone": null,
+    "email": "info.courtney@curro.co.za",
+    "language": null,
+    "emis": "700401304",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/eq0lzjwe/courtney-house-international-2027-primary-phase-fee-letter-final-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 121200,
+      "monthly": 10100,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent primary phase, Reception to Year 6. 2027 tuition for Reception: R10,100 a month, R121,200 for the year, payable over 12 months; Year 1 is R12,500 a month and Years 4 to 6 are R13,520 a month. A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letter also lists R8,925 under a 'Primary Phase Fee' heading without saying what it is or how often it is paid; ask the school. Transport is extra: one-way R2,625 a month, return R3,490 a month (subject to change). Cambridge Primary Checkpoint (Year 6) is R1,620 per subject. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 5% for siblings from the second child. Textbooks, stationery, photos, excursions and uniforms are extra.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Reception",
+          "yearly": 121200,
+          "monthly": 10100
+        },
+        {
+          "grade": "Year 1",
+          "yearly": 150000,
+          "monthly": 12500
+        },
+        {
+          "grade": "Year 2-3",
+          "yearly": 159360,
+          "monthly": 13280
+        },
+        {
+          "grade": "Year 4-6",
+          "yearly": 162240,
+          "monthly": 13520
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Transport, one-way (morning or afternoon only)",
+        "amount": 2625,
+        "frequency": "monthly",
+        "note": "Subject to change; places first come, first served",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Transport, return",
+        "amount": 3490,
+        "frequency": "monthly",
+        "note": "Subject to change; places first come, first served",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Cambridge Primary Checkpoint",
+        "amount": 1620,
+        "frequency": "once",
+        "note": "Year 6 only",
+        "applies": "Gr Year 6",
+        "included": false,
+        "per": "subject"
+      }
+    ]
+  },
+  {
+    "id": "courtney-house-international-senior",
+    "name": "Courtney House International Senior",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Year 7-13",
+    "area": "Bailey's Muckleneuk",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "100 Florence Ribeiro Avenue, Bailey's Muckleneuk, Pretoria",
+    "lat": -25.76787,
+    "lng": 28.2223,
+    "website": "https://www.curro.co.za/",
+    "phone": null,
+    "email": "info.courtney@curro.co.za",
+    "language": null,
+    "emis": "700401298",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/52xazeho/courtney-house-international-2027-senior-phase-fee-letter-finalv1-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 169920,
+      "monthly": 14160,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent senior phase, Year 7 to Year 13. 2027 tuition for Year 7: R14,160 a month, R169,920 for the year, payable over 12 months; Year 12 is R19,110 a month. Year 13 (post-matric) is R4,700 per subject with no monthly or yearly total printed. A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letter also lists R8,925 under a school fee heading (Years 7 to 13) without saying how often it is paid; ask the school. Cambridge exam fees are charged per subject (for example Year 8 Checkpoint R2,115) and the layout for IGCSE, AS and A Levels is unclear; ask the school. Transport: one-way R2,625 a month, return R3,490 a month. Savings: 5% for 12 months in advance, 2.5% for 6 months, up to 5% for siblings.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Year 7",
+          "yearly": 169920,
+          "monthly": 14160
+        },
+        {
+          "grade": "Year 8",
+          "yearly": 182880,
+          "monthly": 15240
+        },
+        {
+          "grade": "Year 9",
+          "yearly": 197520,
+          "monthly": 16460
+        },
+        {
+          "grade": "Year 10",
+          "yearly": 211320,
+          "monthly": 17610
+        },
+        {
+          "grade": "Year 11",
+          "yearly": 221280,
+          "monthly": 18440
+        },
+        {
+          "grade": "Year 12",
+          "yearly": 229320,
+          "monthly": 19110
+        },
+        {
+          "grade": "Year 13",
+          "yearly": null,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Transport, one-way (morning or afternoon only)",
+        "amount": 2625,
+        "frequency": "monthly",
+        "note": "Subject to change; places first come, first served",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Transport, return",
+        "amount": 3490,
+        "frequency": "monthly",
+        "note": "Subject to change; places first come, first served",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "curro-clayville",
+    "name": "Curro Clayville",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Clayville",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "7262 Drakensberg Road, Valumax Residential Estate, Clayville Extension 45, Clayville",
+    "lat": -25.982056,
+    "lng": 28.189466,
+    "website": "https://www.curro.co.za/",
+    "phone": "087 288 0315",
+    "email": "info.clayville@curro.co.za",
+    "language": null,
+    "emis": "700400954",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/zi2lqav4/curro-clayville-2027-primary-school-fee-letter-final-for-web.pdf",
+      "https://www.curro.co.za/media/cvuhlzf0/curro-clayville-2027-high-school-fee-letter-final-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 43080,
+      "monthly": 3590,
+      "registration": 3130,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Grade R to Grade 12. 2027 school fees are paid over 12 months, January to December. Grade R is R3,590 a month (R43,080 for the year); Grade 1 R3,910; Gr 2-3 R4,170; Gr 4-7 R4,360; Gr 8 R4,630; Gr 9 R4,990; Gr 10-12 R5,510 a month (see the grade list). 'Registration' is the non-refundable enrolment fee, R3,130 for Grade R to 12, payable on approval of the application. The primary compulsory PM YF levy is R170 a month. 5% off school fees if paid for any 12 months in advance, 2.5% off if paid for any 6 months in advance, and up to 10% for siblings from the third child. Debit orders are scheduled monthly in advance for 12 months. Stationery, textbooks and workbooks are for the parent's account, listed 'as per list', no amounts given.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 43080,
+          "monthly": 3590
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 46920,
+          "monthly": 3910
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 50040,
+          "monthly": 4170
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 50040,
+          "monthly": 4170
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 52320,
+          "monthly": 4360
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 52320,
+          "monthly": 4360
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 52320,
+          "monthly": 4360
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 52320,
+          "monthly": 4360
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 55560,
+          "monthly": 4630
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 59880,
+          "monthly": 4990
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 66120,
+          "monthly": 5510
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 66120,
+          "monthly": 5510
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 66120,
+          "monthly": 5510
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "PM YF extramural levy (compulsory)",
+        "amount": 170,
+        "frequency": "monthly",
+        "note": "Grade R to Grade 7 only; R2,040 for the year",
+        "applies": "Gr R-7",
+        "included": false
+      },
+      {
+        "item": "Extra subject (Curro Choice)",
+        "amount": 875,
+        "frequency": "monthly",
+        "note": "Only if taken as an additional 8th, 9th or 10th subject; R10,500 for the year each",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "curro-soshanguve",
+    "name": "Curro Soshanguve",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Soshanguve",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "6283 Palladium Street, Block VV, Soshanguve, Pretoria",
+    "lat": -25.573378,
+    "lng": 28.092603,
+    "website": "https://www.curro.co.za/",
+    "phone": "087 285 4700",
+    "email": "info.soshanguve@curro.co.za",
+    "language": null,
+    "emis": "700400839",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/ui2ldiuq/curro-soshanguve-2027-primary-school-fee-letter-final-for-web.pdf",
+      "https://www.curro.co.za/media/ovzfcu0j/curro-soshanguve-2027-high-school-fee-letter-final-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 43200,
+      "monthly": 3600,
+      "registration": 2500,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Grade R to Grade 12. 2027 school fees are paid over 12 months, January to December. Grade R is R3,600 a month (R43,200 for the year); Gr 1 R3,790; Gr 2 R3,810; Gr 3 R4,115; Gr 4 R4,510; Gr 5-7 R4,540; Gr 8 R4,830; Gr 9 R4,840; Gr 10 R5,080; Gr 11 R5,110; Gr 12 R5,140 a month (see the grade list). 'Registration' is the non-refundable R2,500 enrolment fee, payable on approval of the application (same for primary and high). Primary compulsory PM YF is R130 a month. Optional return bus R1,710 a month (R20,520 for the year; bus fees may change). 5% off school fees if paid for any 12 months in advance, 2.5% off if paid for any 6 months in advance, and up to 10% for siblings from the third child. Debit orders are scheduled monthly in advance for 12 months.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 43200,
+          "monthly": 3600
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 45480,
+          "monthly": 3790
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 45720,
+          "monthly": 3810
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 49380,
+          "monthly": 4115
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 54120,
+          "monthly": 4510
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 54480,
+          "monthly": 4540
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 54480,
+          "monthly": 4540
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 54480,
+          "monthly": 4540
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 57960,
+          "monthly": 4830
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 58080,
+          "monthly": 4840
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 60960,
+          "monthly": 5080
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 61320,
+          "monthly": 5110
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 61680,
+          "monthly": 5140
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "PM YF levy (compulsory)",
+        "amount": 130,
+        "frequency": "monthly",
+        "note": "Grade R to Grade 7 only; R1,560 for the year",
+        "applies": "Gr R-7",
+        "included": false
+      },
+      {
+        "item": "School bus (return)",
+        "amount": 1710,
+        "frequency": "monthly",
+        "note": "Optional; R20,520 for the year; bus fees are subject to change",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Extra subject (Curro Choice)",
+        "amount": 875,
+        "frequency": "monthly",
+        "note": "Only if taken as an additional 8th, 9th or 10th subject; R10,500 for the year each",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]

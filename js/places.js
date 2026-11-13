@@ -53,6 +53,7 @@
     { name: "Pretoria", region: "Gauteng", lat: -25.7460, lng: 28.1880, aliases: ["pta", "tshwane"] },
     { name: "East Lynne", region: "Gauteng", lat: -25.7000, lng: 28.2800 },
     { name: "Centurion", region: "Gauteng", lat: -25.8600, lng: 28.1900 },
+    { name: "Soshanguve", region: "Gauteng", lat: -25.5236, lng: 28.0989 },
     { name: "Hillcrest", region: "Gauteng", lat: -25.7570, lng: 28.2360, note: "Pretoria" },
     { name: "Waterfall", region: "Gauteng", lat: -26.0050, lng: 28.1050, note: "Midrand", aliases: ["waterfall midrand", "waterfall city"] },
     { name: "Midrand", region: "Gauteng", lat: -25.9890, lng: 28.1280 },

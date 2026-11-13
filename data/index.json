@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 99,
+      "schoolCount": 105,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -136,12 +136,18 @@
         "crawford-fourways",
         "crawford-sandton-college",
         "crawford-sandton-preparatory",
-        "crawford-bedfordview"
+        "crawford-bedfordview",
+        "curro-riverside",
+        "curro-the-blyde",
+        "courtney-house-international-primary",
+        "courtney-house-international-senior",
+        "curro-clayville",
+        "curro-soshanguve"
       ],
       "bounds": [
         -26.7360185101,
         27.767388,
-        -25.7007,
+        -25.573378,
         28.435031
       ]
     },
@@ -224,7 +230,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 15,
+      "schoolCount": 17,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -241,7 +247,9 @@
         "edgemead-primary-school",
         "ellerton-primary-school",
         "cresca-primary-school",
-        "elkanah-house"
+        "elkanah-house",
+        "curro-uitzicht-primary",
+        "curro-uitzicht-high"
       ],
       "bounds": [
         -34.172504,

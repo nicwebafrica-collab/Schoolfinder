@@ -1669,5 +1669,166 @@
         "per": "15 minutes"
       }
     ]
+  },
+  {
+    "id": "curro-uitzicht-primary",
+    "name": "Curro Uitzicht Primary",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Uitzicht",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7530",
+    "address": "13 Springbok Road, Uitzicht, Durbanville",
+    "lat": -33.820431,
+    "lng": 18.67913,
+    "website": "https://www.curro.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "100000608",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/5ytfvyol/curro-uitzicht-2027-primary-school-fee-letter-final-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 94320,
+      "monthly": 7860,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent primary school, Grade 1 to Grade 7. 2027 school fees for Grade 1: R7,860 a month, R94,320 for the year, payable over 12 months (January to December); Grade 7 is R9,230 a month. A non-refundable enrolment fee is payable when the application is approved. The letter lists R6,230 under a 'Primary School Fee' heading without saying what it is or how often it is paid; ask the school. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. Textbooks, workbooks, stationery, excursions and sports trips are extra. Parents must replace lost books (no amount printed). Curro lists this campus under a combined DBE entry; the high school letter is a separate record.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": 94320,
+          "monthly": 7860
+        },
+        {
+          "grade": "Gr 2-3",
+          "yearly": 95880,
+          "monthly": 7990
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 101520,
+          "monthly": 8460
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 102960,
+          "monthly": 8580
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 104400,
+          "monthly": 8700
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 110760,
+          "monthly": 9230
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "curro-uitzicht-high",
+    "name": "Curro Uitzicht High School",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Sonstraal Heights",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7550",
+    "address": "Cnr Schubert Avenue and Verdi Boulevard, Sonstraal Heights, Durbanville",
+    "lat": -33.843243,
+    "lng": 18.678541,
+    "website": "https://www.curro.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "100000778",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/x3sj5bpy/curro-uitzicht-2027-high-school-fee-letter-final-for-web.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 118680,
+      "monthly": 9890,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent high school, Grade 8 to Grade 12. 2027 school fees for Grade 8: R9,890 a month, R118,680 for the year, payable over 12 months (January to December); Grade 12 is R11,410 a month. A non-refundable enrolment fee is payable when the application is approved. The letter lists R6,230 under a 'High School Fee' heading without saying what it is or how often it is paid; ask the school. Grade 12 learners who need an exam scribe or reader pay R460 per scribe or reader per exam sitting. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. Textbooks, workbooks, stationery, excursions and sports trips are extra. Parents must replace lost books (no amount printed).",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 118680,
+          "monthly": 9890
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 123600,
+          "monthly": 10300
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 129720,
+          "monthly": 10810
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 130920,
+          "monthly": 10910
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 136920,
+          "monthly": 11410
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Exam scribe or reader",
+        "amount": 460,
+        "frequency": "once",
+        "note": "Grade 12 only, for preliminary and final exams",
+        "applies": "some",
+        "included": false,
+        "per": "scribe or reader per exam sitting"
+      }
+    ]
   }
 ]
