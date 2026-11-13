@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 79,
+      "schoolCount": 78,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -107,7 +107,6 @@
         "new-harvard-academy",
         "solid-beginnings-school",
         "ruimsig-academy",
-        "laerskool-jan-celliers",
         "northcliff-primary-school",
         "saheti-school",
         "royal-kings-school",
