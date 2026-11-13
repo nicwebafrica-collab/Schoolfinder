@@ -7449,7 +7449,7 @@
       "registration": 160,
       "deposit": 1300,
       "instalments": null,
-      "notes": "Independent Christian school, preschool to Grade 12 (Gr 10-12 are LCA). The 2026 schedule gives three options per grade: A over 12 months, B over 11 months, C the full year less 6.5% if paid by 31 December 2025. Preschool (lunch included): A R2,355, B R2,570, C R26,425. Grade R: A R2,950, B R3,215, C R33,095. Gr 1: A R3,550, B R3,870, C R39,830. Other grades are in the by-grade rows. The monthly fee we show is Option A (12 payments); the yearly figure is a discounted one, so we show no yearly total. Tuition includes learner materials and monthly levies; sport, transport, photos, stationery, tours and the school nurse are extra. New learners pay a R160 application fee (registration) and a R1,300 enrolment fee (deposit), non-refundable. Aftercare is optional, R35 an hour or monthly options. Younger-sibling discounts are printed monthly.",
+      "notes": "Independent Christian school, preschool to Grade 12 (Gr 10-12 are LCA). The 2026 schedule gives three options per grade: A over 12 months, B over 11 months, C the full year less 6.5% if paid by 31 December 2025. Preschool (lunch included): A R2,355, B R2,570, C R26,425. Grade R: A R2,950, B R3,215, C R33,095. Gr 1: A R3,550, B R3,870, C R39,830. Other grades are in the by-grade rows; Gr 12 (LCA) prints only Option A, R6,395 a month. The monthly fee we show is Option A (12 payments); the yearly figure is a discounted one, so we show no yearly total. Tuition includes learner materials and monthly levies; sport, transport, photos, stationery, tours and the school nurse are extra. New learners pay a R160 application fee (registration) and a R1,300 enrolment fee (deposit), non-refundable. Aftercare is optional, R35 an hour or monthly options. Younger-sibling discounts are printed monthly.",
       "sourceKind": "the school's 2026 fee schedule",
       "byGrade": [
         {
@@ -7500,7 +7500,7 @@
         {
           "grade": "Gr 12 (LCA)",
           "yearly": null,
-          "monthly": null
+          "monthly": 6395
         }
       ]
     },
@@ -7572,7 +7572,7 @@
       "registration": 500,
       "deposit": 5000,
       "instalments": null,
-      "notes": "Independent college (Crawford International), Grades 8 to 12; the sheet covers the college only. The 2027 sheet prints a discounted annual price if paid in full by 31 January 2027: Gr 8-9 R129,972; Gr 10-12 R142,632. Monthly options: for 10 months, Gr 8-9 R13,680 and Gr 10-12 R15,010; for 12 months, Gr 8-9 R11,631 and Gr 10-11 R12,776 (no 12-month option for Gr 12). The monthly fee we show is the 12-payment option (Gr 12 has only the 10-payment option, so no monthly is shown for Gr 12); the sheet prints no undiscounted yearly fee, so we show no yearly total. New learners pay a R500 application fee (registration) and a R5,000 enrolment fee (deposit), both once-off and non-refundable. Grade 12 also pays IEB exam fees of R10,394, billed separately by the end of March 2027. Sibling discounts: 5%, 10% and 15% for the second, third and fourth child.",
+      "notes": "Independent college (Crawford International), Grades 8 to 12; the sheet covers the college only. The 2027 sheet prints a discounted annual price if paid in full by 31 January 2027: Gr 8-9 R129,972; Gr 10-12 R142,632. Monthly options: for 10 months, Gr 8-9 R13,680 and Gr 10-12 R15,010; for 12 months, Gr 8-9 R11,631 and Gr 10-11 R12,776 (no 12-month option for Gr 12). The monthly fee we show is the 12-payment option (Gr 12 has only the 10-payment option, R15,010 a month for 10 months); the sheet prints no undiscounted yearly fee, so we show no yearly total. New learners pay a R500 application fee (registration) and a R5,000 enrolment fee (deposit), both once-off and non-refundable. Grade 12 also pays IEB exam fees of R10,394, billed separately by the end of March 2027. Sibling discounts: 5%, 10% and 15% for the second, third and fourth child.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -7588,7 +7588,7 @@
         {
           "grade": "Gr 12",
           "yearly": null,
-          "monthly": null
+          "monthly": 15010
         }
       ]
     },
