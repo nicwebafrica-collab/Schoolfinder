@@ -9780,10 +9780,10 @@
       "year": 2027,
       "yearly": 49440,
       "monthly": 4120,
-      "registration": null,
+      "registration": 3300,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent combined school, Grade R to Grade 12. 2027 school fees for Grade R: R4,120 a month, R49,440 for the year, payable over 12 months (January to December); fees rise by grade (Grade 7 R4,820 a month, Grade 12 R5,950 a month). A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letters also list a R3,300 amount under a 'School Fee' heading (primary and high) without saying what it is or how often it is paid; ask the school. Primary learners pay the compulsory PMYF, R130 a month. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. Stationery, uniforms, trips and photos are extra. Grade R aftercare is included.",
+      "notes": "Independent combined school, Grade R to Grade 12. 2027 school fees for Grade R: R4,120 a month, R49,440 for the year, payable over 12 months (January to December); fees rise by grade (Grade 7 R4,820 a month, Grade 12 R5,950 a month). A non-refundable enrolment fee of R3,300 is payable when the application is approved. Primary learners pay the compulsory PMYF, R130 a month. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. Stationery, uniforms, trips and photos are extra. Grade R aftercare is included.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -9855,7 +9855,7 @@
         "amount": 1840,
         "frequency": "monthly",
         "note": "Five routes; R22,080 for the year; subject to change",
-        "applies": "some",
+        "applies": "optional",
         "included": false
       },
       {
@@ -9924,10 +9924,10 @@
       "year": 2027,
       "yearly": 54120,
       "monthly": 4510,
-      "registration": null,
+      "registration": 3280,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school, Grade R to Grade 7. 2027 school fees for Grade R: R4,510 a month, R54,120 for the year, payable over 12 months (January to December); Grades 4 to 7 pay R5,010 a month. A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letter also lists R3,280 under a 'Primary School Fee' heading without saying what it is or how often it is paid; ask the school. The compulsory PMYF is R160 a month. A one-time stationery pack is extra (amount not printed). Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. The campus also has a preschool (Groups 4 and 5) with its own letter, not included here.",
+      "notes": "Independent school, Grade R to Grade 7. 2027 school fees for Grade R: R4,510 a month, R54,120 for the year, payable over 12 months (January to December); Grades 4 to 7 pay R5,010 a month. A non-refundable enrolment fee of R3,280 is payable when the application is approved. The compulsory PMYF is R160 a month. A one-time stationery pack is extra (amount not printed). Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 10% for siblings from the third child. The campus also has a preschool (Groups 4 and 5) with its own letter, not included here.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -10014,10 +10014,10 @@
       "year": 2027,
       "yearly": 121200,
       "monthly": 10100,
-      "registration": null,
+      "registration": 8925,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent primary phase, Reception to Year 6. 2027 tuition for Reception: R10,100 a month, R121,200 for the year, payable over 12 months; Year 1 is R12,500 a month and Years 4 to 6 are R13,520 a month. A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letter also lists R8,925 under a 'Primary Phase Fee' heading without saying what it is or how often it is paid; ask the school. Transport is extra: one-way R2,625 a month, return R3,490 a month (subject to change). Cambridge Primary Checkpoint (Year 6) is R1,620 per subject. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 5% for siblings from the second child. Textbooks, stationery, photos, excursions and uniforms are extra.",
+      "notes": "Independent primary phase, Reception to Year 6. 2027 tuition for Reception: R10,100 a month, R121,200 for the year, payable over 12 months; Year 1 is R12,500 a month and Years 4 to 6 are R13,520 a month. A non-refundable enrolment fee of R8,925 is payable when the application is approved. Transport is extra: one-way R2,625 a month, return R3,490 a month (subject to change). Cambridge Primary Checkpoint (Year 6) is R1,620 per subject. Savings: 5% on school fees for paying 12 months in advance, 2.5% for 6 months in advance, up to 5% for siblings from the second child. Textbooks, stationery, photos, excursions and uniforms are extra.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -10048,7 +10048,7 @@
         "amount": 2625,
         "frequency": "monthly",
         "note": "Subject to change; places first come, first served",
-        "applies": "some",
+        "applies": "optional",
         "included": false
       },
       {
@@ -10056,7 +10056,7 @@
         "amount": 3490,
         "frequency": "monthly",
         "note": "Subject to change; places first come, first served",
-        "applies": "some",
+        "applies": "optional",
         "included": false
       },
       {
@@ -10064,7 +10064,7 @@
         "amount": 1620,
         "frequency": "once",
         "note": "Year 6 only",
-        "applies": "Gr Year 6",
+        "applies": "some",
         "included": false,
         "per": "subject"
       }
@@ -10108,10 +10108,10 @@
       "year": 2027,
       "yearly": 169920,
       "monthly": 14160,
-      "registration": null,
+      "registration": 8925,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent senior phase, Year 7 to Year 13. 2027 tuition for Year 7: R14,160 a month, R169,920 for the year, payable over 12 months; Year 12 is R19,110 a month. Year 13 (post-matric) is R4,700 per subject with no monthly or yearly total printed. A non-refundable enrolment fee is payable when the application is approved; its amount is not printed. The letter also lists R8,925 under a school fee heading (Years 7 to 13) without saying how often it is paid; ask the school. Cambridge exam fees are charged per subject (for example Year 8 Checkpoint R2,115) and the layout for IGCSE, AS and A Levels is unclear; ask the school. Transport: one-way R2,625 a month, return R3,490 a month. Savings: 5% for 12 months in advance, 2.5% for 6 months, up to 5% for siblings.",
+      "notes": "Independent senior phase, Year 7 to Year 13. 2027 tuition for Year 7: R14,160 a month, R169,920 for the year, payable over 12 months; Year 12 is R19,110 a month. Year 13 (post-matric) is R4,700 per subject with no monthly or yearly total printed. A non-refundable enrolment fee of R8,925 is payable when the application is approved. Cambridge exam fees are charged per subject (for example Year 8 Checkpoint R2,115) and the layout for IGCSE, AS and A Levels is unclear; ask the school. Transport: one-way R2,625 a month, return R3,490 a month. Savings: 5% for 12 months in advance, 2.5% for 6 months, up to 5% for siblings.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -10143,11 +10143,6 @@
           "grade": "Year 12",
           "yearly": 229320,
           "monthly": 19110
-        },
-        {
-          "grade": "Year 13",
-          "yearly": null,
-          "monthly": null
         }
       ]
     },
@@ -10157,7 +10152,7 @@
         "amount": 2625,
         "frequency": "monthly",
         "note": "Subject to change; places first come, first served",
-        "applies": "some",
+        "applies": "optional",
         "included": false
       },
       {
@@ -10165,7 +10160,7 @@
         "amount": 3490,
         "frequency": "monthly",
         "note": "Subject to change; places first come, first served",
-        "applies": "some",
+        "applies": "optional",
         "included": false
       }
     ]
