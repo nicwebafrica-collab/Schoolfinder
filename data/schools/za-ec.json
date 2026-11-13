@@ -445,7 +445,7 @@
     "address": "Queen Street, Cambridge, East London",
     "lat": -32.97466,
     "lng": 27.88486,
-    "website": "http://www.cambridgeprimary.co.za/",
+    "website": "https://www.cambridgeprimary.co.za/",
     "phone": "043 726 8150",
     "email": null,
     "language": null,
@@ -464,7 +464,7 @@
     "sports": [],
     "lastChecked": "2026-11-13",
     "sources": [
-      "http://www.cambridgeprimary.co.za/admissions-fees/"
+      "https://www.cambridgeprimary.co.za/admissions-fees/"
     ],
     "fees": {
       "year": 2026,
