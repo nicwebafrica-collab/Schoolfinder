@@ -286,7 +286,7 @@ if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
     var liveProv = (index.areas || []).filter(function (a) { return JSON.parse(read("data/" + a.file)).length; }).length;
     check(dp.indexOf("<b>" + liveTotal + "</b><span>schools with checked fees") !== -1 && dp.indexOf("<strong>" + liveTotal + " schools</strong>") !== -1, "our-data/index.html: school count isn't the live " + liveTotal + ". Rebuild the pages");
     check(dp.indexOf("<b>" + liveProv + "</b><span>province") !== -1, "our-data/index.html: province count isn't the live " + liveProv + ". Rebuild the pages");
-    check(!/\b(DBE|masterlist|github|repo|bot|scrap\w*|crawl\w*|OCR|AI|GPT|Claude|model|waiting\/|verified\/|held\/|finder|cron|03:00|05:00|US\$)\b/i.test(dp.replace(/<[^>]+>/g, " ")), "our-data/index.html: mentions how the data is gathered (sources, tools, schedules or costs). Keep that private");
+    check(!/\b(DBE|masterlist|github|repo|bot|scrap\w*|crawl\w*|OCR|AI|GPT|Claude|model|waiting\/|verified\/|held\/|finder|cron|03:00|05:00|US\$|daily|every day|automat\w*|overnight)\b/i.test(dp.replace(/<[^>]+>/g, " ")), "our-data/index.html: mentions how the data is gathered (sources, tools, schedules or costs). Keep that private");
     check(sitemap.indexOf("<loc>https://schoolmap.co.za/our-data/</loc>") !== -1, "sitemap.xml: missing /our-data/");
   }
   check(fs.existsSync(path.join(root, "robots.txt")) && /^Sitemap: https:\/\/schoolmap\.co\.za\/sitemap\.xml$/m.test(read("robots.txt")) && !/^Disallow:\s*\/\s*$/m.test(read("robots.txt")), "robots.txt: must exist, point at the sitemap and not block the site");
