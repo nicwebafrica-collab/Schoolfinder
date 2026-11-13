@@ -38,6 +38,7 @@
       "schoolCount": 105,
       "updated": "2026-11",
       "ids": [
+        "curro-pretoria-primary",
         "curro-pretoria-high",
         "fourways-high-school",
         "king-edward-vii-school",
@@ -141,8 +142,7 @@
         "courtney-house-international-primary",
         "courtney-house-international-senior",
         "curro-clayville",
-        "curro-soshanguve",
-        "curro-pretoria-primary"
+        "curro-soshanguve"
       ],
       "bounds": [
         -26.7360185101,

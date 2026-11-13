@@ -1,5 +1,111 @@
 [
   {
+    "id": "curro-pretoria-primary",
+    "name": "Curro Pretoria (Primary)",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "East Lynne",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "address": "146 Baviaanspoort Road, East Lynne, Pretoria, 0186",
+    "lat": -25.7007,
+    "lng": 28.2822,
+    "website": "https://www.curro.co.za/",
+    "phone": "087 287 9492",
+    "email": "info.pretoria@curro.co.za",
+    "language": "English",
+    "fees": {
+      "year": 2027,
+      "yearly": 41160,
+      "monthly": 3430,
+      "registration": 1155,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "2027 fees. Amounts shown are for Grade R; fees rise to R4,350 a month (R52,200 for the year) in Gr 7 (see the grade list). Paid over 12 months, January to December. 'Registration' is the non-refundable R1,155 enrolment fee, payable on approval of the application. Compulsory PMYF is R140 a month (R1,680 for the year). Optional full-day aftercare is R1,585 a month. 5% off school fees if paid for any 12 months in advance, 2.5% off if paid for any 6 months in advance, and up to 10% for siblings from the third child. Debit orders are scheduled monthly in advance for 12 months.",
+      "sourceKind": "the school's 2027 fee letter",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 41160,
+          "monthly": 3430
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 44340,
+          "monthly": 3695
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 48300,
+          "monthly": 4025
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": 50700,
+          "monthly": 4225
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 50760,
+          "monthly": 4230
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 50760,
+          "monthly": 4230
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": 50760,
+          "monthly": 4230
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 52200,
+          "monthly": 4350
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "PMYF levy (compulsory)",
+        "amount": 140,
+        "frequency": "monthly",
+        "note": "R1,680 for the year, Grade R to Grade 7",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Aftercare (full-day)",
+        "amount": 1585,
+        "frequency": "monthly",
+        "note": "Optional; R19,020 for the year",
+        "applies": "optional",
+        "included": false
+      }
+    ],
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1585
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.curro.co.za/media/aiselokc/curro-pretoria-2027-primary-school-fee-letter-final-for-web.pdf",
+      "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
+    ],
+    "postcode": "0186",
+    "admissions": null,
+    "country": "ZA",
+    "emis": null
+  },
+  {
     "id": "curro-pretoria-high",
     "name": "Curro Pretoria (High School)",
     "type": "Private",
@@ -10232,111 +10338,5 @@
         "included": false
       }
     ]
-  },
-  {
-    "id": "curro-pretoria-primary",
-    "name": "Curro Pretoria (Primary)",
-    "type": "Private",
-    "phase": "Primary",
-    "grades": "Gr R-7",
-    "area": "East Lynne",
-    "city": "Pretoria",
-    "province": "Gauteng",
-    "address": "146 Baviaanspoort Road, East Lynne, Pretoria, 0186",
-    "lat": -25.7007,
-    "lng": 28.2822,
-    "website": "https://www.curro.co.za/",
-    "phone": "087 287 9492",
-    "email": "info.pretoria@curro.co.za",
-    "language": "English",
-    "fees": {
-      "year": 2027,
-      "yearly": 41160,
-      "monthly": 3430,
-      "registration": 1155,
-      "deposit": null,
-      "instalments": 12,
-      "notes": "2027 fees. Amounts shown are for Grade R; fees rise to R4,350 a month (R52,200 for the year) in Gr 7 (see the grade list). Paid over 12 months, January to December. 'Registration' is the non-refundable R1,155 enrolment fee, payable on approval of the application. Compulsory PMYF is R140 a month (R1,680 for the year). Optional full-day aftercare is R1,585 a month. 5% off school fees if paid for any 12 months in advance, 2.5% off if paid for any 6 months in advance, and up to 10% for siblings from the third child. Debit orders are scheduled monthly in advance for 12 months.",
-      "sourceKind": "the school's 2027 fee letter",
-      "byGrade": [
-        {
-          "grade": "Gr R",
-          "yearly": 41160,
-          "monthly": 3430
-        },
-        {
-          "grade": "Gr 1",
-          "yearly": 44340,
-          "monthly": 3695
-        },
-        {
-          "grade": "Gr 2",
-          "yearly": 48300,
-          "monthly": 4025
-        },
-        {
-          "grade": "Gr 3",
-          "yearly": 50700,
-          "monthly": 4225
-        },
-        {
-          "grade": "Gr 4",
-          "yearly": 50760,
-          "monthly": 4230
-        },
-        {
-          "grade": "Gr 5",
-          "yearly": 50760,
-          "monthly": 4230
-        },
-        {
-          "grade": "Gr 6",
-          "yearly": 50760,
-          "monthly": 4230
-        },
-        {
-          "grade": "Gr 7",
-          "yearly": 52200,
-          "monthly": 4350
-        }
-      ]
-    },
-    "hiddenCosts": [
-      {
-        "item": "PMYF levy (compulsory)",
-        "amount": 140,
-        "frequency": "monthly",
-        "note": "R1,680 for the year, Grade R to Grade 7",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Aftercare (full-day)",
-        "amount": 1585,
-        "frequency": "monthly",
-        "note": "Optional; R19,020 for the year",
-        "applies": "optional",
-        "included": false
-      }
-    ],
-    "outings": [],
-    "aftercare": {
-      "available": true,
-      "monthly": 1585
-    },
-    "transport": {
-      "available": null,
-      "monthly": null
-    },
-    "sports": [],
-    "lastChecked": "2026-11-13",
-    "sources": [
-      "https://www.curro.co.za/media/aiselokc/curro-pretoria-2027-primary-school-fee-letter-final-for-web.pdf",
-      "https://curro.co.za/schools/curro-academy-pretoria-high-school/contact-us"
-    ],
-    "postcode": "0186",
-    "admissions": null,
-    "country": "ZA",
-    "emis": null
   }
 ]
