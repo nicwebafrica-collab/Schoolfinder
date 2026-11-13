@@ -7715,8 +7715,16 @@
         "item": "Special Projects Fund",
         "amount": 80,
         "frequency": "monthly",
-        "note": "Per family, in place of large fundraisers; the page doesn't say whether every family pays",
-        "applies": "some",
+        "note": "Per family, in place of large fundraisers; the page doesn't say whether every family pays Per family.",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Application fee",
+        "amount": 500,
+        "frequency": "once",
+        "note": "Non-refundable, new learners",
+        "applies": "everyone",
         "included": false
       }
     ]
@@ -8373,6 +8381,14 @@
         "applies": "penalty",
         "included": false,
         "per": "15 minutes"
+      },
+      {
+        "item": "Outing levy (Gr 1-7)",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Non-refundable R730 for Gr 1-7; the sheet doesn't say how often, so ask the school",
+        "applies": "Gr 1-7",
+        "included": false
       }
     ]
   },
@@ -9072,7 +9088,7 @@
       "registration": 880,
       "deposit": 13200,
       "instalments": null,
-      "notes": "Independent college, Gr 8-12. Each grade has a discounted annual price (Gr 8 R179,136) that is lower than 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 8 R16,030 a month). A 10-payment option is also printed (Gr 8 R18,860). Gr 12 has only a 10-payment option, R22,040 a month, so no monthly figure is shown for Gr 12. The discount is lost if not paid in full by 31 January 2027. New learners pay a R880 application fee and a R13,200 non-refundable enrolment fee, both through the school's online portal. No aftercare at this phase.",
+      "notes": "Independent college, Gr 8-12. Each grade has a discounted annual price (Gr 8 R179,136) that is lower than 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 8 R16,030 a month). A 10-payment option is also printed (Gr 8 R18,860). Gr 12 has only a 10-payment option, R22,040 a month (the Gr 12 monthly shown is this 10-payment amount). The discount is lost if not paid in full by 31 January 2027. New learners pay a R880 application fee and a R13,200 non-refundable enrolment fee, both through the school's online portal. No aftercare at this phase.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -9648,7 +9664,8 @@
     "lastChecked": "2026-11-13",
     "sources": [
       "https://www.crawfordinternational.co.za/bedfordview-preparatory",
-      "https://www.crawfordinternational.co.za/bedfordview-college"
+      "https://www.crawfordinternational.co.za/bedfordview-college",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Bedfordview+College+Fee+Structure+2027+V2.pdf"
     ],
     "fees": {
       "year": 2027,
