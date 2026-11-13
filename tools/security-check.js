@@ -231,10 +231,10 @@ androidFiles.filter(function (f) { return /\.(xml|gradle|kts|properties|json)$/.
 var badAndroid = androidFiles.filter(function (f) { return /(key\.properties|local\.properties|google-services\.json|\.aab|\.apk)$/.test(f); });
 check(badAndroid.length === 0, "These Android files must never be committed: " + badAndroid.join(", "));
 
-// 12. The plain school pages for Google (school/<id>/index.html, school/index.html, sitemap.xml, robots.txt).
+// 12. The plain school pages for Google (school/<id>/index.html, school/index.html, our-data/index.html, sitemap.xml, robots.txt).
 // They are built together with the data. Same strict rules as index.html, and they must match
 // the live data exactly: a page left over from old data could show an old price (golden rule).
-var pageFiles = allFiles.filter(function (f) { return /^school\/.*\.html$/.test(f); });
+var pageFiles = allFiles.filter(function (f) { return /^(school|our-data)\/.*\.html$/.test(f); });
 if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
   var crypto = require("crypto");
   var mainCsp = (html.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/) || [])[1];
@@ -254,7 +254,7 @@ if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
       check(/rel="noopener noreferrer"/.test(a), f + ": an outside link is missing rel=\"noopener noreferrer\": " + a.slice(0, 80));
     });
     check(/<meta name="referrer" content="(strict-origin-when-cross-origin|no-referrer)">/.test(p), f + ": referrer policy missing");
-    check(/<link rel="canonical" href="https:\/\/schoolmap\.co\.za\/school\//.test(p), f + ": canonical link missing");
+    check(/<link rel="canonical" href="https:\/\/schoolmap\.co\.za\/(school|our-data)\//.test(p), f + ": canonical link missing");
   });
   // Every live school has a page, every page is a live school, and each page was built from today's data and cost maths.
   var maths = read("js/logic.js") + read("js/admissions.js");
@@ -273,14 +273,24 @@ if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
   pageFiles.forEach(function (f) {
     var m = /^school\/([^\/]+)\/index\.html$/.exec(f);
     if (m) check(!!liveIds[m[1]], f + ": not a live school (removed, or not verified). It must not be published");
-    else check(f === "school/index.html", f + ": unexpected file in school/");
+    else check(f === "school/index.html" || f === "our-data/index.html", f + ": unexpected file in school/ or our-data/");
   });
   (sitemap.match(/<loc>[^<]*<\/loc>/g) || []).forEach(function (l) {
-    var m = /^<loc>https:\/\/schoolmap\.co\.za\/(?:school\/(?:([a-z0-9-]+)\/)?)?<\/loc>$/.exec(l);
+    var m = /^<loc>https:\/\/schoolmap\.co\.za\/(?:school\/(?:([a-z0-9-]+)\/)?|our-data\/)?<\/loc>$/.exec(l);
     check(!!m && (!m[1] || !!liveIds[m[1]]), "sitemap.xml: lists something that isn't a live page: " + l);
   });
+  // The "SchoolMap Data" page: its school and province counts must be today's live numbers, and it must not
+  // mention how the data is gathered (sources, tools, schedules, repos): copy protection, Security 13 Nov 2026.
+  if (fs.existsSync(path.join(root, "our-data/index.html"))) {
+    var dp = read("our-data/index.html"), liveTotal = Object.keys(liveIds).length;
+    var liveProv = (index.areas || []).filter(function (a) { return JSON.parse(read("data/" + a.file)).length; }).length;
+    check(dp.indexOf("<b>" + liveTotal + "</b><span>schools with checked fees") !== -1 && dp.indexOf("<strong>" + liveTotal + " schools</strong>") !== -1, "our-data/index.html: school count isn't the live " + liveTotal + ". Rebuild the pages");
+    check(dp.indexOf("<b>" + liveProv + "</b><span>province") !== -1, "our-data/index.html: province count isn't the live " + liveProv + ". Rebuild the pages");
+    check(!/\b(DBE|masterlist|github|repo|bot|scrap\w*|crawl\w*|OCR|AI|GPT|Claude|model|waiting\/|verified\/|held\/|finder|cron|03:00|05:00|US\$)\b/i.test(dp.replace(/<[^>]+>/g, " ")), "our-data/index.html: mentions how the data is gathered (sources, tools, schedules or costs). Keep that private");
+    check(sitemap.indexOf("<loc>https://schoolmap.co.za/our-data/</loc>") !== -1, "sitemap.xml: missing /our-data/");
+  }
   check(fs.existsSync(path.join(root, "robots.txt")) && /^Sitemap: https:\/\/schoolmap\.co\.za\/sitemap\.xml$/m.test(read("robots.txt")) && !/^Disallow:\s*\/\s*$/m.test(read("robots.txt")), "robots.txt: must exist, point at the sitemap and not block the site");
-  if (fs.existsSync(wf)) check(/cp -r[^\n]*\bschool\b[^\n]*\bsitemap\.xml\b[^\n]*\brobots\.txt\b/.test(fs.readFileSync(wf, "utf8")), "pages.yml: must publish school/, sitemap.xml and robots.txt");
+  if (fs.existsSync(wf)) check(/cp -r[^\n]*\bschool\b[^\n]*\bour-data\b[^\n]*\bsitemap\.xml\b[^\n]*\brobots\.txt\b/.test(fs.readFileSync(wf, "utf8")), "pages.yml: must publish school/, our-data/, sitemap.xml and robots.txt");
 }
 
 // 11. Private stuff never goes in the public repo (bot, raw research, unchecked prices, data-building tools).

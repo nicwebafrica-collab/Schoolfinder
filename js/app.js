@@ -157,7 +157,7 @@
   function siteFooter() {
     return el("footer", { className: "site-footer" },
       el("p", {}, "Independent. Made in KZN. Schools can't pay to change their numbers or ranking."),
-      el("p", { className: "footer-links" }, el("a", { href: "#/about" }, "About"), el("a", { href: "#/how-we-check" }, "How we check fees"), el("a", { href: "#/privacy" }, "Privacy"), contactLink("Contact")));
+      el("p", { className: "footer-links" }, el("a", { href: "#/about" }, "About"), el("a", { href: "#/how-we-check" }, "How we check fees"), el("a", { href: "/our-data/" }, "Our data"), el("a", { href: "#/privacy" }, "Privacy"), contactLink("Contact")));
   }
 
   // ---------- Saved schools (only school ids, kept on this device) ----------

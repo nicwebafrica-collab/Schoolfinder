@@ -45,7 +45,7 @@ jobs:
       - name: Collect the files the website needs, incl. the plain school pages for Google (never tools, notes or old data)
         run: |
           mkdir _site
-          cp -r index.html styles.css manifest.webmanifest sw.js js fonts icons school sitemap.xml robots.txt _site/
+          cp -r index.html styles.css manifest.webmanifest sw.js js fonts icons school our-data sitemap.xml robots.txt _site/
           mkdir _site/data
           cd data && find . -name '*.json' ! -name '*.old.json' -exec cp --parents {} ../_site/data/ \;
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
