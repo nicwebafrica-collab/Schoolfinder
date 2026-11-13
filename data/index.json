@@ -10,7 +10,7 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 6,
+      "schoolCount": 7,
       "updated": "2026-11",
       "ids": [
         "clarendon-park-primary-school",
@@ -18,13 +18,14 @@
         "collegiate-girls-high-school",
         "balmoral-girls-primary-school",
         "cape-recife-high-school",
-        "erica-girls-primary-school"
+        "erica-girls-primary-school",
+        "cambridge-primary-school"
       ],
       "bounds": [
         -33.9965,
         25.58833,
         -31.88691,
-        26.88258
+        27.88486
       ]
     },
     {
@@ -34,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 63,
+      "schoolCount": 79,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -99,7 +100,23 @@
         "brooklyn-primary-school",
         "anchorage-academy",
         "addnum-academy",
-        "blue-hills-college"
+        "blue-hills-college",
+        "st-davids-marist-college",
+        "st-benedicts-college",
+        "lenasia-muslim-school",
+        "new-harvard-academy",
+        "solid-beginnings-school",
+        "ruimsig-academy",
+        "laerskool-jan-celliers",
+        "northcliff-primary-school",
+        "saheti-school",
+        "royal-kings-school",
+        "mcauley-house-school",
+        "lourdes-primary-private-school",
+        "shanan-christian-school",
+        "southdowns-college",
+        "sacred-heart-college",
+        "daybridge-international"
       ],
       "bounds": [
         -26.7360185101,

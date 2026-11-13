@@ -72,6 +72,7 @@
     { name: "Vereeniging", region: "Gauteng", lat: -26.6736, lng: 27.9319 },
     { name: "Krugersdorp", region: "Gauteng", lat: -26.0857, lng: 27.7750 },
     { name: "Roodepoort", region: "Gauteng", lat: -26.1625, lng: 27.8725 },
+    { name: "Lenasia", region: "Gauteng", lat: -26.3167, lng: 27.8333 },
     { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 },
     { name: "Benoni", region: "Gauteng", lat: -26.1885, lng: 28.3208 },
     { name: "Kempton Park", region: "Gauteng", lat: -26.1000, lng: 28.2300, aliases: ["kemptonpark"] },
@@ -92,6 +93,7 @@
     { name: "Paarl", region: "Western Cape", lat: -33.7342, lng: 18.9621 },
     // Eastern Cape
     { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] },
+    { name: "East London", region: "Eastern Cape", lat: -33.0153, lng: 27.9116, aliases: ["buffalo city", "eastlondon"] },
     { name: "Bedford", region: "Eastern Cape", lat: -32.6797, lng: 26.0856 },
     { name: "Queenstown", region: "Eastern Cape", lat: -31.8976, lng: 26.8753, aliases: ["komani"] }
   ];

@@ -431,5 +431,87 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "cambridge-primary-school",
+    "name": "Cambridge Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr RR-7",
+    "area": "Cambridge",
+    "city": "East London",
+    "province": "Eastern Cape",
+    "postcode": "5206",
+    "address": "Queen Street, Cambridge, East London",
+    "lat": -32.97466,
+    "lng": 27.88486,
+    "website": "http://www.cambridgeprimary.co.za/",
+    "phone": "043 726 8150",
+    "email": null,
+    "language": null,
+    "emis": "200200076",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "http://www.cambridgeprimary.co.za/admissions-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 33360,
+      "monthly": 2780,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Public school that charges fees, Grade RR to Grade 7. The page shows 2026 fees and says the 2027 fees are yet to be determined. Annual fee by grade: Grade RR R33,360, Grade R-2 R32,820, Grade 3&4 R32,580, Grade 5 R31,020, Grade 6&7 R30,360. Each grade can also be paid per month over 12 months: R2,780, R2,735, R2,715, R2,585 and R2,530. Aftercare is R12,960 annually. No registration fee or other costs are listed. For more information about fees and discounts the school asks parents to phone its landline.",
+      "byGrade": [
+        {
+          "grade": "Gr RR",
+          "yearly": 33360,
+          "monthly": 2780
+        },
+        {
+          "grade": "Gr R-2",
+          "yearly": 32820,
+          "monthly": 2735
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": 32580,
+          "monthly": 2715
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": 31020,
+          "monthly": 2585
+        },
+        {
+          "grade": "Gr 6-7",
+          "yearly": 30360,
+          "monthly": 2530
+        }
+      ],
+      "sourceKind": "the school's 2026 fee schedule"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 12960,
+        "frequency": "yearly",
+        "note": "Optional; the page lists it as annual",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]
