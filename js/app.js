@@ -1330,8 +1330,10 @@
 
     var byGrade = Array.isArray(f.byGrade) && f.byGrade.length
       ? panel("Fees by grade" + (f.year ? " (" + f.year + ")" : ""), el("ul", { className: "rows" }, f.byGrade.map(function (g) {
-          var y = L.yearlyFees(s, g.grade);
-          return row(g.grade, y === null && g.note ? unknown("Not confirmed, see note") : money(per(y)));
+          var y = L.yearlyFees(s, g.grade), m = L.monthlyFees(s, g.grade);
+          // Monthly-only grades (Crawford, Nova Pioneer, Ashton): show the school's monthly price, never a made-up yearly (V59-1).
+          return row(g.grade, y === null && g.note ? unknown("Not confirmed, see note")
+            : y === null && L.isNum(m) ? L.formatRand(m) + " a month" : money(per(y)));
         }))) : null;
 
     replace([
