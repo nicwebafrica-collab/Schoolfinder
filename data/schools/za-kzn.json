@@ -3245,7 +3245,7 @@
       {
         "item": "Grade 8 Leadership Programme",
         "amount": 4500,
-        "frequency": "once",
+        "frequency": "yearly",
         "note": "",
         "applies": "Gr 8",
         "included": false
@@ -5103,8 +5103,8 @@
     ],
     "fees": {
       "year": 2027,
-      "yearly": 80825,
-      "monthly": 8082.5,
+      "yearly": 82025,
+      "monthly": 8202.5,
       "registration": null,
       "deposit": 3500,
       "instalments": 10,
@@ -5619,93 +5619,94 @@
     ],
     "fees": {
       "year": 2027,
-      "yearly": 50620,
-      "monthly": null,
+      "yearly": null,
+      "monthly": 4440,
       "registration": null,
       "deposit": 4000,
-      "instalments": null,
-      "notes": "Independent school; fees shown are for the youngest group, Gr 0000 (turning 3). The 2027 sheet has a yearly column and a monthly column headed 'INSTALMENTS X 12 (NO DISCOUNT)'; Form 5 pays over 11 months, January to November. Fees differ by grade (see grade list), from R50,620 a year for Gr 0000 to R158,000 for Form 5. A non-refundable enrolment fee of R4,000 is payable on acceptance. Discounts: 5% per annum for payment before 7 January; 10% from the 2nd biological child. Adventure Club (Gr 0000 to Gr 3, optional, paid over ten months Feb to Nov): full time R1,680, three times a week R1,010, half day R840, day visitor R110 per day. Exam fees (Cambridge/IEB) and items such as textbooks, stationery, uniform and excursions are extra; the exam fee lines are hard to match to subjects, so ask the school. A 12-instalment option is also printed; it adds up to more than the yearly fee.",
+      "instalments": 12,
+      "notes": "Independent school; fees shown are for the youngest group, Gr 0000 (turning 3). The 2027 sheet has a yearly column and a monthly column headed 'INSTALMENTS X 12 (NO DISCOUNT)'; Form 5 pays over 11 months, January to November. Fees differ by grade (see grade list). The printed yearly prices (Gr 0000 R50,620, Form 5 R158,000) match the monthly amounts less the 5% discount for paying before 7 January, so they are settle-early prices; the monthly amounts shown are the normal instalments (12 payments, Form 5 11 payments). A non-refundable enrolment fee of R4,000 is payable on acceptance. Discounts: 5% per annum for payment before 7 January; 10% from the 2nd biological child. Adventure Club (Gr 0000 to Gr 3, optional, paid over ten months Feb to Nov): full time R1,680, three times a week R1,010, half day R840, day visitor R110 per day. Exam fees (Cambridge/IEB) and items such as textbooks, stationery, uniform and excursions are extra; the exam fee lines are hard to match to subjects, so ask the school.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
           "grade": "Gr 0000",
-          "yearly": 50620,
-          "monthly": null
+          "yearly": null,
+          "monthly": 4440
         },
         {
           "grade": "Gr 000",
-          "yearly": 57460,
-          "monthly": null
+          "yearly": null,
+          "monthly": 5040
         },
         {
           "grade": "Gr 00",
-          "yearly": 57460,
-          "monthly": null
+          "yearly": null,
+          "monthly": 5040
         },
         {
           "grade": "Gr R",
-          "yearly": 73420,
-          "monthly": null
+          "yearly": null,
+          "monthly": 6440
         },
         {
           "grade": "Gr 1",
-          "yearly": 82540,
-          "monthly": null
+          "yearly": null,
+          "monthly": 7240
         },
         {
           "grade": "Gr 2",
-          "yearly": 95760,
-          "monthly": null
+          "yearly": null,
+          "monthly": 8400
         },
         {
           "grade": "Gr 3",
-          "yearly": 98150,
-          "monthly": null
+          "yearly": null,
+          "monthly": 8610
         },
         {
           "grade": "Gr 4",
-          "yearly": 111490,
-          "monthly": null
+          "yearly": null,
+          "monthly": 9780
         },
         {
           "grade": "Gr 5",
-          "yearly": 113890,
-          "monthly": null
+          "yearly": null,
+          "monthly": 9990
         },
         {
           "grade": "Gr 6",
-          "yearly": 120160,
-          "monthly": null
+          "yearly": null,
+          "monthly": 10540
         },
         {
           "grade": "Gr 7",
-          "yearly": 123230,
-          "monthly": null
+          "yearly": null,
+          "monthly": 10810
         },
         {
           "grade": "Form 1",
-          "yearly": 124150,
-          "monthly": null
+          "yearly": null,
+          "monthly": 10890
         },
         {
           "grade": "Form 2",
-          "yearly": 134060,
-          "monthly": null
+          "yearly": null,
+          "monthly": 11760
         },
         {
           "grade": "Form 3",
-          "yearly": 136000,
-          "monthly": null
+          "yearly": null,
+          "monthly": 11930
         },
         {
           "grade": "Form 4",
-          "yearly": 154470,
-          "monthly": null
+          "yearly": null,
+          "monthly": 13550
         },
         {
           "grade": "Form 5",
-          "yearly": 158000,
-          "monthly": null
+          "yearly": null,
+          "monthly": 15120,
+          "instalments": 11
         }
       ]
     },
