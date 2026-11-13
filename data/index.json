@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 78,
+      "schoolCount": 99,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -115,7 +115,28 @@
         "shanan-christian-school",
         "southdowns-college",
         "sacred-heart-college",
-        "daybridge-international"
+        "daybridge-international",
+        "sonrise-christian-school",
+        "pinnacle-college-copperleaf",
+        "pinnacle-college-linden",
+        "pinnacle-college-founders-hill",
+        "pinnacle-college-waterfall",
+        "pinnacle-college-kyalami",
+        "trinityhouse-glenvista",
+        "nova-pioneer-ormonde-senior",
+        "nova-pioneer-ruimsig-primary",
+        "nova-pioneer-paulshof",
+        "nova-pioneer-midrand-primary",
+        "nova-pioneer-ormonde-primary",
+        "nova-pioneer-boksburg-primary",
+        "crawford-pretoria",
+        "crawford-lonehill-college",
+        "crawford-lonehill-preparatory",
+        "crawford-ruimsig",
+        "crawford-fourways",
+        "crawford-sandton-college",
+        "crawford-sandton-preparatory",
+        "crawford-bedfordview"
       ],
       "bounds": [
         -26.7360185101,
@@ -131,7 +152,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 52,
+      "schoolCount": 54,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -185,7 +206,9 @@
         "st-gregory-primary-school",
         "st-henrys-marist-college",
         "tree-tops-junior-primary-school",
-        "athlone-primary-school"
+        "athlone-primary-school",
+        "crawford-north-coast",
+        "crawford-college-la-lucia"
       ],
       "bounds": [
         -30.8726,
@@ -201,7 +224,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 14,
+      "schoolCount": 15,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -217,12 +240,13 @@
         "capella-house",
         "edgemead-primary-school",
         "ellerton-primary-school",
-        "cresca-primary-school"
+        "cresca-primary-school",
+        "elkanah-house"
       ],
       "bounds": [
         -34.172504,
         18.398072,
-        -33.807102,
+        -33.802052,
         19.035857
       ]
     }

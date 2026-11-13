@@ -7628,5 +7628,2100 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "sonrise-christian-school",
+    "name": "Sonrise Christian School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RR-12",
+    "area": "Edleen",
+    "city": "Kempton Park",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "28 Green Avenue, Edleen, Kempton Park",
+    "lat": -26.090081,
+    "lng": 28.213218,
+    "website": "https://sonrisechristianschool.co.za/",
+    "phone": "011 394 0384",
+    "email": null,
+    "language": null,
+    "emis": "700261743",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://sonrisechristianschool.co.za/enrollment.php"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 2050,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Grade RR to Grade 12. 2027 fees are monthly, payable over 12 months. Headline is Gr RR: tuition R1,990 plus workbooks R60, total R2,050 a month. Other totals a month: Gr R R3,650; Gr 1 R5,375; Gr 2-3 R5,940; Gr 4-7 R6,070; Gr 8-9 R6,125; Gr 10-12 R6,165. R100 off tuition if paid by the 1st of the month. The page prints an enrolment fee of R500 in the fees section and R1,500 in the enrolment steps, plus a R500 application fee; the school's page gives both R500 and R1,500; ask the school. Special Projects Fund R80 a month per family. Sibling discount R200. Fees include Art, Music, Kidi-Sportz, prize-giving, R210 per term for outings and an annual camp for Gr 4-12; sport tournaments and buses are extra. Workbook costs may vary slightly.",
+      "sourceKind": "the 2027 fees on the school's website",
+      "byGrade": [
+        {
+          "grade": "Gr RR",
+          "yearly": null,
+          "monthly": 2050
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 3650
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 5375
+        },
+        {
+          "grade": "Gr 2-3",
+          "yearly": null,
+          "monthly": 5940
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": null,
+          "monthly": 6070
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 6125
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": null,
+          "monthly": 6165
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Special Projects Fund",
+        "amount": 80,
+        "frequency": "monthly",
+        "note": "Per family, in place of large fundraisers; the page doesn't say whether every family pays",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "pinnacle-college-copperleaf",
+    "name": "Pinnacle College Copperleaf",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 00-12",
+    "area": "Mnandi",
+    "city": "Centurion",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Portion 1 No 385, Knopjeslaagte, Mnandi, Centurion",
+    "lat": -25.887216,
+    "lng": 28.052161,
+    "website": "https://www.pinnaclecolleges.co.za/copperleaf",
+    "phone": "012 003 3090",
+    "email": null,
+    "language": null,
+    "emis": "700400956",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/b166546c/files/uploaded/PC+COPPERLEAF+-+2027+SCHEDULE+OF+FEES+V12.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 64700,
+      "monthly": 6470,
+      "registration": 500,
+      "deposit": 4000,
+      "instalments": 10,
+      "notes": "Independent school. 2027 fees from 1 January 2027, by grade; the headline is the youngest class (Gr 00-0). Standard annual fee R64,700, or 10 monthly payments of R6,470. Paying the whole discounted annual fee (R61,470) by 31 January 2027 saves money; a 12 monthly option of R5,500 is also printed (higher in total). Grade 12 has no 12 monthly option. Application fee R500 and enrolment fee R4,000 are once-off and non-refundable. Grade 12 IEB exam fees R10,394 are billed separately. Stationery, books and tours are paid by parents; amounts not printed. Aftercare until 17:00 is included for Gr 00-7 (registered learners only); the school bus is extra.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 00-0",
+          "yearly": 64700,
+          "monthly": 6470
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 76200,
+          "monthly": 7620
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 81000,
+          "monthly": 8100
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 93900,
+          "monthly": 9390
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 99900,
+          "monthly": 9990
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 99900,
+          "monthly": 9990
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "yearly",
+        "note": "Billed to the fee account, due by the end of March 2027; extra subjects and special accommodations billed separately",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "School bus, return",
+        "amount": 16200,
+        "frequency": "yearly",
+        "note": "Optional; 10 monthly payments of R1,620 or 12 of R1,350 also printed (column labels inferred from the amounts)",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "School bus, one way",
+        "amount": 9000,
+        "frequency": "yearly",
+        "note": "Optional; 10 monthly payments of R900 or 12 of R750 also printed (column labels inferred from the amounts)",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "pinnacle-college-linden",
+    "name": "Pinnacle College Linden",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0-12",
+    "area": "Linden",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Cnr 4th Avenue and 11th Street, Linden, Randburg, Johannesburg",
+    "lat": -26.144826,
+    "lng": 27.995342,
+    "website": "https://www.pinnaclecolleges.co.za/linden",
+    "phone": "087 352 1963",
+    "email": null,
+    "language": null,
+    "emis": "700401126",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/b166546c/files/uploaded/PC+LINDEN+-+2027+SCHEDULE+OF+FEES+V12.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 71300,
+      "monthly": 7130,
+      "registration": 500,
+      "deposit": 4000,
+      "instalments": 10,
+      "notes": "Independent school. 2027 fees from 1 January 2027, by grade; the headline is the youngest class (Gr 0). Standard annual fee R71,300, or 10 monthly payments of R7,130. Paying the whole discounted annual fee (R67,740) by 31 January 2027 saves money; a 12 monthly option of R6,060 is also printed (higher in total). Grade 12 has no 12 monthly option. Application fee R500 and enrolment fee R4,000 are once-off and non-refundable. Grade 12 IEB exam fees R10,394 are billed separately. Stationery, books and tours are paid by parents; amounts not printed. Aftercare is run privately by another company; no prices printed.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0",
+          "yearly": 71300,
+          "monthly": 7130
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 82900,
+          "monthly": 8290
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 88400,
+          "monthly": 8840
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 97100,
+          "monthly": 9710
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 101800,
+          "monthly": 10180
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 101800,
+          "monthly": 10180
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "yearly",
+        "note": "Billed to the fee account, due by the end of March 2027; extra subjects and special accommodations billed separately",
+        "applies": "Gr 12",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "pinnacle-college-founders-hill",
+    "name": "Pinnacle College Founders Hill",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 00-12",
+    "area": "Founders Hill",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "39 Pinelands Road, Founders Hill, Modderfontein, Johannesburg",
+    "lat": -26.093488,
+    "lng": 28.159574,
+    "website": "https://www.pinnaclecolleges.co.za/founders-hill",
+    "phone": "087 350 2834",
+    "email": null,
+    "language": null,
+    "emis": "700401120",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/b166546c/files/uploaded/PC+FOUNDERS+HILL+-+2027+SCHEDULE+OF+FEES+V12.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 63000,
+      "monthly": 6300,
+      "registration": 500,
+      "deposit": 4000,
+      "instalments": 10,
+      "notes": "Independent school. 2027 fees from 1 January 2027, by grade; the headline is the youngest class (Gr 00-0). Standard annual fee R63,000, or 10 monthly payments of R6,300. Paying the whole discounted annual fee (R59,850) by 31 January 2027 saves money; a 12 monthly option of R5,360 is also printed (higher in total). Grade 12 has no 12 monthly option. Application fee R500 and enrolment fee R4,000 are once-off and non-refundable. Grade 12 IEB exam fees R10,394 are billed separately. Stationery, books and tours are paid by parents; amounts not printed. Aftercare is run privately by another company; no prices printed.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 00-0",
+          "yearly": 63000,
+          "monthly": 6300
+        },
+        {
+          "grade": "Gr 1-4",
+          "yearly": 73300,
+          "monthly": 7330
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": 78700,
+          "monthly": 7870
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 89100,
+          "monthly": 8910
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 97400,
+          "monthly": 9740
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 97400,
+          "monthly": 9740
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "yearly",
+        "note": "Billed to the fee account, due by the end of March 2027; extra subjects and special accommodations billed separately",
+        "applies": "Gr 12",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "pinnacle-college-waterfall",
+    "name": "Pinnacle College Waterfall",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Barbeque Downs",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "11 Condican Road, Barbeque Downs, Midrand",
+    "lat": -26.007321,
+    "lng": 28.07181,
+    "website": "https://www.pinnaclecolleges.co.za/waterfall",
+    "phone": "087 352 1975",
+    "email": null,
+    "language": null,
+    "emis": "700401098",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/b166546c/files/uploaded/PC+WATERFALL+-+2027+SCHEDULE+OF+FEES+V12.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 83000,
+      "monthly": 8300,
+      "registration": 500,
+      "deposit": 4000,
+      "instalments": 10,
+      "notes": "Independent school. 2027 fees from 1 January 2027, by grade; the headline is the youngest class (Gr 000-00). Standard annual fee R83,000, or 10 monthly payments of R8,300. Paying the whole discounted annual fee (R78,840) by 31 January 2027 saves money; a 12 monthly option of R7,060 is also printed (higher in total). Grade 12 has no 12 monthly option. Application fee R500 and enrolment fee R4,000 are once-off and non-refundable. Grade 12 IEB exam fees R10,394 are billed separately. Stationery, books and tours are paid by parents; amounts not printed. Aftercare is run privately by another company; no prices printed.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000-00",
+          "yearly": 83000,
+          "monthly": 8300
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": 92900,
+          "monthly": 9290
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 103400,
+          "monthly": 10340
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 112200,
+          "monthly": 11220
+        },
+        {
+          "grade": "Gr 8-11",
+          "yearly": 123300,
+          "monthly": 12330
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 123300,
+          "monthly": 12330
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "yearly",
+        "note": "Billed to the fee account, due by the end of March 2027; extra subjects and special accommodations billed separately",
+        "applies": "Gr 12",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "pinnacle-college-kyalami",
+    "name": "Pinnacle College Kyalami",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Kyalami",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "154 Cnr Lynx Road and Caracal Road, Kyalami, Midrand",
+    "lat": -25.970559,
+    "lng": 28.03007,
+    "website": "https://www.pinnaclecolleges.co.za/kyalami",
+    "phone": "087 365 4047",
+    "email": null,
+    "language": null,
+    "emis": "700152579",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/b166546c/files/uploaded/PC+KYALAMI+-+2027+SCHEDULE+OF+FEES+V12.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 56000,
+      "monthly": 5600,
+      "registration": 500,
+      "deposit": 4000,
+      "instalments": 10,
+      "notes": "Independent school. 2027 fees from 1 January 2027, by grade; the headline is the youngest class (Gr 000-00). Standard annual fee R56,000, or 10 monthly payments of R5,600. Paying the whole discounted annual fee (R53,220) by 31 January 2027 saves money; a 12 monthly option of R4,760 is also printed (higher in total). Grade 12 has no 12 monthly option. Application fee R500 and enrolment fee R4,000 are once-off and non-refundable. Grade 12 IEB exam fees R10,394 are billed separately. Stationery, books and tours are paid by parents; amounts not printed. Boarding and aftercare are extra and optional.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000-00",
+          "yearly": 56000,
+          "monthly": 5600
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": 72800,
+          "monthly": 7280
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 85500,
+          "monthly": 8550
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 91400,
+          "monthly": 9140
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 102300,
+          "monthly": 10230
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 108200,
+          "monthly": 10820
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 111800,
+          "monthly": 11180
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "yearly",
+        "note": "Billed to the fee account, due by the end of March 2027; extra subjects and special accommodations billed separately",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Termly boarding",
+        "amount": 120900,
+        "frequency": "yearly",
+        "note": "Boarders only; 10 monthly payments of R12,090 or 12 of R10,080 also printed",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding",
+        "amount": 105000,
+        "frequency": "yearly",
+        "note": "Boarders only; 10 monthly payments of R10,500 or 12 of R8,750 also printed",
+        "applies": "boarders",
+        "included": false
+      },
+      {
+        "item": "Weekly boarding, ad hoc night",
+        "amount": 550,
+        "frequency": "once",
+        "note": "Registered weekly boarders only",
+        "applies": "boarders",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Full-day aftercare",
+        "amount": 19200,
+        "frequency": "yearly",
+        "note": "Optional; 10 monthly payments of R1,920 or 12 of R1,620 also printed (column labels are unclear in the PDF text)",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare, ad hoc day",
+        "amount": 160,
+        "frequency": "once",
+        "note": "Optional",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "trinityhouse-glenvista",
+    "name": "Trinityhouse Glenvista",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Glenvista",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "53 Hantamberg Street, Glenvista, Johannesburg",
+    "lat": -26.289863,
+    "lng": 28.067924,
+    "website": "https://www.trinityhouse.co.za/",
+    "phone": "010 003 3944",
+    "email": null,
+    "language": null,
+    "emis": "700401102",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/6bd4fe7a/files/uploaded/trinity_Glenvista_combined_feestructure2027_V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4520,
+      "registration": 600,
+      "deposit": 6000,
+      "instalments": null,
+      "notes": "Independent combined school (pre-primary, preparatory, high school); 2027 fees. Pay annually before 31 January 2027, or monthly in 12 payments due on the 1st. The annual price is lower than 12 monthly payments, so it is a pay-in-full price; monthly amounts shown are the 12-payment ones. Gr 12 has only 10 monthly payments (January to October) of R14,660. Bridging Classes Gr 1-3: R9,640 a month (R106,068 annual). Non-refundable application fee R600 and enrolment fee R6,000. Outing levy (Gr 1-7) R730 non-refundable, listed without saying how often; ask the school. Bus Gr 12 for 10 months: Route 1 R1,160, Route 2 R830. Late collection after 18H00: R250 per 15 minutes or part. Gr 12 has only the 10-payment option, R14,660 a month for 10 months.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0000 (age 2-3), 08H00-13H00",
+          "yearly": null,
+          "monthly": 4520
+        },
+        {
+          "grade": "Gr 000-0 (age 3-6), 08H00-13H00",
+          "yearly": null,
+          "monthly": 6260
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 8420
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 10580
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": null,
+          "monthly": 10840
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 12010
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": 12690
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 14660
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Pre-Primary aftercare (13H00-18H00)",
+        "amount": 920,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R10,128); includes afternoon snack",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Preparatory aftercare",
+        "amount": 2280,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R25,008); includes lunch and afternoon snack, excludes holidays",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Morning bus Route 1 (Gr 1-11)",
+        "amount": 1000,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R11,004); outlying areas",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Morning bus Route 2 (Gr 1-11)",
+        "amount": 720,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R7,872); central areas",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Ad hoc aftercare",
+        "amount": 190,
+        "frequency": "once",
+        "note": "Per day, pre-primary and preparatory",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Holiday care full day",
+        "amount": 250,
+        "frequency": "once",
+        "note": "07H00 to 17H00, includes all meals",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Holiday care half day",
+        "amount": 165,
+        "frequency": "once",
+        "note": "07H00 to 13H00, includes all meals",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Late collection fine (after 18H00)",
+        "amount": 250,
+        "frequency": "once",
+        "note": "Per 15 minutes or part thereof",
+        "applies": "penalty",
+        "included": false,
+        "per": "15 minutes"
+      }
+    ]
+  },
+  {
+    "id": "nova-pioneer-ormonde-senior",
+    "name": "Nova Pioneer Ormonde Senior",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-13",
+    "area": "Ormonde",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1650 & 1651 Fontenay Road, Ormonde, Johannesburg",
+    "lat": -26.2438,
+    "lng": 27.9953,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": "011 496 1202",
+    "email": null,
+    "language": null,
+    "emis": "700401197",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Ormonde-Senior.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 8830,
+      "registration": null,
+      "deposit": 4500,
+      "instalments": null,
+      "notes": "Independent school; 2027 fees. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders (January to November). The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments. Gr 13 is printed with its own lower fee. Non-refundable enrolment fee on acceptance: R4,500 for senior school (Gr 8 and up). A top-up enrolment fee applies when moving to a new phase; no amount printed. Aftercare (unless extended day), holiday care, outside extramurals and Cambridge exam costs are extra, no amounts printed. One term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 8830,
+          "deposit": 4500
+        },
+        {
+          "grade": "Gr 9-10",
+          "yearly": null,
+          "monthly": 9710,
+          "deposit": 4500
+        },
+        {
+          "grade": "Gr 11-12",
+          "yearly": null,
+          "monthly": 10690,
+          "deposit": 4500
+        },
+        {
+          "grade": "Gr 13",
+          "yearly": null,
+          "monthly": 8975,
+          "deposit": 4500
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "nova-pioneer-ruimsig-primary",
+    "name": "Nova Pioneer Ruimsig",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 000-7",
+    "area": "Ruimsig",
+    "city": "Roodepoort",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "66 Flora Haase and Van Bergen Road, Amorosa, Roodepoort",
+    "lat": -26.098097,
+    "lng": 27.871859,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "700401140",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Ruimsig-Primary.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 5080,
+      "registration": null,
+      "deposit": 2200,
+      "instalments": null,
+      "notes": "Independent school; 2027 fees. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders (January to November). The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments. Fees shown are for normal dismissal. Extended day with aftercare, meal and snacks for Gr 000 & 00: R6,090 a month (11 payments). Non-refundable enrolment fee on acceptance: R2,200 for pre-primary; R3,900 for primary (Gr R-7). A top-up enrolment fee applies when moving to a new phase; no amount printed. Aftercare (unless extended day), holiday care, outside extramurals and Cambridge exam costs are extra, no amounts printed. One term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000 & 00",
+          "yearly": null,
+          "monthly": 5080,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 6100,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": null,
+          "monthly": 7230,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": null,
+          "monthly": 7960,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 5-6",
+          "yearly": null,
+          "monthly": 8750,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 9630,
+          "deposit": 3900
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "nova-pioneer-paulshof",
+    "name": "Nova Pioneer Paulshof",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Tots-Gr 7",
+    "area": "Paulshof",
+    "city": "Sandton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "9 Stone Haven Road, Paulshof, Sandton",
+    "lat": -26.0327,
+    "lng": 28.0502,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": "010 335 0926",
+    "email": null,
+    "language": null,
+    "emis": "700400968",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Paulshof.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 5860,
+      "registration": null,
+      "deposit": 2200,
+      "instalments": null,
+      "notes": "Independent school; 2027 fees. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders (January to November). The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments. Fees shown are for normal dismissal. Extended day with aftercare, meal and snacks: Tots R6,860 and Gr 000 & 00 R7,130 a month (11 payments). Non-refundable enrolment fee on acceptance: R2,200 for pre-primary; R3,900 for primary (Gr R-7). A top-up enrolment fee applies when moving to a new phase; no amount printed. Aftercare (unless extended day), holiday care, outside extramurals and Cambridge exam costs are extra, no amounts printed. One term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Tots (turning 3 in 2027)",
+          "yearly": null,
+          "monthly": 5860,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr 000 & 00",
+          "yearly": null,
+          "monthly": 6150,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 6460,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": null,
+          "monthly": 7670,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": null,
+          "monthly": 8440,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": null,
+          "monthly": 9280,
+          "deposit": 3900
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "nova-pioneer-midrand-primary",
+    "name": "Nova Pioneer Midrand Primary",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 000-7",
+    "area": "Halfway Gardens",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "110 Matuka Close, Halfway Gardens, Midrand",
+    "lat": -25.9808,
+    "lng": 28.1234,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": "010 449 4330",
+    "email": null,
+    "language": null,
+    "emis": "700400865",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Midrand-Primary.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4910,
+      "registration": null,
+      "deposit": 2200,
+      "instalments": null,
+      "notes": "Independent school; 2027 fees. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders (January to November). The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments. Fees shown are for normal dismissal. Extended day with aftercare, meal and snacks for Gr 000 & 00: R5,910 a month (11 payments). Non-refundable enrolment fee on acceptance: R2,200 for pre-primary; R3,900 for primary (Gr R-7). A top-up enrolment fee applies when moving to a new phase; no amount printed. Aftercare (unless extended day), holiday care, outside extramurals and Cambridge exam costs are extra, no amounts printed. One term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000 & 00",
+          "yearly": null,
+          "monthly": 4910,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 5890,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": null,
+          "monthly": 6820,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": null,
+          "monthly": 7500,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 5-6",
+          "yearly": null,
+          "monthly": 8250,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 9070,
+          "deposit": 3900
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "nova-pioneer-ormonde-primary",
+    "name": "Nova Pioneer Ormonde Primary",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 000-7",
+    "area": "Ormonde",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "49 Dorando Road, Ormonde, Johannesburg",
+    "lat": -26.24163,
+    "lng": 27.997345,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": "011 496 1201",
+    "email": null,
+    "language": null,
+    "emis": "700400792",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Ormonde-Primary.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4330,
+      "registration": null,
+      "deposit": 2200,
+      "instalments": null,
+      "notes": "Independent school; 2027 fees. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders (January to November). The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments. Fees shown are for normal dismissal. Extended day with aftercare, meal and snacks for Gr 000 & 00: R5,320 a month (11 payments). Non-refundable enrolment fee on acceptance: R2,200 for pre-primary; R3,900 for primary (Gr R-7). A top-up enrolment fee applies when moving to a new phase; no amount printed. Aftercare (unless extended day), holiday care, outside extramurals and Cambridge exam costs are extra, no amounts printed. One term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000 & 00",
+          "yearly": null,
+          "monthly": 4330,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 5200,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": null,
+          "monthly": 6200,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": null,
+          "monthly": 6980,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 5-6",
+          "yearly": null,
+          "monthly": 7850,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 8830,
+          "deposit": 3900
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "nova-pioneer-boksburg-primary",
+    "name": "Nova Pioneer Boksburg",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Tots-Gr 7",
+    "area": "Beyers Park",
+    "city": "Boksburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "63 Williams Road, Beyers Park, Boksburg",
+    "lat": -26.187318,
+    "lng": 28.263153,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": "011 894 7215",
+    "email": null,
+    "language": null,
+    "emis": "700400998",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Boksburg-Primary.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4630,
+      "registration": null,
+      "deposit": 2200,
+      "instalments": null,
+      "notes": "Independent school; 2027 fees. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders (January to November). The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments. Fees shown are for normal dismissal. Extended day with aftercare, meal and snacks: Tots R5,560 and Gr 000 & 00 R5,850 a month (11 payments). Non-refundable enrolment fee on acceptance: R2,200 for pre-primary; R3,900 for primary (Gr R-7). A top-up enrolment fee applies when moving to a new phase; no amount printed. Aftercare (unless extended day), holiday care, outside extramurals and Cambridge exam costs are extra, no amounts printed. One term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Tots (turning 3 in 2027)",
+          "yearly": null,
+          "monthly": 4630,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr 000 & 00",
+          "yearly": null,
+          "monthly": 4860,
+          "deposit": 2200
+        },
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 5830,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": null,
+          "monthly": 6950,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 3-4",
+          "yearly": null,
+          "monthly": 7510,
+          "deposit": 3900
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": null,
+          "monthly": 8110,
+          "deposit": 3900
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "crawford-pretoria",
+    "name": "Crawford International Pretoria",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Lukasrand",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "555 Sibelius Road, Lukasrand, Pretoria",
+    "lat": -25.765715,
+    "lng": 28.216723,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "012 343 5903",
+    "email": null,
+    "language": null,
+    "emis": "700230219",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Pretoria+Pre-Primary+Fee+Structure+2027+V2.pdf",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Pretoria+Preparatory+Fee+Structure+2027+V2.pdf",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Pretoria+College+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 7280,
+      "registration": 880,
+      "deposit": 13200,
+      "instalments": null,
+      "notes": "Independent school from pre-primary to Gr 12. Each grade has a discounted annual price (Gr 0000 R81,408) that is lower than 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 0000 R7,280; Gr 1 R11,390; Gr 8 R15,170). 10-payment options are also printed (Gr 0000 R8,570). Gr 12 has only a 10-payment option, R21,200 a month. The discount is lost if not paid in full by 31 January 2027. New learners pay a R880 application fee and a R13,200 non-refundable enrolment fee. Kidz Club aftercare is optional for pre-primary and preparatory (12-payment prices below). The pre-primary sheet lists an R250 ad-hoc fee without saying how often; ask the school.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": null,
+          "monthly": 7280
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": null,
+          "monthly": 8110
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": null,
+          "monthly": 9260
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": null,
+          "monthly": 10460
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 11390
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 12430
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 12830
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 14060
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 14250
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 14440
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 15010
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 15170
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 16120
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 17070
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 17590
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 21200
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare full day (pre-primary)",
+        "amount": 2520,
+        "frequency": "monthly",
+        "note": "Kidz Club, 12-payment option; optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare half day (pre-primary)",
+        "amount": 1770,
+        "frequency": "monthly",
+        "note": "Kidz Club, 12-payment option; optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare full day (preparatory)",
+        "amount": 2520,
+        "frequency": "monthly",
+        "note": "12-payment option; optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare half day (preparatory)",
+        "amount": 1770,
+        "frequency": "monthly",
+        "note": "12-payment option; optional",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "crawford-lonehill-college",
+    "name": "Crawford International Lonehill College",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Lonehill",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "17 Lonehill Boulevard, Lonehill, Johannesburg",
+    "lat": -26.010535,
+    "lng": 28.022728,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "011 467 0936",
+    "email": null,
+    "language": null,
+    "emis": "700152778",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Lonehill+College+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 16030,
+      "registration": 880,
+      "deposit": 13200,
+      "instalments": null,
+      "notes": "Independent college, Gr 8-12. Each grade has a discounted annual price (Gr 8 R179,136) that is lower than 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 8 R16,030 a month). A 10-payment option is also printed (Gr 8 R18,860). Gr 12 has only a 10-payment option, R22,040 a month, so no monthly figure is shown for Gr 12. The discount is lost if not paid in full by 31 January 2027. New learners pay a R880 application fee and a R13,200 non-refundable enrolment fee, both through the school's online portal. No aftercare at this phase.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 16030
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 16500
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 17360
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 17360
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 22040
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "crawford-lonehill-preparatory",
+    "name": "Crawford International Lonehill Preparatory",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Lonehill",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Sceales Road, Lonehill, Johannesburg",
+    "lat": -26.008008,
+    "lng": 28.032804,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "011 465 1201",
+    "email": null,
+    "language": null,
+    "emis": "700400486",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Lonehill+Preparatory+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 11920,
+      "registration": 880,
+      "deposit": 13200,
+      "instalments": null,
+      "notes": "Independent preparatory school, Gr 1-7. Each grade has a discounted annual price (Gr 1 R133,236) that is lower than 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 1 R11,920 a month). A 10-payment option is also printed (Gr 1 R14,020). The discount is lost if not paid in full by 31 January 2027. New learners pay a R880 application fee and a R13,200 non-refundable enrolment fee, both through the school's online portal. The sheet also lists Full Day, Half Day and Option rows that it does not label, so they are left out; ask the school about aftercare and music.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 11920
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 13020
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 13490
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 14250
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 14920
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 15200
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 15200
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "crawford-ruimsig",
+    "name": "Crawford International Ruimsig",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Ruimsig",
+    "city": "Roodepoort",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Corner of Peter Road and Kuilstok Road, Ruimsig, Roodepoort",
+    "lat": -26.087995,
+    "lng": 27.872706,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "011 958 0707",
+    "email": null,
+    "language": null,
+    "emis": "700400029",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Ruimsig+Pre-Primary+Fee+Structure+2027+V2.pdf",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Ruimsig+Preparatory+Fee+Structure+2027+V2.pdf",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Ruimsig+College+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 5690,
+      "registration": 880,
+      "deposit": 8800,
+      "instalments": null,
+      "notes": "Independent school, pre-primary (Gr 0000) to Grade 12. 2027 tuition is printed three ways: an annual (discounted) price if paid in full by 31 January 2027, or 12 monthly payments, or 10 monthly payments. The annual price is lower than the 12 monthly payments added up, so only the 12-month monthly amount is shown. Grade 12 has no 12-month option, only 10 payments. Application fee R880 and non-refundable enrolment fee R8,800 are for new learners, paid through the school's online portal. Aftercare is optional: Kidz Club full day R25,320 for the year (pre-primary), preparatory full day R26,844 and half day R21,252 for the year, all discounted annual prices. The pre-primary half-day row is unreadable and the ad hoc aftercare fee of R185 has no stated frequency; ask the school.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": null,
+          "monthly": 5690
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": null,
+          "monthly": 6210
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": null,
+          "monthly": 6350
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": null,
+          "monthly": 7970
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 9070
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 9240
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 9550
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 10830
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 11280
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 11370
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 11690
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 12210
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 12600
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 13550
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 13850
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 16850
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Kidz Club full day aftercare (pre-primary)",
+        "amount": 25320,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare full day (preparatory)",
+        "amount": 26844,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare half day (preparatory)",
+        "amount": 21252,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "crawford-fourways",
+    "name": "Crawford International Fourways",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Craigavon",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "16 Campbell Road, Craigavon, Fourways",
+    "lat": -26.016996,
+    "lng": 27.994467,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "011 465 4418",
+    "email": null,
+    "language": null,
+    "emis": "700152733",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Fourways+Preparatory+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 11290,
+      "registration": 880,
+      "deposit": 13200,
+      "instalments": null,
+      "notes": "Independent preparatory school, Grade 1 to 7. 2027 tuition is printed three ways: an annual (discounted) price if paid in full by 31 January 2027, or 12 monthly payments, or 10 monthly payments. The annual price is lower than the 12 monthly payments added up, so only the 12-month monthly amount is shown. Application fee R880 and non-refundable enrolment fee R13,200 are for new learners, paid through the school's online portal. Rows headed Full Day (R26,844 for the year) and Half Day (R21,252 for the year) are discounted annual prices, shown as optional aftercare. An unnamed 'Option' for Grades 4-7 is also printed; ask the school what it is.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 11290
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 12140
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 12480
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 13500
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 13800
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 13810
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 14420
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Full day (aftercare)",
+        "amount": 26844,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Half day (aftercare)",
+        "amount": 21252,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "crawford-sandton-college",
+    "name": "Crawford International Sandton College",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Benmore Gardens",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Waterstone Drive, Benmore Gardens, Sandton",
+    "lat": -26.094567,
+    "lng": 28.049926,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "011 784 3447",
+    "email": null,
+    "language": null,
+    "emis": "700152786",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Sandton+College+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 17390,
+      "registration": 880,
+      "deposit": 13200,
+      "instalments": null,
+      "notes": "Independent college, Grade 8 to 12. 2027 tuition is printed three ways: an annual (discounted) price if paid in full by 31 January 2027, or 12 monthly payments, or 10 monthly payments. The annual price is lower than the 12 monthly payments added up, so only the 12-month monthly amount is shown. Grade 12 has no 12-month option, only 10 payments. Application fee R880 and non-refundable enrolment fee R13,200 are for new learners, paid through the school's online portal. Aftercare does not apply to the College. Music lessons are listed, but the sheet's columns could not be matched reliably, so no music amounts are shown; ask the school.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 17390
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 18170
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 18920
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 19450
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 23640
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "crawford-sandton-preparatory",
+    "name": "Crawford International Sandton Preparatory",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Benmore Gardens",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "11 Benmore Road, Benmore Gardens, Sandton",
+    "lat": -26.095709,
+    "lng": 28.048645,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "011 784 7565",
+    "email": null,
+    "language": null,
+    "emis": "700152611",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+Sandton+Preparatory+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 12230,
+      "registration": 880,
+      "deposit": 13200,
+      "instalments": null,
+      "notes": "Independent preparatory school, Grade 1 to 7. 2027 tuition is printed three ways: an annual (discounted) price if paid in full by 31 January 2027, or 12 monthly payments, or 10 monthly payments. The annual price is lower than the 12 monthly payments added up, so only the 12-month monthly amount is shown. Application fee R880 and non-refundable enrolment fee R13,200 are for new learners, paid through the school's online portal. Aftercare is optional: full day (to 17:30) R26,844 for the year, half day (to 15:00) R21,252 for the year, both discounted annual prices. An extra '30 min' option R8,868 for the year is not named on the sheet; ask the school.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 12230
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 13510
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 14270
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 15000
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 15740
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 16180
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 16650
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare, full day (to 17:30)",
+        "amount": 26844,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare, half day (to 15:00)",
+        "amount": 21252,
+        "frequency": "yearly",
+        "note": "Discounted annual price if paid in full; monthly options also printed",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "crawford-bedfordview",
+    "name": "Crawford International Bedfordview",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-12",
+    "area": "Bedfordview",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "7 Marais Road, Bedfordview, Johannesburg",
+    "lat": -26.163789,
+    "lng": 28.142985,
+    "website": "https://www.crawfordinternational.co.za/bedfordview-preparatory",
+    "phone": "087 350 4633",
+    "email": null,
+    "language": null,
+    "emis": "700400780",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.crawfordinternational.co.za/bedfordview-preparatory",
+      "https://www.crawfordinternational.co.za/bedfordview-college"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 9950,
+      "registration": 880,
+      "deposit": 8800,
+      "instalments": null,
+      "notes": "Independent school, Grade 1 to 12 (preparatory and college). 2027 tuition is printed three ways: an annual (discounted) price if paid in full by 31 January 2027, or 12 monthly payments, or 10 monthly payments. The annual price is lower than the 12 monthly payments added up, so only the 12-month monthly amount is shown. Grade 12 has no 12-month option, only 10 payments. Application fee R880 and non-refundable enrolment fee R8,800 are for new learners, paid through the school's online portal.  The preparatory sheet also has an unlabelled Grades 1-7 row; the school does not say what it covers, so ask the school.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 9950
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 10680
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 11190
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 11520
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 12170
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 13200
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 13900
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 14070
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 14960
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 15490
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 16160
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 19920
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

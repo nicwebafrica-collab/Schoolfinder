@@ -1494,5 +1494,180 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "elkanah-house",
+    "name": "Elkanah House",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Sunningdale",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7449",
+    "address": "85 Sunningdale Drive, Sunningdale, Cape Town",
+    "lat": -33.802052,
+    "lng": 18.486811,
+    "website": "https://www.elkanah.co.za/",
+    "phone": "021 554 8600",
+    "email": null,
+    "language": null,
+    "emis": "103007277",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/f1c72268/files/uploaded/Elkanah_feestructure2027_V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 6360,
+      "registration": 650,
+      "deposit": 6000,
+      "instalments": null,
+      "notes": "Independent school, Pre-Prep to Grade 12. Fees are by phase; the headline is the Pre-Prep (Gr 000-0) monthly fee of R6,360 for 12 payments, January to December. The school also prints a lower annual price for payment before 31 January 2027 (R69,972 for Pre-Prep); 12 monthly payments cost more in total, so we show no yearly figure. Gr 12 pays R14,530 for 10 payments, January to October, and includes IEB exam fees. Gr 1-3 R8,540 a month, Gr 4-6 R9,280, Gr 7 R10,530, Gr 8-9 R12,030, Gr 10-11 R12,570. Application fee R650 and enrolment fee R6,000 are non-refundable. Optional aftercare, holiday care and music are extra. Late collection after 17h30 costs R250 per 15 minutes.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000-0",
+          "yearly": null,
+          "monthly": 6360
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 8540
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": null,
+          "monthly": 9280
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 10530
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 12030
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": 12570
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 14530
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare, full day (Gr 000-0)",
+        "amount": 1210,
+        "frequency": "monthly",
+        "note": "Optional; 13h00 to 17h30, includes lunch; 12 monthly payments, annual price R13,284 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare, half day (Gr 000-0)",
+        "amount": 850,
+        "frequency": "monthly",
+        "note": "Optional; 13h00 to 15h30, includes lunch; 12 monthly payments, annual price R9,336 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare, full day (Gr 1-3)",
+        "amount": 1990,
+        "frequency": "monthly",
+        "note": "Optional; 13h00 to 17h30, includes lunch; 12 monthly payments, annual price R21,864 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare, ad hoc full day",
+        "amount": 170,
+        "frequency": "once",
+        "note": "Optional; per day used",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Aftercare, ad hoc half day",
+        "amount": 110,
+        "frequency": "once",
+        "note": "Optional; per day used",
+        "applies": "optional",
+        "included": false,
+        "per": "day"
+      },
+      {
+        "item": "Music: instrument, one lesson (Gr 0-11)",
+        "amount": 710,
+        "frequency": "monthly",
+        "note": "Optional; 12 monthly payments, annual price R7,800 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music: instrument, two lessons (Gr 0-11)",
+        "amount": 1420,
+        "frequency": "monthly",
+        "note": "Optional; 12 monthly payments, annual price R15,600 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music: vocal, one lesson (Gr 1-11)",
+        "amount": 710,
+        "frequency": "monthly",
+        "note": "Optional; 12 monthly payments, annual price R7,800 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music: vocal, two lessons (Gr 1-11)",
+        "amount": 1420,
+        "frequency": "monthly",
+        "note": "Optional; 12 monthly payments, annual price R15,600 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Music: Marimba Band (Gr 4-11)",
+        "amount": 150,
+        "frequency": "monthly",
+        "note": "Optional; by audition; 12 monthly payments, annual price R1,640 if paid before 31 January",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Late collection fine",
+        "amount": 250,
+        "frequency": "once",
+        "note": "Penalty if collected after 17h30, per 15 minutes or part thereof",
+        "applies": "penalty",
+        "included": false,
+        "per": "15 minutes"
+      }
+    ]
   }
 ]

@@ -6376,5 +6376,227 @@
       "sourceKind": "the 2026 fees on the school's website"
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "crawford-north-coast",
+    "name": "Crawford International North Coast",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Westbrook",
+    "city": "Ballito",
+    "province": "KwaZulu-Natal",
+    "postcode": "4420",
+    "address": "Watson Highway, Westbrook",
+    "lat": -29.5938,
+    "lng": 31.154,
+    "website": "https://www.crawfordinternational.co.za/",
+    "phone": "032 943 3498",
+    "email": null,
+    "language": null,
+    "emis": "500290524",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+North+Coast+Pre-Primary+Fee+Structure+2027+V1.pdf",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+North+Coast+Preparatory+Fee+Structure+2027+V2.pdf",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+North+Coast+College+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 5470,
+      "registration": 880,
+      "deposit": 5500,
+      "instalments": null,
+      "notes": "Independent school from pre-primary to Gr 12. Each grade has a discounted annual price (Gr 0000 R61,188) that is lower than 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 0000 R5,470; Gr 1 R8,010; Gr 8 R12,250). Gr 12 has only a 10-payment option, R18,800 a month. The discount is lost if not paid in full by 31 January 2027. New learners pay a R880 application fee and a R5,500 non-refundable enrolment fee. Pre-primary aftercare (Crawford Kidz Club) full day is R1,500 a month on the 12-payment option, or R250 a day ad hoc. 10-payment amounts and one unlabelled row of R15,720, R1,670 and R1,500 are left out because the sheet text was not clear.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": null,
+          "monthly": 5470
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": null,
+          "monthly": 6420
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": null,
+          "monthly": 6890
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": null,
+          "monthly": 7270
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 8010
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 8560
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 8560
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 9900
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 10910
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 11250
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 11250
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 12250
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 13730
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 14970
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 15190
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 18800
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare full day (pre-primary)",
+        "amount": 1500,
+        "frequency": "monthly",
+        "note": "Crawford Kidz Club, 12-payment option; optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare ad-hoc daily rate (pre-primary)",
+        "amount": 250,
+        "frequency": "once",
+        "note": "Per day, pay as needed",
+        "applies": "some",
+        "included": false,
+        "per": "day"
+      }
+    ]
+  },
+  {
+    "id": "crawford-college-la-lucia",
+    "name": "Crawford College La Lucia",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "La Lucia",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4022",
+    "address": "79 Armstrong Avenue, La Lucia",
+    "lat": -29.7421,
+    "lng": 31.0627,
+    "website": "https://www.crawfordinternational.co.za/la-lucia-college",
+    "phone": "031 562 0050",
+    "email": null,
+    "language": null,
+    "emis": "500339031",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-13",
+    "sources": [
+      "https://www.crawfordinternational.co.za/la-lucia-college",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+La+Lucia+College+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 15480,
+      "registration": 880,
+      "deposit": 5500,
+      "instalments": null,
+      "notes": "Independent college, Gr 8-12. Each grade has a discounted annual price (Gr 8 R173,016) that is lower than the 12 monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 8 R15,480 a month). A 10-payment option is also printed (Gr 8 R18,210). Gr 12 has only a 10-payment option, R22,010 a month, so no monthly figure is shown for Gr 12; its discounted annual price is R209,088. The annual discount is lost if not paid in full by 31 January 2027, and the account then moves to the 12-month option. New learners pay a R880 application fee and a R5,500 non-refundable enrolment fee, both through the school's online portal. No aftercare at this phase.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 15480
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 16940
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 17560
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 17950
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 22010
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]
