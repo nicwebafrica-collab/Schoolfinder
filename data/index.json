@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 112,
+      "schoolCount": 119,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -149,7 +149,14 @@
         "tomorrow-s-people-college",
         "tyger-valley-college",
         "vaal-triangle-preparatory",
-        "veritas-academics"
+        "veritas-academics",
+        "abbotts-college-centurion",
+        "abbotts-college-johannesburg-south",
+        "abbotts-college-northcliff",
+        "abbotts-college-pretoria-east",
+        "queens-private-school",
+        "royal-schools-alberton",
+        "royal-schools-sky-city"
       ],
       "bounds": [
         -26.7360185101,

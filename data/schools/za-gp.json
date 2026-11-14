@@ -10897,5 +10897,629 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "abbotts-college-centurion",
+    "name": "Abbotts College Centurion",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Highveld",
+    "city": "Centurion",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "270 Witch-Hazel Street, Highveld Ext 67, Centurion",
+    "lat": -25.877423,
+    "lng": 28.178088,
+    "website": "https://www.abbotts.co.za/",
+    "phone": "012 665 3144",
+    "email": null,
+    "language": null,
+    "emis": "700400788",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://irp.cdn-website.com/98bf69a8/files/uploaded/ABBOTTS-Fees-2027_v11.pdf",
+      "https://www.abbotts.co.za/our-fees"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 77700,
+      "monthly": 7770,
+      "registration": 350,
+      "deposit": 2650,
+      "instalments": 10,
+      "notes": "Independent high school (Abbotts College, ADvTECH); the same 2027 tuition applies at all Abbotts campuses. Headline is Grade 8: R77,700 a year or 10 monthly payments of R7,770; a 12-month debit order (R6,800) is also printed, not for Grade 12. Paying the year by 31 January 2027 saves 5%. Registration fee R350 and enrolment fee R2,650 (new students) are once-off and non-refundable. Grade 12 part-time is R17,540 per subject. Student card R50. Locker R300 is compulsory. Grade 10-12 subject fees vary by subject and are billed extra. Sibling discounts on tuition: 5% (2nd), 10% (3rd), 15% (4th+).",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 77700,
+          "monthly": 7770
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 82300,
+          "monthly": 8230
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 89600,
+          "monthly": 8960
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 97000,
+          "monthly": 9700
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 103000,
+          "monthly": 10300
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Once-off charge for Grade 12, billed January 2027 and due by end of March 2027; extra subjects R1,800 each",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Student card",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Compulsory for all grades; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Locker",
+        "amount": 300,
+        "frequency": "once",
+        "note": "Compulsory for full-time students at this campus; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "abbotts-college-johannesburg-south",
+    "name": "Abbotts College Johannesburg South",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Suideroord",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "27 Ferdinand Street, Suideroord, Johannesburg",
+    "lat": -26.27321,
+    "lng": 28.02863,
+    "website": "https://www.abbotts.co.za/",
+    "phone": "011 680 4757",
+    "email": null,
+    "language": null,
+    "emis": "700400408",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://irp.cdn-website.com/98bf69a8/files/uploaded/ABBOTTS-Fees-2027_v11.pdf",
+      "https://www.abbotts.co.za/our-fees"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 77700,
+      "monthly": 7770,
+      "registration": 350,
+      "deposit": 2650,
+      "instalments": 10,
+      "notes": "Independent high school (Abbotts College, ADvTECH); the same 2027 tuition applies at all Abbotts campuses. Headline is Grade 8: R77,700 a year or 10 monthly payments of R7,770; a 12-month debit order (R6,800) is also printed, not for Grade 12. Paying the year by 31 January 2027 saves 5%. Registration fee R350 and enrolment fee R2,650 (new students) are once-off and non-refundable. Grade 12 part-time is R17,540 per subject. Student card R50. Locker R300 optional (Gr 9-12); lockable cell phone pouch R320 compulsory in Gr 8-9. Grade 10-12 subject fees vary by subject and are billed extra. Sibling discounts on tuition: 5% (2nd), 10% (3rd), 15% (4th+).",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 77700,
+          "monthly": 7770
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 82300,
+          "monthly": 8230
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 89600,
+          "monthly": 8960
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 97000,
+          "monthly": 9700
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 103000,
+          "monthly": 10300
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Once-off charge for Grade 12, billed January 2027 and due by end of March 2027; extra subjects R1,800 each",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Student card",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Compulsory for all grades; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Lockable cell phone pouch",
+        "amount": 320,
+        "frequency": "once",
+        "note": "Compulsory in Gr 8 and 9; billed to the fee account",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "abbotts-college-northcliff",
+    "name": "Abbotts College Northcliff",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Northcliff",
+    "city": "Randburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "280 Pendoring Road, Northcliff",
+    "lat": -26.133563,
+    "lng": 27.96577,
+    "website": "https://www.abbotts.co.za/",
+    "phone": "011 478 1192",
+    "email": null,
+    "language": null,
+    "emis": "700400173",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://irp.cdn-website.com/98bf69a8/files/uploaded/ABBOTTS-Fees-2027_v11.pdf",
+      "https://www.abbotts.co.za/our-fees"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 77700,
+      "monthly": 7770,
+      "registration": 350,
+      "deposit": 2650,
+      "instalments": 10,
+      "notes": "Independent high school (Abbotts College, ADvTECH); the same 2027 tuition applies at all Abbotts campuses. Headline is Grade 8: R77,700 a year or 10 monthly payments of R7,770; a 12-month debit order (R6,800) is also printed, not for Grade 12. Paying the year by 31 January 2027 saves 5%. Registration fee R350 and enrolment fee R2,650 (new students) are once-off and non-refundable. Grade 12 part-time is R17,540 per subject. Student card R50. Locker R300 optional; lockable cell phone pouch R320 compulsory in Gr 8-9. Grade 10-12 subject fees vary by subject and are billed extra. Sibling discounts on tuition: 5% (2nd), 10% (3rd), 15% (4th+).",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 77700,
+          "monthly": 7770
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 82300,
+          "monthly": 8230
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 89600,
+          "monthly": 8960
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 97000,
+          "monthly": 9700
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 103000,
+          "monthly": 10300
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Once-off charge for Grade 12, billed January 2027 and due by end of March 2027; extra subjects R1,800 each",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Student card",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Compulsory for all grades; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Lockable cell phone pouch",
+        "amount": 320,
+        "frequency": "once",
+        "note": "Compulsory in Gr 8 and 9; billed to the fee account",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "abbotts-college-pretoria-east",
+    "name": "Abbotts College Pretoria East",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Pretoria East",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Pony Road, Pretoria East",
+    "lat": -25.78474,
+    "lng": 28.35644,
+    "website": "https://www.abbotts.co.za/",
+    "phone": "012 809 1208",
+    "email": null,
+    "language": null,
+    "emis": "700400183",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://irp.cdn-website.com/98bf69a8/files/uploaded/ABBOTTS-Fees-2027_v11.pdf",
+      "https://www.abbotts.co.za/our-fees"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 77700,
+      "monthly": 7770,
+      "registration": 350,
+      "deposit": 2650,
+      "instalments": 10,
+      "notes": "Independent high school (Abbotts College, ADvTECH); the same 2027 tuition applies at all Abbotts campuses. Headline is Grade 8: R77,700 a year or 10 monthly payments of R7,770; a 12-month debit order (R6,800) is also printed, not for Grade 12. Paying the year by 31 January 2027 saves 5%. Registration fee R350 and enrolment fee R2,650 (new students) are once-off and non-refundable. Grade 12 part-time is R17,540 per subject. Student card R50. Locker R300 is compulsory for full-time students; access tag R110 for new students; lockable cell phone pouch R320 compulsory in Gr 8-9. Grade 10-12 subject fees vary by subject and are billed extra. Sibling discounts on tuition: 5% (2nd), 10% (3rd), 15% (4th+).",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 77700,
+          "monthly": 7770
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 82300,
+          "monthly": 8230
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 89600,
+          "monthly": 8960
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 97000,
+          "monthly": 9700
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 103000,
+          "monthly": 10300
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Once-off charge for Grade 12, billed January 2027 and due by end of March 2027; extra subjects R1,800 each",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Student card",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Compulsory for all grades; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Locker",
+        "amount": 300,
+        "frequency": "once",
+        "note": "Compulsory for full-time students at this campus; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Lockable cell phone pouch",
+        "amount": 320,
+        "frequency": "once",
+        "note": "Compulsory in Gr 8 and 9; billed to the fee account",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Access tag",
+        "amount": 110,
+        "frequency": "once",
+        "note": "New students only; billed and paid via the Karri app",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "queens-private-school",
+    "name": "Queens Private School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Pretoria Central",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "310 Church Street, Pretoria",
+    "lat": -25.74829,
+    "lng": 28.16205,
+    "website": "https://www.royalschools.co.za/",
+    "phone": "012 327 6714",
+    "email": null,
+    "language": null,
+    "emis": "700400340",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.royalschools.co.za/download/documents/queens-private-school-fees.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 27840,
+      "monthly": 2320,
+      "registration": 1500,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school (Royal Schools group). 2027 fees by grade; the headline is the youngest class (Gr R-7). Annual fee R27,840, or 12 monthly payments of R2,320. Paying the whole year by 31 January saves 5%; quarterly debit orders save 3.5%. Grade 12 is paid over 10 months (R3,750 a month). Fees include textbooks. Registration fee R1,500 for new learners only, not refunded if the application is declined or withdrawn. Sibling discount R210 for the 2nd, 3rd and 4th child. Aftercare is outsourced: ask the school office. Late payment and unpaid debit order fees R130.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr R-7",
+          "yearly": 27840,
+          "monthly": 2320
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 32520,
+          "monthly": 2710
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 35880,
+          "monthly": 2990
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 37500,
+          "monthly": 3750
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "royal-schools-alberton",
+    "name": "Royal Schools Alberton",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-12",
+    "area": "Alberton",
+    "city": "Alberton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Black Phantom Street, Albertsdal Ext 42, Alberton",
+    "lat": -26.359142,
+    "lng": 28.104093,
+    "website": "https://www.royalschools.co.za/",
+    "phone": "011 100 5840",
+    "email": null,
+    "language": null,
+    "emis": "700400886",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1265
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.royalschools.co.za/download/documents/alberton-school-fees.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 36720,
+      "monthly": 3060,
+      "registration": 1500,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school (Royal Schools group). 2027 fees by grade; the headline is the youngest class (Gr RRR-R). Annual fee R36,720, or 12 monthly payments of R3,060. Paying the whole year by 31 January saves 5%; quarterly debit orders save 3.5%. Grade 12 is paid over 10 months (R4,360 a month). Fees include textbooks. Registration fee R1,500 for new learners only, not refunded if the application is declined or withdrawn. Sibling discount R210 for the 2nd, 3rd and 4th child.  Late payment and unpaid debit order fees R130.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr RRR-R",
+          "yearly": 36720,
+          "monthly": 3060
+        },
+        {
+          "grade": "Gr 1-11",
+          "yearly": 40080,
+          "monthly": 3340
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 43600,
+          "monthly": 4360
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 13900,
+        "frequency": "yearly",
+        "note": "Optional; 11 monthly payments of R1,265",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "royal-schools-sky-city",
+    "name": "Royal Schools Sky City",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RRR-12",
+    "area": "Sky City",
+    "city": "Alberton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "Cnr Kingfisher and Lemon Shark, Sky City, Alberton",
+    "lat": -26.417368,
+    "lng": 28.110811,
+    "website": "https://www.royalschools.co.za/",
+    "phone": "010 001 8984",
+    "email": null,
+    "language": null,
+    "emis": "700400959",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1200
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.royalschools.co.za/download/documents/sky-city-school-fees.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 35280,
+      "monthly": 2940,
+      "registration": 1500,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school (Royal Schools group). 2027 fees by grade; the headline is the youngest class (Gr RRR-R). Annual fee R35,280, or 12 monthly payments of R2,940. Paying the whole year by 31 January saves 5%; quarterly debit orders save 3.5%. Grade 12 is paid over 10 months (R4,210 a month). Fees include textbooks. Registration fee R1,500 for new learners only, not refunded if the application is declined or withdrawn. Sibling discount R210 for the 2nd, 3rd and 4th child. Aftercare is outsourced. Late payment and unpaid debit order fees R130.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr RRR-R",
+          "yearly": 35280,
+          "monthly": 2940
+        },
+        {
+          "grade": "Gr 1-11",
+          "yearly": 38640,
+          "monthly": 3220
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 42100,
+          "monthly": 4210
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 13200,
+        "frequency": "yearly",
+        "note": "Optional; 11 monthly payments of R1,200 (aftercare is outsourced)",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]
