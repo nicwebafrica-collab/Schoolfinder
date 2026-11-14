@@ -1340,7 +1340,8 @@
         {
           "grade": "Gr 12",
           "yearly": 153000,
-          "monthly": 15300
+          "monthly": 15300,
+          "instalments": 10
         }
       ]
     },
@@ -1817,7 +1818,8 @@
         {
           "grade": "Gr 12",
           "yearly": 89010,
-          "monthly": 9890
+          "monthly": 9890,
+          "instalments": 9
         }
       ],
       "sourceKind": "the school's 2027 fee schedule"
@@ -2100,7 +2102,8 @@
         {
           "grade": "Gr 1-6",
           "yearly": 17490,
-          "monthly": 1590
+          "monthly": 1590,
+          "instalments": 11
         },
         {
           "grade": "Gr 7",
@@ -2183,7 +2186,8 @@
         {
           "grade": "Gr 12",
           "yearly": 95700,
-          "monthly": 9570
+          "monthly": 9570,
+          "instalments": 10
         }
       ]
     },
@@ -2320,17 +2324,20 @@
         {
           "grade": "Gr 10",
           "yearly": 22440,
-          "monthly": 2244
+          "monthly": 2244,
+          "instalments": 10
         },
         {
           "grade": "Gr 11",
           "yearly": 26520,
-          "monthly": 2652
+          "monthly": 2652,
+          "instalments": 10
         },
         {
           "grade": "Gr 12",
           "yearly": 26520,
-          "monthly": 2652
+          "monthly": 2652,
+          "instalments": 10
         }
       ]
     },
@@ -3361,7 +3368,8 @@
         {
           "grade": "Gr 12",
           "yearly": 78540,
-          "monthly": 11220
+          "monthly": 11220,
+          "instalments": 7
         }
       ]
     },
@@ -10401,7 +10409,8 @@
         {
           "grade": "Gr 12",
           "yearly": 55000,
-          "monthly": 5000
+          "monthly": 5000,
+          "instalments": 11
         }
       ]
     },
@@ -11372,7 +11381,8 @@
         {
           "grade": "Gr 12",
           "yearly": 37500,
-          "monthly": 3750
+          "monthly": 3750,
+          "instalments": 10
         }
       ]
     },
@@ -11435,7 +11445,8 @@
         {
           "grade": "Gr 12",
           "yearly": 43600,
-          "monthly": 4360
+          "monthly": 4360,
+          "instalments": 10
         }
       ]
     },
@@ -11507,7 +11518,8 @@
         {
           "grade": "Gr 12",
           "yearly": 42100,
-          "monthly": 4210
+          "monthly": 4210,
+          "instalments": 10
         }
       ]
     },
