@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 105,
+      "schoolCount": 112,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -142,7 +142,14 @@
         "courtney-house-international-primary",
         "courtney-house-international-senior",
         "curro-clayville",
-        "curro-soshanguve"
+        "curro-soshanguve",
+        "ashbury-college",
+        "bryneven-primary-school",
+        "pepps-motheong-school",
+        "tomorrow-s-people-college",
+        "tyger-valley-college",
+        "vaal-triangle-preparatory",
+        "veritas-academics"
       ],
       "bounds": [
         -26.7360185101,
@@ -158,7 +165,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 54,
+      "schoolCount": 56,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -214,7 +221,9 @@
         "tree-tops-junior-primary-school",
         "athlone-primary-school",
         "crawford-north-coast",
-        "crawford-college-la-lucia"
+        "crawford-college-la-lucia",
+        "alexandra-high-school",
+        "maris-stella-school"
       ],
       "bounds": [
         -30.8726,
@@ -230,7 +239,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 17,
+      "schoolCount": 19,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -249,11 +258,13 @@
         "cresca-primary-school",
         "elkanah-house",
         "curro-uitzicht-primary",
-        "curro-uitzicht-high"
+        "curro-uitzicht-high",
+        "bosmansdam-primary-school",
+        "camps-bay-high-school"
       ],
       "bounds": [
         -34.172504,
-        18.398072,
+        18.3783,
         -33.802052,
         19.035857
       ]

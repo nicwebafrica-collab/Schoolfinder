@@ -10338,5 +10338,553 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "ashbury-college",
+    "name": "Ashbury College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr RR-12",
+    "area": "Fairleads",
+    "city": "Benoni",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "69 Von Broembsen Road, Fairleads, Benoni",
+    "lat": -26.1174,
+    "lng": 28.3677,
+    "website": "https://www.ashburycollege.co.za/",
+    "phone": "010 035 0946",
+    "email": null,
+    "language": null,
+    "emis": "700310136",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.ashburycollege.co.za/admissions"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 27900,
+      "monthly": 2325,
+      "registration": 1000,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Gr RR to Gr 12. 2027 fees, monthly in advance: Gr RR-R R2,325 a month (R27,900 a year; all-inclusive, with lunch and aftercare to 17:30); Gr 1-7 R4,050 (R48,600); Gr 8-11 R4,525 (R54,300); Gr 12 R5,000 over 11 months (R55,000). Entrance fee R1,000 once-off for new learners (shown as registration). Re-registration R500 each year for current learners, before 31 October. A development levy of R2,550 is listed for Prep and High School, due before 31 January 2027; the page does not say if it is yearly, so the amount is left out of hidden costs. Aftercare for Gr 1-7 R1,000 a month over 11 months (R11,000). Discounts: R50 per child per month for debit order; 5% for siblings (oldest pays full); 10% if the year is paid in full before 31 January 2027. Fees are 'for 2027 and subject to change'.",
+      "sourceKind": "the school's 2027 admissions page fee table",
+      "byGrade": [
+        {
+          "grade": "Gr RR-R",
+          "yearly": 27900,
+          "monthly": 2325
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 48600,
+          "monthly": 4050
+        },
+        {
+          "grade": "Gr 8-11",
+          "yearly": 54300,
+          "monthly": 4525
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 55000,
+          "monthly": 5000
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Re-registration fee",
+        "amount": 500,
+        "frequency": "yearly",
+        "note": "Current learners, before 31 October each year",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "bryneven-primary-school",
+    "name": "Bryneven Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Bryanston",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Corner Ballyclare and Ballina Roads, Bryanston, Johannesburg",
+    "lat": -26.0737,
+    "lng": 28.0334,
+    "website": "https://www.bryneven.co.za/",
+    "phone": "011 463 1453",
+    "email": null,
+    "language": null,
+    "emis": "700150235",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.bryneven.co.za/admission/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 60280,
+      "monthly": 5480,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public primary school, Gr R to Gr 7. Approved 2026 fees (January to November, ratified at the AGM in November 2025): Gr R R60,280 (11 payments of R5,480); Gr 1-7 R46,915 (11 payments of R4,265). The 6% discount for paying before 31 January 2026 (Gr R R56,663, Gr 1-7 R44,100) has passed; R44,100 is the discounted Gr 1-7 price, not a different fee. No registration or other fees are printed. 2027 fees are not published.",
+      "sourceKind": "the school's 2026 approved fees on its admission page",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 60280,
+          "monthly": 5480
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 46915,
+          "monthly": 4265
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "pepps-motheong-school",
+    "name": "Pepps Motheong School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Atteridgeville",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "3 Khoza Street, Atteridgeville, Pretoria",
+    "lat": -25.7635,
+    "lng": 28.0876,
+    "website": "https://peppsmotheong.com/",
+    "phone": "012 373 7923",
+    "email": null,
+    "language": null,
+    "emis": "700232090",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://peppsmotheong.com/admissions/schoolfees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 38500,
+      "monthly": 3500,
+      "registration": 2500,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Independent school, Gr R to Gr 12. 2026 tuition in 11 monthly instalments: Gr R-9 R3,500; Gr 10-11 R3,755; Gr 12 R4,082. The yearly figures here are 11 x the monthly amount (R38,500, R41,305, R44,902); the page prints annual totals that include the R2,500 registration fee (R41,000, R43,805, R47,402). The page calls the R2,500 a once-off registration fee, while the linked 2026 PDF calls it re-registration, so who pays it is not certain. Sibling discounts per month: 2nd child R3,360 / R3,605 / R3,919, 3rd child R3,226 / R3,461 / R3,762. The 2.5% discount for paying in full before 31 January 2026 has passed. FET textbook fee R900 a year for Gr 10-12. Excursions, extra activities, stationery and workbooks are separate. 2027 fees are not published.",
+      "sourceKind": "the school's 2026 fees page",
+      "byGrade": [
+        {
+          "grade": "Gr R-9",
+          "yearly": 38500,
+          "monthly": 3500
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 41305,
+          "monthly": 3755
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 44902,
+          "monthly": 4082
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "FET textbook fee",
+        "amount": 900,
+        "frequency": "yearly",
+        "note": "Gr 10-12, can be spread over the monthly payments",
+        "applies": "Gr 10-12",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "tomorrow-s-people-college",
+    "name": "Tomorrow's People College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Faerie Glen",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "377 Selikats Causeway, Faerie Glen, Pretoria",
+    "lat": -25.7816,
+    "lng": 28.3102,
+    "website": "https://www.tomorrowspeople.co.za/",
+    "phone": "012 991 5051",
+    "email": null,
+    "language": null,
+    "emis": "700400101",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.tomorrowspeople.co.za/wp-content/uploads/2025/12/Tomorrows-People-College-School-Schedule-of-Fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 5015,
+      "registration": 2000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, pre-primary to Gr 12 with a special-needs section. 2026 fees are monthly only, charged over 11 months, paid in advance on the 2nd. Headline: Angels (Gr RRR) full day R5,015 (half day R4,746). Love/Joy (Gr RR) R5,697 (half day R5,404); Hope/Peace (Gr R) R5,799; Gr 1-6 R7,124; Gr 7 R7,245; Gr 8-9 R7,245; Gr 10-12 R7,523; special-needs groups R7,124 to R7,224. Non-refundable enrolment fee: pre-primary R2,000 (shown as registration), Gr 1-12 R7,500. School packs (Gr 1-9 R5,908 to R8,066) and extras (tours, camps, therapy, a tablet from Gr 4) are charged to the account. Gr 1-7 aftercare R1,465 a month. Special-needs groups pay extra per term for life skills (R300-R500) and, for some groups, transport (R350). Sibling discount 5% for the 2nd to 4th child. The early-payment discounts printed (to 15 January 2026) have passed. No 2027 schedule found.",
+      "sourceKind": "the school's 2026 schedule of fees",
+      "byGrade": [
+        {
+          "grade": "Gr 000 (Angels, full day)",
+          "yearly": null,
+          "monthly": 5015
+        },
+        {
+          "grade": "Gr 00 (Love/Joy, full day)",
+          "yearly": null,
+          "monthly": 5697
+        },
+        {
+          "grade": "Gr 0 (Hope/Peace, full day)",
+          "yearly": null,
+          "monthly": 5799
+        },
+        {
+          "grade": "Gr 1-6",
+          "yearly": null,
+          "monthly": 7124
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 7245
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 7245
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": null,
+          "monthly": 7523
+        },
+        {
+          "grade": "Special needs Ruby/Topaz (age 7-13)",
+          "yearly": null,
+          "monthly": 7124
+        },
+        {
+          "grade": "Special needs Emerald/Opal (age 14-15)",
+          "yearly": null,
+          "monthly": 7190
+        },
+        {
+          "grade": "Special needs Pearl/Zircon (age 16-19)",
+          "yearly": null,
+          "monthly": 7224
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "tyger-valley-college",
+    "name": "Tyger Valley College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Lynnwood",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "40 Cnr Valley Drive and Lynnwood Road, Lynnwood, Pretoria",
+    "lat": -25.8013,
+    "lng": 28.3684,
+    "website": null,
+    "phone": "012 809 2879",
+    "email": null,
+    "language": null,
+    "emis": "700400305",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://irp.cdn-website.com/4ea79a76/files/uploaded/trinity_tygervalley_Combined_feestructure2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4480,
+      "registration": 6000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Pre-Primary (Gr 0000-0), Preparatory (Gr 1-7) and High School (Gr 8-12). 2027 tuition, 12 monthly payments Jan-Dec: Gr 0000 R4,480; Gr 000 R5,750; Gr 00 R6,130; Gr 0 R6,960; Gr 1-3 R9,390; Gr 4 R10,360; Gr 5-6 R10,460; Gr 7 R11,220; Gr 8-9 R11,370; Gr 10-11 R12,500. Gr 12 pays 10 monthly payments of R14,720. The annual prices on the sheet are lower than 12 monthly payments added up and apply only if paid by 31 January 2027, so no yearly figure is shown. Non-refundable enrolment fee R6,000 (shown as registration) and application fee R600. Textbooks and outings are included. Gr 12 IEB exam fees are billed separately (amount not stated). Optional aftercare is billed per term (pre-primary R910 a month, Gr 1-7 R1,590). Morning bus R1,030 a month (Gr 1-11, route to be announced). Sibling discount from the 2nd child: 5%, 10%, then 15%.",
+      "sourceKind": "the school's 2027 combined fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": null,
+          "monthly": 4480
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": null,
+          "monthly": 5750
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": null,
+          "monthly": 6130
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": null,
+          "monthly": 6960
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 9390
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 10360
+        },
+        {
+          "grade": "Gr 5-6",
+          "yearly": null,
+          "monthly": 10460
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 11220
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 11370
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": null,
+          "monthly": 12500
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 14720
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Application fee",
+        "amount": 600,
+        "frequency": "once",
+        "note": "New learners, non-refundable",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "vaal-triangle-preparatory",
+    "name": "Vaal Triangle Preparatory",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr RR-7",
+    "area": "South West 1",
+    "city": "Vanderbijlpark",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Joseph Addison Street, South West 1, Vanderbijlpark",
+    "lat": -26.7129,
+    "lng": 27.8264,
+    "website": "https://www.vaaltrianglepreparatory.co.za/",
+    "phone": "016 931 2200",
+    "email": "reception@vaalprep.co.za",
+    "language": null,
+    "emis": "700331595",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.vaaltrianglepreparatory.co.za/admissions"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 29400,
+      "monthly": 2450,
+      "registration": 1500,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent primary school, Gr RR to Gr 7. 2027 fees paid in 12 monthly instalments: Gr RR-R (ECD) R2,450 a month, R29,400 a year, all-inclusive (breakfast, light lunch, aftercare, workbooks, stationery); Gr 1-7 R2,525 a month, R30,300 a year. Once-off registration for new learners: ECD R1,500 (shown as registration), Gr 1-7 R2,000. Gr 1-7 aftercare R1,500 a month over 11 months (R16,500). Discounts: R50 per child per month by debit order; 5% for siblings (oldest pays full); 10% if the year is paid in full before 31 January 2027. Fees are subject to annual review. The page lists no deposit or application fee.",
+      "sourceKind": "the school's 2027 admissions page fee table",
+      "byGrade": [
+        {
+          "grade": "Gr RR-R",
+          "yearly": 29400,
+          "monthly": 2450
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 30300,
+          "monthly": 2525
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "veritas-academics",
+    "name": "Veritas Academics",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-School-12",
+    "area": "Centurion",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "9 Panorama Road, Rooihuiskraal, Centurion, Pretoria",
+    "lat": -25.8845,
+    "lng": 28.1593,
+    "website": "https://www.veritasacademics.co.za/",
+    "phone": null,
+    "email": "info@veritasschoolgroup.com",
+    "language": null,
+    "emis": "700400732",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.veritasacademics.co.za/_files/ugd/5b32ad_7a716c48f6184f4da1b8a4fb783a40bb.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 4800,
+      "registration": 2000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Pre-School (3-6 years) to Gr 12. 2027 fees, monthly in advance over 12 months: Pre-School R4,800; Gr 1-3 R6,400; Gr 4-7 R6,550; Gr 8-11 R6,610. Gr 12 pays R8,196 over 10 months. The annual prices on the sheet (for example R54,720 for Pre-School) are lower than 12 payments added up and apply only if paid up front by 1 January 2027, so no yearly figure is shown. Once-off non-refundable enrolment fee: Pre-School R2,000 (shown as registration), Gr 1-12 R4,000. Included: breakfast, cooked lunch, afternoon snack, academic aftercare, holiday care, textbooks, tablet (Gr 7-12). Not included: stationery and toiletries. Therapy, dance, martial arts, robotics, off-site swimming and outings cost extra (amounts not given). Sibling discount 5% for the 2nd to 4th child. One term's written notice to leave.",
+      "sourceKind": "the school's 2027 fee structure",
+      "byGrade": [
+        {
+          "grade": "Pre-School (3-6 yrs)",
+          "yearly": null,
+          "monthly": 4800
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 6400
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": null,
+          "monthly": 6550
+        },
+        {
+          "grade": "Gr 8-11",
+          "yearly": null,
+          "monthly": 6610
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 8196
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

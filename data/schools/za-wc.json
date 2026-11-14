@@ -1830,5 +1830,111 @@
         "per": "scribe or reader per exam sitting"
       }
     ]
+  },
+  {
+    "id": "bosmansdam-primary-school",
+    "name": "Bosmansdam Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Bothasig",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "1 Elbrecht Street, Bothasig, Cape Town, 7441",
+    "lat": -33.8683,
+    "lng": 18.5355,
+    "website": "https://bosmansdamprimaryschool.co.za/",
+    "phone": "021 558 2410",
+    "email": "admin@bosmansdam.primary-school.co.za",
+    "language": null,
+    "emis": "102309211",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://bosmansdamprimaryschool.co.za/school-fees/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 13530,
+      "monthly": 1230,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public primary school, Gr R to Gr 7. 2027 school fee R13,530 per child for every grade, or paid off in 11 monthly payments of R1,230 (first on or before 1 January 2027, last on or before 1 November 2027), due on or before the 1st of each month. No registration or levy lines are printed on the page.",
+      "sourceKind": "the school's 2027 fees page",
+      "byGrade": [
+        {
+          "grade": "Gr R-7",
+          "yearly": 13530,
+          "monthly": 1230
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "camps-bay-high-school",
+    "name": "Camps Bay High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Camps Bay / Bakoven",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "1 Lower Kloof Road, Camps Bay, Cape Town, 8040",
+    "lat": -33.944,
+    "lng": 18.3783,
+    "website": "https://www.campsbayhigh.co.za/",
+    "phone": "021 438 1507",
+    "email": null,
+    "language": null,
+    "emis": "103310325",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.campsbayhigh.co.za/wp-content/uploads/2025/11/budget-school-fees-letter-21.11.25-3.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 53582,
+      "monthly": 5358,
+      "registration": null,
+      "deposit": 5500,
+      "instalments": 10,
+      "notes": "Public high school. The school's November 2025 budget and fees letter sets 2026 school fees at R53,582 a year (a 9.8% increase), payable in full or in 10 equal monthly instalments of R5,358 from 31 January to 31 October 2026 (10 x R5,358 is R53,580, R2 less than the printed yearly fee). The letter does not name a grade, so the one fee is shown for all grades. A Grade 8 school fee advance payment of R5,500 for 2026 is also printed (the letter does not say whether it is credited to the fee). Parents applying for financial assistance must pay at least R1,000 a month. Pay-in-full discounts (R49,293 by 30 Nov 2025, R50,903 by 31 Dec 2025, R51,974 by 31 Jan 2026) have all passed. 2027 fees are not yet published.",
+      "sourceKind": "the school's 2026 budget and school fees letter",
+      "byGrade": [
+        {
+          "grade": "All grades (one fee stated)",
+          "yearly": 53582,
+          "monthly": 5358
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

@@ -2775,17 +2775,17 @@
     "hiddenCosts": [
       {
         "item": "IEB matric exam fee",
-        "amount": 9800,
+        "amount": 10500,
         "frequency": "once",
-        "note": "Due by 31 January",
+        "note": "Due by 31 January 2027; Gr 12 tuition excludes it",
         "applies": "Gr 12",
         "included": false
       },
       {
-        "item": "Remedial class (Gr 2)",
-        "amount": 6575,
+        "item": "Remedial class (Gr 3)",
+        "amount": 5347,
         "frequency": "yearly",
-        "note": "Gr 2 remedial costs R78,875 instead of R72,300",
+        "note": "Gr 3 REM costs R85,800 instead of R80,453",
         "applies": "some",
         "included": false
       },
@@ -2816,7 +2816,7 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-11-14",
     "sources": [
       "https://stbenedictschool.co.za/fees/",
       "https://en.wikipedia.org/wiki/St_Benedict_School_Pinetown",
@@ -2825,33 +2825,33 @@
     "id": "st-benedict-pinetown",
     "name": "St Benedict School",
     "fees": {
-      "year": 2026,
-      "yearly": 72300,
-      "monthly": 6572,
+      "year": 2027,
+      "yearly": 56000,
+      "monthly": 5090,
       "registration": 350,
       "deposit": 5000,
       "instalments": 11,
-      "notes": "Catholic co-ed school, IEB matric. Grade 1 shown. Pay yearly, termly, or 11 debit orders (Feb-Dec). 5% off if paid in full by 31 Jan 2026. Sibling discount (amount not stated). Fees include a development levy and accident insurance. The 'deposit' is a non-refundable R5,000 acceptance fee. One term's notice to leave.",
+      "notes": "Catholic co-ed school, IEB matric. Grade 1 shown. 2027 fees: pay yearly, termly in advance (25% by 15 January, then on the first day of each later term), or 11 debit orders (1 Feb to 1 Dec). 5% off if paid in full by 31 Jan 2027 (e.g. Gr 1 R53,200); paying in full by 30 Nov 2026 is charged at the current rate. Sibling discount (amount not stated). Fees include a development levy, some special activities and accident insurance. Gr 12 tuition excludes the R10,500 IEB fee. Gr 3 remedial (REM) is R85,800 a year against R80,453. R350 non-refundable application fee. The 'deposit' is a non-refundable R5,000 acceptance fee. One term's notice to leave, otherwise a term's fees are payable.",
       "byGrade": [
         {
           "grade": "Gr RRR",
-          "yearly": 32500,
-          "monthly": 2931
+          "yearly": 32895,
+          "monthly": 2990
         },
         {
           "grade": "Gr RR",
-          "yearly": 32500,
-          "monthly": 2931
+          "yearly": 32895,
+          "monthly": 2990
         },
         {
           "grade": "Gr R",
-          "yearly": 43280,
-          "monthly": 3934
+          "yearly": 44146,
+          "monthly": 4013
         },
         {
           "grade": "Gr 1",
-          "yearly": 72300,
-          "monthly": 6572
+          "yearly": 56000,
+          "monthly": 5090
         },
         {
           "grade": "Gr 2",
@@ -2860,56 +2860,56 @@
         },
         {
           "grade": "Gr 3",
-          "yearly": 78875,
-          "monthly": 7170
+          "yearly": 80453,
+          "monthly": 7313
         },
         {
           "grade": "Gr 4",
-          "yearly": 88020,
-          "monthly": 8001
+          "yearly": 89780,
+          "monthly": 8162
         },
         {
           "grade": "Gr 5",
-          "yearly": 88020,
-          "monthly": 8001
+          "yearly": 89780,
+          "monthly": 8162
         },
         {
           "grade": "Gr 6",
-          "yearly": 88020,
-          "monthly": 8001
+          "yearly": 89780,
+          "monthly": 8162
         },
         {
           "grade": "Gr 7",
-          "yearly": 90300,
-          "monthly": 8209
+          "yearly": 92106,
+          "monthly": 8373
         },
         {
           "grade": "Gr 8",
-          "yearly": 97520,
-          "monthly": 8865
+          "yearly": 99470,
+          "monthly": 9043
         },
         {
           "grade": "Gr 9",
-          "yearly": 97520,
-          "monthly": 8865
+          "yearly": 99470,
+          "monthly": 9043
         },
         {
           "grade": "Gr 10",
-          "yearly": 100900,
-          "monthly": 9172
+          "yearly": 102918,
+          "monthly": 9356
         },
         {
           "grade": "Gr 11",
-          "yearly": 100900,
-          "monthly": 9172
+          "yearly": 102918,
+          "monthly": 9356
         },
         {
           "grade": "Gr 12",
-          "yearly": 98460,
-          "monthly": 8950
+          "yearly": 100429,
+          "monthly": 9130
         }
       ],
-      "sourceKind": "the 2026 fees on the school's website"
+      "sourceKind": "the 2027 fees on the school's website"
     }
   },
   {
@@ -6598,5 +6598,218 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "alexandra-high-school",
+    "name": "Alexandra High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Scottsville",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "53 Alexandra Street, Scottsville, Pietermaritzburg, 3209",
+    "lat": -29.6168,
+    "lng": 30.3886,
+    "website": "https://www.alexhigh.org.za/",
+    "phone": "033 394 8252",
+    "email": null,
+    "language": null,
+    "emis": "500100788",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.alexhigh.org.za/academics/tuition-fees/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 32700,
+      "monthly": 3270,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Public school, Gr 8 to Gr 12. 2027 tuition R32,700 a year for Gr 8-12, payable in 10 monthly instalments of R3,270 from January to October. The page says all fees must be paid in advance. No registration or other fees are listed on the page. Boarding fees are also printed on the page but this record covers day tuition only.",
+      "sourceKind": "the school's 2027 fees page",
+      "byGrade": [
+        {
+          "grade": "Gr 8-12",
+          "yearly": 32700,
+          "monthly": 3270
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "maris-stella-school",
+    "name": "Maris Stella School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Berea",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "558 Essenwood Road, Essenwood, Berea, Durban",
+    "lat": -29.8334,
+    "lng": 31.0056,
+    "website": "https://www.marisstella.co.za/",
+    "phone": "031 209 9426",
+    "email": null,
+    "language": null,
+    "emis": "500302290",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-14",
+    "sources": [
+      "https://www.marisstella.co.za/wp-content/uploads/Maris-Stella-Fee-Schedule-2027-Website.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 55745,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, Gr 000 to Gr 12. 2027 tuition per year, Gr 000 R55,745; Gr 00 R61,475; Gr 0 R65,095; Gr 1-3 R87,585; Gr 4-6 R109,050; Gr 7 R119,220; Gr 8 R136,730; Gr 9 R140,990; Gr 10 R149,260; Gr 11 R149,800; Gr 12 R148,200. The sheet gives annual fees only; it says monthly debit orders run January to October but gives no monthly amount or instalment count, so none is shown. Levies are extra (see hidden costs); Gr 11 and 12 also pay IEB fees. Family discount: 5% for a second daughter, 7.5% for each further daughter. 5% off total annual fees if paid by 31 January 2027. Aftercare is charged per term (R500 to R5,000 depending on days and half or full day). Bus is separate: Westville R8,500 or Amanzimtoti R9,000 a year over 10 months. No registration or application fee appears on the sheet.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 000",
+          "yearly": 55745,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 61475,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": 65095,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 87585,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 109050,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 119220,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 136730,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 140990,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 149260,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 149800,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 148200,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 4000,
+        "frequency": "yearly",
+        "note": "R4,000 per family with one child enrolled; R5,000 per family with two or more children",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "IT levy",
+        "amount": 200,
+        "frequency": "yearly",
+        "note": "Junior primary",
+        "applies": "Gr 1-3",
+        "included": false
+      },
+      {
+        "item": "IT levy",
+        "amount": 400,
+        "frequency": "yearly",
+        "note": "Senior primary",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "IT levy",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "High school",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Book levy",
+        "amount": 1000,
+        "frequency": "yearly",
+        "note": "Per learner",
+        "applies": "Gr 1-12",
+        "included": false
+      },
+      {
+        "item": "IEB fee",
+        "amount": 5197,
+        "frequency": "yearly",
+        "note": "Per year",
+        "applies": "Gr 11",
+        "included": false
+      },
+      {
+        "item": "IEB fee",
+        "amount": 5559,
+        "frequency": "yearly",
+        "note": "Per year",
+        "applies": "Gr 12",
+        "included": false
+      }
+    ]
   }
 ]
