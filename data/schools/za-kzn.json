@@ -6803,5 +6803,87 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "canaan-college",
+    "name": "Canaan College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Umlazi V Section",
+    "city": "Umlazi",
+    "province": "KwaZulu-Natal",
+    "postcode": "4089",
+    "address": "17 Isilo Drive, Umlazi V Section, Umlazi, 4089",
+    "lat": -29.962628,
+    "lng": 30.926222,
+    "website": "https://www.canaancollege.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "500498908",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 800
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.canaancollege.co.za/download/canaan-college-fees.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 36040,
+      "monthly": 3005,
+      "registration": 2000,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school. 2027 fees by grade, approved by the school's board; the headline is Grade R. Annual fee R36,040, or monthly R3,005 (the school prints 12 months; 12 x R3,005 is R36,060; in most grades 12 x the monthly amount is a little off the printed annual, so the school's own annual figure is shown). Fees include textbooks and robotics. Paying the whole year by 31 January 2027 saves 5%. Sibling discounts: 5% for the 2nd child, 7.5% for the 3rd and more; 15% for new siblings in the primary school only. Registration fee R2,000, not refunded, paid on acceptance.",
+      "sourceKind": "the school's 2027 fee schedule (a scanned page, read from the page picture)",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 36040,
+          "monthly": 3005
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 37100,
+          "monthly": 3090
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 44400,
+          "monthly": 3700
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 44800,
+          "monthly": 3735
+        },
+        {
+          "grade": "Gr 11-12",
+          "yearly": 45090,
+          "monthly": 3760
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 8800,
+        "frequency": "yearly",
+        "note": "Optional; R800 a month over 11 months",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]

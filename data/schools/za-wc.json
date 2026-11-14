@@ -1936,5 +1936,131 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "cedar-house-school",
+    "name": "Cedar House School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 4-12",
+    "area": "Kenilworth",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7708",
+    "address": "5 Ascot Road, Kenilworth, Cape Town, 7708",
+    "lat": -33.99858,
+    "lng": 18.477847,
+    "website": "https://cedarhouse.co.za/",
+    "phone": "021 762 0649",
+    "email": "admin@cedarhouse.co.za",
+    "language": "English",
+    "emis": "105007066",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://cedarhouse.co.za/fees/",
+      "https://cedarhouse.co.za/downloads/2026SchoolFees.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 101225,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school: Junior School Grades 4-7, Senior School Grades 8-12 (IEB). 2026 tuition by grade; the headline is the Junior School (Gr 4-7). Total fees are tuition plus levies; levies charged to all students are IEB, Food Day, Social Action and Grade Camp (plus a Prep excursions levy in Gr 4-7). Subject levies (art, isiXhosa camp, CAT, design, drama, science camps) apply only where a student takes the subject. Pay the total in 12 equal monthly instalments (1 January to 1 December 2026), or in full by 31 January 2026 for 5% off the tuition fee. Sibling discount 5% of tuition. Three months' written notice to leave. These are 2026 fees; the 2027 schedule is not out yet.",
+      "sourceKind": "the school's 2026 fee schedule (a scanned PDF, read from the page picture)",
+      "byGrade": [
+        {
+          "grade": "Gr 4-7",
+          "yearly": 101225
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 135275
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 139880
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "IEB levy",
+        "amount": 1010,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "IEB levy",
+        "amount": 2080,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "Gr 8-9",
+        "included": false
+      },
+      {
+        "item": "IEB levy",
+        "amount": 3150,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "Gr 10-12",
+        "included": false
+      },
+      {
+        "item": "Food Day levy",
+        "amount": 225,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Social Action levy",
+        "amount": 200,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Grade camp levy",
+        "amount": 2050,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "Grade camp levy",
+        "amount": 2010,
+        "frequency": "yearly",
+        "note": "Charged to all students",
+        "applies": "Gr 8-12",
+        "included": false
+      },
+      {
+        "item": "Prep excursions levy",
+        "amount": 1400,
+        "frequency": "yearly",
+        "note": "Charged to all Prep School students",
+        "applies": "Gr 4-7",
+        "included": false
+      }
+    ]
   }
 ]

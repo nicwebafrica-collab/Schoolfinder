@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 119,
+      "schoolCount": 127,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -156,7 +156,15 @@
         "abbotts-college-pretoria-east",
         "queens-private-school",
         "royal-schools-alberton",
-        "royal-schools-sky-city"
+        "royal-schools-sky-city",
+        "bryanston-high-school",
+        "jeppe-high-school-for-boys",
+        "pinegrove-primary-school",
+        "redhill-school",
+        "st-alban-s-college",
+        "st-john-s-college",
+        "st-john-s-preparatory",
+        "tom-newby-school"
       ],
       "bounds": [
         -26.7360185101,
@@ -172,7 +180,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 56,
+      "schoolCount": 57,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -230,7 +238,8 @@
         "crawford-north-coast",
         "crawford-college-la-lucia",
         "alexandra-high-school",
-        "maris-stella-school"
+        "maris-stella-school",
+        "canaan-college"
       ],
       "bounds": [
         -30.8726,
@@ -246,7 +255,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 19,
+      "schoolCount": 20,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -267,7 +276,8 @@
         "curro-uitzicht-primary",
         "curro-uitzicht-high",
         "bosmansdam-primary-school",
-        "camps-bay-high-school"
+        "camps-bay-high-school",
+        "cedar-house-school"
       ],
       "bounds": [
         -34.172504,

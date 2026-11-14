@@ -11533,5 +11533,567 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "bryanston-high-school",
+    "name": "Bryanston High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Bryanston",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "7 Tramore Road, Bryanston, Sandton, Johannesburg",
+    "lat": -26.07369,
+    "lng": 28.025283,
+    "website": "https://bryanston.com/",
+    "phone": "011 706 6010",
+    "email": null,
+    "language": "English",
+    "emis": "700150201",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://bryanston.com/school-fees/",
+      "https://bryanston.com/wp-content/uploads/2026/10/School-fees-2027.png"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 62500,
+      "monthly": 5750,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public school. 2027 school fees: Grade 8 R62,500, Grades 9-12 R60,500 a year. Option 1: a first instalment of R5,000 by 30 November 2026, then ten equal payments from 31 January to October 2027 (Gr 8 R5,750, Gr 9-12 R5,550). Option 2: pay in full by 31 December 2026 and get 5% off the school fee (Gr 8 R3,125, Gr 9-12 R3,025 off). The fee table is a picture on the school's fees page.",
+      "sourceKind": "the school's 2027 fee table (a picture on its fees page, read from the picture)",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 62500,
+          "monthly": 5750
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 60500,
+          "monthly": 5550
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "jeppe-high-school-for-boys",
+    "name": "Jeppe High School for Boys",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Kensington",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": "2094",
+    "address": "8 Good Hope Street, Kensington, Johannesburg, 2094",
+    "lat": -26.200748,
+    "lng": 28.081898,
+    "website": "https://jeppeboys.co.za/",
+    "phone": "011 614 1938",
+    "email": null,
+    "language": "English",
+    "emis": "700130633",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://jeppeboys.co.za/admissions-process",
+      "https://jeppeboys.co.za/wp-content/uploads/2026/09/Fee-Structure-2026-scaled.jpg"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 71200,
+      "monthly": 7120,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Fee-paying public boys' high school with boarding. 2026 school fees R71,200 a year: pay R68,700 once-off by 31 January 2026 (or R67,700 by 31 December 2025), or 4 termly payments of R17,800, or monthly. Grades 8-11 pay R7,120 x 10 months (January-October); Grade 12 pays R8,900 x 8 months (January-August). New boys (all Grade 8s and new Grade 9-11s) pay R6,500 in advance, taken off the first month's fees, and are asked for a voluntary, non-refundable R6,500 development levy. Boarding is billed separately: R81,800 a year for weekly boarders, R90,200 for termly boarders, plus a R3,000 mattress levy for new boarders. These are 2026 fees; the 2027 sheet is not out yet.",
+      "sourceKind": "the school's 2026 fee sheet (a picture on its admissions page, read from the picture)",
+      "byGrade": [
+        {
+          "grade": "Gr 8-11",
+          "yearly": 71200,
+          "monthly": 7120,
+          "instalments": 10
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 71200,
+          "monthly": 8900,
+          "instalments": 8
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy (voluntary)",
+        "amount": 6500,
+        "frequency": "once",
+        "note": "Voluntary and non-refundable; asked of all Grade 8s and new Grade 9-11 learners",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "pinegrove-primary-school",
+    "name": "Pinegrove Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Geduld",
+    "city": "Springs",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "6 6th Avenue, Geduld, Springs",
+    "lat": -26.240909,
+    "lng": 28.42675,
+    "website": "https://pinegroveprimary.co.za/",
+    "phone": "011 811 4888",
+    "email": null,
+    "language": null,
+    "emis": "700350405",
+    "country": "ZA",
+    "quintile": 4,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://pinegroveprimary.co.za/2026/10/16/2027-fees/",
+      "https://pinegroveprimary.co.za/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-16-at-15.01.00.jpeg"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 11100,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Fee-paying public primary school. 2027 school fee R11,100 per learner per year (up R1,000 from R10,100 in 2026). Due in full in January 2027, but may be paid over 10 months. 10% off (R1,110) if paid in full by 31 January 2027, or 5% off (R555) by 31 March 2027. The fee notice is a picture posted on the school's website on 16 October 2026.",
+      "sourceKind": "the school's 2027 fee notice (a picture on its website, read from the picture)"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "redhill-school",
+    "name": "Redhill School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "KG 1-Gr 12",
+    "area": "Morningside",
+    "city": "Sandton",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "20 Summit Road, Morningside, Sandton",
+    "lat": -26.076105,
+    "lng": 28.060827,
+    "website": "https://www.redhill.co.za/",
+    "phone": "011 783 4707",
+    "email": null,
+    "language": null,
+    "emis": "700151324",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.redhill.co.za/wp-content/uploads/2026/09/Redhill-Schedule-of-Fees-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 108480,
+      "monthly": 12430,
+      "registration": 20000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, KG 1 to Grade 12 (IEB, with an IB option in Gr 11-12). 2027 fees by grade; the headline is the youngest class (KG 1-2): R108,480 a year if paid by 31 January 2027, or R107,350 if paid by 31 December 2026. Paying termly (3 x R37,667) or monthly (10 x R12,430, Jan-Oct, = R124,300) costs more than the yearly fee, so check the plan you will use. New learners pay a once-off enrolment fee of R20,000 (not refunded, for building work) and a R750 application fee (not refunded). Gr 12 exam fees are extra: IEB R11,000, IB R18,500. The school says its financial terms and conditions apply.",
+      "sourceKind": "the school's 2027 schedule of fees (a picture-only PDF, read from the page picture)",
+      "byGrade": [
+        {
+          "grade": "KG 1-KG 2",
+          "yearly": 108480,
+          "monthly": 12430
+        },
+        {
+          "grade": "Gr 0-1",
+          "yearly": 129120,
+          "monthly": 14795
+        },
+        {
+          "grade": "Gr 2-5",
+          "yearly": 158880,
+          "monthly": 18205
+        },
+        {
+          "grade": "Gr 6-9",
+          "yearly": 188640,
+          "monthly": 21615
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 204000,
+          "monthly": 23375
+        },
+        {
+          "grade": "Gr 11-12 IB",
+          "yearly": 225120,
+          "monthly": 25795
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Gr 12 IEB matric exam fee",
+        "amount": 11000,
+        "frequency": "once",
+        "applies": "Gr 12",
+        "included": false,
+        "note": "Once-off for Grade 12 IEB learners, payable January to May 2027"
+      },
+      {
+        "item": "Gr 12 IB DP2 exam fee",
+        "amount": 18500,
+        "frequency": "once",
+        "applies": "Gr 12",
+        "included": false,
+        "note": "Once-off for Grade 12 IB learners only (instead of the IEB fee), payable January to May 2027"
+      }
+    ]
+  },
+  {
+    "id": "st-alban-s-college",
+    "name": "St Alban's College",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Lynnwood Glen",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "110 Clearwater Road, Lynnwood Glen, Pretoria",
+    "lat": -25.773331,
+    "lng": 28.284526,
+    "website": "https://stalbanscollege.com/",
+    "phone": "012 348 1221",
+    "email": null,
+    "language": "English",
+    "emis": "700211078",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://stalbanscollege.com/wp-content/uploads/2026-School-fees-Schedule.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 214120,
+      "monthly": 21840,
+      "registration": 71375,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent boys' high school (Forms 1-5, Grades 8-12) with boarding. 2026 tuition R214,120 a year (includes morning tea and lunch for day scholars); 4% off if paid in full by 19 December 2025 (R205,560) or 2.5% off by 16 January 2026 (R208,770). Or pay termly (R71,375 a term) or by debit order: R21,840 x 10 months (R218,400), or for matrics R27,300 x 8 months. Boarding and tuition R376,580 a year. New boys pay a non-refundable enrolment levy of R71,375 (day) or R109,640 (boarders), less for later entry, and a R800 application fee. These are 2026 fees; the 2027 schedule is not out yet.",
+      "sourceKind": "the school's 2026 fee schedule (read from the page picture; the PDF's own text scrambles the table)"
+    },
+    "hiddenCosts": []
+  },
+  {
+    "type": "Private",
+    "area": "Houghton",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "37 St David Road, Houghton, Johannesburg",
+    "website": "https://www.stjohnscollege.co.za/",
+    "phone": "010 492 0300",
+    "email": null,
+    "language": "English",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.stjohnscollege.co.za/uploads/files/2027-Fee-Schedule.pdf"
+    ],
+    "id": "st-john-s-college",
+    "name": "St John's College",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "lat": -26.176933,
+    "lng": 28.056594,
+    "emis": "700131524",
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "fees": {
+      "year": 2027,
+      "yearly": 248118,
+      "monthly": 24185,
+      "registration": null,
+      "deposit": 85267,
+      "instalments": null,
+      "notes": "Independent school (College, Grades 8 to 12 and a Sixth Form year). 2027 tuition R248,118 a year, or R85,267 a term, or R24,185 a month over 11 months (11 x R24,185 = R266,035). Annual fees are due by 31 January 2027; termly fees on the first day of each term; monthly fees only by debit order over 11 months (February to December), so paying monthly or termly costs more than the annual fee. On acceptance a refundable deposit of one term's tuition is paid, topped up on promotion. Levies for all grades are extra (development R12,648, security R1,690, PA projects R1,138 a year). Rowers pay R12,124 a year; Wilderness School R10,650 once in Grade 9 (LIV). Boarding is extra: weekly R142,781 or termly R175,010 a year, with a deposit of one term's boarding. Bus service R5,032 a term (optional).",
+      "sourceKind": "the school's 2027 schedule of fees (a picture-only PDF, read from the page picture)"
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 12648,
+        "frequency": "yearly",
+        "note": "All grades; or R4,347 a term or R1,234 a month",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Security levy",
+        "amount": 1690,
+        "frequency": "yearly",
+        "note": "All grades; or R582 a term or R162 a month",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "PA special projects",
+        "amount": 1138,
+        "frequency": "yearly",
+        "note": "All grades; or R391 a term or R111 a month",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Wilderness School levy",
+        "amount": 10650,
+        "frequency": "once",
+        "note": "Once-off for all LIV (Grade 9) students",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Hot lunch",
+        "amount": 17874,
+        "frequency": "yearly",
+        "note": "Optional; or R6,142 a term or R1,745 a month",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Morning tea",
+        "amount": 13441,
+        "frequency": "yearly",
+        "note": "Optional; or R4,617 a term or R1,312 a month",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "type": "Private",
+    "area": "Houghton",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "37 St David Road, Houghton, Johannesburg",
+    "website": "https://www.stjohnscollege.co.za/",
+    "phone": "010 492 0300",
+    "email": null,
+    "language": "English",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "transport": {
+      "available": true,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.stjohnscollege.co.za/uploads/files/2027-Fee-Schedule.pdf"
+    ],
+    "id": "st-john-s-preparatory",
+    "name": "St John's Preparatory",
+    "phase": "Primary",
+    "grades": "Gr 0-7",
+    "lat": -26.176948,
+    "lng": 28.056593,
+    "emis": "700131540",
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "fees": {
+      "year": 2027,
+      "yearly": 136813,
+      "monthly": 13335,
+      "registration": null,
+      "deposit": 47016,
+      "instalments": null,
+      "notes": "Independent school, part of St John's College (Pre-Preparatory Grade 0-2 and Preparatory Grade 3-7; same campus as the College). 2027 fees by grade; the headline is Grade 0: R136,813 a year, or R47,016 a term, or R13,335 a month over 11 months (11 x R13,335 = R146,685). Annual fees are due by 31 January 2027; termly fees on the first day of each term; monthly fees only by debit order over 11 months (February to December), so paying monthly or termly costs more than the annual fee. On acceptance a refundable deposit of one term's tuition is paid, topped up on promotion. Levies for all grades are extra (development R12,648, security R1,690, PA projects R1,138 a year). Aftercare R9,559 a term. Bus service R5,032 a term (optional).",
+      "sourceKind": "the school's 2027 schedule of fees (a picture-only PDF, read from the page picture)",
+      "byGrade": [
+        {
+          "grade": "Gr 0",
+          "yearly": 136813,
+          "monthly": 13335
+        },
+        {
+          "grade": "Gr 1-2",
+          "yearly": 144194,
+          "monthly": 14054
+        },
+        {
+          "grade": "Gr 3-7",
+          "yearly": 194048,
+          "monthly": 18915
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 12648,
+        "frequency": "yearly",
+        "note": "All grades; or R4,347 a term or R1,234 a month",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Security levy",
+        "amount": 1690,
+        "frequency": "yearly",
+        "note": "All grades; or R582 a term or R162 a month",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "PA special projects",
+        "amount": 1138,
+        "frequency": "yearly",
+        "note": "All grades; or R391 a term or R111 a month",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Hot lunch",
+        "amount": 17874,
+        "frequency": "yearly",
+        "note": "Optional; or R6,142 a term or R1,745 a month",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Morning tea",
+        "amount": 13441,
+        "frequency": "yearly",
+        "note": "Optional; or R4,617 a term or R1,312 a month",
+        "applies": "optional",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "tom-newby-school",
+    "name": "Tom Newby School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Airfield",
+    "city": "Benoni",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "10 Master Street, Airfield, Benoni",
+    "lat": -26.169531,
+    "lng": 28.315537,
+    "website": "https://tomnewbyschool.co.za/",
+    "phone": "011 849 5311",
+    "email": "info@tomnewbyschool.co.za",
+    "language": null,
+    "emis": "700310813",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://tomnewbyschool.co.za/wp-content/uploads/bsk-pdf-manager/2025/12/TOM-NEWBY-SCHOOL-SCHOOL-FEE-POLICY-FOR-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 27775,
+      "monthly": 2525,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Fee-paying public primary school, Grade R to 7. 2026 school fee R27,775 per learner a year (R2,525 a month), set at the parent meeting of 13 November 2025. Payments run from 2 January to 1 November 2026 (debit orders 1 February to 1 December). 10% off (R24,997.50) if paid in full by EFT by 28 February 2026, or 5% off (R26,386.25) by credit card; 2% off for debit orders that all go through. These are 2026 fees; the 2027 fees are usually set in November.",
+      "sourceKind": "the school's 2026 fee policy letter (a scanned PDF, read from the page picture)"
+    },
+    "hiddenCosts": []
   }
 ]
