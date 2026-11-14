@@ -10380,7 +10380,7 @@
       "registration": 1000,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school, Gr RR to Gr 12. 2027 fees, monthly in advance: Gr RR-R R2,325 a month (R27,900 a year; all-inclusive, with lunch and aftercare to 17:30); Gr 1-7 R4,050 (R48,600); Gr 8-11 R4,525 (R54,300); Gr 12 R5,000 over 11 months (R55,000). Entrance fee R1,000 once-off for new learners (shown as registration). Re-registration R500 each year for current learners, before 31 October. A development levy of R2,550 is listed for Prep and High School, due before 31 January 2027; the page does not say if it is yearly, so the amount is left out of hidden costs. Aftercare for Gr 1-7 R1,000 a month over 11 months (R11,000). Discounts: R50 per child per month for debit order; 5% for siblings (oldest pays full); 10% if the year is paid in full before 31 January 2027. Fees are 'for 2027 and subject to change'.",
+      "notes": "Independent school, Gr RR to Gr 12. 2027 fees, monthly in advance: Gr RR-R R2,325 a month (R27,900 a year; all-inclusive, with lunch and aftercare to 17:30); Gr 1-7 R4,050 (R48,600); Gr 8-11 R4,525 (R54,300); Gr 12 R5,000 over 11 months (R55,000). Entrance fee R1,000 once-off for new learners (shown as registration). Re-registration R500 each year for current learners, before 31 October. A development levy of R2,550 is listed for Prep and High School, due before 31 January 2027; it is listed as once-off (ask the school if it recurs). Aftercare for Gr 1-7 R1,000 a month over 11 months (R11,000). Discounts: R50 per child per month for debit order; 5% for siblings (oldest pays full); 10% if the year is paid in full before 31 January 2027. Fees are 'for 2027 and subject to change'.",
       "sourceKind": "the school's 2027 admissions page fee table",
       "byGrade": [
         {
@@ -10410,7 +10410,15 @@
         "item": "Re-registration fee",
         "amount": 500,
         "frequency": "yearly",
-        "note": "Current learners, before 31 October each year",
+        "note": "Current learners, from the 2nd year; due before 31 October each year",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Development levy (Prep and High School)",
+        "amount": 2550,
+        "frequency": "once",
+        "note": "Prep and High School (Gr 1-12) only. Listed as once-off, due by 31 Jan 2027; ask the school if it recurs",
         "applies": "some",
         "included": false
       }
@@ -10510,27 +10518,27 @@
     ],
     "fees": {
       "year": 2026,
-      "yearly": 38500,
+      "yearly": null,
       "monthly": 3500,
       "registration": 2500,
       "deposit": null,
-      "instalments": 11,
-      "notes": "Independent school, Gr R to Gr 12. 2026 tuition in 11 monthly instalments: Gr R-9 R3,500; Gr 10-11 R3,755; Gr 12 R4,082. The yearly figures here are 11 x the monthly amount (R38,500, R41,305, R44,902); the page prints annual totals that include the R2,500 registration fee (R41,000, R43,805, R47,402). The page calls the R2,500 a once-off registration fee, while the linked 2026 PDF calls it re-registration, so who pays it is not certain. Sibling discounts per month: 2nd child R3,360 / R3,605 / R3,919, 3rd child R3,226 / R3,461 / R3,762. The 2.5% discount for paying in full before 31 January 2026 has passed. FET textbook fee R900 a year for Gr 10-12. Excursions, extra activities, stationery and workbooks are separate. 2027 fees are not published.",
+      "instalments": null,
+      "notes": "Independent school, Gr R to Gr 12. 2026 tuition per month (11 monthly instalments): Gr R-9 R3,500; Gr 10-11 R3,755; Gr 12 R4,082. We show the monthly fee only; the page prints annual totals that include the R2,500 registration fee (R41,000, R43,805, R47,402). The page calls the R2,500 a once-off registration fee, while the linked 2026 PDF calls it re-registration, so who pays it is not certain. Sibling discounts per month: 2nd child R3,360 / R3,605 / R3,919, 3rd child R3,226 / R3,461 / R3,762. The 2.5% discount for paying in full before 31 January 2026 has passed. FET textbook fee R900 a year for Gr 10-12. Excursions, extra activities, stationery and workbooks are separate. 2027 fees are not published.",
       "sourceKind": "the school's 2026 fees page",
       "byGrade": [
         {
           "grade": "Gr R-9",
-          "yearly": 38500,
+          "yearly": null,
           "monthly": 3500
         },
         {
           "grade": "Gr 10-11",
-          "yearly": 41305,
+          "yearly": null,
           "monthly": 3755
         },
         {
           "grade": "Gr 12",
-          "yearly": 44902,
+          "yearly": null,
           "monthly": 4082
         }
       ]
@@ -10587,21 +10595,21 @@
       "registration": 2000,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school, pre-primary to Gr 12 with a special-needs section. 2026 fees are monthly only, charged over 11 months, paid in advance on the 2nd. Headline: Angels (Gr RRR) full day R5,015 (half day R4,746). Love/Joy (Gr RR) R5,697 (half day R5,404); Hope/Peace (Gr R) R5,799; Gr 1-6 R7,124; Gr 7 R7,245; Gr 8-9 R7,245; Gr 10-12 R7,523; special-needs groups R7,124 to R7,224. Non-refundable enrolment fee: pre-primary R2,000 (shown as registration), Gr 1-12 R7,500. School packs (Gr 1-9 R5,908 to R8,066) and extras (tours, camps, therapy, a tablet from Gr 4) are charged to the account. Gr 1-7 aftercare R1,465 a month. Special-needs groups pay extra per term for life skills (R300-R500) and, for some groups, transport (R350). Sibling discount 5% for the 2nd to 4th child. The early-payment discounts printed (to 15 January 2026) have passed. No 2027 schedule found.",
+      "notes": "Independent school, pre-primary to Gr 12 with a special-needs section. 2026 fees are monthly only, paid in advance on the 2nd. Pre-primary is charged over 11 months; the schedule doesn't print the number of months for Gr 1-12. Headline: Angels (Gr RRR) full day R5,015 (half day R4,746). Love/Joy (Gr RR) R5,697 (half day R5,404); Hope/Peace (Gr R) R5,799; Gr 1-6 R7,124; Gr 7 R7,245; Gr 8-9 R7,245; Gr 10-12 R7,523; special-needs groups R7,124 to R7,224. Non-refundable enrolment fee: pre-primary R2,000 (shown as registration), Gr 1-12 R7,500. School packs (Gr 1-9 R5,908 to R8,066) and extras (tours, camps, therapy, a tablet from Gr 4) are charged to the account. Gr 1-7 aftercare R1,465 a month. Special-needs groups pay extra per term for life skills (R300-R500) and, for some groups, transport (R350). Sibling discount 5% for the 2nd to 4th child. The early-payment discounts printed (to 15 January 2026) have passed. No 2027 schedule found.",
       "sourceKind": "the school's 2026 schedule of fees",
       "byGrade": [
         {
-          "grade": "Gr 000 (Angels, full day)",
+          "grade": "Gr RRR (Angels, full day)",
           "yearly": null,
           "monthly": 5015
         },
         {
-          "grade": "Gr 00 (Love/Joy, full day)",
+          "grade": "Gr RR (Love/Joy, full day)",
           "yearly": null,
           "monthly": 5697
         },
         {
-          "grade": "Gr 0 (Hope/Peace, full day)",
+          "grade": "Gr R (Hope/Peace)",
           "yearly": null,
           "monthly": 5799
         },
@@ -10685,7 +10693,7 @@
       "registration": 6000,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school, Pre-Primary (Gr 0000-0), Preparatory (Gr 1-7) and High School (Gr 8-12). 2027 tuition, 12 monthly payments Jan-Dec: Gr 0000 R4,480; Gr 000 R5,750; Gr 00 R6,130; Gr 0 R6,960; Gr 1-3 R9,390; Gr 4 R10,360; Gr 5-6 R10,460; Gr 7 R11,220; Gr 8-9 R11,370; Gr 10-11 R12,500. Gr 12 pays 10 monthly payments of R14,720. The annual prices on the sheet are lower than 12 monthly payments added up and apply only if paid by 31 January 2027, so no yearly figure is shown. Non-refundable enrolment fee R6,000 (shown as registration) and application fee R600. Textbooks and outings are included. Gr 12 IEB exam fees are billed separately (amount not stated). Optional aftercare is billed per term (pre-primary R910 a month, Gr 1-7 R1,590). Morning bus R1,030 a month (Gr 1-11, route to be announced). Sibling discount from the 2nd child: 5%, 10%, then 15%.",
+      "notes": "Independent school (the fee sheet is headed Trinityhouse Tyger Valley), Gr 0000 to Gr 12. 2027 tuition, 12 monthly payments Jan-Dec: Gr 0000 R4,480; Gr 000 R5,750; Gr 00 R6,130; Gr 0 R6,960; Gr 1-3 R9,390; Gr 4 R10,360; Gr 5-6 R10,460; Gr 7 R11,220; Gr 8-9 R11,370; Gr 10-11 R12,500. Gr 12 pays 10 monthly payments of R14,720. The annual prices on the sheet are lower than 12 monthly payments added up and apply only if paid by 31 January 2027, so no yearly figure is shown. Non-refundable enrolment fee R6,000 (shown as registration) and application fee R600. Textbooks and outings are included. Gr 12 IEB exam fees are billed separately (amount not stated). Optional aftercare: pre-primary R10,128 a year or 12 x R910; Gr 1-7 R17,760 a year or 12 x R1,590. Morning bus R1,030 a month (Gr 1-11, route to be announced). Sibling discount from the 2nd child: 5%, 10%, then 15%.",
       "sourceKind": "the school's 2027 combined fee structure",
       "byGrade": [
         {
@@ -10754,6 +10762,9 @@
         "applies": "everyone",
         "included": false
       }
+    ],
+    "aliases": [
+      "Trinityhouse Tyger Valley"
     ]
   },
   {
@@ -10855,7 +10866,7 @@
       "registration": 2000,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school, Pre-School (3-6 years) to Gr 12. 2027 fees, monthly in advance over 12 months: Pre-School R4,800; Gr 1-3 R6,400; Gr 4-7 R6,550; Gr 8-11 R6,610. Gr 12 pays R8,196 over 10 months. The annual prices on the sheet (for example R54,720 for Pre-School) are lower than 12 payments added up and apply only if paid up front by 1 January 2027, so no yearly figure is shown. Once-off non-refundable enrolment fee: Pre-School R2,000 (shown as registration), Gr 1-12 R4,000. Included: breakfast, cooked lunch, afternoon snack, academic aftercare, holiday care, textbooks, tablet (Gr 7-12). Not included: stationery and toiletries. Therapy, dance, martial arts, robotics, off-site swimming and outings cost extra (amounts not given). Sibling discount 5% for the 2nd to 4th child. One term's written notice to leave.",
+      "notes": "Independent school, Pre-School (3-6 years) to Gr 12. 2027 fees, monthly in advance over 12 months: Pre-School R4,800; Gr 1-3 R6,400; Gr 4-7 R6,550; Gr 8-11 R6,610. Gr 12 pays R8,196 over 10 months. The annual prices on the sheet (for example R54,720 for Pre-School) are lower than 12 payments added up and apply only if paid up front by 1 January 2027, so no yearly figure is shown. Once-off non-refundable enrolment fee: Pre-School R2,000 (shown as registration), Gr 1-12 R4,000. Included: meals, aftercare, holiday care, textbooks, tablet (Gr 7-12). Not included: stationery and toiletries. Therapy, dance, martial arts, robotics, off-site swimming and outings cost extra (amounts not given). Sibling discount 5% for the 2nd to 4th child. One term's written notice to leave. The pack also mentions a once-off registration fee with no amount; ask the school if it is separate from the enrolment fee.",
       "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {

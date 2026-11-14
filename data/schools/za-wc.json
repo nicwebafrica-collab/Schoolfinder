@@ -1923,13 +1923,13 @@
       "yearly": 53582,
       "monthly": 5358,
       "registration": null,
-      "deposit": 5500,
+      "deposit": null,
       "instalments": 10,
-      "notes": "Public high school. The school's November 2025 budget and fees letter sets 2026 school fees at R53,582 a year (a 9.8% increase), payable in full or in 10 equal monthly instalments of R5,358 from 31 January to 31 October 2026 (10 x R5,358 is R53,580, R2 less than the printed yearly fee). The letter does not name a grade, so the one fee is shown for all grades. A Grade 8 school fee advance payment of R5,500 for 2026 is also printed (the letter does not say whether it is credited to the fee). Parents applying for financial assistance must pay at least R1,000 a month. Pay-in-full discounts (R49,293 by 30 Nov 2025, R50,903 by 31 Dec 2025, R51,974 by 31 Jan 2026) have all passed. 2027 fees are not yet published.",
+      "notes": "Public high school. The school's November 2025 budget and fees letter sets 2026 school fees at R53,582 a year (a 9.8% increase), payable in full or in 10 equal monthly instalments of R5,358 from 31 January to 31 October 2026 (10 x R5,358 is R53,580, R2 less than the printed yearly fee). The letter gives one fee for all grades (Gr 8-12). New Grade 8s pay R5,500 of the 2026 school fee in advance. Parents applying for financial assistance must pay at least R1,000 a month. Pay-in-full discounts (R49,293 by 30 Nov 2025, R50,903 by 31 Dec 2025, R51,974 by 31 Jan 2026) have all passed. 2027 fees are not yet published.",
       "sourceKind": "the school's 2026 budget and school fees letter",
       "byGrade": [
         {
-          "grade": "All grades (one fee stated)",
+          "grade": "Gr 8-12",
           "yearly": 53582,
           "monthly": 5358
         }
