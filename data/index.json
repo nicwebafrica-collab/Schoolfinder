@@ -263,7 +263,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 27,
+      "schoolCount": 26,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -291,7 +291,6 @@
         "koos-sadie-primary-school",
         "hebron-christenskool",
         "kirstenhof-primary-school",
-        "abbotts-college-rondebosch",
         "trinityhouse-glenwood"
       ],
       "bounds": [
