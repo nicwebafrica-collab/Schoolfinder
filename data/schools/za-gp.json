@@ -12095,5 +12095,430 @@
       "sourceKind": "the school's 2026 fee policy letter (a scanned PDF, read from the page picture)"
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "laerskool-bakenkop",
+    "name": "Laerskool Bakenkop",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr RR-7",
+    "area": "Centurion",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "5 Underberg Street, Wierdapark, Centurion, Pretoria",
+    "lat": -25.8692,
+    "lng": 28.1533,
+    "website": null,
+    "phone": "012 653 4187",
+    "email": null,
+    "language": null,
+    "emis": "700210641",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://laerskoolbakenkop.co.za/images/2026/Skoolgeld%202026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 34100,
+      "monthly": 3100,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public Afrikaans-medium primary school, Gr RR to Gr 7. 2026 school fees per year (monthly over 11 instalments, January to November): Gr RR R34,100 (R3,100); Gr R R32,450 (R2,950); Gr 1 R28,050 (R2,550); Gr 2-7 R25,850 (R2,350). The page also lists a once-off price for payment before 28 February with 7,5% off (Gr RR R31,543, Gr R R30,016, Gr 1 R25,946, Gr 2-7 R23,911); that date has passed for the 2026 year. Fees were set at the annual general meeting of 5 November 2025. Fee-reduction (subsidy) applications are handled by the governing body. No deposit or registration fee is mentioned on the notice.",
+      "sourceKind": "the school's 2026 fee notice (PDF)",
+      "byGrade": [
+        {
+          "grade": "Gr RR",
+          "yearly": 34100,
+          "monthly": 3100
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 32450,
+          "monthly": 2950
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 28050,
+          "monthly": 2550
+        },
+        {
+          "grade": "Gr 2-7",
+          "yearly": 25850,
+          "monthly": 2350
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "springvale-primary-school",
+    "name": "Springvale Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Wierda Park",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 Friederiche Street, Wierda Park, Centurion, Pretoria",
+    "lat": -25.8583,
+    "lng": 28.1481,
+    "website": null,
+    "phone": "012 660 0024",
+    "email": null,
+    "language": null,
+    "emis": "700211060",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://springvale.co.za/finances.html"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 27950,
+      "monthly": 2645,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public primary school, Gr R to Gr 7. 2027 school fees per learner: Gr R R27,950 a year, monthly R2,645 (01 Jan to 01 Oct 2027), or R6,612.50 each in Jan, Apr, Jul and Oct; Gr 1 to 7 R23,276 a year, monthly R2,177.60, or R5,444 each quarter. A 2027 fee pre-payment of R1,500 was payable on 01 Nov 2026 (passed); the page does not say whether it is charged again each year, so it is not in extras. Pay-in-full by 28 Feb 2027 with 3.5% off is printed (R25,471.75 Gr R, R20,961.34 Gr 1-7) but these are about R1,500 below 3.5% off the annual fee, apparently net of the pre-payment, and carry an asterisk the page does not explain, so they are left out. The page says cash is no longer accepted.",
+      "sourceKind": "the school's 2027 finances page",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 27950,
+          "monthly": 2645
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 23276,
+          "monthly": 2177.6
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "st-columba-s-school",
+    "name": "St Columba's School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-10",
+    "area": "Benoni",
+    "city": "Benoni",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "107 Howard Ave, Benoni",
+    "lat": -26.1901,
+    "lng": 28.313,
+    "website": null,
+    "phone": "011 421 3057",
+    "email": null,
+    "language": null,
+    "emis": "700310755",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1820
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://stcolumbas.co.za/apply-now/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 38096,
+      "monthly": 3175,
+      "registration": 5000,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Gr 0000 (from 18 months) to Gr 10. 2026 fees per year (debit order over 12 months): Gr 0000 R38,096 (R3,175); Gr 000 R36,408 (R3,034); Gr 00 R43,689 (R3,641); Gr 0 R50,971 (R4,248); Gr 1-6 R77,913 (R6,493); Gr 7 R84,405 (R7,034); Gr 8-9 R89,602 (R7,467); Gr 10 R96,546 (R8,045). Monthly amounts are rounded, so they differ slightly from the yearly fee. Amounts are for the first child; sibling discount on annual fees is 5% for a 2nd child, 7% for a 3rd, 9% for a 4th. Capital development levy R2,160 a year per family. Admission fee R5,000 to secure a place, once per family; application fee R400. Aftercare R1,820 a month (Gr 000 to 10). The 5% pay-upfront discount was due by 31 January and has passed.",
+      "sourceKind": "the school's 2026 fee structure page",
+      "byGrade": [
+        {
+          "grade": "Gr 0000",
+          "yearly": 38096,
+          "monthly": 3175
+        },
+        {
+          "grade": "Gr 000",
+          "yearly": 36408,
+          "monthly": 3034
+        },
+        {
+          "grade": "Gr 00",
+          "yearly": 43689,
+          "monthly": 3641
+        },
+        {
+          "grade": "Gr 0",
+          "yearly": 50971,
+          "monthly": 4248
+        },
+        {
+          "grade": "Gr 1-6",
+          "yearly": 77913,
+          "monthly": 6493
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 84405,
+          "monthly": 7034
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 89602,
+          "monthly": 7467
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 96546,
+          "monthly": 8045
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Application fee",
+        "amount": 400,
+        "frequency": "once",
+        "note": "Includes student readiness assessment",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Capital development levy",
+        "amount": 2160,
+        "frequency": "yearly",
+        "note": "Per family, payable monthly or annually",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "laerskool-louw-geldenhuys",
+    "name": "Laerskool Louw Geldenhuys",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Linden",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1 3de Laan en 7de Straat, Linden, Johannesburg",
+    "lat": -26.138,
+    "lng": 27.9951,
+    "website": null,
+    "phone": "011 782 5442",
+    "email": null,
+    "language": null,
+    "emis": "700150839",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1230
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://llg.co.za/skoolfonds/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 32615,
+      "monthly": 2965,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public Afrikaans-medium primary school, Gr R to Gr 7. 2027 school fees per learner per year: Gr R to Gr 7 R32,615; the Curriculum Integration (SKI) class for Gr 4, 5 and 6 R49,940. Monthly: Gr R to Gr 6 R2,965 over 11 months; Gr 7 R3,261.50 over 10 months; SKI class R4,540 a month. Paying in full on or before 26 February 2027 gives R955 off (R31,660, or R48,985 for the SKI class). Optional extras: tennis, chess and drama are charged per quarter (see extras); sport levy is R100 per code capped at R500 and culture levy R100 per code, but the page does not say how often, so they are left out. Gr 6 and Gr 7 educational tours are estimates only and are left out. A R3,100 advance is asked from Gr R parents for the following year. Aftercare R1,230 a month for registered learners.",
+      "sourceKind": "the school's 2027 school fees page",
+      "byGrade": [
+        {
+          "grade": "Gr R-6",
+          "yearly": 32615,
+          "monthly": 2965
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 32615,
+          "monthly": 3261.5,
+          "instalments": 10
+        },
+        {
+          "grade": "Gr 4-6 SKI class",
+          "yearly": 49940,
+          "monthly": 4540
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Tennis (junior/senior)",
+        "amount": 390,
+        "frequency": "per term",
+        "note": "Optional activity, per quarter",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Tennis (beginner/kleuter)",
+        "amount": 950,
+        "frequency": "per term",
+        "note": "Optional activity, per quarter",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Chess",
+        "amount": 300,
+        "frequency": "per term",
+        "note": "Optional activity, per quarter",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Drama",
+        "amount": 300,
+        "frequency": "per term",
+        "note": "Optional activity, per quarter",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "sancta-maria-junior-school",
+    "name": "Sancta Maria Junior School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Vanderbijlpark",
+    "city": "Vanderbijlpark",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "141 Rossini Boulevard, South West 1, Vanderbijlpark",
+    "lat": -26.7082,
+    "lng": 27.8253,
+    "website": null,
+    "phone": "016 933 4791",
+    "email": "admin@sanctamaria.co.za",
+    "language": null,
+    "emis": "700330621",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.sanctamaria.co.za/administration/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 1910,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent primary school, Gr R to Gr 7. 2026 tuition is R1,910 a month, the same for every grade, January to November. Book fees differ by grade and are charged at the start of the year: Gr R R990, Gr 1 R1,100, Gr 2 R1,220, Gr 3 R1,290, Gr 4 R1,300, Gr 5 R1,335, Gr 6 R1,360, Gr 7 R1,430. The school describes the book fee as once-off, payable at the start of the year; it is shown here as a yearly cost. No yearly total or discount is printed. The page says tuition covers Kinderkinetics (Gr R and 1), swimming, computer and extra science lessons.",
+      "sourceKind": "the school's 2026 administration page",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 1910
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 1910
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Book fees (Gr R)",
+        "amount": 990,
+        "frequency": "yearly",
+        "note": "Amount differs by grade: Gr R R990, Gr 1 R1,100, Gr 2 R1,220, Gr 3 R1,290, Gr 4 R1,300, Gr 5 R1,335, Gr 6 R1,360, Gr 7 R1,430. Page says once-off, payable at the start of the year",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
   }
 ]

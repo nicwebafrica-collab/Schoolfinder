@@ -6885,5 +6885,77 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "lynford-school",
+    "name": "Lynford School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr RR-7",
+    "area": "Donnybrook Road (R612)",
+    "city": "Ixopo",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "Lynford Farm, R612 Donnybrook Road, Ubuhlebezwe, Ixopo",
+    "lat": -30.1213,
+    "lng": 30.0512,
+    "website": null,
+    "phone": "087 997 1167",
+    "email": null,
+    "language": null,
+    "emis": "500316353",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://lynford.co.za/wp-content/uploads/2026/04/Financial-Information-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 48119.13,
+      "monthly": 4374.47,
+      "registration": null,
+      "deposit": 6000,
+      "instalments": 11,
+      "notes": "Independent primary school near Ixopo, Gr RR to Gr 7. 2026 tuition per year (monthly over 11 months): Gr RR R48,119.13 (R4,374.47); Gr R R58,899.27 (R5,354.48); Gr 1 to Gr 7 R75,127.36 (R6,829.76). Monthly amounts are rounded to the cent. A 5% discount for paying annual fees before 31 January 2026 has passed, so discounted prices are not shown. New families pay an enrolment deposit of R6,000 per family; the printed due date (17 November 2025) has passed. Once-off non-refundable administration fee of R250 with the application. A R250 fee is charged for each unpaid debit order.",
+      "sourceKind": "the school's 2026 financial information notice",
+      "byGrade": [
+        {
+          "grade": "Gr RR",
+          "yearly": 48119.13,
+          "monthly": 4374.47
+        },
+        {
+          "grade": "Gr R",
+          "yearly": 58899.27,
+          "monthly": 5354.48
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 75127.36,
+          "monthly": 6829.76
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Administration fee",
+        "amount": 250,
+        "frequency": "once",
+        "note": "New learners, with the application, non-refundable",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
   }
 ]

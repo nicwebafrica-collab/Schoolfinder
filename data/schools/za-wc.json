@@ -2062,5 +2062,363 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "herschel-girls-school",
+    "name": "Herschel Girls School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Pre-Nursery-12",
+    "area": "Claremont",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "21 Herschel Road Claremont 7708, Cape Town",
+    "lat": -33.9859,
+    "lng": 18.4639,
+    "website": null,
+    "phone": "021 670 7500",
+    "email": null,
+    "language": null,
+    "emis": "105000844",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.herschel.org.za/admissions/fee-schedule/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 8890,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent girls' school in Claremont, Cape Town, Pre-Nursery to Grade 12. 2026 tuition per month: Pre-Nursery R8,890 (R21,580 a term); Nursery R9,035; Reception R9,300; Gr 1-2 R10,665; Gr 3 R14,015; Gr 4-5 R14,455; Gr 6 R14,810; Gr 7 R17,040; Gr 8-11 R18,205; Gr 12 R20,225 (Gr 12 is billed over three terms or 9 instalments). The schedule's annual amounts are inclusive of a 3% discount for payment in full on or before 31 January 2026, which has passed, so no yearly figure is shown. A capital levy of R7,350 a year applies to every grade (R735 a month, or R817 a month over three terms for Gr 12). Extras such as aftercare (Prep only) and electives are not priced on the page.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Pre-Nursery",
+          "yearly": null,
+          "monthly": 8890
+        },
+        {
+          "grade": "Nursery",
+          "yearly": null,
+          "monthly": 9035
+        },
+        {
+          "grade": "Reception",
+          "yearly": null,
+          "monthly": 9300
+        },
+        {
+          "grade": "Grade 1",
+          "yearly": null,
+          "monthly": 10665
+        },
+        {
+          "grade": "Grade 2",
+          "yearly": null,
+          "monthly": 10665
+        },
+        {
+          "grade": "Grade 3",
+          "yearly": null,
+          "monthly": 14015
+        },
+        {
+          "grade": "Grade 4",
+          "yearly": null,
+          "monthly": 14455
+        },
+        {
+          "grade": "Grade 5",
+          "yearly": null,
+          "monthly": 14455
+        },
+        {
+          "grade": "Grade 6",
+          "yearly": null,
+          "monthly": 14810
+        },
+        {
+          "grade": "Grade 7",
+          "yearly": null,
+          "monthly": 17040
+        },
+        {
+          "grade": "Grade 8-11",
+          "yearly": null,
+          "monthly": 18205
+        },
+        {
+          "grade": "Grade 12",
+          "yearly": null,
+          "monthly": 20225
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Capital levy",
+        "amount": 7350,
+        "frequency": "yearly",
+        "note": "Every grade (Gr 12 payable over 3 terms)",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "blanco-laerskool",
+    "name": "Blanco Laerskool",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Bokkieland, Gr RR-7",
+    "area": "Blanco",
+    "city": "George",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Montagustraat Blanco 6531, Blanco, George",
+    "lat": -33.9458,
+    "lng": 22.4097,
+    "website": null,
+    "phone": "044 870 7380",
+    "email": null,
+    "language": null,
+    "emis": "118109218",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 710
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.blancolaerskool.co.za/wp-content/uploads/2025/12/Skoolfonds-kort-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 27500,
+      "monthly": 2500,
+      "registration": 250,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public primary school in Blanco, George. 2026 school fees (Skoolfooie vir 2026), paid monthly over 11 months or per year: Bokkieland R27,500 a year (R2,500 a month); Gr RR and Gr R R16,940 (R1,540); Gr 1 to Gr 7 R16,060 (R1,460). Headline shows Bokkieland, the lowest class listed. Once-off registration fee R250, new Gr 1 to Gr 7 learners only. Gr RR and Gr R pay a once-off R1,540 loom (stationery and support materials) fee with registration. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R710 a month for the first child (second child R610, third child R510), or R50 a day; lunch packs R60 a day if needed.",
+      "sourceKind": "the school's 2026 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Bokkieland",
+          "yearly": 27500,
+          "monthly": 2500
+        },
+        {
+          "grade": "Gr RR-R",
+          "yearly": 16940,
+          "monthly": 1540
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 16060,
+          "monthly": 1460
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Loom fee (stationery and support materials)",
+        "amount": 1540,
+        "frequency": "once",
+        "note": "Gr RR and Gr R only, paid with registration",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "koos-sadie-primary-school",
+    "name": "Koos Sadie Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Goodwood Estate",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Dingleweg Goodwood 7460, Cape Town",
+    "lat": -33.9094,
+    "lng": 18.5526,
+    "website": null,
+    "phone": "021 591 6151",
+    "email": null,
+    "language": null,
+    "emis": "102309279",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://koossadieprimary.co.za/wp-content/uploads/2026/01/20241023-School-Fees-for-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 11600,
+      "monthly": 1100,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public primary school in Goodwood, Cape Town. The 2026 fee letter (dated 10 November 2025) says school fees are R11,600 per learner per year, with a compulsory LTSM (books and essential goods) payment of R600 per learner due before 25 January 2026, and thereafter R1,100 a month per learner for 10 months (1 February to 1 November). The letter does not say whether the R600 is inside the R11,600, so the instalments count is left out, and the R600 is not listed as an extra. Early-payment discounts on the letter (before 31 December 2025, before 31 March 2026) have passed. No grades are listed.",
+      "sourceKind": "the school's 2026 fee letter",
+      "byGrade": [
+        {
+          "grade": "All learners (no grades given)",
+          "yearly": 11600,
+          "monthly": 1100
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "hebron-christenskool",
+    "name": "Hebron Christenskool",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": null,
+    "area": "Oak Glen",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Hebron Straat 3 Oak Glen Bellville 7530",
+    "lat": -33.8807,
+    "lng": 18.6686,
+    "website": null,
+    "phone": "021 919 6356",
+    "email": "admin@hebronchristenskool.co.za",
+    "language": null,
+    "emis": "101007175",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1623
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.hebronchristenskool.co.za/wp-content/uploads/2026/02/HCS-Skoolfooie-vir-2026-Finaal.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 49368,
+      "monthly": 4114,
+      "registration": null,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent primary school in Oak Glen, Bellville. Fees are set by number of children, not by grade; the headline is the first child. 2026 school fees, first child: R4,114 a month (January to December) or R49,368 a year. Two children pay R7,508 a month, three R10,182, four R12,856. The sheet also gives a 5% discount for paying the full 2026 amount before 31 January 2026; that date has passed. Full-day aftercare (until 18:00) for the first child is R1,623 a month; mini aftercare (until 15:15) is R707 a month. No registration or other fees are printed on the sheet, and it lists no grades.",
+      "sourceKind": "the school's 2026 fee sheet",
+      "byGrade": [
+        {
+          "grade": "1 child (no grades given)",
+          "yearly": 49368,
+          "monthly": 4114
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "kirstenhof-primary-school",
+    "name": "Kirstenhof Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Kirstenhof",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "18 Lente Street Kirstenhof 7945, Cape Town",
+    "lat": -34.0696,
+    "lng": 18.4548,
+    "website": null,
+    "phone": "021 701 1143",
+    "email": "school@kirstenhofprimary.co.za",
+    "language": null,
+    "emis": "105309273",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://kirstenhofprimary.co.za/enrol/admissions/fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 40700,
+      "monthly": 3700,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public primary school in Kirstenhof, Cape Town. 2026 fees per child, either monthly over 11 months or per annum: Little Oaks (Grade R) R3,700 a month or R40,700 a year; Grade 1 R3,070 a month or R33,770 a year; Grades 2-7 R2,910 a month or R32,010 a year. The page prints no registration, levy, deposit or other fees.",
+      "sourceKind": "the school's 2026 fees page",
+      "byGrade": [
+        {
+          "grade": "Little Oaks (Gr R)",
+          "yearly": 40700,
+          "monthly": 3700
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 33770,
+          "monthly": 3070
+        },
+        {
+          "grade": "Gr 2-7",
+          "yearly": 32010,
+          "monthly": 2910
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

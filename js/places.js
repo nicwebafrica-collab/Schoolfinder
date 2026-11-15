@@ -49,6 +49,7 @@
     { name: "Mooi River", region: "KZN", lat: -29.2100, lng: 29.9940 },
     { name: "Estcourt", region: "KZN", lat: -29.0100, lng: 29.8700 },
     { name: "Ingwavuma", region: "KZN", lat: -27.1340, lng: 32.0000 },
+    { name: "Ixopo", region: "KZN", lat: -30.1550, lng: 30.0600 },
     // Gauteng
     { name: "Pretoria", region: "Gauteng", lat: -25.7460, lng: 28.1880, aliases: ["pta", "tshwane"] },
     { name: "East Lynne", region: "Gauteng", lat: -25.7000, lng: 28.2800 },
@@ -92,6 +93,7 @@
     { name: "Pinelands", region: "Western Cape", lat: -33.9384, lng: 18.5098, note: "Cape Town" },
     { name: "Grabouw", region: "Western Cape", lat: -34.1532, lng: 19.0153 },
     { name: "Paarl", region: "Western Cape", lat: -33.7342, lng: 18.9621 },
+    { name: "George", region: "Western Cape", lat: -33.9630, lng: 22.4617 },
     // Eastern Cape
     { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] },
     { name: "East London", region: "Eastern Cape", lat: -33.0153, lng: 27.9116, aliases: ["buffalo city", "eastlondon"] },

@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 127,
+      "schoolCount": 132,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -164,7 +164,12 @@
         "st-alban-s-college",
         "st-john-s-college",
         "st-john-s-preparatory",
-        "tom-newby-school"
+        "tom-newby-school",
+        "laerskool-bakenkop",
+        "springvale-primary-school",
+        "st-columba-s-school",
+        "laerskool-louw-geldenhuys",
+        "sancta-maria-junior-school"
       ],
       "bounds": [
         -26.7360185101,
@@ -180,7 +185,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 57,
+      "schoolCount": 58,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -239,7 +244,8 @@
         "crawford-college-la-lucia",
         "alexandra-high-school",
         "maris-stella-school",
-        "canaan-college"
+        "canaan-college",
+        "lynford-school"
       ],
       "bounds": [
         -30.8726,
@@ -255,7 +261,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 20,
+      "schoolCount": 25,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -277,13 +283,18 @@
         "curro-uitzicht-high",
         "bosmansdam-primary-school",
         "camps-bay-high-school",
-        "cedar-house-school"
+        "cedar-house-school",
+        "herschel-girls-school",
+        "blanco-laerskool",
+        "koos-sadie-primary-school",
+        "hebron-christenskool",
+        "kirstenhof-primary-school"
       ],
       "bounds": [
         -34.172504,
         18.3783,
         -33.802052,
-        19.035857
+        22.4097
       ]
     }
   ]
