@@ -12576,5 +12576,69 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "nova-pioneer-ruimsig-senior",
+    "name": "Nova Pioneer Ruimsig Senior",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Ruimsig",
+    "city": "Roodepoort",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "66 Flora Haase Road, Amorosa Ext 27, Ruimsig, Roodepoort",
+    "lat": -26.098097,
+    "lng": 27.871859,
+    "website": "https://www.novapioneer.com/sa/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": null,
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.novapioneer.com/sa/wp-content/uploads/2026/10/2027-Fees-Ruimsig-Senior.pdf",
+      "https://www.novapioneer.com/sa/admissions/fees-structure/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 9630,
+      "registration": null,
+      "deposit": 4500,
+      "instalments": null,
+      "notes": "Independent senior school (Gr 8-12) on the Nova Pioneer Ruimsig campus; 2027 fees, published 20 May 2026. Pay annually (by 31 December 2026), termly in 3 payments, or monthly in 11 debit orders. The annual price is lower than the termly and monthly totals, so it is a pay-in-full price; the monthly amounts shown are for 11 payments (Gr 8 R9,630; annual R89,650). Non-refundable enrolment fee on acceptance: R4,500 for senior school (Gr 8 and up); a top-up applies when moving from Gr 7 into Gr 8. International exam costs are extra, no amounts printed. Family discount from the 2nd child (10%, 20%, 25%, 30%). One full term's written notice required.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 9630
+        },
+        {
+          "grade": "Gr 9-10",
+          "yearly": null,
+          "monthly": 10110
+        },
+        {
+          "grade": "Gr 11-12",
+          "yearly": null,
+          "monthly": 10620
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

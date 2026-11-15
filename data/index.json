@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 132,
+      "schoolCount": 133,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -169,7 +169,8 @@
         "springvale-primary-school",
         "st-columba-s-school",
         "laerskool-louw-geldenhuys",
-        "sancta-maria-junior-school"
+        "sancta-maria-junior-school",
+        "nova-pioneer-ruimsig-senior"
       ],
       "bounds": [
         -26.7360185101,
@@ -185,7 +186,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 58,
+      "schoolCount": 59,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -245,7 +246,8 @@
         "alexandra-high-school",
         "maris-stella-school",
         "canaan-college",
-        "lynford-school"
+        "lynford-school",
+        "crawford-preparatory-la-lucia"
       ],
       "bounds": [
         -30.8726,
@@ -261,7 +263,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 25,
+      "schoolCount": 27,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -288,13 +290,15 @@
         "blanco-laerskool",
         "koos-sadie-primary-school",
         "hebron-christenskool",
-        "kirstenhof-primary-school"
+        "kirstenhof-primary-school",
+        "abbotts-college-rondebosch",
+        "trinityhouse-glenwood"
       ],
       "bounds": [
         -34.172504,
         18.3783,
         -33.802052,
-        22.4097
+        22.491367
       ]
     }
   ]

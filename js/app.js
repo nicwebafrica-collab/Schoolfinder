@@ -1521,6 +1521,7 @@
         el("li", {}, "Each school page shows where its numbers come from and the date we checked them."),
         el("li", {}, "Before a school goes live, its numbers are checked a second time against the school's own documents. Where a school doesn't publish its fees, the page says so."),
         el("li", {}, "If a school doesn't publish something, we say \u201cNot published by school\u201d. We never guess, and we never show R0 for a cost we don't know."),
+        el("li", {}, "Map positions come from the Department of Basic Education's school list. Where that list has no position or a wrong one, we use the school's own street address, checked on the map. Some of those positions are \u00a9 ", el("a", { href: "https://www.openstreetmap.org/copyright", rel: "noopener noreferrer" }, "OpenStreetMap contributors"), "."),
         el("li", {}, "Fees change every year, so always confirm with the school before you decide.")),
       el("h2", {}, "Spot a wrong price?"),
       el("p", {}, "Email ", contactLink(), " with the school's name and what looks wrong. We check every report against the school's own documents within a week, and fix the page if it's wrong."),

@@ -6957,5 +6957,102 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "crawford-preparatory-la-lucia",
+    "name": "Crawford Preparatory La Lucia",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "La Lucia",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": "4022",
+    "address": "79 Armstrong Avenue, La Lucia",
+    "lat": -29.743528,
+    "lng": 31.06443,
+    "website": "https://www.crawfordinternational.co.za/la-lucia-preparatory",
+    "phone": "031 562 0050",
+    "email": null,
+    "language": null,
+    "emis": "500447700",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1480
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://www.crawfordinternational.co.za/la-lucia-preparatory",
+      "https://irp.cdn-website.com/0f45544c/files/uploaded/Crawford+La+Lucia+Preparatory+Fee+Structure+2027+V2.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 10380,
+      "registration": 880,
+      "deposit": 5500,
+      "instalments": null,
+      "notes": "Independent preparatory school, Gr 1-7, on the same La Lucia campus as Crawford College. Each grade has a discounted annual price (Gr 1 R115,956) that is lower than the monthly payments added up, so the monthly figure shown is the normal 12-payment option (Gr 1 R10,380 a month). A 10-payment option is also printed (Gr 1 R12,210). The annual discount is lost if not paid in full by 31 January 2027, and the account then moves to the 12-month option. The same payment plan must be used for tuition, aftercare and music. New learners pay a R880 application fee and a R5,500 non-refundable enrolment fee, both through the school's online portal. Sibling discounts on tuition: 5% (2nd), 10% (3rd), 15% (4th+). 90 days' notice to leave.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 10380
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 11620
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 11820
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 13240
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 14190
+        },
+        {
+          "grade": "Gr 6-7",
+          "yearly": null,
+          "monthly": 14470
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare (06h30-18h00)",
+        "amount": 1480,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual discounted R15,720; 10 monthly R1,650); holiday care free for full-time aftercare learners, otherwise R250 a day",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Ad hoc aftercare / holiday care",
+        "amount": 250,
+        "frequency": "once",
+        "per": "day",
+        "note": "Ad-hoc daily rate",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]

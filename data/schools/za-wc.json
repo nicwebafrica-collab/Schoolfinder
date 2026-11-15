@@ -2420,5 +2420,250 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "abbotts-college-rondebosch",
+    "name": "Abbotts College Rondebosch",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Rondebosch",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": "7700",
+    "address": "Belmont Office Park, Belmont Road, Rondebosch, Cape Town",
+    "lat": -33.984665,
+    "lng": 18.471393,
+    "website": "https://www.abbotts.co.za/rondebosch",
+    "phone": "021 671 1173",
+    "email": null,
+    "language": null,
+    "emis": "105000798",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://irp.cdn-website.com/98bf69a8/files/uploaded/ABBOTTS-Fees-2027_v11.pdf",
+      "https://www.abbotts.co.za/our-fees",
+      "https://www.abbotts.co.za/rondebosch"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 77700,
+      "monthly": 7770,
+      "registration": 350,
+      "deposit": 2650,
+      "instalments": 10,
+      "notes": "Independent high school (Abbotts College, ADvTECH); the same 2027 tuition applies at all Abbotts campuses. Headline is Grade 8: R77,700 a year or 10 monthly payments of R7,770; a 12-month debit order (R6,800) is also printed, not for Grade 12. Paying the year by 31 January 2027 saves 5%. Registration fee R350 and enrolment fee R2,650 (new students) are once-off and non-refundable. Grade 12 part-time is R17,540 per subject. Student card R50. Locker R300 optional; lockable cell phone pouch R320 compulsory in Gr 8-9. Grade 10-12 subject fees at Rondebosch are billed extra (e.g. CAT R470, Consumer Studies R2,030, Drama R1,680, Tourism R1,550, Visual Arts R2,870; Design R2,390 in Gr 11-12). Sibling discounts on tuition: 5% (2nd), 10% (3rd), 15% (4th+).",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 77700,
+          "monthly": 7770
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 82300,
+          "monthly": 8230
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 89600,
+          "monthly": 8960
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 97000,
+          "monthly": 9700
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 103000,
+          "monthly": 10300
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Grade 12 IEB exam fees",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Once-off charge for Grade 12, billed January 2027 and due by end of March 2027; extra subjects R1,800 each",
+        "applies": "Gr 12",
+        "included": false
+      },
+      {
+        "item": "Student card",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Compulsory for all grades; billed to the fee account",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Lockable cell phone pouch",
+        "amount": 320,
+        "frequency": "once",
+        "note": "Compulsory in Gr 8 and 9; billed to the fee account",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "trinityhouse-glenwood",
+    "name": "Trinityhouse Glenwood (Glenwood House)",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 0000-12",
+    "area": "Glenwood",
+    "city": "George",
+    "province": "Western Cape",
+    "postcode": "6529",
+    "address": "1 Glenwood Avenue, Glenwood, George",
+    "lat": -33.969368,
+    "lng": 22.491367,
+    "website": "https://www.glenwoodhouse.co.za/",
+    "phone": "044 871 4048",
+    "email": null,
+    "language": null,
+    "emis": "120007429",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 860
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-15",
+    "sources": [
+      "https://irp.cdn-website.com/ae3d4a6b/files/uploaded/Trinityhouse+Glenwood+2027+Fee+StructureV2.pdf",
+      "https://www.glenwoodhouse.co.za/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 3260,
+      "registration": 600,
+      "deposit": 6000,
+      "instalments": null,
+      "notes": "Independent combined school in George (pre-primary, preparatory, high school, with boarding), becoming Trinityhouse Glenwood; 2027 fees. Pay annually before 31 January 2027, or monthly in 12 payments (January to December). The annual price is lower than 12 monthly payments, so it is a pay-in-full price; monthly amounts shown are the 12-payment ones. Gr 12 has only 10 monthly payments (January to October) of R11,830. Non-refundable application fee R600 and enrolment fee R6,000. Pre-primary stationery levy R1,570 and IT & printing levy (Gr 1-12) R3,210, both non-refundable, listed without saying how often; ask the school. Gr 12 IEB exam fees are billed extra by end of March 2027 (no amount printed). Boarding Gr 8-11: weekly R8,700 or termly R12,570 a month (12 payments); boarding placement fee R3,000.",
+      "sourceKind": "the school's 2027 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Gr 0000-0",
+          "yearly": null,
+          "monthly": 3260
+        },
+        {
+          "grade": "Gr 1-4",
+          "yearly": null,
+          "monthly": 6320
+        },
+        {
+          "grade": "Gr 5-7",
+          "yearly": null,
+          "monthly": 7070
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 7360
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 9070
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 10240
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 11830,
+          "instalments": 10
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare (13H00-17H30)",
+        "amount": 860,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R9,360 if paid before 31 Jan 2027)",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Ad hoc aftercare",
+        "amount": 190,
+        "frequency": "once",
+        "per": "day",
+        "note": "Per day",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Holiday care full day",
+        "amount": 250,
+        "frequency": "once",
+        "per": "day",
+        "note": "07H00 to 17H00",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Holiday care half day",
+        "amount": 165,
+        "frequency": "once",
+        "per": "day",
+        "note": "07H00 to 13H00",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Late collection fine (after 17H30)",
+        "amount": 50,
+        "frequency": "once",
+        "note": "Per 15 minutes or part thereof",
+        "applies": "penalty",
+        "included": false
+      },
+      {
+        "item": "Morning bus Route 1 (Gr 1-11)",
+        "amount": 1000,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R11,004); outlying areas, route to be confirmed; Gr 12 R1,160 x 10",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Morning bus Route 2 (Gr 1-11)",
+        "amount": 720,
+        "frequency": "monthly",
+        "note": "12 monthly payments (annual R7,872); central areas, route to be confirmed; Gr 12 R830 x 10",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]
