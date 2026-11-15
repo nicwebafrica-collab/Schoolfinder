@@ -35,7 +35,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 133,
+      "schoolCount": 135,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -170,7 +170,9 @@
         "st-columba-s-school",
         "laerskool-louw-geldenhuys",
         "sancta-maria-junior-school",
-        "nova-pioneer-ruimsig-senior"
+        "nova-pioneer-ruimsig-senior",
+        "abbotts-college-bordeaux",
+        "hillside-akademie"
       ],
       "bounds": [
         -26.7360185101,
@@ -263,7 +265,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 26,
+      "schoolCount": 27,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -291,7 +293,8 @@
         "koos-sadie-primary-school",
         "hebron-christenskool",
         "kirstenhof-primary-school",
-        "trinityhouse-glenwood"
+        "trinityhouse-glenwood",
+        "abbotts-college-rondebosch"
       ],
       "bounds": [
         -34.172504,
