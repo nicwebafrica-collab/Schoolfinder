@@ -74,6 +74,7 @@
     { name: "Vereeniging", region: "Gauteng", lat: -26.6736, lng: 27.9319 },
     { name: "Krugersdorp", region: "Gauteng", lat: -26.0857, lng: 27.7750 },
     { name: "Roodepoort", region: "Gauteng", lat: -26.1625, lng: 27.8725 },
+    { name: "Ruimsig", region: "Gauteng", lat: -26.0980, lng: 27.8720, note: "Roodepoort" },
     { name: "Lenasia", region: "Gauteng", lat: -26.3167, lng: 27.8333 },
     { name: "Edenvale", region: "Gauteng", lat: -26.1408, lng: 28.1525 },
     { name: "Benoni", region: "Gauteng", lat: -26.1885, lng: 28.3208 },
