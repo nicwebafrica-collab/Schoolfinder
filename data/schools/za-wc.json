@@ -2104,7 +2104,7 @@
       "registration": null,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent girls' school in Claremont, Cape Town, Pre-Nursery to Grade 12. 2026 tuition per month: Pre-Nursery R8,890 (R21,580 a term); Nursery R9,035; Reception R9,300; Gr 1-2 R10,665; Gr 3 R14,015; Gr 4-5 R14,455; Gr 6 R14,810; Gr 7 R17,040; Gr 8-11 R18,205; Gr 12 R20,225 (Gr 12 is billed over three terms or 9 instalments). The schedule's annual amounts are inclusive of a 3% discount for payment in full on or before 31 January 2026, which has passed, so no yearly figure is shown. A capital levy of R7,350 a year applies to every grade (R735 a month, or R817 a month over three terms for Gr 12). Extras such as aftercare (Prep only) and electives are not priced on the page.",
+      "notes": "Independent girls' school in Claremont, Cape Town, Pre-Nursery to Grade 12. 2026 tuition per month: Pre-Nursery R8,890 (R21,580 a term); Nursery R9,035; Reception R9,300; Gr 1-2 R10,665; Gr 3 R14,015; Gr 4-5 R14,455; Gr 6 R14,810; Gr 7 R17,040; Gr 8-11 R18,205; Gr 12 R20,225 (monthly amounts are 10 debit orders from 1 February; Gr 12 is billed over three terms or 9 instalments). The schedule's annual amounts are inclusive of a 3% discount for payment in full on or before 31 January 2026, which has passed, so no yearly figure is shown. A capital levy of R7,350 a year applies to every grade (R735 a month, or R817 a month over three terms for Gr 12). Extras such as aftercare (Prep only) and electives are not priced on the page.",
       "sourceKind": "the school's 2026 fee schedule",
       "byGrade": [
         {
@@ -2221,7 +2221,7 @@
       "registration": 250,
       "deposit": null,
       "instalments": 11,
-      "notes": "Public primary school in Blanco, George. 2026 school fees (Skoolfooie vir 2026), paid monthly over 11 months or per year: Bokkieland R27,500 a year (R2,500 a month); Gr RR and Gr R R16,940 (R1,540); Gr 1 to Gr 7 R16,060 (R1,460). Headline shows Bokkieland, the lowest class listed. Once-off registration fee R250, new Gr 1 to Gr 7 learners only. Gr RR and Gr R pay a once-off R1,540 loom (stationery and support materials) fee with registration. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R710 a month for the first child (second child R610, third child R510), or R50 a day; lunch packs R60 a day if needed.",
+      "notes": "Public primary school in Blanco, George. 2026 school fees (Skoolfooie vir 2026), paid monthly over 11 months or per year: Bokkieland R27,500 a year (R2,500 a month); Gr RR and Gr R R16,940 (R1,540); Gr 1 to Gr 7 R16,060 (R1,460). Headline shows Bokkieland, the lowest class listed. Once-off registration fee R250, new learners only. Gr RR and Gr R pay a once-off R1,540 loom (stationery and support materials) fee with registration. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R710 a month for the first child (second child R610, third child R510), or R50 a day; lunch packs R60 a day if needed.",
       "sourceKind": "the school's 2026 fee sheet",
       "byGrade": [
         {
@@ -2293,7 +2293,7 @@
       "registration": null,
       "deposit": null,
       "instalments": null,
-      "notes": "Public primary school in Goodwood, Cape Town. The 2026 fee letter (dated 10 November 2025) says school fees are R11,600 per learner per year, with a compulsory LTSM (books and essential goods) payment of R600 per learner due before 25 January 2026, and thereafter R1,100 a month per learner for 10 months (1 February to 1 November). The letter does not say whether the R600 is inside the R11,600, so the instalments count is left out, and the R600 is not listed as an extra. Early-payment discounts on the letter (before 31 December 2025, before 31 March 2026) have passed. No grades are listed.",
+      "notes": "Public primary school in Goodwood, Cape Town. The 2026 fee letter (dated 10 November 2025) says school fees are R11,600 per learner per year, paid as a compulsory R600 LTSM (books and essential goods) payment before 25 Jan 2026, then R1,100 a month for 10 months (1 February to 1 November). Early-payment discounts on the letter (before 31 December 2025, before 31 March 2026) have passed. No grades are listed.",
       "sourceKind": "the school's 2026 fee letter",
       "byGrade": [
         {

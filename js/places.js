@@ -94,6 +94,8 @@
     { name: "Grabouw", region: "Western Cape", lat: -34.1532, lng: 19.0153 },
     { name: "Paarl", region: "Western Cape", lat: -33.7342, lng: 18.9621 },
     { name: "George", region: "Western Cape", lat: -33.9630, lng: 22.4617 },
+    { name: "Blanco", region: "Western Cape", lat: -33.9458, lng: 22.4140, note: "George" },
+    { name: "Brackenfell", region: "Western Cape", lat: -33.8730, lng: 18.6900, note: "Cape Town" },
     // Eastern Cape
     { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] },
     { name: "East London", region: "Eastern Cape", lat: -33.0153, lng: 27.9116, aliases: ["buffalo city", "eastlondon"] },
