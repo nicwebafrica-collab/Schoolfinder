@@ -131,7 +131,7 @@
         el("div", { className: "label" }, "Example: a " + s.area + " " + String(s.type || "").toLowerCase() + " " + kind),
         el("div", { className: "muted small" }, "True cost per year" + (grade ? " \u00b7 " + grade : "") + (s.fees && s.fees.year ? " \u00b7 " + s.fees.year + " fees" : "")),
         el("div", { className: "big-money" }, L.formatRand(total)),
-        extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), el("span", {}, "Includes " + L.formatRand(extras) + " not on the fee sheet")) : null,
+        extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), el("span", {}, "Includes " + L.formatRand(extras) + " on top of the fee")) : null,
         L.isNum(monthly) ? el("div", { className: "muted small" }, "School fees " + L.formatRand(monthly) + " a month") : null,
         el("span", { className: "example-more" }, "See how it adds up", icon("chevron")));
       card.addEventListener("click", function () { if (grade) state.grade[s.id] = grade; });
@@ -1360,7 +1360,7 @@
         gradeNote ? el("p", { className: "muted small" }, (grade ? grade + ": " : "") + gradeNote) : null,
         f.notes ? el("p", { className: "muted small" }, f.notes) : null),
       el("section", { className: "panel hidden-panel" },
-        el("h2", { className: "hidden-text" }, icon("alert"), "Hidden costs, not on the fee sheet"),
+        el("h2", { className: "hidden-text" }, icon("alert"), "Hidden costs, on top of the fee"),
         hidden.length ? el("ul", { className: "rows" }, hidden) : el("p", { className: "empty" }, "No hidden costs found yet. That doesn't mean there are none.")),
       inFee.length ? el("section", { className: "panel" },
         el("h2", {}, "Already inside the school fees"),
@@ -1479,7 +1479,7 @@
           crow("School fees / year", money(L.yearlyFees(A, ga)), money(L.yearlyFees(B, gb))),
           crow("Monthly fee", [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not published; yearly\u00a0\u00f7\u00a012)" : paymentsText(A, ga)],
             [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not published; yearly\u00a0\u00f7\u00a012)" : paymentsText(B, gb)]),
-          crow("Extras not on the fee sheet / year", extrasText(A, ga), extrasText(B, gb), true),
+          crow("Extras on top of the fee / year", extrasText(A, ga), extrasText(B, gb), true),
           crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
           crow("Once-off to start", money(L.startUpCosts(A, ga)), money(L.startUpCosts(B, gb))),
