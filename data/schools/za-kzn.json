@@ -3719,54 +3719,53 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-04",
+    "lastChecked": "2026-11-16",
     "sources": [
-      "https://www.stnicholas.co.za/wp-content/uploads/2025/11/Fee-Structure-2026.pdf",
-      "https://www.stnicholas.co.za/admissions/"
+      "https://stnicholas.co.za/wp-content/uploads/2026/10/2027-Fee-Structure.pdf"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 43000,
-      "monthly": 4300,
+      "year": 2027,
+      "yearly": 36400,
+      "monthly": 3640,
       "registration": 400,
       "deposit": 3250,
       "instalments": 10,
-      "notes": "Independent day and boarding school (Pre-school to Gr 12). Grade 1 shown. Fees can be paid over 10 months (January to October). Fees include all curriculum subjects, class music, PE, swimming, computer education and sport. A yearly General Purpose Levy is charged in January on top (R4,650 in Gr 1-3), covering accident insurance, basic textbooks, basic stationery, photos, the magazine, school trips and camps and most compulsory outings. 'Registration' is the non-refundable R400 application fee (R100 extra if late); 'deposit' is the non-refundable R3,250 enrolment fee (R250 extra if late). Boarding R91,000 a year. One full term's notice to leave.",
+      "notes": "Independent day and boarding school (Pre-school to Gr 12). Youngest group (Gr RRR-R) shown. Fees can be paid over 10 months (January to October). A yearly General Purpose Levy is charged in January on top (e.g. R4,650 in Gr 1-3), covering accident insurance, basic textbooks, trips, camps and most compulsory outings. 'Registration' is the non-refundable R400 application fee (R100 extra if late); 'deposit' is the non-refundable R3,250 enrolment fee (R250 extra if late). Current Gr 7 learners pay a refundable R2,000 enrolment fee to secure Gr 8, refunded in January and forfeited if they do not return. Boarding R96,000 a year (R24,000 a term), plus a one-term boarding enrolment fee paid in advance. The Gr 12 IEB exam fee is R10,394 (how often it is charged is not stated). Overdue accounts pay 10% interest a year.",
+      "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
-          "grade": "Pre-school (Gr RRR-R)",
-          "yearly": 34500,
-          "monthly": 3450
+          "grade": "Gr RRR-R",
+          "yearly": 36400,
+          "monthly": 3640
         },
         {
           "grade": "Gr 1-2",
-          "yearly": 43000,
-          "monthly": 4300
+          "yearly": 45400,
+          "monthly": 4540
         },
         {
           "grade": "Gr 3-7",
-          "yearly": 49500,
-          "monthly": 4950
+          "yearly": 52200,
+          "monthly": 5220
         },
         {
           "grade": "Gr 8-9",
-          "yearly": 55000,
-          "monthly": 5500
+          "yearly": 58100,
+          "monthly": 5810
         },
         {
           "grade": "Gr 10-12",
-          "yearly": 61700,
-          "monthly": 6170
+          "yearly": 65100,
+          "monthly": 6510
         }
-      ],
-      "sourceKind": "the school's 2026 fee structure"
+      ]
     },
     "hiddenCosts": [
       {
         "item": "General Purpose Levy",
         "amount": 4650,
         "frequency": "yearly",
-        "note": "Gr 1-3; charged in January. Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
+        "note": "Gr 1-3; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 1-3",
         "included": false
       },
@@ -3774,7 +3773,7 @@
         "item": "General Purpose Levy",
         "amount": 5350,
         "frequency": "yearly",
-        "note": "Gr 4-7; charged in January",
+        "note": "Gr 4-7; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 4-7",
         "included": false
       },
@@ -3782,7 +3781,7 @@
         "item": "General Purpose Levy",
         "amount": 5750,
         "frequency": "yearly",
-        "note": "Gr 8; charged in January",
+        "note": "Gr 8; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 8",
         "included": false
       },
@@ -3790,15 +3789,15 @@
         "item": "General Purpose Levy",
         "amount": 5500,
         "frequency": "yearly",
-        "note": "Gr 9; charged in January",
+        "note": "Gr 9; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 9",
         "included": false
       },
       {
         "item": "General Purpose Levy",
-        "amount": 6000,
+        "amount": 6200,
         "frequency": "yearly",
-        "note": "Gr 10; charged in January",
+        "note": "Gr 10; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 10",
         "included": false
       },
@@ -3806,15 +3805,15 @@
         "item": "General Purpose Levy",
         "amount": 5800,
         "frequency": "yearly",
-        "note": "Gr 11; charged in January",
+        "note": "Gr 11; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 11",
         "included": false
       },
       {
         "item": "General Purpose Levy",
-        "amount": 6000,
+        "amount": 6500,
         "frequency": "yearly",
-        "note": "Gr 12; charged in January",
+        "note": "Gr 12; charged in January (due end of Term 1). Covers accident insurance, basic textbooks and stationery, photos, magazine, trips, camps and most compulsory outings",
         "applies": "Gr 12",
         "included": false
       },
@@ -3822,31 +3821,15 @@
         "item": "General Purpose Levy (Reception)",
         "amount": 3800,
         "frequency": "yearly",
-        "note": "Reception class (ask the school which ages); charged in January",
-        "applies": "some",
-        "included": false
-      },
-      {
-        "item": "IEB exam fee",
-        "amount": 9760,
-        "frequency": "once",
-        "note": "Grade 12, paid in full before the exams",
-        "applies": "Gr 12",
-        "included": false
-      },
-      {
-        "item": "Grade 8 place deposit (current St Nicholas Gr 7s)",
-        "amount": 2000,
-        "frequency": "once",
-        "note": "Refundable in January, but not if the learner doesn't return for Grade 8",
+        "note": "Reception class (the sheet does not say which ages); charged in January",
         "applies": "some",
         "included": false
       },
       {
         "item": "Boarding",
-        "amount": 91000,
+        "amount": 96000,
         "frequency": "yearly",
-        "note": "Instead of day only: R22,750 a term, plus a one-term (R22,750) boarding enrolment fee in advance",
+        "note": "Instead of day only: R24,000 a term, plus a one-term (R24,000) boarding enrolment fee paid in advance",
         "applies": "boarders",
         "included": false
       },
@@ -3862,15 +3845,7 @@
         "item": "Medical aid",
         "amount": null,
         "frequency": "yearly",
-        "note": "Parents are asked to have medical aid; without it hospitalisation is limited to R50,000",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Uniform, aftercare, transport",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Not published",
+        "note": "Parents are asked to have medical aid; without it an affidavit is needed and hospital cover is limited to R50,000",
         "applies": "everyone",
         "included": false
       }
@@ -4969,92 +4944,97 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-05",
+    "lastChecked": "2026-11-16",
     "sources": [
-      "https://dgc.co.za/fees/",
-      "http://dgc.co.za/wp-content/uploads/2025/11/FEE-SCHEDULE-2026.pdf"
+      "https://dgc.co.za/wp-content/uploads/2026/11/FEE-SCHEDULE-2027.pdf",
+      "https://dgc.co.za/fees/"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 79900,
-      "monthly": null,
-      "registration": null,
-      "deposit": 9988,
-      "instalments": null,
-      "notes": "Independent school from Grade 00 to Grade 12. 2026 tuition per year: Gr 00 R79,900, Gr R R85,600, Gr 1-3 R120,400, Gr 4-7 R139,400, Gr 8-12 R170,900. On top of tuition every child pays a development levy of R1,550 a term and R185 a year for accident insurance and Netcare 911. 'Deposit' is the once-off acceptance fee, which rises with the grade (R9,988 for Gr 00 up to R21,363 for Gr 8-12). Gr 12 pays a R9,669 IEB fee. Weekly boarding for Gr 8-12 is R139,400 a year. The development levy is charged every term. The acceptance fee is non-refundable. The school's 2026 fee schedule gives cheaper totals for paying tuition in full by 14 Jan 2026 (e.g. Gr 00 R76,300, Gr 8-12 R163,210), termly payments (Gr 00 R19,975, Gr 8-12 R42,725 a term), or an estimated monthly debit order from January to October that includes other charges (e.g. Gr 00 about R8,800, Gr 8-11 about R17,950, Gr 12 about R18,900).",
+      "year": 2027,
+      "yearly": 85100,
+      "monthly": 8510,
+      "registration": 950,
+      "deposit": 10638,
+      "instalments": 10,
+      "notes": "Independent school, Gr 00 to Gr 12. 2027 tuition per year: Gr 00 R85,100, Gr R R91,200, Gr 1-3 R128,200, Gr 4-7 R148,500, Gr 8-12 R182,000. Monthly invoices run January to October (10 payments); Gr 12 monthly not shown here. Paying the year in advance by 13 January 2027 is cheaper (Gr 00 R81,270, Gr R R87,100, Gr 1-3 R122,430, Gr 4-7 R141,820, Gr 8-12 R173,810). 'Registration' is the R950 once-off, non-refundable application fee. 'Deposit' is the once-off non-refundable acceptance fee, which rises with grade (Gr 00 R10,638, Gr R R11,400, Gr 1-3 R16,025, Gr 4-7 R18,563, Gr 8-12 R22,750). Every child also pays R200 a year for accident insurance and Netcare 911. Compulsory development levies, boarding, the Gr 12 IEB fee and aftercare are NOT given amounts here because the school's fee page and its 2027 PDF print different numbers; ask the school.",
       "byGrade": [
         {
           "grade": "Gr 00",
-          "yearly": 79900,
-          "monthly": null
+          "yearly": 85100,
+          "monthly": 8510
         },
         {
           "grade": "Gr R",
-          "yearly": 85600,
-          "monthly": null
+          "yearly": 91200,
+          "monthly": 9120
         },
         {
           "grade": "Gr 1-3",
-          "yearly": 120400,
-          "monthly": null
+          "yearly": 128200,
+          "monthly": 12820
         },
         {
           "grade": "Gr 4-7",
-          "yearly": 139400,
-          "monthly": null
+          "yearly": 148500,
+          "monthly": 14850
         },
         {
-          "grade": "Gr 8-12",
-          "yearly": 170900,
+          "grade": "Gr 8-11",
+          "yearly": 182000,
+          "monthly": 18200
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 182000,
           "monthly": null
         }
       ],
-      "sourceKind": "the 2026 fees on the school's website"
+      "sourceKind": "the school's 2027 fee schedule"
     },
     "aftercare": {
       "available": true,
       "monthly": null,
-      "note": "Per term: full time R4,790; part time R3,485 (over 2 hours a day) or R3,225 (under 2 hours); casual R110 a day"
+      "note": "2027 aftercare is priced differently on the fees page (per term) and in the PDF (per month), so no amount is shown; ask the school"
     },
     "hiddenCosts": [
       {
-        "item": "Development levy",
-        "amount": 1550,
-        "frequency": "per term",
-        "note": "Every child, every grade; charged in terms 1-4 (Capital R1,000 + Facility R550)",
+        "item": "Application fee",
+        "amount": 950,
+        "frequency": "once",
+        "note": "Per student, non-refundable, payable when applying",
         "applies": "everyone",
         "included": false
       },
       {
         "item": "Accident insurance and Netcare 911",
-        "amount": 185,
+        "amount": 200,
         "frequency": "yearly",
-        "note": "Every child",
+        "note": "Compulsory, every child; debited in January",
         "applies": "everyone",
         "included": false
       },
       {
-        "item": "IEB exam fee",
-        "amount": 9669,
-        "frequency": "once",
-        "note": "Grade 12 only",
-        "applies": "Gr 12",
+        "item": "Development levies (capital + facility)",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "Compulsory, every child. Amount not shown: the fees page says R1,550 a term, the PDF gives two yearly levies",
+        "applies": "everyone",
         "included": false
       },
       {
         "item": "Weekly boarding (Gr 8-12)",
-        "amount": 139400,
+        "amount": null,
         "frequency": "yearly",
-        "note": "Optional, on top of tuition",
+        "note": "Optional, on top of tuition. Amount not shown: the fees page and the PDF print different annual amounts",
         "applies": "boarders",
         "included": false
       },
       {
-        "item": "Uniform, stationery, transport, tours",
+        "item": "IEB exam fee",
         "amount": null,
-        "frequency": "yearly",
-        "note": "Not priced on the fees page",
-        "applies": "everyone",
+        "frequency": "once",
+        "note": "Grade 12 only. Amount not shown: the fees page and the PDF print different amounts; frequency not clear on the page",
+        "applies": "Gr 12",
         "included": false
       }
     ]

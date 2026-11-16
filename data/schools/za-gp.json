@@ -6717,29 +6717,29 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-13",
+    "lastChecked": "2026-11-16",
     "sources": [
-      "https://ruimsighighschool.co.za/wp-content/uploads/2026/06/RUIMSIG-TUITION-FEES-2026.pdf"
+      "https://ruimsighighschool.co.za/wp-content/uploads/2026/09/RUIMSIG-TUITION-FEES-2027.pdf"
     ],
     "fees": {
-      "year": 2026,
+      "year": 2027,
       "yearly": 45600,
       "monthly": 3800,
       "registration": 4800,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school, Gr 0000 to Gr 11. 2026 tuition per year (monthly over 12 instalments): Gr 0000-000 R45,600 (R3,800); Gr 00 R48,300 (R4,025); Gr R R51,600 (R4,300); Gr 1-3 R57,600 (R4,800); Gr 4-5 R61,200 (R5,100); Gr 6 R66,000 (R5,500); Gr 7 R70,800 (R5,900); Gr 8-9 R73,080 (R6,090); Gr 10-11 R77,160 (R6,430). Exam fees are not included. Once-off application fee R800 and once-off, non-refundable registration fee R4,800. Development fee R1,950 a year, printed against every grade. Family discount: 5% for a second child, 10% for a third or later child. Early-payment discounts on the sheet (5% before 30 November 2025, 2.5% before 31 December 2025) have passed. Bus and aftercare fees are separate; bus is billed for 10 months.",
-      "sourceKind": "the school's 2026 fee schedule",
+      "notes": "Independent school; sheet covers Gr 0000 to Gr 12. 2027 tuition per year (monthly over 12 payments): Gr 0000 R45,600 (R3,800); Gr 000-00 R49,200 (R4,100); Gr R R51,600 (R4,300); Gr 1-3 R60,600 (R5,050); Gr 4-6 R66,000 (R5,500); Gr 7 R75,600 (R6,300); Gr 8-9 R75,600 (R6,300); Gr 10 R80,400 (R6,700); Gr 11-12 R87,600 (R7,300). Exam fees are not included. Once-off application fee R800 (Gr 0000 to Gr 11) and once-off, non-refundable registration fee R4,800. A Development Fund Fee of R1,950 is printed against every grade as payable in November 2026; the sheet does not say how often it is charged. Family discount: 5% for a second child, 10% for a third or later child. Upfront-payment discounts on 2027 tuition: 5% if paid before 30 November 2026, 2.5% before 31 December 2026.",
+      "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
-          "grade": "Gr 0000-000",
+          "grade": "Gr 0000",
           "yearly": 45600,
           "monthly": 3800
         },
         {
-          "grade": "Gr 00",
-          "yearly": 48300,
-          "monthly": 4025
+          "grade": "Gr 000 & 00",
+          "yearly": 49200,
+          "monthly": 4100
         },
         {
           "grade": "Gr R",
@@ -6748,33 +6748,33 @@
         },
         {
           "grade": "Gr 1-3",
-          "yearly": 57600,
-          "monthly": 4800
+          "yearly": 60600,
+          "monthly": 5050
         },
         {
-          "grade": "Gr 4-5",
-          "yearly": 61200,
-          "monthly": 5100
-        },
-        {
-          "grade": "Gr 6",
+          "grade": "Gr 4-6",
           "yearly": 66000,
           "monthly": 5500
         },
         {
           "grade": "Gr 7",
-          "yearly": 70800,
-          "monthly": 5900
+          "yearly": 75600,
+          "monthly": 6300
         },
         {
           "grade": "Gr 8-9",
-          "yearly": 73080,
-          "monthly": 6090
+          "yearly": 75600,
+          "monthly": 6300
         },
         {
-          "grade": "Gr 10-11",
-          "yearly": 77160,
-          "monthly": 6430
+          "grade": "Gr 10",
+          "yearly": 80400,
+          "monthly": 6700
+        },
+        {
+          "grade": "Gr 11-12",
+          "yearly": 87600,
+          "monthly": 7300
         }
       ]
     },
@@ -6783,15 +6783,7 @@
         "item": "Application fee",
         "amount": 800,
         "frequency": "once",
-        "note": "New learners, once-off",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Development fee",
-        "amount": 1950,
-        "frequency": "yearly",
-        "note": "Printed against every grade",
+        "note": "New learners, once-off (Gr 0000 to Gr 11)",
         "applies": "everyone",
         "included": false
       }

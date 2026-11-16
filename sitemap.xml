@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://schoolmap.co.za/</loc></url>
-  <url><loc>https://schoolmap.co.za/school/</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://schoolmap.co.za/our-data/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/our-data/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/clarendon-park-primary-school/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/bedford-country-school/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/collegiate-girls-high-school/</loc><lastmod>2026-11-12</lastmod></url>
@@ -78,7 +78,7 @@
   <url><loc>https://schoolmap.co.za/school/lenasia-muslim-school/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/new-harvard-academy/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/solid-beginnings-school/</loc><lastmod>2026-11-13</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/ruimsig-academy/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/ruimsig-academy/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/northcliff-primary-school/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/saheti-school/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/royal-kings-school/</loc><lastmod>2026-11-13</lastmod></url>
@@ -172,7 +172,7 @@
   <url><loc>https://schoolmap.co.za/school/queensburgh-girls-high/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/laddsworth-primary/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/the-browns-school/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/st-nicholas-diocesan/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/st-nicholas-diocesan/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/epworth-school/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/northwood-school/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/maritzburg-college/</loc><lastmod>2026-11-04</lastmod></url>
@@ -182,7 +182,7 @@
   <url><loc>https://schoolmap.co.za/school/jens-primary/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/arena-park-secondary/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/clifton-school/</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/durban-girls-college/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/durban-girls-college/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/glenwood-high-school/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/glenwood-preparatory/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/khethani-christian-school/</loc><lastmod>2026-11-11</lastmod></url>
@@ -231,4 +231,10 @@
   <url><loc>https://schoolmap.co.za/school/kirstenhof-primary-school/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/trinityhouse-glenwood/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/abbotts-college-rondebosch/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/michael-oak-waldorf-school/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/milnerton-high-school/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/morester-akademie/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/outeniqua-primary-school/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/paul-roos-gimnasium/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/raphaeli-waldorf-school/</loc><lastmod>2026-11-16</lastmod></url>
 </urlset>

@@ -265,7 +265,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 27,
+      "schoolCount": 33,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -294,13 +294,19 @@
         "hebron-christenskool",
         "kirstenhof-primary-school",
         "trinityhouse-glenwood",
-        "abbotts-college-rondebosch"
+        "abbotts-college-rondebosch",
+        "michael-oak-waldorf-school",
+        "milnerton-high-school",
+        "morester-akademie",
+        "outeniqua-primary-school",
+        "paul-roos-gimnasium",
+        "raphaeli-waldorf-school"
       ],
       "bounds": [
         -34.172504,
         18.3783,
-        -33.802052,
-        22.491367
+        -31.6089,
+        23.3572
       ]
     }
   ]

@@ -2681,5 +2681,470 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "michael-oak-waldorf-school",
+    "name": "Michael Oak Waldorf School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Playgroup-Gr 13",
+    "area": "Kenilworth",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "4 Marlow Road, Kenilworth, Cape Town 7708",
+    "lat": -33.9967,
+    "lng": 18.4747,
+    "website": null,
+    "phone": "021 797 9728",
+    "email": "info@michaeloak.org.za",
+    "language": null,
+    "emis": "105000814",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-16",
+    "sources": [
+      "https://leaflet.michaeloak.org.za/wp-content/uploads/2026/09/Fee-Sheet-2027-Final-1.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": null,
+      "monthly": 5868,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent Waldorf school, Playgroup to Gr 13 (Matric). 2027 fees. Playgroup and Kindergarten (entry grade shown): annual tuition R63,053 plus annual sundry and levy fees R7,368, or R5,868 a month paid by the 10th over 12 months. The sheet prints no single annual total, so no yearly figure is shown; tuition and sundry fees are shown separately per grade. Other grades range from R7,864 a month (Gr 3) to R10,365 a month (Gr 13). Paying annually earns a 4% discount (before the first day of Term 1) or 2.5% (by 10 February), calculated on tuition only; there is also a termly option. Building levy (R355 first child, R175 each later child) is on the sheet but it does not say how often it is charged, so it is left out. Registration and application fees are not on the sheet.",
+      "sourceKind": "the school's 2027 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Playgroup",
+          "yearly": null,
+          "monthly": 5868
+        },
+        {
+          "grade": "Kindergarten",
+          "yearly": null,
+          "monthly": 5868
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": null,
+          "monthly": 7922
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": null,
+          "monthly": 7876
+        },
+        {
+          "grade": "Gr 3",
+          "yearly": null,
+          "monthly": 7864
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": null,
+          "monthly": 8197
+        },
+        {
+          "grade": "Gr 5",
+          "yearly": null,
+          "monthly": 8181
+        },
+        {
+          "grade": "Gr 6",
+          "yearly": null,
+          "monthly": 8217
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 8187
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": null,
+          "monthly": 10068
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": null,
+          "monthly": 10177
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 10132
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 10291
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 10261
+        },
+        {
+          "grade": "Gr 13 (Matric)",
+          "yearly": null,
+          "monthly": 10365
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Security levy",
+        "amount": 99,
+        "frequency": "monthly",
+        "note": "Charged per family, on the statement of the oldest child",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "milnerton-high-school",
+    "name": "Milnerton High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Milnerton",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Pienaar Road, Milnerton, Cape Town 7441",
+    "lat": -33.8711,
+    "lng": 18.497,
+    "website": "https://milnertonhighschool.co.za/",
+    "phone": "021 551 2217",
+    "email": null,
+    "language": null,
+    "emis": "103310260",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-16",
+    "sources": [
+      "https://milnertonhighschool.co.za/wp-content/uploads/2025/11/MHS-2026-school-fees-002.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 37680,
+      "monthly": 3050,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school, Gr 8-12. 2026 school fees are R37,680 a year for Gr 8-12, which includes a compulsory educational consumables fee of R1,140. Gr 8 (entry grade shown): R3,050 a month from March to December (10 payments); the sheet says a R7,180 deposit is taken into account in the Gr 8 annual price, so the deposit is part of the R37,680, not an extra; the monthly payments are what is left after it. Gr 9-12: R3,140 a month from January to December (12 payments). A R1,820 discount applied to annual payments received by 28 February; that date has passed and the discounted annual prices (Gr 8 R28,680, Gr 9-12 R35,860) are not shown as the yearly fee. Art and design levies (R700 each, Gr 10-12) are left out because the sheet does not say how often they are charged. Registration and application fees are not on the sheet. No general office email is published.",
+      "sourceKind": "the school's 2026 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Gr 8",
+          "yearly": 37680,
+          "monthly": 3050,
+          "instalments": null
+        },
+        {
+          "grade": "Gr 9-12",
+          "yearly": 37680,
+          "monthly": 3140,
+          "instalments": 12
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Music tuition",
+        "amount": 7980,
+        "frequency": "yearly",
+        "note": "Optional extra; also R1,995 per term or R665 a month (Jan-Dec). The sheet does not name the grades",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Locker hire",
+        "amount": 200,
+        "frequency": "yearly",
+        "note": "General lockers; the sheet does not name the grades",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "morester-akademie",
+    "name": "Môrester Akademie",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": null,
+    "area": "Vanrhynsdorp",
+    "city": "Vanrhynsdorp",
+    "province": "Western Cape",
+    "postcode": "8170",
+    "address": "Troe-Troe Street, Vanrhynsdorp 8170",
+    "lat": -31.6089,
+    "lng": 18.7509,
+    "website": "https://moresterakademie.co.za/",
+    "phone": "027 219 1217",
+    "email": null,
+    "language": null,
+    "emis": "137006037",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-16",
+    "sources": [
+      "https://moresterakademie.co.za/wp-content/uploads/2026/03/2026-Skoolfonds-uiteensetting-Morester-Akademie.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 32300,
+      "monthly": 3230,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Independent school in Vanrhynsdorp; grades are not printed on the fee sheet. 2026 school fund for a single learner: R32,300 a year, or R3,230 a month in 10 equal instalments from February to November (the sheet words the annual amount as once-off). Two learners from the same household: R61,000 a year, or R6,100 a month over the same 10 months. A 5% discount applied to a full year paid on or before 5 February; that date has passed. A deposit of 10% of the annual school fund is payable and is not deducted from the fund; the sheet's wording on who pays it was only partly readable, so no deposit amount is shown. Payments are due by the 5th of each month. The school's separate pre-school (Kinderwerf) fees are not included here.",
+      "sourceKind": "the school's 2026 fee sheet (in Afrikaans)",
+      "byGrade": [
+        {
+          "grade": "All grades (single learner)",
+          "yearly": 32300,
+          "monthly": 3230
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "outeniqua-primary-school",
+    "name": "Outeniqua Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 4-7",
+    "area": "George Central",
+    "city": "George",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Cathedral Street, George 6529",
+    "lat": -33.959,
+    "lng": 22.4626,
+    "website": "https://www.outeniquaprimary.co.za/",
+    "phone": "044 873 2292",
+    "email": null,
+    "language": null,
+    "emis": "118109294",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-16",
+    "sources": [
+      "https://www.outeniquaprimary.co.za/wp-content/uploads/2025/12/Outies-Fees-2026-English.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 18000,
+      "monthly": 1800,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Public school, Gr 4-7 (grades from the school website; the fee sheet does not print them). 2026 tuition is R18,000 per child a year, payable in advance: R1,800 a month in 10 instalments by the 7th of each month from January to October, or R4,500 a term in 4 instalments within the first 10 days of each term. A 5% discount (R17,100) applied to a full year paid by 28 February 2026; that date has passed. There is also an Additional Resource Fee of R100 per learner; the sheet calls it once-off but also describes it as an annual fee, so it is not listed as a hidden cost until the school clarifies. Registration and application fees are not on the sheet. Fee reduction can be applied for through the governing body. No general office email is published.",
+      "sourceKind": "the school's 2026 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Gr 4-7",
+          "yearly": 18000,
+          "monthly": 1800
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "paul-roos-gimnasium",
+    "name": "Paul Roos Gimnasium",
+    "type": "Public",
+    "phase": "High",
+    "grades": null,
+    "area": "Stellenbosch",
+    "city": "Stellenbosch",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Suidwal, Stellenbosch, 7600",
+    "lat": -33.9419,
+    "lng": 18.8621,
+    "website": "https://paulroos.co.za",
+    "phone": "021 887 0017",
+    "email": "info@paulroos.co.za",
+    "language": null,
+    "emis": "109310275",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-16",
+    "sources": [
+      "https://paulroos.co.za/fooie-fees/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 69300,
+      "monthly": 6930,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Public boys' high school in Stellenbosch (fee-charging). 2026 school fees: one amount for the school, R69,300 per year, or R6,930 a month for 10 months (February to November). Hostel (boarding) fees are separate: R76,200 per year, or R7,620 a month for 10 months (February to November). The fees page shows no separate amounts per grade and no registration or deposit amounts. Debit order forms are 2026 forms and show no amounts.",
+      "sourceKind": "the school's 2026 fees page",
+      "byGrade": [
+        {
+          "grade": "All grades",
+          "yearly": 69300,
+          "monthly": 6930
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Hostel (boarding) fees",
+        "amount": 76200,
+        "frequency": "yearly",
+        "note": "Per year, or R7,620 a month for 10 months (Feb-Nov); in addition to school fees",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "raphaeli-waldorf-school",
+    "name": "Raphaeli Waldorf School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Playgroup to Class 7",
+    "area": "Plettenberg Bay",
+    "city": "Plettenberg Bay",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Olive Hill Estate, Airport Road, Plettenberg Bay, 6600",
+    "lat": -34.0616,
+    "lng": 23.3572,
+    "website": "https://raphaeli.co.za",
+    "phone": "044 533 6157",
+    "email": "admin@raphaeli.co.za",
+    "language": null,
+    "emis": "100000575",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-16",
+    "sources": [
+      "https://raphaeli.co.za/assets/docs/fee-structure-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 3360,
+      "registration": 4000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent Waldorf school, Playgroup to Class 7. 2026 fee structure, monthly class fees: Playgroup and Kindergarten R3,360; Junior Primary (Classes 1-3) R4,327; Senior Primary (Classes 4-7) R4,408. Each includes a R115 monthly levy to the SA Federation of Waldorf Schools. Sibling rates: 10% off for the 2nd, 3rd or 4th child in primary school (R3,891.60 Classes 1-3, R3,967.20 Classes 4-7). Class materials are charged per year and added to the monthly fees: R800 Playgroup and Kindergarten, R1,500 Classes 1-7. Once-off application fee R520 per family and once-off, non-refundable enrolment fee R4,000 per pupil, both on registration. 7% discount if 12 months of fees are paid before 31 January. Aftercare R35 per hour (Classes 1 and 2 free 13:00 to 14:00 while waiting for siblings). Class camps for Classes 3-7 may need a contribution; no amount listed.",
+      "sourceKind": "the school's 2026 fee structure",
+      "byGrade": [
+        {
+          "grade": "Playgroup and Kindergarten",
+          "yearly": null,
+          "monthly": 3360
+        },
+        {
+          "grade": "Classes 1-3",
+          "yearly": null,
+          "monthly": 4327
+        },
+        {
+          "grade": "Classes 4-7",
+          "yearly": null,
+          "monthly": 4408
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Application fee",
+        "amount": 520,
+        "frequency": "once",
+        "note": "Once-off per family, on registration",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Class materials",
+        "amount": 800,
+        "frequency": "yearly",
+        "note": "Added to the monthly fees in 12 payments. For Playgroup and Kindergarten only.",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Class materials",
+        "amount": 1500,
+        "frequency": "yearly",
+        "note": "Added to the monthly fees in 12 payments. For Classes 1-7 only.",
+        "applies": "some",
+        "included": false
+      }
+    ]
   }
 ]
