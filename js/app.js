@@ -953,11 +953,11 @@
     return el("div", { className: "panel viz" }, parts);
   }
 
-  // One short orange line for the card: "R1,020 extras not on fee sheet · 3 unpriced".
+  // One short orange line for the card: "R1,020 extras on top of the fee · 3 unpriced".
   function extrasSummary(s) {
     var extras = L.yearlyExtras(s);
     var unpriced = L.unpricedCosts(s).length;
-    if (extras > 0) return L.formatRand(extras) + " extras not on fee sheet" + (unpriced ? " · " + unpriced + " unpriced" : "");
+    if (extras > 0) return L.formatRand(extras) + " extras on top of the fee" + (unpriced ? " · " + unpriced + " unpriced" : "");
     if (unpriced) return unpriced + (unpriced === 1 ? " extra cost" : " extra costs") + " not priced";
     return null;
   }
@@ -1346,7 +1346,7 @@
       noFeeLine(s),
       monthNote ? el("p", { className: "muted small" }, monthNote) : null,
       f.unofficial ? el("div", { className: "extras-line" }, icon("alert"), f.sourceNote || "These fees are not from the school itself. Confirm them with the school.") : null,
-      extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), "Includes " + L.formatRand(extras / div) + " you would not see on the fee sheet") : null,
+      extras > 0 ? el("div", { className: "extras-line" }, icon("alert"), "Includes " + L.formatRand(extras / div) + " on top of the fee") : null,
       panel("On the fee sheet" + (f.year ? " (" + f.year + ")" : ""), el("ul", { className: "rows" },
         state.costView === "month" && L.isNum(L.monthlyFees(s, grade))
           ? row("School fees" + (payments ? " (" + payments + " payments a year)" : ""), L.formatRand(L.monthlyFees(s, grade)))
@@ -1512,7 +1512,7 @@
     var how = el("h2", { id: "how-we-check", tabIndex: -1 }, "How we check fees");
     replace(el("div", { className: "prose" },
       el("h1", { className: "page-title" }, "About SchoolMap"),
-      el("p", {}, "SchoolMap shows what a school really costs before you apply: the school fees, plus the extras that aren't on the fee sheet, like levies, camps, uniforms and outings, and how admissions work."),
+      el("p", {}, "SchoolMap shows what a school really costs before you apply: the school fees, plus the extras on top of the fee, like levies, camps, uniforms and outings, and how admissions work."),
       el("p", {}, "It's free for parents, with no sign-up. Independent. Made in KZN. Schools can't pay to change their numbers or ranking."),
       el("p", {}, "We're starting with the Upper Highway in KwaZulu-Natal and adding more areas over time."),
       how,
