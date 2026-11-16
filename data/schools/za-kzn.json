@@ -3730,7 +3730,7 @@
       "registration": 400,
       "deposit": 3250,
       "instalments": 10,
-      "notes": "Independent day and boarding school (Pre-school to Gr 12). Youngest group (Gr RRR-R) shown. Fees can be paid over 10 months (January to October). A yearly General Purpose Levy is charged in January on top (e.g. R4,650 in Gr 1-3), covering accident insurance, basic textbooks, trips, camps and most compulsory outings. 'Registration' is the non-refundable R400 application fee (R100 extra if late); 'deposit' is the non-refundable R3,250 enrolment fee (R250 extra if late). Current Gr 7 learners pay a refundable R2,000 enrolment fee to secure Gr 8, refunded in January and forfeited if they do not return. Boarding R96,000 a year (R24,000 a term), plus a one-term boarding enrolment fee paid in advance. The Gr 12 IEB exam fee is R10,394 (how often it is charged is not stated). Overdue accounts pay 10% interest a year.",
+      "notes": "Independent day and boarding school (Pre-school to Gr 12). Youngest group (Gr RRR-R) shown. Fees can be paid over 10 months (January to October). A yearly General Purpose Levy is charged in January on top (e.g. R4,650 in Gr 1-3), covering accident insurance, basic textbooks, trips, camps and most compulsory outings. 'Registration' is the non-refundable R400 application fee (R100 extra if late); 'deposit' is the non-refundable R3,250 enrolment fee (R250 extra if late). Current Gr 7 learners pay a refundable R2,000 enrolment fee to secure Gr 8, refunded in January and forfeited if they do not return. Boarding R96,000 a year (R24,000 a term), plus a one-term boarding enrolment fee paid in advance. Gr 12 pays the IEB exam fee of R10,394. Parents are asked to have medical aid. Overdue accounts pay 10% interest a year.",
       "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
@@ -3842,11 +3842,11 @@
         "included": false
       },
       {
-        "item": "Medical aid",
-        "amount": null,
-        "frequency": "yearly",
-        "note": "Parents are asked to have medical aid; without it an affidavit is needed and hospital cover is limited to R50,000",
-        "applies": "everyone",
+        "item": "IEB exam fee",
+        "amount": 10394,
+        "frequency": "once",
+        "note": "Grade 12; Gr 12 fees must be paid in full before IEB exams begin",
+        "applies": "Gr 12",
         "included": false
       }
     ]
@@ -4956,7 +4956,7 @@
       "registration": 950,
       "deposit": 10638,
       "instalments": 10,
-      "notes": "Independent school, Gr 00 to Gr 12. 2027 tuition per year: Gr 00 R85,100, Gr R R91,200, Gr 1-3 R128,200, Gr 4-7 R148,500, Gr 8-12 R182,000. Monthly invoices run January to October (10 payments); Gr 12 monthly not shown here. Paying the year in advance by 13 January 2027 is cheaper (Gr 00 R81,270, Gr R R87,100, Gr 1-3 R122,430, Gr 4-7 R141,820, Gr 8-12 R173,810). 'Registration' is the R950 once-off, non-refundable application fee. 'Deposit' is the once-off non-refundable acceptance fee, which rises with grade (Gr 00 R10,638, Gr R R11,400, Gr 1-3 R16,025, Gr 4-7 R18,563, Gr 8-12 R22,750). Every child also pays R200 a year for accident insurance and Netcare 911. Compulsory development levies, boarding, the Gr 12 IEB fee and aftercare are NOT given amounts here because the school's fee page and its 2027 PDF print different numbers; ask the school.",
+      "notes": "Independent school, Gr 00 to Gr 12. 2027 tuition per year: Gr 00 R85,100, Gr R R91,200, Gr 1-3 R128,200, Gr 4-7 R148,500, Gr 8-12 R182,000. Monthly invoices run January to October (10 payments). Paying the year in advance by 13 January 2027 is cheaper (Gr 00 R81,270, Gr R R87,100, Gr 1-3 R122,430, Gr 4-7 R141,820, Gr 8-12 R173,810). 'Registration' is the R950 once-off, non-refundable application fee. 'Deposit' is the once-off non-refundable acceptance fee, which rises with grade (Gr 00 R10,638, Gr R R11,400, Gr 1-3 R16,025, Gr 4-7 R18,563, Gr 8-12 R22,750). Every child also pays R200 a year for accident insurance and Netcare 911. Compulsory levies: capital R4,400 and facility R2,300 a year. Aftercare R2,040 a month full-time, R1,638 or R1,374 part-time (10 months), R117 a day casual.",
       "byGrade": [
         {
           "grade": "Gr 00",
@@ -4986,15 +4986,14 @@
         {
           "grade": "Gr 12",
           "yearly": 182000,
-          "monthly": null
+          "monthly": 18200
         }
       ],
       "sourceKind": "the school's 2027 fee schedule"
     },
     "aftercare": {
       "available": true,
-      "monthly": null,
-      "note": "2027 aftercare is priced differently on the fees page (per term) and in the PDF (per month), so no amount is shown; ask the school"
+      "monthly": 2040
     },
     "hiddenCosts": [
       {
@@ -5014,26 +5013,34 @@
         "included": false
       },
       {
-        "item": "Development levies (capital + facility)",
-        "amount": null,
+        "item": "Capital Development Levy",
+        "amount": 4400,
         "frequency": "yearly",
-        "note": "Compulsory, every child. Amount not shown: the fees page says R1,550 a term, the PDF gives two yearly levies",
+        "note": "Compulsory, per child per year; paid monthly over 10 months",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Facility Development Levy",
+        "amount": 2300,
+        "frequency": "yearly",
+        "note": "Compulsory, per child per year; paid monthly over 10 months",
         "applies": "everyone",
         "included": false
       },
       {
         "item": "Weekly boarding (Gr 8-12)",
-        "amount": null,
+        "amount": 148500,
         "frequency": "yearly",
-        "note": "Optional, on top of tuition. Amount not shown: the fees page and the PDF print different annual amounts",
+        "note": "On top of tuition; R141,820 if paid by 13 January 2027, or 10 x R14,850",
         "applies": "boarders",
         "included": false
       },
       {
         "item": "IEB exam fee",
-        "amount": null,
+        "amount": 10394,
         "frequency": "once",
-        "note": "Grade 12 only. Amount not shown: the fees page and the PDF print different amounts; frequency not clear on the page",
+        "note": "Grade 12; debited monthly over 6 months",
         "applies": "Gr 12",
         "included": false
       }

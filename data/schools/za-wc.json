@@ -2811,6 +2811,14 @@
         "note": "Charged per family, on the statement of the oldest child",
         "applies": "everyone",
         "included": false
+      },
+      {
+        "item": "Building levy",
+        "amount": null,
+        "frequency": "yearly",
+        "note": "R355 first child, R175 each later child; how often is not printed",
+        "applies": "everyone",
+        "included": false
       }
     ]
   },
@@ -2888,6 +2896,14 @@
         "note": "General lockers; the sheet does not name the grades",
         "applies": "some",
         "included": false
+      },
+      {
+        "item": "Gr 8 deposit",
+        "amount": 7180,
+        "frequency": "once",
+        "note": "Part of the Gr 8 yearly fee of R37,680, not an extra",
+        "applies": "Gr 8",
+        "included": true
       }
     ]
   },
@@ -2932,7 +2948,7 @@
       "registration": null,
       "deposit": null,
       "instalments": 10,
-      "notes": "Independent school in Vanrhynsdorp; grades are not printed on the fee sheet. 2026 school fund for a single learner: R32,300 a year, or R3,230 a month in 10 equal instalments from February to November (the sheet words the annual amount as once-off). Two learners from the same household: R61,000 a year, or R6,100 a month over the same 10 months. A 5% discount applied to a full year paid on or before 5 February; that date has passed. A deposit of 10% of the annual school fund is payable and is not deducted from the fund; the sheet's wording on who pays it was only partly readable, so no deposit amount is shown. Payments are due by the 5th of each month. The school's separate pre-school (Kinderwerf) fees are not included here.",
+      "notes": "Independent school in Vanrhynsdorp; grades are not printed on the fee sheet. 2026 school fund for a single learner: R32,300 a year, or R3,230 a month in 10 equal instalments from February to November (the sheet words the annual amount as once-off). Two learners from the same household: R61,000 a year, or R6,100 a month over the same 10 months. A 5% discount applied to a full year paid on or before 5 February; that date has passed. All new enrolments pay a deposit of 10% of the yearly school fund on acceptance; it is not part of the fund and is not deducted from it. Payments are due by the 5th of each month. The school's separate pre-school (Kinderwerf) fees are not included here.",
       "sourceKind": "the school's 2026 fee sheet (in Afrikaans)",
       "byGrade": [
         {
@@ -2942,7 +2958,16 @@
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "Deposit (new enrolments)",
+        "amount": null,
+        "frequency": "once",
+        "note": "10% of the yearly school fund, paid on acceptance; not part of the fee and not deducted",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
   },
   {
     "id": "outeniqua-primary-school",
@@ -2985,7 +3010,7 @@
       "registration": null,
       "deposit": null,
       "instalments": 10,
-      "notes": "Public school, Gr 4-7 (grades from the school website; the fee sheet does not print them). 2026 tuition is R18,000 per child a year, payable in advance: R1,800 a month in 10 instalments by the 7th of each month from January to October, or R4,500 a term in 4 instalments within the first 10 days of each term. A 5% discount (R17,100) applied to a full year paid by 28 February 2026; that date has passed. There is also an Additional Resource Fee of R100 per learner; the sheet calls it once-off but also describes it as an annual fee, so it is not listed as a hidden cost until the school clarifies. Registration and application fees are not on the sheet. Fee reduction can be applied for through the governing body. No general office email is published.",
+      "notes": "Public school, Gr 4-7 (grades from the school website; the fee sheet does not print them). 2026 tuition is R18,000 per child a year, payable in advance: R1,800 a month in 10 instalments by the 7th of each month from January to October, or R4,500 a term in 4 instalments within the first 10 days of each term. A 5% discount (R17,100) applied to a full year paid by 28 February 2026; that date has passed. There is also an Additional Resource Fee of R100 per learner; the sheet calls it once-off and an annual fee, so it is shown as a yearly cost. Registration and application fees are not on the sheet. Fee reduction can be applied for through the governing body. No general office email is published.",
       "sourceKind": "the school's 2026 fee sheet",
       "byGrade": [
         {
@@ -2995,7 +3020,16 @@
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "Additional Resource Fee",
+        "amount": 100,
+        "frequency": "yearly",
+        "note": "Per learner; the sheet calls it once-off and an annual fee",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
   },
   {
     "id": "paul-roos-gimnasium",
@@ -3141,8 +3175,8 @@
         "item": "Class materials",
         "amount": 1500,
         "frequency": "yearly",
-        "note": "Added to the monthly fees in 12 payments. For Classes 1-7 only.",
-        "applies": "some",
+        "note": "Added to the monthly fees in 12 payments. Classes 1-7 (Waldorf class = grade).",
+        "applies": "Gr 1-7",
         "included": false
       }
     ]

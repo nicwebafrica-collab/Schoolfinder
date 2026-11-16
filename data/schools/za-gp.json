@@ -6692,7 +6692,7 @@
     "name": "Ruimsig Academy",
     "type": "Private",
     "phase": "Combined",
-    "grades": "Gr 0000-11",
+    "grades": "Gr 0000-12",
     "area": "Ruimsig",
     "city": "Johannesburg",
     "province": "Gauteng",
@@ -6784,6 +6784,14 @@
         "amount": 800,
         "frequency": "once",
         "note": "New learners, once-off (Gr 0000 to Gr 11)",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Development Fund Fee",
+        "amount": null,
+        "frequency": "once",
+        "note": "R1,950, payable November 2026; how often is not printed",
         "applies": "everyone",
         "included": false
       }
