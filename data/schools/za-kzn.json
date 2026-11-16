@@ -4997,14 +4997,6 @@
     },
     "hiddenCosts": [
       {
-        "item": "Application fee",
-        "amount": 950,
-        "frequency": "once",
-        "note": "Per student, non-refundable, payable when applying",
-        "applies": "everyone",
-        "included": false
-      },
-      {
         "item": "Accident insurance and Netcare 911",
         "amount": 200,
         "frequency": "yearly",
