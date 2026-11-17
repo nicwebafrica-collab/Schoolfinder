@@ -2185,7 +2185,7 @@
     "name": "Blanco Laerskool",
     "type": "Public",
     "phase": "Primary",
-    "grades": "Bokkieland, Gr RR-7",
+    "grades": "Gr RRR-7",
     "area": "Blanco",
     "city": "George",
     "province": "Western Cape",
@@ -2203,48 +2203,53 @@
     "outings": [],
     "aftercare": {
       "available": true,
-      "monthly": 710
+      "monthly": 760
     },
     "transport": {
       "available": null,
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-15",
+    "lastChecked": "2026-11-17",
     "sources": [
-      "https://www.blancolaerskool.co.za/wp-content/uploads/2025/12/Skoolfonds-kort-2026.pdf"
+      "https://www.blancolaerskool.co.za/wp-content/uploads/2026/11/Laerskool-Blanco-Skoolfonds-2027.pdf"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 27500,
-      "monthly": 2500,
+      "year": 2027,
+      "yearly": 28600,
+      "monthly": 2600,
       "registration": 250,
       "deposit": null,
       "instalments": 11,
-      "notes": "Public primary school in Blanco, George. 2026 school fees (Skoolfooie vir 2026), paid monthly over 11 months or per year: Bokkieland R27,500 a year (R2,500 a month); Gr RR and Gr R R16,940 (R1,540); Gr 1 to Gr 7 R16,060 (R1,460). Headline shows Bokkieland, the lowest class listed. Once-off registration fee R250, new learners only. Gr RR and Gr R pay a once-off R1,540 loom (stationery and support materials) fee with registration. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R710 a month for the first child (second child R610, third child R510), or R50 a day; lunch packs R60 a day if needed.",
-      "sourceKind": "the school's 2026 fee sheet",
+      "notes": "Public primary school in Blanco, George. 2027 school fees (Skoolfooie vir 2027), paid monthly over 11 months or per year, by the sheet's own grade labels: Gr RRR (2 to 4 years) R28,600 a year (R2,600 a month); Gr RR (5 years) R17,600 (R1,600); Gr R (6 years) R17,600 (R1,600); Gr 1 to Gr 7 R16,940 (R1,540). Headline shows Gr RRR, the lowest class listed. Once-off registration fee R250, new learners only (printed with the Gr 1 to Gr 7 fee). Gr RR and Gr R pay a once-off R1,600 LOOM fee (stationery and support materials) with registration. Gr RRR also has a LOOM fee of R2,600, payable by the end of November; the sheet does not say how often it is charged, so it is not listed as a cost. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R760 a month for the first child, or R54 a day; meal packs R65 a day per child if needed.",
+      "sourceKind": "the school's 2027 fee sheet",
       "byGrade": [
         {
-          "grade": "Bokkieland",
-          "yearly": 27500,
-          "monthly": 2500
+          "grade": "Gr RRR (2-4 jaar)",
+          "yearly": 28600,
+          "monthly": 2600
         },
         {
-          "grade": "Gr RR-R",
+          "grade": "Gr RR (5 jaar)",
+          "yearly": 17600,
+          "monthly": 1600
+        },
+        {
+          "grade": "Gr R (6 jaar)",
+          "yearly": 17600,
+          "monthly": 1600
+        },
+        {
+          "grade": "Gr 1-Gr 7",
           "yearly": 16940,
           "monthly": 1540
-        },
-        {
-          "grade": "Gr 1-7",
-          "yearly": 16060,
-          "monthly": 1460
         }
       ]
     },
     "hiddenCosts": [
       {
-        "item": "Loom fee (stationery and support materials)",
-        "amount": 1540,
+        "item": "LOOM fee (stationery and support materials)",
+        "amount": 1600,
         "frequency": "once",
         "note": "Gr RR and Gr R only, paid with registration",
         "applies": "some",
@@ -3180,5 +3185,326 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "montgomery-and-miller-academy",
+    "name": "Montgomery and Miller Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 7-12",
+    "area": "Audas Estate",
+    "city": "Somerset West",
+    "province": "Western Cape",
+    "postcode": "7130",
+    "address": "40 St James Street, Audas Estate, Somerset West",
+    "lat": -34.083252,
+    "lng": 18.843305,
+    "website": null,
+    "phone": "021 851 4381",
+    "email": null,
+    "language": null,
+    "emis": "100000583",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-17",
+    "sources": [
+      "https://www.education.gov.za/LinkClick.aspx?fileticket=cF64WfdfGD0%3D&tabid=466&portalid=0&mid=14616"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 102000,
+      "monthly": 8500,
+      "registration": 5400,
+      "deposit": null,
+      "instalments": 12,
+      "notes": "Independent school, Grade 7 to Grade 12, plus post-matric subjects at R4,050 per subject. Fees are paid monthly in advance by debit order over 12 months, or as one annual fee. 5% off if paid in full before 31 January 2027. Non-refundable registration fee of R5,400 per learner on acceptance; the registration fee and the first month's fee must be paid to secure a place. Late payment fee R500 and returned debit order fee R150. The school says the schedule is valid from 1 March 2026 to 1 March 2028 and may change without notice. Fees from the school's 2027 fee schedule, sent to SchoolMap by the school.",
+      "sourceKind": "the school's 2027 fee schedule, sent to SchoolMap by the school",
+      "byGrade": [
+        {
+          "grade": "Gr 7",
+          "yearly": 102000,
+          "monthly": 8500
+        },
+        {
+          "grade": "Gr 8",
+          "yearly": 103956,
+          "monthly": 8663
+        },
+        {
+          "grade": "Gr 9",
+          "yearly": 107040,
+          "monthly": 8920
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": 114600,
+          "monthly": 9550
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": 116640,
+          "monthly": 9720
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 119640,
+          "monthly": 9970
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Camps",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "The school gives about R2,700 a year ('Annually'), an approximate amount, so it isn't added to the total. Not included in tuition."
+      },
+      {
+        "item": "School uniform",
+        "amount": null,
+        "frequency": "once",
+        "applies": "everyone",
+        "included": false,
+        "note": "The school gives about R4,200, bought 'as required', an approximate amount, so it isn't added to the total. Not included in tuition."
+      }
+    ]
+  },
+  {
+    "id": "sunlands-primary-school",
+    "name": "Sunlands Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Lansdowne",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Newent Street, Kenwyn, 7780",
+    "lat": -33.998,
+    "lng": 18.4989,
+    "website": "https://sunlands.co.za/",
+    "phone": "021 797 8010",
+    "email": null,
+    "language": null,
+    "emis": "105309348",
+    "country": "ZA",
+    "quintile": 5,
+    "noFee": false,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-17",
+    "sources": [
+      "https://sunlands.co.za/wp-content/uploads/2025/12/2026-FEES.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 26400,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public school, Gr R to Gr 7. The 2026 fee sheet prints a per annum amount for Gr R (R26,400, shown as R2,400 x 11, payable 1 Jan to 1 Nov) and for Gr 1-7 (first child: R16,940, shown as R1,540 x 11, same dates). The sheet does not use the word monthly beside the x 11 amounts, so no monthly figure is given here. Fees for second, third and fourth children are printed as separate rows and left out; Gr 1-7 above is the first-child amount. Early-payment amounts for 31 January 2026 have passed. A music fee of R1,750 per child per term is printed. Several other rows (10-instalment rows, a R7,000 / R700 row, R40 and R70 'on collection') and the aftercare rows have no usable label or amount, so they are left out. No registration or application fee is printed.",
+      "sourceKind": "the school's 2026 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 26400,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-7 (first child)",
+          "yearly": 16940,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "sweet-valley-primary-school",
+    "name": "Sweet Valley Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Bergvliet",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "100 Dreyersdal Road, Bergvliet, Cape Town, 7945",
+    "lat": -34.043,
+    "lng": 18.4497,
+    "website": "https://sweetvalleyprimary.co.za/",
+    "phone": "021 712 3081",
+    "email": null,
+    "language": null,
+    "emis": "105309352",
+    "country": "ZA",
+    "quintile": 5,
+    "noFee": false,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 883
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-17",
+    "sources": [
+      "https://sweetvalleyprimary.co.za/wp-content/uploads/2025/12/FEE-STRUCTURE-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 43780,
+      "monthly": 3980,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public school, Gr R to Gr 7. One 2026 school fee for all grades, per child: R43,780 a year, or R3,980 a month by debit order over 11 months (January to November). The sheet also offered a discount for paying in full by 31 December 2025 (R550) or by 31 January 2026 (R500); both dates have passed and the discounted amounts are left out. Optional aftercare, per child, paid over 10 months (February to November): 12:45-14:30 R883 a month, 14:30-17:30 R1,235 a month, 12:45-17:30 R1,391 a month. Optional music lessons are also charged per child (for example group half hour R502 a month, individual one hour R1,416 a month). No registration or application fee is printed.",
+      "sourceKind": "the school's 2026 fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr R-7",
+          "yearly": 43780,
+          "monthly": 3980
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "vredelust-primary-school",
+    "name": "Vredelust Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Vredelust",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Sixth Avenue, Bellville, 7530",
+    "lat": -33.8977,
+    "lng": 18.613,
+    "website": "https://www.vredelustps.co.za/",
+    "phone": "021 948 3051",
+    "email": null,
+    "language": null,
+    "emis": "101309369",
+    "country": "ZA",
+    "quintile": 5,
+    "noFee": false,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1070
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-17",
+    "sources": [
+      "https://www.vredelustps.co.za/wp-content/uploads/2026/01/SCHOOL-AFTERCARE-FEES-BREAKDOWN_2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 19910,
+      "monthly": 1810,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public school, Gr R to Gr 7. The 2026 school and aftercare fee sheet prints school fees for the full year (due by 1 February 2026) or in 11 instalments from 31 January to 30 November: Gr R R19,910 or R1,810 an instalment; Gr 1-7 R17,270 or R1,570 an instalment. Discounts printed: 5% if school fees are paid in full by 1 February 2026 (passed), and for parents with 3 or more learners at the school the oldest learner gets 50% off. Optional aftercare, same 11 instalments: Gr R-2 R1,070 an instalment (R11,770 for the year); Gr 3-7 R960 an instalment (R10,560 for the year). No registration or application fee is printed.",
+      "sourceKind": "the school's 2026 school and aftercare fee sheet",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 19910,
+          "monthly": 1810
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 17270,
+          "monthly": 1570
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "westerford-high-school",
+    "name": "Westerford High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Rondebosch",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "220 Main Road, Rondebosch, Cape Town, 7700",
+    "lat": -33.969,
+    "lng": 18.4648,
+    "website": "https://www.westerford.co.za/",
+    "phone": "021 689 9154",
+    "email": null,
+    "language": null,
+    "emis": "105310316",
+    "country": "ZA",
+    "quintile": 5,
+    "noFee": false,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-17",
+    "sources": [
+      "https://www.westerford.co.za/?page_id=3575"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 62800,
+      "monthly": 6280,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Public high school. The page '2026 Westerford Fee Structure' prints one fee structure with no grade split; it is used here for Gr 8-12. Single payment after 31 January 2026: R62,800. Paying in one amount by 31 January 2026 was R61,450, described as a R1,350 discount on the annual fees (passed). Monthly options: ten payments of R6,280 by debit order or EFT (the standard option used here), or eleven payments of R5,710. Four quarterly payments of R15,700 are paid in advance at the start of each term. The page says all amounts include the Annual Capital Levy of R2,400. Music tuition is on a separate music fee form and is not included here. No registration or application fee is printed.",
+      "sourceKind": "the school's 2026 fee structure page",
+      "byGrade": [
+        {
+          "grade": "Gr 8-12",
+          "yearly": 62800,
+          "monthly": 6280
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

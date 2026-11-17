@@ -821,41 +821,41 @@
     "email": "admin@hhs.co.za",
     "language": "English",
     "fees": {
-      "year": 2026,
-      "yearly": 55720,
-      "monthly": null,
+      "year": 2027,
+      "yearly": 58350,
+      "monthly": 5835,
       "registration": null,
       "deposit": null,
-      "notes": "Fee-paying public school. Gr 8 R55,720, Gr 9-12 R53,720. Learning Support Unit: Gr 8 R61,720, Gr 9 R59,720. 2027 fees set at the November budget meeting. Instalment options not published. Uniform prices are from the A-Team Uniforms July 2026 price list in the school's uniform shop (photo taken on site); the shop says prices can change and are quoted on average sizes.",
+      "notes": "Fee-paying public school. Fees are due on 1 January, or by arrangement in 10 equal payments from January to October. 5% off if paid in full before 31 December 2026, or R1,000 off if paid in full before 28 February 2027. Grade 8: R5,635 a month if the R2,000 enrolment deposit was paid the year before. Learning Support Unit: Gr 8 R64,350, Gr 9 R62,350 (R6,435 and R6,235 a month). Third and later children: 50% off if the first two children's fees are paid in full. A full term's notice is needed before leaving. Fee exemption applications must be finalised by 31 March 2027. Uniform prices are from the A-Team Uniforms July 2026 price list in the school's uniform shop (photo taken on site); the shop says prices can change and are quoted on average sizes.",
       "byGrade": [
         {
           "grade": "Gr 8",
-          "yearly": 55720,
-          "monthly": null
+          "yearly": 58350,
+          "monthly": 5835
         },
         {
           "grade": "Gr 9",
-          "yearly": 53720,
-          "monthly": null
+          "yearly": 56350,
+          "monthly": 5635
         },
         {
           "grade": "Gr 10",
-          "yearly": 53720,
-          "monthly": null
+          "yearly": 56350,
+          "monthly": 5635
         },
         {
           "grade": "Gr 11",
-          "yearly": 53720,
-          "monthly": null
+          "yearly": 56350,
+          "monthly": 5635
         },
         {
           "grade": "Gr 12",
-          "yearly": 53720,
-          "monthly": null
+          "yearly": 56350,
+          "monthly": 5635
         }
       ],
-      "instalments": null,
-      "sourceKind": "the 2026 fees on the school's website"
+      "instalments": 10,
+      "sourceKind": "the school's 2027 fee letter, supplied by the school"
     },
     "hiddenCosts": [
       {
@@ -915,6 +915,30 @@
         "included": false
       },
       {
+        "item": "Enrolment deposit (new Grade 8)",
+        "amount": 2000,
+        "frequency": "once",
+        "applies": "some",
+        "included": true,
+        "note": "Paid the year before, when your child is enrolled. It counts towards the Grade 8 fee, so the monthly payment drops from R5,835 to R5,635. Grade 8 LSU learners also pay the R6,000 LSU fee in advance (monthly drops from R6,435 to R5,635)."
+      },
+      {
+        "item": "Learning Support Unit (Gr 8-9)",
+        "amount": 6000,
+        "frequency": "yearly",
+        "applies": "some",
+        "included": false,
+        "note": "Gr 8 and Gr 9 learners in the Learning Support Unit only. Not discountable or exemptable."
+      },
+      {
+        "item": "Learning Support Unit (Gr 10-12)",
+        "amount": 2000,
+        "frequency": "yearly",
+        "applies": "some",
+        "included": false,
+        "note": "Gr 10-12 learners in the Learning Support Unit only. Not discountable or exemptable; invoiced separately from school fees."
+      },
+      {
         "item": "Camps, tours, books, transport",
         "amount": null,
         "frequency": "yearly",
@@ -964,7 +988,7 @@
       "applyUrl": "https://hhs.co.za/apply",
       "source": "https://hhs.co.za/apply"
     },
-    "lastChecked": "2026-11-03",
+    "lastChecked": "2026-11-17",
     "sources": [
       "https://hhs.co.za/fees",
       "https://hhs.co.za/apply",
@@ -7033,5 +7057,59 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "pelham-senior-primary-school",
+    "name": "Pelham Senior Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 4-7",
+    "area": "Pelham",
+    "city": "Pietermaritzburg",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "Bromhead, Pelham, Pietermaritzburg, 3201",
+    "lat": -29.6333,
+    "lng": 30.3926,
+    "website": "https://www.pelham.co.za/",
+    "phone": "033 386 1211",
+    "email": null,
+    "language": null,
+    "emis": "500246827",
+    "country": "ZA",
+    "quintile": 5,
+    "noFee": false,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-17",
+    "sources": [
+      "https://www.pelham.co.za/admissions/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 32500,
+      "monthly": 3250,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Public school, Gr 4 to Gr 7. The admissions page prints one 2026 fee for Gr 4-7: R32,500 per pupil per annum, or R3,250 a month over 10 months (January to October). Fees are payable in advance and any arrangements are made with the Bursar. The page offers a discount (currently 5%) for paying the full annual fee by the end of February; for 2026 that date has passed. Learners placed in the Q Class pay no additional school fee levies. The page prints no registration or application fee, and no aftercare, transport or outing costs.",
+      "sourceKind": "the school's admissions page, 2026 fees",
+      "byGrade": [
+        {
+          "grade": "Gr 4-7",
+          "yearly": 32500,
+          "monthly": 3250
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

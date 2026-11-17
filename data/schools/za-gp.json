@@ -12227,7 +12227,7 @@
     "name": "St Columba's School",
     "type": "Private",
     "phase": "Combined",
-    "grades": "Gr 0000-10",
+    "grades": "Gr 0000-11",
     "area": "Benoni",
     "city": "Benoni",
     "province": "Gauteng",
@@ -12245,66 +12245,66 @@
     "outings": [],
     "aftercare": {
       "available": true,
-      "monthly": 1820
+      "monthly": 1926
     },
     "transport": {
       "available": null,
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-15",
+    "lastChecked": "2026-11-17",
     "sources": [
       "https://stcolumbas.co.za/apply-now/"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 38096,
-      "monthly": 3175,
+      "year": 2027,
+      "yearly": 40382,
+      "monthly": 3365,
       "registration": 5000,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school, Gr 0000 (from 18 months) to Gr 10. 2026 fees per year (debit order over 12 months): Gr 0000 R38,096 (R3,175); Gr 000 R36,408 (R3,034); Gr 00 R43,689 (R3,641); Gr 0 R50,971 (R4,248); Gr 1-6 R77,913 (R6,493); Gr 7 R84,405 (R7,034); Gr 8-9 R89,602 (R7,467); Gr 10 R96,546 (R8,045). Monthly amounts are rounded, so they differ slightly from the yearly fee. Amounts are for the first child; sibling discount on annual fees is 5% for a 2nd child, 7% for a 3rd, 9% for a 4th. Capital development levy R2,160 a year per family. Admission fee R5,000 to secure a place, once per family; application fee R400. Aftercare R1,820 a month (Gr 000 to 10). The 5% pay-upfront discount was due by 31 January and has passed.",
-      "sourceKind": "the school's 2026 fee structure page",
+      "notes": "Independent school, Gr 0000 (from 18 months) to Gr 11. 2027 fees per year (debit order over 12 months): Gr 0000 R40,382 (R3,365); Gr 000 R38,592 (R3,216); Gr 00 R46,310 (R3,860); Gr 0 R54,029 (R4,502); Gr 1-6 R82,588 (R6,882); Gr 7 R89,470 (R7,456); Gr 8-9 R94,978 (R7,915); Gr 10-11 R102,339 (R8,528). Monthly amounts are rounded, so they differ slightly from the yearly fee. Sibling discount on annual fees: 5% for a 2nd child, 7% for a 3rd, 9% for a 4th. The sheet offers 5% off the annual fee if paid upfront for the year by 31 January. Capital development levy R2,280 a year per family. Admission fee R5,000 to secure a place (non-refundable), one fee per family; application fee R400. Aftercare R1,926 a month (Gr 000 to Gr 11, includes hot lunch), or R180 a day; Gr 0000 aftercare is not priced (contact the school).",
+      "sourceKind": "the school's 2027 fee structure page",
       "byGrade": [
         {
           "grade": "Gr 0000",
-          "yearly": 38096,
-          "monthly": 3175
+          "yearly": 40382,
+          "monthly": 3365
         },
         {
           "grade": "Gr 000",
-          "yearly": 36408,
-          "monthly": 3034
+          "yearly": 38592,
+          "monthly": 3216
         },
         {
           "grade": "Gr 00",
-          "yearly": 43689,
-          "monthly": 3641
+          "yearly": 46310,
+          "monthly": 3860
         },
         {
           "grade": "Gr 0",
-          "yearly": 50971,
-          "monthly": 4248
+          "yearly": 54029,
+          "monthly": 4502
         },
         {
           "grade": "Gr 1-6",
-          "yearly": 77913,
-          "monthly": 6493
+          "yearly": 82588,
+          "monthly": 6882
         },
         {
           "grade": "Gr 7",
-          "yearly": 84405,
-          "monthly": 7034
+          "yearly": 89470,
+          "monthly": 7456
         },
         {
           "grade": "Gr 8-9",
-          "yearly": 89602,
-          "monthly": 7467
+          "yearly": 94978,
+          "monthly": 7915
         },
         {
-          "grade": "Gr 10",
-          "yearly": 96546,
-          "monthly": 8045
+          "grade": "Gr 10-11",
+          "yearly": 102339,
+          "monthly": 8528
         }
       ]
     },
@@ -12319,7 +12319,7 @@
       },
       {
         "item": "Capital development levy",
-        "amount": 2160,
+        "amount": 2280,
         "frequency": "yearly",
         "note": "Per family, payable monthly or annually",
         "applies": "everyone",
@@ -12454,128 +12454,63 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-15",
+    "lastChecked": "2026-11-17",
     "sources": [
       "https://www.sanctamaria.co.za/administration/"
     ],
     "fees": {
-      "year": 2026,
+      "year": 2027,
       "yearly": null,
-      "monthly": 1910,
-      "registration": null,
+      "monthly": 2010,
+      "registration": 1100,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent primary school, Gr R to Gr 7. 2026 tuition is R1,910 a month, the same for every grade, January to November. Book fees differ by grade and are charged at the start of the year: Gr R R990, Gr 1 R1,100, Gr 2 R1,220, Gr 3 R1,290, Gr 4 R1,300, Gr 5 R1,335, Gr 6 R1,360, Gr 7 R1,430. The school describes the book fee as once-off, payable at the start of the year; it is shown here as a yearly cost. No yearly total or discount is printed. The page says tuition covers Kinderkinetics (Gr R and 1), swimming, computer and extra science lessons.",
-      "sourceKind": "the school's 2026 administration page",
+      "notes": "Independent primary school, Gr R to Gr 7. 2027 tuition is R2,010 a month, the same for every grade, January to November. No yearly total or discount is printed. The sheet lists a once-off registration fee per grade, payable at the start of the year: Gr R R1,100, Gr 1 R1,200, Gr 2 R1,280, Gr 3 R1,360, Gr 4 R1,370, Gr 5 R1,400, Gr 6 R1,440, Gr 7 R1,500. It does not say whether this is for new learners only or charged to every learner each year, so it is not listed as a yearly cost; the 2026 sheet called these amounts book fees. The page says fees cover Kinderkinetics (Gr R and 1), swimming, computer and extra science lessons.",
+      "sourceKind": "the school's 2027 administration page",
       "byGrade": [
         {
           "grade": "Gr R",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 1",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 2",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 3",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 4",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 5",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 6",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         },
         {
           "grade": "Gr 7",
           "yearly": null,
-          "monthly": 1910
+          "monthly": 2010
         }
       ]
     },
-    "hiddenCosts": [
-      {
-        "item": "Book fees (Gr R)",
-        "amount": 990,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr R",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 1)",
-        "amount": 1100,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 1",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 2)",
-        "amount": 1220,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 2",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 3)",
-        "amount": 1290,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 3",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 4)",
-        "amount": 1300,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 4",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 5)",
-        "amount": 1335,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 5",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 6)",
-        "amount": 1360,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 6",
-        "included": false
-      },
-      {
-        "item": "Book fees (Gr 7)",
-        "amount": 1430,
-        "frequency": "yearly",
-        "note": "Charged at the start of the year",
-        "applies": "Gr 7",
-        "included": false
-      }
-    ]
+    "hiddenCosts": []
   },
   {
     "id": "nova-pioneer-ruimsig-senior",

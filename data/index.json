@@ -188,7 +188,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 59,
+      "schoolCount": 60,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -249,7 +249,8 @@
         "maris-stella-school",
         "canaan-college",
         "lynford-school",
-        "crawford-preparatory-la-lucia"
+        "crawford-preparatory-la-lucia",
+        "pelham-senior-primary-school"
       ],
       "bounds": [
         -30.8726,
@@ -265,7 +266,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 33,
+      "schoolCount": 38,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -300,7 +301,12 @@
         "morester-akademie",
         "outeniqua-primary-school",
         "paul-roos-gimnasium",
-        "raphaeli-waldorf-school"
+        "raphaeli-waldorf-school",
+        "montgomery-and-miller-academy",
+        "sunlands-primary-school",
+        "sweet-valley-primary-school",
+        "vredelust-primary-school",
+        "westerford-high-school"
       ],
       "bounds": [
         -34.172504,

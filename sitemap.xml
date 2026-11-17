@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://schoolmap.co.za/</loc></url>
-  <url><loc>https://schoolmap.co.za/school/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://schoolmap.co.za/our-data/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://schoolmap.co.za/our-data/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/clarendon-park-primary-school/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/bedford-country-school/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/collegiate-girls-high-school/</loc><lastmod>2026-11-12</lastmod></url>
@@ -139,9 +139,9 @@
   <url><loc>https://schoolmap.co.za/school/tom-newby-school/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/laerskool-bakenkop/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/springvale-primary-school/</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/st-columba-s-school/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/st-columba-s-school/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/laerskool-louw-geldenhuys/</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/sancta-maria-junior-school/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/sancta-maria-junior-school/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/nova-pioneer-ruimsig-senior/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/abbotts-college-bordeaux/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/hillside-akademie/</loc><lastmod>2026-11-15</lastmod></url>
@@ -149,7 +149,7 @@
   <url><loc>https://schoolmap.co.za/school/waterfall-college/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/curro-hillcrest-primary/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/curro-hillcrest-high/</loc><lastmod>2026-11-03</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/hillcrest-high-school/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/hillcrest-high-school/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/hillcrest-primary-school/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/forest-view-primary/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/highbury-preparatory/</loc><lastmod>2026-10-27</lastmod></url>
@@ -204,6 +204,7 @@
   <url><loc>https://schoolmap.co.za/school/canaan-college/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/lynford-school/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/crawford-preparatory-la-lucia/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/pelham-senior-primary-school/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/bizweni-primary-school/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/fish-hoek-primary-school/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/blouberg-international-academy/</loc><lastmod>2026-11-12</lastmod></url>
@@ -225,7 +226,7 @@
   <url><loc>https://schoolmap.co.za/school/camps-bay-high-school/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/cedar-house-school/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/herschel-girls-school/</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://schoolmap.co.za/school/blanco-laerskool/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/blanco-laerskool/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/koos-sadie-primary-school/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/hebron-christenskool/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/kirstenhof-primary-school/</loc><lastmod>2026-11-15</lastmod></url>
@@ -237,4 +238,9 @@
   <url><loc>https://schoolmap.co.za/school/outeniqua-primary-school/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/paul-roos-gimnasium/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://schoolmap.co.za/school/raphaeli-waldorf-school/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/montgomery-and-miller-academy/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/sunlands-primary-school/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/sweet-valley-primary-school/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/vredelust-primary-school/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://schoolmap.co.za/school/westerford-high-school/</loc><lastmod>2026-11-17</lastmod></url>
 </urlset>
