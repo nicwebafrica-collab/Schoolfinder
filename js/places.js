@@ -99,6 +99,9 @@
     { name: "Brackenfell", region: "Western Cape", lat: -33.8730, lng: 18.6900, note: "Cape Town" },
     { name: "Milnerton", region: "Western Cape", lat: -33.8715, lng: 18.4975, note: "Cape Town" },
     { name: "Stellenbosch", region: "Western Cape", lat: -33.9321, lng: 18.8602 },
+    { name: "Bellville", region: "Western Cape", lat: -33.9007, lng: 18.6290, note: "Cape Town" },
+    { name: "Rondebosch", region: "Western Cape", lat: -33.9631, lng: 18.4767, note: "Cape Town" },
+    { name: "Lansdowne", region: "Western Cape", lat: -33.9833, lng: 18.5000, note: "Cape Town" },
     { name: "Plettenberg Bay", region: "Western Cape", lat: -34.0527, lng: 23.3716, aliases: ["plett", "plettenbergbaai"] },
     { name: "Vanrhynsdorp", region: "Western Cape", lat: -31.6089, lng: 18.7398 },
     // Eastern Cape

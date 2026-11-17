@@ -12235,7 +12235,7 @@
     "address": "107 Howard Ave, Benoni",
     "lat": -26.1901,
     "lng": 28.313,
-    "website": null,
+    "website": "https://stcolumbas.co.za/",
     "phone": "011 421 3057",
     "email": null,
     "language": null,
@@ -12262,8 +12262,8 @@
       "monthly": 3365,
       "registration": 5000,
       "deposit": null,
-      "instalments": 12,
-      "notes": "Independent school, Gr 0000 (from 18 months) to Gr 11. 2027 fees per year (debit order over 12 months): Gr 0000 R40,382 (R3,365); Gr 000 R38,592 (R3,216); Gr 00 R46,310 (R3,860); Gr 0 R54,029 (R4,502); Gr 1-6 R82,588 (R6,882); Gr 7 R89,470 (R7,456); Gr 8-9 R94,978 (R7,915); Gr 10-11 R102,339 (R8,528). Monthly amounts are rounded, so they differ slightly from the yearly fee. Sibling discount on annual fees: 5% for a 2nd child, 7% for a 3rd, 9% for a 4th. The sheet offers 5% off the annual fee if paid upfront for the year by 31 January. Capital development levy R2,280 a year per family. Admission fee R5,000 to secure a place (non-refundable), one fee per family; application fee R400. Aftercare R1,926 a month (Gr 000 to Gr 11, includes hot lunch), or R180 a day; Gr 0000 aftercare is not priced (contact the school).",
+      "instalments": null,
+      "notes": "Independent school, Gr 0000 (from 18 months) to Gr 11. 2027 fees per year (debit order over 12 months): Gr 0000 R40,382 (R3,365); Gr 000 R38,592 (R3,216); Gr 00 R46,310 (R3,860); Gr 0 R54,029 (R4,502); Gr 1-6 R82,588 (R6,882); Gr 7 R89,470 (R7,456); Gr 8-9 R94,978 (R7,915); Gr 10-11 R102,339 (R8,528). The page prints a yearly fee and a monthly debit-order amount over 12 months. Sibling discount on annual fees: 5% for a 2nd child, 7% for a 3rd, 9% for a 4th. The sheet offers 5% off the annual fee if paid upfront for the year by 31 January. Capital development levy R2,280 a year per family. Admission fee R5,000 to secure a place (non-refundable), one fee per family; application fee R400. Aftercare R1,926 a month (Gr 000 to Gr 11, includes hot lunch), or R180 a day; Gr 0000 aftercare is not priced (contact the school).",
       "sourceKind": "the school's 2027 fee structure page",
       "byGrade": [
         {

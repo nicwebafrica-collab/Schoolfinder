@@ -2193,7 +2193,7 @@
     "address": "Montagustraat Blanco 6531, Blanco, George",
     "lat": -33.9458,
     "lng": 22.4097,
-    "website": null,
+    "website": "https://www.blancolaerskool.co.za/",
     "phone": "044 870 7380",
     "email": null,
     "language": null,
@@ -2218,10 +2218,10 @@
       "year": 2027,
       "yearly": 28600,
       "monthly": 2600,
-      "registration": 250,
+      "registration": null,
       "deposit": null,
       "instalments": 11,
-      "notes": "Public primary school in Blanco, George. 2027 school fees (Skoolfooie vir 2027), paid monthly over 11 months or per year, by the sheet's own grade labels: Gr RRR (2 to 4 years) R28,600 a year (R2,600 a month); Gr RR (5 years) R17,600 (R1,600); Gr R (6 years) R17,600 (R1,600); Gr 1 to Gr 7 R16,940 (R1,540). Headline shows Gr RRR, the lowest class listed. Once-off registration fee R250, new learners only (printed with the Gr 1 to Gr 7 fee). Gr RR and Gr R pay a once-off R1,600 LOOM fee (stationery and support materials) with registration. Gr RRR also has a LOOM fee of R2,600, payable by the end of November; the sheet does not say how often it is charged, so it is not listed as a cost. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R760 a month for the first child, or R54 a day; meal packs R65 a day per child if needed.",
+      "notes": "Public primary school in Blanco, George. 2027 school fees (Skoolfooie vir 2027), paid monthly over 11 months or per year, by the sheet's own grade labels: Gr RRR (2 to 4 years) R28,600 a year (R2,600 a month); Gr RR (5 years) R17,600 (R1,600); Gr R (6 years) R17,600 (R1,600); Gr 1 to Gr 7 R16,940 (R1,540). Headline shows Gr RRR, the lowest class listed. Once-off registration fee R250 for new Gr 1 to Gr 7 learners. Gr RR and Gr R pay a once-off R1,600 LOOM fee (stationery and support materials) with registration. Aftercare (Nasorgsentrum, Gr RR to Gr 7) is R760 a month for the first child, or R54 a day; meal packs R65 a day per child if needed.",
       "sourceKind": "the school's 2027 fee sheet",
       "byGrade": [
         {
@@ -2254,6 +2254,22 @@
         "note": "Gr RR and Gr R only, paid with registration",
         "applies": "some",
         "included": false
+      },
+      {
+        "item": "Registration fee",
+        "amount": 250,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "New Gr 1-7 learners only"
+      },
+      {
+        "item": "LOOM fee (Gr RRR)",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "some",
+        "included": false,
+        "note": "Gr RRR: R2,600, payable by the end of November. The sheet doesn't say how often it is charged, so it isn't added to the total."
       }
     ]
   },
@@ -3199,8 +3215,8 @@
     "address": "40 St James Street, Audas Estate, Somerset West",
     "lat": -34.083252,
     "lng": 18.843305,
-    "website": null,
-    "phone": "021 851 4381",
+    "website": "https://www.mm.academy/",
+    "phone": "021 518 1300",
     "email": null,
     "language": null,
     "emis": "100000583",
@@ -3218,7 +3234,8 @@
     "sports": [],
     "lastChecked": "2026-11-17",
     "sources": [
-      "https://www.education.gov.za/LinkClick.aspx?fileticket=cF64WfdfGD0%3D&tabid=466&portalid=0&mid=14616"
+      "https://www.education.gov.za/LinkClick.aspx?fileticket=cF64WfdfGD0%3D&tabid=466&portalid=0&mid=14616",
+      "https://www.mm.academy/"
     ],
     "fees": {
       "year": 2027,
@@ -3227,7 +3244,7 @@
       "registration": 5400,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school, Grade 7 to Grade 12, plus post-matric subjects at R4,050 per subject. Fees are paid monthly in advance by debit order over 12 months, or as one annual fee. 5% off if paid in full before 31 January 2027. Non-refundable registration fee of R5,400 per learner on acceptance; the registration fee and the first month's fee must be paid to secure a place. Late payment fee R500 and returned debit order fee R150. The school says the schedule is valid from 1 March 2026 to 1 March 2028 and may change without notice. Fees from the school's 2027 fee schedule, sent to SchoolMap by the school.",
+      "notes": "Independent school, Grade 7 to Grade 12, plus post-matric subjects at R4,050 per subject. Fees are paid monthly in advance by debit order over 12 months, or as one annual fee. 5% off if paid in full before 31 January 2027. Non-refundable registration fee of R5,400 per learner on acceptance; the registration fee and the first month's fee must be paid to secure a place. Late payment fee R500 and returned debit order fee R150. The school says the schedule is valid from 1 March 2026 to 1 March 2028 and may change without notice. The 5% discount does not apply if enrolment ends early. A notice period of one term (3 months) is required. Fees from the school's 2027 fee schedule, sent to SchoolMap by the school.",
       "sourceKind": "the school's 2027 fee schedule, sent to SchoolMap by the school",
       "byGrade": [
         {
@@ -3267,9 +3284,9 @@
         "item": "Camps",
         "amount": null,
         "frequency": "yearly",
-        "applies": "everyone",
+        "applies": "some",
         "included": false,
-        "note": "The school gives about R2,700 a year ('Annually'), an approximate amount, so it isn't added to the total. Not included in tuition."
+        "note": "About R2,700 a year ('Annually'), an approximate amount, charged only if applicable, so it isn't added to the total. Not included in tuition."
       },
       {
         "item": "School uniform",
@@ -3277,7 +3294,7 @@
         "frequency": "once",
         "applies": "everyone",
         "included": false,
-        "note": "The school gives about R4,200, bought 'as required', an approximate amount, so it isn't added to the total. Not included in tuition."
+        "note": "The school gives about R4,200, bought 'as required', an approximate amount, charged only if applicable, so it isn't added to the total. Not included in tuition."
       }
     ]
   },
