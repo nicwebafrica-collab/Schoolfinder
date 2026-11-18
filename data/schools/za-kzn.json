@@ -7189,9 +7189,9 @@
       },
       {
         "item": "EGD levy",
-        "amount": 9200,
-        "frequency": "yearly",
-        "note": "Gr 10-12 learners taking EGD only, R2,300 per term",
+        "amount": 2300,
+        "frequency": "per term",
+        "note": "Gr 10-12 learners taking EGD only",
         "applies": "subject",
         "included": false
       },
