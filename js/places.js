@@ -80,6 +80,9 @@
     { name: "Benoni", region: "Gauteng", lat: -26.1885, lng: 28.3208 },
     { name: "Kempton Park", region: "Gauteng", lat: -26.1000, lng: 28.2300, aliases: ["kemptonpark"] },
     { name: "Meyerton", region: "Gauteng", lat: -26.5582, lng: 28.0150 },
+    { name: "Ormonde", region: "Gauteng", lat: -26.2430, lng: 28.0000, note: "Johannesburg" },
+    { name: "Ivory Park", region: "Gauteng", lat: -25.9850, lng: 28.2000, note: "Midrand" },
+    { name: "Sharpeville", region: "Gauteng", lat: -26.6840, lng: 27.8720, note: "Vereeniging" },
     // Western Cape (centres from the DBE school list's own locations, 2025 Q3)
     { name: "Cape Town", region: "Western Cape", lat: -33.9249, lng: 18.4241, aliases: ["kaapstad", "cpt"] },
     { name: "Bergvliet", region: "Western Cape", lat: -34.0522, lng: 18.4587, note: "Cape Town" },
@@ -108,6 +111,7 @@
     { name: "Gqeberha", region: "Eastern Cape", lat: -33.9608, lng: 25.6022, aliases: ["port elizabeth", "pe", "nelson mandela bay"] },
     { name: "East London", region: "Eastern Cape", lat: -33.0153, lng: 27.9116, aliases: ["buffalo city", "eastlondon"] },
     { name: "Bedford", region: "Eastern Cape", lat: -32.6797, lng: 26.0856 },
+    { name: "Gonubie", region: "Eastern Cape", lat: -32.9370, lng: 28.0150, note: "East London" },
     { name: "Queenstown", region: "Eastern Cape", lat: -31.8976, lng: 26.8753, aliases: ["komani"] }
   ];
 

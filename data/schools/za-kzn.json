@@ -7122,10 +7122,10 @@
     "city": "Durban",
     "province": "KwaZulu-Natal",
     "postcode": null,
-    "address": "19 Ennisdale Street, Durban North, 4051",
+    "address": "19 Ennisdale Drive, Durban North, 4051",
     "lat": -29.7866,
     "lng": 31.0381,
-    "website": null,
+    "website": "https://www.stbarnabasschool.co.za/",
     "phone": "031 563 2158",
     "email": null,
     "language": null,
@@ -7148,32 +7148,32 @@
     ],
     "fees": {
       "year": 2026,
-      "yearly": null,
+      "yearly": 103200,
       "monthly": 8600,
       "registration": 5000,
       "deposit": null,
-      "instalments": null,
-      "notes": "Independent high school; the mid-year 2026 sheet prints Gr 8-12 only, so only high-school fees are shown and the headline is Gr 8-9. Monthly fee (12 payments, due on the 1st in advance): Gr 8-9 R8,600; Gr 10 R9,600; Gr 11 R10,400; Gr 12 R11,100. The sheet also has pay-in-full and term-payer options, which are not shown as a yearly fee. Enrolment fee (non-refundable, due on acceptance) for Gr 8-9 is R5,000; Gr 10 and 11 R6,300. The Gr 12 enrolment fee is left out because the table (R6,850) and its conditions text (R6,300) disagree. The half-price enrolment offer ended 31 August 2026 and the 2025 payment deadlines have passed. A book levy and printing fee (Gr 8-9 R2,660; Gr 10 R3,000; Gr 11-12 R3,200) is printed without saying how often, so it is not listed as a recurring cost.  One term's notice is required.",
+      "instalments": 12,
+      "notes": "Independent high school; the mid-year 2026 sheet prints Gr 8-12 only, so only high-school fees are shown and the headline is Gr 8-9. Monthly fee (12 payments, due on the 1st in advance), with the 12-payment totals the sheet prints: Gr 8-9 R8,600 (R103,200); Gr 10 R9,600 (R115,200); Gr 11 R10,400 (R124,800); Gr 12 R11,100 (R133,200). The sheet also has pay-in-full and term-payer options, which are not shown as a yearly fee. Enrolment fee (non-refundable, due on acceptance) for Gr 8-9 is R5,000; Gr 10 and 11 R6,300. The Gr 12 enrolment fee is left out because the table (R6,850) and its conditions text (R6,300) disagree. The half-price enrolment offer ended 31 August 2026 and the 2025 payment deadlines have passed. A book levy and printing fee (Gr 8-9 R2,660; Gr 10 R3,000; Gr 11-12 R3,200) is printed without saying how often, so it is not listed as a recurring cost.",
       "sourceKind": "the school's mid-year 2026 fee structure",
       "byGrade": [
         {
           "grade": "Gr 8-9",
-          "yearly": null,
+          "yearly": 103200,
           "monthly": 8600
         },
         {
           "grade": "Gr 10",
-          "yearly": null,
+          "yearly": 115200,
           "monthly": 9600
         },
         {
           "grade": "Gr 11",
-          "yearly": null,
+          "yearly": 124800,
           "monthly": 10400
         },
         {
           "grade": "Gr 12",
-          "yearly": null,
+          "yearly": 133200,
           "monthly": 11100
         }
       ]
@@ -7183,17 +7183,25 @@
         "item": "Art levy",
         "amount": 2400,
         "frequency": "yearly",
-        "note": "Gr 10-12 only, paid by the first day of school",
-        "applies": "Gr 10-12",
+        "note": "Gr 10-12 learners taking Art only, paid by the first day of school",
+        "applies": "subject",
         "included": false
       },
       {
         "item": "EGD levy",
         "amount": 9200,
         "frequency": "yearly",
-        "note": "Gr 10-12 only, R2,300 per term",
-        "applies": "Gr 10-12",
+        "note": "Gr 10-12 learners taking EGD only, R2,300 per term",
+        "applies": "subject",
         "included": false
+      },
+      {
+        "item": "Book levy and printing",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "Gr 8-9 R2,660, Gr 10 R3,000, Gr 11-12 R3,200, paid by the first day of school; part may be refunded if books are returned in good condition. The sheet doesn't say how often, so it isn't added to the total."
       }
     ]
   }

@@ -12766,7 +12766,7 @@
     "city": "Vereeniging",
     "province": "Gauteng",
     "postcode": null,
-    "address": "1997, Cnr. Seeiso Street and Hulwana Street, Sharpeville, Vereeniging",
+    "address": "1997a Corner Hulwane Avenue and Seeiso Street, Sharpeville, 1933",
     "lat": -26.6838,
     "lng": 27.8786,
     "website": "https://assumptaschool.co.za/",
@@ -12797,7 +12797,7 @@
       "registration": 500,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent primary school, Gr R to Gr 7. One 2027 school fee for all grades: R6,000 per annum. The page prints no monthly plan or instalments; payment is by bank deposit. Non-refundable registration fee R500 (the page does not say whether it is charged every year). No other costs are listed. The page has a header image that may hold more detail; the text did not show it.",
+      "notes": "Independent primary school, Gr R to Gr 7. One 2027 school fee for all grades: R6,000 per annum. The page prints no monthly plan or instalments; payment is by bank deposit. Non-refundable registration fee R500 (the page does not say whether it is charged every year). No other costs are listed.",
       "sourceKind": "the school's 2027 fees page",
       "byGrade": [
         {
@@ -12849,7 +12849,7 @@
       "monthly": null,
       "registration": null,
       "deposit": null,
-      "instalments": 10,
+      "instalments": null,
       "notes": "State-aided school, Gr 8-12. 2027 school fee is one amount for all grades: R58,000. It is payable over ten months from the beginning of January to the end of October; Gr 12 is payable over eight months, January to August. A monthly amount is not printed. Discounts printed: 5% (R2,900) for full upfront annual payment by 31 December 2026 and 4% (R2,320) by 31 January 2027. A debit-order discount is also printed (2%, 'to the value of R 980') but the percentage and rand value do not agree, so it is left out. Weekly boarding is R89,000 for 2027. No registration, application or other fees are listed on the page.",
       "sourceKind": "the school's 2027 school fees page",
       "byGrade": [
@@ -12881,7 +12881,7 @@
     "city": "Johannesburg",
     "province": "Gauteng",
     "postcode": null,
-    "address": "151/152 Cnr Wrexham and Alwen Road, Evans Park, Ormonde, Johannesburg",
+    "address": "152 Wrexham Road, Evans Park, Ormonde, Johannesburg",
     "lat": -26.2427,
     "lng": 28.0027,
     "website": "https://ormondeprimaryschool.co.za/",
@@ -12942,7 +12942,7 @@
     "address": "14561 Apole Street, Ivory Park Ext 13, Midrand",
     "lat": -25.9779,
     "lng": 28.2066,
-    "website": null,
+    "website": "https://rifthouseacademy.co.za/",
     "phone": "010 023 4458",
     "email": null,
     "language": null,
@@ -12970,7 +12970,7 @@
       "registration": 900,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school. 2026 fee structure (without uniforms), monthly fees only: Gr 1-3 R1,250; Gr 4-6 R1,300; Gr 7-9 R1,400. No yearly total or number of instalments is printed. Registration for new learners Gr 1-9 is R900. A re-registration fee of R450 for existing learners Gr 2-9 is also listed; the sheet does not say how often either is charged, so neither is shown as a recurring cost. Uniforms are not included. Only Gr 1-9 are priced.",
+      "notes": "Independent school. 2026 fee structure (without uniforms), monthly fees only: Gr 1-3 R1,250; Gr 4-6 R1,300; Gr 7-9 R1,400. No yearly total or number of instalments is printed. Registration for new learners Gr 1-9 is R900. A re-registration fee of R450 for existing learners Gr 2-9 is also listed; the sheet doesn't say how often it is charged, so it isn't added to the total. Uniforms are not included. Only Gr 1-9 are priced.",
       "sourceKind": "the school's 2026 fee structure",
       "byGrade": [
         {
@@ -12990,6 +12990,15 @@
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "Re-registration fee",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "some",
+        "included": false,
+        "note": "Existing learners Gr 2-9: R450. The sheet doesn't say how often it is charged, so it isn't added to the total."
+      }
+    ]
   }
 ]

@@ -604,8 +604,8 @@
         "item": "Beginners pack",
         "amount": 580,
         "frequency": "once",
-        "note": "Gr 1 beginners pack, includes a book bag",
-        "applies": "Gr 1",
+        "note": "Gr 1 only, includes a book bag",
+        "applies": "some",
         "included": false
       }
     ]
