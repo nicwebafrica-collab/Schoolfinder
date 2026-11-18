@@ -352,8 +352,7 @@
     "lastChecked": "2026-10-27",
     "sources": [
       "https://www.waterfallcollege.co.za/wp-content/uploads/2026/10/WFS-Fees-2027-FINAL.pdf",
-      "https://www.waterfallcollege.co.za/get-in-touch",
-      "https://schoolhive.co.za/listing/waterfall-college-hillcrest-admissions-contact-details/"
+      "https://www.waterfallcollege.co.za/get-in-touch"
     ],
     "country": "ZA",
     "emis": "500407777",
@@ -573,8 +572,7 @@
     },
     "lastChecked": "2026-10-27",
     "sources": [
-      "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf",
-      "https://schoolhive.co.za/listing/curro-hillcrest-christian-academy-hillcrest-admissions-contact-details/"
+      "https://www.curro.co.za/media/2nsf30gw/curro-hillcrest-2026-primary-school-fee-letter-finalv3-for-web.pdf"
     ],
     "country": "ZA",
     "emis": "500155363"
@@ -797,8 +795,7 @@
     "lastChecked": "2026-11-03",
     "sources": [
       "https://www.curro.co.za/media/jkvdbcw1/curro-hillcrest-2027-high-school-fee-letter-final-for-web.pdf",
-      "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/",
-      "https://schoolhive.co.za/listing/curro-hilcrest-high-school-hillcrest-admissions-contact-details/"
+      "https://www.curro.co.za/schools/curro-hillcrest-high-school/contact-us/"
     ],
     "country": "ZA",
     "emis": "500498316"
@@ -991,10 +988,7 @@
     "lastChecked": "2026-11-17",
     "sources": [
       "https://hhs.co.za/fees",
-      "https://hhs.co.za/apply",
-      "https://lekkeslaap.co.za/attractions/hillcrest-high-school",
-      "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/",
-      "https://schoolhive.co.za/listing/hillcrest-high-school-hillcrest-admissions-contact-details/"
+      "https://hhs.co.za/apply"
     ],
     "country": "ZA",
     "emis": "500155400",
@@ -1189,9 +1183,7 @@
     "lastChecked": "2026-10-27",
     "sources": [
       "https://dl.d6.co.za/attachments/cf_672c63a94aeb8760653126/SchoolFeePolicy2025.pdf",
-      "https://hillcrestprimary.co.za/school-fees/",
-      "https://schoolhive.co.za/listing/hillcrest-primary-school-hillcrest-admissions-contact-details/",
-      "https://www.dailymaverick.co.za/article/2026-03-12-why-sa-parents-are-faking-addresses-to-flee-failing-schools/"
+      "https://hillcrestprimary.co.za/school-fees/"
     ],
     "country": "ZA",
     "emis": "500155474"
@@ -1243,10 +1235,9 @@
       "applyUrl": null,
       "source": null
     },
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-10-27",
     "sources": [
-      "https://www.forestview.co.za/",
-      "https://www.citizen.co.za/highway-mail/forest-view-primary-school/"
+      "https://www.forestview.co.za/"
     ],
     "country": "ZA",
     "emis": "500145299",
@@ -1390,9 +1381,7 @@
     "lastChecked": "2026-10-27",
     "sources": [
       "https://hps.co.za/apply/",
-      "https://hps.co.za/contact/",
-      "https://schoolhive.co.za/listing/highbury-preparatory-school-hillcrest-admissions-contact-details/",
-      "https://en.wikipedia.org/wiki/Highbury_Preparatory_School"
+      "https://hps.co.za/contact/"
     ],
     "country": "ZA",
     "emis": "500154993"
@@ -1534,9 +1523,10 @@
         "item": "Day scholar overnight stay",
         "amount": 300,
         "frequency": "once",
-        "note": "Per night",
+        "note": "Optional overnight stay for day scholars",
         "applies": "optional",
-        "included": false
+        "included": false,
+        "per": "night"
       },
       {
         "item": "Immigration status levy",
@@ -1610,10 +1600,7 @@
     "lastChecked": "2026-11-01",
     "sources": [
       "https://www.kearsney.com/college/wp-content/uploads/2026/04/2026-Fee-Schedule.pdf",
-      "https://www.kearsney.com/college/admissions/",
-      "https://en.wikipedia.org/wiki/Kearsney_College",
-      "https://lekkeslaap.co.za/attractions/kearsney-college",
-      "https://schoolhive.co.za/listing/kearsney-college-bothas-hill-admissions-contact-details/"
+      "https://www.kearsney.com/college/admissions/"
     ],
     "country": "ZA",
     "emis": "500172494",
@@ -1715,12 +1702,10 @@
       "Athletics",
       "Softball"
     ],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-10-27",
     "sources": [
       "https://kloofhigh.co.za/admissions/",
-      "https://kloofhigh.co.za/contact/",
-      "https://schoolhive.co.za/listing/kloof-high-school-kloof-admissions-contact-details/",
-      "https://en.wikipedia.org/wiki/Kloof_High_School"
+      "https://kloofhigh.co.za/contact/"
     ],
     "id": "kloof-high-school",
     "name": "Kloof High School",
@@ -1783,8 +1768,7 @@
     "lastChecked": "2026-11-03",
     "sources": [
       "https://www.kloofsps.co.za/wp-content/uploads/2026/04/260326-KSP-Website-PDF-update.pdf",
-      "https://www.kloofsps.co.za/contact/",
-      "https://schoolhive.co.za/listing/kloof-senior-primary-school-kloof-admissions-contact-details/"
+      "https://www.kloofsps.co.za/contact/"
     ],
     "id": "kloof-senior-primary",
     "name": "Kloof Senior Primary School",
@@ -1856,8 +1840,7 @@
     "sources": [
       "http://www.kloofjp.org.za/wp-content/uploads/2026/01/School-Fee-Document-2026.pdf",
       "https://www.kloofjp.org.za/school-fees/",
-      "https://www.kloofjp.org.za/contact/",
-      "https://schoolhive.co.za/listing/kloof-junior-primary-school-admissions-contact-details/"
+      "https://www.kloofjp.org.za/contact/"
     ],
     "id": "kloof-junior-primary",
     "name": "Kloof Junior Primary School",
@@ -2051,10 +2034,9 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-10-27",
     "sources": [
       "https://wppschool.co.za/",
-      "https://schoolhive.co.za/listing/winston-park-primary-school-admissions-contact-details/",
       "https://hhs.co.za/apply"
     ],
     "id": "winston-park-primary",
@@ -2158,9 +2140,7 @@
     "lastChecked": "2026-10-27",
     "sources": [
       "https://www.thomasmore.co.za/admissions-fees/",
-      "https://www.thomasmore.co.za/wp-content/uploads/2026/10/2027-charges-table-Grade-1-12.pdf",
-      "https://lekkeslaap.co.za/attractions/thomas-more-college",
-      "https://schoolhive.co.za/listing/thomas-more-college-kloof-admissions-contact-details/"
+      "https://www.thomasmore.co.za/wp-content/uploads/2026/10/2027-charges-table-Grade-1-12.pdf"
     ],
     "id": "thomas-more-college",
     "name": "Thomas More College",
@@ -2501,9 +2481,7 @@
       "https://stmarysdsg.co.za/wp-content/uploads/2026/10/Fee-schedule-2027.pdf",
       "https://stmarysdsg.co.za/wp-content/uploads/2025/10/2026-Fees-Page.pdf",
       "https://stmarysdsg.co.za/fees-admissions/",
-      "https://stmarysdsg.co.za/",
-      "https://en.wikipedia.org/wiki/St._Mary%27s_Diocesan_School_for_Girls,_Kloof",
-      "https://schoolhive.co.za/listing/st-marys-dsg-kloof-combined-school-kloof-admissions-contact-details/"
+      "https://stmarysdsg.co.za/"
     ],
     "id": "st-marys-dsg-kloof",
     "name": "St Mary's Diocesan School for Girls",
@@ -2685,8 +2663,6 @@
     "sports": [],
     "lastChecked": "2026-10-27",
     "sources": [
-      "https://en.wikipedia.org/wiki/Roseway_Waldorf_School",
-      "https://schoolhive.co.za/listing/rosewaywaldorf-school-hillcrest-admissions-contact-details/",
       "https://rosewaywaldorf.school.za/fee-calculator"
     ],
     "id": "roseway-waldorf",
@@ -2834,9 +2810,7 @@
     "sports": [],
     "lastChecked": "2026-11-14",
     "sources": [
-      "https://stbenedictschool.co.za/fees/",
-      "https://en.wikipedia.org/wiki/St_Benedict_School_Pinetown",
-      "https://schoolhive.co.za/listing/st-benedict-school-admissions-contact-details/"
+      "https://stbenedictschool.co.za/fees/"
     ],
     "id": "st-benedict-pinetown",
     "name": "St Benedict School",
@@ -2986,7 +2960,6 @@
     "sources": [
       "https://dsdurban.co.za/en/about/school-fees/",
       "https://dsdurban.co.za/wp-content/uploads/2026/01/2026-School-Fees-pdf-file.pdf",
-      "https://en.wikipedia.org/wiki/Deutsche_Schule_Durban",
       "https://dsdurban.co.za/en/contact-us/"
     ],
     "id": "deutsche-schule-durban",
@@ -3109,10 +3082,8 @@
       "Volleyball",
       "Water polo"
     ],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-11-01",
     "sources": [
-      "https://en.wikipedia.org/wiki/Pinetown_Boys%27_High_School",
-      "https://schoolhive.co.za/listing/pinetown-boys-high-school-2017-cowies-hill-park-admissions-contact-details/",
       "https://www.pbhs.co.za/"
     ],
     "id": "pinetown-boys-high",
@@ -3165,10 +3136,8 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-11-01",
     "sources": [
-      "https://en.wikipedia.org/wiki/Pinetown_Girls%27_High_School",
-      "https://schoolhive.co.za/listing/pinetown-girls-high-school-admissions-contact-details/",
       "https://pghs.co.za/"
     ],
     "id": "pinetown-girls-high",
@@ -3353,8 +3322,7 @@
     "sources": [
       "https://www.wbhs.co.za/wp-content/uploads/2026/10/Summary-of-Costs-2027.pdf",
       "https://www.wbhs.co.za/admissions",
-      "https://www.wbhs.co.za/contact-us",
-      "https://en.wikipedia.org/wiki/Westville_Boys%27_High_School"
+      "https://www.wbhs.co.za/contact-us"
     ]
   },
   {
@@ -3422,7 +3390,6 @@
     "sources": [
       "https://www.wghs.co.za/fees/",
       "https://www.wghs.co.za/contact-us/",
-      "https://en.wikipedia.org/wiki/Westville_Girls%27_High_School",
       "https://www.wghs.co.za/application-process/"
     ]
   },
@@ -3519,8 +3486,7 @@
       "https://www.wsps.co.za/wp-content/uploads/2026/09/Fee-Notice_Applications.pdf",
       "https://www.wsps.co.za/wp-content/uploads/2026/01/FEES-COMMITMENT-FORM-2026-GR-5-7.pdf",
       "https://www.wsps.co.za/contact-us/",
-      "https://www.wsps.co.za/aftercare/",
-      "https://schoolhive.co.za/listing/westville-senior-primary-school-westville-admissions-contact-details/"
+      "https://www.wsps.co.za/aftercare/"
     ]
   },
   {
