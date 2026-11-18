@@ -7111,5 +7111,90 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "st-barnabas-independent-school",
+    "name": "St Barnabas Independent School",
+    "type": "Private",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Durban North",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "19 Ennisdale Street, Durban North, 4051",
+    "lat": -29.7866,
+    "lng": 31.0381,
+    "website": null,
+    "phone": "031 563 2158",
+    "email": null,
+    "language": null,
+    "emis": "500422651",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://www.stbarnabasschool.co.za/wp-content/uploads/2026/06/Fee_Structures_2026_MidYear.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 8600,
+      "registration": 5000,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent high school; the mid-year 2026 sheet prints Gr 8-12 only, so only high-school fees are shown and the headline is Gr 8-9. Monthly fee (12 payments, due on the 1st in advance): Gr 8-9 R8,600; Gr 10 R9,600; Gr 11 R10,400; Gr 12 R11,100. The sheet also has pay-in-full and term-payer options, which are not shown as a yearly fee. Enrolment fee (non-refundable, due on acceptance) for Gr 8-9 is R5,000; Gr 10 and 11 R6,300. The Gr 12 enrolment fee is left out because the table (R6,850) and its conditions text (R6,300) disagree. The half-price enrolment offer ended 31 August 2026 and the 2025 payment deadlines have passed. A book levy and printing fee (Gr 8-9 R2,660; Gr 10 R3,000; Gr 11-12 R3,200) is printed without saying how often, so it is not listed as a recurring cost.  One term's notice is required.",
+      "sourceKind": "the school's mid-year 2026 fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 8600
+        },
+        {
+          "grade": "Gr 10",
+          "yearly": null,
+          "monthly": 9600
+        },
+        {
+          "grade": "Gr 11",
+          "yearly": null,
+          "monthly": 10400
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": null,
+          "monthly": 11100
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Art levy",
+        "amount": 2400,
+        "frequency": "yearly",
+        "note": "Gr 10-12 only, paid by the first day of school",
+        "applies": "Gr 10-12",
+        "included": false
+      },
+      {
+        "item": "EGD levy",
+        "amount": 9200,
+        "frequency": "yearly",
+        "note": "Gr 10-12 only, R2,300 per term",
+        "applies": "Gr 10-12",
+        "included": false
+      }
+    ]
   }
 ]

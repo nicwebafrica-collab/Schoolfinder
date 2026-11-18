@@ -10,7 +10,7 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 7,
+      "schoolCount": 9,
       "updated": "2026-11",
       "ids": [
         "clarendon-park-primary-school",
@@ -19,13 +19,15 @@
         "balmoral-girls-primary-school",
         "cape-recife-high-school",
         "erica-girls-primary-school",
-        "cambridge-primary-school"
+        "cambridge-primary-school",
+        "gonubie-primary-school",
+        "greenwood-primary-school"
       ],
       "bounds": [
         -33.9965,
         25.58833,
         -31.88691,
-        27.88486
+        28.0083
       ]
     },
     {
@@ -35,7 +37,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 135,
+      "schoolCount": 139,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -172,7 +174,11 @@
         "sancta-maria-junior-school",
         "nova-pioneer-ruimsig-senior",
         "abbotts-college-bordeaux",
-        "hillside-akademie"
+        "hillside-akademie",
+        "assumpta-primary-private-school",
+        "jeppe-high-school-for-girls",
+        "ormonde-primary-school",
+        "rift-house-academy"
       ],
       "bounds": [
         -26.7360185101,
@@ -188,7 +194,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 60,
+      "schoolCount": 61,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -250,7 +256,8 @@
         "canaan-college",
         "lynford-school",
         "crawford-preparatory-la-lucia",
-        "pelham-senior-primary-school"
+        "pelham-senior-primary-school",
+        "st-barnabas-independent-school"
       ],
       "bounds": [
         -30.8726,

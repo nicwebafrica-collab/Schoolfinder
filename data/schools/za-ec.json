@@ -513,5 +513,179 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "gonubie-primary-school",
+    "name": "Gonubie Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Gonubie",
+    "city": "East London",
+    "province": "Eastern Cape",
+    "postcode": null,
+    "address": "24 Main Road, Gonubie, East London, 5257",
+    "lat": -32.9367,
+    "lng": 28.0083,
+    "website": "https://www.gonubieprimary.co.za/",
+    "phone": "043 740 4005",
+    "email": "accounts@gonubieprimary.co.za",
+    "language": null,
+    "emis": "200200211",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://www.gonubieprimary.co.za/wp-content/uploads/2026/11/NOTIFICATION-TO-PARENTS-REGARDING-SCHOOL-FEES-2027-1.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 41030,
+      "monthly": 3730,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public school, Gr R to Gr 7. 2027 school fees per child, monthly over 11 payments: Gr R and Gr 1 R41,030 (R3,730); Gr 2 R36,245 (R3,295); Gr 3-7 R34,430 (R3,130). Headline is Gr R. The notice gives two different payment schedules (20 January to 20 November, and the 1st of each month in advance). Discounts for paying the whole year early (7% by end December 2026, 3% by end February 2027) are conditional and are not shown as the yearly fee. Book and cultural activities fee: Gr R R700 (already paid when the notice was written), Gr 1-7 R600. Beginners packs: Gr R R450, Gr 1 R580. A line saying R650 applies if the book fee is paid only in 2027 is left out because it is unclear. A Gr 7 locker fee is mentioned with no amount. Debit order is preferred at no extra cost.",
+      "sourceKind": "the school's 2027 fee notice",
+      "byGrade": [
+        {
+          "grade": "Gr R-1",
+          "yearly": 41030,
+          "monthly": 3730
+        },
+        {
+          "grade": "Gr 2",
+          "yearly": 36245,
+          "monthly": 3295
+        },
+        {
+          "grade": "Gr 3-7",
+          "yearly": 34430,
+          "monthly": 3130
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Book and cultural activities fee",
+        "amount": 700,
+        "frequency": "yearly",
+        "note": "Gr R; already paid when the notice was written",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Book and cultural activities fee",
+        "amount": 600,
+        "frequency": "yearly",
+        "note": "Gr 1-7, payable via KARRI or EFT before school closes in December 2026",
+        "applies": "Gr 1-7",
+        "included": false
+      },
+      {
+        "item": "Beginners pack",
+        "amount": 450,
+        "frequency": "once",
+        "note": "Gr R beginners pack",
+        "applies": "Gr R",
+        "included": false
+      },
+      {
+        "item": "Beginners pack",
+        "amount": 580,
+        "frequency": "once",
+        "note": "Gr 1 beginners pack, includes a book bag",
+        "applies": "Gr 1",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "greenwood-primary-school",
+    "name": "Greenwood Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Central",
+    "city": "Gqeberha",
+    "province": "Eastern Cape",
+    "postcode": null,
+    "address": "Park Drive, Central, Gqeberha, 6001",
+    "lat": -33.9679,
+    "lng": 25.6108,
+    "website": "https://greenwoodschool.co.za/",
+    "phone": "041 585 4142",
+    "email": null,
+    "language": null,
+    "emis": "200100276",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://greenwoodschool.co.za/wp-content/uploads/2025/12/2026-FEE-STRUCTURE.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 23870,
+      "monthly": 2170,
+      "registration": null,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Public school, Gr R to Gr 7. 2026 school fees are compulsory: R2,170 a month over 11 instalments (January to November), R5,967.50 a term, or R23,870 a year. One fee for all grades. A 10% discount on the school fee only for paying the full year in advance (by 28 February 2026) has passed. Optional extras: music tuition and instrument rental, and aftercare (monthly payment is not an option for aftercare; termly or annual only). The sheet does not say whether the extras qualify for the discount.",
+      "sourceKind": "the school's 2026 fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr R-7",
+          "yearly": 23870,
+          "monthly": 2170
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Music tuition and instrument rental",
+        "amount": 480,
+        "frequency": "monthly",
+        "note": "Optional; also R1,320 a term or R5,280 a year",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Gr R-2",
+        "amount": 2351,
+        "frequency": "per term",
+        "note": "Optional; monthly is not an option; R9,405 a year",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Aftercare Gr 3-7",
+        "amount": 1843,
+        "frequency": "per term",
+        "note": "Optional; monthly is not an option; R7,370 a year",
+        "applies": "optional",
+        "included": false
+      }
+    ]
   }
 ]

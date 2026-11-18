@@ -12755,5 +12755,241 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "assumpta-primary-private-school",
+    "name": "Assumpta Primary Private School",
+    "type": "Private",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Sharpeville",
+    "city": "Vereeniging",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "1997, Cnr. Seeiso Street and Hulwana Street, Sharpeville, Vereeniging",
+    "lat": -26.6838,
+    "lng": 27.8786,
+    "website": "https://assumptaschool.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "700330738",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://assumptaschool.co.za/2023/12/12/school-fees-and-enrolment-procedure/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 6000,
+      "monthly": null,
+      "registration": 500,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent primary school, Gr R to Gr 7. One 2027 school fee for all grades: R6,000 per annum. The page prints no monthly plan or instalments; payment is by bank deposit. Non-refundable registration fee R500 (the page does not say whether it is charged every year). No other costs are listed. The page has a header image that may hold more detail; the text did not show it.",
+      "sourceKind": "the school's 2027 fees page",
+      "byGrade": [
+        {
+          "grade": "Gr R-7",
+          "yearly": 6000,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "jeppe-high-school-for-girls",
+    "name": "Jeppe High School for Girls",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Kensington",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "160 Roberts Avenue, Kensington, Johannesburg",
+    "lat": -26.1974,
+    "lng": 28.0918,
+    "website": "https://jeppegirls.co.za/",
+    "phone": "011 616 5090",
+    "email": null,
+    "language": null,
+    "emis": "700130641",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://jeppegirls.co.za/enrolment/school-fees/"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 58000,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "State-aided school, Gr 8-12. 2027 school fee is one amount for all grades: R58,000. It is payable over ten months from the beginning of January to the end of October; Gr 12 is payable over eight months, January to August. A monthly amount is not printed. Discounts printed: 5% (R2,900) for full upfront annual payment by 31 December 2026 and 4% (R2,320) by 31 January 2027. A debit-order discount is also printed (2%, 'to the value of R 980') but the percentage and rand value do not agree, so it is left out. Weekly boarding is R89,000 for 2027. No registration, application or other fees are listed on the page.",
+      "sourceKind": "the school's 2027 school fees page",
+      "byGrade": [
+        {
+          "grade": "Gr 8-12",
+          "yearly": 58000,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Weekly boarding",
+        "amount": 89000,
+        "frequency": "yearly",
+        "note": "Boarders only; for 2027",
+        "applies": "boarders",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "ormonde-primary-school",
+    "name": "Ormonde Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Ormonde",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "151/152 Cnr Wrexham and Alwen Road, Evans Park, Ormonde, Johannesburg",
+    "lat": -26.2427,
+    "lng": 28.0027,
+    "website": "https://ormondeprimaryschool.co.za/",
+    "phone": "011 496 7015",
+    "email": null,
+    "language": null,
+    "emis": "700400801",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://ormondeprimaryschool.co.za/admissions"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 10000,
+      "monthly": null,
+      "registration": 1585,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school, Gr R to Gr 7. Fees under the heading 'Fee Structure 2026' on the admissions page: Gr R R10,000 per year; Gr 1-7 R7,500 per year. Headline is Gr R. No monthly plan is printed. Registration R1,585, once-off. An early-bird 10% discount for settling fees by March each year is on the page; for 2026 that date has passed. The linked fee PDF could not be fetched, so only the page figures were used. No 2027 fees are printed.",
+      "sourceKind": "the school's 2026 admissions page",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 10000,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 7500,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "rift-house-academy",
+    "name": "Rift House Academy",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-9",
+    "area": "Ivory Park",
+    "city": "Midrand",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "14561 Apole Street, Ivory Park Ext 13, Midrand",
+    "lat": -25.9779,
+    "lng": 28.2066,
+    "website": null,
+    "phone": "010 023 4458",
+    "email": null,
+    "language": null,
+    "emis": "700401124",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-18",
+    "sources": [
+      "https://rifthouseacademy.co.za/wp-content/uploads/2025/10/2026-FEES-STRUCTURE-WITHOUT-UNIFORMS.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 1250,
+      "registration": 900,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school. 2026 fee structure (without uniforms), monthly fees only: Gr 1-3 R1,250; Gr 4-6 R1,300; Gr 7-9 R1,400. No yearly total or number of instalments is printed. Registration for new learners Gr 1-9 is R900. A re-registration fee of R450 for existing learners Gr 2-9 is also listed; the sheet does not say how often either is charged, so neither is shown as a recurring cost. Uniforms are not included. Only Gr 1-9 are priced.",
+      "sourceKind": "the school's 2026 fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 1250
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": null,
+          "monthly": 1300
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": null,
+          "monthly": 1400
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]
