@@ -270,6 +270,13 @@ if (pageFiles.length || fs.existsSync(path.join(root, "sitemap.xml"))) {
       check(sitemap.indexOf("<loc>https://schoolmap.co.za/school/" + raw.id + "/</loc>") !== -1, "sitemap.xml: missing " + raw.id);
     });
   });
+  // Links between pages ("Other schools nearby", the list page) only go to live school pages: no broken links for Google or parents.
+  pageFiles.forEach(function (f) {
+    (read(f).match(/href="\/school\/[^"#]+"/g) || []).forEach(function (h) {
+      var m = /^href="\/school\/([a-z0-9-]+)\/"$/.exec(h);
+      check(!!m && !!liveIds[m[1]], f + ": links to a school page that isn't live: " + h);
+    });
+  });
   pageFiles.forEach(function (f) {
     var m = /^school\/([^\/]+)\/index\.html$/.exec(f);
     if (m) check(!!liveIds[m[1]], f + ": not a live school (removed, or not verified). It must not be published");

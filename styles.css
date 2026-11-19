@@ -429,6 +429,8 @@ a.brand-row { text-decoration: none; width: fit-content; min-height: 44px; margi
 main.static-page { max-width: 640px; padding-bottom: 24px; }
 .crumbs { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
 .crumbs a { color: var(--muted); }
+.crumb-list { list-style: none; margin: 0; padding: 0; display: inline; }
+.crumb-list li { display: inline; }
 .static-head { margin: 0 0 16px; border-radius: var(--radius-card); padding: 18px var(--gutter) 20px; }
 .static-head h1 { margin-top: 0; }
 .static-actions { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 20px 0 8px; }
