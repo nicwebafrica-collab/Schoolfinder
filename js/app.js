@@ -953,7 +953,7 @@
       placeDots(svg, priced.map(function (p) { return { s: p.s, x: px(Math.min(p.s.distanceKm, xMax)), y: py(p.t) }; }), 11, chartExtra, null);
       parts.push(svg, chartExtra);
     } else {
-      parts.push(el("p", { className: "muted" }, "None of these schools publish fees yet, so there's nothing to plot."));
+      parts.push(el("p", { className: "muted" }, "We haven't found fees online for any of these schools yet, so there's nothing to plot."));
     }
     if (noFee.length) parts.push(el("p", { className: "count" }, "No fees: " + noFee.length + (noFee.length === 1 ? " school" : " schools")), schoolLinks(noFee));
     if (unpriced.length) parts.push(el("p", { className: "count" }, unpriced.length + (unpriced.length === 1 ? " school" : " schools") + " not shown: fees not found online yet"), schoolLinks(unpriced));
@@ -1250,7 +1250,7 @@
 
   function outingsPanel(s) {
     var outings = s.outings || [];
-    if (!outings.length) return panel("Outings, camps & events", el("p", { className: "empty" }, "No outings published by the school yet."));
+    if (!outings.length) return panel("Outings, camps & events", el("p", { className: "empty" }, "No outings found yet."));
     return el("section", { className: "panel hidden-panel" },
       el("h2", {}, "Outings, camps & events", el("span", { className: "badge" }, L.formatRand(L.yearlyOutings(s)) + " a year")),
       el("ul", { className: "rows" }, outings.map(function (o) {
@@ -1324,8 +1324,8 @@
         el("span", { className: "amt" + (shown ? "" : " unknown") }, shown || unpricedLabel(c)));
     }
     // No single amount, but the note lists the school's prices ("pullover R250, jersey R350"): don't say the school
-    // didn't publish them (B63). Still not added to the total.
-    function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "See note" : (unknownText || L.UNKNOWN); }
+    // didn't publish them (B63). Still not added to the total. Items inside the school fee say so (V73-4).
+    function unpricedLabel(c) { return c.included ? "Included in fees" : /\bR\s?\d/.test(c.note || "") ? "See note" : (unknownText || L.UNKNOWN); }
     var hidden = (s.hiddenCosts || []).filter(function (c) { return L.countsInTotal(c, L.costGrade(s, grade)); }).map(function (c) { return costRow(c, true); });
     // Items already inside the school fee get their own short list, not "only some families pay these" (V43-4).
     var maybe = L.mightAlsoApply(s, grade).filter(function (c) { return !c.included; }).map(function (c) { return costRow(c, false); });
@@ -1475,7 +1475,7 @@
       var ta = L.trueYearlyCost(A, ga), tb = L.trueYearlyCost(B, gb);
       var verdict = L.isNum(ta) && L.isNum(tb)
         ? (ta === tb ? "They cost the same per year." : (ta < tb ? A.name : B.name) + " costs " + L.formatRand(Math.abs(ta - tb)) + " less a year.")
-        : "We can't compare totals until both schools publish their fees.";
+        : "We can't compare totals until we've found both schools' fees.";
       body = [
         el("section", { className: "compare-total" },
           el("div", { className: "label on-dark" }, "True cost per year"),
@@ -1490,7 +1490,7 @@
           crow("Monthly fee", asSchool(A, function () { return [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not on the fee sheet; yearly\u00a0\u00f7\u00a012)" : paymentsText(A, ga)]; }),
             asSchool(B, function () { return [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not on the fee sheet; yearly\u00a0\u00f7\u00a012)" : paymentsText(B, gb)]; })),
           crow("Extras on top of the fee / year", extrasText(A, ga), extrasText(B, gb), true),
-          crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
+          crow("Extras with no price yet", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
           crow("Once-off to start", asSchool(A, function () { return money(L.startUpCosts(A, ga)); }), asSchool(B, function () { return money(L.startUpCosts(B, gb)); })),
           crow("Aftercare", asSchool(A, function () { return optionalText(A.aftercare); }), asSchool(B, function () { return optionalText(B.aftercare); })),

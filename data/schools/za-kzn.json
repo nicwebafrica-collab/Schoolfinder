@@ -1808,7 +1808,7 @@
         "item": "Stationery fee",
         "amount": null,
         "frequency": "once",
-        "note": "Payable after the principal interview; not on the school's fee sheet",
+        "note": "Payable after the principal interview",
         "applies": "everyone",
         "included": false
       },
@@ -2090,7 +2090,7 @@
         "item": "Photocopying, workbooks and notebooks",
         "amount": null,
         "frequency": "yearly",
-        "note": "Not included in fees; not on the school's fee sheet",
+        "note": "Not included in fees",
         "applies": "everyone",
         "included": false
       },
@@ -2098,7 +2098,7 @@
         "item": "Exams, tests and benchmarking assessments",
         "amount": null,
         "frequency": "yearly",
-        "note": "Not included in fees; not on the school's fee sheet",
+        "note": "Not included in fees",
         "applies": "everyone",
         "included": false
       },
@@ -2106,7 +2106,7 @@
         "item": "AP Maths / AP English",
         "amount": null,
         "frequency": "yearly",
-        "note": "High school, not included; not on the school's fee sheet",
+        "note": "High school, not included",
         "applies": "optional",
         "included": false
       },
@@ -2114,7 +2114,7 @@
         "item": "AEU small-group support",
         "amount": null,
         "frequency": "yearly",
-        "note": "Not included; not on the school's fee sheet",
+        "note": "Not included",
         "applies": "some",
         "included": false
       }
@@ -2776,7 +2776,7 @@
         "item": "Sport/cultural tours, excursions, photos, ear/eye tests",
         "amount": null,
         "frequency": "yearly",
-        "note": "Billed in advance; not on the school's fee sheet",
+        "note": "Billed in advance",
         "applies": "some",
         "included": false
       },
@@ -3465,7 +3465,7 @@
     "aftercare": {
       "available": true,
       "monthly": null,
-      "note": "Mon-Thu 14:00-17:00, Fri 13:00-17:00; not on the school's fee sheet"
+      "note": "Mon-Thu 14:00-17:00, Fri 13:00-17:00"
     },
     "sources": [
       "https://www.wsps.co.za/school-fees/",
