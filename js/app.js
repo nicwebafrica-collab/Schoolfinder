@@ -688,7 +688,7 @@
         el("div", { className: "card-title" }, sheetTitle(s),
           el("div", { className: "muted small" }, [s.type, s.grades, km != null ? km.toFixed(1) + " km" : null].filter(Boolean).join(" \u00b7 ")))),
       el("div", { className: "sheet-cost" }, el("div", { className: "label" }, "True cost / yr"),
-        el("strong", {}, L.isNum(total) ? feeText(s, total, "No school fees") : "Fees not published")),
+        el("strong", {}, L.isNum(total) ? feeText(s, total, "No school fees") : "Fees not found online yet")),
       extras ? el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)) : null,
       el("div", { className: "sheet-actions" }, view, saveBtn)
     ]);
@@ -758,7 +758,7 @@
   function dot(s, x, y, r, extraClass, label) {
     var total = L.trueYearlyCost(s);
     var a = svgEl("a", { href: schoolHref(s), class: "dot" + (extraClass ? " " + extraClass : "") + (s.id === selectedId ? " selected" : "") });
-    a.setAttribute("aria-label", s.name + ", " + (s.distanceKm != null ? s.distanceKm.toFixed(1) + " km, " : "") + (L.isNum(total) ? feeText(s, total, "no school fees") : "fees not published"));
+    a.setAttribute("aria-label", s.name + ", " + (s.distanceKm != null ? s.distanceKm.toFixed(1) + " km, " : "") + (L.isNum(total) ? feeText(s, total, "no school fees") : "fees not found online yet"));
     a.appendChild(svgEl("title", {}, s.name));
     a.appendChild(svgEl("circle", { cx: x, cy: y, r: r }));
     var text = label || initials(s.name);
@@ -948,7 +948,7 @@
       parts.push(el("p", { className: "muted" }, "None of these schools publish fees yet, so there's nothing to plot."));
     }
     if (noFee.length) parts.push(el("p", { className: "count" }, "No fees: " + noFee.length + (noFee.length === 1 ? " school" : " schools")), schoolLinks(noFee));
-    if (unpriced.length) parts.push(el("p", { className: "count" }, unpriced.length + (unpriced.length === 1 ? " school" : " schools") + " not shown: fees not published"), schoolLinks(unpriced));
+    if (unpriced.length) parts.push(el("p", { className: "count" }, unpriced.length + (unpriced.length === 1 ? " school" : " schools") + " not shown: fees not found online yet"), schoolLinks(unpriced));
     parts.push(el("p", { className: "muted small" }, "True cost = fees plus extras every child pays. Tap a dot to open the school."));
     return el("div", { className: "panel viz" }, parts);
   }
@@ -975,9 +975,9 @@
         el("div", { className: "card-title" }, el("h3", {}, s.name), el("div", { className: "muted small" }, sub),
           el("div", { className: "muted small" }, place + (unplaced ? " · location not published" : ""))),
         s.distanceKm != null ? el("span", { className: "distance" }, s.distanceKm.toFixed(1) + " km") : null),
-      // Unknown fees: one short muted line instead of two big boxes saying "not published".
+      // Unknown fees: one short muted line ("Fees not found online yet", Fact Checker wording) instead of two big boxes.
       monthly === null && total === null
-        ? el("p", { className: "unknown card-unknown" }, "Fees not published yet")
+        ? el("p", { className: "unknown card-unknown" }, "Fees not found online yet")
         : el("div", { className: "money-pair" },
             el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"),
               L.monthlyEstimate(s) !== null
