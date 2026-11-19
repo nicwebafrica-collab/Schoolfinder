@@ -333,10 +333,28 @@
     try { if (place) localStorage.setItem("lastPlace", place.name + "|" + place.region); else localStorage.removeItem("lastPlace"); } catch (e) { /* private mode */ }
   }
 
+  // The long list of suburbs and towns (about 9,000 names), fetched once, only when the parent starts typing
+  // or their last suburb came from it. A failed download just means fewer suggestions; it's tried again next time.
+  var morePlaces = null;
+  function loadMorePlaces() {
+    if (!morePlaces) morePlaces = getJson("places-za.json").then(function (rows) { L.addPlaces(rows); })
+      .catch(function () { morePlaces = null; });
+    return morePlaces;
+  }
+
   function renderSearch() {
     if (state.place === undefined) {
       state.place = lastPlace();
       if (state.place) state.query = state.place.name;
+      else {
+        // Last suburb came from the long list: load it, then show that suburb if the parent hasn't moved on.
+        var saved = null;
+        try { saved = localStorage.getItem("lastPlace"); } catch (e) { /* private mode */ }
+        if (saved) loadMorePlaces().then(function () {
+          var p = lastPlace();
+          if (p && state.place === null && !state.near && location.hash.replace(/^#\/?$/, "") === "") { setPlace(p); renderSearch(); }
+        });
+      }
     }
     var input = el("input", { type: "search", id: "q", placeholder: "Your suburb, e.g. Waterfall", value: state.query, maxLength: 100, autocomplete: "off" });
     var pinBtn = el("button", { type: "button", className: "in-field-btn", aria: { label: "Use my location" } }, icon("locate"));
@@ -427,12 +445,24 @@
       drawSuggestions();
       // Parents also search by school name ("Kearsney"). Load every area once so names can be matched (T8).
       if (text.length >= 3 && !L.matchPlaces(text, 1).length) loadAllAreas().then(function () { if (input.value.trim() === text) drawSuggestions(); });
+      // Not one of our own suburbs: fetch the long list (only then, so a slow phone searching "Hillcrest" never waits for it).
+      if (text.length >= 3 && !L.matchPlaces(text, 1).length) loadMorePlaces().then(function () { if (input.value.trim() === text) drawSuggestions(); });
     }
     input.addEventListener("input", function () { locStatus.hidden = true; typed(); });
     input.addEventListener("keydown", function (e) {
       if (e.key !== "Enter") return;
-      var p = L.findPlace(input.value) || L.placeInText(input.value) || postcodePlace(input.value) || L.matchPlaces(input.value, 1)[0];
+      function pick() {
+        var p = L.findPlace(input.value) || L.placeInText(input.value) || postcodePlace(input.value) || L.matchPlaces(input.value, 1)[0];
+        // A small place from the long list that's also a school's name ("Kearsney"): show both choices, don't jump.
+        var q = L.normalise(input.value.trim());
+        if (p && p.extra && schools.some(function (s) { return [s.name].concat(s.aliases || []).some(function (f) { return L.normalise(f).indexOf(q) !== -1; }); })) return null;
+        return p;
+      }
+      var p = pick();
       if (p) { choosePlace(p); return; }
+      // Enter before the long list arrived: try again once it's here.
+      var text = input.value;
+      loadMorePlaces().then(function () { if (input.value !== text) return; var q = pick(); if (q) choosePlace(q); });
       typed(); // a school name or unknown place: show the choices
     });
 
@@ -552,7 +582,10 @@
     if (!areas.length) {
       container.textContent = "";
       container.appendChild(el("p", { className: "count" }, "No schools in the app near " + where + " yet."));
-      container.appendChild(el("p", { className: "muted small" }, "We're adding areas one at a time. Try Waterfall or Hillcrest in KZN."));
+      var covered = index.areas.map(function (a) { return a.short; });
+      container.appendChild(el("p", { className: "muted small" }, (state.place && covered.indexOf(state.place.region) === -1
+        ? "We don't list schools in " + state.place.region + " yet. So far we have schools in " + covered.join(", ").replace(/, ([^,]*)$/, " and $1") + ". "
+        : "We're adding areas one at a time. ") + "Try Waterfall or Hillcrest in KZN."));
       return;
     }
     container.textContent = "";

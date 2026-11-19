@@ -138,7 +138,9 @@
     KZN: ["kzn", "kwazulu natal", "kwazulunatal", "natal"],
     Gauteng: ["gauteng", "gp", "gt"],
     "Western Cape": ["western cape", "wc", "w cape"],
-    "Eastern Cape": ["eastern cape", "ec", "e cape"]
+    "Eastern Cape": ["eastern cape", "ec", "e cape"],
+    "Free State": ["free state", "fs"], Limpopo: ["limpopo", "lp"], Mpumalanga: ["mpumalanga", "mp"],
+    "North West": ["north west", "nw"], "Northern Cape": ["northern cape", "nc"]
   };
 
   // "Hillcrest, KZN 3610" -> { text: "hillcrest", region: "KZN" }. Strips commas, postcodes and a trailing province.
@@ -172,7 +174,8 @@
 
   // Other places with the same name in another province.
   function namesakes(place) {
-    return place ? PLACES.filter(function (p) { return p !== place && p.name === place.name; }) : [];
+    // From our own list, only our own namesakes (not every small "Hillcrest" in the long list).
+    return place ? PLACES.filter(function (p) { return p !== place && p.name === place.name && (place.extra || !p.extra); }) : [];
   }
 
   // "Waterfall, KZN" style label, used wherever a place is shown so same-name places can't be mixed up.
@@ -200,6 +203,7 @@
   function schoolsNear(schools, point, radiusKm, placeName) {
     var near = [], unknown = [];
     var names = placeName ? [placeName] : PLACES.filter(function (p) {
+      if (p.extra) return false; // the long list (data/places-za.json) has too many small names to match addresses on
       // +3 km because place centres are rough: a school "in Forest Hills" can sit nearer than the suburb's middle.
       return L.distanceKm(point.lat, point.lng, p.lat, p.lng) <= Math.max(radiusKm, 5) + 3;
     }).map(function (p) { return p.name; });
@@ -225,7 +229,32 @@
       if (names.some(function (n) { return n.indexOf(q) === 0; })) starts.push(p);
       else if (names.some(function (n) { return n.indexOf(q) !== -1; })) contains.push(p);
     });
-    return starts.concat(contains).slice(0, limit || 6);
+    // Our own list first (in its order), then the long list's places, bigger towns (more schools) first.
+    function rank(a, b) { return (a.extra ? 1 : 0) - (b.extra ? 1 : 0) || (b.size || 0) - (a.size || 0); }
+    return starts.sort(rank).concat(contains.sort(rank)).slice(0, limit || 6);
+  }
+
+  // The long list of South African suburbs and towns (data/places-za.json, rows of [name, province, lat, lng, size]),
+  // added after our own list when the parent starts typing. A name our list already has in that province is skipped,
+  // so our hand-checked points always win. Bigger places go first, so "Port Edward" finds the bigger one first.
+  var moreAdded = false;
+  function addPlaces(rows) {
+    if (moreAdded || !Array.isArray(rows)) return 0;
+    moreAdded = true;
+    var have = {};
+    PLACES.forEach(function (p) { [p.name].concat(p.aliases || []).forEach(function (n) { have[key(n) + "|" + p.region] = true; }); });
+    var added = 0;
+    function coord(n) { return typeof n === "number" && isFinite(n); } // L.isNum is for money and rejects negatives
+    rows.filter(function (r) { return Array.isArray(r) && typeof r[0] === "string" && typeof r[1] === "string" && coord(r[2]) && coord(r[3]); })
+      .sort(function (a, b) { return (b[4] || 0) - (a[4] || 0); })
+      .forEach(function (r) {
+        var k = key(r[0]) + "|" + r[1];
+        if (!key(r[0]) || have[k]) return;
+        have[k] = true;
+        PLACES.push({ name: r[0].slice(0, 40), region: r[1].slice(0, 20), lat: r[2], lng: r[3], size: L.isNum(r[4]) ? r[4] : 0, extra: true });
+        added++;
+      });
+    return added;
   }
 
   // "Waterfall" or "Waterfall|Gauteng" (how the last place is remembered) -> that place. Plain names mean the first one.
@@ -267,7 +296,7 @@
       if (region && f.place.region !== region) return;
       // Suburbs beat cities; then the first place named wins, because an address goes from the suburb to the bigger
       // area ("Inanda Road, Waterfall, Hillcrest" is in Waterfall).
-      var score = (CITIES.indexOf(f.place.name) === -1 ? 1000 : 0) - f.i;
+      var score = (CITIES.indexOf(f.place.name) === -1 ? 1000 : 0) - f.i - (f.place.extra ? 1500 : 0); // our own list beats the long list
       // "Waterfall, Midrand": the place whose note names another word in the address wins.
       if (f.place.note && words.indexOf(key(f.place.note)) !== -1) score += 2000;
       if (!best || score > best.score) best = { place: f.place, score: score };
@@ -279,6 +308,7 @@
   L.placeInText = placeInText;
   L.PLACES = PLACES;
   L.matchPlaces = matchPlaces;
+  L.addPlaces = addPlaces;
   L.placeByName = placeByName;
   L.RADII = RADII;
   L.editDistance = editDistance;
