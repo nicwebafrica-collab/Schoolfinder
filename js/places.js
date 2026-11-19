@@ -46,6 +46,16 @@
     { name: "Hillary", region: "KZN", lat: -29.8880, lng: 30.9300, note: "Durban" },
     { name: "Chatsworth", region: "KZN", lat: -29.9120, lng: 30.8850, note: "Durban" },
     { name: "Ballito", region: "KZN", lat: -29.5390, lng: 31.2140 },
+    // South and North Coast towns (town centres, by hand: the long list put these 5-9 km inland, V74).
+    { name: "Port Shepstone", region: "KZN", lat: -30.7410, lng: 30.4550 },
+    { name: "Shelly Beach", region: "KZN", lat: -30.7960, lng: 30.4090 },
+    { name: "Uvongo", region: "KZN", lat: -30.8330, lng: 30.3930 },
+    { name: "Port Edward", region: "KZN", lat: -31.0510, lng: 30.2270 },
+    { name: "Hibberdene", region: "KZN", lat: -30.5760, lng: 30.5710 },
+    { name: "Scottburgh", region: "KZN", lat: -30.2860, lng: 30.7530 },
+    { name: "Umkomaas", region: "KZN", lat: -30.2070, lng: 30.7980 },
+    { name: "Amanzimtoti", region: "KZN", lat: -30.0560, lng: 30.8800 },
+    { name: "Umdloti", region: "KZN", lat: -29.6720, lng: 31.1170 },
     { name: "Mooi River", region: "KZN", lat: -29.2100, lng: 29.9940 },
     { name: "Estcourt", region: "KZN", lat: -29.0100, lng: 29.8700 },
     { name: "Ingwavuma", region: "KZN", lat: -27.1340, lng: 32.0000 },
@@ -237,6 +247,8 @@
   // The long list of South African suburbs and towns (data/places-za.json, rows of [name, province, lat, lng, size]),
   // added after our own list when the parent starts typing. A name our list already has in that province is skipped,
   // so our hand-checked points always win. Bigger places go first, so "Port Edward" finds the bigger one first.
+  // Each long-list point is ROUGH: the middle of the schools that use the name, so a town whose rural schools carry
+  // its name can sit a few km inland. Good enough to sort schools by distance; add a place above when it isn't.
   var moreAdded = false;
   function addPlaces(rows) {
     if (moreAdded || !Array.isArray(rows)) return 0;

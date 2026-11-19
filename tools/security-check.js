@@ -328,6 +328,28 @@ allFiles.filter(function (f) { return /^data\/schools\/.*\.json$/.test(f); }).fo
   check(ids.length === 0, f + ": test schools must never be public: " + ids.join(", "));
 });
 
+// 15. The search's long place list (data/places-za.json): only [name, province, lat, lng, count] rows, plain names,
+// points inside South Africa, and a sane size, so a bad rebuild can't ship (Security, 2026-11-19).
+(function () {
+  var f = "data/places-za.json";
+  if (!fs.existsSync(path.join(root, f))) return;
+  var size = fs.statSync(path.join(root, f)).size;
+  check(size <= 1024 * 1024, f + ": over 1 MB (" + size + " bytes)");
+  var rows = JSON.parse(read(f));
+  check(Array.isArray(rows) && rows.length <= 20000, f + ": must be an array of at most 20,000 rows");
+  if (!Array.isArray(rows)) return;
+  var PROVINCES = ["KZN", "Gauteng", "Western Cape", "Eastern Cape", "Free State", "Limpopo", "Mpumalanga", "North West", "Northern Cape"];
+  var bad = rows.filter(function (r) {
+    return !Array.isArray(r) || r.length !== 5
+      || typeof r[0] !== "string" || r[0].length < 1 || r[0].length > 60 || /[<>"&]/.test(r[0])
+      || PROVINCES.indexOf(r[1]) === -1
+      || typeof r[2] !== "number" || !(r[2] >= -35 && r[2] <= -22)
+      || typeof r[3] !== "number" || !(r[3] >= 16 && r[3] <= 33)
+      || !Number.isInteger(r[4]) || r[4] < 1;
+  });
+  check(bad.length === 0, f + ": " + bad.length + " bad rows, e.g. " + JSON.stringify(bad.slice(0, 2)).slice(0, 120));
+})();
+
 if (failures.length) {
   console.error("\nSECURITY CHECK FAILED (" + failures.length + " problem" + (failures.length === 1 ? "" : "s") + "):\n");
   failures.forEach(function (f) { console.error("  ✗ " + f); });
