@@ -72,11 +72,19 @@
     return svg;
   }
 
-  function unknown(text) { return el("span", { className: "unknown" }, text || L.UNKNOWN); }
+  // The unknown label depends on the school being drawn: "Not on the school's fee sheet", or "Not found online yet" when
+  // we have no fees for it at all (V73-1). asSchool() sets it while one school's view is built.
+  var unknownText = null;
+  function asSchool(s, build) {
+    var before = unknownText;
+    unknownText = s ? L.unknownFor(s) : null;
+    try { return build(); } finally { unknownText = before; }
+  }
+  function unknown(text) { return el("span", { className: "unknown" }, text || unknownText || L.UNKNOWN); }
   function money(amount) { return L.isNum(amount) ? L.formatRand(amount) : unknown(); }
 
   // Monthly fee, or when the school doesn't publish one: "About R4,643" plus a line saying it's our 12-month sum.
-  var ESTIMATE_NOTE = "Not published by school. Our calculation: yearly fee\u00a0\u00f7\u00a012.";
+  var ESTIMATE_NOTE = "Not on the school's fee sheet. Our calculation: yearly fee\u00a0\u00f7\u00a012.";
   function monthlyText(s, grade) {
     var est = L.monthlyEstimate(s, grade);
     return est !== null ? "About " + L.formatRand(est) : money(L.monthlyFees(s, grade));
@@ -981,7 +989,7 @@
         : el("div", { className: "money-pair" },
             el("div", { className: "money" }, el("div", { className: "label" }, "Fees / month"),
               L.monthlyEstimate(s) !== null
-                ? [el("strong", {}, monthlyText(s)), el("div", { className: "muted small" }, "Not published. Yearly\u00a0\u00f7\u00a012")]
+                ? [el("strong", {}, monthlyText(s)), el("div", { className: "muted small" }, "Not on the fee sheet. Yearly\u00a0\u00f7\u00a012")]
                 : el("strong", {}, feeText(s, monthly, "No fees"))),
             el("div", { className: "money true" }, el("div", { className: "label" }, "True cost / yr"), el("strong", {}, feeText(s, total, "Extras only")))),
       extras && el("div", { className: "extras-line one-line" }, icon("alert"), el("span", {}, extras)));
@@ -1007,7 +1015,8 @@
   }
 
   // The school page's sections and its Compare/Call bar. Used for the phone page and the desktop pane.
-  function schoolView(s) {
+  function schoolView(s) { return asSchool(s, function () { return schoolViewFor(s); }); }
+  function schoolViewFor(s) {
     var f = s.fees || {};
     var grade = gradeFor(s);
     var fees = L.yearlyFees(s, grade);
@@ -1075,7 +1084,7 @@
       outings, care, admissionsPanel(s), sports, factsPanel(s),
       contactPanel(s),
       shareButton(s),
-      missing.length ? el("p", { className: "muted small missing-line" }, "Not published yet: " + missing.join(", ")) : null,
+      missing.length ? el("p", { className: "muted small missing-line" }, "Not found yet: " + missing.join(", ")) : null,
       sourceLine(s),
       letterAsk("this school's", "Fee letter: " + s.name)
     ];
@@ -1209,7 +1218,7 @@
     var a = s.admissions || {};
     var pr = s.provinceRules || {};
     var pub = pr.publicRules, priv = pr.privateRules;
-    if (!s.admissions && !pub && !priv) return panel("Admissions & feeder zone", el("p", { className: "empty" }, L.UNKNOWN));
+    if (!s.admissions && !pub && !priv) return panel("Admissions & feeder zone", el("p", { className: "empty" }, L.NOT_FOUND));
 
     function bullets(items) {
       return items && items.length ? el("ul", { className: "bullets" }, items.map(function (t) { return el("li", {}, t); })) : null;
@@ -1234,7 +1243,7 @@
       el("ul", { className: "rows" },
         a.applyBy ? row("Apply by", dateWithStatus(a.applyBy))
           : pub && pub.closes ? row((pr.name || "Province") + " closing date", dateWithStatus(pub.closes))
-          : row("Apply by", unknown())),
+          : row("Apply by", unknown(L.NOT_FOUND))),
       L.safeUrl(applyLink) ? el("a", { className: "btn apply-btn", href: L.safeUrl(applyLink), target: "_blank", rel: "noopener noreferrer" }, "Apply on school website") : null,
       howItWorks ? el("details", { className: "how-it-works" }, el("summary", {}, "How it works"), howItWorks) : null);
   }
@@ -1247,7 +1256,7 @@
       el("ul", { className: "rows" }, outings.map(function (o) {
         return el("li", {},
           el("span", { className: "name" }, o.name, el("span", { className: "note" }, [o.grades, o.when, o.note].filter(Boolean).join(" · "))),
-          el("span", { className: "amt" + (L.isNum(o.cost) ? "" : " unknown") }, L.isNum(o.cost) ? L.formatRand(o.cost) : L.UNKNOWN));
+          el("span", { className: "amt" + (L.isNum(o.cost) ? "" : " unknown") }, L.isNum(o.cost) ? L.formatRand(o.cost) : (unknownText || L.UNKNOWN)));
       })));
   }
 
@@ -1280,7 +1289,8 @@
 
   // ---------- True cost breakdown ----------
 
-  function renderCosts(id) {
+  function renderCosts(id) { return asSchool(findSchool(id), function () { return renderCostsFor(id); }); }
+  function renderCostsFor(id) {
     var s = findSchool(id);
     if (!s) return notFound();
     var f = s.fees || {};
@@ -1315,7 +1325,7 @@
     }
     // No single amount, but the note lists the school's prices ("pullover R250, jersey R350"): don't say the school
     // didn't publish them (B63). Still not added to the total.
-    function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "See note" : L.UNKNOWN; }
+    function unpricedLabel(c) { return /\bR\s?\d/.test(c.note || "") ? "See note" : (unknownText || L.UNKNOWN); }
     var hidden = (s.hiddenCosts || []).filter(function (c) { return L.countsInTotal(c, L.costGrade(s, grade)); }).map(function (c) { return costRow(c, true); });
     // Items already inside the school fee get their own short list, not "only some families pay these" (V43-4).
     var maybe = L.mightAlsoApply(s, grade).filter(function (c) { return !c.included; }).map(function (c) { return costRow(c, false); });
@@ -1470,23 +1480,23 @@
         el("section", { className: "compare-total" },
           el("div", { className: "label on-dark" }, "True cost per year"),
           el("div", { className: "two" },
-            el("div", {}, el("div", { className: "sub" }, A.name), el("strong", {}, L.isNum(ta) ? L.formatRand(ta) : L.UNKNOWN)),
-            el("div", {}, el("div", { className: "sub" }, B.name), el("strong", {}, L.isNum(tb) ? L.formatRand(tb) : L.UNKNOWN))),
+            el("div", {}, el("div", { className: "sub" }, A.name), el("strong", {}, L.isNum(ta) ? L.formatRand(ta) : L.unknownFor(A))),
+            el("div", {}, el("div", { className: "sub" }, B.name), el("strong", {}, L.isNum(tb) ? L.formatRand(tb) : L.unknownFor(B)))),
           el("div", { className: "verdict" }, verdict)),
         el("section", { className: "panel compare-table" },
           el("div", { className: "crow chead", aria: { hidden: "true" } }, el("div", { className: "label" }, ""),
             el("div", { className: "two" }, el("span", {}, A.name), el("span", {}, B.name))),
-          crow("School fees / year", money(L.yearlyFees(A, ga)), money(L.yearlyFees(B, gb))),
-          crow("Monthly fee", [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not published; yearly\u00a0\u00f7\u00a012)" : paymentsText(A, ga)],
-            [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not published; yearly\u00a0\u00f7\u00a012)" : paymentsText(B, gb)]),
+          crow("School fees / year", asSchool(A, function () { return money(L.yearlyFees(A, ga)); }), asSchool(B, function () { return money(L.yearlyFees(B, gb)); })),
+          crow("Monthly fee", asSchool(A, function () { return [monthlyText(A, ga), L.monthlyEstimate(A, ga) !== null ? " (not on the fee sheet; yearly\u00a0\u00f7\u00a012)" : paymentsText(A, ga)]; }),
+            asSchool(B, function () { return [monthlyText(B, gb), L.monthlyEstimate(B, gb) !== null ? " (not on the fee sheet; yearly\u00a0\u00f7\u00a012)" : paymentsText(B, gb)]; })),
           crow("Extras on top of the fee / year", extrasText(A, ga), extrasText(B, gb), true),
           crow("Extras with no published price", String(L.unpricedCosts(A).length), String(L.unpricedCosts(B).length), true),
           crow("Costs that might also apply (not in total)", String(L.mightAlsoApply(A, ga).length), String(L.mightAlsoApply(B, gb).length), true),
-          crow("Once-off to start", money(L.startUpCosts(A, ga)), money(L.startUpCosts(B, gb))),
-          crow("Aftercare", optionalText(A.aftercare), optionalText(B.aftercare)),
-          crow("Transport", optionalText(A.transport), optionalText(B.transport)),
-          crow("Type", A.type || unknown(), B.type || unknown()),
-          crow("Grades", A.grades || unknown(), B.grades || unknown()),
+          crow("Once-off to start", asSchool(A, function () { return money(L.startUpCosts(A, ga)); }), asSchool(B, function () { return money(L.startUpCosts(B, gb)); })),
+          crow("Aftercare", asSchool(A, function () { return optionalText(A.aftercare); }), asSchool(B, function () { return optionalText(B.aftercare); })),
+          crow("Transport", asSchool(A, function () { return optionalText(A.transport); }), asSchool(B, function () { return optionalText(B.transport); })),
+          crow("Type", A.type || unknown(L.NOT_FOUND), B.type || unknown(L.NOT_FOUND)),
+          crow("Grades", A.grades || unknown(L.NOT_FOUND), B.grades || unknown(L.NOT_FOUND)),
           crow("Area", [A.area, A.city].filter(Boolean).join(", "), [B.area, B.city].filter(Boolean).join(", ")))
       ];
     } else {
@@ -1519,8 +1529,8 @@
       el("ul", {},
         el("li", {}, "Every number comes from the school's own fee letter or website, or is clearly marked when it doesn't (for example a survey figure)."),
         el("li", {}, "Each school page shows where its numbers come from and the date we checked them."),
-        el("li", {}, "Before a school goes live, its numbers are checked a second time against the school's own documents. Where a school doesn't publish its fees, the page says so."),
-        el("li", {}, "If a school doesn't publish something, we say \u201cNot published by school\u201d. We never guess, and we never show R0 for a cost we don't know."),
+        el("li", {}, "Before a school goes live, its numbers are checked a second time against the school's own documents. Where we haven't found a school's fees yet, the page says so."),
+        el("li", {}, "If a cost isn't on the school's fee sheet, we say \u201cNot on the school's fee sheet\u201d. If we haven't found a school's fees yet, we say \u201cNot found online yet\u201d. We never guess, and we never show R0 for a cost we don't know."),
         el("li", {}, "Map positions come from the Department of Basic Education's school list. Where that list has no position or a wrong one, we use the school's own street address, checked on the map. Some of those positions are \u00a9 ", el("a", { href: "https://www.openstreetmap.org/copyright", rel: "noopener noreferrer" }, "OpenStreetMap contributors"), "."),
         el("li", {}, "Fees change every year, so always confirm with the school before you decide.")),
       el("h2", {}, "Spot a wrong price?"),
@@ -1660,7 +1670,7 @@
   function optionalText(o) {
     if (!o || o.available === null || o.available === undefined) return unknown();
     if (!o.available) return "Not offered";
-    return L.isNum(o.monthly) ? L.formatRand(o.monthly) + "/mo" : unknown("Offered, price not published");
+    return L.isNum(o.monthly) ? L.formatRand(o.monthly) + "/mo" : unknown("Offered, price not on the fee sheet");
   }
 
   // Sources grouped by website: "wbhs.co.za (1, 2, 3), en.wikipedia.org", each number a link (polish-v2 item 3).

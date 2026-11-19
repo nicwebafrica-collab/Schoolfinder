@@ -179,14 +179,14 @@
     var f = feeRow(school, grade);
     if (isNum(f.monthly)) return f.monthly;
     // Only when the school says how many payments: otherwise R25,200 / 12 = "R2,100 a month" is our guess, not
-    // the school's figure (it may bill 10 times). Show "Not published by school" instead (V36-2).
+    // the school's figure (it may bill 10 times). Show the unknown label instead (V36-2).
     var n = instalments(school, grade);
     if (isNum(f.yearly) && n) return Math.round(f.yearly / n);
     return null;
   }
 
   // When the school doesn't publish a monthly amount or its number of payments: the yearly fee spread over
-  // 12 months, shown clearly as our own calculation next to "Not published by school" (Nicholas, 5 Nov).
+  // 12 months, shown clearly as our own calculation next to the unknown label (Nicholas, 5 Nov).
   function monthlyEstimate(school, grade) {
     if (monthlyFees(school, grade) !== null) return null;
     var y = yearlyFees(school, grade);
@@ -363,7 +363,18 @@
     return results;
   }
 
-  var UNKNOWN = "Not published by school";
+  // Unknown amounts. We can't know a school "doesn't publish" something (it may be in a letter we haven't seen), so
+  // say what we know (Fact Checker, 19 Nov, V73-1): not on the fee sheet we have, or no fees found online at all.
+  var UNKNOWN = "Not on the school's fee sheet";
+  var NOT_FOUND = "Not found online yet";
+  // Do we have any fee figure for this school (or is it a no-fee school)? If not, every unknown is "Not found online yet".
+  function feesFound(s) {
+    var f = (s && s.fees) || {};
+    if (s && s.noFee) return true;
+    if (isNum(f.yearly) || isNum(f.monthly)) return true;
+    return (Array.isArray(f.byGrade) ? f.byGrade : []).some(function (g) { return g && (isNum(g.yearly) || isNum(g.monthly)); });
+  }
+  function unknownFor(s) { return feesFound(s) ? UNKNOWN : NOT_FOUND; }
 
   // R34,800 (the site's money format). Unknown amounts never show as R0.
   function formatRand(amount) {
@@ -554,7 +565,7 @@
   var api = {
     setCountry: setCountry, COUNTRY: COUNTRY,
     cleanSchool: cleanSchool, cleanSchools: cleanSchools,
-    UNKNOWN: UNKNOWN, isNum: isNum, feeRow: feeRow, depositFor: depositFor, registrationFor: registrationFor, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
+    UNKNOWN: UNKNOWN, NOT_FOUND: NOT_FOUND, feesFound: feesFound, unknownFor: unknownFor, isNum: isNum, feeRow: feeRow, depositFor: depositFor, registrationFor: registrationFor, unpricedCosts: unpricedCosts, yearlyExtras: yearlyExtras,
     normaliseFrequency: normaliseFrequency, normaliseApplies: normaliseApplies, parseAmount: parseAmount,
     countsInTotal: countsInTotal, entryGrade: entryGrade, headlineGrade: headlineGrade, defaultGrade: defaultGrade, costGrade: costGrade, outingApplies: outingApplies, outingCounts: outingCounts, gradeSet: gradeSet, appliesLabel: appliesLabel, mightAlsoApply: mightAlsoApply, perYear: perYear,
     instalments: instalments, dataProblems: dataProblems,
