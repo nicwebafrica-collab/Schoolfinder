@@ -933,7 +933,7 @@
     "name": "Herbert Hurd Primary School",
     "type": "Public",
     "phase": "Primary",
-    "grades": null,
+    "grades": "Gr 1-7",
     "area": "Newton Park",
     "city": "Gqeberha",
     "province": "Eastern Cape",
@@ -941,7 +941,7 @@
     "address": "90 Willet Street, Newton Park, Gqeberha, 6009",
     "lat": -33.950191,
     "lng": 25.559536,
-    "website": null,
+    "website": "https://www.herberthurd.com/",
     "phone": "041 364 1051",
     "email": null,
     "language": null,
@@ -969,8 +969,8 @@
       "registration": null,
       "deposit": null,
       "instalments": 11,
-      "notes": "State school (Quintile 5, fee-charging). 2027 school fee resolution accepted by parents at the AGM on 17 November 2026: one annual fee for all grades, R30 360.00, payable on the first day of Term 1 2027, or R2 760 a month, paid before the 7th of each month, 11 payments from January to November 2027. Full-payment discounts, only if paid in full by the date: 10% by 31 December 2026, 7% by 31 January 2027, 5% by 28 February 2027. Aftercare R1 000 a month (14:00 to 17:30). Music fees are extra: individual lesson R180 a month, brass and wind instrument hire R180 a month, reeds R65 a month (each over 11 months), remedial lesson R200 a term. Bus fares may be charged if used. A stationery fee is charged but no amount is given. Fee exemption can be applied for. The letter is a scanned PDF read by OCR only; the school's pin from the DBE list is rounded, check on the map.",
-      "sourceKind": "the school's 2027 fee resolution (scanned PDF read by OCR)",
+      "notes": "State school (Quintile 5, fee-charging). 2027 school fee resolution accepted by parents at the AGM on 17 November 2026: one annual fee for all grades, R30 360.00, payable on the first day of Term 1 2027, or R2 760 a month, paid before the 7th of each month, 11 payments from January to November 2027. Full-payment discounts, only if paid in full by the date: 10% by 31 December 2026, 7% by 31 January 2027, 5% by 28 February 2027. Aftercare R1 000 a month (14:00 to 17:30). Music fees are extra: individual lesson R180 a month, brass and wind instrument hire R180 a month, reeds R65 a month (each over 11 months), remedial lesson R200 a term. Bus fares may be charged if used. A stationery fee is charged but no amount is given. Fee exemption can be applied for.",
+      "sourceKind": "the school's 2027 fee resolution",
       "byGrade": [
         {
           "grade": "All grades",
@@ -990,26 +990,26 @@
       },
       {
         "item": "Music: individual lesson",
-        "amount": 1980,
-        "frequency": "yearly",
-        "note": "Only for learners taking lessons; R180 a month for 11 months",
-        "applies": "some",
+        "amount": 180,
+        "frequency": "monthly",
+        "note": "Only for learners taking lessons; for 11 months",
+        "applies": "optional",
         "included": false
       },
       {
         "item": "Music: instrument hire (brass and wind)",
-        "amount": 1980,
-        "frequency": "yearly",
-        "note": "Only for learners hiring; R180 a month for 11 months",
-        "applies": "some",
+        "amount": 180,
+        "frequency": "monthly",
+        "note": "Only for learners hiring; for 11 months",
+        "applies": "optional",
         "included": false
       },
       {
         "item": "Music: reeds",
-        "amount": 715,
-        "frequency": "yearly",
-        "note": "Only for learners who need reeds; R65 a month for 11 months",
-        "applies": "some",
+        "amount": 65,
+        "frequency": "monthly",
+        "note": "Only for learners who need reeds; for 11 months",
+        "applies": "optional",
         "included": false
       },
       {

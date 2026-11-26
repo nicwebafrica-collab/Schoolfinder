@@ -39,44 +39,51 @@
       "monthly": 3460,
       "registration": null,
       "deposit": null,
-      "instalments": null,
-      "notes": "Independent school, ECD to Matric, with boarding. 2027 annual and monthly fee: ECD full day (2-4 years) R38,060 and R3,460; ECD half day R32,725 and R2,975; Pre-Primary (Gr PR, R) R50,325 and R4,575; Gr 1-3 R74,030 and R6,730; Gr 4-7 R91,300 and R8,300; Gr 8-11 R106,810 and R9,710; Matric R117,150 and R11,715. Entry grade shown is the ECD full-day class. The number of monthly payments is unclear on our readings, so no instalment count is shown. Annual fees are due in advance by 31 December. Early payment in full: 8% off by 31 December 2026, 6% off by 28 February 2027. Sibling discount: 50% third child, 75% fourth. Matric extras, frequency not stated so not listed as hidden costs: R1,690 per IEB subject beyond the seventh, Dance R600, Jacket R900. High School boarding R123,350 a year (R30,838 a term). Waiting class R25 an hour, holding class R350 a day.",
+      "instalments": 11,
+      "notes": "Independent school, ECD to Matric, with boarding. 2027 annual and monthly fee: ECD full day (2-4 years) R38,060 and R3,460; ECD half day R32,725 and R2,975; Pre-Primary (Gr PR, R) R50,325 and R4,575; Gr 1-3 R74,030 and R6,730; Gr 4-7 R91,300 and R8,300; Gr 8-11 R106,810 and R9,710; Matric R117,150 and R11,715. Entry grade shown is the ECD full-day class. Monthly payment (by permission of the school): 11 months, January to November; Matric 10 months, January to October. Annual fees are due in advance by 31 December. Early payment in full: 8% off by 31 December 2026, 6% off by 28 February 2027. Sibling discount: 50% third child, 75% fourth. Matric extras: R1,690 per IEB subject beyond the seventh, Dance R600, Jacket R900. High School boarding R123,350 a year (R30,838 a term). Waiting class R25 an hour, holding class R350 a day.",
       "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
           "grade": "ECD Full Day (2-4 yrs)",
           "yearly": 38060,
-          "monthly": 3460
+          "monthly": 3460,
+          "instalments": 11
         },
         {
           "grade": "ECD Half Day (2-4 yrs)",
           "yearly": 32725,
-          "monthly": 2975
+          "monthly": 2975,
+          "instalments": 11
         },
         {
           "grade": "Gr PR-R",
           "yearly": 50325,
-          "monthly": 4575
+          "monthly": 4575,
+          "instalments": 11
         },
         {
           "grade": "Gr 1-3",
           "yearly": 74030,
-          "monthly": 6730
+          "monthly": 6730,
+          "instalments": 11
         },
         {
           "grade": "Gr 4-7",
           "yearly": 91300,
-          "monthly": 8300
+          "monthly": 8300,
+          "instalments": 11
         },
         {
           "grade": "Gr 8-11",
           "yearly": 106810,
-          "monthly": 9710
+          "monthly": 9710,
+          "instalments": 11
         },
         {
           "grade": "Gr 12",
           "yearly": 117150,
-          "monthly": 11715
+          "monthly": 11715,
+          "instalments": 10
         }
       ]
     },
@@ -96,6 +103,38 @@
         "note": "Only where the subjects are taken",
         "applies": "some",
         "included": false
+      },
+      {
+        "item": "High School boarding",
+        "amount": 123350,
+        "frequency": "yearly",
+        "applies": "boarders",
+        "included": false,
+        "note": "Gr 7-11 R30,838 a term; Matric R41,117 a term for terms 1-3"
+      },
+      {
+        "item": "Matric dance",
+        "amount": 600,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "Gr 12"
+      },
+      {
+        "item": "Matric jacket",
+        "amount": 900,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "Gr 12"
+      },
+      {
+        "item": "Extra IEB subject",
+        "amount": 1690,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "Gr 12, per subject from the 8th"
       }
     ]
   }

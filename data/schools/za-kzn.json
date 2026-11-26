@@ -7614,7 +7614,7 @@
       "registration": 6600,
       "deposit": null,
       "instalments": 12,
-      "notes": "Independent school in Howick. 2027 local fees per year (monthly): Mixed Ability Gr 1-3 and Gr 4-7 R78,000 (R6,500); Gr 8 R75,600 (R6,300); Gr 9 R78,000 (R6,500); Gr 10 R83,400 (R6,950); Gr 11 R86,400 (R7,200); Gr 12 R66,000 (R5,500); STEP Class R78,000 (R6,500). A 5% reduction is offered for paying the year in full early. Once-off, non-refundable registration and administration fee for new local learners R6,600 (international fees differ; not recorded). Development levy R2,400 a year for all grades, invoiced at the start of the year. Isi-Zulu R1,400 a month is paid directly to the teacher; the sheet does not say who must take it. Consumer Studies Gr 10-11 R2,000 a year, Gr 12 R2,750 a year, STEP cooking and gardening R1,500 a year. Family rebate 5% for the second and later children. Transport and uniform are not priced.",
+      "notes": "Independent school in Hilton. 2027 local fees per year (monthly): Mixed Ability Gr 1-3 and Gr 4-7 R78,000 (R6,500); Gr 8 R75,600 (R6,300); Gr 9 R78,000 (R6,500); Gr 10 R83,400 (R6,950); Gr 11 R86,400 (R7,200); Gr 12 R66,000 (R5,500); STEP Class R78,000 (R6,500); Specialised Autism Class (Junior School) R81,240 (R6,770). A 5% reduction is offered for paying the year in full before 15 January. Once-off, non-refundable registration and administration fee for new local learners R6,600 (international fees differ; not recorded). Development levy R2,400 a year for all grades, invoiced at the start of the year. Isi-Zulu R1,400 a month is paid directly to the teacher; the sheet does not say who must take it. Consumer Studies Gr 10-11 R2,000 a year, Gr 12 R2,750 a year, STEP cooking and gardening R1,500 a year. Family rebate 5% for the second and later children. Transport and uniform are not priced.",
       "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
@@ -7656,6 +7656,11 @@
           "grade": "STEP Class (Year 1-3)",
           "yearly": 78000,
           "monthly": 6500
+        },
+        {
+          "grade": "Specialised Autism Class (Junior School)",
+          "yearly": 81240,
+          "monthly": 6770
         }
       ]
     },
