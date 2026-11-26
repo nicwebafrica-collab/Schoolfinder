@@ -10,7 +10,7 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 9,
+      "schoolCount": 12,
       "updated": "2026-11",
       "ids": [
         "clarendon-park-primary-school",
@@ -21,12 +21,15 @@
         "erica-girls-primary-school",
         "cambridge-primary-school",
         "gonubie-primary-school",
-        "greenwood-primary-school"
+        "greenwood-primary-school",
+        "st-dominic-s-priory-school",
+        "stulting-primary-school",
+        "sterkspruit-christian-private-school"
       ],
       "bounds": [
-        -33.9965,
-        25.58833,
-        -31.88691,
+        -34.0248,
+        24.7699,
+        -30.5282,
         28.0083
       ]
     },
@@ -37,7 +40,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 139,
+      "schoolCount": 143,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -178,7 +181,11 @@
         "assumpta-primary-private-school",
         "jeppe-high-school-for-girls",
         "ormonde-primary-school",
-        "rift-house-academy"
+        "rift-house-academy",
+        "laer-volkskool-heidelberg",
+        "craiglands-remedial-school",
+        "norridge-park-primary-school",
+        "saxonwold-primary-school"
       ],
       "bounds": [
         -26.7360185101,
@@ -194,7 +201,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 61,
+      "schoolCount": 66,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -257,13 +264,18 @@
         "lynford-school",
         "crawford-preparatory-la-lucia",
         "pelham-senior-primary-school",
-        "st-barnabas-independent-school"
+        "st-barnabas-independent-school",
+        "mohamed-ebrahim-islamic-school",
+        "mtuba-christian-academy",
+        "maritzburg-christian-school",
+        "umdoni-christian-academy",
+        "phoenix-muslim-school"
       ],
       "bounds": [
         -30.8726,
         29.418402,
         -27.1272,
-        32.0316
+        32.1832
       ]
     },
     {
@@ -273,7 +285,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 38,
+      "schoolCount": 44,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -313,11 +325,17 @@
         "sunlands-primary-school",
         "sweet-valley-primary-school",
         "vredelust-primary-school",
-        "westerford-high-school"
+        "westerford-high-school",
+        "kenridge-primary-school",
+        "international-school-of-hout-bay",
+        "tate-international-school",
+        "pinelands-north-primary-school",
+        "rhenish-primary",
+        "zwaanswyk-high-school"
       ],
       "bounds": [
         -34.172504,
-        18.3783,
+        18.3558,
         -31.6089,
         23.3572
       ]

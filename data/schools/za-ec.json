@@ -687,5 +687,245 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "st-dominic-s-priory-school",
+    "name": "St Dominic's Priory School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 000-12",
+    "area": "Miramar",
+    "city": "Gqeberha",
+    "province": "Eastern Cape",
+    "postcode": "6070",
+    "address": "Godlonton Avenue, Miramar, Gqeberha, 6070",
+    "lat": -33.9998,
+    "lng": 25.5468,
+    "website": "https://www.priory.co.za/",
+    "phone": "041 396 2800",
+    "email": null,
+    "language": null,
+    "emis": "200100794",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://www.priory.co.za/assets/2027%20Fee%20Structure-docx.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 30000,
+      "monthly": 3000,
+      "registration": 2500,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "Independent school in Gqeberha. 2027 fees per year (monthly, 10 instalments Jan-Oct): Gr 000 R30,000 (R3,000); Gr PR and R R41,160 (R4,116); Gr 1-3 R54,820 (R5,482); Gr 4-6 R63,480 (R6,348); Gr 7-9 R70,840 (R7,084); Gr 10-11 R81,210 (R8,121); Gr 12 R95,300 (R9,530), which includes IEB exam fees. Registration fee, non-refundable, charged per family when registering together: R2,500 for Gr 000 and PR and R, R4,500 for Gr 1-12. Enrolment fee payable by end February 2027, deductible on progression: R4,100 for Gr R to Gr 1 (for 2028), R5,100 for Gr 7 to Gr 8 (for 2028). Family discount on tuition: 7.5% second child, 12.5% third, 20% fourth. 5% off tuition if paid by 31 January 2027. Development levy R2,862 per year (capped per family) and magazine levy R100 per family. Music fees are listed but not recorded (unclear who pays).",
+      "sourceKind": "the school's 2027 fee structure",
+      "byGrade": [
+        {
+          "grade": "Gr 000",
+          "yearly": 30000,
+          "monthly": 3000
+        },
+        {
+          "grade": "Gr PR & R",
+          "yearly": 41160,
+          "monthly": 4116
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 54820,
+          "monthly": 5482
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 63480,
+          "monthly": 6348
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": 70840,
+          "monthly": 7084
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 81210,
+          "monthly": 8121
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 95300,
+          "monthly": 9530
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 2862,
+        "frequency": "yearly",
+        "note": "Per year, capped at R5,724 per family",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Magazine levy",
+        "amount": 100,
+        "frequency": "yearly",
+        "note": "Per family",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "stulting-primary-school",
+    "name": "Stulting Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Humansdorp",
+    "city": "Humansdorp",
+    "province": "Eastern Cape",
+    "postcode": "6300",
+    "address": "14 Voortrekker Street, Humansdorp, 6300",
+    "lat": -34.0248,
+    "lng": 24.7699,
+    "website": "https://www.stulting.co.za/",
+    "phone": "042 295 1119",
+    "email": null,
+    "language": null,
+    "emis": "200100752",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://www.stulting.co.za/wp-content/uploads/2026/11/2027-FINAL-FEES-AFR-ENG.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 25247,
+      "monthly": 2295,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public primary school in Humansdorp, bilingual (Afrikaans/English) 2027 fee sheet. Fee per year (monthly, Jan-Nov, 11 payments): Gr R R25,247 (R2,295); Gr 1-7 R23,762 (R2,160). The sheet says fees are payable in advance on the first day of school, the governing body allows 11 monthly payments, and if one payment is missed the whole amount becomes payable immediately; accounts in arrears go to attorneys from June each year. Once-off book fee of R500 per learner. Clothing and sport tours are mentioned but not priced. No registration fee or deposit is printed.",
+      "sourceKind": "the school's 2027 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 25247,
+          "monthly": 2295
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 23762,
+          "monthly": 2160
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Book fee",
+        "amount": 500,
+        "frequency": "once",
+        "note": "Once off per learner",
+        "applies": "everyone",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "sterkspruit-christian-private-school",
+    "name": "Sterkspruit Christian Private School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr R-12",
+    "area": "Sterkspruit",
+    "city": "Sterkspruit",
+    "province": "Eastern Cape",
+    "postcode": null,
+    "address": "Herschel Main Road, Sterkspruit, 9762",
+    "lat": -30.5282,
+    "lng": 27.3671,
+    "website": "https://scps.co.za/",
+    "phone": "051 611 0640",
+    "email": null,
+    "language": null,
+    "emis": "200601149",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://scps.co.za/wp-content/uploads/2026/04/School-fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 15400,
+      "monthly": 1400,
+      "registration": 1200,
+      "deposit": null,
+      "instalments": 11,
+      "notes": "Christian school, Pre Gr R to Gr 12. 2026 fees, entry grade Pre Gr R and Reception shown: R15,400 a year, paid as 11 monthly payments of R1,400 (January to November). Other grades: Gr 1-3 R1,750, Gr 4-6 R1,800, Gr 7-9 R1,900, Gr 10-12 R2,100 a month. No discount for paying the full year in advance. Registration R1,200 (it was R1,100 if paid by 5 December 2025), only if space is available; it covers textbooks, photocopies and stationery. Paying cash into the school account adds 1% bank charge; lost or damaged books are charged to the parent (no amounts printed, not in hidden costs). The school is cashless. The sheet has no 2027 fees yet.",
+      "sourceKind": "the school's 2026 fee sheet",
+      "byGrade": [
+        {
+          "grade": "Pre Gr R and Reception",
+          "yearly": 15400,
+          "monthly": 1400
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 19250,
+          "monthly": 1750
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 19800,
+          "monthly": 1800
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": 20900,
+          "monthly": 1900
+        },
+        {
+          "grade": "Gr 10-12",
+          "yearly": 23100,
+          "monthly": 2100
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]
