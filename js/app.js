@@ -325,7 +325,14 @@
   function lastPlace() {
     try { return L.placeByName(localStorage.getItem("lastPlace") || ""); } catch (e) { return null; }
   }
+  // A new search closes the school open in the desktop right-hand pane (Breaker V75-1), and takes its
+  // address off the URL so clicking that school again still opens it.
+  function closePaneSchool() {
+    selectedId = null;
+    try { if (/^#\/school\//.test(location.hash)) history.replaceState(null, "", location.pathname + location.search + "#/"); } catch (e) { /* not allowed */ }
+  }
   function setPlace(place) {
+    closePaneSchool();
     state.place = place;
     state.near = null;
     state.query = place ? place.name : "";
@@ -357,7 +364,7 @@
     var results = el("div", {});
 
     pinBtn.addEventListener("click", function () {
-      askLocation(pinBtn, function () { state.place = null; state.query = ""; renderSearch(); }, { field: input, status: locStatus });
+      askLocation(pinBtn, function () { closePaneSchool(); state.place = null; state.query = ""; renderSearch(); }, { field: input, status: locStatus });
     });
 
     function choosePlace(place) { setPlace(place); renderSearch(); }
