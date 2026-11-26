@@ -4371,7 +4371,7 @@
     "name": "Baken Akademie",
     "type": "Private",
     "phase": "Combined",
-    "grades": "Gr 000-7",
+    "grades": "Gr 000-12",
     "area": "North Riding",
     "city": "Roodepoort",
     "province": "Gauteng",
@@ -4406,8 +4406,8 @@
       "monthly": 6213.55,
       "registration": 1500,
       "deposit": null,
-      "instalments": 11,
-      "notes": "Independent school. 2027 annual tuition before discounts, with the 11-payment monthly option (January to November): Gr R R68,349 (R6,213.55); Gr 1-3 R75,907 (R6,900.64); Gr 4-6 R82,807 (R7,527.91); Gr 7 R85,924 (R7,811.27). A 12-payment option is also printed. No Gr 000 row in our reading, so Gr R is the entry grade shown; Gr 8 to 12 are also on the sheet but not listed here. New-learner registration R1,500, once-off. Once-off upfront discounts (alternatives): 7% by 31 October 2026 (passed), 6% by 30 November 2026, 5% by 1 January 2027. Sibling discounts: 8% second child, 12% third. Capital fund R3,350 per learner, due by 1 December 2026 for 2027. Electronic books R500 a month for 11 months, applicable learners only. English books for Gr 1-2 English learners R370 a month; billing period still to be confirmed by the school.",
+      "instalments": null,
+      "notes": "Independent school. 2027 annual tuition before discounts, with the 11-payment monthly option (January to November): Gr R R68,349 (R6,213.55); Gr 1-3 R75,907 (R6,900.64); Gr 4-6 R82,807 (R7,527.91); Gr 7 R85,924 (R7,811.27); Gr 8-9 R88,372 (R8,033.82); Gr 10-11 R91,823 (R8,347.55); Gr 12 R95,718 (R8,701.64, fully paid by 30 Nov). A 12-payment option is also printed. The 2027 fee pack has no Gr 000-0 rows. BTEC R90,300. New-learner registration R1,500, once-off. Once-off upfront discounts (alternatives): 7% by 31 October 2026 (passed), 6% by 30 November 2026, 5% by 1 January 2027. Sibling discounts: 8% second child, 12% third. Capital fund R3,350 per learner, due by 1 December 2026 for 2027. Electronic books R500 a month for 11 months, applicable learners only. English books for Gr 1-2 English learners R370 a month; billing period still to be confirmed by the school.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -4429,6 +4429,21 @@
           "grade": "Gr 7",
           "yearly": 85924,
           "monthly": 7811.27
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": 88372,
+          "monthly": 8033.82
+        },
+        {
+          "grade": "Gr 10-11",
+          "yearly": 91823,
+          "monthly": 8347.55
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 95718,
+          "monthly": 8701.64
         }
       ]
     },
@@ -5654,62 +5669,79 @@
       "yearly": 53000,
       "monthly": 5300,
       "registration": null,
-      "deposit": 8800,
+      "deposit": null,
       "instalments": null,
-      "notes": "Fee-paying public primary school. The school's fees page has a table headed New Learner Fees 2027, so these amounts are for new learners. Annual fee and monthly school fee: Gr R R53,000 and R5,300; Gr 1-7 R41,000 and R4,100 each. The page does not say over how many months the monthly fee is paid, so no instalment count is shown. The table also has a Levy column (Gr R R2,000; Gr 1 R7,000; Gr 2 R6,000; Gr 3 R5,000; Gr 4-7 R1,200) and a Book fee column (Gr R R1,500; Gr 1 R1,500; Gr 2-7 R1,300), and a Total deposit column (Gr R R8,800; Gr 1 R12,600; Gr 2 R11,400; Gr 3 R10,400; Gr 4-7 R6,600). The page does not say how often the levy and book fee are charged or what the deposit covers, so they are not listed as extra costs; ask the school. The page prints no discount terms. The linked 2027 PDF could not be read, so only the web table is used.",
+      "notes": "Fee-paying public primary school. The school's fees page has a table headed New Learner Fees 2027, so these amounts are for new learners. Annual fee and monthly school fee: Gr R R53,000 and R5,300; Gr 1-7 R41,000 and R4,100 each. The page does not say over how many months the monthly fee is paid, so no instalment count is shown. New learners pay a deposit up front: the first month's fee plus the levy and book fee (Gr R R8,800; Gr 1 R12,600; Gr 2 R11,400; Gr 3 R10,400; Gr 4-7 R6,600). The page prints no discount terms.",
       "sourceKind": "the school's 2027 new-learner fee table",
       "byGrade": [
         {
           "grade": "Gr R",
           "yearly": 53000,
           "monthly": 5300,
-          "deposit": 8800
+          "deposit": null
         },
         {
           "grade": "Gr 1",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 12600
+          "deposit": null
         },
         {
           "grade": "Gr 2",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 11400
+          "deposit": null
         },
         {
           "grade": "Gr 3",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 10400
+          "deposit": null
         },
         {
           "grade": "Gr 4",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 6600
+          "deposit": null
         },
         {
           "grade": "Gr 5",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 6600
+          "deposit": null
         },
         {
           "grade": "Gr 6",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 6600
+          "deposit": null
         },
         {
           "grade": "Gr 7",
           "yearly": 41000,
           "monthly": 4100,
-          "deposit": 6600
+          "deposit": null
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "New-learner levy",
+        "amount": 2000,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "New learners, paid with the deposit: Gr R R2,000, Gr 1 R7,000, Gr 2 R6,000, Gr 3 R5,000, Gr 4-7 R1,200."
+      },
+      {
+        "item": "Book fee",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "Gr R-1 R1,500, Gr 2-7 R1,300 (new-learner table, paid with the deposit). The school doesn't say how often, so it isn't added to the total."
+      }
+    ]
   },
   {
     "id": "parkview-junior-school",
@@ -6169,8 +6201,8 @@
     "quintile": null,
     "outings": [],
     "aftercare": {
-      "available": null,
-      "monthly": null
+      "available": true,
+      "monthly": 2243
     },
     "transport": {
       "available": null,
@@ -6185,8 +6217,8 @@
       "year": 2027,
       "yearly": null,
       "monthly": 8680,
-      "registration": null,
-      "deposit": 20000,
+      "registration": 20000,
+      "deposit": null,
       "instalments": null,
       "notes": "Independent school, Sandton campus, Gr 000 to Gr 12. 2027 monthly tuition over 11 payments (January to November): Gr 000 R8,680; Gr 00 R9,331; Gr 0 R12,188; Gr 1-2 R14,688; Gr 3 R15,916; Gr 4-7 R17,255; Gr 8-9 R19,646; Gr 10-11 R20,374; Gr 12 R22,412 over 10 months. The only annual price printed is a 4% discounted pay-in-full price, so no yearly figure is shown. A once-off non-refundable enrolment fee is paid on first enrolment (R20,000 for Gr 000; R15,000 to R30,000 by grade, see by-grade list). Application fee R500 for new applications. Annual development levy R13,542 for every learner. College boarding Gr 8-11: R146,634 annual or R13,886 monthly; Gr 12 over 10 months: R146,634 or R15,274; unclear if tuition is included. A Marist Institute Levy line has unclear amounts, so it is not listed. Aftercare month-by-month R2,243 over 9 months. Alexandra campus not covered.",
       "sourceKind": "the school's 2027 fee schedule",
@@ -6195,78 +6227,89 @@
           "grade": "Gr 000",
           "yearly": null,
           "monthly": 8680,
-          "deposit": 20000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 20000
         },
         {
           "grade": "Gr 00",
           "yearly": null,
           "monthly": 9331,
-          "deposit": 20000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 20000
         },
         {
           "grade": "Gr 0",
           "yearly": null,
           "monthly": 12188,
-          "deposit": 30000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 30000
         },
         {
           "grade": "Gr 1-2",
           "yearly": null,
           "monthly": 14688,
-          "deposit": 30000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 30000
         },
         {
           "grade": "Gr 3",
           "yearly": null,
           "monthly": 15916,
-          "deposit": 30000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 30000
         },
         {
           "grade": "Gr 4-7",
           "yearly": null,
           "monthly": 17255,
-          "deposit": 30000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 30000
         },
         {
           "grade": "Gr 8",
           "yearly": null,
           "monthly": 19646,
-          "deposit": 35000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 35000
         },
         {
           "grade": "Gr 9",
           "yearly": null,
           "monthly": 19646,
-          "deposit": 30000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 30000
         },
         {
           "grade": "Gr 10",
           "yearly": null,
           "monthly": 20374,
-          "deposit": 20000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 20000
         },
         {
           "grade": "Gr 11",
           "yearly": null,
           "monthly": 20374,
-          "deposit": 15000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 15000
         },
         {
           "grade": "Gr 12",
           "yearly": null,
           "monthly": 22412,
-          "deposit": 15000,
-          "instalments": null
+          "deposit": null,
+          "instalments": null,
+          "registration": 15000
         }
       ]
     },
@@ -6303,6 +6346,14 @@
         "note": "Only if collected late or cancelled late",
         "applies": "penalty",
         "included": false
+      },
+      {
+        "item": "Marist Institute Levy",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "Gr 000-12. Printed as R3,000 and R300 (10 months) without column headings, so it isn't added to the total."
       }
     ]
   },
@@ -13069,7 +13120,7 @@
       "registration": null,
       "deposit": null,
       "instalments": 11,
-      "notes": "Public primary school in Heidelberg (Gauteng), Afrikaans fee sheet for 2027. Fee per year (monthly over 11 months): Gr R R18,986 (R1,726); Gr 1-7 R17,358 (R1,578). Discounts printed: 5% for paying the full 2027 fees before 31 December 2026, 2.5% for paying in full before 1 March 2027, and a 2.5% reduction for paying by debit order over 11 months; the school says discounts are a permission from the governing body, not guaranteed. No registration fee, deposit or other charges are printed on the sheet. The sheet is partly garbled, so the discounted amounts are not recorded.",
+      "notes": "Public primary school in Heidelberg (Gauteng), Afrikaans fee sheet for 2027. Fee per year (monthly over 11 months): Gr R R18,986 (R1,726); Gr 1-7 R17,358 (R1,578). Discounts printed: 5% for paying the full 2027 fees before 31 December 2026, 2.5% for paying in full before 1 March 2027, and a 2.5% reduction for paying by debit order over 11 months; the school says discounts are a permission from the governing body, not guaranteed. No registration fee, deposit or other charges are printed on the sheet. Printed discount prices: Gr R R18,036 (5%, before 31 Dec 2026) or R18,511 (2.5%, before 1 Mar 2027), or R1,683 a month by debit order; Gr 1-7 R16,490, R16,924, or R1,539 a month by debit order.",
       "sourceKind": "the school's 2027 fee sheet (Afrikaans)",
       "byGrade": [
         {
@@ -13091,7 +13142,7 @@
     "name": "Craiglands Remedial School",
     "type": "Private",
     "phase": "Primary",
-    "grades": null,
+    "grades": "Gr 1-7",
     "area": "Bryanston",
     "city": "Johannesburg",
     "province": "Gauteng",
@@ -13127,7 +13178,7 @@
       "registration": 25000,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent remedial (learning disability) school. 2027 fee structure, same for all grades. Two payment plans: annual fee R132 500 paid before the first day of the 2027 school year, or 10 monthly payments of R15 063, or 12 monthly payments of R13 833 (so no single monthly figure is shown). A lower annual price of R125 875 applied if paid by 16 December 2026 (a discount price). 10% sibling discount. Annual levy, due before the first payment of 2027: Gr 1-3 R5 270, Gr 4-7 R5 535. Once-off enrolment fee R25 000, 50% refundable when leaving. Aftercare is optional at R1 755 a month. The sheet is a text PDF read twice; the 2026 column is not used.",
+      "notes": "Independent remedial (learning disability) school. 2027 fee structure, same for all grades. Two payment plans: annual fee R132 500 paid before the first day of the 2027 school year, or 10 monthly payments of R15 063, or 12 monthly payments of R13 833 (so no single monthly figure is shown). A lower annual price of R125 875 applied if paid by 16 December 2026 (a discount price). 10% sibling discount. Annual levy, due before the first payment of 2027: Gr 1-3 R5 270, Gr 4-7 R5 535. Once-off enrolment fee R25 000, 50% refundable when leaving. Aftercare is optional at R1 755 a month (Jan-Nov, 11 months; or R150 a day).",
       "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
@@ -13152,14 +13203,6 @@
         "frequency": "yearly",
         "note": "Due before first payment of 2027",
         "applies": "Gr 4-7",
-        "included": false
-      },
-      {
-        "item": "Aftercare",
-        "amount": 1755,
-        "frequency": "monthly",
-        "note": "Optional",
-        "applies": "some",
         "included": false
       }
     ]

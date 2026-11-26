@@ -828,8 +828,8 @@
       "monthly": 2295,
       "registration": null,
       "deposit": null,
-      "instalments": 11,
-      "notes": "Public primary school in Humansdorp, bilingual (Afrikaans/English) 2027 fee sheet. Fee per year (monthly, Jan-Nov, 11 payments): Gr R R25,247 (R2,295); Gr 1-7 R23,762 (R2,160). The printed yearly totals are slightly above what the rounded monthly amounts give; both are shown as printed. The sheet says fees are payable in advance on the first day of school, the governing body allows 11 monthly payments, and if one payment is missed the whole amount becomes payable immediately; accounts in arrears go to attorneys from June each year. Once-off book fee of R500 per learner. Clothing and sport tours are mentioned but not priced. No registration fee or deposit is printed.",
+      "instalments": null,
+      "notes": "Public primary school in Humansdorp, bilingual (Afrikaans/English) 2027 fee sheet. Fee per year (monthly, Jan-Nov, 11 payments): Gr R R25,247 (R2,295); Gr 1-7 R23,762 (R2,160). The sheet says fees are payable in advance on the first day of school, the governing body allows 11 monthly payments, and if one payment is missed the whole amount becomes payable immediately; accounts in arrears go to attorneys from June each year. Once-off book fee of R500 per learner. Clothing and sport tours are mentioned but not priced. No registration fee or deposit is printed.",
       "sourceKind": "the school's 2027 fee sheet",
       "byGrade": [
         {
@@ -893,10 +893,10 @@
       "year": 2026,
       "yearly": 15400,
       "monthly": 1400,
-      "registration": 1100,
+      "registration": 1200,
       "deposit": null,
       "instalments": 11,
-      "notes": "Christian school, Pre Gr R to Gr 12. 2026 fees, entry grade Pre Gr R and Reception shown: R15,400 a year, paid as 11 monthly payments of R1,400 (January to November). Other grades: Gr 1-3 R1,750, Gr 4-6 R1,800, Gr 7-9 R1,900, Gr 10-12 R2,100 a month. No discount for paying the full year in advance. Registration fee R1,100, which the sheet says covers textbooks, photocopies and stationery; the printed deadline of 5 December 2025 has passed, after which it is R1,200 and only if space is available. Paying cash into the school account adds 1% bank charge; lost or damaged books are charged to the parent (no amounts printed, not in hidden costs). The school is cashless. The sheet has no 2027 fees yet.",
+      "notes": "Christian school, Pre Gr R to Gr 12. 2026 fees, entry grade Pre Gr R and Reception shown: R15,400 a year, paid as 11 monthly payments of R1,400 (January to November). Other grades: Gr 1-3 R1,750, Gr 4-6 R1,800, Gr 7-9 R1,900, Gr 10-12 R2,100 a month. No discount for paying the full year in advance. Registration R1,200 (it was R1,100 if paid by 5 December 2025), only if space is available; it covers textbooks, photocopies and stationery. Paying cash into the school account adds 1% bank charge; lost or damaged books are charged to the parent (no amounts printed, not in hidden costs). The school is cashless. The sheet has no 2027 fees yet.",
       "sourceKind": "the school's 2026 fee sheet",
       "byGrade": [
         {

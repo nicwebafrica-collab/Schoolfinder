@@ -1978,7 +1978,7 @@
       "registration": null,
       "deposit": null,
       "instalments": null,
-      "notes": "Independent school: Junior School Grades 4-7, Senior School Grades 8-12 (IEB). 2027 tuition (base fee) per year: Gr 4-7 R106,800; Gr 8-9 R142,715; Gr 10-12 R147,100. The headline is Gr 4-7. Total fees are tuition plus levies. The letter says the IEB Examination, Food Day, Grade Camps and Social Action levies are charged to all students, the Prep levy to Prep School students, and subject levies only where a student takes the subject. The levy columns are misaligned in the text, so no levy amounts are shown here; see the school's letter. Payment options: full settlement discount on the base fee of 10% by 30 November, 7.5% by 31 December, 5% by 31 January; or three terms (50% / 25% / 25%); or 8 monthly payments January to August; or a 12-month plan with a R2 500 surcharge. The letter is dated 23 October 2026.",
+      "notes": "Independent school: Junior School Grades 4-7, Senior School Grades 8-12 (IEB). 2027 tuition (base fee) per year: Gr 4-7 R106,800; Gr 8-9 R142,715; Gr 10-12 R147,100. The headline is Gr 4-7. Total fees are tuition plus levies. The letter says the IEB Examination, Food Day, Grade Camps and Social Action levies are charged to all students, the Prep levy to Prep School students, and subject levies only where a student takes the subject. Prep and subject levies are on the school's letter. Payment options: full settlement discount on the base fee of 10% by 30 November, 7.5% by 31 December, 5% by 31 January; or three terms (50% / 25% / 25%); or 8 monthly payments January to August; or a 12-month plan with a R2 500 surcharge. The letter is dated 23 October 2026.",
       "sourceKind": "the school's 2027 fee letter",
       "byGrade": [
         {
@@ -2002,6 +2002,62 @@
         "frequency": "yearly",
         "note": "Only if the 12-month plan is chosen",
         "applies": "some",
+        "included": false
+      },
+      {
+        "item": "IEB examination levy",
+        "amount": 1100,
+        "frequency": "yearly",
+        "applies": "Gr 4-7",
+        "included": false
+      },
+      {
+        "item": "IEB examination levy",
+        "amount": 2300,
+        "frequency": "yearly",
+        "applies": "Gr 8-9",
+        "included": false
+      },
+      {
+        "item": "IEB examination levy",
+        "amount": 3325,
+        "frequency": "yearly",
+        "applies": "Gr 10-12",
+        "included": false
+      },
+      {
+        "item": "Food Day levy",
+        "amount": 275,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Social Action levy",
+        "amount": 250,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Grade camp levy",
+        "amount": 2500,
+        "frequency": "yearly",
+        "applies": "Gr 4-8",
+        "included": false
+      },
+      {
+        "item": "Grade camp levy",
+        "amount": 8000,
+        "frequency": "yearly",
+        "applies": "Gr 9",
+        "included": false
+      },
+      {
+        "item": "Grade camp levy",
+        "amount": 2500,
+        "frequency": "yearly",
+        "applies": "Gr 10-12",
         "included": false
       }
     ]
@@ -3480,7 +3536,7 @@
     "address": "Van Riebeeck Avenue, Kenridge, 7550",
     "lat": -33.8599,
     "lng": 18.6343,
-    "website": null,
+    "website": "https://www.kenridgeprimary.co.za/",
     "phone": "021 976 3046",
     "email": null,
     "language": null,
@@ -3508,8 +3564,8 @@
       "registration": null,
       "deposit": null,
       "instalments": 10,
-      "notes": "State school (Quintile 5, fee-charging). 2027 school fees for Grade 1-7: amount payable R34 240, or R3 424 a month from 31 January to 31 October 2027 (10 payments). Discount for a single cash/EFT payment: R31 672 if paid by 31 December 2026 (a discount price, not the headline). The sheet shows no Grade R fee. Optional after-school day care (5 days) per month: Gr 1-2 R1 995, Gr 3-7 R1 908; early morning care R460 per child per month. The sheet also lists a 'Full Day' rate of R155 / R270 / R355 for 1 / 2 / 3 children and an unpaid debit order penalty of R50, but the labels and frequency are not clear, so they are left out. The PDF is a scanned image read by OCR only.",
-      "sourceKind": "the school's 2027 fee structure (scanned PDF read by OCR)",
+      "notes": "State school (Quintile 5, fee-charging). 2027 school fees for Grade 1-7: amount payable R34 240, or R3 424 a month from 31 January to 31 October 2027 (10 payments). Discount for a single cash/EFT payment: R31 672 if paid by 31 December 2026 (a discount price, not the headline). The sheet shows no Grade R fee. Optional after-school day care (5 days) per month: Gr 1-2 R1 995, Gr 3-7 R1 908; early morning care R460 per child per month. The sheet also lists a 'Full Day' rate of R155 / R270 / R355 for 1 / 2 / 3 children and an unpaid debit order penalty of R50, but the labels and frequency are not clear, so they are left out.",
+      "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
           "grade": "Gr 1-7",

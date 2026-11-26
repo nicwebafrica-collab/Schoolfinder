@@ -7193,7 +7193,7 @@
       "yearly": 11800,
       "monthly": null,
       "registration": 500,
-      "deposit": 1000,
+      "deposit": null,
       "instalments": null,
       "notes": "Islamic primary school, Gr RR to Gr 7. 2027 fees as printed on the enrolment sheet: Gr RR and R R2,950 per term, R11,800 per annum; Gr 1-7 R3,950 per term, R15,800 per annum. No monthly amount is printed. A deposit of R1,000 towards the first term fee and a non-refundable enrolment fee of R500 must accompany the enrolment forms (R1,500 together, by EFT only). Speech and Drama and Goal Sport Academy are marked as additional fees with no amount printed. No discounts printed.",
       "sourceKind": "the school's 2027 enrolment sheet",
@@ -7253,7 +7253,7 @@
       "registration": 1250,
       "deposit": null,
       "instalments": 11,
-      "notes": "Christian school, Gr R to Gr 12. 2027 fee schedule, entry grade Gr R shown: R27,093 a year, or 11 monthly payments of R2,463. Other options printed: two half-year payments, four termly payments. Gr 12 pays monthly over 9 months (R4,633) or termly over 3 terms, and its monthly amount rounds slightly differently from the yearly. Prices include tuition and a computer levy; Gr 10-12 also include a school development levy. Early-payment discounts only if the full amount is paid by the due date: 10% annual (due 1 January), 5% half-yearly, 2.5% termly. Multiple children: 20% off the 3rd child, 30% off the 4th, 50% off the 5th. Application is free. Once-off non-refundable enrolment fee R1,250. An entrance test (R250) and a book levy (R1,000 Gr R-3, R1,400 Gr 4-6, R1,800 Gr 7-12) are listed without saying how often they are charged, so they are not in the hidden costs.",
+      "notes": "Christian school, Gr R to Gr 12. 2027 fee schedule, entry grade Gr R shown: R27,093 a year, or 11 monthly payments of R2,463. Other options printed: two half-year payments, four termly payments. Gr 12 pays monthly over 9 months (R4,633) or over 3 terms. Prices include tuition and a computer levy; Gr 10-12 also include a school development levy. Early-payment discounts only if the full amount is paid by the due date: 10% annual (due 1 January), 5% half-yearly, 2.5% termly. Multiple children: 20% off the 3rd child, 30% off the 4th, 50% off the 5th. Application is free. Once-off non-refundable enrolment fee R1,250.",
       "sourceKind": "the school's 2027 fee schedule",
       "byGrade": [
         {
@@ -7290,11 +7290,28 @@
           "grade": "Gr 12",
           "yearly": 41701,
           "monthly": 4633,
-          "instalments": 9
+          "instalments": null
         }
       ]
     },
-    "hiddenCosts": []
+    "hiddenCosts": [
+      {
+        "item": "Book levy",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "Gr R-3 R1,000, Gr 4-6 R1,400, Gr 7-12 R1,800, charged at enrolment. The sheet doesn't say how often, so it isn't added to the total."
+      },
+      {
+        "item": "Entrance test",
+        "amount": 250,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "New learners"
+      }
+    ]
   },
   {
     "id": "maritzburg-christian-school",
@@ -7336,8 +7353,8 @@
       "monthly": 5220.71,
       "registration": null,
       "deposit": null,
-      "instalments": 10,
-      "notes": "Christian school. The fee page lists Gr 4, Gr 5-7, Gr 8-11 and Gr 12 only; lower grades are not on it. 2026 table, Gr 4 shown as the lowest grade: Total Fees 2026 R52,207.08, payable as 10 monthly payments of R5,220.71, 12 monthly payments of R4,350.59 or 4 termly payments of R13,051.77. Other grades (total / 10-month payment): Gr 5-7 R54,709.75 / R5,470.98; Gr 8-11 R71,567.75 / R7,156.78; Gr 12 R72,890.75 / R7,289.08 (Gr 12 has no 12-month option and pays over 3 terms). The page also prints a separate '2026 Fee' column that is lower than the total by R1,900 for Gr 4 and Gr 5-7 and by R2,000 for Gr 8-11 and Gr 12; it does not say what the difference is, so the total is used. A 2026 fee agreement PDF is linked but was not read, so registration and other charges are unknown. No 2027 sheet on the page.",
+      "instalments": null,
+      "notes": "Christian school. The fee page lists Gr 4, Gr 5-7, Gr 8-11 and Gr 12 only; lower grades are not on it. 2026 table, Gr 4 shown as the lowest grade: Total Fees 2026 R52,207.08, payable as 10 monthly payments of R5,220.71, 12 monthly payments of R4,350.59 or 4 termly payments of R13,051.77. Other grades (total / 10-month payment): Gr 5-7 R54,709.75 / R5,470.98; Gr 8-11 R71,567.75 / R7,156.78; Gr 12 R72,890.75 / R7,289.08 (Gr 12 has no 12-month option and pays over 3 terms). The page also prints a separate '2026 Fee' column that is lower than the total by R1,900 for Gr 4 and Gr 5-7 and by R2,000 for Gr 8-11 and Gr 12; it does not say what the difference is, so the total is used. Registration and other charges are not on the fee page. No 2027 sheet on the page.",
       "sourceKind": "the school's 2026 fee structure page",
       "byGrade": [
         {
