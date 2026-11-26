@@ -7289,7 +7289,7 @@
         {
           "grade": "Gr 12",
           "yearly": 41701,
-          "monthly": 4633,
+          "monthly": null,
           "instalments": null
         }
       ]
