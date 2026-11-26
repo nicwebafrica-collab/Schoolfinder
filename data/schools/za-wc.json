@@ -1967,98 +1967,41 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-15",
+    "lastChecked": "2026-11-26",
     "sources": [
-      "https://cedarhouse.co.za/fees/",
-      "https://cedarhouse.co.za/downloads/2026SchoolFees.pdf"
+      "https://cedarhouse.co.za/wp-content/uploads/2026/11/2027-Fee-Letter-.pdf"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 101225,
+      "year": 2027,
+      "yearly": 106800,
       "monthly": null,
       "registration": null,
       "deposit": null,
-      "instalments": 12,
-      "notes": "Independent school: Junior School Grades 4-7, Senior School Grades 8-12 (IEB). 2026 tuition by grade; the headline is the Junior School (Gr 4-7). Total fees are tuition plus levies; levies charged to all students are IEB, Food Day, Social Action and Grade Camp (plus a Prep excursions levy in Gr 4-7). Subject levies (art, isiXhosa camp, CAT, design, drama, science camps) apply only where a student takes the subject. Pay the total in 12 equal monthly instalments (1 January to 1 December 2026), or in full by 31 January 2026 for 5% off the tuition fee. Sibling discount 5% of tuition. Three months' written notice to leave. These are 2026 fees; the 2027 schedule is not out yet.",
-      "sourceKind": "the school's 2026 fee schedule (a scanned PDF, read from the page picture)",
+      "instalments": null,
+      "notes": "Independent school: Junior School Grades 4-7, Senior School Grades 8-12 (IEB). 2027 tuition (base fee) per year: Gr 4-7 R106,800; Gr 8-9 R142,715; Gr 10-12 R147,100. The headline is Gr 4-7. Total fees are tuition plus levies. The letter says the IEB Examination, Food Day, Grade Camps and Social Action levies are charged to all students, the Prep levy to Prep School students, and subject levies only where a student takes the subject. The levy columns are misaligned in the text, so no levy amounts are shown here; see the school's letter. Payment options: full settlement discount on the base fee of 10% by 30 November, 7.5% by 31 December, 5% by 31 January; or three terms (50% / 25% / 25%); or 8 monthly payments January to August; or a 12-month plan with a R2 500 surcharge. The letter is dated 23 October 2026.",
+      "sourceKind": "the school's 2027 fee letter",
       "byGrade": [
         {
           "grade": "Gr 4-7",
-          "yearly": 101225
+          "yearly": 106800
         },
         {
           "grade": "Gr 8-9",
-          "yearly": 135275
+          "yearly": 142715
         },
         {
           "grade": "Gr 10-12",
-          "yearly": 139880
+          "yearly": 147100
         }
       ]
     },
     "hiddenCosts": [
       {
-        "item": "IEB levy",
-        "amount": 1010,
+        "item": "12-month payment plan surcharge",
+        "amount": 2500,
         "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "Gr 4-7",
-        "included": false
-      },
-      {
-        "item": "IEB levy",
-        "amount": 2080,
-        "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "Gr 8-9",
-        "included": false
-      },
-      {
-        "item": "IEB levy",
-        "amount": 3150,
-        "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "Gr 10-12",
-        "included": false
-      },
-      {
-        "item": "Food Day levy",
-        "amount": 225,
-        "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Social Action levy",
-        "amount": 200,
-        "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "everyone",
-        "included": false
-      },
-      {
-        "item": "Grade camp levy",
-        "amount": 2050,
-        "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "Gr 4-7",
-        "included": false
-      },
-      {
-        "item": "Grade camp levy",
-        "amount": 2010,
-        "frequency": "yearly",
-        "note": "Charged to all students",
-        "applies": "Gr 8-12",
-        "included": false
-      },
-      {
-        "item": "Prep excursions levy",
-        "amount": 1400,
-        "frequency": "yearly",
-        "note": "Charged to all Prep School students",
-        "applies": "Gr 4-7",
+        "note": "Only if the 12-month plan is chosen",
+        "applies": "some",
         "included": false
       }
     ]
@@ -3523,5 +3466,83 @@
       ]
     },
     "hiddenCosts": []
+  },
+  {
+    "id": "kenridge-primary-school",
+    "name": "Kenridge Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Kenridge",
+    "city": "Durbanville",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Van Riebeeck Avenue, Kenridge, 7550",
+    "lat": -33.8599,
+    "lng": 18.6343,
+    "website": null,
+    "phone": "021 976 3046",
+    "email": null,
+    "language": null,
+    "emis": "101309272",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://www.kenridgeprimary.co.za/wp-content/uploads/2026/11/KPS-Fee-structure-2027.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 34240,
+      "monthly": 3424,
+      "registration": null,
+      "deposit": null,
+      "instalments": 10,
+      "notes": "State school (Quintile 5, fee-charging). 2027 school fees for Grade 1-7: amount payable R34 240, or R3 424 a month from 31 January to 31 October 2027 (10 payments). Discount for a single cash/EFT payment: R31 672 if paid by 31 December 2026 (a discount price, not the headline). The sheet shows no Grade R fee. Optional after-school day care (5 days) per month: Gr 1-2 R1 995, Gr 3-7 R1 908; early morning care R460 per child per month. The sheet also lists a 'Full Day' rate of R155 / R270 / R355 for 1 / 2 / 3 children and an unpaid debit order penalty of R50, but the labels and frequency are not clear, so they are left out. The PDF is a scanned image read by OCR only.",
+      "sourceKind": "the school's 2027 fee structure (scanned PDF read by OCR)",
+      "byGrade": [
+        {
+          "grade": "Gr 1-7",
+          "yearly": 34240,
+          "monthly": 3424
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "After-school day care (5 day)",
+        "amount": 1995,
+        "frequency": "monthly",
+        "note": "Optional",
+        "applies": "Gr 1-2",
+        "included": false
+      },
+      {
+        "item": "After-school day care (5 day)",
+        "amount": 1908,
+        "frequency": "monthly",
+        "note": "Optional",
+        "applies": "Gr 3-7",
+        "included": false
+      },
+      {
+        "item": "Early morning care",
+        "amount": 460,
+        "frequency": "monthly",
+        "note": "Optional, per child",
+        "applies": "some",
+        "included": false
+      }
+    ]
   }
 ]
