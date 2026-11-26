@@ -124,6 +124,7 @@
     { name: "Gonubie", region: "Eastern Cape", lat: -32.9370, lng: 28.0150, note: "East London" },
     { name: "Humansdorp", region: "Eastern Cape", lat: -34.0330, lng: 24.7700 },
     { name: "Sterkspruit", region: "Eastern Cape", lat: -30.5260, lng: 27.3680 },
+    { name: "Kimberley", region: "Northern Cape", lat: -28.7280, lng: 24.7500 },
     { name: "Mtubatuba", region: "KZN", lat: -28.4170, lng: 32.1830 },
     { name: "Park Rynie", region: "KZN", lat: -30.3170, lng: 30.7330, note: "Scottburgh" },
     { name: "Queenstown", region: "Eastern Cape", lat: -31.8976, lng: 26.8753, aliases: ["komani"] }

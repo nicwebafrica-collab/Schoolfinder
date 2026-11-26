@@ -1,0 +1,102 @@
+[
+  {
+    "id": "st-patricks-cbc-college",
+    "name": "St Patrick's CBC College",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "ECD, Gr PR-12",
+    "area": "Belgravia",
+    "city": "Kimberley",
+    "province": "Northern Cape",
+    "postcode": "8301",
+    "address": "170 Du Toitspan Road, Belgravia, Kimberley, 8301",
+    "lat": -28.742437,
+    "lng": 24.769585,
+    "website": "https://stpatricks.co.za/",
+    "phone": "053 831 1558",
+    "email": null,
+    "language": null,
+    "emis": "300014301",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 1759
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://stpatricks.co.za/wp-content/uploads/2026/09/1_PDFsam_2027-FEE-STRUCTURE-APPROVED.pdf"
+    ],
+    "fees": {
+      "year": 2027,
+      "yearly": 38060,
+      "monthly": 3460,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school, ECD to Matric, with boarding. 2027 annual and monthly fee: ECD full day (2-4 years) R38,060 and R3,460; ECD half day R32,725 and R2,975; Pre-Primary (Gr PR, R) R50,325 and R4,575; Gr 1-3 R74,030 and R6,730; Gr 4-7 R91,300 and R8,300; Gr 8-11 R106,810 and R9,710; Matric R117,150 and R11,715. Entry grade shown is the ECD full-day class. The number of monthly payments is unclear on our readings, so no instalment count is shown. Annual fees are due in advance by 31 December. Early payment in full: 8% off by 31 December 2026, 6% off by 28 February 2027. Sibling discount: 50% third child, 75% fourth. Matric extras, frequency not stated so not listed as hidden costs: R1,690 per IEB subject beyond the seventh, Dance R600, Jacket R900. High School boarding R123,350 a year (R30,838 a term). Waiting class R25 an hour, holding class R350 a day.",
+      "sourceKind": "the school's 2027 fee structure",
+      "byGrade": [
+        {
+          "grade": "ECD Full Day (2-4 yrs)",
+          "yearly": 38060,
+          "monthly": 3460
+        },
+        {
+          "grade": "ECD Half Day (2-4 yrs)",
+          "yearly": 32725,
+          "monthly": 2975
+        },
+        {
+          "grade": "Gr PR-R",
+          "yearly": 50325,
+          "monthly": 4575
+        },
+        {
+          "grade": "Gr 1-3",
+          "yearly": 74030,
+          "monthly": 6730
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 91300,
+          "monthly": 8300
+        },
+        {
+          "grade": "Gr 8-11",
+          "yearly": 106810,
+          "monthly": 9710
+        },
+        {
+          "grade": "Gr 12",
+          "yearly": 117150,
+          "monthly": 11715
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Aftercare",
+        "amount": 1759,
+        "frequency": "monthly",
+        "note": "Optional; payable January to November 2027",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Further Studies subjects",
+        "amount": 900,
+        "frequency": "per term",
+        "note": "Only where the subjects are taken",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  }
+]

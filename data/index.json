@@ -10,7 +10,7 @@
       "short": "Eastern Cape",
       "file": "schools/za-ec.json",
       "rules": null,
-      "schoolCount": 12,
+      "schoolCount": 13,
       "updated": "2026-11",
       "ids": [
         "clarendon-park-primary-school",
@@ -24,7 +24,8 @@
         "greenwood-primary-school",
         "st-dominic-s-priory-school",
         "stulting-primary-school",
-        "sterkspruit-christian-private-school"
+        "sterkspruit-christian-private-school",
+        "herbert-hurd-primary-school"
       ],
       "bounds": [
         -34.0248,
@@ -201,7 +202,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 66,
+      "schoolCount": 67,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -269,13 +270,33 @@
         "mtuba-christian-academy",
         "maritzburg-christian-school",
         "umdoni-christian-academy",
-        "phoenix-muslim-school"
+        "phoenix-muslim-school",
+        "capulum-college"
       ],
       "bounds": [
         -30.8726,
         29.418402,
         -27.1272,
         32.1832
+      ]
+    },
+    {
+      "id": "za-nc",
+      "country": "ZA",
+      "province": "Northern Cape",
+      "short": "Northern Cape",
+      "file": "schools/za-nc.json",
+      "rules": null,
+      "schoolCount": 1,
+      "updated": "2026-11",
+      "ids": [
+        "st-patricks-cbc-college"
+      ],
+      "bounds": [
+        -28.742437,
+        24.769585,
+        -28.742437,
+        24.769585
       ]
     },
     {
