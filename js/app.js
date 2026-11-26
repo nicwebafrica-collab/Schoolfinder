@@ -343,19 +343,9 @@
   }
 
   function renderSearch() {
-    if (state.place === undefined) {
-      state.place = lastPlace();
-      if (state.place) state.query = state.place.name;
-      else {
-        // Last suburb came from the long list: load it, then show that suburb if the parent hasn't moved on.
-        var saved = null;
-        try { saved = localStorage.getItem("lastPlace"); } catch (e) { /* private mode */ }
-        if (saved) loadMorePlaces().then(function () {
-          var p = lastPlace();
-          if (p && state.place === null && !state.near && location.hash.replace(/^#\/?$/, "") === "") { setPlace(p); renderSearch(); }
-        });
-      }
-    }
+    // A fresh visit always opens on the plain homepage, never straight on the last search (Nicholas, 26 Nov).
+    // The last suburb is offered as a "Last search" chip on the homepage instead.
+    if (state.place === undefined) state.place = null;
     var input = el("input", { type: "search", id: "q", placeholder: "Your suburb, e.g. Waterfall", value: state.query, maxLength: 100, autocomplete: "off" });
     var pinBtn = el("button", { type: "button", className: "in-field-btn", aria: { label: "Use my location" } }, icon("locate"));
     if (state.near) pinBtn.setAttribute("aria-pressed", "true");
@@ -479,7 +469,23 @@
           b.addEventListener("click", function () { choosePlace(p); });
           return b;
         })));
-      var main = parts.concat([examples, trustLine(),
+      // "Last search: Waterfall, KZN" so a returning parent is one tap from their list. Hidden until we know the place.
+      var resume = el("div", {}); // empty (no space taken) until it gets the chip
+      var showResume = function (p) {
+        if (!p) return;
+        var b = el("button", { type: "button", className: "chip" }, L.placeLabel(p));
+        b.addEventListener("click", function () { choosePlace(p); });
+        resume.textContent = "";
+        resume.appendChild(el("span", { className: "label" }, "Last search:"));
+        resume.appendChild(b);
+        resume.className = "chips popular resume";
+      };
+      var savedPlace = null;
+      try { savedPlace = localStorage.getItem("lastPlace"); } catch (e) { /* private mode */ }
+      if (lastPlace()) showResume(lastPlace());
+      // Last suburb came from the long list: load it, then show the chip if the homepage is still open.
+      else if (savedPlace) loadMorePlaces().then(function () { if (document.body.contains(resume)) showResume(lastPlace()); });
+      var main = parts.concat([resume, examples, trustLine(),
         el("p", { className: "coverage-note" }, "Now covering the Upper Highway and nearby areas, KZN. More areas soon.")]);
       var slot = el("div", { className: "example-slot" });
       replace([el("div", { className: "hero" }, el("div", { className: "hero-main" }, main), slot)].concat(hello.slice(1)), { tab: "search", wide: true });
@@ -642,8 +648,8 @@
       if (state.place) container.appendChild(el("p", { className: "muted small" }, "Distances are straight-line from the middle of " + state.place.name + "."));
       var pane = document.querySelector(".detail-pane");
       if (pane) {
-        var first = found.near.concat(found.unknownLocation)[0];
-        var pick = (selectedId && findSchool(selectedId)) || (first && findSchool(first.id));
+        // Only the school the parent clicked. Never open the first result by itself (Nicholas, 26 Nov).
+        var pick = selectedId && findSchool(selectedId);
         if (pick) fillPane(pane, pick);
         else { pane.textContent = ""; pane.appendChild(el("p", { className: "muted" }, "Pick a school on the left to see its costs.")); }
       }
