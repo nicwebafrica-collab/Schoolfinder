@@ -1402,52 +1402,44 @@
     "email": null,
     "language": "English",
     "fees": {
-      "year": 2026,
-      "yearly": 251130,
-      "monthly": 22830,
-      "registration": 1050,
-      "deposit": 45000,
+      "year": 2027,
+      "yearly": 268180,
+      "monthly": 24380,
+      "registration": 48100,
+      "deposit": null,
       "instalments": 11,
-      "notes": "Boys' boarding and day school. 2026 day fee for Gr 8-9 shown (R22,830 x 11, Jan-Nov debit order); Gr 10-12 R275,000 (Gr 12 may pay R27,500 x 10). Boarding instead: Gr 8-9 R375,870, Gr 10-12 R399,740. 'Registration' is the non-refundable R1,050 application fee; 'deposit' is the non-refundable R45,000 acceptance fee. Non-SA pupils also pay a refundable deposit of three months' fees. Upfront discounts 5.5% / 4.5% / 3.5% depending on payment date; brothers 5% each (two) or 10% each (three or more). Matric boys may squeeze the year into ten instalments instead of eleven, a choice that hardens into a rule from 2030.",
+      "notes": "Boys' boarding and day school. 2027 day fee for Gr 8-9 shown: R268,180 a year, billed as R24,380 a month by compulsory debit order, January to November. Gr 10-11 R293,700 (R26,700 a month). Gr 12 R293,700 (R26,700 a month), or R29,370 a month if paid over ten months (compulsory from 2030). Boarding instead of the day fee: Gr 8-9 R401,390 a year; Gr 10-12 R426,910. Acceptance fee R48,100 per pupil, once, non-refundable (registration); once-off application fee R1,050. Non-SA pupils also pay a refundable deposit of three months' fees. Advance-payment discounts of 5.5%, 4.5% or 3.5% apply only if the whole year is paid by 30 Nov 2026, 31 Dec 2026 or 29 Jan 2027, so they are not in the headline. Brothers: 5% off each for two, 10% for three or more. The optional Parents' Society levy is left out (not confirmed on both reads).",
+      "sourceKind": "the school's own 2027 fee schedule",
       "byGrade": [
         {
           "grade": "Gr 8-9",
-          "yearly": 251130,
-          "monthly": 22830
+          "yearly": 268180,
+          "monthly": 24380
         },
         {
           "grade": "Gr 10-11",
-          "yearly": 275000,
-          "monthly": 25000
+          "yearly": 293700,
+          "monthly": 26700
         },
         {
           "grade": "Gr 12",
-          "yearly": 275000,
-          "monthly": 25000
+          "yearly": 293700,
+          "monthly": 26700
         }
-      ],
-      "sourceKind": "the school's own 2026 fee schedule"
+      ]
     },
     "hiddenCosts": [
       {
         "item": "Accident insurance",
-        "amount": 400,
+        "amount": 470,
         "frequency": "yearly",
         "note": "Compulsory, cover up to R250,000 per incident",
         "applies": "everyone",
         "included": false
       },
       {
-        "item": "Baseline concussion testing",
-        "amount": 419,
-        "frequency": "yearly",
-        "note": "Compulsory",
-        "applies": "everyone",
-        "included": false
-      },
-      {
         "item": "Technology fee",
-        "amount": 800,
+        "amount": 920,
         "frequency": "per term",
         "note": "Compulsory once the pupil's grade has laptops",
         "applies": "some",
@@ -1457,21 +1449,21 @@
         "item": "Old Boys' life subscription",
         "amount": null,
         "frequency": "once",
-        "note": "Compulsory: 2.5% of one year's full fees, paid termly (about R6,280 for a Gr 8 day boy, our calculation)",
+        "note": "Compulsory: 2.5% of one year's full tuition and boarding fees, paid in fixed termly instalments; no amount printed",
         "applies": "everyone",
         "included": false
       },
       {
         "item": "IEB exam fee",
-        "amount": 9760,
-        "frequency": "once",
-        "note": "Invoiced in nine instalments, Jan-Sep",
+        "amount": 10394,
+        "frequency": "yearly",
+        "note": "Invoiced in nine equal instalments, January to September",
         "applies": "Gr 12",
         "included": false
       },
       {
         "item": "Boarding (Gr 8-9)",
-        "amount": 375870,
+        "amount": 401390,
         "frequency": "yearly",
         "note": "Instead of the day fee",
         "applies": "boarders",
@@ -1479,15 +1471,15 @@
       },
       {
         "item": "Boarding (Gr 10-12)",
-        "amount": 399740,
+        "amount": 426910,
         "frequency": "yearly",
-        "note": "Instead of the day fee",
+        "note": "Instead of the day fee; same amount for Gr 10-11 and Gr 12",
         "applies": "boarders",
         "included": false
       },
       {
         "item": "Academic Inclusion levy",
-        "amount": 1360,
+        "amount": 1450,
         "frequency": "per term",
         "note": "Only for pupils in the programme",
         "applies": "some",
@@ -1495,9 +1487,17 @@
       },
       {
         "item": "Literacy Support levy",
-        "amount": 450,
+        "amount": 480,
         "frequency": "per term",
         "note": "Only for pupils who need it",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Immigration status levy",
+        "amount": 880,
+        "frequency": "per term",
+        "note": "Non-SA pupils",
         "applies": "some",
         "included": false
       },
@@ -1505,42 +1505,34 @@
         "item": "Gym membership",
         "amount": 750,
         "frequency": "per term",
-        "note": "",
+        "note": "Optional",
         "applies": "optional",
         "included": false
       },
       {
         "item": "Music tuition",
-        "amount": 1050,
+        "amount": 1120,
         "frequency": "monthly",
-        "note": "Per instrument",
+        "note": "Per instrument, optional",
+        "applies": "optional",
+        "included": false
+      },
+      {
+        "item": "Instrument hire",
+        "amount": 570,
+        "frequency": "per term",
+        "note": "Optional",
         "applies": "optional",
         "included": false
       },
       {
         "item": "Day scholar overnight stay",
-        "amount": 300,
+        "amount": 325,
         "frequency": "once",
-        "note": "Optional overnight stay for day scholars",
+        "note": "Optional overnight stay for day scholars, per night",
         "applies": "optional",
         "included": false,
         "per": "night"
-      },
-      {
-        "item": "Immigration status levy",
-        "amount": 820,
-        "frequency": "per term",
-        "note": "Non-SA pupils",
-        "applies": "some",
-        "included": false
-      },
-      {
-        "item": "Parents' Society levy",
-        "amount": 1040,
-        "frequency": "yearly",
-        "note": "Optional",
-        "applies": "optional",
-        "included": false
       },
       {
         "item": "Returned debit order",
@@ -1556,6 +1548,30 @@
         "frequency": "yearly",
         "applies": "everyone",
         "included": false
+      },
+      {
+        "item": "Baseline concussion testing",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "Compulsory, up to R452 a year, billed in term one"
+      },
+      {
+        "item": "Bekezela Week",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "some",
+        "included": false,
+        "note": "Gr 8-10, charged monthly January to August; cost set per grade"
+      },
+      {
+        "item": "Application fee",
+        "amount": 1050,
+        "frequency": "once",
+        "applies": "everyone",
+        "included": false,
+        "note": "Per application"
       }
     ],
     "outings": [],
@@ -1594,9 +1610,9 @@
       "applyUrl": null,
       "source": null
     },
-    "lastChecked": "2026-11-01",
+    "lastChecked": "2026-11-26",
     "sources": [
-      "https://www.kearsney.com/college/wp-content/uploads/2026/04/2026-Fee-Schedule.pdf",
+      "https://www.kearsney.com/college/wp-content/uploads/2026/11/KearsneyFees2027.pdf",
       "https://www.kearsney.com/college/admissions/"
     ],
     "country": "ZA",
@@ -6843,7 +6859,7 @@
     "name": "Lynford School",
     "type": "Private",
     "phase": "Primary",
-    "grades": "Gr RR-7",
+    "grades": "Gr RRR-7",
     "area": "Donnybrook Road (R612)",
     "city": "Ixopo",
     "province": "KwaZulu-Natal",
@@ -6851,7 +6867,7 @@
     "address": "Lynford Farm, R612 Donnybrook Road, Ubuhlebezwe, Ixopo",
     "lat": -30.1213,
     "lng": 30.0512,
-    "website": null,
+    "website": "https://lynford.co.za/",
     "phone": "087 997 1167",
     "email": null,
     "language": null,
@@ -6868,34 +6884,39 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-15",
+    "lastChecked": "2026-11-26",
     "sources": [
-      "https://lynford.co.za/wp-content/uploads/2026/04/Financial-Information-2026.pdf"
+      "https://lynford.co.za/wp-content/uploads/2026/11/2027-Financial-Information-website.pdf"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 48119.13,
-      "monthly": 4374.47,
+      "year": 2027,
+      "yearly": 31900,
+      "monthly": 2900,
       "registration": null,
       "deposit": 6000,
       "instalments": 11,
-      "notes": "Independent primary school near Ixopo, Gr RR to Gr 7. 2026 tuition per year (monthly over 11 months): Gr RR R48,119.13 (R4,374.47); Gr R R58,899.27 (R5,354.48); Gr 1 to Gr 7 R75,127.36 (R6,829.76). Monthly amounts are rounded to the cent. A 5% discount for paying annual fees before 31 January 2026 has passed, so discounted prices are not shown. New families pay an enrolment deposit of R6,000 per family; the printed due date (17 November 2025) has passed. Once-off non-refundable administration fee of R250 with the application. A R250 fee is charged for each unpaid debit order.",
-      "sourceKind": "the school's 2026 financial information notice",
+      "notes": "Independent primary school near Ixopo, Gr RRR to Gr 7. 2027 tuition per year (monthly over 11 months): Gr RRR R31,900 (R2,900); Gr RR R51,246.91 (R4,658.81); Gr R R62,727.72 (R5,702.52); Gr 1 to Gr 7 R80,010.59 (R7,273.69). Fees are paid by debit order or annually in advance. A R250 fee is charged for each unpaid debit order. Once-off non-refundable administration fee of R250 due with the application. An enrolment deposit of R6,000 per family is required on acceptance and is fully refundable when the children leave, provided all fees are settled and the withdrawal procedure is followed.",
+      "sourceKind": "the school's 2027 financial information notice",
       "byGrade": [
         {
+          "grade": "Gr RRR",
+          "yearly": 31900,
+          "monthly": 2900
+        },
+        {
           "grade": "Gr RR",
-          "yearly": 48119.13,
-          "monthly": 4374.47
+          "yearly": 51246.91,
+          "monthly": 4658.81
         },
         {
           "grade": "Gr R",
-          "yearly": 58899.27,
-          "monthly": 5354.48
+          "yearly": 62727.72,
+          "monthly": 5702.52
         },
         {
           "grade": "Gr 1-7",
-          "yearly": 75127.36,
-          "monthly": 6829.76
+          "yearly": 80010.59,
+          "monthly": 7273.69
         }
       ]
     },
@@ -7488,5 +7509,68 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "phoenix-muslim-school",
+    "name": "Phoenix Muslim School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-9",
+    "area": "Phoenix",
+    "city": "Durban",
+    "province": "KwaZulu-Natal",
+    "postcode": null,
+    "address": "57 Steelbridge Grove, Stonebridge, Phoenix, 4300",
+    "lat": -29.7197,
+    "lng": 31.0199,
+    "website": "https://www.phoenixmuslimschool.co.za/",
+    "phone": "031 502 7861",
+    "email": null,
+    "language": null,
+    "emis": "500340030",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://www.phoenixmuslimschool.co.za/wp-content/uploads/2026/02/Notification-of-School-Fees-for-2026-2.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 22200,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school. 2026 fees from the school's notification letter dated 13 October 2025: Gr 1-3 R22,200; Gr 4-6 R25,500; Gr 7-9 R27,700, shown as one amount per learner for the year (the sheet only says 'FEE-2026' and does not spell out yearly or monthly). The last row of the table reads 'GRADE 10-U' (R32,200); the grade label is not clear, so it is left out. No other costs are listed on the sheet.",
+      "sourceKind": "the school's 2026 fee notification letter",
+      "byGrade": [
+        {
+          "grade": "Gr 1-3",
+          "yearly": 22200,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": 25500,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 7-9",
+          "yearly": 27700,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]

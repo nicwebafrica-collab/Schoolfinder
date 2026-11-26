@@ -40,7 +40,7 @@
       "short": "Gauteng",
       "file": "schools/za-gp.json",
       "rules": null,
-      "schoolCount": 141,
+      "schoolCount": 143,
       "updated": "2026-11",
       "ids": [
         "curro-pretoria-primary",
@@ -183,7 +183,9 @@
         "ormonde-primary-school",
         "rift-house-academy",
         "laer-volkskool-heidelberg",
-        "craiglands-remedial-school"
+        "craiglands-remedial-school",
+        "norridge-park-primary-school",
+        "saxonwold-primary-school"
       ],
       "bounds": [
         -26.7360185101,
@@ -199,7 +201,7 @@
       "short": "KZN",
       "file": "schools/za-kzn.json",
       "rules": "rules/za-kzn.json",
-      "schoolCount": 65,
+      "schoolCount": 66,
       "updated": "2026-11",
       "ids": [
         "waterfall-preparatory",
@@ -266,7 +268,8 @@
         "mohamed-ebrahim-islamic-school",
         "mtuba-christian-academy",
         "maritzburg-christian-school",
-        "umdoni-christian-academy"
+        "umdoni-christian-academy",
+        "phoenix-muslim-school"
       ],
       "bounds": [
         -30.8726,
@@ -282,7 +285,7 @@
       "short": "Western Cape",
       "file": "schools/za-wc.json",
       "rules": null,
-      "schoolCount": 39,
+      "schoolCount": 44,
       "updated": "2026-11",
       "ids": [
         "bizweni-primary-school",
@@ -323,11 +326,16 @@
         "sweet-valley-primary-school",
         "vredelust-primary-school",
         "westerford-high-school",
-        "kenridge-primary-school"
+        "kenridge-primary-school",
+        "international-school-of-hout-bay",
+        "tate-international-school",
+        "pinelands-north-primary-school",
+        "rhenish-primary",
+        "zwaanswyk-high-school"
       ],
       "bounds": [
         -34.172504,
-        18.3783,
+        18.3558,
         -31.6089,
         23.3572
       ]

@@ -6502,31 +6502,31 @@
       "monthly": null
     },
     "sports": [],
-    "lastChecked": "2026-11-13",
+    "lastChecked": "2026-11-26",
     "sources": [
-      "https://lenasiamuslimschool.co.za/wp-content/uploads/2025/11/SCHOOL-FEE-POLICY2026.pdf"
+      "https://lenasiamuslimschool.co.za/wp-content/uploads/2026/11/SCHOOL-FEE-STRUCTURE-2027.pdf"
     ],
     "fees": {
-      "year": 2026,
-      "yearly": 38280,
-      "monthly": 3828,
+      "year": 2027,
+      "yearly": 40980,
+      "monthly": 4098,
       "registration": null,
       "deposit": null,
       "instalments": 10,
-      "notes": "Independent school, Grade 1 to Grade 12. The 2026 fee policy prints no currency symbol (it does print an R100 admin fee for a dishonoured debit order). First child, Grade 1-6: annual R38,280 paid at the start of the year, or 4 termly instalments of R9,570, or 10 monthly instalments of R3,828 (January to October). First child, Grade 7-12: R41,520 annually, R10,380 termly or R4,152 monthly. Second child pays R35,409 (Grade 1-6) or R38,406 (Grade 7-12) annually, termly R8,852 or R9,602, monthly R3,541 or R3,841. Third, fourth or fifth child pays R34,452 (Grade 1-6) or R37,368 (Grade 7-12) annually, termly R8,613 or R9,342, monthly R3,445 or R3,737. A registration fee is non-refundable but no amount is printed; ask the school. Debit orders run January to October.",
+      "notes": "Independent school, Grade 1 to Grade 12. Amounts depend on the number of children; the headline and the grade rows use the FIRST child. First child, Gr 1-6: R40,980 annually, or 4 termly instalments of R10,245, or 10 monthly instalments of R4,098 (January to October). First child, Gr 7-12: R44,220 annually, R11,055 termly or R4,422 monthly. Second child pays R37,907 (Gr 1-6) or R40,904 (Gr 7-12) annually, termly R9,477 or R10,226, monthly R3,791 or R4,090. Third, fourth or fifth child pays R36,882 (Gr 1-6) or R39,798 (Gr 7-12) annually, termly R9,221 or R9,950, monthly R3,688 or R3,980. Registration fee: non-refundable, amount not printed. A R100 admin fee is charged if a debit order is dishonoured.",
+      "sourceKind": "the school's 2027 fee structure",
       "byGrade": [
         {
           "grade": "Gr 1-6",
-          "yearly": 38280,
-          "monthly": 3828
+          "yearly": 40980,
+          "monthly": 4098
         },
         {
           "grade": "Gr 7-12",
-          "yearly": 41520,
-          "monthly": 4152
+          "yearly": 44220,
+          "monthly": 4422
         }
-      ],
-      "sourceKind": "the school's 2026 fee schedule"
+      ]
     },
     "hiddenCosts": [
       {
@@ -6536,6 +6536,14 @@
         "note": "Only if a debit order is dishonoured",
         "applies": "penalty",
         "included": false
+      },
+      {
+        "item": "Registration fee",
+        "amount": null,
+        "frequency": "yearly",
+        "applies": "everyone",
+        "included": false,
+        "note": "Non-refundable; no amount printed, and children re-register each year."
       }
     ],
     "area": "Lenasia South"
@@ -13203,6 +13211,220 @@
         "frequency": "yearly",
         "note": "Due before first payment of 2027",
         "applies": "Gr 4-7",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "norridge-park-primary-school",
+    "name": "Norridge Park Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Eersterust",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "295 P.S. Fourie Drive, Eersterust, Pretoria",
+    "lat": -25.7078,
+    "lng": 28.3148,
+    "website": "https://norridgeparkprimaryschool.co.za/",
+    "phone": "012 806 8014",
+    "email": null,
+    "language": null,
+    "emis": "700220053",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://norridgeparkprimaryschool.co.za/wp-content/uploads/2025/12/Norridge-Park-School-Fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 5050,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school. 2026 school fees from the school's letter of 10 December 2025: Gr R R5,050 a year; Gr 1-7 R2,300 a year. The registration payment (R1,050 for Gr R, R500 for Gr 1-7, due from all learners before the end of March 2026) is part of the fee, not an extra. The rest is paid in 10 monthly payments as printed: R400 for Gr R, R180 for Gr 1-7. Applications for school fee exemption open in January 2026.",
+      "sourceKind": "the school's 2026 fee letter",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 5050,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1-7",
+          "yearly": 2300,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "saxonwold-primary-school",
+    "name": "Saxonwold Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Saxonwold",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postcode": null,
+    "address": "13 Aldswold Road, Saxonwold, Johannesburg, 2196",
+    "lat": -26.1624,
+    "lng": 28.0454,
+    "website": "https://www.saxonwoldprimary.co.za/",
+    "phone": "011 646 5510",
+    "email": null,
+    "language": null,
+    "emis": "700131466",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": true,
+      "monthly": 850
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://www.saxonwoldprimary.co.za/wp-content/uploads/2025/12/2026-GRADE-1-3-FEE-STRUCTURE.pdf",
+      "https://www.saxonwoldprimary.co.za/wp-content/uploads/2025/12/2026-GRADE-4-7-FEE-STRUCTURE.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 27500,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school, fee-charging. 2026 school fees per annum: Gr 1-3 R27,500; Gr 4-7 R28,500. Early-payment discounts (10%, 7%, 5%, deadlines 31 December 2025 to 28 February 2026) have passed and the printed discounted amounts are the same on both sheets, so they are not used; discounts depend on paying by the dates printed. New learners pay a once-off development levy of R1,500 on registration and no e-levy; returning learners pay an e-levy of R300 (Gr 2-7). Book packs and textbook levies are listed per grade below (the sheet does not say 'yearly' outright; they are for 2026). Optional aftercare is R850 a month, supervision only (R1,450 with lunch), over 11 months, plus R100 a day casual.",
+      "sourceKind": "the school's 2026 fee structure sheets",
+      "byGrade": [
+        {
+          "grade": "Gr 1-3",
+          "yearly": 27500,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4-7",
+          "yearly": 28500,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 1500,
+        "frequency": "once",
+        "note": "New learners only, once, paid on registration (Gr 1-7)",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Book pack Gr 1",
+        "amount": 1500,
+        "frequency": "yearly",
+        "note": "2026 Foundation Phase book pack, new Gr 1 learners' start-up list",
+        "applies": "Gr 1",
+        "included": false
+      },
+      {
+        "item": "Book pack Gr 2-3 (returning learners)",
+        "amount": 1350,
+        "frequency": "yearly",
+        "note": "Returning Gr 2 and 3 learners",
+        "applies": "Gr 2-3",
+        "included": false
+      },
+      {
+        "item": "E-levy (returning learners)",
+        "amount": 300,
+        "frequency": "yearly",
+        "note": "Returning learners Gr 2-7; new learners pay no e-levy",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Book pack Gr 4 (returning learners)",
+        "amount": 1250,
+        "frequency": "yearly",
+        "note": "Returning learners",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Textbook levy Gr 4",
+        "amount": 1300,
+        "frequency": "yearly",
+        "note": "Returning learners; new learners pay the same grade-dependent textbook levy",
+        "applies": "Gr 4",
+        "included": false
+      },
+      {
+        "item": "Book pack Gr 5 (returning learners)",
+        "amount": 900,
+        "frequency": "yearly",
+        "note": "Returning learners",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Textbook levy Gr 5",
+        "amount": 300,
+        "frequency": "yearly",
+        "note": "Returning learners; new learners pay the same grade-dependent textbook levy",
+        "applies": "Gr 5",
+        "included": false
+      },
+      {
+        "item": "Book pack Gr 6 (returning learners)",
+        "amount": 1000,
+        "frequency": "yearly",
+        "note": "Returning learners",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Textbook levy Gr 6",
+        "amount": 300,
+        "frequency": "yearly",
+        "note": "Returning learners; new learners pay the same grade-dependent textbook levy",
+        "applies": "Gr 6",
+        "included": false
+      },
+      {
+        "item": "Book pack Gr 7 (returning learners)",
+        "amount": 1150,
+        "frequency": "yearly",
+        "note": "Returning learners",
+        "applies": "Gr 7",
+        "included": false
+      },
+      {
+        "item": "Textbook levy Gr 7",
+        "amount": 300,
+        "frequency": "yearly",
+        "note": "Returning learners; new learners pay the same grade-dependent textbook levy",
+        "applies": "Gr 7",
         "included": false
       }
     ]

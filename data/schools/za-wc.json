@@ -3600,5 +3600,447 @@
         "included": false
       }
     ]
+  },
+  {
+    "id": "international-school-of-hout-bay",
+    "name": "International School of Hout Bay",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Nursery-Gr 12",
+    "area": "Hout Bay",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "61 Intersection Payne & Main Road, Hout Bay, Cape Town, 7806",
+    "lat": -34.034,
+    "lng": 18.3558,
+    "website": "https://houtbayinternational.co.za/",
+    "phone": "021 791 7900",
+    "email": null,
+    "language": null,
+    "emis": "103008183",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://houtbayinternational.co.za/wp-content/uploads/sites/4/2026/02/Hout-Bay-2026-School-Fees-Final.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 79120,
+      "monthly": 8110,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent IB school, fees 'with effect 1st January 2026', Nursery to DP 2. Headline is Nursery (meals included); lunch is included from Early Years 1 to DP 2. Yearly is the plain annual fee; the sheet also gives a termly fee (4 terms) for each grade. The monthly amount is for 10 debit orders (January to October) and is higher than the annual fee spread over 10 months because the sheet adds a 2.5% surcharge to that option, so no instalment count is shown. The 3.5% discount for paying the year by 31 December 2025 has passed. Application fee R800 (once, non-refundable). Placement fee R12,500 once-off per student, due within 7 days of a letter of offer, Early Years 1 to DP 2. A R3,000 re-enrolment fee is invoiced in October and credited to January tuition if the child returns. Textbooks, camps and exam costs are not priced.",
+      "sourceKind": "the school's 2026 fee schedule",
+      "byGrade": [
+        {
+          "grade": "Nursery",
+          "yearly": 79120,
+          "monthly": 8110
+        },
+        {
+          "grade": "Early Years 1",
+          "yearly": 84785,
+          "monthly": 8690
+        },
+        {
+          "grade": "Early Years 2",
+          "yearly": 87301,
+          "monthly": 8948
+        },
+        {
+          "grade": "PYP 1",
+          "yearly": 94623,
+          "monthly": 9699
+        },
+        {
+          "grade": "PYP 2",
+          "yearly": 101548,
+          "monthly": 10409
+        },
+        {
+          "grade": "PYP 3",
+          "yearly": 110854,
+          "monthly": 11363
+        },
+        {
+          "grade": "PYP 4",
+          "yearly": 124306,
+          "monthly": 12741
+        },
+        {
+          "grade": "PYP 5",
+          "yearly": 135683,
+          "monthly": 13908
+        },
+        {
+          "grade": "PYP 6",
+          "yearly": 141343,
+          "monthly": 14488
+        },
+        {
+          "grade": "MYP 1",
+          "yearly": 152101,
+          "monthly": 15590
+        },
+        {
+          "grade": "MYP 2",
+          "yearly": 158689,
+          "monthly": 16266
+        },
+        {
+          "grade": "MYP 3",
+          "yearly": 165949,
+          "monthly": 17010
+        },
+        {
+          "grade": "MYP 4",
+          "yearly": 177219,
+          "monthly": 18165
+        },
+        {
+          "grade": "MYP 5",
+          "yearly": 185246,
+          "monthly": 18988
+        },
+        {
+          "grade": "DP 1",
+          "yearly": 191240,
+          "monthly": 19602
+        },
+        {
+          "grade": "DP 2",
+          "yearly": 191240,
+          "monthly": 19602
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Application fee",
+        "amount": 800,
+        "frequency": "once",
+        "note": "Once, non-refundable, paid when the application is submitted",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Placement fee",
+        "amount": 12500,
+        "frequency": "once",
+        "note": "Once-off per student, non-refundable, due within 7 days of the letter of offer; Early Years 1 to DP 2 (not Nursery)",
+        "applies": "some",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "tate-international-school",
+    "name": "Tate International School",
+    "type": "Private",
+    "phase": "Combined",
+    "grades": "Gr 1-12",
+    "area": "Durbanville",
+    "city": "Durbanville",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "21 Somerset Crescent, Durbanville, 7550",
+    "lat": -33.8384,
+    "lng": 18.6446,
+    "website": "https://tateinternational.co.za/",
+    "phone": null,
+    "email": null,
+    "language": null,
+    "emis": "100000640",
+    "country": "ZA",
+    "quintile": null,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://tateinternational.co.za/fees-and-admission-tate/"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": null,
+      "monthly": 6780,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Independent school. '2026 Fees & School Times': monthly tuition by grade band, no yearly total printed: Gr 1-3 R6,780; Gr 4-6 R7,150; Gr 7 R7,650; Gr 8-9 R7,880; Gr 10-11 (IGCSE) R12,250; Gr 12 (AS-Level) R12,250. Exit exams cost extra. Development levy R5,500 once-off, printed for all grades (who pays is not printed). Maintenance levy R900 a year. Textbooks and stationery cost extra, no amount printed. Aftercare without meals: half day (until 15:30) R950, full day (until 18:00) R1,300; how often these are charged is not printed.",
+      "sourceKind": "the school's 2026 fees page",
+      "byGrade": [
+        {
+          "grade": "Gr 1-3",
+          "yearly": null,
+          "monthly": 6780
+        },
+        {
+          "grade": "Gr 4-6",
+          "yearly": null,
+          "monthly": 7150
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": null,
+          "monthly": 7650
+        },
+        {
+          "grade": "Gr 8-9",
+          "yearly": null,
+          "monthly": 7880
+        },
+        {
+          "grade": "Gr 10-11 (IGCSE)",
+          "yearly": null,
+          "monthly": 12250
+        },
+        {
+          "grade": "Gr 12 (AS-Level)",
+          "yearly": null,
+          "monthly": 12250
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "Development levy",
+        "amount": 5500,
+        "frequency": "once",
+        "note": "Printed for all grades, once-off; who pays (new learners or everyone) is not printed. Gr 1-12",
+        "applies": "some",
+        "included": false
+      },
+      {
+        "item": "Maintenance levy",
+        "amount": 900,
+        "frequency": "yearly",
+        "note": "All grades",
+        "applies": "everyone",
+        "included": false
+      },
+      {
+        "item": "Enrolment levy",
+        "amount": null,
+        "frequency": "once",
+        "applies": "some",
+        "included": false,
+        "note": "New learners; once-off, amount not printed"
+      }
+    ]
+  },
+  {
+    "id": "pinelands-north-primary-school",
+    "name": "Pinelands North Primary School",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr R-7",
+    "area": "Pinelands",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Richmond Avenue, Pinelands, Cape Town 7405",
+    "lat": -33.9275,
+    "lng": 18.5123,
+    "website": "https://www.pnps.co.za/",
+    "phone": "021 531 3414",
+    "email": null,
+    "language": null,
+    "emis": "102309321",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://www.pnps.co.za/wp-content/uploads/2026/02/School-Fees-2026.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 36170,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school. 2026 fees per pupil per year: Gr R R36,170 (R3,225 of this would already have been paid); Gr 1 R30,453; Gr 2-3 R28,673; Gr 4 R29,913; Gr 5-6 R29,733; Gr 7 R34,773. Fees are paid in monthly payments from January (Gr 5-6 January to November, others January to October with a slightly different last month), but the monthly lines were partly cut off in our copy, so monthly amounts and instalments are left out. The sheet offered a full-payment discount (R1,810 Gr R, R1,410 Gr 1-7) with a deadline printed as 28 February 2025 (a typo on the 2026 sheet); treat as passed. Stationery, voluntary sport camps or tours and Gr 7 costs (jacket, farewell) are not included.",
+      "sourceKind": "the school's 2026 fee letter (scanned PDF, read by OCR)",
+      "byGrade": [
+        {
+          "grade": "Gr R",
+          "yearly": 36170,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 1",
+          "yearly": 30453,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 2-3",
+          "yearly": 28673,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 4",
+          "yearly": 29913,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 5-6",
+          "yearly": 29733,
+          "monthly": null
+        },
+        {
+          "grade": "Gr 7",
+          "yearly": 34773,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
+  },
+  {
+    "id": "rhenish-primary",
+    "name": "Rhenish Primary",
+    "type": "Public",
+    "phase": "Primary",
+    "grades": "Gr 1-7",
+    "area": "Krigeville",
+    "city": "Stellenbosch",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "Doornbosch Street, Krigeville, Stellenbosch 7600",
+    "lat": -33.9467,
+    "lng": 18.8554,
+    "website": "https://rhenishprimary.co.za/",
+    "phone": "021 883 3152",
+    "email": null,
+    "language": null,
+    "emis": "109309326",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://rhenishprimary.co.za/wp-content/uploads/2026/04/2026_school-fees-letter-1.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 34800,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public school. 2026 school fees R34,800 a year for Gr 1-7, payable in advance, due 1 January. Payment options: 10 equal EFT instalments from 1 January to 1 October 2026, or ten monthly debit-order instalments January to October (no monthly amount is printed, so monthly is left out). A compulsory ICT levy of R1,500 a year applies to Gr 1-7. A second fee is printed for a lower level, but its label was cut off in our copy, so it is left out. Full-payment discounts (5% until 31 January 2026, 2.5% before 28 February 2026) have passed. Exemption forms were due before 27 February 2026.",
+      "sourceKind": "the school's 2026 fee letter (scanned PDF, read by OCR)",
+      "byGrade": [
+        {
+          "grade": "Gr 1-7",
+          "yearly": 34800,
+          "monthly": null,
+          "instalments": null
+        }
+      ]
+    },
+    "hiddenCosts": [
+      {
+        "item": "ICT levy",
+        "amount": 1500,
+        "frequency": "yearly",
+        "note": "Compulsory",
+        "applies": "Gr 1-7",
+        "included": false
+      }
+    ]
+  },
+  {
+    "id": "zwaanswyk-high-school",
+    "name": "Zwaanswyk High School",
+    "type": "Public",
+    "phase": "High",
+    "grades": "Gr 8-12",
+    "area": "Tokai",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "postcode": null,
+    "address": "370 Main Road, Tokai 7945",
+    "lat": -34.0596,
+    "lng": 18.4586,
+    "website": "https://zwaanswykhighschool.co.za/",
+    "phone": "021 712 7721",
+    "email": null,
+    "language": null,
+    "emis": "105310323",
+    "country": "ZA",
+    "quintile": 5,
+    "outings": [],
+    "aftercare": {
+      "available": null,
+      "monthly": null
+    },
+    "transport": {
+      "available": null,
+      "monthly": null
+    },
+    "sports": [],
+    "lastChecked": "2026-11-26",
+    "sources": [
+      "https://zwaanswykhighschool.co.za/wp-content/uploads/2026/01/Budget-approval-letter-2026-school-fees.pdf"
+    ],
+    "fees": {
+      "year": 2026,
+      "yearly": 18900,
+      "monthly": null,
+      "registration": null,
+      "deposit": null,
+      "instalments": null,
+      "notes": "Public high school, Gr 8-12. 2026 school fees are R18,900 for the year, one fee for all grades, after a 7% increase approved at the AGM on 18 November 2025. The letter text was only partly readable, so payment months, discounts and extras are not given. Stationery lists are not fee documents and are not included.",
+      "sourceKind": "the school's 2026 budget approval letter (scanned PDF, read by OCR)",
+      "byGrade": [
+        {
+          "grade": "Gr 8-12",
+          "yearly": 18900,
+          "monthly": null
+        }
+      ]
+    },
+    "hiddenCosts": []
   }
 ]
